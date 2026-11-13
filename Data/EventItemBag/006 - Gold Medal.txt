@@ -1,3 +1,9 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------
 // Gold Medal (ItemBagEx). Class gear 40-85 req. level with low-rate options + jewels/rings/pets.
 // Level +0..+9 (preset 61), skill/luck/option presets 61 in ItemOptionRate.txt.

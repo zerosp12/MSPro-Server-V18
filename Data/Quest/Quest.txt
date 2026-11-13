@@ -1,3 +1,9 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 //Index   StartType   MonsterClass   CurrentState   RequireIndex   RequireState   RequireMinLevel   RequireMaxLevel   DW      DK      FE      MG      DL      SU      RF      GL
 0         0           235            3              *              *              150               400               1       1       1       0       0       1       0	0
 1         0           235            3              0              2              150               400               1       1       1       0       0       1       0	0

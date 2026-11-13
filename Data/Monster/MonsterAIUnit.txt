@@ -1,3 +1,9 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 0
 //Index   Name                                 DelayTime   Automata   AIClassNormal   AIClassMove   AIClassAttack   AIClassHeal   AIClassAvoid   AIClassHelp   AIClassSpecial   AIClassEvent
 1         "Monster General"                    1700        1          1               8             3               5             4              *             *                * 

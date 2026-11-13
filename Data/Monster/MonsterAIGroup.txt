@@ -1,3 +1,9 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 0
 //Number   Guid   Monster   Rank   StartAI   AI1   AI2   AI3   CreateType   Map   X      Y      Dir   RegenType
 1          0      340       0      10        11    31    2     0            34    110    77     *     1

@@ -1,3 +1,10 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
+//Id	Main	Value	Item	Level	Skill	Luck	Option	ExcellentOptions	AncientOption	Harmony	OptionEx	Socket1	Socket2	Socket3	Socket4	Socket5	Quantity	Duration
 1000 1000 500 3584 9 1 1 0 63 0 0 0 255 255 255 255 255 0 0
 1010 1010 500 3585 9 1 1 0 63 0 0 0 255 255 255 255 255 0 0
 1020 1020 500 3586 9 1 1 0 63 0 0 0 255 255 255 255 255 0 0

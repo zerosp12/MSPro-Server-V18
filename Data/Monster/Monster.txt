@@ -1,3 +1,9 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 //Index   Type   Name                                 Level   MaxLife   MaxMana   DamageMin   DamageMax   Defense   MagicDefense   AttackRate   DefenseRate   MoveRange   AttackType   AttackRange   ViewRange   MoveSpeed   AttackSpeed   RegenTime   Attribute   ItemRate   MoneyRate   MaxItemLevel   MonsterSkill   Resi(Poison)  Resi(Ice)   Resi(Light)   Resis(Fire) 
 0         1      "Bull Fighter"                       6       100       0         16          20          6         0              28           6             3           0            1             5           400         1600          10          2           130        20          6              0              0             0             0             0           
 1         1      "Hound"                              9       140       0         22          27          9         0              39           9             3           0            1             5           400         1600          10          2           130        20          6              0              0             0             0             0           

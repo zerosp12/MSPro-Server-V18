@@ -1,10 +1,9 @@
-//-----------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
-//->>  Web: wwww.muserverpro.com 
+//->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 -2026 MuServerPro Team
-//-----------------------------------------------------------------------------------------------------------------
-
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------
 // 380 Item Options
 // The eight PvP options a 380 item can carry, with their default value. 380ItemType.txt picks which option each item has; its own value overrides the default here. Keep the 8 numbers: the server's code is tied to them.

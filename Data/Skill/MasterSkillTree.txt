@@ -1,3 +1,10 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
+//SkillIndex	Group	Rank	MinLevel	MaxLevel	RelatedSkill	ReplaceSkill	RequireSkill1	RequireSkill2	SkillLevel1	SkillLevel2	SkillLevel3	SkillLevel4	SkillLevel5	SkillLevel6	SkillLevel7	SkillLevel8	SkillLevel9	SkillLevel10	SkillLevel11	SkillLevel12	SkillLevel13	SkillLevel14	SkillLevel15	SkillLevel16	SkillLevel17	SkillLevel18	SkillLevel19	SkillLevel20	DW	DK	FE	MG	DL	SU	RF	GL
 300 1 1 1 20 12.04 20.18 27.76 34.80 41.31 47.33 52.86 57.94 62.57 66.78 70.59 74.02 77.09 79.82 82.23 84.34 86.16 87.73 89.05 90.16 0 0 0 0 1 1 1 1 1 1 0 1
 301 1 1 1 20 614.08 1029.20 1415.70 1774.61 2106.94 2413.73 2695.98 2954.73 3190.99 3405.79 3600.15 3775.09 3931.63 4070.80 4193.62 4301.10 4394.28 4474.17 4541.79 4598.18 0 0 0 0 4 4 4 4 4 4 0 4
 302 1 2 1 20 511.73 857.67 1179.75 1478.84 1755.79 2011.44 2246.65 2462.27 2659.16 2838.16 3000.13 3145.91 3276.36 3392.33 3494.68 3584.25 3661.90 3728.47 3784.83 3831.81 0 0 0 0 6 6 6 6 6 6 0 6

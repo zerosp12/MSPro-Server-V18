@@ -1,3 +1,10 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
+//Category	Id	Main	ItemIndex	Coin	Price	Bonus	ProductBase1	ProductMain1	ProductBase2	ProductMain2	ProductBase3	ProductMain3	ProductBase4	ProductMain4	ProductBase5	ProductMain5	ProductBase6	ProductMain6	ProductBase7	ProductMain7	ProductBase8	ProductMain8	ProductBase9	ProductMain9	ProductBase10	ProductMain10
 31 100 100 1 508 500 0 1000 0 0 0 0 0 0 0 0 0 1000 0 0 0 0 0 0 0 0 0
 31 101 101 1 508 500 0 1010 0 0 0 0 0 0 0 0 0 1010 0 0 0 0 0 0 0 0 0
 31 102 102 1 508 500 0 1020 0 0 0 0 0 0 0 0 0 1020 0 0 0 0 0 0 0 0 0

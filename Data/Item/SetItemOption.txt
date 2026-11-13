@@ -1,10 +1,9 @@
-//-----------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
-//->>  Web: wwww.muserverpro.com 
+//->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 -2023 MuServerPro Team
-//-----------------------------------------------------------------------------------------------------------------
-
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 //Index   Name                                 Option1   Value1   Option2   Value2   Option3   Value3   Option4   Value4   Option5   Value5   Option6   Value6   Option7   Value7   Option8   Value8   Option9   Value9   Option10   Value10   Option11   Value11   Option12   Value12   FullOption1   FullValue1   FullOption2   FullValue2   FullOption3   FullValue3   FullOption4   FullValue4   FullOption5   FullValue5
 1         "Warrior"                            0         10       *         *        19        10       *         *        13        20       *         *        14        5        *         *        10        20       *          *         1          10        *          *         15            5            17            5            0             25           *             *            *             *
 2         "Anonymous"                          11        50       *         *        1         50       *         *        22        25       *         *        *         *        *         *        *         *        *          *         *          *         *          *         8             30           *             *            *             *            *             *            *             *

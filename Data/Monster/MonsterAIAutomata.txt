@@ -1,3 +1,9 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 0
 //Number   Name                                 Priority   CurrentState   NextState   TransitionType   TransitionRate   TransitionValueType   TransitionValue   DelayTime
 1          "General -> Go"                      0          0              1           0                100              *                     *                 1000

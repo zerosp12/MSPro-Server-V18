@@ -1,3 +1,10 @@
+//--------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: www.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
+//Index	Name	Damage	MP	BP	Range	Radio	Delay	Type	Effect	ReqLevel	ReqEnergy	ReqLeadership	ReqKillCount	ReqGuildStatus	DW	DK	FE	MG	DL	SU	RF	GL
 1 "Poison" 12 42 0 6 0 0 1 55 0 0 0 0 0 1 0 0 1 0 0 0 0
 2 "Meteorite" 21 12 0 6 0 0 4 0 0 0 0 0 0 1 0 0 1 0 1 0 0
 3 "Lightning" 17 15 0 6 0 0 2 0 0 0 0 0 0 1 0 0 1 0 0 0 0

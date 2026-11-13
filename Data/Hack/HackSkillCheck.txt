@@ -1,10 +1,9 @@
-//-----------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
-//->>  Web: wwww.muserverpro.com
+//->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
-//-----------------------------------------------------------------------------------------------------------------
-
+//->>  2020 - 2026 MuServerPro Team
+//--------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------
 // Skill Speed Checks
 // How often a skill may be used for each range of attack speed. It only works when SpeedHackSkillEnable is on in the server settings. The comment at the end of each row names the skill.
