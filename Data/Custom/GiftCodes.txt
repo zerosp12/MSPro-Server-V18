@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 // MSPro - Gift Codes
 // File: GiftCodes.txt
@@ -18,18 +19,25 @@
 //	Ref-2:
 //		0: Disable Limit
 //	1~999: Usage Limit
-//
-// 	Ref-3: 
-//		Time in Minutes to Restart Use
-//
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-//									[Ref-1]		[Ref-2]			[Ref-3]
-//				[10 Numbers]		[0, 1, 2]	[* / 1~999]		[0 / 1~99999]		[* / 1~99999]		[				ItemBag					]
-//	[Index]		[GiftCode]			[UseType]	[UseLimit]		[ResetTime]			[GlobalLimit]		[AL0]		[AL1]		[AL2]		[AL3]
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------
+// Gift Codes
+// One row per code. The item bag given depends on the account level of the player.
+//   Index: Number of the code. The filter part uses it to limit who can use this code.
+//   Code: The code the player types (up to 10 characters; capital letters count).
+//   Used by: 0 Account | 1 Character
+//   Uses per player: How many times each account (or character) can use the code. * or 0 has no limit.
+//   Restart after (minutes): Minutes after which a player can use the code again. 0 never.
+//   Total uses: Total times the code can be used by everybody. * or 0 has no limit. The DataServer receives it as one byte, so it cannot go above 255.
+//   Item bag, Free account: Item bag given to a player of this account level (Free account). -1 gives nothing.
+//   Item bag, VIP 1: Item bag given to a player of this account level (VIP 1). -1 gives nothing.
+//   Item bag, VIP 2: Item bag given to a player of this account level (VIP 2). -1 gives nothing.
+//   Item bag, VIP 3: Item bag given to a player of this account level (VIP 3). -1 gives nothing.
+//------------------------------------------------------------------------------------------------------
+//  Index    GiftCode        UseType    UseLimit    ResetTime    GlobalLimit    AL0    AL1    AL2    AL3
+//------------------------------------------------------------------------------------------------------
 0
-	0			"MSPROGIFT1"			0			1				0					10					5			5			5			5
-	1			"AX5D8SVVD"			1			1				0					10					11			11			11			11
+    0        "MSPROGIFT1"    0          1           0            10             5      5      5      5
+    1        "AX5D8SVVD"     1          1           0            10             11     11     11     11
 end
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------

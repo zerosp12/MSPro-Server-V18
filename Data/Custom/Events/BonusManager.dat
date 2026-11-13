@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //------------------------------------------------------------------------
 // INFO:
 // BonusIndex:
@@ -20,27 +21,59 @@
 //-------------------------------------------------------------------------
 
 0
-//--------------------------------------------------------------------------------------------
-// [0~29]       [*/0000]    [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
-// EventIndex   StartYear   StartMonth   StartDay   StartDoW   StartHour   StartMin   StartSec
-//--------------------------------------------------------------------------------------------  
-	0            *           *            *          7         21          30          0			//Test bonus exp
-	0            *           *            *          1         21          30          0			//Test bonus exp
+//------------------------------------------------------------------------------------------------------
+// Schedule
+// When each bonus event starts. An event may have several rows (several times).
+//   Bonus event: Number of the bonus event (0 to 29). The next parts use it.
+//   Year: The year when the bonus starts. * means every year.
+//   Month: The month when the bonus starts. * means every month.
+//   Day: The day of the month when the bonus starts. * means every day of the month.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour when the bonus starts. * means every hour.
+//   Minute: The minute when the bonus starts. * means every minute.
+//   Second: The second when the bonus starts. * means every second.
+//------------------------------------------------------------------------------------------------------
+//  [0~29]        [*/1970~9999]    [*/1~12]    [*/1~31]    [*/1~7]      [*/0~23]    [*/0~59]    [*/0~59]
+//  EventIndex    Year             Month       Day         DayOfWeek    Hour        Minute      Second
+//------------------------------------------------------------------------------------------------------
+    0             *                *           *           7            21          30          0           //Test bonus exp
+    0             *                *           *           1            21          30          0           //Test bonus exp
 end
 
 1
-//---------------------------------------------------------------
-// [0~29]       [*/IndexMsg]   [*/IndexMsg]   [InSec 3600 = 1 HR]
-// EventIndex   StartMessage   FinalMessage   BonusTime
-//---------------------------------------------------------------
-0            *              *              6400			//Test bonus exp (2 hrs)
+//----------------------------------------------------------
+// Messages and Time
+// The messages and the length of each bonus event.
+//   Bonus event: Number of the bonus event (0 to 29).
+//   Start message: Number of the message (Message file) sent to everyone when the bonus starts. * sends none.
+//   End message: Number of the message (Message file) sent to everyone when the bonus ends. * sends none.
+//   Lasts (seconds): Seconds the bonus lasts.
+//----------------------------------------------------------
+//  [0~29]        [Number]        [Number]        [Number]
+//  EventIndex    StartMessage    FinalMessage    BonusTime
+//----------------------------------------------------------
+    0             *               *               6400         //Test bonus exp (2 hrs)
 end
 
 2
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//																																	 [Monster.txt]
-// [0~29]       [0~8]        [0~1000000]      [0~1000000]      [0~1000000]      [0~1000000]      [*/0~8191]  [*/0~15] 	 [*/0~114]   [*/IdMonster] 	[*/0~150]         [*/0~150]
-// EventIndex   BonusIndex   BonusValue_AL0   BonusValue_AL1   BonusValue_AL2   BonusValue_AL3   ItemIndex   ItemLevel   MapNumber   MonsterClass   MonsterLevelMin   MonsterLevelMax
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-0            0            50               50               50               50                 *       	*            *           *              *                 *               // + 50% exp extra (Happy Hour)
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Bonuses
+// What each bonus event gives. Several rows may be active at once; the filters narrow them down.
+//   Bonus event: Number of the bonus event (0 to 29).
+//   Bonus: What to increase. The percentages add to the normal amount (50 makes it 1.5 times); the x/1000000 ones add that part of the missing chance; the Goblin Points, resets and master resets ones are added as they are.
+//   Value, Free: Amount of the bonus for a free account.
+//   Value, VIP 1: Amount of the bonus for a VIP 1 account.
+//   Value, VIP 2: Amount of the bonus for a VIP 2 account.
+//   Value, VIP 3: Amount of the bonus for a VIP 3 account.
+//   Only this item: Only for this item (item drop bonuses). * for any.
+//   Item level: Only for items of this level. * for any.
+//   Only on this map: Only for players on this map. * for any.
+//   Only this monster: Only for this monster. * for any.
+//   Monster level, at least: Only for monsters of at least this level. * for any.
+//   Monster level, at most: Only for monsters of at most this level. * for any.
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~29]        [0~8]         [0~1000000]       [0~1000000]       [0~1000000]       [0~1000000]       [*/0~8191]    [*/0~15]     [*/0~114]    [Number]        [*/0~150]          [*/0~150]
+//  EventIndex    BonusIndex    BonusValue_AL0    BonusValue_AL1    BonusValue_AL2    BonusValue_AL3    ItemIndex     ItemLevel    MapNumber    MonsterClass    MonsterLevelMin    MonsterLevelMax
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0             0             50                50                50                50                *             *            *            *               *                  *                  // + 50% exp extra (Happy Hour)
 end

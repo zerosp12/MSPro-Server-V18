@@ -1,95 +1,163 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//-----------------------------------------------------------------------------------------------------------
-// [Max 20 Char]     [0~2000000000] [0~100] 	   [1~255] 		   [0~10000]         [0-1]          [0-1]  
-// EventName         DropZen   		ItemDropRate   ItemDropCount   SetItemDropRate   ItemDropType   Fireworks
-//-----------------------------------------------------------------------------------------------------------		
-"Box of Kundun 4"	 100	  	    100		  	   1		       0		   	     1		   	    0
+//----------------------------------------------------------------------------------------------------------------------
+// Bag
+// The bag's name, the zen it gives when a roll gives no item, the chance of an item and how many rolls each opening makes.
+//   Ancient Chance: Out of 10,000.
+//----------------------------------------------------------------------------------------------------------------------
+//  [Text]               [0~2000000000]    [0~100]         [1~255]          [0~10000]          [0~1]           [0~1]
+//  EventName            DropZen           ItemDropRate    ItemDropCount    SetItemDropRate    ItemDropType    Fireworks
+//----------------------------------------------------------------------------------------------------------------------
+    "Box of Kundun 4"    100               100             1                0                  1               0
 end
 
 1
-//----------------------------------------------------------------------------------
-// [0~15]    [0~511][0~15]	   [0~15]     [0~1]   [0~1]  [0~7]    [0~6] 
-// Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent  Comment
-//----------------------------------------------------------------------------------
-7           16     0          0          0       1      1        2 // Black Dragon Helm
-8           16     0          0          0       1      1        2 // Black Dragon Armor
-9           16     0          0          0       1      1        2 // Black Dragon Pants
-10          16     0          0          0       1      1        2 // Black Dragon Gloves
-11          16     0          0          0       1      1        2 // Black Dragon Boots
-//
-7           34     0          0          0       1      1        2 // Ashcrow Helm
-8           34     0          0          0       1      1        2 // Ashcrow Armor
-9           34     0          0          0       1      1        2 // Ashcrow Pants
-10          34     0          0          0       1      1        2 // Ashcrow Gloves
-11          34     0          0          0       1      1        2 // Ashcrow Boots
-//
-7           18     0          0          0       1      1        2 // Grand Soul Helm
-8           18     0          0          0       1      1        2 // Grand Soul Armor
-9           18     0          0          0       1      1        2 // Grand Soul Pants
-10          18     0          0          0       1      1        2 // Grand Soul Gloves
-11          18     0          0          0       1      1        2 // Grand Soul Boots
-//
-7           35     0          0          0       1      1        2 // Eclipse Helm
-8           35     0          0          0       1      1        2 // Eclipse Armor
-9           35     0          0          0       1      1        2 // Eclipse Pants
-10          35     0          0          0       1      1        2 // Eclipse Gloves
-11          35     0          0          0       1      1        2 // Eclipse Boots
-//
-7           19     0          0          0       1      1        2 // Divine Helm
-8           19     0          0          0       1      1        2 // Divine Armor
-9           19     0          0          0       1      1        2 // Divine Pants
-10          19     0          0          0       1      1        2 // Divine Gloves
-11          19     0          0          0       1      1        2 // Divine Boots
-//
-7           36     0          0          0       1      1        2 // Iris Helm
-8           36     0          0          0       1      1        2 // Iris Armor
-9           36     0          0          0       1      1        2 // Iris Pants
-10          36     0          0          0       1      1        2 // Iris Gloves
-11          36     0          0          0       1      1        2 // Iris Boots
-//
-8           20     0          0          0       1      1        2 // Thunder Hawk Armor
-9           20     0          0          0       1      1        2 // Thunder Hawk Pants
-10          20     0          0          0       1      1        2 // Thunder Hawk Gloves
-11          20     0          0          0       1      1        2 // Thunder Hawk Boots
-//
-8           37     0          0          0       1      1        2 // Valiant Armor
-9           37     0          0          0       1      1        2 // Valiant Pants
-10          37     0          0          0       1      1        2 // Valiant Gloves
-11          37     0          0          0       1      1        2 // Valiant Boots
-//
-7           27     0          0          0       1      1        2 // Dark Steel Helm
-8           27     0          0          0       1      1        2 // Dark Steel Armor
-9           27     0          0          0       1      1        2 // Dark Steel Pants
-10          27     0          0          0       1      1        2 // Dark Steel Gloves
-11          27     0          0          0       1      1        2 // Dark Steel Boots
-//
-7           38      0          0          0       1      1        2 // Glorious Helm
-8           38      0          0          0       1      1        2 // Glorious Armor
-9           38      0          0          0       1      1        2 // Glorious Pants
-10          38      0          0          0       1      1        2 // Glorious Gloves
-11          38      0          0          0       1      1        2 // Glorious Boots
-//
-0           16      0          0          1       1      1        2 // Sword of Destruction
-0           17      0          0          1       1      1        2 // Dark Breaker
-0           18      0          0          1       1      1        2 // Thunder Blade
-0           31      0          0          1       1      1        2 // Rune Blade
-2           11      0          0          1       1      1        2 // Lord Scepter
-2           7       0          0          1       1      1        2 // Elemental Mace
-3           9       0          0          1       1      1        2 // Bill of Balrog
-4           16      0          0          1       1      1        2 // Saint Crossbow
-4           17      0          0          1       1      1        2 // Celestial Bow
-4           19      0          0          1       1      1        2 // Great Reign Crossbow
-5           9       0          0          0       1      1        2 // Grand Soul Staff
-5           8       0          0          0       1      1        2 // Staff of Destruction
-6           14      0          0          0       1      1        2 // Legendary Shield
-6           11      0          0          0       1      1        2 // Serpent Shield
-6           12      0          0          0       1      1        2 // Bronze Shield
-   3         15     0          0          1       1      1        2    //Pluma Lance (GL)
-   3         16     0          0          1       1      1        2    //Vis Lance (GL)
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    7          16         0           0           0        1        1         2            // Black Dragon Helm
+    8          16         0           0           0        1        1         2            // Black Dragon Armor
+    9          16         0           0           0        1        1         2            // Black Dragon Pants
+    10         16         0           0           0        1        1         2            // Black Dragon Gloves
+    11         16         0           0           0        1        1         2            // Black Dragon Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    7          34         0           0           0        1        1         2            // Ashcrow Helm
+    8          34         0           0           0        1        1         2            // Ashcrow Armor
+    9          34         0           0           0        1        1         2            // Ashcrow Pants
+    10         34         0           0           0        1        1         2            // Ashcrow Gloves
+    11         34         0           0           0        1        1         2            // Ashcrow Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    7          18         0           0           0        1        1         2            // Grand Soul Helm
+    8          18         0           0           0        1        1         2            // Grand Soul Armor
+    9          18         0           0           0        1        1         2            // Grand Soul Pants
+    10         18         0           0           0        1        1         2            // Grand Soul Gloves
+    11         18         0           0           0        1        1         2            // Grand Soul Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    7          35         0           0           0        1        1         2            // Eclipse Helm
+    8          35         0           0           0        1        1         2            // Eclipse Armor
+    9          35         0           0           0        1        1         2            // Eclipse Pants
+    10         35         0           0           0        1        1         2            // Eclipse Gloves
+    11         35         0           0           0        1        1         2            // Eclipse Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    7          19         0           0           0        1        1         2            // Divine Helm
+    8          19         0           0           0        1        1         2            // Divine Armor
+    9          19         0           0           0        1        1         2            // Divine Pants
+    10         19         0           0           0        1        1         2            // Divine Gloves
+    11         19         0           0           0        1        1         2            // Divine Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    7          36         0           0           0        1        1         2            // Iris Helm
+    8          36         0           0           0        1        1         2            // Iris Armor
+    9          36         0           0           0        1        1         2            // Iris Pants
+    10         36         0           0           0        1        1         2            // Iris Gloves
+    11         36         0           0           0        1        1         2            // Iris Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    8          20         0           0           0        1        1         2            // Thunder Hawk Armor
+    9          20         0           0           0        1        1         2            // Thunder Hawk Pants
+    10         20         0           0           0        1        1         2            // Thunder Hawk Gloves
+    11         20         0           0           0        1        1         2            // Thunder Hawk Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    8          37         0           0           0        1        1         2            // Valiant Armor
+    9          37         0           0           0        1        1         2            // Valiant Pants
+    10         37         0           0           0        1        1         2            // Valiant Gloves
+    11         37         0           0           0        1        1         2            // Valiant Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    7          27         0           0           0        1        1         2            // Dark Steel Helm
+    8          27         0           0           0        1        1         2            // Dark Steel Armor
+    9          27         0           0           0        1        1         2            // Dark Steel Pants
+    10         27         0           0           0        1        1         2            // Dark Steel Gloves
+    11         27         0           0           0        1        1         2            // Dark Steel Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    7          38         0           0           0        1        1         2            // Glorious Helm
+    8          38         0           0           0        1        1         2            // Glorious Armor
+    9          38         0           0           0        1        1         2            // Glorious Pants
+    10         38         0           0           0        1        1         2            // Glorious Gloves
+    11         38         0           0           0        1        1         2            // Glorious Boots
+//-------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [0~1]    [0~1]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill    Luck     Option    Excellent
+//-------------------------------------------------------------------------------------
+    0          16         0           0           1        1        1         2            // Sword of Destruction
+    0          17         0           0           1        1        1         2            // Dark Breaker
+    0          18         0           0           1        1        1         2            // Thunder Blade
+    0          31         0           0           1        1        1         2            // Rune Blade
+    2          11         0           0           1        1        1         2            // Lord Scepter
+    2          7          0           0           1        1        1         2            // Elemental Mace
+    3          9          0           0           1        1        1         2            // Bill of Balrog
+    4          16         0           0           1        1        1         2            // Saint Crossbow
+    4          17         0           0           1        1        1         2            // Celestial Bow
+    4          19         0           0           1        1        1         2            // Great Reign Crossbow
+    5          9          0           0           0        1        1         2            // Grand Soul Staff
+    5          8          0           0           0        1        1         2            // Staff of Destruction
+    6          14         0           0           0        1        1         2            // Legendary Shield
+    6          11         0           0           0        1        1         2            // Serpent Shield
+    6          12         0           0           0        1        1         2            // Bronze Shield
+    3          15         0           0           1        1        1         2            //Pluma Lance (GL)
+    3          16         0           0           1        1        1         2            //Vis Lance (GL)
 end

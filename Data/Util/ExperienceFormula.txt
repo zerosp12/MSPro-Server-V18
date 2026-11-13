@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //---------------------------------------------------------------------------
 //	WARNING: DON'T TOUCH ANYTHING IF YOU DON'T KNOW WHAT ARE YOU DOING
 // 	Allowed Operatos: + - / *
@@ -19,8 +20,17 @@
 //	1	     	255				"(((x+9)*x)*x)*10"
 //	256	     	*				"((((x+9)*x)*x)*10)+((((x-255+9)*(x-255))*(x-255))*1000)"
 
-//Level 1000 (Can be used with higher Levels)
-	1	     	800				"(((x+9)*x)*x)*1"
-	801	     	*				"((((x+9)*x)*x)*1)+((x-800)+9)*(x-800)*(x-800)*110+(x+9)*x"
+//----------------------------------------------------------
+// Formulas
+// The experience a level needs, as an expression of the level x, by range of levels. Allowed operators: + - / *.
+//   From level: First level this row calculates.
+//   To level: The range stops one level before this number, so the next row should start at the same number. No limit goes up to the maximum level.
+//   Formula: In quotes, with x as the level. Only + - * / and parentheses.
+//----------------------------------------------------------
+//  [1~65535]    [*/-1~65535]    [Text]
+//  MinLevel     MaxLevel        Formula
+//----------------------------------------------------------
+    1            800             "(((x+9)*x)*x)*1"
+    801          *               "((((x+9)*x)*x)*1)+((x-800)+9)*(x-800)*(x-800)*110+(x+9)*x"
 end
 

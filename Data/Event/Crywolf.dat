@@ -1,28 +1,47 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//-----------------------------------------------------------------------------------------
-// [0/1]  [1~6]   [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/Sec]
-// Mode   State   StartMonth   StartDay   StartDoW   StartHour   StartMin   ContinuanceTime
-//-----------------------------------------------------------------------------------------
-   0	  1	 	  *	           *     	  4	   		 20	         30	        *
+//--------------------------------------------------------------------------------------------
+// Schedule
+// When the Crywolf siege starts, and what happens when the cycle ends.
+//   Mode: 1 starts the cycle again by itself when it ends; 0 waits for the next row of this part.
+//   State: The state the cycle starts in; 1 is the first announcement.
+//   Month: The month it starts, 1 to 12. A wildcard means every month.
+//   Day: The day of the month it starts, 1 to 31. A wildcard means every day.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour it starts, 0 to 23. A wildcard means every hour.
+//   Minute: The minute it starts, 0 to 59. A wildcard means every minute.
+//   Lasts (seconds): A window in seconds after the start time in which the cycle can still start. A wildcard leaves it without a window (unverified).
+//--------------------------------------------------------------------------------------------
+//  [0~1]    [1~6]    [*/0~12]    [*/0~31]    [*/1~7]      [*/0~23]    [*/0~59]    [Number]
+//  Mode     State    Month       Day         DayOfWeek    Hour        Minute      Continuance
+//--------------------------------------------------------------------------------------------
+    0        1        *           *           4            20          30          *
 end
 
 1
-//--------------------------------
-// [1~6]   [0~23]  [0~23]   [0~59]
-// State   Hour    Minute   Second
-//--------------------------------
-   1	   0	   0	    300
-   2	   0	   0	    60
-   3	   0	   0	    120
-   4	   0	   0	    900
-   5	   0	   0	    15
-   6	   0	   0	    10
+//----------------------------------------------------------
+// State Times
+// How long each state lasts. 1 to 6 are: first announcement, second announcement, ready, siege, end and end of the cycle.
+//   State: 1 first announcement, 2 second announcement, 3 ready, 4 siege, 5 end, 6 end of the cycle.
+//   Hours: Hours the state lasts. All three parts are added up.
+//   Minutes: Minutes the state lasts. All three parts are added up.
+//   Seconds: Seconds the state lasts. All three parts are added up.
+//----------------------------------------------------------
+//  [1~6]    [0~99999]    [0~99999]    [0~999999]
+//  State    Hour         Minute       Second
+//----------------------------------------------------------
+    1        0            0            300
+    2        0            0            60
+    3        0            0            120
+    4        0            0            900
+    5        0            0            15
+    6        0            0            10
 end
 
 2
@@ -45,11 +64,15 @@ end
 end
 
 3
-//---------------------
-//           [Sec]
-// AIGroup   TurnUpTime
-//---------------------
-   5         600
+//----------------------------------------------------------
+// Boss
+// The AI group of the boss and when it appears.
+//   AI group: The AI group (MonsterAIGroup.txt) of the boss.
+//   Appears after (seconds): Seconds after the siege starts when the boss appears.
+//----------------------------------------------------------
+//  AIGroup    TurnUpTime
+//----------------------------------------------------------
+    5          600
 end
 
 4
@@ -61,26 +84,52 @@ end
 end
 
 5
-//---------------------------------------------------------------------------------------------------------------------
-// [0~100000]       [0~100000]       [0~100000]       [0~100000]       [0~100000]       [0~100000]       [0~100000]
-// MVPScoreTable1   MVPScoreTable2   MVPScoreTable3   MVPScoreTable4   MVPScoreTable5   MVPScoreTable6   MVPScoreTable7
-//---------------------------------------------------------------------------------------------------------------------
-   7000             3000             600              700              600              1000             6000
+//------------------------------------------------------------------------------------------------
+// MVP Score Table
+// The score each kill and action gives.
+//   Score 1: MVP score a player earns for killing Balgass (monster 349).
+//   Score 2: MVP score a player earns for killing Dark Elf (monster 340).
+//   Score 3: MVP score a player earns for killing Balram (monster 344).
+//   Score 4: MVP score a player earns for killing Soram (monster 341).
+//   Score 5: MVP score a player earns for killing Death Spirit (monster 345).
+//   Score 6: MVP score a player earns for killing Tanker (monster 348).
+//   Score 7: MVP score for each player who holds an altar when the siege ends.
+//------------------------------------------------------------------------------------------------
+//  [0~100000]    [0~100000]    [0~100000]    [0~100000]    [0~100000]    [0~100000]    [0~100000]
+//  Score1        Score2        Score3        Score4        Score5        Score6        Score7
+//------------------------------------------------------------------------------------------------
+    7000          3000          600           700           600           1000          6000
 end
 
 6
-//-------------------------------------------------------------------------------------------------------
-// [0~100000]           [0~100000]           [0~100000]           [0~100000]           [0~100000]
-// MVPRankScoreTable1   MVPRankScoreTable2   MVPRankScoreTable3   MVPRankScoreTable4   MVPRankScoreTable5
-//-------------------------------------------------------------------------------------------------------
-   0                    1001                 3001                 5001                 10001
+//--------------------------------------------------------------------
+// MVP Rank Scores
+// The score needed for each MVP rank.
+//   Rank 1: MVP score needed to reach rank 1. The highest rank reached counts.
+//   Rank 2: MVP score needed to reach rank 2. The highest rank reached counts.
+//   Rank 3: MVP score needed to reach rank 3. The highest rank reached counts.
+//   Rank 4: MVP score needed to reach rank 4. The highest rank reached counts.
+//   Rank 5: MVP score needed to reach rank 5. The highest rank reached counts.
+//--------------------------------------------------------------------
+//  [0~100000]    [0~100000]    [0~100000]    [0~100000]    [0~100000]
+//  Rank1         Rank2         Rank3         Rank4         Rank5
+//--------------------------------------------------------------------
+    0             1001          3001          5001          10001
 end
 
 7
-//---------------------------------------------------------------------------------------------
-// [0~10000000]       [0~10000000]       [0~10000000]       [0~10000000]       [0~10000000]
-// MVPRankExpTable1   MVPRankExpTable2   MVPRankExpTable3   MVPRankExpTable4   MVPRankExpTable5
-//---------------------------------------------------------------------------------------------
-   0                  200000             800000             1200000            1800000
+//------------------------------------------------------------------------------
+// MVP Rank Experience
+// The experience each MVP rank receives.
+//   Rank 1: Experience given to the players of rank 1 when the siege ends.
+//   Rank 2: Experience given to the players of rank 2 when the siege ends.
+//   Rank 3: Experience given to the players of rank 3 when the siege ends.
+//   Rank 4: Experience given to the players of rank 4 when the siege ends.
+//   Rank 5: Experience given to the players of rank 5 when the siege ends.
+//------------------------------------------------------------------------------
+//  [0~10000000]    [0~10000000]    [0~10000000]    [0~10000000]    [0~10000000]
+//  Rank1           Rank2           Rank3           Rank4           Rank5
+//------------------------------------------------------------------------------
+    0               200000          800000          1200000         1800000
 end
 

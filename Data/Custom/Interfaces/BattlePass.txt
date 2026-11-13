@@ -1,131 +1,148 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 //	Battle Pass Configuration
-//	Section 0: Season Settings
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// ExpireDays: 
-//	-1: Season EndDate
-//	> 1: 
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//	[YYYY-MM-DD]	[YYYY-MM-DD]		[1-100]		[=========================================================== Premium Settings ===========================================================]
-//	StartDate		EndDate				MaxLevel	ItemType	ItemIndex	ItemLevel	ItemCount	Zen		WC		WP		GP		Ruud	MinLevel	MinReset	MinMasterReset	ExpireDays
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Season
+// The dates of the season, its last level and what the premium pass costs.
+//   Start date: First day of the season, YYYY-MM-DD.
+//   End date: Last day of the season, YYYY-MM-DD. The season ends at 23:59:59 of that day.
+//   Last level: Last level of the pass (1 to 100).
+//   Item: Item the player must hand over to buy the premium pass. -1 (with item index -1) asks for no item.
+//   Item level: Level the item must have.
+//   How many: How many of that item are taken.
+//   Zen: Price of the premium pass in this currency. 0 is free.
+//   WCoin C: Price of the premium pass in this currency. 0 is free.
+//   WCoin P: Price of the premium pass in this currency. 0 is free.
+//   Goblin Points: Price of the premium pass in this currency. 0 is free.
+//   Ruud: Price of the premium pass in this currency. 0 is free.
+//   Lowest level: Character level needed to buy the premium pass. -1 means no limit.
+//   Fewest resets: Resets needed to buy the premium pass. -1 means no limit.
+//   Fewest master resets: Master resets needed to buy the premium pass. -1 means no limit.
+//   Premium lasts (days): Days the premium pass lasts after buying it. 0 or less: until the end of the season.
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Text]        [Text]        [1~100]     [-1~15]     [-1~511]     [0~15]       [Number]     [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]          [Number]
+//  StartDate     EndDate       MaxLevel    ItemType    ItemIndex    ItemLevel    ItemCount    Zen         WC          WP          GP          Ruud        MinLevel    MinReset    MinMasterReset    ExpireDays
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 0
-	2026-07-01		2030-08-31			100			14			169			0			1			0		0		0		0		0		-1			-1			-1				-1		
+    2026-07-01    2030-08-31    100         14          169          0            1            0           0           0           0           0           -1          -1          -1                -1
 end
 
-//---------------------------------------------------------
-//	Section 1: Level Ranges
-//---------------------------------------------------------
-//	[1-100]		[1-9999999]
-//	Level		Required Points
-//---------------------------------------------------------
+//----------------------------------------------------------
+// Levels
+// The points needed to reach each level.
+//   Level: Pass level this row belongs to.
+//   Points needed: Experience needed to reach this level (unverified: whether it adds up or counts from zero).
+//----------------------------------------------------------
+//  [1~100]    [1~9999999]
+//  Level      Points
+//----------------------------------------------------------
 1
-	1			100
-	2           100
-	3           100
-	4           100
-	5           100
-	6           100
-	7           100
-	8           100
-	9           100
-	10          100
-	11          100
-	12          100
-	13          100
-	14          100
-	15          100
-	16          100
-	17          100
-	18          100
-	19          100
-	20          100
-	21          100
-	22          100
-	23          100
-	24          100
-	25          100
-	26          100
-	27          100
-	28          100
-	29          100
-	30          100
-	31          100
-	32          100
-	33          100
-	34          100
-	35          100
-	36          100
-	37          100
-	38          100
-	39          100
-	40          100
-	41          100
-	42          100
-	43          100
-	44          100
-	45          100
-	46          100
-	47          100
-	48          100
-	49          100
-	50          100
-	51          100
-	52          100
-	53          100
-	54          100
-	55          100
-	56          100
-	57          100
-	58          100
-	59          100
-	60          100
-	61          100
-	62          100
-	63          100
-	64          100
-	65          100
-	66          100
-	67          100
-	68          100
-	69          100
-	70          100
-	71          100
-	72          100
-	73          100
-	74          100
-	75          100
-	76          100
-	77          100
-	78          100
-	79          100
-	80          100
-	81          100
-	82          100
-	83          100
-	84          100
-	85          100
-	86          100
-	87          100
-	88          100
-	89          100
-	90          100
-	91          100
-	92          100
-	93          100
-	94          100
-	95          100
-	96          100
-	97          100
-	98          100
-	99          100
-	100         100
+    1          100
+    2          100
+    3          100
+    4          100
+    5          100
+    6          100
+    7          100
+    8          100
+    9          100
+    10         100
+    11         100
+    12         100
+    13         100
+    14         100
+    15         100
+    16         100
+    17         100
+    18         100
+    19         100
+    20         100
+    21         100
+    22         100
+    23         100
+    24         100
+    25         100
+    26         100
+    27         100
+    28         100
+    29         100
+    30         100
+    31         100
+    32         100
+    33         100
+    34         100
+    35         100
+    36         100
+    37         100
+    38         100
+    39         100
+    40         100
+    41         100
+    42         100
+    43         100
+    44         100
+    45         100
+    46         100
+    47         100
+    48         100
+    49         100
+    50         100
+    51         100
+    52         100
+    53         100
+    54         100
+    55         100
+    56         100
+    57         100
+    58         100
+    59         100
+    60         100
+    61         100
+    62         100
+    63         100
+    64         100
+    65         100
+    66         100
+    67         100
+    68         100
+    69         100
+    70         100
+    71         100
+    72         100
+    73         100
+    74         100
+    75         100
+    76         100
+    77         100
+    78         100
+    79         100
+    80         100
+    81         100
+    82         100
+    83         100
+    84         100
+    85         100
+    86         100
+    87         100
+    88         100
+    89         100
+    90         100
+    91         100
+    92         100
+    93         100
+    94         100
+    95         100
+    96         100
+    97         100
+    98         100
+    99         100
+    100        100
 end
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -143,116 +160,158 @@ end
 //	Level	Track	RewardType	[Class]		ItemType	ItemIndex	Level	Dur		Skill	Luck	Life	Exe		Acc		Harmony		380		|		 Socket 1 ~ 5 			|		Bonus	Count	Duration		WC		WP		GP		Ruud		Zen			BuffIndex	Value1	Value2	Time			//
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2
-// FREE
-	1		0		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	2		0		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	3		0		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	4		0		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	5		0		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	6		0		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	7		0		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Rewards
+// What each level gives on the free and the premium track: an item, coins, Ruud, Zen or a buff.
+//   Pass level: Pass level that gives this reward.
+//   Track: 0 Free | 1 Premium
+//   Reward: 0 Item | 1 Coins | 2 Ruud | 3 Zen | 4 Buff
+//   Item class: Class that gets the item. -1 means all.
+//   Ancient option: 0 None | 5 First type, tier 1 | 6 Second type, tier 1 | 9 First type, tier 2 | 10 Second type, tier 2
+//   Harmony option: Harmony option as stored in the item: 16 times the option (Index of JewelOfHarmonyOption.txt for the kind of item) plus its level (0 to 15). 0 none.
+//   380 option: 0 None | 128 380 option
+//   Socket 1: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket 2: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket 3: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket 4: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket 5: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket bonus: 255 no bonus, otherwise the Index of Bonus Options (SocketItemOption.txt). It is given as is, without checking the item.
+//   Lasts (minutes): Minutes the item lasts. 0 does not expire.
+//   Lasts (seconds): Seconds the buff lasts (unverified).
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [1~100]    [Number]    [Number]      [Number]    [*/0~15]    [*/0~511]    [0~15]       [0~255]    [Number]    [Number]    [0~7]     [0~63]       [Number]    [0~255]    [0~255]      [*/0~255]    [*/0~255]    [*/0~255]    [*/0~255]    [*/0~255]    [0~255]        [Number]    [Number]         [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [Number]      [Number]      [Number]
+//  Level      Track       RewardType    Class       ItemType    ItemIndex    ItemLevel    Dur        Skill       Luck        Option    Excellent    Ancient     Harmony    Option380    Socket1      Socket2      Socket3      Socket4      Socket5      SocketBonus    Quantity    ExpireMinutes    WC          WP          GP          Ruud        Zen         BuffIndex    BuffValue1    BuffValue2    BuffTime
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1          0           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    2          0           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    3          0           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    4          0           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    5          0           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    6          0           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    7          0           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
 
-// PREMIUM
-	1		1		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	2		1		0			*			14			11			7		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BOX OF HEAVEN
-	3		1		0			*			13			64			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		720				0		0		0		0			0			*			0		0		0				//PET DEMON 12 HORAS
-	4		1		0			*			14			13			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF BLESS	2		
-	5		1		0			*			13			47			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BLOOD TICKET	2
-	6		1		0			*			14			14			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF SOUL	2
-	7		1		0			*			13			46			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//DEVIL TICKET	2
-	8		1		0			*			14			16			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF LIFE	2
-	9		1		0			*			14			88			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//WHITE CHERRY	2
-	10		1		0			*			12			15			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL OF CHAOS	1
-	11		1		0			*			14			89			0		4		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//RED CHERRY	4	
-	12		1		0			*			14			110			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SIGN OF DIMENSIONS
-	13		1		0			*			14			90			0		8		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//GOLD CHERRY	8	
-	14		1		0			*			14			101			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SUS SCRAP OF PAPER
-	15		1		0			*			14			53			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TALISMAN OF LUCK
-	16		1		0			*			14			100			0		5		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//LUCKY COIN 5
-	17		1		0			*			14			180			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//KUNDUN BOX  
-	18		1		0			*			13			167			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL SHARD
-	19		1		0			*			14			56			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//PREMIUM BATTLEPASS BOX
-	20		1		0			*			14			475			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TCA PIECE
-	21		1		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	22		1		0			*			14			11			7		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BOX OF HEAVEN
-	23		1		0			*			13			64			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		720				0		0		0		0			0			*			0		0		0				//PET DEMON 12 HORAS
-	24		1		0			*			14			13			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF BLESS	2		
-	25		1		0			*			13			47			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BLOOD TICKET	2
-	26		1		0			*			14			14			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF SOUL	2
-	27		1		0			*			13			46			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//DEVIL TICKET	2
-	28		1		0			*			14			16			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF LIFE	2
-	29		1		0			*			14			88			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//WHITE CHERRY	2
-	30		1		0			*			12			15			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL OF CHAOS	1
-	31		1		0			*			14			89			0		4		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//RED CHERRY	4	
-	32		1		0			*			14			110			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SIGN OF DIMENSIONS
-	33		1		0			*			14			90			0		8		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//GOLD CHERRY	8	
-	34		1		0			*			14			101			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SUS SCRAP OF PAPER
-	35		1		0			*			14			53			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TALISMAN OF LUCK
-	36		1		0			*			14			100			0		5		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//LUCKY COIN 5
-	37		1		0			*			14			180			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//KUNDUN BOX  
-	38		1		0			*			13			167			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL SHARD
-	39		1		0			*			14			56			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//PREMIUM BATTLEPASS BOX
-	40		1		0			*			14			475			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TCA PIECE
-	41		1		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	42		1		0			*			14			11			7		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BOX OF HEAVEN
-	43		1		0			*			13			64			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		720				0		0		0		0			0			*			0		0		0				//PET DEMON 12 HORAS
-	44		1		0			*			14			13			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF BLESS	2		
-	45		1		0			*			13			47			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BLOOD TICKET	2
-	46		1		0			*			14			14			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF SOUL	2
-	47		1		0			*			13			46			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//DEVIL TICKET	2
-	48		1		0			*			14			16			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF LIFE	2
-	49		1		0			*			14			88			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//WHITE CHERRY	2
-	50		1		0			*			12			15			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL OF CHAOS	1
-	51		1		0			*			14			89			0		4		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//RED CHERRY	4	
-	52		1		0			*			14			110			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SIGN OF DIMENSIONS
-	53		1		0			*			14			90			0		8		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//GOLD CHERRY	8	
-	54		1		0			*			14			101			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SUS SCRAP OF PAPER
-	55		1		0			*			14			53			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TALISMAN OF LUCK
-	56		1		0			*			14			100			0		5		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//LUCKY COIN 5
-	57		1		0			*			14			180			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//KUNDUN BOX  
-	58		1		0			*			13			167			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL SHARD
-	59		1		0			*			14			56			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//PREMIUM BATTLEPASS BOX
-	60		1		0			*			14			475			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TCA PIECE
-	61		1		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	62		1		0			*			14			11			7		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BOX OF HEAVEN
-	63		1		0			*			13			64			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		720				0		0		0		0			0			*			0		0		0				//PET DEMON 12 HORAS
-	64		1		0			*			14			13			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF BLESS	2		
-	65		1		0			*			13			47			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BLOOD TICKET	2
-	66		1		0			*			14			14			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF SOUL	2
-	67		1		0			*			13			46			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//DEVIL TICKET	2
-	68		1		0			*			14			16			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF LIFE	2
-	69		1		0			*			14			88			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//WHITE CHERRY	2
-	70		1		0			*			12			15			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL OF CHAOS	1
-	71		1		0			*			14			89			0		4		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//RED CHERRY	4	
-	72		1		0			*			14			110			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SIGN OF DIMENSIONS
-	73		1		0			*			14			90			0		8		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//GOLD CHERRY	8	
-	74		1		0			*			14			101			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SUS SCRAP OF PAPER
-	75		1		0			*			14			53			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TALISMAN OF LUCK
-	76		1		0			*			14			100			0		5		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//LUCKY COIN 5
-	77		1		0			*			14			180			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//KUNDUN BOX  
-	78		1		0			*			13			167			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL SHARD
-	79		1		0			*			14			56			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//PREMIUM BATTLEPASS BOX
-	80		1		0			*			14			475			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TCA PIECE
-	81		1		3			*			*			*			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		0		0				0		0		0		0			5000000		*			0		0		0				//ZEN 5KK
-	82		1		0			*			14			11			7		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BOX OF HEAVEN
-	83		1		0			*			13			64			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		720				0		0		0		0			0			*			0		0		0				//PET DEMON 12 HORAS
-	84		1		0			*			14			13			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF BLESS	2		
-	85		1		0			*			13			47			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//BLOOD TICKET	2
-	86		1		0			*			14			14			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF SOUL	2
-	87		1		0			*			13			46			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//DEVIL TICKET	2
-	88		1		0			*			14			16			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		2		0				0		0		0		0			0			*			0		0		0				//JEWEL OF LIFE	2
-	89		1		0			*			14			88			0		2		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//WHITE CHERRY	2
-	90		1		0			*			12			15			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL OF CHAOS	1
-	91		1		0			*			14			89			0		4		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//RED CHERRY	4	
-	92		1		0			*			14			110			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SIGN OF DIMENSIONS
-	93		1		0			*			14			90			0		8		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//GOLD CHERRY	8	
-	94		1		0			*			14			101			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//SUS SCRAP OF PAPER
-	95		1		0			*			14			53			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TALISMAN OF LUCK
-	96		1		0			*			14			100			0		5		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//LUCKY COIN 5
-	97		1		0			*			14			180			0		0		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//KUNDUN BOX  
-	98		1		0			*			13			167			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//JEWEL SHARD
-	99		1		0			*			14			56			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//PREMIUM BATTLEPASS BOX
-	100		1		0			*			14			475			0		1		0		0		0		0		0		0			0		*		*		*		*		*		0		1		0				0		0		0		0			0			*			0		0		0				//TCA PIECE
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Rewards
+// What each level gives on the free and the premium track: an item, coins, Ruud, Zen or a buff.
+//   Pass level: Pass level that gives this reward.
+//   Track: 0 Free | 1 Premium
+//   Reward: 0 Item | 1 Coins | 2 Ruud | 3 Zen | 4 Buff
+//   Item class: Class that gets the item. -1 means all.
+//   Ancient option: 0 None | 5 First type, tier 1 | 6 Second type, tier 1 | 9 First type, tier 2 | 10 Second type, tier 2
+//   Harmony option: Harmony option as stored in the item: 16 times the option (Index of JewelOfHarmonyOption.txt for the kind of item) plus its level (0 to 15). 0 none.
+//   380 option: 0 None | 128 380 option
+//   Socket 1: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket 2: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket 3: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket 4: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket 5: 255 no socket, 254 an empty socket, otherwise the option number (the Index of Socket Options, 0 to 49) plus 50 times its level (0 to 4). Given as is, without checking that the item takes sockets.
+//   Socket bonus: 255 no bonus, otherwise the Index of Bonus Options (SocketItemOption.txt). It is given as is, without checking the item.
+//   Lasts (minutes): Minutes the item lasts. 0 does not expire.
+//   Lasts (seconds): Seconds the buff lasts (unverified).
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [1~100]    [Number]    [Number]      [Number]    [*/0~15]    [*/0~511]    [0~15]       [0~255]    [Number]    [Number]    [0~7]     [0~63]       [Number]    [0~255]    [0~255]      [*/0~255]    [*/0~255]    [*/0~255]    [*/0~255]    [*/0~255]    [0~255]        [Number]    [Number]         [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [Number]      [Number]      [Number]
+//  Level      Track       RewardType    Class       ItemType    ItemIndex    ItemLevel    Dur        Skill       Luck        Option    Excellent    Ancient     Harmony    Option380    Socket1      Socket2      Socket3      Socket4      Socket5      SocketBonus    Quantity    ExpireMinutes    WC          WP          GP          Ruud        Zen         BuffIndex    BuffValue1    BuffValue2    BuffTime
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1          1           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    2          1           0             *           14          11           7            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BOX OF HEAVEN
+    3          1           0             *           13          64           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           720              0           0           0           0           0           *            0             0             0           //PET DEMON 12 HORAS
+    4          1           0             *           14          13           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF BLESS	2
+    5          1           0             *           13          47           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BLOOD TICKET	2
+    6          1           0             *           14          14           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF SOUL	2
+    7          1           0             *           13          46           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //DEVIL TICKET	2
+    8          1           0             *           14          16           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF LIFE	2
+    9          1           0             *           14          88           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //WHITE CHERRY	2
+    10         1           0             *           12          15           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL OF CHAOS	1
+    11         1           0             *           14          89           0            4          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //RED CHERRY	4
+    12         1           0             *           14          110          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SIGN OF DIMENSIONS
+    13         1           0             *           14          90           0            8          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //GOLD CHERRY	8
+    14         1           0             *           14          101          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SUS SCRAP OF PAPER
+    15         1           0             *           14          53           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TALISMAN OF LUCK
+    16         1           0             *           14          100          0            5          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //LUCKY COIN 5
+    17         1           0             *           14          180          0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //KUNDUN BOX
+    18         1           0             *           13          167          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL SHARD
+    19         1           0             *           14          56           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //PREMIUM BATTLEPASS BOX
+    20         1           0             *           14          475          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TCA PIECE
+    21         1           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    22         1           0             *           14          11           7            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BOX OF HEAVEN
+    23         1           0             *           13          64           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           720              0           0           0           0           0           *            0             0             0           //PET DEMON 12 HORAS
+    24         1           0             *           14          13           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF BLESS	2
+    25         1           0             *           13          47           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BLOOD TICKET	2
+    26         1           0             *           14          14           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF SOUL	2
+    27         1           0             *           13          46           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //DEVIL TICKET	2
+    28         1           0             *           14          16           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF LIFE	2
+    29         1           0             *           14          88           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //WHITE CHERRY	2
+    30         1           0             *           12          15           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL OF CHAOS	1
+    31         1           0             *           14          89           0            4          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //RED CHERRY	4
+    32         1           0             *           14          110          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SIGN OF DIMENSIONS
+    33         1           0             *           14          90           0            8          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //GOLD CHERRY	8
+    34         1           0             *           14          101          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SUS SCRAP OF PAPER
+    35         1           0             *           14          53           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TALISMAN OF LUCK
+    36         1           0             *           14          100          0            5          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //LUCKY COIN 5
+    37         1           0             *           14          180          0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //KUNDUN BOX
+    38         1           0             *           13          167          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL SHARD
+    39         1           0             *           14          56           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //PREMIUM BATTLEPASS BOX
+    40         1           0             *           14          475          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TCA PIECE
+    41         1           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    42         1           0             *           14          11           7            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BOX OF HEAVEN
+    43         1           0             *           13          64           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           720              0           0           0           0           0           *            0             0             0           //PET DEMON 12 HORAS
+    44         1           0             *           14          13           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF BLESS	2
+    45         1           0             *           13          47           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BLOOD TICKET	2
+    46         1           0             *           14          14           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF SOUL	2
+    47         1           0             *           13          46           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //DEVIL TICKET	2
+    48         1           0             *           14          16           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF LIFE	2
+    49         1           0             *           14          88           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //WHITE CHERRY	2
+    50         1           0             *           12          15           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL OF CHAOS	1
+    51         1           0             *           14          89           0            4          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //RED CHERRY	4
+    52         1           0             *           14          110          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SIGN OF DIMENSIONS
+    53         1           0             *           14          90           0            8          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //GOLD CHERRY	8
+    54         1           0             *           14          101          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SUS SCRAP OF PAPER
+    55         1           0             *           14          53           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TALISMAN OF LUCK
+    56         1           0             *           14          100          0            5          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //LUCKY COIN 5
+    57         1           0             *           14          180          0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //KUNDUN BOX
+    58         1           0             *           13          167          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL SHARD
+    59         1           0             *           14          56           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //PREMIUM BATTLEPASS BOX
+    60         1           0             *           14          475          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TCA PIECE
+    61         1           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    62         1           0             *           14          11           7            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BOX OF HEAVEN
+    63         1           0             *           13          64           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           720              0           0           0           0           0           *            0             0             0           //PET DEMON 12 HORAS
+    64         1           0             *           14          13           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF BLESS	2
+    65         1           0             *           13          47           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BLOOD TICKET	2
+    66         1           0             *           14          14           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF SOUL	2
+    67         1           0             *           13          46           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //DEVIL TICKET	2
+    68         1           0             *           14          16           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF LIFE	2
+    69         1           0             *           14          88           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //WHITE CHERRY	2
+    70         1           0             *           12          15           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL OF CHAOS	1
+    71         1           0             *           14          89           0            4          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //RED CHERRY	4
+    72         1           0             *           14          110          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SIGN OF DIMENSIONS
+    73         1           0             *           14          90           0            8          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //GOLD CHERRY	8
+    74         1           0             *           14          101          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SUS SCRAP OF PAPER
+    75         1           0             *           14          53           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TALISMAN OF LUCK
+    76         1           0             *           14          100          0            5          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //LUCKY COIN 5
+    77         1           0             *           14          180          0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //KUNDUN BOX
+    78         1           0             *           13          167          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL SHARD
+    79         1           0             *           14          56           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //PREMIUM BATTLEPASS BOX
+    80         1           0             *           14          475          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TCA PIECE
+    81         1           3             *           *           *            0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              0           0                0           0           0           0           5000000     *            0             0             0           //ZEN 5KK
+    82         1           0             *           14          11           7            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BOX OF HEAVEN
+    83         1           0             *           13          64           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           720              0           0           0           0           0           *            0             0             0           //PET DEMON 12 HORAS
+    84         1           0             *           14          13           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF BLESS	2
+    85         1           0             *           13          47           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //BLOOD TICKET	2
+    86         1           0             *           14          14           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF SOUL	2
+    87         1           0             *           13          46           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //DEVIL TICKET	2
+    88         1           0             *           14          16           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              2           0                0           0           0           0           0           *            0             0             0           //JEWEL OF LIFE	2
+    89         1           0             *           14          88           0            2          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //WHITE CHERRY	2
+    90         1           0             *           12          15           0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL OF CHAOS	1
+    91         1           0             *           14          89           0            4          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //RED CHERRY	4
+    92         1           0             *           14          110          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SIGN OF DIMENSIONS
+    93         1           0             *           14          90           0            8          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //GOLD CHERRY	8
+    94         1           0             *           14          101          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //SUS SCRAP OF PAPER
+    95         1           0             *           14          53           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TALISMAN OF LUCK
+    96         1           0             *           14          100          0            5          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //LUCKY COIN 5
+    97         1           0             *           14          180          0            0          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //KUNDUN BOX
+    98         1           0             *           13          167          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //JEWEL SHARD
+    99         1           0             *           14          56           0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //PREMIUM BATTLEPASS BOX
+    100        1           0             *           14          475          0            1          0           0           0         0            0           0          0            *            *            *            *            *            0              1           0                0           0           0           0           0           *            0             0             0           //TCA PIECE
 end	
 
 //-------------------------------------------------------------------------

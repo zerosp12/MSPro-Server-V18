@@ -1,112 +1,175 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------------------------
-//	[0-1]		[1~10]			[2~10]		[1~30]			[1~30]				[0~1]					
-//	Enabled		MinGuilds		MaxGuilds	MinGuildUsers	MaxGuildUsers		RemovePointsWhenDie		
-//---------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------------
+// Guilds
+// Switch and size of the battle.
+//   Event is on: 1 turns the event on, 0 off.
+//   Guilds needed: Fewest guilds (with enough players) needed for the battle to start; with fewer the event is cancelled.
+//   Guilds allowed: Most guilds that fight; the ones that came last are sent out.
+//   Players per guild, at least: Fewest players a guild needs inside to take part; smaller guilds are sent out.
+//   Players per guild, at most: Most players of one guild that can enter.
+//   Take the points away when the player dies: 1 makes a player lose all his points when he dies (they are also taken away from his guild).
+//--------------------------------------------------------------------------------------------
+//  [0~1]      [1~10]       [2~10]       [1~30]           [1~30]           [0~1]
+//  Enabled    MinGuilds    MaxGuilds    MinGuildUsers    MaxGuildUsers    RemovePointsWhenDie
+//--------------------------------------------------------------------------------------------
 0
-	1			2				10			1				10					1						
+    1          2            10           1                10               1
 end
 
-//--------------------------------------------------------------
-// Event Times
-//--------------------------------------------------------------
-//	[Seconds]		[Minutes]		[Seconds]
-//	WaitTime		BattleTime		FinishTime
-//--------------------------------------------------------------
+//----------------------------------------------------------
+// Timing
+// The times of one battle.
+//   Waiting room (seconds): Seconds in the waiting area before the battle starts.
+//   Battle (minutes): Minutes the battle lasts.
+//   Closing (seconds): Seconds after the battle before everyone is moved out.
+//----------------------------------------------------------
+//  WaitTime    BattleTime    FinishTime
+//----------------------------------------------------------
 1
-	10				3				10
+    10          3             10
 end
 
-//---------------------------------------------------------------------------------------------------
-// Enter Requirements                                                                
-//---------------------------------------------------------------------------------------------------
-//	[*/0~15]	[*/0~511]	[0~15]		[0~99]		[0/1]			[0~6]       [0/1]			
-//	ItemType	ItemIndex	ItemLevel	ItemCount	ItemAllUsers	MaxPKLevel  DisolveParty	
-//---------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------
+// Who Can Enter
+// What a player needs to enter the waiting area. The player must have a guild.
+//   Required item: Item category of the item that is taken when entering. * asks for no item.
+//   Required item index: Item index of the item that is taken when entering. * asks for no item.
+//   Item level: Level of the item asked for.
+//   How many: How many of that item are taken from each player.
+//   Every player pays it: Sent to the client window; the server does not check it (unverified).
+//   Highest PK level allowed: Not used by the server for this event (unverified).
+//   Break up the party on entry: 1 removes the player from his party when he enters.
+//-----------------------------------------------------------------------------------------------
+//  [*/0~15]    [*/0~511]    [0~15]       [0~99]       [Number]        [0~6]         [Number]
+//  ItemType    ItemIndex    ItemLevel    ItemCount    ItemAllUsers    MaxPKLevel    DisolveParty
+//-----------------------------------------------------------------------------------------------
 2
-	12			15			0			1			1				3           1				
+    12          15           0            1            1               3             1
 end
 
-//----------------------------------------------------------------------
-// 	Teleport
-//----------------------------------------------------------------------
-//	[1~4]	[0~199]		[0~254]		[0~254]		[0~254]		[0~254]
-//	Index	Map			X1    		Y1			X2			Y2
-//----------------------------------------------------------------------
+//--------------------------------------------------------------
+// Battle Zones
+// Areas of the battle (a rectangle on a map). Add several Respawn rows: each guild is given a different one at random.
+//   Zone: 0 Waiting Area | 1 Battle Area | 2 Respawn Area | 3 End Area
+//   Map: Map of the area.
+//   Left side: Left side of the area.
+//   Top side: Top side of the area.
+//   Right side: Right side of the area.
+//   Bottom side: Bottom side of the area.
+//--------------------------------------------------------------
+//  [0~3]    [0~199]    [0~254]    [0~254]    [0~254]    [0~254]
+//  Zone     Map        X1         Y1         X2         Y2
+//--------------------------------------------------------------
 3
-	0		0			140			123			148			132			//Waiting Area
-	1		0			140			123			148			132			//Battle Area
-	2		0			140			123			148			132			//Respawn Area [1]
-	2		0			140			123			148			132			//Respawn Area [2]
-	2		0			140			123			148			132			//Respawn Area [3]
-	2		0			140			123			148			132			//Respawn Area [4]
-	2		0			140			123			148			132			//Respawn Area [5]
-	2		0			140			123			148			132			//Respawn Area [6]
-	2		0			140			123			148			132			//Respawn Area [7]
-	2		0			140			123			148			132			//Respawn Area [8]
-	3		2			220			40			225			45			//End Area
+    0        0          140        123        148        132        //Waiting Area
+    1        0          140        123        148        132        //Battle Area
+    2        0          140        123        148        132        //Respawn Area [1]
+    2        0          140        123        148        132        //Respawn Area [2]
+    2        0          140        123        148        132        //Respawn Area [3]
+    2        0          140        123        148        132        //Respawn Area [4]
+    2        0          140        123        148        132        //Respawn Area [5]
+    2        0          140        123        148        132        //Respawn Area [6]
+    2        0          140        123        148        132        //Respawn Area [7]
+    2        0          140        123        148        132        //Respawn Area [8]
+    3        2          220        40         225        45         //End Area
 end
 
-//-----------------------------------------------------------------------------------------------------------------
-//	[*/N]  		[*/0~12]		[*/0~31]		[*/1~7]			[*/0~23]		[*/0~59]		[*/0~59]
-//	Year   		Month			Day				DoW				Hour			Minute			Second   	Comment
-//-----------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+// Schedule
+// When the event opens. The second is not used: it starts on the minute.
+//   Year: The year when the event opens. * means every year.
+//   Month: The month when the event opens. * means every month.
+//   Day: The day of the month when the event opens. * means every day of the month.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour when the event opens. * means every hour.
+//   Minute: The minute when the event opens. * means every minute.
+//   Second: The second when the event opens. * means every second.
+//----------------------------------------------------------------------------------------
+//  [*/1970~9999]    [*/1~12]    [*/1~31]    [*/1~7]      [*/0~23]    [*/0~59]    [*/0~59]
+//  Year             Month       Day         DayOfWeek    Hour        Minute      Second
+//----------------------------------------------------------------------------------------
 4
-	*			*				*				*				15				0				0			//
+    *                *           *           *            15          0           0           //
 end
 
-//-----------------------------------------------------------------------------------------------------------------
-//	Reward Winner Guild
-//-----------------------------------------------------------------------------------------------------------------
-//										[-1 / 0 ~ 999]		[-1 / 1~255]	[Seconds]
-//	WC		WP		GP		Ruuds		ItemBag				Buff			BuffTime	Val1	Val2
-//-----------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------
+// Winner Guild Reward
+// Prize for every player of the winning guild (the guild with the most points).
+//   WCoin C: WCoin C given to each player of the winning guild. 0 gives none.
+//   WCoin P: WCoin P given to each player of the winning guild. 0 gives none.
+//   Goblin Points: Goblin Points given to each player of the winning guild. 0 gives none.
+//   Ruud: Ruud given to each player of the winning guild. 0 gives none.
+//   Item Bag: Item bag dropped for each player of the winning guild. * gives none.
+//   Buff: Effect (Effect.txt) given as a buff. * or 0 gives none.
+//   Buff time (minutes): Minutes the buff lasts (the server multiplies it by 60, so the value is in minutes, not seconds).
+//   Buff value 1: First power value of the buff (see the effect).
+//   Buff value 2: Second power value of the buff (see the effect).
+//------------------------------------------------------------------------------------------------------------------------------
+//  [0~999999999]    [0~999999999]    [0~999999999]    [0~999999999]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  WC               WP               GP               Ruuds            ItemBag     Buff        BuffTime    Val1        Val2
+//------------------------------------------------------------------------------------------------------------------------------
 5
-	9		0		0		0			*					*				0			0		0
+    9                0                0                0                *           *           0           0           0
 end
 
-//-----------------------------------------------------------------------------------------------------------------
-//	Guild Kill Ranking Rewards
-//-----------------------------------------------------------------------------------------------------------------
-//	Top		WC		WP		GP		Ruuds		ItemBag
-//-----------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------
+// Guild Ranking Rewards
+// Prizes for the other guilds by their position. The winner uses the part above, so start at position 2. Every player of the guild gets it.
+//   Position: Position of the guild in the ranking (2 is second place).
+//   WCoin C: WCoin C given to each player of that guild. 0 gives none.
+//   WCoin P: WCoin P given to each player of that guild. 0 gives none.
+//   Goblin Points: Goblin Points given to each player of that guild. 0 gives none.
+//   Ruud: Ruud given to each player of that guild. 0 gives none.
+//   Item Bag: Item bag dropped for each player of that guild. * gives none.
+//-----------------------------------------------------------------------------------------
+//  [1~100]    [0~999999999]    [0~999999999]    [0~999999999]    [0~999999999]    [Number]
+//  Top        WC               WP               GP               Ruuds            ItemBag
+//-----------------------------------------------------------------------------------------
 6
-	2		8		0		0		0			*
+    2          8                0                0                0                *
 end
 
 
-//-----------------------------------------------------------------------------------------------------------------
-//	Reward Kill Ranking Rewards
-//-----------------------------------------------------------------------------------------------------------------
-//	Top		WC		WP		GP		Ruuds		ItemBag
-//-----------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------
+// Player Ranking Rewards
+// Prizes for the players with the most points (individual ranking).
+//   Position: Position of the player in the ranking (1 is the best player).
+//   WCoin C: WCoin C given to that player. 0 gives none.
+//   WCoin P: WCoin P given to that player. 0 gives none.
+//   Goblin Points: Goblin Points given to that player. 0 gives none.
+//   Ruud: Ruud given to that player. 0 gives none.
+//   Item Bag: Item bag dropped for that player. * gives none.
+//-----------------------------------------------------------------------------------------
+//  [1~100]    [0~999999999]    [0~999999999]    [0~999999999]    [0~999999999]    [Number]
+//  Top        WC               WP               GP               Ruuds            ItemBag
+//-----------------------------------------------------------------------------------------
 7
-	1		8		0		0		0			*
-	2		6		0		0		0			*
-	3		4		0		0		0			*
+    1          8                0                0                0                *
+    2          6                0                0                0                *
+    3          4                0                0                0                *
 end
 
 
 //-----------------------------------------------------------------------------------------------------------------
 //	Kill Points
 //-----------------------------------------------------------------------------------------------------------------
-//	Range
-//		1: Guild Master
-//		2: Battle Master
-//		3: Battle Assitant
-//		4: Member
-//-----------------------------------------------------------------------------------------------------------------
-//	[1-4]
-//	Range		Points
-//-----------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------
+// Kill Points
+// Points a kill gives, by the rank of the player killed in his guild.
+//   Killed player's rank: 1 Guild Master | 2 Assistant Guild Master | 3 Battle Master | 4 Member
+//   Points: Points the killer gets for killing a player of that rank.
+//----------------------------------------------------------
+//  Range    Points
+//----------------------------------------------------------
 8
-	1			10
-	2			8
-	3			8
-	4			5
+    1        10
+    2        8
+    3        8
+    4        5
 end

@@ -1,29 +1,45 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-// NPC Settings
-//--------------------------------------------------------------------------------------------------------------------------------------------------
-//	Monster: 	Index from Monster/Monster.txt
-//	Style: 		9 - Exchange Thing -> Thing
-//--------------------------------------------------------------------------------------------------------------------------------------------------
-// 	[0~2000]	[ X ]		[ -1 / 0~3 ]	[  -1 / 1~1000  ]		[  -1/0~99999   ] 	[   -1/0~99999    ]		[-1 / 0~6] 	[-1 / 0~100]
-// 	Monster		Style		AccountLevel	MinLevel MaxLevel		MinReset MaxReset 	MinMReset MaxMReset		PKLevel    	RankUser
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// Settings
+// Which NPC it is, what it does and who may use it.
+//   NPC: The NPC players talk to.
+//   Type: Free Access files carry one more value after the type (turn the NPC window off). The panel does not show it.
+//   Min. Account Level: -1 Any | 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Lowest level: The lowest character level that can use it.
+//   Highest level: The highest character level that can use it.
+//   Fewest resets: The fewest resets a character can have to use it.
+//   Most resets: The most resets a character can have to use it.
+//   Fewest master resets: The fewest master resets a character can have to use it.
+//   Most master resets: The most master resets a character can have to use it.
+//   Highest PK level: The highest PK level that can use it (6 is the worst; the server does not accept more than 6).
+//   Lowest user rank: The lowest user rank that can use it.
+//----------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [0~3]           [Number]    [Number]    [Number]    [Number]    [Number]     [Number]     [Number]    [Number]
+//  Npc         Style       AccountLevel    MinLevel    MaxLevel    MinReset    MaxReset    MinMReset    MaxMReset    PkLevel     RankUser
+//----------------------------------------------------------------------------------------------------------------------------------------
 0
-	256			9			-1				-1		-1		  		-1	  	-1			-1	      -1			-1	     	-1	
+    256         9           -1              -1          -1          -1          -1          -1           -1           -1          -1
 end
 
-//----------------------------------------------------
-//	Maps (Allow multiple Locations)
-//----------------------------------------------------
-// 	[0 ~ 255]	[1 ~ 255]	[1 ~ 255]	[0 ~ 8]
-// 	Map			X			Y			Dir
-//----------------------------------------------------
+//----------------------------------------------------------
+// Locations
+// Where the NPC stands. Several places are allowed; none leaves the NPC off the map.
+//   Map: The map where the NPC stands.
+//   X: Column where the NPC stands.
+//   Y: Row where the NPC stands.
+//   Direction: The way the NPC faces, 0 to 8.
+//----------------------------------------------------------
+//  [0~255]    [1~255]    [1~255]    [0~8]
+//  Map        X          Y          Dir
+//----------------------------------------------------------
 1
-	2			210			52			2
+    2          210        52         2
 end
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
@@ -38,15 +54,24 @@ end
 //		04 - GP
 //		05 - Ruud
 //		06 - Zen
-//		07 - LevelPoints
-//		08 - VIP(Only Type 7)
-//		09 - Level   
-//		10 - ItemBag
-//		11 - VIP Days
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//  [-1 ~ X]  		[0~999999]			[-1 ~ X]   		[0~999999]			[-1 ~ X] 		[0~999999]		[-1 ~ X]    	[0~999999]		[-1 ~ X] 		[0~999999]		[-1 ~ X]	[0~999999] 
-//	RequireType		Value				Reward-1		Value-1				Reward-2		Value-2			Reward-3		Value-3			Reward-4		Value-4	   		Reward-5	Value-5
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+// Value for Value
+// A value the player pays and up to five values the player receives.
+//   Amount taken: How much of that value the player pays.
+//   Reward 1: What the player receives in reward slot 1. Nothing leaves the slot empty.
+//   Reward 1 amount: How much of that value the player receives in slot 1.
+//   Reward 2: What the player receives in reward slot 2. Nothing leaves the slot empty.
+//   Reward 2 amount: How much of that value the player receives in slot 2.
+//   Reward 3: What the player receives in reward slot 3. Nothing leaves the slot empty.
+//   Reward 3 amount: How much of that value the player receives in slot 3.
+//   Reward 4: What the player receives in reward slot 4. Nothing leaves the slot empty.
+//   Reward 4 amount: How much of that value the player receives in slot 4.
+//   Reward 5: What the player receives in reward slot 5. Nothing leaves the slot empty.
+//   Reward 5 amount: How much of that value the player receives in slot 5.
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~999999]    [Number]    [0~999999]    [Number]    [0~999999]    [Number]    [0~999999]    [Number]    [0~999999]    [Number]    [0~999999]
+//  ReqType     ReqValue      Rew1Type    Rew1Value     Rew2Type    Rew2Value     Rew3Type    Rew3Value     Rew4Type    Rew4Value     Rew5Type    Rew5Value
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
 9
-	7				100000				3				100					4				100				5				100				-1				0				-1	    	0
+    7           100000        3           100           4           100           5           100           -1          0             -1          0
 end

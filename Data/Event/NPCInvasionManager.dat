@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
 //-----------------------
 // NPC Invasion Manager.
@@ -16,36 +17,54 @@ end
 
 
 1
-//==============
-// [Ref-1]
-//==============
-// All Server: 	 1 All Server / 0 Only Invoque Map.
-//-------------------------------------------------------------
-//		  [   Message List Index 3   ]
-// [1~100][1~6500][1~6500][0~1][Ref-1] [InSec]  [1~99]
-// ID	  Appears	GoodBye AllServer  DurTime  OpenCount Comment
-//-------------------------------------------------------------
-   1	  1		    2		1		   10		1	      // NPC Shop
+//----------------------------------------------------------------------
+// Messages and Time
+// The messages of each invasion (numbers of the list in the last part), how long it lasts and how many times it opens.
+//   Invasion: The invasion these settings belong to.
+//   Message when it appears: The number of the message (in the last part) shown when the NPC appears.
+//   Message when it leaves: The number of the message (in the last part) shown when the NPC leaves.
+//   Announced in: 0 Only the map where it appears | 1 The whole server
+//   Lasts (seconds): Seconds the NPC stays before it leaves.
+//   Times it opens: How many times players can use the NPC before it is closed. Empty or -1 means no limit.
+//----------------------------------------------------------------------
+//  [1~99]    [1~6500]    [1~6500]    [Number]     [Number]    [1~99]
+//  ID        Appears     GoodBye     AllServer    DurTime     OpenCount
+//----------------------------------------------------------------------
+    1         1           2           1            10          1            // NPC Shop
 end
 
 
 2
-//----------------------------
-// Monster Respawn Settings.
-//---------------------------------------------------------------------------
-// [1~100] [0~99]  [Monster.txt] [1~114] [   0~255  ]     [-1/0~6]  [-1/1~999]
-// ID	   Group   NPCId		 Map	 X	Y	X2 Y2	  Dir	    NPCManager
-//---------------------------------------------------------------------------
-   1	   0	   380			 0	     140	120	140		120	  3		11
+//---------------------------------------------------------------------------------------------------------------
+// NPC Respawn
+// Where each NPC appears.
+//   Invasion: The invasion this NPC belongs to.
+//   Group: Each group spawns one NPC: one of its rows, picked at random. Several rows in the same group are different places the NPC can appear.
+//   NPC: The NPC (or monster) that appears.
+//   Map: The map where it appears.
+//   From X: Left edge of the area where it appears; the exact spot is picked at random inside the area.
+//   From Y: Top edge of the area where it appears.
+//   To X: Right edge of the area where it appears.
+//   To Y: Bottom edge of the area where it appears.
+//   Direction: The way the NPC faces. Random picks one each time.
+//   NPC Manager file: The number of the file in NPCManager that makes this NPC work.
+//---------------------------------------------------------------------------------------------------------------
+//  [1~99]    [0~19]    [Number]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [*/0~6]    [Number]
+//  ID        Group     NPC         Map         X          Y          X2         Y2         Dir        NPCManager
+//---------------------------------------------------------------------------------------------------------------
+    1         0         380         0           140        120        140        120        3          11
 end
 
 
 3
-//--------------------
+//----------------------------------------------------------
 // Message List
-//------------------------------------
-// 	Index	Message [Max 60 letters]
-//------------------------------------
-	1	    "Aparecio a buscarlo!!!"
-	2	    "Se fue el npc!!!"
+// The texts of the invasion messages (up to 60 characters).
+//   Number: The number the messages part of the invasion points to.
+//   Message: Up to 60 characters.
+//----------------------------------------------------------
+//  Index    Message
+//----------------------------------------------------------
+    1        "Aparecio a buscarlo!!!"
+    2        "Se fue el npc!!!"
 end

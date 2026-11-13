@@ -1,18 +1,25 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//-----------------------------------------------------------------------------------------------------------------
-// Ranking ingame (F8)
-// [0~29]       [VisualName]
-// RankIndex    Name              Columna 1       Columna 2	 
-//-----------------------------------------------------------------------------------------------------------------
-   0            "Geral"           "Personaje:"    "Master Resets:"
-   1            "Reset"           "Personaje:"    "Resets:"
-   2            "Level"           "Personaje:"    "Level:"
-   3            "Blood Castle"    "Personaje:"    "Puntos:"
-   4            "Devil Square"    "Personaje:"    "Puntos:"
+//----------------------------------------------------------
+// Ranking Tabs
+// One row per tab. Tabs are numbered from 0 with no gaps; the window shows as many tabs as rows (up to 20).
+//   Tab: Number of the tab (0 to 19). Use 0, 1, 2, 3... in order: the database list is chosen by this number.
+//   Tab name: Name of the tab (up to 19 characters).
+//   First column title: Title of the first column, usually the character (up to 19 characters).
+//   Second column title: Title of the second column, usually the value ranked (up to 19 characters).
+//----------------------------------------------------------
+//  [0~19]       [Text]            [Text]          [Text]
+//  RankIndex    Name              Column1         Column2
+//----------------------------------------------------------
+    0            "Geral"           "Personaje:"    "Master Resets:"
+    1            "Reset"           "Personaje:"    "Resets:"
+    2            "Level"           "Personaje:"    "Level:"
+    3            "Blood Castle"    "Personaje:"    "Puntos:"
+    4            "Devil Square"    "Personaje:"    "Puntos:"
 end

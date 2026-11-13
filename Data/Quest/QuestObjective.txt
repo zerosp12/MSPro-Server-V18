@@ -1,71 +1,677 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//==================================================================================================================================================================================
-//-> Type 1  = Exp   - Index = monster
-//-> Type 2  = Zen
-//-> Type 4  = Item  - Index = item x 512
-//==================================================================================================================================================================================
-//Number   Type   Index   Quantity   	Level   Option1   Option2   Option3   NewOption   DropMinLevel   DropMaxLevel   ItemDropRate   RequireIndex   RequireState   DW      DK      FE      MG      DL      SU      RF      GL
-//Change Class 1 - Step 1
-0          2      0       10000			0       0         0         0         0           *              *              *              0              0              1       1       1       0       0       1       0	0
-0          2      0       10000			0       0         0         0         0           *              *              *              0              3              1       1       1       0       0       1       0	0
-//Scroll of the Emperor
-0          1      7191    1				0       0         0         0         0           45             60             450            0              1              1       1       1       0       0       1       0	0
-//Change Class 1 - Step 2
-0          2      0       20000			0       0         0         0         0           *              *              *              1              0              1       1       1       0       0       1       0	0
-0          2      0       20000			0       0         0         0         0           *              *              *              1              3              1       1       1       0       0       1       0	0
-//Broken Sword
-0          1      7192    1				0       0         0         0         0           62             76             350            1              1              0       1       0       0       0       0       0	0
-//Tear of Elf
-0          1      7193    1				0       0         0         0         0           62             76             350            1              1              0       0       1       0       0       0       0	0
-//Soul Shard of Wizard
-0          1      7194    1				0       0         0         0         0           62             76             350            1              1              1       0       0       0       0       0       0	0
-//Abyssal Eye
-0          1      7236    1				0       0         0         0         0           62             76             350            1              1              0       0       0       0       0       1       0	0
-//==================================================================================================================================================================================
-//Marlon Step 1
-0          2      0       30000			0       0         0         0         0           *              *              *              2              0              2       2       2       0       0       2       0	0
-0          2      0       30000   		0       0         0         0         0           *              *              *              2              3              2       2       2       0       0       2       0	0
-//Ring Of Honor
-0          1      7191    1				1       0         0         0         0           72             108            300            2              1              2       2       2       0       0       2       0	0
-//==================================================================================================================================================================================
-//Marlon Step 2 (Custom Combo)
-0          2      0       20000			0       0         0         0         0           *              *              *              3              0              2       2       2       0       0       2       0	0
-0          2      0       20000			0       0         0         0         0           *              *              *              3              3              2       2       2       0       0       2       0	0
-//Dark Stone
-0          1      7192    1				1       0         0         0         0           72             108            300            3              1              2       2       2       0       0       2       0	0
-//==================================================================================================================================================================================
-//Level 3 Class - Step 1
-0          2      0       50000			0       0         0         0         0           *              *              *              4              0              2       2       2       1       1       2       1	1
-0          2      0       50000			0       0         0         0         0           *              *              *              4              3              2       2       2       1       1       2       1	1
-//Death-beam Knight Flame
-0          1      7233    1				0       0         0         0         0           *              63             300            4              1              2       2       2       1       1       2       1	1
-//Hell-Miner Horn
-1          1      7234    1				0       0         0         0         0           *              309            300            4              1              2       2       2       1       1       2       1	1
-//Dark Phoenix Feather
-2          1      7235    1				0       0         0         0         0           *              77             300            4              1              2       2       2       1       1       2       1	1
-//==================================================================================================================================================================================
-//Level 3 Class - Step 2
-0          2      0       70000			0       0         0         0         0           *              *              *              5              0              2       2       2       1       1       2       1	1
-0          2      0       70000			0       0         0         0         0           *              *              *              5              3              2       2       2       1       1       2       1	1
-//Balram (Quest Monster)
-0          4      409     20			0       0         0         0         0           *              *              *              5              1              2       2       2       1       1       2       1	1
-//Death Spirit (Quest Monster)
-1          4      410     20			0       0         0         0         0           *              *              *              5              1              2       2       2       1       1       2       1	1
-//Soram (Quest Monster)
-2          4      411     20			0       0         0         0         0           *              *              *              5              1              2       2       2       1       1       2       1	1
-//Level 3 Class - Step 3
-0          2      0       100000		0       0         0         0         0           *              *              *              6              0              2       2       2       1       1       2       1	1
-0          2      0       100000		0       0         0         0         0           *              *              *              6              3              2       2       2       1       1       2       1	1
-//Dark Elf (Quest Monster)
-0          4      412     1				0       0         0         0         0           *              *              *              6              1              2       2       2       1       1       2       1	1
-//==================================================================================================================================================================================
-//New Marlon Quest for MG, DL & RF (Custom Combo)
-0          2      0       20000			0       0         0         0         0           *              *              *              7              0              0       0       0       1       1       0       1	1
-0          2      0       20000			0       0         0         0         0           *              *              *              7              3              0       0       0       1       1       0       1	1
-0          1      7192    1				1       0         0         0         0           72             108            300            7              1              0       0       0       1       1       0       1	1
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         2           0           10000       0         0          0          0          0            *               *               *               0               0               1        1        1        0        0        1        0        0
+    0         2           0           10000       0         0          0          0          0            *               *               *               0               3               1        1        1        0        0        1        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           7191        1           0         0          0          0          0            45              60              450             0               1               1        1        1        0        0        1        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         2           0           20000       0         0          0          0          0            *               *               *               1               0               1        1        1        0        0        1        0        0
+    0         2           0           20000       0         0          0          0          0            *               *               *               1               3               1        1        1        0        0        1        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           7192        1           0         0          0          0          0            62              76              350             1               1               0        1        0        0        0        0        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           7193        1           0         0          0          0          0            62              76              350             1               1               0        0        1        0        0        0        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           7194        1           0         0          0          0          0            62              76              350             1               1               1        0        0        0        0        0        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           7236        1           0         0          0          0          0            62              76              350             1               1               0        0        0        0        0        1        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         2           0           30000       0         0          0          0          0            *               *               *               2               0               2        2        2        0        0        2        0        0
+    0         2           0           30000       0         0          0          0          0            *               *               *               2               3               2        2        2        0        0        2        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           7191        1           1         0          0          0          0            72              108             300             2               1               2        2        2        0        0        2        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         2           0           20000       0         0          0          0          0            *               *               *               3               0               2        2        2        0        0        2        0        0
+    0         2           0           20000       0         0          0          0          0            *               *               *               3               3               2        2        2        0        0        2        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           7192        1           1         0          0          0          0            72              108             300             3               1               2        2        2        0        0        2        0        0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         2           0           50000       0         0          0          0          0            *               *               *               4               0               2        2        2        1        1        2        1        1
+    0         2           0           50000       0         0          0          0          0            *               *               *               4               3               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           7233        1           0         0          0          0          0            *               63              300             4               1               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1         1           7234        1           0         0          0          0          0            *               309             300             4               1               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2         1           7235        1           0         0          0          0          0            *               77              300             4               1               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         2           0           70000       0         0          0          0          0            *               *               *               5               0               2        2        2        1        1        2        1        1
+    0         2           0           70000       0         0          0          0          0            *               *               *               5               3               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         4           409         20          0         0          0          0          0            *               *               *               5               1               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1         4           410         20          0         0          0          0          0            *               *               *               5               1               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2         4           411         20          0         0          0          0          0            *               *               *               5               1               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         2           0           100000      0         0          0          0          0            *               *               *               6               0               2        2        2        1        1        2        1        1
+    0         2           0           100000      0         0          0          0          0            *               *               *               6               3               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         4           412         1           0         0          0          0          0            *               *               *               6               1               2        2        2        1        1        2        1        1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Objectives
+// What has to be done or brought to finish each step of a quest. A step is finished when every row of it that fits the player's class and state is met. The GameServer reads 100 rows at most.
+//   Counter Slot: Only used for kill rows: the slot (0 to 4) where the kills are counted. A quest can follow up to 5 monsters, so each kill row of the same quest needs its own number. Leave 0 for the other rows.
+//   Objective: 0 None | 1 Collect Item | 2 Carry Zen | 4 Kill Monsters
+//   Target: Collect Item: the item (category x 512 + number). Kill Monsters: the monster. Carry Zen does not use it.
+//   Amount: Items to bring, monsters to kill or zen to carry.
+//   Item Level: Level the item must have; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Drops from monsters of level: Lowest level of the monsters that drop the item. If it is No limit, the next column is the number of the one monster that drops it.
+//   Up to level: Highest level of the monsters that drop the item; with No limit before it, the number of the monster that drops it.
+//   Drop rate: Chance out of 10000 that the monster drops the item. Not used for zen or kills.
+//   Quest It Belongs To: The quest this row asks for.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]        [Number]        [*/-1~10000]    [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    DropMinLevel    DropMaxLevel    ItemDropRate    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         2           0           20000       0         0          0          0          0            *               *               *               7               0               0        0        0        1        1        0        1        1
+    0         2           0           20000       0         0          0          0          0            *               *               *               7               3               0        0        0        1        1        0        1        1
+    0         1           7192        1           1         0          0          0          0            72              108             300             7               1               0        0        0        1        1        0        1        1
 end

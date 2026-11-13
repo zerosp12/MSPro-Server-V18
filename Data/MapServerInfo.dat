@@ -1,28 +1,50 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 // MSPro V18: GS1 / GSCS19, both in the V18 map group.
 0
-// Code Group Init Address Port
-	1			1			1			S127.0.0.1		55903
-	19			1			0			S127.0.0.1		55904
+//--------------------------------------------------------------------
+// Map Servers
+// Each map server: its code, its group, its address and its port.
+//   Server code: The code of the server (the ServerCode of its GameServer). It cannot be negative.
+//   Server group: The group of map servers it belongs to, 0 to 19. Players move between servers of the same group.
+//   Initial value: -1, 0 or 1: how the server starts out for the maps that no route says anything about (1 keeps them here).
+//   IP address: Starts with S, for example S192.168.1.10.
+//   Port: The port of the GameServer.
+//--------------------------------------------------------------------
+//  [0~32767]     [0~19]         [-1~1]        [Text]        [1~65535]
+//  ServerCode    ServerGroup    InitSetVal    IPAddress     Port
+//--------------------------------------------------------------------
+    1             1              1             S127.0.0.1    55903
+    19            1              0             S127.0.0.1    55904
 end
 
 1
-// Source NotMove Map Destination
-1 0 30 19
-1 0 31 19
-1 0 34 19
-1 0 41 19
-1 0 42 19
-1 0 79 19
-19 1 30 -1
-19 1 31 -1
-19 1 34 -1
-19 1 41 -1
-19 1 42 -1
-19 1 79 -1
+//-----------------------------------------------------------
+// Map Routes
+// The map servers a map leads to: players that go to the map are sent to the next server.
+//   Server code: The server this route is for.
+//   Move option: 0 The map is sent to the next server | 1 The map cannot be left from this server
+//   Map: The map this route is for.
+//   Next server code: The server that takes the players of the map. -1 means this same server.
+//-----------------------------------------------------------
+//  [Number]      [0~1]            [Number]    [Number]
+//  ServerCode    NotMoveOption    NextMap     NextServerCode
+//-----------------------------------------------------------
+    1             0                30          19
+    1             0                31          19
+    1             0                34          19
+    1             0                41          19
+    1             0                42          19
+    1             0                79          19
+    19            1                30          -1
+    19            1                31          -1
+    19            1                34          -1
+    19            1                41          -1
+    19            1                42          -1
+    19            1                79          -1
 end

@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //----------------------------------------------------------
 // Set Points by AccountLevel
 //----------------------------------------------------------
@@ -31,81 +32,82 @@ end
 end
 
 //----------------------------------------------------------
-// Map Target
-// Select Allow or Block Map.
-//	OffHelper & OffStore  -> 0 Off - 1 Allowed
+// Maps
+// Where the rewards are given and where the Offline Helper and the Offline Store are allowed (1 allowed, 0 off). A map that is not listed gives rewards everywhere.
+//   Map: Map this row is for.
+//   Rewards enabled: 0: no rewards at all on this map. 1: rewards are given.
+//   Allow Offline Helper: 0: no rewards while the character is in the Offline Helper on this map.
+//   Allow Offline Store: 0: no rewards while the character is in an Offline Store on this map.
 //----------------------------------------------------------
-//			Allow	Allow
-//			Off	Off
-//	Map	On/Off	OHelper	Store
+//  Map    On/Off    OHelper    Store
 //----------------------------------------------------------
 2
-	0	1	1	1	//Lorencia
-	1	1	1	1	//Dungeon
-	2	1	1	1	//Devias
-	3	1	1	1	//Noria
-	4	1	1	1	//Lost Tower
-	5	1	1	1	//Dungeon
-	6	1	1	1	//Arena
-	7	1	1	1	//Atlans
-	8	1	1	1	//Tarkan
-	9	1	1	1	//Devil Square 1
-	10	1	1	1	//Icarus
-	11	1	1	1	//Blood Castle 1
-	12	1	1	1	//Blood Castle 2
-	13	1	1	1	//Blood Castle 3
-	14	1	1	1	//Blood Castle 4
-	15	1	1	1	//Blood Castle 5
-	16	1	1	1	//Blood Castle 6
-	17	1	1	1	//Blood Castle 7
-	18	1	1	1	//Chaos Castle 1
-	19	1	1	1	//Chaos Castle 2
-	20	1	1	1	//Chaos Castle 3
-	21	1	1	1	//Chaos Castle 4
-	22	1	1	1	//Chaos Castle 5
-	23	1	1	1	//Chaos Castle 6
-	24	1	1	1	//Kalima 1
-	25	1	1	1	//Kalima 2
-	26	1	1	1	//Kalima 3
-	27	1	1	1	//Kalima 4
-	28	1	1	1	//Kalima 5
-	29	1	1	1	//Kalima 6
-	30	1	1	1	//Castle Siege
-	31	1	1	1	//Land of Trials
-	32	1	1	1	//Devil Square 2
-	33	1	1	1	//Aida
-	34	1	1	1	//Crywolf
-	36	1	1	1	//Kalima 7
-	37	1	1	1	//Kanturu 1
-	38	1	1	1	//Kanturu 2
-	39	1	1	1	//Kanturu 3
-	40	1	1	1	//Silent
-	41	1	1	1	//Barracks
-	42	1	1	1	//Refuge
-	45	1	1	1	//Illusion Temple 1
-	46	1	1	1	//Illusion Temple 2
-	47	1	1	1	//Illusion Temple 3
-	48	1	1	1	//Illusion Temple 4
-	49	1	1	1	//Illusion Temple 5
-	50	1	1	1	//Illusion Temple 6
-	51	1	1	1	//Elbeland
-	52	1	1	1	//Blood Castle 8
-	53	1	1	1	//Chaos Castle 7
-	56	1	1	1	//Swamp of Calmness
-	57	1	1	1	//Raklion 1
-	58	1	1	1	//Raklion 2
-	62	1	1	1	//Santa Town
-	63	1	1	1	//Vulcanus
-	64	1	1	1	//Duel Arena
-	65	1	1	1	//Double Goer 1
-	66	1	1	1	//Double Goer 2
-	67	1	1	1	//Double Goer 3
-	68	1	1	1	//Double Goer 4
-	69	1	1	1	//Imperial Guardian 1
-	70	1	1	1	//Imperial Guardian 2
-	71	1	1	1	//Imperial Guardian 3
-	72	1	1	1	//Imperial Guardian 4
-	79	1	1	1	//Loren Market
-	80	1	1	1	//Karutan 1
-	81	1	1	1	//Karutan 2
+    0      1         1          1        //Lorencia
+    1      1         1          1        //Dungeon
+    2      1         1          1        //Devias
+    3      1         1          1        //Noria
+    4      1         1          1        //Lost Tower
+    5      1         1          1        //Dungeon
+    6      1         1          1        //Arena
+    7      1         1          1        //Atlans
+    8      1         1          1        //Tarkan
+    9      1         1          1        //Devil Square 1
+    10     1         1          1        //Icarus
+    11     1         1          1        //Blood Castle 1
+    12     1         1          1        //Blood Castle 2
+    13     1         1          1        //Blood Castle 3
+    14     1         1          1        //Blood Castle 4
+    15     1         1          1        //Blood Castle 5
+    16     1         1          1        //Blood Castle 6
+    17     1         1          1        //Blood Castle 7
+    18     1         1          1        //Chaos Castle 1
+    19     1         1          1        //Chaos Castle 2
+    20     1         1          1        //Chaos Castle 3
+    21     1         1          1        //Chaos Castle 4
+    22     1         1          1        //Chaos Castle 5
+    23     1         1          1        //Chaos Castle 6
+    24     1         1          1        //Kalima 1
+    25     1         1          1        //Kalima 2
+    26     1         1          1        //Kalima 3
+    27     1         1          1        //Kalima 4
+    28     1         1          1        //Kalima 5
+    29     1         1          1        //Kalima 6
+    30     1         1          1        //Castle Siege
+    31     1         1          1        //Land of Trials
+    32     1         1          1        //Devil Square 2
+    33     1         1          1        //Aida
+    34     1         1          1        //Crywolf
+    36     1         1          1        //Kalima 7
+    37     1         1          1        //Kanturu 1
+    38     1         1          1        //Kanturu 2
+    39     1         1          1        //Kanturu 3
+    40     1         1          1        //Silent
+    41     1         1          1        //Barracks
+    42     1         1          1        //Refuge
+    45     1         1          1        //Illusion Temple 1
+    46     1         1          1        //Illusion Temple 2
+    47     1         1          1        //Illusion Temple 3
+    48     1         1          1        //Illusion Temple 4
+    49     1         1          1        //Illusion Temple 5
+    50     1         1          1        //Illusion Temple 6
+    51     1         1          1        //Elbeland
+    52     1         1          1        //Blood Castle 8
+    53     1         1          1        //Chaos Castle 7
+    56     1         1          1        //Swamp of Calmness
+    57     1         1          1        //Raklion 1
+    58     1         1          1        //Raklion 2
+    62     1         1          1        //Santa Town
+    63     1         1          1        //Vulcanus
+    64     1         1          1        //Duel Arena
+    65     1         1          1        //Double Goer 1
+    66     1         1          1        //Double Goer 2
+    67     1         1          1        //Double Goer 3
+    68     1         1          1        //Double Goer 4
+    69     1         1          1        //Imperial Guardian 1
+    70     1         1          1        //Imperial Guardian 2
+    71     1         1          1        //Imperial Guardian 3
+    72     1         1          1        //Imperial Guardian 4
+    79     1         1          1        //Loren Market
+    80     1         1          1        //Karutan 1
+    81     1         1          1        //Karutan 2
 end

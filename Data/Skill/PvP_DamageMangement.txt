@@ -1,23 +1,36 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // [Info]
 //==============
 //           DAMAGE: 1.0 = 100 Power Dmg / Example: 0.5 is 50% Power Dmg 
 
 0
-//----------------------------------------------------------------------------
-// [Skill.txt]   [*/0~114]  [                DAMAGE TO CLASS                 ] 
-// Skill	     Map	    DW		DK	    ELF		MG		DL		SUM		RF      GL
-//----------------------------------------------------------------------------
-	235		     *		    1.0		1.0		1.0		1.0		1.0		1.0		1.0	1.0
-	270		     *		    1.0		1.0		1.0		1.0		1.0		1.0		1.0	1.0
-	263		     *		    1.0		1.0		1.0		1.0		1.0		1.0		1.0	1.0
-	41		     *		    1.0		1.0		1.0		1.0		1.0		1.0		1.0	1.0
+//---------------------------------------------------------------------
+// PvP Skill Damage
+// Changes the damage of a skill against players, by class of the attacker and map. 1.0 keeps the damage, 0.5 halves it. 0 keeps the normal damage (it does not make it zero).
+//   Skill: Skill the row is for.
+//   Map: Map where the change applies. * for every map.
+//   Dark Wizard: Damage multiplier when the attacker is of this class. 1.0 normal, 0.5 half; 0 leaves the damage as it is.
+//   Dark Knight: Same as Dark Wizard.
+//   Fairy Elf: Same as Dark Wizard.
+//   Magic Gladiator: Same as Dark Wizard.
+//   Dark Lord: Same as Dark Wizard.
+//   Summoner: Same as Dark Wizard.
+//   Rage Fighter: Same as Dark Wizard.
+//   Grow Lancer: Same as Dark Wizard.
+//---------------------------------------------------------------------
+//  Skill    Map    DW     DK     ELF    MG     DL     SUM    RF     GL
+//---------------------------------------------------------------------
+    235      *      1.0    1.0    1.0    1.0    1.0    1.0    1.0    1.0
+    270      *      1.0    1.0    1.0    1.0    1.0    1.0    1.0    1.0
+    263      *      1.0    1.0    1.0    1.0    1.0    1.0    1.0    1.0
+    41       *      1.0    1.0    1.0    1.0    1.0    1.0    1.0    1.0
 end
 
 //----------------

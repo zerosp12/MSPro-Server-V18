@@ -1,24 +1,72 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// [1~200]   [13]      [200~399] [0~2]  [0~255]     [0~1]   [0~100]		  [BLOCK][0~1]  [BLOCK][0~1] [BLOCK][0~1] [BLOCK][0~1] [BLOCK][0~1] [BLOCK][0~1]  [BLOCK][0~1] [BLOCK][0~1]
-// IndexPet  Category  Type      Level  Durability  Diepet  RepairSucess  RepairManual  RepairBless  Repair Life  MoveAtlans   MoveIcarus   MoveBloodC.   MoveChaosC.  MoveKanturuE. Pet Name
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//Pet Sin evo
-  1		 	13		   200	 	 0		255			0	  	100			  0				0			 0			  0			   0			0			  0			   0	 		 "Egg DemonGG"    
-  2		 	13		   201	 	 0		255			0	  	100			  0				0			 0			  0			   0			0			  0			   0	 		 "Egg DemonGG"    
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Pets
+// One row per pet and evolution.
+//   Pet: Number of the row (1 to 200). It must be different in every row.
+//   Item category: Item category of the pet (13 for pets).
+//   Item index: Item index of the pet in its category.
+//   Evolution: Evolution of the pet (the level of the item: 0, 1 or 2) this row is for.
+//   Durability: Damage that takes away one point of durability: the pet loses (damage taken divided by this value) each hit, so a higher number lasts longer. 0 turns this wear off (unverified).
+//   Stays at 0 durability: 0 The pet is destroyed at 0 durability | 1 The pet stays at 0 durability (is not destroyed)
+//   Repair chance (%): Chance (%) that a repair works.
+//   Can be repaired by hand: 1 lets the player repair it by hand like any item.
+//   Can be repaired with Bless: 1 lets the player repair it with a Jewel of Bless.
+//   Can be repaired with Life: 1 lets the player repair it with a Jewel of Life.
+//   Blocked in Atlans: 1 stops a player wearing this pet from entering Atlans.
+//   Blocked in Icarus: 1 stops a player wearing this pet from entering Icarus.
+//   Blocked in Blood Castle: 1 stops a player wearing this pet from entering Blood Castle.
+//   Blocked in Chaos Castle: 1 stops a player wearing this pet from entering Chaos Castle.
+//   Blocked in the Kanturu event: 1 stops a player wearing this pet from entering the Kanturu event.
+//   Name: Name of the pet in the server log (up to 31 characters).
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [1~200]    [0~15]      [0~399]    [0~2]    [0~255]       [Number]    [0~100]          [Number]             [Number]            [Number]           [Number]           [Number]           [Number]            [Number]            [Number]             [Text]
+//  Index      Category    Type       Level    Durability    Die         RepairSuccess    AllowRepairManual    AllowRepairBless    AllowRepairLife    AllowMoveAtlans    AllowMoveIcarus    AllowBloodCastle    AllowChaosCastle    AllowKanturuEvent    PetName
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1          13          200        0        255           0           100              0                    0                   0                  0                  0                  0                   0                   0                    "Egg DemonGG"
+    2          13          201        0        255           0           100              0                    0                   0                  0                  0                  0                   0                   0                    "Egg DemonGG"
 end    
 
 
 1
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// [1~200]  [13]     [200~399] [0~2] [1~9999999] [0~9999][0~10000] [0~100]     [0~100]     [0~99999] [0~100]       [0~100]      [0~100]    [0~100]     [0~100]     [0~100]    [        0~65000       ] [Effect.txt][     InMinutes      ] [Effect.txt][       InMinutes      ]
-// IndexPet Category TypePet   Level AddHP AddMP DmgRate AttackSp. DoubleDmgR. TripleDmgR. AddExper  ResiDoubleDmg ResiIgnoDefe ResiIgnoSD ResiCritDmg ResisExeDmg BlockStuck IncreStr IncreEne IncreAgi BuffEffect  BuffDuration BuffDelay BuffEffect2 BuffDuration2 BuffDelay2  Comment
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1			13		 200	   0	 500   500	 1000	 0	 	   50		   0	 	   0		 0		       0		    0		   0		   0		   0	      0		   500	    0	     0	         0			  0			0			0.0			  0.0 		  //"Egg DemonGG"    
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Pet Bonuses
+// The bonuses a pet gives while it is worn, by evolution.
+//   Pet: Number of the row (1 to 200).
+//   Item category: Item category of the pet (13 for pets).
+//   Item index: Item index of the pet in its category.
+//   Evolution: Evolution of the pet (the level of the item) these bonuses are for.
+//   Add HP: Life added to the character. Given while the pet is equipped.
+//   Add MP: Mana added to the character. Given while the pet is equipped.
+//   Damage rate: Added to the minimum and maximum physical damage (a flat number, not a percentage). Given while the pet is equipped.
+//   Attack speed: Added to the physical and magic attack speed. Given while the pet is equipped.
+//   Double damage rate: Added to the chance of double damage. Given while the pet is equipped.
+//   Triple damage rate: Added to the chance of triple damage. Given while the pet is equipped.
+//   Add experience: Added to the experience rate of the character, also for master experience. Given while the pet is equipped.
+//   Resist double damage: Added to the resistance to double damage. Given while the pet is equipped.
+//   Resist ignore defense: Added to the resistance to attacks that ignore defense. Given while the pet is equipped.
+//   Resist ignore SD: Added to the resistance to attacks that ignore the shield gauge. Given while the pet is equipped.
+//   Resist critical damage: Added to the resistance to critical damage. Given while the pet is equipped.
+//   Resist excellent damage: Added to the resistance to excellent damage. Given while the pet is equipped.
+//   Block stuck: Added to the resistance to stun. Given while the pet is equipped.
+//   Increase Strength: Strength points added. Given while the pet is equipped.
+//   Increase Energy: Energy points added. Given while the pet is equipped.
+//   Increase Agility: Agility points added. Given while the pet is equipped.
+//   Buff 1: Effect 1 applied to the player while it is equipped, from Effect.txt. 0 gives none.
+//   Buff 1 lasts (minutes): Minutes the buff lasts each time it is given. Decimals are allowed (0.5 is 30 seconds).
+//   Buff 1 delay (minutes): Minutes between two times the buff is given again. Decimals are allowed.
+//   Buff 2: Effect 2 applied to the player while it is equipped, from Effect.txt. 0 gives none.
+//   Buff 2 lasts (minutes): Minutes the buff lasts each time it is given. Decimals are allowed (0.5 is 30 seconds).
+//   Buff 2 delay (minutes): Minutes between two times the buff is given again. Decimals are allowed.
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [1~200]    [0~15]      [0~399]    [0~2]    [Number]    [Number]    [Number]      [Number]       [Number]         [Number]         [Number]         [Number]              [Number]               [Number]          [Number]                [Number]                 [Number]      [Number]    [Number]    [Number]    [Number]      [Number]        [Number]     [Number]       [Text]           [Text]
+//  Index      Category    Type       Level    AddHP       AddMP       DamageRate    AttackSpeed    DoubleDmgRate    TripleDmgRate    AddExperience    ResistDoubleDamage    ResistIgnoreDefense    ResistIgnoreSD    ResistCriticalDamage    ResistExcellentDamage    BlockStuck    IncreStr    IncreEne    IncreAgi    BuffEffect    BuffDuration    BuffDelay    BuffEffect2    BuffDuration2    BuffDelay2
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1          13          200        0        500         500         1000          0              50               0                0                0                     0                      0                 0                       0                        0             0           500         0           0             0               0            0              0.0              0.0           //"Egg DemonGG"
 end

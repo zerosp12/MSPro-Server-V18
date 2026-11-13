@@ -1,181 +1,250 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //---------------------------------------------------------------------------------------------------------------
 // Silver Medal (ItemBagEx). Class gear 5-45 req. level with low-rate options + jewels/rings/pets.
 // Level +0..+9 (preset 60), skill/luck/option presets 60 in ItemOptionRate.txt.
 //---------------------------------------------------------------------------------------------------------------
 
 3
-//Index   DropRate
-0         10000
+//----------------------------------------------------------
+// Bag Chances
+// The chance of each bag of this file.
+//   Chance: Out of 10,000.
+//----------------------------------------------------------
+//  Index    DropRate
+//----------------------------------------------------------
+    0        10000
 end
 
 4
-//Index   Section   SectionRate   MoneyAmount   OptionValue   DW DK FE MG DL SU RF GL
-0         5         8000          0             2             1  0  0  0  0  0  0  0
-0         6         8000          0             2             0  1  0  0  0  0  0  0
-0         7         8000          0             2             0  0  1  0  0  0  0  0
-0         8         8000          0             2             0  0  0  1  0  0  0  0
-0         9         8000          0             2             0  0  0  0  1  0  0  0
-0         10        8000          0             2             0  0  0  0  0  1  0  0
-0         11        8000          0             2             0  0  0  0  0  0  1  0
-0         12        8000          0             2             0  0  0  0  0  0  0  1
-0         13        2000          0             0             1  1  1  1  1  1  1  1
+//----------------------------------------------------------------------------------------------------------------------------------------------
+// Drop Sections
+// Which section of items a bag gives, how often, the zen with it and the classes that can get it.
+//   Section: The number of the part that lists its items.
+//   Section Chance: Out of 10,000.
+//----------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]       [0~2000000000]    [Number]       [0~1]    [0~1]    [0~1]    [0~1]    [0~1]    [0~1]    [0~1]    [0~1]
+//  Index       Section     SectionRate    MoneyAmount       OptionValue    DW       DK       FE       MG       DL       SU       RF       GL
+//----------------------------------------------------------------------------------------------------------------------------------------------
+    0           5           8000           0                 2              1        0        0        0        0        0        0        0
+    0           6           8000           0                 2              0        1        0        0        0        0        0        0
+    0           7           8000           0                 2              0        0        1        0        0        0        0        0
+    0           8           8000           0                 2              0        0        0        1        0        0        0        0
+    0           9           8000           0                 2              0        0        0        0        1        0        0        0
+    0           10          8000           0                 2              0        0        0        0        0        1        0        0
+    0           11          8000           0                 2              0        0        0        0        0        0        1        0
+    0           12          8000           0                 2              0        0        0        0        0        0        0        1
+    0           13          2000           0                 0              1        1        1        1        1        1        1        1
 end
 
 5
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DW)
-5636	0	0	60	11	60	60	0	*	*	*	//Bone Boots
-3586	0	0	60	11	60	60	0	*	*	*	//Pad Helm
-3648	0	0	60	11	60	60	0	*	*	*	//Lucky Sphinx Helm
-3591	0	0	60	11	60	60	0	*	*	*	//Sphinx Mask
-4098	0	0	60	11	60	60	0	*	*	*	//Pad Armor
-3588	0	0	60	11	60	60	0	*	*	*	//Bone Helm
-5123	0	0	60	11	60	60	0	*	*	*	//Legendary Gloves
-5127	0	0	60	11	60	60	0	*	*	*	//Sphinx Gloves
-4672	0	0	60	11	60	60	0	*	*	*	//Lucky Sphinx Pants
-0	0	0	60	11	60	60	0	*	*	*	//Kris
-3078	0	0	60	11	60	60	0	*	*	*	//Skull Shield
-5	0	0	60	60	60	60	0	*	*	*	//Blade
-516	0	0	60	11	60	60	0	*	*	*	//Elven Axe
-2561	0	0	60	11	60	60	0	*	*	*	//Angelic Staff
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 5
+// The items section 5 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    5636        0         0           60          11          60          60          0           *           *           *           //Bone Boots
+    3586        0         0           60          11          60          60          0           *           *           *           //Pad Helm
+    3648        0         0           60          11          60          60          0           *           *           *           //Lucky Sphinx Helm
+    3591        0         0           60          11          60          60          0           *           *           *           //Sphinx Mask
+    4098        0         0           60          11          60          60          0           *           *           *           //Pad Armor
+    3588        0         0           60          11          60          60          0           *           *           *           //Bone Helm
+    5123        0         0           60          11          60          60          0           *           *           *           //Legendary Gloves
+    5127        0         0           60          11          60          60          0           *           *           *           //Sphinx Gloves
+    4672        0         0           60          11          60          60          0           *           *           *           //Lucky Sphinx Pants
+    0           0         0           60          11          60          60          0           *           *           *           //Kris
+    3078        0         0           60          11          60          60          0           *           *           *           //Skull Shield
+    5           0         0           60          60          60          60          0           *           *           *           //Blade
+    516         0         0           60          11          60          60          0           *           *           *           //Elven Axe
+    2561        0         0           60          11          60          60          0           *           *           *           //Angelic Staff
 end
 
 6
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DK)
-9	0	0	60	60	60	60	0	*	*	*	//Sword of Salamander
-11	0	0	60	60	60	60	0	*	*	*	//Legendary Sword
-3584	0	0	60	11	60	60	0	*	*	*	//Bronze Helm
-8	0	0	60	60	60	60	0	*	*	*	//Serpent Sword
-517	0	0	60	60	60	60	0	*	*	*	//Battle Axe
-1536	0	0	60	60	60	60	0	*	*	*	//Light Spear
-1538	0	0	60	11	60	60	0	*	*	*	//Dragon Lance
-5640	0	0	60	11	60	60	0	*	*	*	//Brass Boots
-3074	0	0	60	11	60	60	0	*	*	*	//Kite Shield
-1541	0	0	60	11	60	60	0	*	*	*	//Double Poleaxe
-3082	0	0	60	11	60	60	0	*	*	*	//Large Round Shield
-1539	0	0	60	11	60	60	0	*	*	*	//Giant Trident
-3080	0	0	60	11	60	60	0	*	*	*	//Tower Shield
-514	0	0	60	60	60	60	0	*	*	*	//Double Axe
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 6
+// The items section 6 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    9           0         0           60          60          60          60          0           *           *           *           //Sword of Salamander
+    11          0         0           60          60          60          60          0           *           *           *           //Legendary Sword
+    3584        0         0           60          11          60          60          0           *           *           *           //Bronze Helm
+    8           0         0           60          60          60          60          0           *           *           *           //Serpent Sword
+    517         0         0           60          60          60          60          0           *           *           *           //Battle Axe
+    1536        0         0           60          60          60          60          0           *           *           *           //Light Spear
+    1538        0         0           60          11          60          60          0           *           *           *           //Dragon Lance
+    5640        0         0           60          11          60          60          0           *           *           *           //Brass Boots
+    3074        0         0           60          11          60          60          0           *           *           *           //Kite Shield
+    1541        0         0           60          11          60          60          0           *           *           *           //Double Poleaxe
+    3082        0         0           60          11          60          60          0           *           *           *           //Large Round Shield
+    1539        0         0           60          11          60          60          0           *           *           *           //Giant Trident
+    3080        0         0           60          11          60          60          0           *           *           *           //Tower Shield
+    514         0         0           60          60          60          60          0           *           *           *           //Double Axe
 end
 
 7
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (ELF)
-1543	0	0	60	60	60	60	0	*	*	*	//Berdysh
-4107	0	0	60	11	60	60	0	*	*	*	//Silk Armor
-5	0	0	60	60	60	60	0	*	*	*	//Blade
-2050	0	0	60	60	60	60	0	*	*	*	//Elven Bow
-1538	0	0	60	11	60	60	0	*	*	*	//Dragon Lance
-5131	0	0	60	11	60	60	0	*	*	*	//Silk Gloves
-4621	0	0	60	11	60	60	0	*	*	*	//Spirit Pants
-2059	0	0	60	60	60	60	0	*	*	*	//Light Crossbow
-2057	0	0	60	60	60	60	0	*	*	*	//Golden Crossbow
-2058	0	0	60	60	60	60	0	*	*	*	//Arquebus
-3076	0	0	60	11	60	60	0	*	*	*	//Buckler
-3075	0	0	60	11	60	60	0	*	*	*	//Elven Shield
-5643	0	0	60	11	60	60	0	*	*	*	//Silk Boots
-4671	0	0	60	11	60	60	0	*	*	*	//Lucky Silk Pants
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 7
+// The items section 7 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    1543        0         0           60          60          60          60          0           *           *           *           //Berdysh
+    4107        0         0           60          11          60          60          0           *           *           *           //Silk Armor
+    5           0         0           60          60          60          60          0           *           *           *           //Blade
+    2050        0         0           60          60          60          60          0           *           *           *           //Elven Bow
+    1538        0         0           60          11          60          60          0           *           *           *           //Dragon Lance
+    5131        0         0           60          11          60          60          0           *           *           *           //Silk Gloves
+    4621        0         0           60          11          60          60          0           *           *           *           //Spirit Pants
+    2059        0         0           60          60          60          60          0           *           *           *           //Light Crossbow
+    2057        0         0           60          60          60          60          0           *           *           *           //Golden Crossbow
+    2058        0         0           60          60          60          60          0           *           *           *           //Arquebus
+    3076        0         0           60          11          60          60          0           *           *           *           //Buckler
+    3075        0         0           60          11          60          60          0           *           *           *           //Elven Shield
+    5643        0         0           60          11          60          60          0           *           *           *           //Silk Boots
+    4671        0         0           60          11          60          60          0           *           *           *           //Lucky Silk Pants
 end
 
 8
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (MG)
-10	0	0	60	60	60	60	0	*	*	*	//Light Saber
-5124	0	0	60	11	60	60	0	*	*	*	//Bone Gloves
-4616	0	0	60	11	60	60	0	*	*	*	//Brass Pants
-2561	0	0	60	11	60	60	0	*	*	*	//Angelic Staff
-5696	0	0	60	11	60	60	0	*	*	*	//Lucky Sphinx Boots
-2562	0	0	60	11	60	60	0	*	*	*	//Serpent Staff
-4612	0	0	60	11	60	60	0	*	*	*	//Bone Pants
-4614	0	0	60	11	60	60	0	*	*	*	//Scale Pants
-2560	0	0	60	11	60	60	0	*	*	*	//Skull Staff
-4670	0	0	60	11	60	60	0	*	*	*	//Lucky Scale Pants
-4160	0	0	60	11	60	60	0	*	*	*	//Lucky Sphinx Armor
-3076	0	0	60	11	60	60	0	*	*	*	//Buckler
-3079	0	0	60	11	60	60	0	*	*	*	//Spiked Shield
-5632	0	0	60	11	60	60	0	*	*	*	//Bronze Boots
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 8
+// The items section 8 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    10          0         0           60          60          60          60          0           *           *           *           //Light Saber
+    5124        0         0           60          11          60          60          0           *           *           *           //Bone Gloves
+    4616        0         0           60          11          60          60          0           *           *           *           //Brass Pants
+    2561        0         0           60          11          60          60          0           *           *           *           //Angelic Staff
+    5696        0         0           60          11          60          60          0           *           *           *           //Lucky Sphinx Boots
+    2562        0         0           60          11          60          60          0           *           *           *           //Serpent Staff
+    4612        0         0           60          11          60          60          0           *           *           *           //Bone Pants
+    4614        0         0           60          11          60          60          0           *           *           *           //Scale Pants
+    2560        0         0           60          11          60          60          0           *           *           *           //Skull Staff
+    4670        0         0           60          11          60          60          0           *           *           *           //Lucky Scale Pants
+    4160        0         0           60          11          60          60          0           *           *           *           //Lucky Sphinx Armor
+    3076        0         0           60          11          60          60          0           *           *           *           //Buckler
+    3079        0         0           60          11          60          60          0           *           *           *           //Spiked Shield
+    5632        0         0           60          11          60          60          0           *           *           *           //Bronze Boots
 end
 
 9
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DL)
-3589	0	0	60	11	60	60	0	*	*	*	//Leather Helm
-3077	0	0	60	11	60	60	0	*	*	*	//Dragon Slayer Shield
-4	0	0	60	60	60	60	0	*	*	*	//Sword of Assassin
-6	0	0	60	60	60	60	0	*	*	*	//Gladius
-4096	0	0	60	11	60	60	0	*	*	*	//Bronze Armor
-4608	0	0	60	11	60	60	0	*	*	*	//Bronze Pants
-3082	0	0	60	11	60	60	0	*	*	*	//Large Round Shield
-514	0	0	60	60	60	60	0	*	*	*	//Double Axe
-7	0	0	60	60	60	60	0	*	*	*	//Falchion
-4613	0	0	60	11	60	60	0	*	*	*	//Leather Pants
-3646	0	0	60	11	60	60	0	*	*	*	//Lucky Scale Helm
-515	0	0	60	60	60	60	0	*	*	*	//Tomahawk
-8	0	0	60	60	60	60	0	*	*	*	//Serpent Sword
-0	0	0	60	11	60	60	0	*	*	*	//Kris
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 9
+// The items section 9 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    3589        0         0           60          11          60          60          0           *           *           *           //Leather Helm
+    3077        0         0           60          11          60          60          0           *           *           *           //Dragon Slayer Shield
+    4           0         0           60          60          60          60          0           *           *           *           //Sword of Assassin
+    6           0         0           60          60          60          60          0           *           *           *           //Gladius
+    4096        0         0           60          11          60          60          0           *           *           *           //Bronze Armor
+    4608        0         0           60          11          60          60          0           *           *           *           //Bronze Pants
+    3082        0         0           60          11          60          60          0           *           *           *           //Large Round Shield
+    514         0         0           60          60          60          60          0           *           *           *           //Double Axe
+    7           0         0           60          60          60          60          0           *           *           *           //Falchion
+    4613        0         0           60          11          60          60          0           *           *           *           //Leather Pants
+    3646        0         0           60          11          60          60          0           *           *           *           //Lucky Scale Helm
+    515         0         0           60          60          60          60          0           *           *           *           //Tomahawk
+    8           0         0           60          60          60          60          0           *           *           *           //Serpent Sword
+    0           0         0           60          11          60          60          0           *           *           *           //Kris
 end
 
 10
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (SUM)
-516	0	0	60	11	60	60	0	*	*	*	//Elven Axe
-5697	0	0	60	11	60	60	0	*	*	*	//Lucky Violent Wind Boots
-2	0	0	60	11	60	60	0	*	*	*	//Rapier
-5190	0	0	60	11	60	60	0	*	*	*	//Lucky Red Wing Gloves
-0	0	0	60	11	60	60	0	*	*	*	//Kris
-2574	0	0	60	11	60	60	0	*	*	*	//Mystery Stick
-5159	0	0	60	11	60	60	0	*	*	*	//Violent Wind Gloves
-5671	0	0	60	11	60	60	0	*	*	*	//Violent Wind Boots
-4647	0	0	60	11	60	60	0	*	*	*	//Violent Wind Pants
-3649	0	0	60	11	60	60	0	*	*	*	//Lucky Violent Wind Helm
-4161	0	0	60	11	60	60	0	*	*	*	//Lucky Violent Wind Armor
-5185	0	0	60	11	60	60	0	*	*	*	//Lucky Violent Wind Gloves
-3623	0	0	60	11	60	60	0	*	*	*	//Violent Wind Helm
-2575	0	0	60	11	60	60	0	*	*	*	//Violent Wind Stick
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 10
+// The items section 10 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    516         0         0           60          11          60          60          0           *           *           *           //Elven Axe
+    5697        0         0           60          11          60          60          0           *           *           *           //Lucky Violent Wind Boots
+    2           0         0           60          11          60          60          0           *           *           *           //Rapier
+    5190        0         0           60          11          60          60          0           *           *           *           //Lucky Red Wing Gloves
+    0           0         0           60          11          60          60          0           *           *           *           //Kris
+    2574        0         0           60          11          60          60          0           *           *           *           //Mystery Stick
+    5159        0         0           60          11          60          60          0           *           *           *           //Violent Wind Gloves
+    5671        0         0           60          11          60          60          0           *           *           *           //Violent Wind Boots
+    4647        0         0           60          11          60          60          0           *           *           *           //Violent Wind Pants
+    3649        0         0           60          11          60          60          0           *           *           *           //Lucky Violent Wind Helm
+    4161        0         0           60          11          60          60          0           *           *           *           //Lucky Violent Wind Armor
+    5185        0         0           60          11          60          60          0           *           *           *           //Lucky Violent Wind Gloves
+    3623        0         0           60          11          60          60          0           *           *           *           //Violent Wind Helm
+    2575        0         0           60          11          60          60          0           *           *           *           //Violent Wind Stick
 end
 
 11
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (RF)
-4614	0	0	60	11	60	60	0	*	*	*	//Scale Pants
-515	0	0	60	60	60	60	0	*	*	*	//Tomahawk
-4616	0	0	60	11	60	60	0	*	*	*	//Brass Pants
-4158	0	0	60	11	60	60	0	*	*	*	//Lucky Scale Armor
-3646	0	0	60	11	60	60	0	*	*	*	//Lucky Scale Helm
-5640	0	0	60	11	60	60	0	*	*	*	//Brass Boots
-3590	0	0	60	11	60	60	0	*	*	*	//Scale Helm
-4104	0	0	60	11	60	60	0	*	*	*	//Brass Armor
-5638	0	0	60	11	60	60	0	*	*	*	//Scale Boots
-4102	0	0	60	11	60	60	0	*	*	*	//Scale Armor
-1024	0	0	60	11	60	60	0	*	*	*	//Mace
-4617	0	0	60	11	60	60	0	*	*	*	//Plate Pants
-1027	0	0	60	60	60	60	0	*	*	*	//Great Hammer
-5641	0	0	60	11	60	60	0	*	*	*	//Plate Boots
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 11
+// The items section 11 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    4614        0         0           60          11          60          60          0           *           *           *           //Scale Pants
+    515         0         0           60          60          60          60          0           *           *           *           //Tomahawk
+    4616        0         0           60          11          60          60          0           *           *           *           //Brass Pants
+    4158        0         0           60          11          60          60          0           *           *           *           //Lucky Scale Armor
+    3646        0         0           60          11          60          60          0           *           *           *           //Lucky Scale Helm
+    5640        0         0           60          11          60          60          0           *           *           *           //Brass Boots
+    3590        0         0           60          11          60          60          0           *           *           *           //Scale Helm
+    4104        0         0           60          11          60          60          0           *           *           *           //Brass Armor
+    5638        0         0           60          11          60          60          0           *           *           *           //Scale Boots
+    4102        0         0           60          11          60          60          0           *           *           *           //Scale Armor
+    1024        0         0           60          11          60          60          0           *           *           *           //Mace
+    4617        0         0           60          11          60          60          0           *           *           *           //Plate Pants
+    1027        0         0           60          60          60          60          0           *           *           *           //Great Hammer
+    5641        0         0           60          11          60          60          0           *           *           *           //Plate Boots
 end
 
 12
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (GL)
-3101	0	0	60	11	60	60	0	*	*	*	//Lapid Shield
-1549	0	0	60	11	60	60	0	*	*	*	//Lapid Lance
-5724	0	0	60	11	60	60	0	*	*	*	//Gru Hill Boots
-5723	0	0	60	11	60	60	0	*	*	*	//Robust Boots
-1553	0	0	60	60	60	60	0	*	*	*	//Prickle Lance
-5212	0	0	60	11	60	60	0	*	*	*	//Gru Hill Gloves
-4699	0	0	60	11	60	60	0	*	*	*	//Robust Pants
-3675	0	0	60	11	60	60	0	*	*	*	//Robust Helmet
-4187	0	0	60	11	60	60	0	*	*	*	//Robust Armor
-5211	0	0	60	11	60	60	0	*	*	*	//Robust Gloves
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 12
+// The items section 12 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    3101        0         0           60          11          60          60          0           *           *           *           //Lapid Shield
+    1549        0         0           60          11          60          60          0           *           *           *           //Lapid Lance
+    5724        0         0           60          11          60          60          0           *           *           *           //Gru Hill Boots
+    5723        0         0           60          11          60          60          0           *           *           *           //Robust Boots
+    1553        0         0           60          60          60          60          0           *           *           *           //Prickle Lance
+    5212        0         0           60          11          60          60          0           *           *           *           //Gru Hill Gloves
+    4699        0         0           60          11          60          60          0           *           *           *           //Robust Pants
+    3675        0         0           60          11          60          60          0           *           *           *           //Robust Helmet
+    4187        0         0           60          11          60          60          0           *           *           *           //Robust Armor
+    5211        0         0           60          11          60          60          0           *           *           *           //Robust Gloves
 end
 
 13
-//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (common)
-7181	0	0	11	11	11	11	0	*	*	*	//?
-7182	0	0	11	11	11	11	0	*	*	*	//?
-6159	0	0	11	11	11	11	0	*	*	*	//?
-6656	0	0	11	11	11	11	0	*	*	*	//?
-6657	0	0	11	11	11	11	0	*	*	*	//?
-6664	0	0	11	11	11	11	0	*	*	*	//?
-6665	0	0	11	11	11	11	0	*	*	*	//?
-6668	0	0	11	11	11	11	0	*	*	*	//?
-6669	0	0	11	11	11	11	0	*	*	*	//?
+//--------------------------------------------------------------------------------------------------------------------------------
+// Items of Section 13
+// The items section 13 of the bag can give, with the level, grade and what each comes with (profiles of ItemOptionRate).
+//--------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index       Level     Grade       Option0     Option1     Option2     Option3     Option4     Option5     Option6     Duration
+//--------------------------------------------------------------------------------------------------------------------------------
+    7181        0         0           11          11          11          11          0           *           *           *           //?
+    7182        0         0           11          11          11          11          0           *           *           *           //?
+    6159        0         0           11          11          11          11          0           *           *           *           //?
+    6656        0         0           11          11          11          11          0           *           *           *           //?
+    6657        0         0           11          11          11          11          0           *           *           *           //?
+    6664        0         0           11          11          11          11          0           *           *           *           //?
+    6665        0         0           11          11          11          11          0           *           *           *           //?
+    6668        0         0           11          11          11          11          0           *           *           *           //?
+    6669        0         0           11          11          11          11          0           *           *           *           //?
 end

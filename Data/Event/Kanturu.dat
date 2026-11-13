@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // [Ref-1]
 //==============
@@ -15,78 +16,116 @@
 // KANTURU_STATE_END 				    5
 
 0
-//--------------------
-// Condition Settings
-//---------------------------------------
-// [Ref-1] [0-1]	   [InSec]	
-// State   Condition   SetTime    Comment
-//---------------------------------------
-   0        0          0          // None    
-   1        0          0          // Battle Standby
-   2        0          0          // Battle Of Maya
-   3        0          0          // Battle Of NightMare
-   4        0          0          // Tower Of Refinement
-   5        1          0          // End
+//----------------------------------------------------------
+// States
+// Kanturu walks through these states in turn. The comment at the end of each row names the state.
+//   State: 0 None | 1 Battle standby | 2 Battle of Maya | 3 Battle of Nightmare | 4 Tower of Refinement | 5 End
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  State    Condition    SetTime
+//----------------------------------------------------------
+    0        0            0          // None
+    1        0            0          // Battle Standby
+    2        0            0          // Battle Of Maya
+    3        0            0          // Battle Of NightMare
+    4        0            0          // Tower Of Refinement
+    5        1            0          // End
 end
 
 1
-//----------------------------------
-// Maya Battle Preparation Settings 
-//--------------------------------------
-// [0~3]   [0-1]       [InSec]
-// State   Condition   SetTime   Comment
-//--------------------------------------
-   0       0           0         // None
-   1       1           300       // Start(For Standby time / Event Closed)
-   2       1           60        // Notify(For Enter - Gate)
-   3       0           0         // End
+//----------------------------------------------------------
+// Standby
+// Kanturu waits here between cycles and walks through these stages before Maya starts.
+//   Stage: The stage of the standby: 0 none, 1 start, 2 notify (the gate to Maya opens), 3 end.
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  [0~3]    [Number]     [Number]
+//  State    Condition    SetTime
+//----------------------------------------------------------
+    0        0            0           // None
+    1        1            300         // Start(For Standby time / Event Closed)
+    2        1            60          // Notify(For Enter - Gate)
+    3        0            0           // End
 end
 
 2
-//--------------------------------------
-// [0~2]   [0-1]       [InSec]
-// State   Condition   SetTime   Comment
-//--------------------------------------
-   0       1           900       // First Battle Scene
-   1       1           900       // Second Battle Scene
-   2       1           1200      // Third Battle Scene
+//----------------------------------------------------------
+// Maya Rounds
+// Three rounds against Maya: how long each lasts.
+//   Round: The round against Maya: 0, 1 or 2.
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  [0~2]    [Number]     [Number]
+//  State    Condition    SetTime
+//----------------------------------------------------------
+    0        1            900         // First Battle Scene
+    1        1            900         // Second Battle Scene
+    2        1            1200        // Third Battle Scene
 end
 
 3
-//------------------------------
-// Maya Battle Cycle Settings
-//--------------------------------------
-// [0~18]  [0-1]       [InSec]
-// State   Condition   SetTime   Comment
-//--------------------------------------
-   0       0           0
-//---------------------------------------------------------------------
-// First Cycle
-//---------------------------------------------------------------------
-   1       1           120       // Stand By
-   2       1           15        // Notify
-   3       0           0         // Start
-   4       0           0         // Maya
-   5       1           5         // End Maya
-   6       1           3         // End Cycle
-//---------------------------------------------------------------------
-// Second Cycle
-//---------------------------------------------------------------------
-   7       1           60        // Stand By
-   8       0           0         // Start
-   9       0           0         // Maya
-   10      1           5         // End Maya
-   11      1           3         // End Cycle
-//---------------------------------------------------------------------
-// Third Cycle
-//---------------------------------------------------------------------
-   12      1           120       // Stand By
-   13      0           0         // Start
-   14      0           0         // Maya
-   15      1           5         // End Maya
-   16      1           10        // End Cycle
-   17      1           3         // End
-   18      0           0         // End Cycle
+//----------------------------------------------------------
+// Maya Stages
+// The stages of each round of the Maya battle. Players can only enter on the stages where the doors open.
+//   Stage: The stage of the Maya battle.
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  [0~18]    [Number]     [Number]
+//  State     Condition    SetTime
+//----------------------------------------------------------
+    0         0            0
+//----------------------------------------------------------
+// Maya Stages
+// The stages of each round of the Maya battle. Players can only enter on the stages where the doors open.
+//   Stage: The stage of the Maya battle.
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  [0~18]    [Number]     [Number]
+//  State     Condition    SetTime
+//----------------------------------------------------------
+    1         1            120         // Stand By
+    2         1            15          // Notify
+    3         0            0           // Start
+    4         0            0           // Maya
+    5         1            5           // End Maya
+    6         1            3           // End Cycle
+//----------------------------------------------------------
+// Maya Stages
+// The stages of each round of the Maya battle. Players can only enter on the stages where the doors open.
+//   Stage: The stage of the Maya battle.
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  [0~18]    [Number]     [Number]
+//  State     Condition    SetTime
+//----------------------------------------------------------
+    7         1            60          // Stand By
+    8         0            0           // Start
+    9         0            0           // Maya
+    10        1            5           // End Maya
+    11        1            3           // End Cycle
+//----------------------------------------------------------
+// Maya Stages
+// The stages of each round of the Maya battle. Players can only enter on the stages where the doors open.
+//   Stage: The stage of the Maya battle.
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  [0~18]    [Number]     [Number]
+//  State     Condition    SetTime
+//----------------------------------------------------------
+    12        1            120         // Stand By
+    13        0            0           // Start
+    14        0            0           // Maya
+    15        1            5           // End Maya
+    16        1            10          // End Cycle
+    17        1            3           // End
+    18        0            0           // End Cycle
 end
 
 4
@@ -101,14 +140,16 @@ end
 end
 
 5
-//------------------------
-// Ref: MonsterAIGroup.txt
-//------------------------
-// AIGroupNumber Comment
-//------------------------
-   20    		 // Maya Left Hand
-   21    		 // Maya Right Hand
-   22    		 // Maya Hands
+//----------------------------------------------------------
+// Maya AI Groups
+// The AI groups of Maya and her hands (MonsterAIGroup.txt). The comment at the end of each row names the monster.
+//   AI group: The AI group (MonsterAIGroup.txt) of that monster.
+//----------------------------------------------------------
+//  AIGroup
+//----------------------------------------------------------
+    20         // Maya Left Hand
+    21         // Maya Right Hand
+    22         // Maya Hands
 end
 
 6
@@ -120,18 +161,22 @@ end
 end
 
 7
-//------------------
-// Nightmare Cycle
-//--------------------------------------
-// [0~5]   [0-1]       [InSec]
-// State   Condition   SetTime   Comment
-//--------------------------------------
-   0       0           0         // None
-   1       1           5         // Idle
-   2       1           10        // Notify
-   3       1           1200      // Start
-   4       1           5         // End
-   5       0           0         // End Cycle
+//----------------------------------------------------------
+// Nightmare
+// Stage 3 is the fight itself; the others are the entrance and the closing.
+//   Stage: The stage of the Nightmare battle.
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  [0~5]    [Number]     [Number]
+//  State    Condition    SetTime
+//----------------------------------------------------------
+    0        0            0           // None
+    1        1            5           // Idle
+    2        1            10          // Notify
+    3        1            1200        // Start
+    4        1            5           // End
+    5        0            0           // End Cycle
 end
 
 8
@@ -145,45 +190,50 @@ end
 
 9
 //==============
-// [Info]
-//==============
-//----------------------------------------------------------------------
-// Refinery Tower Settings(Event Duration Time on Seconds)
-// 1- Revitalization -> 82500 / 60 Seconds / 60 minutes -> 22,91 Hours
-// Formula: 2 Hours * 60 Min * 60 Seconds -> 7200 Seconds
-//----------------------------------------------------------------------
-// [0~5]   [0-1]       [InSec]
-// State   Condition   SetTime   Comment
-//--------------------------------------
-   0       0           0         // None
-   1       1           600       // Revitalization(Enter Time)
-   2       1           300       // Notify
-   3       1           2220      // Close
-   4       1           180       // Notify
-   5       1           5         // End
+//----------------------------------------------------------
+// Refinery
+// Players can only get in on stages 1 and 2; on stage 5 everyone left inside is sent out.
+//   Stage: The stage of the Tower of Refinement.
+//   Ends by timer: Yes: this step ends by itself after the seconds of the next column. No: it does not run on a timer and goes on when the fight or the objective is completed.
+//   Lasts (seconds): Seconds this step lasts. Only used when it ends by timer.
+//----------------------------------------------------------
+//  [0~5]    [Number]     [Number]
+//  State    Condition    SetTime
+//----------------------------------------------------------
+    0        0            0           // None
+    1        1            600         // Revitalization(Enter Time)
+    2        1            300         // Notify
+    3        1            2220        // Close
+    4        1            180         // Notify
+    5        1            5           // End
 end
 
 10
-//---------------------------
-// MoonStone Ring Settings
-//----------------------------------------------------------------------
-// RingRequeriment	BlockMovement  Gate for move player when ring is not equipped
-//----------------------------------------------------------------------
-   1			    0			   139
+//----------------------------------------------------------
+// Moonstone Ring
+// The Moonstone ring requirement.
+//   Needs a Moonstone: Yes: players need a Moonstone Pendant (ring) equipped to go in.
+//   Block moving with the Moonstone: Yes: players with the Moonstone cannot warp with it.
+//----------------------------------------------------------
+//  RingRequired    BlockMovement    BypassGate
+//----------------------------------------------------------
+    1               0                139
 end
 
 11
-//==============
-// [Info]
-//==============
-//--------------------------------------------------------------------------
-// Event Reward
-// For Each Monster Boss Die, give Rewards! Default: 4 Mayas & 1 Nightmare .
-//--------------------------------------------------------------------------
-// [361~363] [ 0~9999999 ]  [0~65000] [0~2000000000]
-// Level	 WC	   WP	GP	Points	  Zen			Comment
-//---------------------------------------------------------------
-   361	     0	   0	0	0		  0		//Nightmare
-   362	     0	   0	0	0		  0		//Maya Hand
-   363	     0	   0	0	0		  0		//Maya Hand
+//----------------------------------------------------------
+// Boss Rewards
+// What each boss that dies gives (by default 4 Mayas and 1 Nightmare).
+//   Boss: The boss that gives this reward when it dies.
+//   WCoinC: WCoin C given.
+//   WCoinP: WCoin P given.
+//   Goblin Points: Goblin points given.
+//   Stat points: Free stat points given.
+//   Zen: Zen given. Nothing is given if the character would go over the Zen limit.
+//----------------------------------------------------------
+//  Monster    WC    WP    GP    Points    Zen
+//----------------------------------------------------------
+    361        0     0     0     0         0      //Nightmare
+    362        0     0     0     0         0      //Maya Hand
+    363        0     0     0     0         0      //Maya Hand
 end

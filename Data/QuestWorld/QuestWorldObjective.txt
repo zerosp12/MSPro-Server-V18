@@ -1,103 +1,203 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//==================================================================================================================================================================================
-//-> Type 1  = Exp   - Index = monster
-//-> Type 2  = Zen
-//-> Type 4  = Item  - Index = item x 512
-//-> Type 16 = Contribucion
-//==================================================================================================================================================================================================================================================
-//Num	Type	Index	Quant	Level	Opt1	Opt2	Opt3	NewOpt	MapNum	MonsterClass	MonsterLvlMin	MonsterLvlMax	DropRate	RequireIndex	RequireGroup	RequireState	DW	DK	FE	MG	DL	SU	RF      GL 
-//==================================================================================================================================================================================================================================================
-0		16		0		1		0		0		0		0		0		0		0				0				-1				0			9					1				1			1	1	1	0	0	1	0	0
-0		16		0		1		0		0		0		0		0		0		0				0				-1				0			15					1				1			1	1	1	0	0	1	0	0
-0		4		7168	5		0		0		0		0		0		0		0				0				-1				0			20					1				1			1	1	1	0	0	1	0	0
-0		1		27		3		0		0		0		0		0		0		0				0				-1				0			23					1				1			0	0	1	0	0	0	0	0
-0		1		2		3		0		0		0		0		0		0		0				0				-1				0			24					1				1			1	1	0	0	0	0	0	0
-0		1		418		3		0		0		0		0		0		0		0				0				-1				0			25					1				1			0	0	0	0	0	1	0	0
-0		4		7178	1		0		0		0		0		0		0		0				0				-1				0			29					1				1			1	1	1	0	0	1	0	0
-0		32		3		1		0		0		0		0		0		0		0				0				-1				0			31					1				1			1	1	1	0	0	0	0	0
-0		1		28		30		0		0		0		0		0		0		0				0				-1				0			33					1				1			0	0	1	0	0	0	0	0
-0		1		1		30		0		0		0		0		0		0		0				0				-1				0			34					1				1			1	1	0	0	0	0	0	0
-0		1		419		30		0		0		0		0		0		0		0				0				-1				0			35					1				1			0	0	0	0	0	1	0	0
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
 
-//QUEST EXPASION INVENTARIO/BAUL
-//==================================================================================================================================================================================================================================================
-//Num	Type	Index	Quant	Level	Opt1	Opt2	Opt3	NewOpt	MapNum	MonsterClass	MonsterLvlMin	MonsterLvlMax	DropRate	RequireIndex	RequireGroup	RequireState	DW	DK	FE	MG	DL	SU	RF      GL 
-//==================================================================================================================================================================================================================================================
-0		4		7332	1		0		0		0		0		0		4		40				0				-1				500		    4					7				1			1	1	1	1	1	1	1	1
-0		4		7333	1		0		0		0		0		0		7		52				0				-1				500		    9					7				1			1	1	1	1	1	1	1	1
-0		4		7334	1		0		0		0		0		0		10		69				0				-1				500		    14					7				1			1	1	1	1	1	1	1	1
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest World Objectives
+// What has to be done or brought to finish each step of a Quest World quest.
+//   Counter Slot: The slot (0 to 4) where kills and button presses of the quest are counted. Each kill or button row of the same quest needs its own number.
+//   Objective: 0 None | 1 Kill Monsters | 2 Learn Skill | 4 Collect Item | 8 Reach Level | 16 Special (Client Button)
+//   Target: Kill: the monster. Learn skill: the skill. Collect: the item. Reach level and client button do not use it.
+//   Amount: Monsters to kill, items to bring, button presses, or the level to reach. Learn Skill needs 1.
+//   Item Level: Level of the item to bring; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Only On Map: Collect Item: the item drops only on this map. None drops on any map.
+//   Drops From Monster: Collect Item: the item drops only from this monster. None drops from any monster.
+//   Monster Min Level: Collect Item: lowest level of the monsters that drop it. In a party the older rule applies: with No Limit here, the max level column is the monster number.
+//   Monster Max Level: Collect Item: highest level of the monsters that drop it.
+//   Drop Rate: Chance out of 10000 that a killed monster drops the item. No Drop never drops it (kill, skill and level rows).
+//   Quest It Belongs To: The quest this row asks for.
+//   Group It Belongs To: The group of that quest.
+//   State It Belongs To: 0 Not Started | 1 Accepted | 2 Rejected | 3 Finished | 4 Cancelled
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]    [Number]        [*/0~65535]        [*/0~65535]        [*/0~10000]    [0~65535]       [0~19]          [0~4]           [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    Map         MonsterClass    MonsterLevelMin    MonsterLevelMax    DropRate       RequireIndex    RequireGroup    RequireState    DW          DK          FE          MG          DL          SU          RF          GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         16          0           1           0         0          0          0          0            0           0               0                  -1                 0              9               1               1               1           1           1           0           0           1           0           0
+    0         16          0           1           0         0          0          0          0            0           0               0                  -1                 0              15              1               1               1           1           1           0           0           1           0           0
+    0         4           7168        5           0         0          0          0          0            0           0               0                  -1                 0              20              1               1               1           1           1           0           0           1           0           0
+    0         1           27          3           0         0          0          0          0            0           0               0                  -1                 0              23              1               1               0           0           1           0           0           0           0           0
+    0         1           2           3           0         0          0          0          0            0           0               0                  -1                 0              24              1               1               1           1           0           0           0           0           0           0
+    0         1           418         3           0         0          0          0          0            0           0               0                  -1                 0              25              1               1               0           0           0           0           0           1           0           0
+    0         4           7178        1           0         0          0          0          0            0           0               0                  -1                 0              29              1               1               1           1           1           0           0           1           0           0
+    0         32          3           1           0         0          0          0          0            0           0               0                  -1                 0              31              1               1               1           1           1           0           0           0           0           0
+    0         1           28          30          0         0          0          0          0            0           0               0                  -1                 0              33              1               1               0           0           1           0           0           0           0           0
+    0         1           1           30          0         0          0          0          0            0           0               0                  -1                 0              34              1               1               1           1           0           0           0           0           0           0
+    0         1           419         30          0         0          0          0          0            0           0               0                  -1                 0              35              1               1               0           0           0           0           0           1           0           0
 
-//==================================================================================================================================================================================================================================================
-//Num	Type	Index	Quant	Level	Opt1	Opt2	Opt3	NewOpt	MapNum	MonsterClass	MonsterLvlMin	MonsterLvlMax	DropRate	RequireIndex	RequireGroup	RequireState	DW	DK	FE	MG	DL	SU	RF      GL 
-//==================================================================================================================================================================================================================================================
-0		1		46		50		0		0		0		0		0		0		0				0				-1				0			1					16				1			1	1	1	1	1	1	1	1
-0		1		308		50		0		0		0		0		0		0		0				0				-1				0			4					16				1			1	1	1	1	1	1	1	1
-0		1		351		50		0		0		0		0		0		0		0				0				-1				0			7					16				1			1	1	1	1	1	1	1	1
-0		1		486		50		0		0		0		0		0		0		0				0				-1				0			10					16				1			1	1	1	1	1	1	1	1
-0		1		442		50		0		0		0		0		0		0		0				0				-1				0			13					16				1			1	1	1	1	1	1	1	1
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest World Objectives
+// What has to be done or brought to finish each step of a Quest World quest.
+//   Counter Slot: The slot (0 to 4) where kills and button presses of the quest are counted. Each kill or button row of the same quest needs its own number.
+//   Objective: 0 None | 1 Kill Monsters | 2 Learn Skill | 4 Collect Item | 8 Reach Level | 16 Special (Client Button)
+//   Target: Kill: the monster. Learn skill: the skill. Collect: the item. Reach level and client button do not use it.
+//   Amount: Monsters to kill, items to bring, button presses, or the level to reach. Learn Skill needs 1.
+//   Item Level: Level of the item to bring; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Only On Map: Collect Item: the item drops only on this map. None drops on any map.
+//   Drops From Monster: Collect Item: the item drops only from this monster. None drops from any monster.
+//   Monster Min Level: Collect Item: lowest level of the monsters that drop it. In a party the older rule applies: with No Limit here, the max level column is the monster number.
+//   Monster Max Level: Collect Item: highest level of the monsters that drop it.
+//   Drop Rate: Chance out of 10000 that a killed monster drops the item. No Drop never drops it (kill, skill and level rows).
+//   Quest It Belongs To: The quest this row asks for.
+//   Group It Belongs To: The group of that quest.
+//   State It Belongs To: 0 Not Started | 1 Accepted | 2 Rejected | 3 Finished | 4 Cancelled
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]    [Number]        [*/0~65535]        [*/0~65535]        [*/0~10000]    [0~65535]       [0~19]          [0~4]           [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    Map         MonsterClass    MonsterLevelMin    MonsterLevelMax    DropRate       RequireIndex    RequireGroup    RequireState    DW          DK          FE          MG          DL          SU          RF          GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         4           7332        1           0         0          0          0          0            4           40              0                  -1                 500            4               7               1               1           1           1           1           1           1           1           1
+    0         4           7333        1           0         0          0          0          0            7           52              0                  -1                 500            9               7               1               1           1           1           1           1           1           1           1
+    0         4           7334        1           0         0          0          0          0            10          69              0                  -1                 500            14              7               1               1           1           1           1           1           1           1           1
 
-//==================================================================================================================================================================================================================================================
-//Num	Type	Index	Quant	Level	Opt1	Opt2	Opt3	NewOpt	MapNum	MonsterClass	MonsterLvlMin	MonsterLvlMax	DropRate	RequireIndex	RequireGroup	RequireState	DW	DK	FE	MG	DL	SU	RF      GL 
-//==================================================================================================================================================================================================================================================
-0		1		52 		50		0		0		0		0		0		0		0				0				-1				0			1					17				1			1	1	1	1	1	1	1	1
-0		1		306		50		0		0		0		0		0		0		0				0				-1				0			4					17				1			1	1	1	1	1	1	1	1
-0		1		352		50		0		0		0		0		0		0		0				0				-1				0			7					17				1			1	1	1	1	1	1	1	1
-0		1		489		50		0		0		0		0		0		0		0				0				-1				0			10					17				1			1	1	1	1	1	1	1	1
-0		1		448		50		0		0		0		0		0		0		0				0				-1				0			13					17				1			1	1	1	1	1	1	1	1
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest World Objectives
+// What has to be done or brought to finish each step of a Quest World quest.
+//   Counter Slot: The slot (0 to 4) where kills and button presses of the quest are counted. Each kill or button row of the same quest needs its own number.
+//   Objective: 0 None | 1 Kill Monsters | 2 Learn Skill | 4 Collect Item | 8 Reach Level | 16 Special (Client Button)
+//   Target: Kill: the monster. Learn skill: the skill. Collect: the item. Reach level and client button do not use it.
+//   Amount: Monsters to kill, items to bring, button presses, or the level to reach. Learn Skill needs 1.
+//   Item Level: Level of the item to bring; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Only On Map: Collect Item: the item drops only on this map. None drops on any map.
+//   Drops From Monster: Collect Item: the item drops only from this monster. None drops from any monster.
+//   Monster Min Level: Collect Item: lowest level of the monsters that drop it. In a party the older rule applies: with No Limit here, the max level column is the monster number.
+//   Monster Max Level: Collect Item: highest level of the monsters that drop it.
+//   Drop Rate: Chance out of 10000 that a killed monster drops the item. No Drop never drops it (kill, skill and level rows).
+//   Quest It Belongs To: The quest this row asks for.
+//   Group It Belongs To: The group of that quest.
+//   State It Belongs To: 0 Not Started | 1 Accepted | 2 Rejected | 3 Finished | 4 Cancelled
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]    [Number]        [*/0~65535]        [*/0~65535]        [*/0~10000]    [0~65535]       [0~19]          [0~4]           [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    Map         MonsterClass    MonsterLevelMin    MonsterLevelMax    DropRate       RequireIndex    RequireGroup    RequireState    DW          DK          FE          MG          DL          SU          RF          GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           46          50          0         0          0          0          0            0           0               0                  -1                 0              1               16              1               1           1           1           1           1           1           1           1
+    0         1           308         50          0         0          0          0          0            0           0               0                  -1                 0              4               16              1               1           1           1           1           1           1           1           1
+    0         1           351         50          0         0          0          0          0            0           0               0                  -1                 0              7               16              1               1           1           1           1           1           1           1           1
+    0         1           486         50          0         0          0          0          0            0           0               0                  -1                 0              10              16              1               1           1           1           1           1           1           1           1
+    0         1           442         50          0         0          0          0          0            0           0               0                  -1                 0              13              16              1               1           1           1           1           1           1           1           1
 
-//==================================================================================================================================================================================================================================================
-//Num	Type	Index	Quant	Level	Opt1	Opt2	Opt3	NewOpt	MapNum	MonsterClass	MonsterLvlMin	MonsterLvlMax	DropRate	RequireIndex	RequireGroup	RequireState	DW	DK	FE	MG	DL	SU	RF      GL 
-//==================================================================================================================================================================================================================================================
-0		1		3		10		0		0		0		0		0		0		0				0				-1				0			1					18				1			1	1	1	1	1	1	1	1
-0		1		7		15		0		0		0		0		0		0		0				0				-1				0			4					18				1			1	1	0	0	0	0	0	0
-0		1		6		15		0		0		0		0		0		0		0				0				-1				0			5					18				1			0	0	0	1	1	0	1	0
-0		1		31		15		0		0		0		0		0		0		0				0				-1				0			6					18				1			0	0	1	0	0	0	0	0
-0		1		419		15		0		0		0		0		0		0		0				0				-1				0			7					18				1			0	0	0	0	0	1	0	0
-0		1		7		20		0		0		0		0		0		0		0				0				-1				0			10					18				1			1	1	0	0	0	0	0	0
-0		1		14		20		0		0		0		0		0		0		0				0				-1				0			11					18				1			0	0	0	1	1	0	1	0
-0		1		32		20		0		0		0		0		0		0		0				0				-1				0			12					18				1			0	0	1	0	0	0	0	0
-0		1		420		20		0		0		0		0		0		0		0				0				-1				0			13					18				1			0	0	0	0	0	1	0	0
-0		1		22		25		0		0		0		0		0		0		0				0				-1				0			16					18				1			0	0	0	1	1	0	1	0
-0		1		24		25		0		0		0		0		0		0		0				0				-1				0			17					18				1			1	1	1	0	0	1	0	0
-0		1		21		30		0		0		0		0		0		0		0				0				-1				0			20					18				1			0	0	0	1	1	0	1	0
-0		1		22		30		0		0		0		0		0		0		0				0				-1				0			21					18				1			1	1	1	0	0	1	0	0
-0		1		19		30		0		0		0		0		0		0		0				0				-1				0			24					18				1			0	0	0	1	1	0	1	0
-0		1		23		30		0		0		0		0		0		0		0				0				-1				0			25					18				1			1	1	1	0	0	1	0	0
-0		1		17		40		0		0		0		0		0		0		0				0				-1				0			28					18				1			0	0	0	1	1	0	1	0
-0		1		12		40		0		0		0		0		0		0		0				0				-1				0			29					18				1			1	1	1	0	0	1	0	0
-0		1		423		50		0		0		0		0		0		0		0				0				-1				0			32					18				1			0	0	0	1	1	0	1	0
-0		1		422		50		0		0		0		0		0		0		0				0				-1				0			33					18				1			1	1	1	0	0	1	0	0
-0		1		5		50		0		0		0		0		0		0		0				0				-1				0			36					18				1			0	0	0	1	1	0	1	0
-0		1		17		50		0		0		0		0		0		0		0				0				-1				0			37					18				1			1	1	1	0	0	1	0	0
-0		1		13		50		0		0		0		0		0		0		0				0				-1				0			40					18				1			0	0	0	1	1	0	1	0
-0		1		15		50		0		0		0		0		0		0		0				0				-1				0			41					18				1			1	1	1	0	0	1	0	0
-0		1		9		50		0		0		0		0		0		0		0				0				-1				0			44					18				1			0	0	0	1	1	0	1	0
-0		1		5		50		0		0		0		0		0		0		0				0				-1				0			45					18				1			1	1	1	0	0	1	0	0
-0		1		8		50		0		0		0		0		0		0		0				0				-1				0			48					18				1			0	0	0	1	1	0	1	0
-0		1		13		50		0		0		0		0		0		0		0				0				-1				0			49					18				1			1	1	1	0	0	1	0	0
-0		1		10		50		0		0		0		0		0		0		0				0				-1				0			52					18				1			0	0	0	1	1	0	1	0
-0		1		9		50		0		0		0		0		0		0		0				0				-1				0			53					18				1			1	1	1	0	0	1	0	0
-0		1		18		15		0		0		0		0		0		0		0				0				-1				0			56					18				1			0	0	0	1	1	0	1	0
-0		1		8		50		0		0		0		0		0		0		0				0				-1				0			57					18				1			1	1	1	0	0	1	0	0
-0		1		36		50		0		0		0		0		0		0		0				0				-1				0			60					18				1			0	0	0	1	1	0	1	0
-0		1		25		3		0		0		0		0		0		0		0				0				-1				0			61					18				1			1	1	1	0	0	1	0	0
-0		1		39		50		0		0		0		0		0		0		0				0				-1				0			64					18				1			0	0	0	1	1	0	1	0
-0		1		424		50		0		0		0		0		0		0		0				0				-1				0			65					18				1			1	1	1	0	0	1	0	0
-0		1		34		50		0		0		0		0		0		0		0				0				-1				0			68					18				1			0	0	0	1	1	0	1	0
-0		1		425		50		0		0		0		0		0		0		0				0				-1				0			69					18				1			1	1	1	0	0	1	0	0
-0		1		41		50		0		0		0		0		0		0		0				0				-1				0			72					18				1			0	0	0	1	1	0	1	0
-0		1		36		50		0		0		0		0		0		0		0				0				-1				0			73					18				1			1	1	1	0	0	1	0	0
-0		1		37		50		0		0		0		0		0		0		0				0				-1				0			76					18				1			0	0	0	1	1	0	1	0
-0		1		34		50		0		0		0		0		0		0		0				0				-1				0			77					18				1			1	1	1	0	0	1	0	0
-0		1		40		50		0		0		0		0		0		0		0				0				-1				0			80					18				1			0	0	0	1	1	0	1	0
-0		1		41		50		0		0		0		0		0		0		0				0				-1				0			81					18				1			1	1	1	0	0	1	0	0
-0		1		35		50		0		0		0		0		0		0		0				0				-1				0			84					18				1			0	0	0	1	1	0	1	0
-0		1		37		50		0		0		0		0		0		0		0				0				-1				0			85					18				1			1	1	1	0	0	1	0	0
-0		1		38		15		0		0		0		0		0		0		0				0				-1				0			88					18				1			0	0	0	1	1	0	1	0
-0		1		40		50		0		0		0		0		0		0		0				0				-1				0			89					18				1			1	1	1	0	0	1	0	0
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest World Objectives
+// What has to be done or brought to finish each step of a Quest World quest.
+//   Counter Slot: The slot (0 to 4) where kills and button presses of the quest are counted. Each kill or button row of the same quest needs its own number.
+//   Objective: 0 None | 1 Kill Monsters | 2 Learn Skill | 4 Collect Item | 8 Reach Level | 16 Special (Client Button)
+//   Target: Kill: the monster. Learn skill: the skill. Collect: the item. Reach level and client button do not use it.
+//   Amount: Monsters to kill, items to bring, button presses, or the level to reach. Learn Skill needs 1.
+//   Item Level: Level of the item to bring; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Only On Map: Collect Item: the item drops only on this map. None drops on any map.
+//   Drops From Monster: Collect Item: the item drops only from this monster. None drops from any monster.
+//   Monster Min Level: Collect Item: lowest level of the monsters that drop it. In a party the older rule applies: with No Limit here, the max level column is the monster number.
+//   Monster Max Level: Collect Item: highest level of the monsters that drop it.
+//   Drop Rate: Chance out of 10000 that a killed monster drops the item. No Drop never drops it (kill, skill and level rows).
+//   Quest It Belongs To: The quest this row asks for.
+//   Group It Belongs To: The group of that quest.
+//   State It Belongs To: 0 Not Started | 1 Accepted | 2 Rejected | 3 Finished | 4 Cancelled
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]    [Number]        [*/0~65535]        [*/0~65535]        [*/0~10000]    [0~65535]       [0~19]          [0~4]           [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    Map         MonsterClass    MonsterLevelMin    MonsterLevelMax    DropRate       RequireIndex    RequireGroup    RequireState    DW          DK          FE          MG          DL          SU          RF          GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           52          50          0         0          0          0          0            0           0               0                  -1                 0              1               17              1               1           1           1           1           1           1           1           1
+    0         1           306         50          0         0          0          0          0            0           0               0                  -1                 0              4               17              1               1           1           1           1           1           1           1           1
+    0         1           352         50          0         0          0          0          0            0           0               0                  -1                 0              7               17              1               1           1           1           1           1           1           1           1
+    0         1           489         50          0         0          0          0          0            0           0               0                  -1                 0              10              17              1               1           1           1           1           1           1           1           1
+    0         1           448         50          0         0          0          0          0            0           0               0                  -1                 0              13              17              1               1           1           1           1           1           1           1           1
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest World Objectives
+// What has to be done or brought to finish each step of a Quest World quest.
+//   Counter Slot: The slot (0 to 4) where kills and button presses of the quest are counted. Each kill or button row of the same quest needs its own number.
+//   Objective: 0 None | 1 Kill Monsters | 2 Learn Skill | 4 Collect Item | 8 Reach Level | 16 Special (Client Button)
+//   Target: Kill: the monster. Learn skill: the skill. Collect: the item. Reach level and client button do not use it.
+//   Amount: Monsters to kill, items to bring, button presses, or the level to reach. Learn Skill needs 1.
+//   Item Level: Level of the item to bring; also the level of the items that drop. Only for Collect Item.
+//   Skill: Skill option of the items that drop (1 has it). Only for Collect Item.
+//   Luck: Luck option of the items that drop (1 has it). Only for Collect Item.
+//   Additional Option: Additional option of the items that drop, 0 to 7. Only for Collect Item.
+//   Excellent Options: Excellent options of the items that drop, as a sum of option bits (0 to 63). Only for Collect Item.
+//   Only On Map: Collect Item: the item drops only on this map. None drops on any map.
+//   Drops From Monster: Collect Item: the item drops only from this monster. None drops from any monster.
+//   Monster Min Level: Collect Item: lowest level of the monsters that drop it. In a party the older rule applies: with No Limit here, the max level column is the monster number.
+//   Monster Max Level: Collect Item: highest level of the monsters that drop it.
+//   Drop Rate: Chance out of 10000 that a killed monster drops the item. No Drop never drops it (kill, skill and level rows).
+//   Quest It Belongs To: The quest this row asks for.
+//   Group It Belongs To: The group of that quest.
+//   State It Belongs To: 0 Not Started | 1 Accepted | 2 Rejected | 3 Finished | 4 Cancelled
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~4]     [Number]    [Number]    [Number]    [0~15]    [0~1]      [0~1]      [0~7]      [0~63]       [Number]    [Number]        [*/0~65535]        [*/0~65535]        [*/0~10000]    [0~65535]       [0~19]          [0~4]           [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Number    Type        Index       Quantity    Level     Option1    Option2    Option3    NewOption    Map         MonsterClass    MonsterLevelMin    MonsterLevelMax    DropRate       RequireIndex    RequireGroup    RequireState    DW          DK          FE          MG          DL          SU          RF          GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         1           3           10          0         0          0          0          0            0           0               0                  -1                 0              1               18              1               1           1           1           1           1           1           1           1
+    0         1           7           15          0         0          0          0          0            0           0               0                  -1                 0              4               18              1               1           1           0           0           0           0           0           0
+    0         1           6           15          0         0          0          0          0            0           0               0                  -1                 0              5               18              1               0           0           0           1           1           0           1           0
+    0         1           31          15          0         0          0          0          0            0           0               0                  -1                 0              6               18              1               0           0           1           0           0           0           0           0
+    0         1           419         15          0         0          0          0          0            0           0               0                  -1                 0              7               18              1               0           0           0           0           0           1           0           0
+    0         1           7           20          0         0          0          0          0            0           0               0                  -1                 0              10              18              1               1           1           0           0           0           0           0           0
+    0         1           14          20          0         0          0          0          0            0           0               0                  -1                 0              11              18              1               0           0           0           1           1           0           1           0
+    0         1           32          20          0         0          0          0          0            0           0               0                  -1                 0              12              18              1               0           0           1           0           0           0           0           0
+    0         1           420         20          0         0          0          0          0            0           0               0                  -1                 0              13              18              1               0           0           0           0           0           1           0           0
+    0         1           22          25          0         0          0          0          0            0           0               0                  -1                 0              16              18              1               0           0           0           1           1           0           1           0
+    0         1           24          25          0         0          0          0          0            0           0               0                  -1                 0              17              18              1               1           1           1           0           0           1           0           0
+    0         1           21          30          0         0          0          0          0            0           0               0                  -1                 0              20              18              1               0           0           0           1           1           0           1           0
+    0         1           22          30          0         0          0          0          0            0           0               0                  -1                 0              21              18              1               1           1           1           0           0           1           0           0
+    0         1           19          30          0         0          0          0          0            0           0               0                  -1                 0              24              18              1               0           0           0           1           1           0           1           0
+    0         1           23          30          0         0          0          0          0            0           0               0                  -1                 0              25              18              1               1           1           1           0           0           1           0           0
+    0         1           17          40          0         0          0          0          0            0           0               0                  -1                 0              28              18              1               0           0           0           1           1           0           1           0
+    0         1           12          40          0         0          0          0          0            0           0               0                  -1                 0              29              18              1               1           1           1           0           0           1           0           0
+    0         1           423         50          0         0          0          0          0            0           0               0                  -1                 0              32              18              1               0           0           0           1           1           0           1           0
+    0         1           422         50          0         0          0          0          0            0           0               0                  -1                 0              33              18              1               1           1           1           0           0           1           0           0
+    0         1           5           50          0         0          0          0          0            0           0               0                  -1                 0              36              18              1               0           0           0           1           1           0           1           0
+    0         1           17          50          0         0          0          0          0            0           0               0                  -1                 0              37              18              1               1           1           1           0           0           1           0           0
+    0         1           13          50          0         0          0          0          0            0           0               0                  -1                 0              40              18              1               0           0           0           1           1           0           1           0
+    0         1           15          50          0         0          0          0          0            0           0               0                  -1                 0              41              18              1               1           1           1           0           0           1           0           0
+    0         1           9           50          0         0          0          0          0            0           0               0                  -1                 0              44              18              1               0           0           0           1           1           0           1           0
+    0         1           5           50          0         0          0          0          0            0           0               0                  -1                 0              45              18              1               1           1           1           0           0           1           0           0
+    0         1           8           50          0         0          0          0          0            0           0               0                  -1                 0              48              18              1               0           0           0           1           1           0           1           0
+    0         1           13          50          0         0          0          0          0            0           0               0                  -1                 0              49              18              1               1           1           1           0           0           1           0           0
+    0         1           10          50          0         0          0          0          0            0           0               0                  -1                 0              52              18              1               0           0           0           1           1           0           1           0
+    0         1           9           50          0         0          0          0          0            0           0               0                  -1                 0              53              18              1               1           1           1           0           0           1           0           0
+    0         1           18          15          0         0          0          0          0            0           0               0                  -1                 0              56              18              1               0           0           0           1           1           0           1           0
+    0         1           8           50          0         0          0          0          0            0           0               0                  -1                 0              57              18              1               1           1           1           0           0           1           0           0
+    0         1           36          50          0         0          0          0          0            0           0               0                  -1                 0              60              18              1               0           0           0           1           1           0           1           0
+    0         1           25          3           0         0          0          0          0            0           0               0                  -1                 0              61              18              1               1           1           1           0           0           1           0           0
+    0         1           39          50          0         0          0          0          0            0           0               0                  -1                 0              64              18              1               0           0           0           1           1           0           1           0
+    0         1           424         50          0         0          0          0          0            0           0               0                  -1                 0              65              18              1               1           1           1           0           0           1           0           0
+    0         1           34          50          0         0          0          0          0            0           0               0                  -1                 0              68              18              1               0           0           0           1           1           0           1           0
+    0         1           425         50          0         0          0          0          0            0           0               0                  -1                 0              69              18              1               1           1           1           0           0           1           0           0
+    0         1           41          50          0         0          0          0          0            0           0               0                  -1                 0              72              18              1               0           0           0           1           1           0           1           0
+    0         1           36          50          0         0          0          0          0            0           0               0                  -1                 0              73              18              1               1           1           1           0           0           1           0           0
+    0         1           37          50          0         0          0          0          0            0           0               0                  -1                 0              76              18              1               0           0           0           1           1           0           1           0
+    0         1           34          50          0         0          0          0          0            0           0               0                  -1                 0              77              18              1               1           1           1           0           0           1           0           0
+    0         1           40          50          0         0          0          0          0            0           0               0                  -1                 0              80              18              1               0           0           0           1           1           0           1           0
+    0         1           41          50          0         0          0          0          0            0           0               0                  -1                 0              81              18              1               1           1           1           0           0           1           0           0
+    0         1           35          50          0         0          0          0          0            0           0               0                  -1                 0              84              18              1               0           0           0           1           1           0           1           0
+    0         1           37          50          0         0          0          0          0            0           0               0                  -1                 0              85              18              1               1           1           1           0           0           1           0           0
+    0         1           38          15          0         0          0          0          0            0           0               0                  -1                 0              88              18              1               0           0           0           1           1           0           1           0
+    0         1           40          50          0         0          0          0          0            0           0               0                  -1                 0              89              18              1               1           1           1           0           0           1           0           0
 end

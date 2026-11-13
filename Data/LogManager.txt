@@ -1,54 +1,74 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-// MSPro - Log Manager
-//-------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------
 // Log Settings
-//-------------------------------------------------------------------------
-//	[0-1]	[0-1]
-//	Enable	Preview
-//-------------------------------------------------------------------------
+// Turns the advanced player logs on and shows them in the GameServer window.
+//   Enabled: Turns the advanced player logs on or off.
+//   Show in the GameServer window: Yes: the logs are also written in the GameServer window (see the next part for which ones).
+//----------------------------------------------------------
+//  [0~1]     [0~1]
+//  Enable    Preview
+//----------------------------------------------------------
 0
-	1		1
+    1         1
 end
 
-//--------------------------------------------------------------------------------------------------------------
-// Preview Advance Player Logs
-//--------------------------------------------------------------------------------------------------------------
-//	[0-1]		[0-1]		[0-1]		[0-1]		[0-1]		[0-1]		[0-1]		[0-1]		[0-1]
-//				Account		Move		NPC			Item		Use			Die			Common		Reset
-//	Chat		Info		Player		Use			Move		Coins		Player		Info		Proccess
-//--------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------
+// Preview of Player Logs
+// Which logs are shown in the GameServer window.
+//   Chats: Yes: shows the chats in the GameServer window.
+//   Account info: Yes: shows the account information of the players in the GameServer window.
+//   Player moves: Yes: shows the moves of the players between maps in the GameServer window.
+//   NPC use: Yes: shows the use of NPCs in the GameServer window.
+//   Item moves: Yes: shows the items that move in the GameServer window.
+//   Coins used: Yes: shows the use of coins in the GameServer window.
+//   Player deaths: Yes: shows the deaths of players in the GameServer window.
+//   Systems activated: Yes: shows the systems that players activate in the GameServer window.
+//   Reset status: Yes: shows the reset system in the GameServer window.
+//------------------------------------------------------------------------------------------------------------------
+//  [0~1]    [0~1]          [0~1]         [0~1]     [0~1]       [0~1]       [0~1]        [0~1]           [0~1]
+//  Chats    AccountInfo    MovePlayer    NpcUse    MoveItem    UseCoins    PlayerDie    SystemActive    ResetStatus
+//------------------------------------------------------------------------------------------------------------------
 1
-	0			1			0			1			1			0			0			1			0
+    0        1              0             1         1           0           0            1               0
 end
 
-//-------------------------------------------------------------------------
-// Chat Save Log Settings
-// All this line, will add special Folder for each.
-//--
-//	[0-1]		[0-1]		[0-1]		[0-1]		[0-1]		[0-1]
-//	General		Guild		Whisp		Party		Gens		Post
-//-------------------------------------------------------------------------
+//----------------------------------------------------------
+// Chat Logs
+// Which chats are saved. Each one gets its own folder.
+//   General: Yes: saves the general chat.
+//   Guild: Yes: saves the guild chat.
+//   Whisper: Yes: saves the whispers.
+//   Party: Yes: saves the party chat.
+//   Gens: Yes: saves the Gens chat.
+//   Post: Yes: saves the posts.
+//----------------------------------------------------------
+//  [0~1]      [0~1]    [0~1]      [0~1]    [0~1]    [0~1]
+//  General    Guild    Whisper    Party    Gens     Post
+//----------------------------------------------------------
 2
-	1			1			1			1			1			1
+    1          1        1          1        1        1
 end
 
-//-------------------------------------------------------------------------
-// Reset System Log Manager
-//-------------------------------------------------------------------------
-// Recommended: Only set ReqInfo & Reward Info
-//				[0-1]		[0-1]		[0-1]		[0-1]
-//				Req			Req Remove	Reward		Surprise
-//				Info		Info		Info		Info
-//-------------------------------------------------------------------------
+//-------------------------------------------------------------
+// Reset System Logs
+// What the reset system writes to the log. Recommended: only the requirements and the rewards.
+//   Log for: 0 Generate | 1 Preview
+//   Requirements: Yes: logs what the reset asks for.
+//   What is removed: Yes: logs what the reset takes from the player.
+//   Reward: Yes: logs the reward of the reset.
+//   Surprise reward: Yes: logs the surprise reward of the reset.
+//-------------------------------------------------------------
+//  Mode    Requirements    Removed    Reward    SurpriseReward
+//-------------------------------------------------------------
 3
-	0			1			1			1			1	//Generate
-	1			1			1			1			1	//Preview
+    0       1               1          1         1                 //Generate
+    1       1               1          1         1                 //Preview
 end
 
 //-------------------------------------------------------------------------
@@ -66,26 +86,28 @@ end
 //		07 - PK Drop Item (Special) 
 //		08 - Item Buy (Special)
 //		09 - Item Sell (Special)
-//		10 - Item Use (Special)
-//		11 - Gremory Case (Special)
-//	In: Item Move from Inventory to Type
-//	Out: Type to Inventory
-//	Move: Inside Same Type
-//-------------------------------------------------------------------------
-//	[0-10]		[0-1]		[0-1]		[0-1]
-//	Type		In			Out			Move
-//-------------------------------------------------------------------------
+//----------------------------------------------------------
+// Item Logs
+// Writes a log for the items that move between the inventory and each place.
+//   Place: The place the items go to or come from.
+//   From the inventory to the place: Yes: logs the items that go from the inventory to this place.
+//   From the place to the inventory: Yes: logs the items that go from this place to the inventory.
+//   Move: Yes: logs the items that move inside this same place.
+//----------------------------------------------------------
+//  [0~11]    [0~1]    [0~1]    [0~1]
+//  Type      In       Out      Move
+//----------------------------------------------------------
 4
-	00			1			1			1	//Trade
-	01			1			1			1	//Ware
-	02			1			1			1	//Chaos Machine
-	03			1			1			1	//Personal Store
-	04			1			1			1	//Pet Inventory
-	05			1			0			0	//Drop Item
-	06			1			0			0	//Pick Item
-	07			1			0			0	//PK Drop Item
-	08			1			0			0	//Item Buy
-	09			1			0			0	//Item Sell
-	10			1			0			0	//Item Use
-	11			1			0			0	//Gremory Case
+    00        1        1        1        //Trade
+    01        1        1        1        //Ware
+    02        1        1        1        //Chaos Machine
+    03        1        1        1        //Personal Store
+    04        1        1        1        //Pet Inventory
+    05        1        0        0        //Drop Item
+    06        1        0        0        //Pick Item
+    07        1        0        0        //PK Drop Item
+    08        1        0        0        //Item Buy
+    09        1        0        0        //Item Sell
+    10        1        0        0        //Item Use
+    11        1        0        0        //Gremory Case
 end

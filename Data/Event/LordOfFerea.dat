@@ -1,48 +1,71 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------
 // Information
-//---------------------------------------------------------------------------------
-//	[0/1]		[0/1]		[0/1]			[0/1]
-//	Debug 		Enable		AnnounceAll		BlockAccess
-//---------------------------------------------------------------------------------
+// Turns the event on and sets how it is announced.
+//   Debug log: 1 writes extra lines about the event to the log.
+//   Enabled: Turns the event on or off.
+//   Announce only in the map: The file calls this AnnounceAll; the GameServer reads it as AnnounceOnlyMap.
+//   Block access to the zone: 1 keeps players out of the zone until the event allows it.
+//----------------------------------------------------------
+//  Debug    Enable    AnnounceOnlyMap    BlockAccess
+//----------------------------------------------------------
 0
-	1			1			1				1	
+    1        1         1                  1
 end
 
-//-------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 // Settings
-//-------------------------------------------------------------------------------------------------------------------------------
-//	[====== Ferea Orb ======]		[=============== Lord Of Ferea ===============]			[==== Event Enter ====]
-//	[0~100]		[Seconds]			[0~100]		[Seconds]		[0~100]						[Minutes]
-//	Life %		Regen Time			Life %		Regen Time	 	Life % Invoke Army			Revitalization Event Time
-//--------------------------------------------------------------------------------------------------------------------------------
+// The life and regeneration of the Ferea orb and the Lord of Ferea, and when the army and the revitalization come in.
+//   Ferea orb: life recovered (%): Percentage of its maximum life the Ferea orb recovers each time.
+//   Ferea orb: regen time (seconds): Seconds between one recovery of the orb and the next.
+//   Lord of Ferea: life recovered (%): Percentage of its maximum life the Lord of Ferea recovers each time.
+//   Lord of Ferea: regen time (seconds): Seconds between one recovery of the Lord of Ferea and the next.
+//   Invoke army (%): The Lord of Ferea calls its army when its life falls to this percentage or below.
+//   Revitalization: event time (minutes): Minutes after the event ends before it can open again.
+//----------------------------------------------------------------------------------------
+//  [0~100]    [Number]        [0~100]     [Number]         [0~100]     [Number]
+//  OrbLife    OrbRegenTime    BossLife    BossRegenTime    ArmyRate    RevitalizationTime
+//----------------------------------------------------------------------------------------
 1
-	5			5	         		5			5				60		                    5
+    5          5               5           5                60          5
 end
 
-//---------------------------------------------------------------------------------
-// Boss Spawn Coords
-//---------------------------------------------------------------------------------
-//	[0~255]		[0~255]		[0~255]		[0~255]		[* / 0-8]
-//	X			Y			X2			Y2			Dir
-//---------------------------------------------------------------------------------
+//----------------------------------------------------------
+// Boss Spawn Coordinates
+// Where the Lord of Ferea appears: the area it is placed in.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Direction: The way it faces, 0 to 8. Random picks one each time.
+//----------------------------------------------------------
+//  [0~255]    [0~255]    [0~255]    [0~255]    [*/0~8]
+//  X          Y          X2         Y2         Dir
+//----------------------------------------------------------
 2
-	26			122			28			124			3
+    26         122        28         124        3
 end
 
-//---------------------------------------------------------------------------------
-// Ferea General Spawn Coords
-//---------------------------------------------------------------------------------
-//	[0~255]		[0~255]		[0~255]		[0~255]		[* / 0-8]
-//	X			Y			X2			Y2			Dir
-//---------------------------------------------------------------------------------
+//----------------------------------------------------------
+// General Spawn Coordinates
+// Where the other Ferea monsters appear.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Direction: The way it faces, 0 to 8. Random picks one each time.
+//----------------------------------------------------------
+//  [0~255]    [0~255]    [0~255]    [0~255]    [*/0~8]
+//  X          Y          X2         Y2         Dir
+//----------------------------------------------------------
 3
-	29			116			38			130			3
+    29         116        38         130        3
 end
 
 
@@ -53,31 +76,92 @@ end
 //	Group	Monster		Count		X			Y			X2			Y2			Dir
 //---------------------------------------------------------------------------------------------------
 4
-//Group 0
-	0		736			5			25			113			37			136			1
-	0		737			6			25			113			37			136			2
-	0		738			7			25			113			37			136			3
-//Group 1
-	1		736			5			25			113			37			136			1
-	1		737			6			25			113			37			136			3
-	1		738			7			25			113			37			136			3
-//Group 2
-	2		736			6			25			113			37			136			2
-	2		737			7			25			113			37			136			2
-	2		738			8			25			113			37			136			3
-//Group 3
-	3		736			5			25			113			37			136			3
-	3		737			6			25			113			37			136			2
-	3		738			7			25			113			37			136			3
+//------------------------------------------------------------------------------------
+// Boss Area Zone
+// The monsters of each group in the boss area.
+//   Group: The server does not use this number: every row of this part appears at the same time when the Ferea orb is destroyed.
+//   Monster: The monster that appears.
+//   How many: How many of this monster appear.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Direction: The way it faces, 0 to 8. Random picks one each time.
+//------------------------------------------------------------------------------------
+//  [0~4]    [0~1999]    [0~20]    [0~255]    [0~255]    [0~255]    [0~255]    [*/0~8]
+//  Group    Monster     Count     X          Y          X2         Y2         Dir
+//------------------------------------------------------------------------------------
+    0        736         5         25         113        37         136        1
+    0        737         6         25         113        37         136        2
+    0        738         7         25         113        37         136        3
+//------------------------------------------------------------------------------------
+// Boss Area Zone
+// The monsters of each group in the boss area.
+//   Group: The server does not use this number: every row of this part appears at the same time when the Ferea orb is destroyed.
+//   Monster: The monster that appears.
+//   How many: How many of this monster appear.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Direction: The way it faces, 0 to 8. Random picks one each time.
+//------------------------------------------------------------------------------------
+//  [0~4]    [0~1999]    [0~20]    [0~255]    [0~255]    [0~255]    [0~255]    [*/0~8]
+//  Group    Monster     Count     X          Y          X2         Y2         Dir
+//------------------------------------------------------------------------------------
+    1        736         5         25         113        37         136        1
+    1        737         6         25         113        37         136        3
+    1        738         7         25         113        37         136        3
+//------------------------------------------------------------------------------------
+// Boss Area Zone
+// The monsters of each group in the boss area.
+//   Group: The server does not use this number: every row of this part appears at the same time when the Ferea orb is destroyed.
+//   Monster: The monster that appears.
+//   How many: How many of this monster appear.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Direction: The way it faces, 0 to 8. Random picks one each time.
+//------------------------------------------------------------------------------------
+//  [0~4]    [0~1999]    [0~20]    [0~255]    [0~255]    [0~255]    [0~255]    [*/0~8]
+//  Group    Monster     Count     X          Y          X2         Y2         Dir
+//------------------------------------------------------------------------------------
+    2        736         6         25         113        37         136        2
+    2        737         7         25         113        37         136        2
+    2        738         8         25         113        37         136        3
+//------------------------------------------------------------------------------------
+// Boss Area Zone
+// The monsters of each group in the boss area.
+//   Group: The server does not use this number: every row of this part appears at the same time when the Ferea orb is destroyed.
+//   Monster: The monster that appears.
+//   How many: How many of this monster appear.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Direction: The way it faces, 0 to 8. Random picks one each time.
+//------------------------------------------------------------------------------------
+//  [0~4]    [0~1999]    [0~20]    [0~255]    [0~255]    [0~255]    [0~255]    [*/0~8]
+//  Group    Monster     Count     X          Y          X2         Y2         Dir
+//------------------------------------------------------------------------------------
+    3        736         5         25         113        37         136        3
+    3        737         6         25         113        37         136        2
+    3        738         7         25         113        37         136        3
 end
 
-//--------------------------------------------------------------------------------------------------------------------
-// Attack Settings
-//--------------------------------------------------------------------------------------------------------------------
-//	Skill		Rate	Time
-//--------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------
+// Boss Skills
+// The skills the Lord of Ferea uses.
+//   Skill: The skill given to the Lord of Ferea. Which attack it is does not come from this number but from the position of the row: row 1 is Power Slash, row 2 Inferno, row 3 Weakness and row 4 a combo.
+//   Chance (%): Chance of using it each time the boss attacks.
+//   Time (seconds): Seconds before the boss can use it again.
+//----------------------------------------------------------
+//  [Number]    [0~100]    [Number]
+//  Skill       Rate       Time
+//----------------------------------------------------------
 5
-	56			85		2		//Power Slash
-	14			60		3		//Inferno
-	221			40		4		//Weakness
+    56          85         2           //Power Slash
+    14          60         3           //Inferno
+    221         40         4           //Weakness
 end

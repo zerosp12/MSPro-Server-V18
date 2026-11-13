@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // [Ref-1]
 //==============
@@ -12,27 +13,65 @@
 //	2 - GameMasters (ATENCION: Usar TIME para setear el GM Level) - Data/Util/GameMaster.txt //(ATTENTION: Use TIME to set the GM Level) - Data/Util/GameMaster.txt
 
 0
-//-------------------------------------------
-// Buy Settings
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// 0~254	  [Flag Name]		[0~1000]		[0 / ~]		    [-1 / 0 ~ 3]															    [0 / 1]		[Minutes]   [Ref-1]
-//[IndexFlag] Max 25 Char		[MinLevel]		[MinResets]		[AccountLevel]  [Zen]		[WC]		[WP]		[GP]		[Ruuds]		[BuyShow]	[Time]		[EventType]
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	0		  "MSPro Flag!"		0				0				-1				1000000		0			0			0			0			1			60			0		//MSPro Flag
-	1		  "Flag Aura"		0				0				*				0			0			0			0			0			1			60			0
-    2		  "Test Flag 2"		0				0				-1				1000000		0			0			0			0			1			0			0		//Test Flag
-    11		  "Siege Flag"		0				0				-1				1000000		0			0			0			0			0			0			1		//Guild Winner
-    12		  "GameMaster Flag"	0				0				-1				1000000		0			0			0			0			0			1			2		//GM Level 1
-    13		  "GameMaster Flag"	0				0				-1				1000000		0			0			0			0			0			2			2		//GM Level 2
-    14		  "GameMaster Flag"	0				0				-1				1000000		0			0			0			0			0			3			2		//GM Level 3
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Flags
+// The flags: who can have them, what they cost and how they are obtained. The Price columns are read in the order Zen, WCoin P, WCoin C, Goblin Points, Ruud (the legend of the file lists WC before WP, but the server reads WP first).
+//   Flag: Number of the flag (0 to 254). It is the picture the client shows, so it must exist in the client. It is also the flag the Effects part points at.
+//   Name: Name of the flag in the shop (up to 24 characters).
+//   Minimum level: Lowest level that can buy the flag. 0 or * for no limit.
+//   Minimum resets: Fewest resets needed to buy it. 0 for no limit.
+//   Account level: -1 Every account level | 0 Free and above | 1 VIP 1 and above | 2 VIP 2 and above | 3 VIP 3 only
+//   Price Zen: Price in Zen. 0 does not charge it.
+//   Price WCoin P: Price in WCoin P. 0 does not charge it.
+//   Price WCoin C: Price in WCoin C. 0 does not charge it.
+//   Price Goblin Points: Price in Goblin Points. 0 does not charge it.
+//   Price Ruud: Price in Ruud. 0 does not charge it.
+//   Shown in the shop: 1 lists the flag in the shop (only flags bought with a purchase are listed). 0 hides it.
+//   Duration (minutes): Minutes the flag lasts after it is bought; it counts down while the flag is owned. 0 never expires. For a Game Master flag it is the GM level (see Data/Util/GameMaster.txt), not minutes.
+//   Given by: 0 Purchase | 1 Castle Siege winner | 2 Game Master (Time is the GM level) | 3 Domination event ranking
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~254]      [Text]               [0~1000]    [Number]     [Number]        [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  IndexFlag    Name                 MinLevel    MinResets    AccountLevel    Zen         WP          WC          GP          Ruuds       BuyShow     Time        EventType
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0            "MSPro Flag!"        0           0            -1              1000000     0           0           0           0           1           60          0            //MSPro Flag
+    1            "Flag Aura"          0           0            *               0           0           0           0           0           1           60          0
+    2            "Test Flag 2"        0           0            -1              1000000     0           0           0           0           1           0           0            //Test Flag
+    11           "Siege Flag"         0           0            -1              1000000     0           0           0           0           0           0           1            //Guild Winner
+    12           "GameMaster Flag"    0           0            -1              1000000     0           0           0           0           0           1           2            //GM Level 1
+    13           "GameMaster Flag"    0           0            -1              1000000     0           0           0           0           0           2           2            //GM Level 2
+    14           "GameMaster Flag"    0           0            -1              1000000     0           0           0           0           0           3           2            //GM Level 3
 end 
 
 1
-//-------------------------------------------
-// Effects
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// [0~254]   [1~9999999] [0~9999][0~10000] [0~100]     [0~100]     [0~99999] [0~100]       [0~100]      [0~100]    [0~100]     [0~100]     [0~100]    [        0~65000       ]   [Effect.txt][     InMinutes      ] [Effect.txt][       InMinutes      ]
-// IndexFlag AddHP AddMP DmgRate AttackSp. DoubleDmgR. TripleDmgR. AddExper  ResiDoubleDmg ResiIgnoDefe ResiIgnoSD ResiCritDmg ResisExeDmg BlockStuck IncreStr IncreEne IncreAgi BuffEffect  BuffDuration BuffDelay BuffEffect2 BuffDuration2 BuffDelay2  Comment
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   0		 500   500	 0		 0	 	   0		   0	 	   0		 0		       0		    0		   0		   0		   0	      0		   0	    0	     85	         1			  0.5		0			0			  0 		  //MSPro Flag
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Flag Effects
+// Bonuses and buffs a flag gives while it is the one equipped. All bonuses are added to what the character already has.
+//   Flag: Flag these effects belong to (a flag of the first part).
+//   Added HP: Life added to the character.
+//   Added MP: Mana added to the character.
+//   Added damage: Added to the minimum and maximum physical damage (a flat number, not a percentage).
+//   Added attack speed: Added to the physical and magic attack speed.
+//   Double damage rate: Added to the chance of double damage.
+//   Triple damage rate: Added to the chance of triple damage.
+//   Added experience: Added to the experience rate of the character, also for master experience.
+//   Resist double damage: Added to the resistance to double damage.
+//   Resist ignore defense: Added to the resistance to attacks that ignore defense.
+//   Resist ignore shield: Added to the resistance to attacks that ignore the shield gauge.
+//   Resist critical damage: Added to the resistance to critical damage.
+//   Resist excellent damage: Added to the resistance to excellent damage.
+//   Resist stun: Added to the resistance to stun.
+//   Added Strength: Strength points added while the flag is equipped.
+//   Added Energy: Energy points added while the flag is equipped.
+//   Added Agility: Agility points added while the flag is equipped.
+//   Buff 1 (Effect.txt): Effect 1 applied to the player while the flag is equipped, from Effect.txt. 0 gives none.
+//   Buff 1 duration (minutes): Minutes the buff lasts each time it is given. Decimals are allowed (0.5 is 30 seconds).
+//   Buff 1 delay (minutes): Minutes between two times the buff is given again. Decimals are allowed.
+//   Buff 2 (Effect.txt): Effect 2 applied to the player while the flag is equipped, from Effect.txt. 0 gives none.
+//   Buff 2 duration (minutes): Minutes the buff lasts each time it is given. Decimals are allowed (0.5 is 30 seconds). The first time it is given, the server uses the duration of buff 1 instead of this one (a bug of the server).
+//   Buff 2 delay (minutes): Minutes between two times the buff is given again. Decimals are allowed.
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~254]      [Number]    [Number]    [Number]      [Number]       [Number]            [Number]            [Number]         [Number]              [Number]               [Number]          [Number]                [Number]                 [Number]      [Number]    [Number]    [Number]    [Number]      [Number]        [Text]       [Number]       [Number]         [Number]
+//  IndexFlag    AddHP       AddMP       DamageRate    AttackSpeed    DoubleDamageRate    TripleDamageRate    AddExperience    ResistDoubleDamage    ResistIgnoreDefense    ResistIgnoreSD    ResistCriticalDamage    ResistExcellentDamage    BlockStuck    IncreStr    IncreEne    IncreAgi    BuffEffect    BuffDuration    BuffDelay    BuffEffect2    BuffDuration2    BuffDelay2
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0            500         500         0             0              0                   0                   0                0                     0                      0                 0                       0                        0             0           0           0           85            1               0.5          0              0                0             //MSPro Flag
 end

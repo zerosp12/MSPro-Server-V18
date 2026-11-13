@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // Info:
 //==============
@@ -11,34 +12,53 @@
 //		-Max Jewels "24 Lines"
 
 0
-//----------------------------------------------------------------------------------------------------------
-// [0~15] [0~511][0~15] [      1~2000000000           ]
-// Type   Id     Level  MaxFree MaxVip1 MaxVip2 MaxVip3 Comment
-//----------------------------------------------------------------------------------------------------------
-   14	  13	 0	    500000	 500000	 500000	 500000	//Jewel Of Bless
-   14	  14	 0	    500000	 500000	 500000	 500000 //Jewel Of Soul
-   12	  15	 0	    500000	 500000	 500000	 500000 //Jewel Of chaos
-   14	  16	 0	    500000	 500000	 500000	 500000 //Jewel Of Life
-   14	  22	 0	    500000	 500000	 500000	 500000 //Jewel Of Creation
-   14	  31	 0	    500000	 500000	 500000	 500000 //Jewel Of Guardian
-   14	  11	 8	    500000	 500000	 500000	 500000 //Jewel Of Guardian
-   14	  11	 9	    500000	 500000	 500000	 500000 //Jewel Of Guardian
-   14	  11	 10	    500000	 500000	 500000	 500000 //Jewel Of Guardian
-   14	  11	 11	    500000	 500000	 500000	 500000 //Jewel Of Guardian
-   14	  11	 12	    500000	 500000	 500000	 500000 //Jewel Of Guardian
-   14	  21	 2	    500000	 500000	 500000	 500000 //Jewel Of Guardian
-   14	  21	 1	    500000	 500000	 500000	 500000 //Jewel Of Guardian
+//-----------------------------------------------------------------------------------------------------
+// Jewels
+// One row per jewel (an item and level). Rows are shown in the order of the file.
+//   Item: Category of the jewel.
+//   Item index: Index of the jewel in that category.
+//   Exact Item Level: The exact level of the item that is a jewel of this row (for example the levels of a jewel that exists at several levels).
+//   Normal: Most jewels of this row that a free account can keep in the bank.
+//   VIP 1: Most jewels of this row that a VIP 1 account can keep in the bank.
+//   VIP 2: Most jewels of this row that a VIP 2 account can keep in the bank.
+//   VIP 3: Most jewels of this row that a VIP 3 account can keep in the bank.
+//-----------------------------------------------------------------------------------------------------
+//  [0~15]    [0~511]    [0~15]    [1~2000000000]    [1~2000000000]    [1~2000000000]    [1~2000000000]
+//  Type      Id         Level     MaxFree           MaxVip1           MaxVip2           MaxVip3
+//-----------------------------------------------------------------------------------------------------
+    14        13         0         500000            500000            500000            500000            //Jewel Of Bless
+    14        14         0         500000            500000            500000            500000            //Jewel Of Soul
+    12        15         0         500000            500000            500000            500000            //Jewel Of chaos
+    14        16         0         500000            500000            500000            500000            //Jewel Of Life
+    14        22         0         500000            500000            500000            500000            //Jewel Of Creation
+    14        31         0         500000            500000            500000            500000            //Jewel Of Guardian
+    14        11         8         500000            500000            500000            500000            //Jewel Of Guardian
+    14        11         9         500000            500000            500000            500000            //Jewel Of Guardian
+    14        11         10        500000            500000            500000            500000            //Jewel Of Guardian
+    14        11         11        500000            500000            500000            500000            //Jewel Of Guardian
+    14        11         12        500000            500000            500000            500000            //Jewel Of Guardian
+    14        21         2         500000            500000            500000            500000            //Jewel Of Guardian
+    14        21         1         500000            500000            500000            500000            //Jewel Of Guardian
 end
 
 1
-//----------------------------------------------------------------------------------------------------------
-// JewelBank AutoSave Jewels when Pick / AutoGuardado de Joyas al recogerlas del Suelo
-//----------------------------------------------------------------------------------------------------------
-// [0~3] 	[0~1]		[0~9999] 	[-1/Min - 0~9999]	[           Cost For Deposit        ]
-// AccLvl   Enabled     MaxCount  	ResetCount			Zen		WC		WP		GP		Ruuds
-//----------------------------------------------------------------------------------------------------------
-	0		1			999999999		6400				0		0		0		0		0		//FREE
-	1		1			999999999		6400				0		0		0		0		0		//VIP1
-	2		1			999999999		6400				0		0		0		0		0		//VIP2
-	3		1			999999999		6400				0		0		0		0		0		//VIP3
+//--------------------------------------------------------------------------------
+// Auto Deposit
+// Automatic deposit of the jewels a player picks from the ground, by account level. Each deposit can cost something.
+//   Account Level: 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Enabled: 1 deposits the jewels picked up straight into the bank.
+//   Deposits Before Pause: How many automatic deposits are made before the pause. -1 never pauses.
+//   Pause (Minutes): Minutes of pause after the deposits of the previous column are used up; then the count starts again. 0 or -1 start again at once.
+//   Zen: Zen charged for each deposit. 0 is free.
+//   WCoin C: WCoin C charged for each deposit. 0 is free.
+//   WCoin P: WCoin P charged for each deposit. 0 is free.
+//   Goblin Points: Goblin Points charged for each deposit. 0 is free.
+//   Ruud: Ruud charged for each deposit. 0 is free.
+//--------------------------------------------------------------------------------
+//  AccLvl    Enabled    MaxCount     ResetCount    Zen    WC    WP    GP    Ruuds
+//--------------------------------------------------------------------------------
+    0         1          999999999    6400          0      0     0     0     0        //FREE
+    1         1          999999999    6400          0      0     0     0     0        //VIP1
+    2         1          999999999    6400          0      0     0     0     0        //VIP2
+    3         1          999999999    6400          0      0     0     0     0        //VIP3
 end

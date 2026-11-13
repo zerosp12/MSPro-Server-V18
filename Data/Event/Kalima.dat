@@ -1,20 +1,28 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//---------------------------------------------------------------
-//		[Normal Class]  [MG/DL/SU/RF]
-//[0~6] [   1~1000  ]   [   1~1000  ]	  
-//Level MinLvl MaxLvl  	MinLvl MaxLvl
-//---------------------------------------------------------------
-  0		40	   400		20	   400
-  1		131	   400		111	   400
-  2		181	   400		161	   400
-  3		231	   400		211	   400
-  4		280	   400		261	   400
-  5		331	   400		311	   400
-  6		350	   400		350	   400
+//----------------------------------------------------------
+// Kalima Levels
+// The range that can enter each Kalima: one for Dark Wizard, Dark Knight, Elf and Summoner and another for Magic Gladiator, Dark Lord and Rage Fighter. The value compared is the level, as the KalimaStyle setting of the Event settings says.
+//   Kalima: 0 is Kalima 1 and 6 is Kalima 7.
+//   Lowest level, normal classes: The lowest value that enters this Kalima, for Dark Wizard, Dark Knight, Elf and Summoner.
+//   Highest level, normal classes: The highest value that enters this Kalima, for Dark Wizard, Dark Knight, Elf and Summoner.
+//   Lowest level, MG, DL and RF: The lowest value that enters this Kalima, for Magic Gladiator, Dark Lord and Rage Fighter.
+//   Highest level, MG, DL and RF: The highest value that enters this Kalima, for Magic Gladiator, Dark Lord and Rage Fighter.
+//----------------------------------------------------------
+//  [0~6]    [1~1000]    [1~1000]    [1~1000]     [1~1000]
+//  Level    MinLevel    MaxLevel    MinLevel2    MaxLevel2
+//----------------------------------------------------------
+    0        40          400         20           400
+    1        131         400         111          400
+    2        181         400         161          400
+    3        231         400         211          400
+    4        280         400         261          400
+    5        331         400         311          400
+    6        350         400         350          400
 end

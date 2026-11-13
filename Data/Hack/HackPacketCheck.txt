@@ -1,9 +1,13 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------
+// Packet Checks
+// What the GameServer expects of each packet head: whether it must be encrypted and how often it can come. The comment at the end of each row names the packet.
 //---------------------------------------------------------------------
 // Packet Checks
 // What the GameServer expects of each packet head: whether it must be encrypted and how often it can come. The comment at the end of each row names the packet.

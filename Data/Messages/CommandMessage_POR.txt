@@ -1,213 +1,321 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//--------------------------------
-//.
-//--------------------------------
-//Access Part
-	0	"You need to Wait {} seconds to use commands."
-	1	"Only GameMaster can use this command."
-	2	"Only GuildMaster can use this command."
-	3	"Command Disabled."
-	4	"You dont have enought Zen. Need ({}) Zen."
-	5	"You need to be {} Level to use this cmd."
-	6	"You have exceeded {} Level Limit to use this command."
-	7	"You need to have {} Reset to use this cmd."
-	8	"You have exceeded {} Reset Limit to use this command."
-	9	"You need to have MasterReset {} to use this cmd."
-	10	"You have exceeded {} MasterReset Limit to use this command."
-	11	"Only PkLevel {} can use this command."
-	12	"RESERVED"
-	13	"You need {} WCCoins to use this command."
-	14	"You need {} WPCoins to use this command."
-	15	"You need {} GoblinPoints to use this command."
-	16	"This class have not allowed to use this command."
-	17	"Command Excecuted"
-	18	"Character Offline"
-	19	"Guild did not exist!"
-	20	"Wrong Command Syntax"
-	21	"You have canceled {} Zen." 
-	22	"You have canceled {} WCCoin(s)." 
-	23	"You have canceled {} WPCoin(s)." 
-	24	"You have canceled {} GoblinPoint(s)." 
-	25	"You Loose {} levels has penalty."
-	26	"You Loose {} Resets has penalty."
-	27	"You Loose {} MasterResets has penalty."
-	28	"You have canceled {} Ruuds." 
-	29	"RESERVED"
-//Marry System
-	30	"You already have other marry proposition."
-	31	"You cant Marry yourself."
-	32	"You are already married."
-	33	"He/She is already married."
-	34	"Wrong Map for Marry!"
-	35	"Wrong Coords X/Y."
-	36	"Character Blocked for marry in this moment!"
-	37	"Homosexual marry dont allowed in this server!."
-	38	"You dont have any marry propose to accept."
-	39	"Your partner is on a map with no tracking allowed"
-	40	"Partner is offline"
-	41	"You are not married"
-	42	"Married with {} for {} days"
-	43	"Marry State: Single" 
-	44	"You asked for Marry to {}"
-	45	"{} proposed marry to You"
-	46	"{} are now married with {}"
-	47	"You are now divorced"
-	48	"Marry State: Divorced. Blocked for {} Days!" 
-	49	"Marry State: Divorced" 
-	50	"Can't move in there withouth Wings, Pet or Dinorant"
-	51	"Can't move right now"
-	52	"You dont meet the requirements to Move"
-	53	"RESERVED"
-	54	"RESERVED"
-	55	"RESERVED"
-//Add Stats
-	56	"This is Exclusive cmd for Dark Lord!"
-	57	"You don't have enough points to add"
-	58	"You have added {} points, you have {} points left."
-	59	"RESERVED"
-	60	"RESERVED"
-//PKClear
-	61	"You are not PK"
-	62	"You have successfully cleared your PK"
-	63	"RESERVED"
-	64	"RESERVED"
-	65	"RESERVED"
-//Readd (Level Points)
-	66	"Action Denied! Back Later." 
-	67	"Level Points Restored"
-//ReMaster
-	68	"[ReMaster] MasterSkillTree Reset Successfully!"
-	69	"[ReMaster] MasterSkillTree Reset Failed."
-//Pet Helper
-	70	"[Helper] Cant be used in this map"
-	71	"[Helper] Created {} x{} On {} {} {}"
-//Hide
-	72	"You are now visible"
-	73	"You are now invisible"
-//Clear Inventory
-	74	"Inventory was cleared successfully"
-//Make, Drop & MakeSet
-	75	"You have successfully created an item"
-	76	"You have successfully created an Set"
-//Evo
-	77	"Action Denied! Back Later." 
-	78	"Please use /change (dw, dk, elf, mg, dl, su)"
-	79	"You must choose a different race than yours!"
-	80	"You must remove all your equipped items"
-//PVP
-	81	"[DisablePVP] Disabled"
-	82	"[DisablePVP] Enabled"
-//Auto Party
-	83 	"Receipt of applications: Activated"
-	84 	"Request receipt: Disabled"
-	85 	"Receipt of applications: Automatic"
-//Reward & RewardAll
-	86	"[{}] {} was awarded with {} WCCoin(s)!"
-	87	"[{}] {} was awarded with {} WPCoin(s)!"
-	88	"[{}] {} was awarded with {} GoblinPoint(s)!"
-	89	"[{}] All have earned {} WCCoin(s)!"
-	90	"[{}] All have earned {} WPCoin(s)!"
-	91	"[{}] All have earned {} GoblinPoint(s)!"
-//Rename System
-	92	"Action Denied! Back Later." 
-	93	"Cant rename character been guild master"
-	94	"Command not enabled for your account!"
-	95	"The name must have a maximum of 10 letters."
-	96	"New name contains rare characters!"
-	97	"Character {} changed his name to {}!"
-    98	"Must wait {} seconds to change your name again."
-	99	"RESERVED"
-//Ban System
-	100	"Command Failed"
-	101	"Successfully banned!"
-	102	"Admin {} banned {} for {} Days"
-	103	"Admin {} banned account {} for {} Days"
-//Virtual Jewel Mix & UnMix
-	104	"You do not have the required item(s)."
-	105	"Jewel Pack Completed"
-	106	"Jewel Unpack Completed"
-	107	"You do not have the requested amount of jewelry. "
-	108	"Check space for jewel Unpack"
-	109	"RESERVED"
-	110	"RESERVED"
-//Reset System
-	111	"Reset Range: {}-{}"
-	112	"Master Reset Range: {}-{}"
-	113	"WCCoin(s): {} "
-	114	"WPCoin(s): {} "
-	115	"GP: {}"
-	116	"Zen Requeriment: {}"
-    117	"Auto Reset Disabled"
-    118	"Auto Reset Enabled"
-	119	"RESERVED"
-	120	"RESERVED"
-	121	"RESERVED"
-	122	"RESERVED"
-//Party Password
-	123	"You are not Party Leader"
-	124	"Wrong password lenght"
-	125	"Password Setted"
-	126	"You not belong to any party"
-	127	"You are already inside party!"
-	128	"Party not found!"
-	129	"You joined the party"
-	130	"Leader left. Please, set New password"
-	131	"RESERVED"
-	132	"RESERVED"
-	133	"RESERVED"
-//Lock
-	134	"[Lock] Already Active, use /unlock!"
-	135	"[Lock] Max password overflow!"
-	136	"[Lock] Wrong Password!"
-	137	"[Lock] Disabled!"
-	138	"[Lock] Enabled - Items Locked!"
-	139	"[Lock] Action locked by password!"
-	140	"[Lock] You can activate the command in safe zone"
-	141	"[Lock] Personal Shop is empty or the items have no prices" 
-	142	"RESERVED"
-	143	"RESERVED"
-	144	"RESERVED"
-	145	"RESERVED"
-	146	"RESERVED"
-	147	"RESERVED"
-	148	"RESERVED"
-	149	"RESERVED"
-//Open WareHouse
-	150	"You can only open vault in safe zone!"
-	150	"RESERVED"
-	151	"RESERVED"
-	152	"RESERVED"
-	153	"RESERVED"
-//Trace Marry
-    200 "[TraceMarry] Min Level to move is {}"
-    201 "[TraceMarry] Max Level to move is {}"
-    202 "[TraceMarry] Min Resets to move is {}"
-    203 "[TraceMarry] Max Resets to move is {}"
-    204 "[TraceMarry] Min VIP Level to move is {}"
-    205 "[TraceMarry] PK can't move there"
-    206 "[TraceMarry] Need {} WCCoins to move"
-    207 "[TraceMarry] Need {} WPCoins to move"
-    208 "[TraceMarry] Need {} GoblinPoints to move"
-    209 "[TraceMarry] Need {} Zen to move"
-    210 "[TraceMarry] {} Zen removed"
-    211 "[Marry] Min Level to divorce is {}"
-	212 "[Marry] Max Level to divorce is {}"
-	213 "[Marry] Min Resets to divorce is {}"
-	214 "[Marry] Max Resets to divorce is {}"
-	215 "[Marry] Min M.Resets to divorce is {}"
-	216 "[Marry] Max M.Resets to divorce is {}"
-	217 "[Marry] Need {} WCCoins to divorce"
-	218 "[Marry] Need {} WPCoins to divorce"
-	219 "[Marry] Need {} GoblinPoints to divorce"
-	220 "[Marry] Need {} Zen to divorce"
-	221 "[Marry] Need {} Ruuds to divorce"
-	222 "{} must wait {} days before marry again"
-	223 "You must wait {} days before marry again"
-	224 "{} and {} are now Divorced!"
-	225 "Can't divorce in this Map"
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    0         "You need to Wait {} seconds to use commands."
+    1         "Only GameMaster can use this command."
+    2         "Only GuildMaster can use this command."
+    3         "Command Disabled."
+    4         "You dont have enought Zen. Need ({}) Zen."
+    5         "You need to be {} Level to use this cmd."
+    6         "You have exceeded {} Level Limit to use this command."
+    7         "You need to have {} Reset to use this cmd."
+    8         "You have exceeded {} Reset Limit to use this command."
+    9         "You need to have MasterReset {} to use this cmd."
+    10        "You have exceeded {} MasterReset Limit to use this command."
+    11        "Only PkLevel {} can use this command."
+    12        "RESERVED"
+    13        "You need {} WCCoins to use this command."
+    14        "You need {} WPCoins to use this command."
+    15        "You need {} GoblinPoints to use this command."
+    16        "This class have not allowed to use this command."
+    17        "Command Excecuted"
+    18        "Character Offline"
+    19        "Guild did not exist!"
+    20        "Wrong Command Syntax"
+    21        "You have canceled {} Zen."
+    22        "You have canceled {} WCCoin(s)."
+    23        "You have canceled {} WPCoin(s)."
+    24        "You have canceled {} GoblinPoint(s)."
+    25        "You Loose {} levels has penalty."
+    26        "You Loose {} Resets has penalty."
+    27        "You Loose {} MasterResets has penalty."
+    28        "You have canceled {} Ruuds."
+    29        "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    30        "You already have other marry proposition."
+    31        "You cant Marry yourself."
+    32        "You are already married."
+    33        "He/She is already married."
+    34        "Wrong Map for Marry!"
+    35        "Wrong Coords X/Y."
+    36        "Character Blocked for marry in this moment!"
+    37        "Homosexual marry dont allowed in this server!."
+    38        "You dont have any marry propose to accept."
+    39        "Your partner is on a map with no tracking allowed"
+    40        "Partner is offline"
+    41        "You are not married"
+    42        "Married with {} for {} days"
+    43        "Marry State: Single"
+    44        "You asked for Marry to {}"
+    45        "{} proposed marry to You"
+    46        "{} are now married with {}"
+    47        "You are now divorced"
+    48        "Marry State: Divorced. Blocked for {} Days!"
+    49        "Marry State: Divorced"
+    50        "Can't move in there withouth Wings, Pet or Dinorant"
+    51        "Can't move right now"
+    52        "You dont meet the requirements to Move"
+    53        "RESERVED"
+    54        "RESERVED"
+    55        "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    56        "This is Exclusive cmd for Dark Lord!"
+    57        "You don't have enough points to add"
+    58        "You have added {} points, you have {} points left."
+    59        "RESERVED"
+    60        "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    61        "You are not PK"
+    62        "You have successfully cleared your PK"
+    63        "RESERVED"
+    64        "RESERVED"
+    65        "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    66        "Action Denied! Back Later."
+    67        "Level Points Restored"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    68        "[ReMaster] MasterSkillTree Reset Successfully!"
+    69        "[ReMaster] MasterSkillTree Reset Failed."
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    70        "[Helper] Cant be used in this map"
+    71        "[Helper] Created {} x{} On {} {} {}"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    72        "You are now visible"
+    73        "You are now invisible"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    74        "Inventory was cleared successfully"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    75        "You have successfully created an item"
+    76        "You have successfully created an Set"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    77        "Action Denied! Back Later."
+    78        "Please use /change (dw, dk, elf, mg, dl, su)"
+    79        "You must choose a different race than yours!"
+    80        "You must remove all your equipped items"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    81        "[DisablePVP] Disabled"
+    82        "[DisablePVP] Enabled"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    83        "Receipt of applications: Activated"
+    84        "Request receipt: Disabled"
+    85        "Receipt of applications: Automatic"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    86        "[{}] {} was awarded with {} WCCoin(s)!"
+    87        "[{}] {} was awarded with {} WPCoin(s)!"
+    88        "[{}] {} was awarded with {} GoblinPoint(s)!"
+    89        "[{}] All have earned {} WCCoin(s)!"
+    90        "[{}] All have earned {} WPCoin(s)!"
+    91        "[{}] All have earned {} GoblinPoint(s)!"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    92        "Action Denied! Back Later."
+    93        "Cant rename character been guild master"
+    94        "Command not enabled for your account!"
+    95        "The name must have a maximum of 10 letters."
+    96        "New name contains rare characters!"
+    97        "Character {} changed his name to {}!"
+    98        "Must wait {} seconds to change your name again."
+    99        "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    100       "Command Failed"
+    101       "Successfully banned!"
+    102       "Admin {} banned {} for {} Days"
+    103       "Admin {} banned account {} for {} Days"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    104       "You do not have the required item(s)."
+    105       "Jewel Pack Completed"
+    106       "Jewel Unpack Completed"
+    107       "You do not have the requested amount of jewelry. "
+    108       "Check space for jewel Unpack"
+    109       "RESERVED"
+    110       "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    111       "Reset Range: {}-{}"
+    112       "Master Reset Range: {}-{}"
+    113       "WCCoin(s): {} "
+    114       "WPCoin(s): {} "
+    115       "GP: {}"
+    116       "Zen Requeriment: {}"
+    117       "Auto Reset Disabled"
+    118       "Auto Reset Enabled"
+    119       "RESERVED"
+    120       "RESERVED"
+    121       "RESERVED"
+    122       "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    123       "You are not Party Leader"
+    124       "Wrong password lenght"
+    125       "Password Setted"
+    126       "You not belong to any party"
+    127       "You are already inside party!"
+    128       "Party not found!"
+    129       "You joined the party"
+    130       "Leader left. Please, set New password"
+    131       "RESERVED"
+    132       "RESERVED"
+    133       "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    134       "[Lock] Already Active, use /unlock!"
+    135       "[Lock] Max password overflow!"
+    136       "[Lock] Wrong Password!"
+    137       "[Lock] Disabled!"
+    138       "[Lock] Enabled - Items Locked!"
+    139       "[Lock] Action locked by password!"
+    140       "[Lock] You can activate the command in safe zone"
+    141       "[Lock] Personal Shop is empty or the items have no prices"
+    142       "RESERVED"
+    143       "RESERVED"
+    144       "RESERVED"
+    145       "RESERVED"
+    146       "RESERVED"
+    147       "RESERVED"
+    148       "RESERVED"
+    149       "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    150       "You can only open vault in safe zone!"
+    150       "RESERVED"
+    151       "RESERVED"
+    152       "RESERVED"
+    153       "RESERVED"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · CommandMessage_POR.txt
+//----------------------------------------------------------
+//  Access    Part
+//----------------------------------------------------------
+    200       "[TraceMarry] Min Level to move is {}"
+    201       "[TraceMarry] Max Level to move is {}"
+    202       "[TraceMarry] Min Resets to move is {}"
+    203       "[TraceMarry] Max Resets to move is {}"
+    204       "[TraceMarry] Min VIP Level to move is {}"
+    205       "[TraceMarry] PK can't move there"
+    206       "[TraceMarry] Need {} WCCoins to move"
+    207       "[TraceMarry] Need {} WPCoins to move"
+    208       "[TraceMarry] Need {} GoblinPoints to move"
+    209       "[TraceMarry] Need {} Zen to move"
+    210       "[TraceMarry] {} Zen removed"
+    211       "[Marry] Min Level to divorce is {}"
+    212       "[Marry] Max Level to divorce is {}"
+    213       "[Marry] Min Resets to divorce is {}"
+    214       "[Marry] Max Resets to divorce is {}"
+    215       "[Marry] Min M.Resets to divorce is {}"
+    216       "[Marry] Max M.Resets to divorce is {}"
+    217       "[Marry] Need {} WCCoins to divorce"
+    218       "[Marry] Need {} WPCoins to divorce"
+    219       "[Marry] Need {} GoblinPoints to divorce"
+    220       "[Marry] Need {} Zen to divorce"
+    221       "[Marry] Need {} Ruuds to divorce"
+    222       "{} must wait {} days before marry again"
+    223       "You must wait {} days before marry again"
+    224       "{} and {} are now Divorced!"
+    225       "Can't divorce in this Map"
 end

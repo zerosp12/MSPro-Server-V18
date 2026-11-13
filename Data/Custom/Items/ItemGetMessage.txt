@@ -1,21 +1,34 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------------------------
-// MessageType
-//		0: Global Message
-//		1: Blue Message
-//		2: Post Message
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//	[0~15]		[0~511]		[*/0~15]	[*/0~511]		[*/0~15]		[*/0~15]		[*/0-1]			[*/0-1]			[0-1]			[0~3]           [0-1-2]				[	   Index from SECTION 1	  	  ]
-//	ItemType	ItemIndex	ItemType2	ItemIndex2		MinLevel		MaxLevel		Excellent		Ancient			ShowMapName		Min_AL          MessageType			ENG				POR				SPN
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Item Messages
+// The first row that fits the item picked is used. The three text columns are the text numbers of the next part for each language.
+//   Item category: Item category of the first item of the range.
+//   Item index: Item index of the first item of the range.
+//   Last item category: Category of the last item of the range. * means there is no upper limit: every item from the first one up (by item number) matches.
+//   Last item index: Index of the last item of the range. * means there is no upper limit.
+//   Lowest item level: Lowest item level. * for any.
+//   Highest item level: Highest item level. * for any.
+//   Excellent: 0 only items without excellent options, 1 only items with them. * for any.
+//   Ancient: 0 only items without ancient option, 1 only items with it. * for any.
+//   Show the map name: 1 puts the name of the map where the item was picked in the message.
+//   Min. account level: 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Message type: 0 Global message | 1 Blue message | 2 Post message
+//   English text number: Number of the text in the next part sent to English players.
+//   Portuguese text number: Number of the text in the next part sent to Portuguese players. The legend of the file lists the second language column as Portuguese and the third as Spanish; the server sends the second to Portuguese players and the third to Spanish players.
+//   Spanish text number: Number of the text in the next part sent to Spanish players.
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~15]      [0~511]      [Number]     [Number]      [Number]    [Number]    [Number]     [Number]    [Number]       [0~3]           [Number]       [Number]    [Number]      [Number]
+//  ItemType    ItemIndex    ItemType2    ItemIndex2    MinLevel    MaxLevel    Excellent    Ancient     ShowMapName    AccountLevel    MessageType    English     Portuguese    Spanish
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 0
-	12			15			12			15				*				*				*				*				1				0				0					0				1				2
-	0			0			11			511				*				*				1				*				1				0				0					3				4				5
+    12          15           12           15            *           *           *            *           1              0               0              0           1             2
+    0           0            11           511           *           *           1            *           1              0               0              3           4             5
 end
 
 //---------------------------------------------------------------------------------------------------
@@ -23,13 +36,29 @@ end
 //	Index		Text
 //---------------------------------------------------------------------------------------------------
 1
-//Jewel of Chaos
-	0			"Jewel of Chaos Obtained"
-	1			"Peguei numa Jewel of Chaos"
-	2			"Recogio una Jewel of Chaos"
+//----------------------------------------------------------
+// Messages
+// The texts. Each message is shown as [player name][map] text.
+//   Number: Number of the text (the next part uses it).
+//   Text: The text (up to 90 characters).
+//----------------------------------------------------------
+//  [0~99999]    [Text]
+//  Index        Text
+//----------------------------------------------------------
+    0            "Jewel of Chaos Obtained"
+    1            "Peguei numa Jewel of Chaos"
+    2            "Recogio una Jewel of Chaos"
 
-//Excellent Items
-	3			"Obtained an Excellent Item!!!"
-	4			"Obteve um Item Excelente"
-	5			"Obtuvo un Item Excellent"
+//----------------------------------------------------------
+// Messages
+// The texts. Each message is shown as [player name][map] text.
+//   Number: Number of the text (the next part uses it).
+//   Text: The text (up to 90 characters).
+//----------------------------------------------------------
+//  [0~99999]    [Text]
+//  Index        Text
+//----------------------------------------------------------
+    3            "Obtained an Excellent Item!!!"
+    4            "Obteve um Item Excelente"
+    5            "Obtuvo un Item Excellent"
 end

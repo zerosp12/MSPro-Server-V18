@@ -1,90 +1,127 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//---------------------------------------------------------------
-//[1~59]		[InMin]		 [1~59]      [InMin]
-//WarningTime   NotifyTime   EventTime   CloseTime
-//---------------------------------------------------------------
-  5             1            5           4         
+//----------------------------------------------------------
+// Timing
+// How long before the event opens, when it is announced, how long it lasts and when it closes.
+//   Warning: Minutes before the start in which players can already go in. The server announces it every minute.
+//   Waiting Time: Minutes players wait inside after the entrance closes, before the event begins.
+//   Event: Minutes the event lasts once it begins.
+//   Closing: Minutes after the event ends before the place is cleaned and everyone is sent out.
+//----------------------------------------------------------
+//  WarningTime    NotifyTime    EventTime    CloseTime
+//----------------------------------------------------------
+    5              1             5            4
 end
 
 1
-//---------------------------------------------------------------
-//		  [Normal Class]    [MG/DL/SU/RF]
-//[0~5] [   1~1000  ]     [   1~1000  ]	  
-//Level MinLvl MaxLvl  	MinLvl MaxLvl
-//---------------------------------------------------------------
-  0	    0	   4		0	   4 
-  1	    5	   19		5	   19 
-  2	    20	   39		20	   39 
-  3	    40	   59		40	   59 
-  4	    60	   79		60	   79 
-  5	    80	   1000		80	   1000 
-  6	    0	   0		0	   0
+//----------------------------------------------------------
+// Level Groups
+// The range that can enter each one: one for Dark Wizard, Dark Knight, Elf and Summoner and another for Magic Gladiator, Dark Lord and Rage Fighter. The value compared is the level, the resets or the master resets, as the ChaosCastleStyle setting of the Event settings says.
+//   Level: 0 to 5 are Chaos Castle 1 to 6. 6 is the Master Level castle: it is switched on with a lowest value of 0.
+//   Normal min: The lowest value that enters this one, for Dark Wizard, Dark Knight, Elf and Summoner. It is compared with the character's level, resets or master resets, as the ChaosCastleStyle setting of the Event settings says (0 level, 1 resets, 2 master resets).
+//   Normal max: The highest value that enters this one, for Dark Wizard, Dark Knight, Elf and Summoner.
+//   Special min: The lowest value that enters this one, for Magic Gladiator, Dark Lord and Rage Fighter.
+//   Special max: The highest value that enters this one, for Magic Gladiator, Dark Lord and Rage Fighter.
+//----------------------------------------------------------
+//  [0~6]    [0~1000]    [0~1000]    [0~1000]     [0~1000]
+//  Level    MinLevel    MaxLevel    MinLevel2    MaxLevel2
+//----------------------------------------------------------
+    0        0           4           0            4
+    1        5           19          5            19
+    2        20          39          20           39
+    3        40          59          40           59
+    4        60          79          60           79
+    5        80          1000        80           1000
+    6        0           0           0            0
 end
 
 2
-//------------------------------------------------------------------------------
-//[*/0000]    [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
-//StartYear   StartMonth   StartDay   StartDoW   StartHour   StartMin   StartSec
-//------------------------------------------------------------------------------
-   *           *            *          *          0           30         0			0
-   *           *            *          *          1           30         0			0
-   *           *            *          *          2           30         0			0
-   *           *            *          *          3           30         0			0
-   *           *            *          *          4           30         0			0
-   *           *            *          *          5           30         0			0
-   *           *            *          *          6           30         0			0
-   *           *            *          *          7           30         0			0
-   *           *            *          *          8           30         0			0
-   *           *            *          *          9           30         0			0
-   *           *            *          *          10          30         0			0
-   *           *            *          *          11          30         0			0
-   *           *            *          *          12          30         0			0
-   *           *            *          *          13          30         0			0
-   *           *            *          *          14          30         0			0
-   *           *            *          *          15          30         0			0
-   *           *            *          *          16          30         0			0
-   *           *            *          *          17          30         0			0
-   *           *            *          *          18          30         0			0
-   *           *            *          *          19          30         0			0
-   *           *            *          *          20          30         0			0
-   *           *            *          *          21          30         0			0
-   *           *            *          *          22          30         0			0
-   *           *            *          *          23          30         0			0
+//-------------------------------------------------------------------------------
+// Schedules
+// When the Chaos Castle starts.
+//   Year: The year it starts. A wildcard means every year.
+//   Month: The month it starts, 1 to 12. A wildcard means every month.
+//   Day: The day of the month it starts, 1 to 31. A wildcard means every day.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour it starts, 0 to 23. A wildcard means every hour.
+//   Minute: The minute it starts, 0 to 59. A wildcard means every minute.
+//   Second: The second it starts, 0 to 59.
+//   Min. Account Level: -1 Every account level | 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//-------------------------------------------------------------------------------
+//  Year    Month    Day    DayOfWeek    Hour    Minute    Second    AccountLevel
+//-------------------------------------------------------------------------------
+    *       *        *      *            0       30        0         0
+    *       *        *      *            1       30        0         0
+    *       *        *      *            2       30        0         0
+    *       *        *      *            3       30        0         0
+    *       *        *      *            4       30        0         0
+    *       *        *      *            5       30        0         0
+    *       *        *      *            6       30        0         0
+    *       *        *      *            7       30        0         0
+    *       *        *      *            8       30        0         0
+    *       *        *      *            9       30        0         0
+    *       *        *      *            10      30        0         0
+    *       *        *      *            11      30        0         0
+    *       *        *      *            12      30        0         0
+    *       *        *      *            13      30        0         0
+    *       *        *      *            14      30        0         0
+    *       *        *      *            15      30        0         0
+    *       *        *      *            16      30        0         0
+    *       *        *      *            17      30        0         0
+    *       *        *      *            18      30        0         0
+    *       *        *      *            19      30        0         0
+    *       *        *      *            20      30        0         0
+    *       *        *      *            21      30        0         0
+    *       *        *      *            22      30        0         0
+    *       *        *      *            23      30        0         0
 end
 
 3
-//---------------------------------------------------------------
-//        [winner and party] [non-winning participants]
-//[0~6]   [0~9999999]        [0~9999999]
-//Level   ExperienceTable1   ExperienceTable2
-//---------------------------------------------------------------
-  0       1000               500
-  1       1500               100
-  2       2000               1500
-  3       2500               2000
-  4       3000               2500
-  5       3500               3000
-  6       4000               3500
+//----------------------------------------------------------
+// Experience
+// The experience of each kill: the first value is multiplied by the players killed and the second by the monsters killed.
+//   Level: The castle: 0 to 5 are Chaos Castle 1 to 6; 6 is the Master Level one.
+//   User-kill EXP: Experience for every player killed.
+//   Monster-kill EXP: Experience for every monster killed.
+//----------------------------------------------------------
+//  [0~6]    [0~9999999]    [0~9999999]
+//  Level    UserKillExp    MonsterKillExp
+//----------------------------------------------------------
+    0        1000           500
+    1        1500           100
+    2        2000           1500
+    3        2500           2000
+    4        3000           2500
+    5        3500           3000
+    6        4000           3500
 end
 
 
 4
-//Reward 
-//---------------------------------------------------------------
-//[0~7]  [ 0~999999999 ]    [0~65000] [0~2000000000]
-//Level  WC		WP	  GP	Points	  Zen
-//---------------------------------------------------------------
-  0		 300	0	  0	    300	      200000		
-  1		 300	0	  0	    300	      200000
-  2		 300	0	  0	    300	      200000
-  3		 300	0	  0	    300	      200000
-  4		 300	0	  0	    300	      200000
-  5		 300	0	  0	    300	      200000
-  6		 300	0	  0	    300	      200000
+//-------------------------------------------------------------------
+// Winner Reward
+// What the winner receives.
+//   Level: The castle: 0 to 5 are Chaos Castle 1 to 6; 6 is the Master Level one.
+//   WCoin C: WCoin C given.
+//   WCoin P: WCoin P given.
+//   Goblin point: Goblin points given.
+//   Level-up points: Free stat points (level-up points) given.
+//   Zen: Zen given. Nothing is given if the character would go over the Zen limit.
+//-------------------------------------------------------------------
+//  [0~6]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Level    WC          WP          GP          Points      Zen
+//-------------------------------------------------------------------
+    0        300         0           0           300         200000
+    1        300         0           0           300         200000
+    2        300         0           0           300         200000
+    3        300         0           0           300         200000
+    4        300         0           0           300         200000
+    5        300         0           0           300         200000
+    6        300         0           0           300         200000
 end

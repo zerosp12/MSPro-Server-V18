@@ -1,21 +1,36 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //-----------------------------------------------------------------------------------------------------------------
 // Ref-1: 
 //	0: Allways give Gift when Buy VIP
 //	1: System will give Gift only when Upgrade to a better VIP Level (Free -> VIP1 / VIP1 -> VIP2 / VIP2 -> VIP3)
 //-----------------------------------------------------------------------------------------------------------------
 
-//-----------------------------------------------------------------------------------------------------------------
-//						[ Payment ]		[		  				BuyGift						  ]
-// [1~3]	[1~999] 	[0~9999999] 	[Ref-1]		[0~2000000000]	[0~9999999] 	[-1/0~9999]
-// ID		Days		WC	WP	GP		GiftType	Zen				WC	WP	GP		ItemBag			Name
-//-----------------------------------------------------------------------------------------------------------------
-   1		30			10	0	0		0			0				0	0	0		-1				"VIP Bronze"
-   2		30			15	0	0		0			0				0	0	0		-1				"VIP Silver"
-   3		30			20	0	0		0			0				0	0	0		-1				"VIP Gold"
+//----------------------------------------------------------------------------------------------------------------------------------------
+// Buy VIP
+// One row per VIP level (1 to 3).
+//   VIP level: VIP level this row sells (1 to 3). A player cannot buy a level lower than the one he already has.
+//   Days: Days the VIP lasts after buying it (1 to 999).
+//   Price WCoin C: WCoin C the player pays. 0 does not charge it.
+//   Price WCoin P: WCoin P the player pays. 0 does not charge it.
+//   Price Goblin Points: Goblin Points the player pays. 0 does not charge it.
+//   When to give the gift: 0 Every time VIP is bought | 1 Only when upgrading to a better VIP
+//   Gift Zen: Zen given as a gift, up to the maximum a character can carry. 0 gives none.
+//   Gift WCoin C: WCoin C given as a gift. 0 gives none.
+//   Gift WCoin P: WCoin P given as a gift. 0 gives none.
+//   Gift Goblin Points: Goblin Points given as a gift. 0 gives none.
+//   Gift item bag: Item bag dropped as a gift. -1 gives none.
+//   Name: Name of the VIP shown in the messages (up to 31 characters).
+//----------------------------------------------------------------------------------------------------------------------------------------
+//  [1~3]    [1~999]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Text]
+//  ID       Days       WC          WP          GP          GiftType    Zen         WC2         WP2         GP2         ItemBag     Name
+//----------------------------------------------------------------------------------------------------------------------------------------
+    1        30         10          0           0           0           0           0           0           0           -1          "VIP Bronze"
+    2        30         15          0           0           0           0           0           0           0           -1          "VIP Silver"
+    3        30         20          0           0           0           0           0           0           0           -1          "VIP Gold"
 end

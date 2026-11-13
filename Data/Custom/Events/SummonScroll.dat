@@ -1,35 +1,53 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//-----------------------------------------------------------
-//	[0~999] 	[0~8191]
-//	Index   	ItemIndex   	Comment
-//-----------------------------------------------------------
-	0			7681		
+//----------------------------------------------------------
+// Scrolls
+// The scroll items. Each scroll is an item that, when used, summons monsters.
+//   Scroll: Number of the scroll. The next parts use it.
+//   Item: Item that is the scroll.
+//----------------------------------------------------------
+//  [0~999]    [0~8191]
+//  Scroll     Item
+//----------------------------------------------------------
+    0          7681
 end
 
 1
-//---------------------------------------------------------------------
-//	[0~999]  	[0~999]		(Monster.txt)	 	[0~10000]
-//	Index   	Group		MonsterClass		CreateRate     Comment
-//---------------------------------------------------------------------
-	0			0			275					10000
+//----------------------------------------------------------
+// Summoned Monsters
+// The monsters each scroll can summon. In each group one monster is picked at random by its weight; every group of the scroll summons one (up to 20 groups, numbered 0 to 19).
+//   Scroll: Number of the scroll.
+//   Group: Group of monsters (0 to 19). One monster of each group is summoned.
+//   Monster: Monster that can be summoned.
+//   Weight: Chance of this monster inside its group, out of 10000. The weights of a group should add up to 10000.
+//----------------------------------------------------------
+//  [0~999]    [0~19]    [Number]    [0~10000]
+//  Scroll     Group     Monster     Weight
+//----------------------------------------------------------
+    0          0         275         10000
 end
 
 //---------------------------------------------------------------------
-//	References
-//---------------------------------------------------------------------
-//	{0}: Player Name		- Remove it when CharName is 0
-//	{1}: Monster Name		- Remove it when MapName is 0
-//	{2}: MapName
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//	[0~999]  	[0~999]		[0/1]		[0/1]		
-//	Index   	Group		CharName	MapName		Message ENG				                        Message SPN										Message POR		
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+// Messages
+// The announcement sent to everyone when a group is summoned. The scroll can not be used on event maps or in safe zones.
+//   Scroll: Number of the scroll.
+//   Group: Group of monsters (0 to 19) the message is for.
+//   Mention the player: 1 puts the name of the player who used the scroll first in the message. Then {0} is the player, {1} the monster and, if the map is on, {2} the map.
+//   Mention the map: 1 puts the name of the map in the message as the last value. Without the player {0} is the monster and {1} the map; without both, only {0} the monster.
+//   English: Message for English players.
+//   Spanish: Message for Spanish players.
+//   Portuguese: Message for Portuguese players.
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~999]    [0~19]    [Number]      [Number]    [Text]                                    [Text]                                    [Text]
+//  Scroll     Group     ShowPlayer    ShowMap     English                                   Spanish                                   Portuguese
+//-----------------------------------------------------------------------------------------------------------------------------------------------
 2
-	0			0			1			1			"{1} has been summoned by {0} in {2}!"			"{1} ha sido invocado por {0} en {2}!"			"{1} foi invocado por {0} em {2}!"
+    0          0         1             1           "{1} has been summoned by {0} in {2}!"    "{1} ha sido invocado por {0} en {2}!"    "{1} foi invocado por {0} em {2}!"
 end

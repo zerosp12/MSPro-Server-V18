@@ -1,23 +1,34 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//---------------------------------------------------------
-// [InSec]           [InSec]              [InSec]
-// AppearanceDelay   BossZoneCloseDelay   BossZoneOpenDelay
-//---------------------------------------------------------
-   5		         300		          21600
+//------------------------------------------------------------
+// Boss Timers
+// When the boss appears and when the boss zone closes and opens.
+//   Boss appears after (seconds): Seconds between the last egg dying and Selupan being called.
+//   Boss zone closes after (seconds): Seconds after the boss battle starts before the boss zone closes.
+//   Boss zone opens after (seconds): Seconds the boss zone stays closed before it opens again (shown to players in minutes).
+//------------------------------------------------------------
+//  AppearanceDelay    BossZoneCloseDelay    BossZoneOpenDelay
+//------------------------------------------------------------
+    5                  300                   21600
 end
 
 1
-//-------------------------
-// [1~15]        [1~15]
-// BossEggHalf   BossEggMax
-//-------------------------
-   5		     15
+//----------------------------------------------------------
+// Boss Eggs
+// The number of boss eggs (1 to 15).
+//   Egg count, half: When this many eggs or fewer are left, the server warns that half of the eggs are gone.
+//   Egg count, maximum: The most eggs the boss zone can have at the same time.
+//----------------------------------------------------------
+//  [1~15]         [1~15]
+//  BossEggHalf    BossEggMax
+//----------------------------------------------------------
+    5              15
 end
 
 2
@@ -29,9 +40,18 @@ end
 end
 
 3
-//----------------------------------------------------------------
-// [0~100]    [0~100]    [0~100]    [0~100]    [0~100]    [0~100]
-// Pattern1   Pattern2   Pattern3   Pattern4   Pattern5   Pattern6
-//----------------------------------------------------------------
-   80	      60	     50	        40	       20	      10
+//----------------------------------------------------------------------
+// Boss Patterns
+// The condition of each of the six boss patterns, from 0 to 100.
+//   Pattern 1 condition (%): Selupan switches to attack pattern 1 when its life is at or below this percentage.
+//   Pattern 2 condition (%): Selupan switches to attack pattern 2 when its life is at or below this percentage.
+//   Pattern 3 condition (%): Selupan switches to attack pattern 3 when its life is at or below this percentage.
+//   Pattern 4 condition (%): Selupan switches to attack pattern 4 when its life is at or below this percentage.
+//   Pattern 5 condition (%): Selupan switches to attack pattern 5 when its life is at or below this percentage.
+//   Pattern 6 condition (%): Selupan switches to attack pattern 6 when its life is at or below this percentage.
+//----------------------------------------------------------------------
+//  [0~100]     [0~100]     [0~100]     [0~100]     [0~100]     [0~100]
+//  Pattern1    Pattern2    Pattern3    Pattern4    Pattern5    Pattern6
+//----------------------------------------------------------------------
+    80          60          50          40          20          10
 end

@@ -1,15 +1,24 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // Info:
 //==============
 //Sistema muestra los tops dentro del juego
 //Ver procedure WZ_CustomTop de acuardo con el index
 
-//Index	Command	Title
-1	"rr"	"TOP RR"
-2	"mr"	"TOP MR"
+//----------------------------------------------------------
+// Top Lists
+// One row per top list.
+//   Index: Number of the list. It selects the procedure WZ_CustomTop that makes the list.
+//   Chat command: Chat command of the list, without the slash (up to 9 characters).
+//   Title: Title of the list (up to 31 characters).
+//----------------------------------------------------------
+//  Index    Command    Title
+//----------------------------------------------------------
+    1        "rr"       "TOP RR"
+    2        "mr"       "TOP MR"

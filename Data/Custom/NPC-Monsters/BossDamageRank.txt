@@ -1,12 +1,24 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//--------------------------------------------------------------------------------
-//	[Monster.txt]	 		[* / 0~200]	[		0~255			]
-//	MonsterIndex			MapNumber  		X1		Y1		X2		Y2		MaxCount
-//--------------------------------------------------------------------------------
-	275				0		*				*		*		*		*		10		//Kundun
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------
+// Boss Damage Rank
+// Bosses that show a damage ranking while they are fought. The first row that matches the boss, its map and its position is used.
+//   Boss: Monster that shows the ranking.
+//   Shown to: 0 Players in the zone | 1 Players that hit the boss
+//   Map: Map where the boss must be. Any map ignores the map.
+//   From X: Zone corner: the smallest column where the boss must stand. * (no limit) ignores this side of the zone.
+//   From Y: Zone corner: the smallest row where the boss must stand. * (no limit) ignores this side of the zone.
+//   To X: Zone corner: the largest column where the boss must stand. * (no limit) ignores this side of the zone.
+//   To Y: Zone corner: the largest row where the boss must stand. * (no limit) ignores this side of the zone.
+//   Players in the ranking: How many players the ranking shows, 1 to 10. Anything else becomes 10.
+//-----------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [*/-1~255]    [*/-1~255]    [*/-1~255]    [*/-1~255]    [1~10]
+//  Boss        ShowType    Map         X1            Y1            X2            Y2            MaxRank
+//-----------------------------------------------------------------------------------------------------
+    275         0           *           *             *             *             *             10         //Kundun
 end

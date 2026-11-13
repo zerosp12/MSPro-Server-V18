@@ -1,1604 +1,1903 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//--------------------
-// Blood Castle
-//--------------------
-0	"El Blood Castle se cerrará en {} minuto(s)"
-1	"El Blood Castle ha cerrado"
-2	"El Blood Castle {} comenzará en {} minuto(s)"
-3	"El Blood Castle ha comenzado"
-4	"Todos los monstruos fueron derrotados"
-5	"Todos los monstruos jefes fueron derrotados"
-6	"El Blood Castle ha terminado"
-7	"No estas preparado para el Blood Castle {}"
-8	"{} dejó caer el arma del ángel"
-9	"{} cogió el arma del ángel"
-10  "{} destruyó la puerta del castillo"
-11	"{} destruyó la estatua"
-12	"Espera a que falten menos de {} minutos para terminar el Blood Castle"
-13	"Reserved 13"
-14	"Reserved 14"
-15	"Reserved 15"
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
 
-//--------------------
-// Chaos Castle
-//--------------------
-16	"El Chaos Castle se cerrará en {} minuto(s)"
-17	"El Chaos Castle se cerró"
-18	"El Chaos Castle {} comenzará en {} minuto(s)"
-19	"El Chaos Castle ha comenzado"
-20	"El Chaos Castle terminó"
-
-//--------------------
-// VIP Settings
-//--------------------
-32	"Cuenta gratis"
-33	"Cuenta Bronze"
-34	"Cuenta Plata"
-35	"Cuenta Oro"
-
-//--------------------
-// PersonalStore New V11
-//--------------------
-60	"Debes esperar {} segundos antes de comprar en esta Tienda"
-
-//--------------------
-// Commands
-//--------------------
-62  "El pk se ha eliminado"
-64	"Usted no tiene permiso para utilizar este comando"
-65	"Usted necesita ser al menos level {} para utilizar /post"
-66	"Usted necesita tener al menos {} resets para utilizar /post"
-67	"Usted necesita tener al menos {} zen para utilizar /post"
-68	"Usted necesita esperar {} segundos para utilizar /post"
-69 	"[POST]{}"
-70	"Usted no tiene permiso para utilizar /add"
-71	"Comando exclusivo de Dark Lord"
-72	"No tiene suficientes puntos para agregar"
-73	"Usted necesita tener al menos {} zen para utilizar /str,agi,vit,ene,com"
-74	"Usted ha agregado {} puntos, te quedan {} puntos."
-75	"Usted no tiene permiso para utilizar /pk"
-76	"Usted no es PK"
-77	"Usted necesita tener al menos {} zen para utilizar /pk"
-78	"Usted ha limpiado su PK con éxito"
-79	"Usted no tiene permiso para utilizar este Comando"
-80	"Ha introducido un valor no válido para agregarlo"
-81	"Usted no tiene permiso para utilizar /change"
-82	"Usted necesita tener al menos {} zen para utilizar /change"
-83	"Usted no puede evolucionar más"
-84	"Usted ha evolucionado con éxito"
-85	"Usted no tiene permiso para utilizar /baul"
-86	"Usted no puede utilizar /baul en este momento"
-87	"Usted ha introducido un baúl inválido para cambiar"
-88	"Usted cambió al baúl {} con exito"
-89	"Usted no tiene permiso para utilizar /reset"
-90	"Usted no puede utilizar /reset en este momento"
-91	"Usted necesita ser al menos level {} para utilizar /reset"
-92	"Usted necesita tener al menos {} zen para utilizar /reset"
-93	"Usted no puede tener más que {} resets"
-94	"Usted no puede resetear con elementos equipados"
-95	"Usted ha reseteado con éxito, y ahora tiene {} resets"
-96	"Usted no tiene permiso para utilizar /gmmove"
-97	"Usted ha introducido un comando no válido para /gmmove"
-98	"Usted no tiene permiso para utilizar /gmpost"
-99	"Usted no tiene permiso para utilizar /track"
-100	"Usted ha introducido un comando no válido para /track"
-101	"Usted no tiene permiso para utilizar /trace"
-102	"Usted ha introducido un comando no válido para /trace"
-103	"Usted no tiene permiso para utilizar /disconnect"
-104	"Usted ha introducido un comando no válido para /disconnect"
-105	"Usted no tiene permiso para utilizar /fireworks"
-106	"Usted no tiene permiso para utilizar /make"
-107	"Has creado un item con éxito"
-108	"Usted no tiene permiso para utilizar /skin"
-109	"Usted ha introducido un comando no válido para /skin"
-110	"Usted no tiene permiso para utilizar /setmoney"
-111	"Usted ha introducido un comando no válido para /setmoney"
-112	"Ha introducido un valor no válido para /setmoney"
-113	"Usted no tiene permiso para utilizar /notice"
-114	"Adición automática de puntos: Activada ({})"
-115	"Adición automática de puntos: Desativada"
-116	"Reset automático: Activado"
-117	"Reset automático: Desativado"
-118	"Usted no tiene permiso para utilizar /mreset"
-119	"Usted no puede utilizar /mreset en este momento"
-120	"Usted necesita tener al menos {} levels para utilizar /mreset"
-121	"Usted necesita tener al menos {} resets para utilizar /mreset"
-122	"Usted necesita tener al menos {} zen para utilizar /mreset"
-123	"Usted no puede tener más que {} master resets"
-124	"Usted no puede Master Resetear con elementos equipados"
-125	"Usted maestro se ha restaurado con éxito, y ahora tiene {} Master Resets"
-126	"Recibimiento de solicitudes: Activado"
-127	"Recibimiento de solicitudes: Desactivado"
-128	"Recibimiento de solicitudes: Automático"
-129	"Sólo se puede resetear {} veces por dia"
-130	"Sólo se puede resetear {} veces por semana"
-131	"Sólo se puede resetear {} veces por mes"
-132	"Sólo se puede master resetear {} veces por dia"
-133	"Sólo se puede master resetear {} veces por semana"
-134	"Sólo se puede master resetear {} veces por mes"
-135	"Usted no tiene permiso para utilizar /hide"
-136	"Reserved 136"
-137	"Reserved 137"
-138	"Reserved 138"
-139	"Reserved 139"
-140	"Reserved 140"
-141	"Reserved 141"
-142	"Reserved 142"
-143	"Reserved 143"
-
-//--------------------
-// Devil Square
-//--------------------
-144	"Devil Square se cerrará en {} minuto(s)"
-145	"Devil Square cerró"
-146	"Devil Square {} comenzará en {} minuto(s)"
-147	"Devil Square comenzó"
-148	"Devil Square termino"
-149	"Eres muy debil para entrar al Devil Square {}"
-150	"Reserved 150"
-151	"Reserved 151"
-152	"Reserved 152"
-153	"Reserved 153"
-154	"Reserved 154"
-155	"Reserved 155"
-156	"Reserved 156"
-157	"Reserved 157"
-158	"Reserved 158"
-159	"Reserved 159"
-
-//--------------------
-// Duel
-//--------------------
-160	"Ese personaje no esta conectado."
-161	"No puedes hacer duelo en este momento."
-162	"El personaje rechazo tu peticion automaticamente."
-163	"Ya has soliticado un duelo."
-164	"Alguien ya ha solicitado un duelo a ese personaje."
-165	"No se puede hacer duelo durante una Guild War."
-166	"El otro personaje esta en una Guild War."
-167	"No se puede solicitar duelo en este mapa."
-168	"No puedes hacer duelo durante el Castle Siege."
-169	"Ese personaje no esta conectado o no existe."
-170	"No puedes hacer duelo en este momento [Self Defense]"
-171	"El otro jugador esta incapacitado.[Self Defense]"
-172	"El jugador rechazo tu peticio de duelo"
-173	"Todas las Arenas están llenas en este momento"
-174	"Un duelo entre {} y {} ha comenzado!"
-175	"El jugador {} vencio a {} en duelo!"
-
-//--------------------
-// Illusion Temple
-//--------------------
-176	"El Illusion Temple se cerrará en {} minuto(s)"
-177	"El Illusion Temple cerró"
-178	"El Illusion Temple {} comenzará en {} minuto(s)"
-179	"El Illusion Temple comenzo"
-180	"El Illusion Temple termino"
-181	"Eres muy debil para entrar al Illusion Temple {}"
-182	"No tienes la entrada correcta para entrar al Illusion Temple {}"
-183	"El jugador {} dejó caer el artefacto"
-184	"El jugador {} ha cogido el artefacto"
-
-//--------------------
-// Invasiones
-//--------------------
-192	"Skeletong King Invasión!"
-193	"Red Dragon Invasión!"
-194	"Golden Dragon Invasión!"
-195	"White Wizard Invasión!"
-196	"New Year Pounch Invasión!"
-197	"White Rabbit Invasion!"
-198	"Summer Event Started!"
-199	"Cursed Santa Event Started!"
-200	"Medusa  Invasion!"
-202	"{} derrotó a Skeleton King!"
-203	"{} derrotó a Red Dragon!"
-204	"{} derrotó a Golden Great Dragon!"
-205	"{} derrotó a White Wizard!"
-206	"{} derrotó a Cursed Santa!"
-207	"{} derrotó a Medusa!"
-208	"El Moss Merchant ha vuelto!"
-209	"El Moss Merchant ha partido!"
-210	"Cursed Demon Invasion!"
-211	"Eggs Invasion!"
-212 "Monsters {}"
-213 "Reserved 213"
-214	"Restan {} Monsters."
-215	"Reserved 215"
-216	"Reserved 216"
-217	"Reserved 217"
-218	"Reserved 218"
-219	"Reserved 219"
-220	"Reserved 220"
-221	"Reserved 221"
-222	"Reserved 222"
-223	"Reserved 223"
-
-//--------------------
-// Custom Moves
-//--------------------
-224	"Necesitas ser level {} para moverte."
-225	"Necesitas al menos {} zen para moverte."
-226	"No puedes moverte en este momento."
-227	"No puedes moverte por ser PK."
-228	"Necesitas alas, fenrir o dinorant para moverte a ese lugar."
-229	"Solo miembros de una familia Gens, pueden moverse."
-230	"Debes ser level {} para entrar a ese lugar."
-231	"Debes tener {} resets para entrar a ese lugar."
-232	"Solo jugadores con menos de {} resetspueden entrar a ese lugar."
-
-//--------------------
-//  Senior Castle Siege.
-//--------------------
-240	"[Senior] El Castle Siege no esta disponible!"
-241	"[Senior] no funciono durante el Castle Siege."
-242	"[Senior] No perteneces a un guild registrado en el Castle Siege."
-243	"[Senior] Deber ser el guild master para interactuar."
-244	"[Guardsman] no funciono durante el Castle Siege."
-
-//--------------------
-//  Informacion 1
-//--------------------
-245	"Ya perteneces a un guild."
-246	"Debes ser level {} para crear un guild."
-247	"La tienda está vacia"
-248	"Nível de cuenta: Gratis"
-249	"Nível de cuenta: Bronze-Dias Restantes({})"
-250	"Nível de cuenta: Plata-Dias Restantes({})"
-251	"Nível de cuenta: Oro-Dias Restantes({})"
-256	"Bienvenido {} Disfruta tu estadía"
-257	"Necesitas tener level 40 para usar el anillo."
-258	"Necesitas tener level 80 para usar el anillo."
-259	"No puedes moverte a este mapa en este momento."
-260	"Este item no te pertenece!."
-261	"No puedes salir, con el Trade abierto"
-262	"No puedes salir, con el Vault abierto"
-263	"No puedes salir, con el Chaos Machine abierta"
-264	"No puedes salir, con el Pet Trainer abierto"
-265	"No puedes salir, con la defensa activa!"
-266	"Usted está en el level máximo"
-267	"Usted está en el master level máximo"
-268	"Sólo puede agregar {} puntos"
-269	"Usted no puede hablar durante {} segundos"
-270	"No puedes enviar un mensaje a ti mismo"
-271	" "
-272	"No se pudo realizar el teletransporte"
-273	"Usted será teletransportado en {} segundo(s)"
-274	"No se puede mover a este mapa con monturas"
-275	"No se puede mover a este mapa sin alas"
-276	"Has recibido un Gift en el Cash Shop"
-277 "El inventario fue limpiado con exito"
-278	"Data/Messages (Numero 278)"
-279	"Usted o su contrincante, necesitan tener Level {} para un duelo!"
-280	"Entraste al BC Nivel {}"
-281	"Entraste al DS Nivel {}"
-282 "¡No le vendo a gente como tú!"
-283	"Reservado"
-284	"Reservado"
-285	"Reservado"
-286	"Reservado"
-287	"Has superado tu limite de acceso por hoy[{}]"
-288	"Guild Create are disable on this server!"
-289	"Tu necesitas {} WC-Coins para crear un guild"
-290	"Tu necesitas {} WP-Coins para crear un guild"
-291	"Tu necesitas {} GoblinCoins para crear un guild" 
-
-//--------------------
-//  Double Goer
-//--------------------
-304	"El Ice Walker aparecio!"
-305	"Eres muy debil para entrar al evento."
-306	"El Ice Walker fue derrotado!"
-
-//--------------------
-// Raklion Event
-//--------------------
-320	"Raklion Event cerrará en {} minuto(s)"
-321	"Raklion Event ha cerrado!"
-322	"{} derroto al Selupan!"
-323	"Raklion Event se abrirá de nuevo en {} minuto(s)"
-324	"Raklion Event abrió!"
-325	"Raklion Event está cerrado"
-
-//--------------------
-//  Kanturu Event.
-//--------------------
-336	"La Torre de Refineria se cerrará en 60 minuto(s)"
-337	"La Torre de Refineria se cerrará en 20 minuto(s)"
-338	"La puerta de Kanturu se abrirá en 1 minuto(s)"
-339	"La batalla contra Maya comenzará pronto!"
-340	"La próxima batalla comenzará en 1 minuto(s)"
-341	"¡Nightmare ha aparecido!"
-342	"¡Nightmare fue derrotado! La Torre de Refineria esta abierta!"
-343	"Maya triunfo! Seras expulsado del lugar!"
-344	"Solo personajes mayores a Level {} pueden entrar"
-
-//--------------------
-//  Deep Castle Event
-//--------------------
-352	"Castle Deep Event comenzará en 5 minuto(s)"
-353	"Castle Deep Event ha iniciado!"
-354	"Castle Deep Event ha terminado!"
-355	"El Erohim fue derrotado por el jugador {}"
-356	"El {} fue derrotado por el jugador {}"
-
-//--------------------
-//  Crywolf Event
-//--------------------
-368	"Balgass juntó fuerzas con la armada de Kundun y planean atacar Crywolf Fortress"
-369	"Una Ejercito de Balgass atacara Crywolf Fortress!"
-370	"Una Ejercito de Balgass está marchando a Crywolf Fortress"
-371	"Una Ejercito de Balgass esta a punto de llegar a Crywolf Fortres"
-372	"Sin elfas en el altar, la Estatua del Lobo quedo desprotegida"
-373	"Balgass sobrevivio al final de la batalla."
-374	"¡La defensa falló! la Estatua del Lob fue tomada por Balgass"
-375	"¡La defensa ha tenido éxito! La estatua del lobo sagrado fue protegida"
-376	"La conexion a los pedestales comenzará en {} segundo(s)"
-377	"La conexion a los pedestales comenzará en {} minuto(s)"
-378	"Una batallon de Balgass atacará en {} segundos(s)"
-379	"Una batallon de Balgass atacará en {} minutos(s)"
-380	"Sin elfas en el altar, la Estatua del Lobo quedo desprotegida"
-381	"¡Balgass está llegando! Protejan la estatua del lobo!"
-382	"El ejercito de Balgass esta atacando la estatua del lobo!"
-383	"El ejercito de Balgass fue derrotado!"
-384	"MvP Rank: {}"
-385	"MvP Experiencia: {}"
-386	"Balgass fue derrotado por {}!"
-387	"Balgass fue derrotado!"
-388	"Una Dark Elf {} fue derrotada por {}!"
-389	"MvP Punto: {}"
-390	"Conectado al altar {}"
-391	"{} conectandose al altar {}"
-392	"El altar {} fue conectado"
-393	"La conexión al pedestal {} no ha comenzado todavía"
-394	"El altar {} ya se ha conectado más de 2 veces"
-395	"La posición para conectarse al altar {} está incorrecta" 
-396	"{} está tratando de conectarse al altar {}"
-397	"Usted será conectado al altar en 5 segundo(s)" 
-398	"No se mueva hasta que la conexión esté completa"  
-399	"La conexión con el altar {} fue cancelada"
-400	"La barrera de la estatua del lobo desapareció" 
-401	"Número de conexiones: {}, Vida de la estátua: {}" 
-402	"La barrera de la estatua del lobo fue creada"
-403	"La conexion requiere una Elfa level {} o superior"
-404	"Solo las elfas, pueden conectarse al pedestal"
-
-//--------------------
-//  Castle Siege
-//--------------------
-416	"El Castle Siege termino"
-417	"El período de registro del Castle Siege comenzo"
-418	"El período de registro de emblemas de Castle Siege comenzo"
-419	"El período de selecion de guilds al Castle Siege comenzo"		
-420	"La selección de los guilds del Castle Siege fue concluida"
-421	"El período de preparacion para el Castle Siege comenzo"
-422	"El Castle Siege comenzara en {} minuto(s)"
-423	"El Castle Siege está siendo disputado"
-424	"La guild {} Defendio muy bien el Castillo"
-425	"La guild {} se convirtió en el nuevo dueño del castillo"
-426	"El dueño del castillo no fue definido"
-427	"La Guardian Statue sigue en pie!"
-432	"La posición del jugador {} fue cambiada a Asistente de Master"
-433	"La posición del jugador {} fue cambiada a Battle Master"
-434	"La posición del jugador {} fue cambiada a Miembro de Guild"
-435	"El tipo de guild {} fue cambiado para {}"
-436	"El guild entró en la alianza {}"
-437	"El guild ahora es enemigo del guild {}"
-438	"El guild {} entró en la alianza {}"
-439	"El guild se retiró de la alianza"
-440	"El guild {} se retiró de la alianza {}"
-441	"El guild no es más de la alianza {}"
-442	"El guild no es enemigo del guild {}"
-443	"La Alianza {} fue disuelta"
-448	"No puedes invocar a Life Stone fuera del Castle Siege"
-449	"Sólo la alianza ofensiva puede invocar a Life Stone"
-450	"Una Life Stone ya ha sido invocada"
-451	"No puedes invocar a Life Stone dentro de la Torre del Dragón"
-452	"Una Life Stone fue invocada con exito"
-453	"Una Life Stone fallo al ser invocada"
-454	"Reserved 454"
-455	"Reserved 455"
-456	"Reserved 456"
-457	"Reserved 457"
-458	"Reserved 458"
-459	"Reserved 459"
-460	"Reserved 460"
-461	"Reserved 461"
-462	"Reserved 462"
-463	"Reserved 463"
-464	"Usted no puede invocar al soldado fuera del Castle Siege"
-465	"Sólo la alianza defensiva puede invocar al soldado"
-466	"Sólo el Líder del guild y su Asistente pueden invocar al soldado"
-467	"El número máximo de soldados fue excedido"
-468	"El soldado fue invocado con exito"
-469	"El soldado fallo al ser invocado"
-470	"Reserved 470"
-471	"Reserved 471"
-472	"Reserved 472"
-473	"Reserved 473"
-474	"Reserved 474"
-475	"Reserved 475"
-476	"Reserved 476"
-477	"Reserved 477"
-478	"Reserved 478"
-479	"Reserved 479"
-
-//--------------------
-//  Server Messsages 
-//--------------------
-480	"El servidor cerró"
-481	"El Servidor se cerrará automáticamente en {} segundo(s)"
-482	"Este es un elemento duplicado, póngase en contacto con el administrador del Servidor"
-483	"Su bloqueo de chat terminó"
-484	"Usted saldrá del juego en {} segundo(s)"
-485	"La auto defensa contra {} inicio"
-486	"La auto defensa contra {} termino"
-487	"El Servidor se apagará automáticamente en 1 minuto(s)"
-488	"El Servidor se apagará automáticamente en 3 minuto(s)"
-489	"El Servidor se apagará automáticamente en 5 minuto(s)"
-490	"La partida comenzará automáticamente en 10 segundo(s)"
-
-//--------------------
-//  Minning System(S8)
-//--------------------
-491	"{} ha ganado {} Jewel of Bless" 
-492	"{} mato al Fenix"	
-493	"Ganaste {} punto(s) de evento y {} Golds"
-494	"{} mato un Golden"
-495	"Ganaste {} punto(s) de evento y {} Golds"
-496	"{} mato un Erohin"
-497	"Ganaste {} punto(s) de evento y {} Golds"
-499	"Quitar los Errtel antes de colocar"
-
-//--------------------
-//  Rey del Mu
-//--------------------
-500	"El evento Rey del Mu comenzo"
-501	"El evento Rey del Mu termino"
-502	"El evento Rey del Mu comienza en {} minuto(s)"
-503	"Un guild {} tomó el castillo!"
-504	"El evento Rey del Mu comienza en {} Segundo(s)"
-506	"No eres miembro de ningún guild!"
-507	"Su guild ya es dueña del castillo!"
-508	"Usted no está en la coordenada correcta!"
-509	"Su guild debe tener por lo menos {} miembros!"
-510	"¡Enhorabuena! Su guild ahora es dueña del castillo!"
-511	"Faltan {} minuto(s) para que termine el evento Rey del mu!"
-512	" "
-513	" "
-514	" "
-
-//--------------------
-// Die System Monster
-//--------------------
-515	"{} Mato al noob de {}"
-516	"{} Mato al noob de {}"
-
-//--------------------
-// Commands #2
-//--------------------
-518	"Usted no tiene permiso para utilizar /setvip"
-519	"Vip agregado con éxito!"
-520	"Esta cuenta no existe!"
-
-//--------------------
-// Bot Buffer
-//--------------------
-521	"{} Usted no necesita más de mi ayuda"
-522	"{} Su plan vip no permite el uso de este buff"
-523	"{} Zen necesario: {}"
-524	"{} PCPoints necesarios: {}"
-525	"{} Usted necesita estar en la família Vanert"
-526	"{} Usted necesita estar en la família Duprian"
-527	"{} Usted necesita estar en la família Duprian"
-528	"{} Usted necesita estar en la família Vanert"
-529	"{} Necesario puntos de la família: {}"
-530	"{} Tiempo: {} Minutos(s)"
-531	"{} Descontado {} Zen"
-532	"{} Descontado {} PCPoint(s)"
-533	"{} Buff Aplicado!"
-
-//--------------------
-// Marry Messages
-//--------------------
-602 "No puedes casarte contigo mismo!"
-603 "Te acabas de casar con {}!"
-604 "Ya estas casado!"
-605 "El otro personaje ya está casado!"
-606 "Usa: [/marry to name | /marry divorce | /marry track or trace]!"
-607 "No puede divorciarse en la primera semana de casarse!"
-608 "Acabas de divorciarte!"
-609 "No estás casado!"
-610 "Seguiste a {}!"
-611 "{} Te siguio"
-612 "{} recién casados {}!"
-613 "{} Recién divorciado {}!"
-614 "Felicitaciones,"
-615 "Entre {} y {}!"
-616 "[Marry]No se permite entre hombres"
-617 "Necesitas tener al menos level {}  para usar este comando!"
-618 "Él / Ella necesita al menos level {} para usar este comando!"
-619 "Marry ha sido deshabilitado!"
-620 "Necesitas al menos {} zen para usar este comando!"
-621 "Necesitas estar en la posición correcta en Devias2!"
-622 "Su objetivo debe mantenerse en la posición correcta en Devias2!"
-623 "Info: [level Minimo : {} | Track&Trace Cost : {} zen]!"
-624 "No puedes divorciarte mientras él / ella está desconectado!"
-625 "El otro personaje está desconectado!"
-626 "Skin {} applied to {} players!"
-627 "{} no esta conectado[Marry]"
-
-//--------------------
-// Commands #3
-//--------------------
-630	"Usted necesita estar en el level {} para usar este comando!" 
-631	"Solo puedes abrir vault en safe zone!"
-632	" "
-633	"Comando no habilitado para su cuenta!" 
-634 "Comando: [/cambiarraza dw, dk, elf, mg, dl, su]"
-635	"Usted debe elegir una raza diferente a la suya!" 
-636	"Debes quitarte todos tus items equipados"
-637	"Clase no disponible!"
-638	"Resets necesarios: {}!"
-639	"[GM] {} está Online!"
-640	"{} se ha conectado!"
-641	"Usted no tiene permiso para utilizar!"
-642	"Personaje no encontrado!"
-643 "Comando: [/premiar CHAR TIPO VALOR]"
-644	"Tipo del premio no disponible!"
-645	"Valor del premio mayor que el permitido!"
-646	"Premio otorgado con exito!"
-647	"Usted no puede premiarse usted mismo!"
-648 "Comando: [/reload tipo | Ex: /reload common]"
-649 "Reload ejecutado con éxito!"
-650 "Comando: [/premiarall TIPO VALOR]"
-651 "El nombre debe tener un máximo de 10 letras."
-652 "Este nombre ya existe."
-653	"Espere {} segundos para utilizar nuevamente."
-654	"Este nombre ya existe!"
-655	"Nombre cambiado con éxito!"
-656	"Nombre no ha sido cambiado!"
-657	"El personaje {} cambio su nombre a {}!"
-658	"Debes salir del guild para cambiar de nombre."
-659	"Usted no puede utilizar ahora."
-
-//--------------------
-// Search Event
-//--------------------
-660	"[BUSQUEDA] Comenzó en {}!"
-661	"[BUSQUEDA] termina en {} minuto(s)!"
-662	"[BUSQUEDA] termina en {} segundo(s)!"
-663	"[BUSQUEDA] Ganador {}!"
-664	"[BUSQUEDA] Fin del evento - No hubo ganador!"
-665 "[BUSQUEDA] Ve a las coordenadas x{} y{}"
-666	"[BUSQUEDA] Fin del evento - Evento cancelado!"
-
-//--------------------
-// Ban Command Text
-//--------------------
-667	"Personaje no encontrado o sin conexión!"
-668	"Cuenta baneada con éxito!"
-669	"Personaje baneado con éxito!"
-
-//--------------------
-// Event Command Text
-//--------------------
-670	"[EVENTO] Termina en {} segundo(s)"
-671	"[EVENTO] Tiempo para ingresar termino!"
-672	"[EVENTO] Cancelado!"
-673	"[EVENTO] {} inicio un evento!"
-674	"[EVENTO] Escriba /participar para entrar!"
-675	"[EVENTO] Participante {} ha entrado!"
-
-//--------------------
-//  Hide & Seek
-//--------------------
-676	"[Hide&Seek] Acaba en {} segundo(s)"
-677	"[Hide&Seek] Acabo sin ganador!"
-678	"[Hide&Seek] Cancelado!"
-679	"[Hide&Seek] {} inicio un evento!"
-680	"[Hide&Seek] Buscar al GM y Tradear!"
-681	"[Hide&Seek] {} Gano el evento!"
-682	"[Hide&Seek] El evento termina en {} minuto(s)!"
-
-//--------------------
-//  Run & Catch
-//--------------------
-683	"[PEGAPEGA] Cerró!"
-684	"[PEGAPEGA] Evento iniciado. Corre!"
-685	"[PEGAPEGA] Tiempo agotado!"
-686	"[PEGAPEGA] Cancelado!"
-687	"[PEGAPEGA] Abrio!"
-688	"[PEGAPEGA] Escriba /quieroir para participar!"
-689	"[PEGAPEGA] Participante {} ha ingresado!"
-690	"[PEGAPEGA] {} Gano el evento!"
-691	"[PEGAPEGA] {} ha sido atrapado!"
-
-//--------------------
-// Quest
-//--------------------
-692	"[QUEST {}] Usted necesita ser level {} o +!"
-693	"[QUEST {}] Usted necesita tener {} Reset(s) o +!"
-694	"[QUEST {}] Usted necesita tener {} Master Reset(s) o +!"
-695	"[QUEST {}] Usted necesita tener {} zen o +!"
-696	"[QUEST {}] Usted debe ir para {} (x{},y{})!"
-697	"[QUEST {}] Usted no tiene el plan vip necesario!"
-698	"[QUEST {}] Item necesario: {}!"
-699	"[QUEST {}] Usted debe matar {} {} (Faltan: {})!"
-
-//--------------------
-// Custom Quest Command
-//--------------------
-700	"[QUEST] Enhorabuena, has completado todas las misiones!"
-701	"[QUEST {}] Concluida! Ganaste: {} WC, {} WP, {} GB!"
-
-//--------------------
-// Gift Command
-//--------------------
-702	"Enhorabuena has recibido un regalo!"
-703	"Usted ha recibido todos sus regalos!"
-
-//--------------------
-// Russian Roulette Text
-//--------------------
-704	"[RuletaRussa] Cerró!"
-705	"[RuletaRussa] Evento iniciado!"
-706	"[RuletaRussa] Tiempo agotado!"
-707	"[RuletaRussa] Cancelado!"
-708	"[RuletaRussa] Abrio (Max Participantes: {})!"
-709	"[RuletaRussa] Escriba /quieroir para participar!"
-710	"[RuletaRussa] Participante {}: {} ha ingresado!"
-711	"[RuletaRussa] {} gano el evento!"
-712	"[RuletaRussa] Colocando una bala en el tambor...!"
-713	"[RuletaRussa] Girando el tambor...!"
-714	"[RuletaRussa] Engatillando...!"
-715	"[RuletaRussa] FUEGO!"
-716	"[RuletaRussa] HeadShot {} fue eliminado!"
-717	"[RuletaRussa] {} se escapó ileso!"
-
-//--------------------
-// King of MU
-//--------------------
-718	"[King of MU] Awards Ceremony"
-719	"[King of MU] Guild {} won the Event!!!"
-720	"[King of MU] TOP Killers"
-721	"[King of MU] #{} - {} x{} ({})"
-722	"[King of MU] TOP Conquerors"
-723	"[King of MU] #{} - {} x{} ({})"
-724	"[King of MU] There was no Winner!" 
-
-//--------------------
-// Penalty Texts
-//--------------------
-730	"Usted ha sido premiado con {} WC!"
-731	"Usted ha sido premiado con {} WP!"
-732	"Usted ha sido premiado con {} GP!"
-733 "Comando: [/top tipo classe | Ex: /top rr dk]"
-
-//--------------------
-// Custom Top Command.
-//--------------------
-734 "Comando: [/cambiarraza: dk,dw,fe,mg,dl,su]"
-735 "Sin resultados!"
-736 "{}° Colocado: {} ({})"
-737 "Puntos redistribuidos"
-738 "{} subio de rango a {}!"
-739 "Usted ha alcanzado el rango {}!"
-
-//--------------------
-// Golden Archer.
-//--------------------
-740	"Fui desativado =("
-741	"Usted necesita tener 64 piezas del mismo tipo en el inventario"
-742	"Muchas gracias, ya tomé los artículos y entregué su premio."
-743	"Lo siento, no tengo interés en estos elementos."
-744	"Usted ha cambiado sus artículos por premios!"
-
-//--------------------
-// Custom Quiz
-//--------------------
-745	"[{}] Comienza en {} minuto(s)!"
-746	"[{}] Pregunta: (Usa /resp para responder)"
-747	"[{}] {}"
-748	"[{}] {} ha acertado correctamente!"
-749	"[{}] No tuvo ganador!"
-750	"[{}] Respuesta incorrecta!"
-751	"[{}] Respuesta: {}"
-
-//--------------------
-// Custom Pick
-//--------------------
-752	"[Juntar {}] Activado!"
-753	"[Juntar {}] Desactivado!"
-754	"[Juntar] Desactivado!"
-
-//--------------------
-// Re Master Command.
-//--------------------
-755	"[ReMaster] MasterSkillTree Reseteado!"
-756	"[ReMaster] MasterSkillTree Error al Resetear!"
-
-//--------------------
-// Vip Interface Messages
-//--------------------
-757	"[BuyVip] Usted no dispone del valor suficiente para comprarlo!"
-758	"[BuyVip] Usted Asigno {}!"
-759	"[BuyVip] El plan elegido es inferior al que usted tiene!"
-
-//--------------------
-// Coins Remove System
-//--------------------
-760	"Removed {} WC!"
-761	"Removed {} WP!"
-762	"Removed {} GP!"
-
-//--------------------
-// Custom Attack
-//--------------------
-763	"You cant use custom attack with MuHelper enabled!"
-764	"You cant use  MuHelper with custom attack enabled!"
-
-//--------------------
+//----------------------------------------------------------
 // Messages
-//--------------------
-765	"Max Level to use: {}"
-766	"Usted Necesita: {} WC!"
-767	"Usted Necesita: {} WP!"
-768	"Usted Necesita: {} GP!"
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    0        "El Blood Castle se cerrará en {} minuto(s)"
+    1        "El Blood Castle ha cerrado"
+    2        "El Blood Castle {} comenzará en {} minuto(s)"
+    3        "El Blood Castle ha comenzado"
+    4        "Todos los monstruos fueron derrotados"
+    5        "Todos los monstruos jefes fueron derrotados"
+    6        "El Blood Castle ha terminado"
+    7        "No estas preparado para el Blood Castle {}"
+    8        "{} dejó caer el arma del ángel"
+    9        "{} cogió el arma del ángel"
+    10       "{} destruyó la puerta del castillo"
+    11       "{} destruyó la estatua"
+    12       "Espera a que falten menos de {} minutos para terminar el Blood Castle"
+    13       "Reserved 13"
+    14       "Reserved 14"
+    15       "Reserved 15"
 
-//--------------------
-// Disabled
-//--------------------
-769	"[IT]El equipo 1 ha ganado."
-770	"[IT]El equipo 2 ha ganado."
-
-//--------------------
-// PVP Command 
-//--------------------
-771	"[OffPvp] Activado"
-772	"[OffPvp] Desactivado"
-
-//--------------------
-// Lock System
-//--------------------
-773	"[Lock] Activado - Items Bloqueados!"
-774	"[Lock] Contraseña maxima de 8 caracteres!"
-775	"[Lock] Ya esta Active, use /unlock!"
-776	"[Lock] Desactivado!"
-777	"[Lock] Contraseña Incorrecta!"
-778	"[Lock] Accion bloqueada por contraseña!"
-779	"Usted puede activar el comando en zona segura"
-780	"Personal Shop esta vacia o los items no tienen precios"
-
-//--------------------
-// Personal Shops
-//--------------------
-781	"ATENCIÓN!! Todos los items del Store seran vendidos por Jewel of Bless"
-782	"ATENCIÓN!! Todos los items del Store seran vendidos por Jewel of Soul"
-783	"ATENCIÓN!! Todos los items del Store seran vendidos por Jewel of Chaos"
-784	"ATENCIÓN!! Todos los items del Store seran vendidos por WCoinC"
-785	"ATENCIÓN!! Todos los items del Store seran vendidos por WCoinP"
-786	"ATENCIÓN!! Todos los items del Store seran vendidos por Goblin Point"
-787	"Usted necesita abrir la tienda personal antes"
-788	"The command will run during {} minute(s)"
-789	"The /store tiempo expirado"
-
-//--------------------
-// AttackMode
-//--------------------
-790	"[Attack] Desactivado"
-791	"[Attack] NO puede ser usado aquí"
-792	"[Attack] Usted no a seleccionado skill"
-793	"[Attack] Usado tiempo: {} minuto(s)"
-794	"[Attack] tiempo finalizado"
-795	"[Attack] Activado"
-
-//--------------------
-// Offattack
-//--------------------
-796	"[OffAttack] Use /attack antes"
-797	"[OffAttack] No puede usarse aquí"
-
-//--------------------
-// moveguild
-//--------------------
-798	"El Guild No Existe!"
-
-//--------------------
-// PVP Event.
-//--------------------
-799	"[PvP] Termino!"
-800	"[PvP] Cancelado!"
-801	"[PvP] {} x {} Empezo!"
-802	"[PvP] {} {} x {} {}!"
-803	"[PvP] {} Gano el evento!"
-804	"[PvP] Comenzo!"
-
-//--------------------
-// KillKill Event
-//--------------------
-805	"[KillKill] Cerrado!"
-806	"[KillKill] Comenzo!"
-807	"[KillKill] Tiempo de espera!"
-808	"[KillKill] Cancelado!"
-809	"[KillKill] Abierto (Max usuarios: {})!"
-810	"[KillKill] Escribe /quieroir Para Ingresar!"
-811	"[KillKill] Personaje {}: {} Adherido!"
-812	"[KillKill] 1º - {} ({} Puntos)!"
-813	"[KillKill] 2º - {} ({} Puntos)!"
-814	"[KillKill] 3º - {} ({} Puntos)!"
-815	"[KillKill] Su Posición: {}º ({} Puntos)!"
-816	"[KillKill] Score: {} Puntos!"
-
-//--------------------
-// Commands 
-//--------------------
-817	"Nuevo nombre contiene caracteres raros!"
-818	"Requiere: {} master reset(s)."
-819	"Max {} master to use!"
-820	"Commando: [/pack (soul,bless) (10,20,30)]"
-821	"Commando: [/unpack (soul,bless) (10,20,30)]"
-822	"Usted no tiene el item requerido(s)."
-823	"Commando completo satisfactoriamente."
-824	"Inventario Lleno."
-825	"[TvTEvent] Cierra en {} minuto(s)"
-826	"Team vs Team entrada"
-827	"[TvTEvent] Cerrado!"
-828	"[TvTEvent] Comienza en {} minuto(s)"
-829	"[TvTEvent] Comenzo!"
-830	"[TvTEvent] Finalizo!"
-831	"[TvTEvent] Usted no puede entrar!"
-832	"[TvTEvent] Ha cerrado ahora!"
-833	"[TvTEvent] Usted necesita item requerido para ingresar!"
-
-//--------------------
+//----------------------------------------------------------
 // Messages
-//--------------------
-834 "Zen insuficiente"
-835 "No puedo usar el comando mientras está operando"
-836 "Zen insuficiente. Necesitas tener {} de Zen"
-837 "Para usar este comando, necesita WC {} WP {} GP {}"
-838 ""
-839 "¡Almacén ya cargado!"
-840 "No puedes usar el almacén del gremio"
-841 "Administrador {} bloqueado {} por {} días"
-842 "Administrador {} cuenta prohibida {} por {} días"
-843 "Correo de velocidad detectado"
-844 "Zen insuficiente. Necesitas tener {} de Zen"
-845 "Falta {} monedas WC"
-846 "Falta {} Monedas Wp"
-847 "Falta {} Puntos Goblin"
-848 ""
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    16       "El Chaos Castle se cerrará en {} minuto(s)"
+    17       "El Chaos Castle se cerró"
+    18       "El Chaos Castle {} comenzará en {} minuto(s)"
+    19       "El Chaos Castle ha comenzado"
+    20       "El Chaos Castle terminó"
 
-//--------------------
-// Custom Npc Quest
-//--------------------
-849	"[QUEST {}] Necesitas WCoinsC {} para continuar"
-850	"[QUEST {}] Necesitas WCoinsP {} para continuar"
-851	"[QUEST {}] Necesitas GoblinPoints {} para continuar"	
-852	"[QUEST {}] No tienes espacio para guardar el item"
-856	"Usted no posee el ranking de ballata suficiente"
-857 "No cumples las espectativas"
-858 "No puedo atenderte ahora"
-859 "CHARACTER INDEX NOT FOUND"
-860 "Vuelve cuando estes entre Level {} y {}"
-861 "Vuelve cuando estes entre Reset {} y {}"
-862 "Vuelve cuando estes entre MasterReset {} y {}"
-863 "Solo VIP pueden continuar"
-864 "No puedo atenderte ahora"
-865 "Cuando seas {} vuelve a mi"
-866	"A obtenido {} WCoinC"
-867	"A obtenido {} WCoinP"
-868	"A obtenido {} GoblinP"
-869	"Vuelve cuando seas mayor a {} Resets."
-870	"Vuelve cuando seas menor a {} Resets."
-871	"Vuelve cuando seas mayor a {} MasterResets."
-872	"Vuelve cuando seas menor a {} MasterResets."
-873	"Vuelve cuando seas mayor a Level {}"
-874	"Vuelve cuando seas menor a Level {}"
-875	"Estoy buscando {}, ¿Tienes?"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    32       "Cuenta gratis"
+    33       "Cuenta Bronze"
+    34       "Cuenta Plata"
+    35       "Cuenta Oro"
 
-//--------------------
-// Event Rewards
-//--------------------
-876	"[BloodCastle] Has ganado {} LevelPoints"
-877	"[ChaosCastle] Has ganado {} LevelPoints"
-878	"[DevilSquare] Has ganado {} LevelPoints"
-879	"[BloodCastle] Has ganado {} Zen"
-880	"[ChaosCastle] Has ganado {} Zen"
-881	"[DevilSquare] Has ganado {} Zen"
-882	"[BloodCastle] Has ganado WC:{} WP:{} GP:{}"
-883	"[ChaosCastle] Has ganado WC:{} WP:{} GP:{}"
-884	"[DevilSquare] Has ganado WC:{} WP:{} GP:{}"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    60       "Debes esperar {} segundos antes de comprar en esta Tienda"
 
-//--------------------
-// Kanturu Event
-//--------------------
-885	"El MoonStone Ring no puede moverse durante el evento"
-886	"Fuistes expulsado por no poseer el MoonStone Ring"
-887	"El MoonStone Ring no puede dropearse durante el evento"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    62       "El pk se ha eliminado"
+    64       "Usted no tiene permiso para utilizar este comando"
+    65       "Usted necesita ser al menos level {} para utilizar /post"
+    66       "Usted necesita tener al menos {} resets para utilizar /post"
+    67       "Usted necesita tener al menos {} zen para utilizar /post"
+    68       "Usted necesita esperar {} segundos para utilizar /post"
+    69       "[POST]{}"
+    70       "Usted no tiene permiso para utilizar /add"
+    71       "Comando exclusivo de Dark Lord"
+    72       "No tiene suficientes puntos para agregar"
+    73       "Usted necesita tener al menos {} zen para utilizar /str,agi,vit,ene,com"
+    74       "Usted ha agregado {} puntos, te quedan {} puntos."
+    75       "Usted no tiene permiso para utilizar /pk"
+    76       "Usted no es PK"
+    77       "Usted necesita tener al menos {} zen para utilizar /pk"
+    78       "Usted ha limpiado su PK con éxito"
+    79       "Usted no tiene permiso para utilizar este Comando"
+    80       "Ha introducido un valor no válido para agregarlo"
+    81       "Usted no tiene permiso para utilizar /change"
+    82       "Usted necesita tener al menos {} zen para utilizar /change"
+    83       "Usted no puede evolucionar más"
+    84       "Usted ha evolucionado con éxito"
+    85       "Usted no tiene permiso para utilizar /baul"
+    86       "Usted no puede utilizar /baul en este momento"
+    87       "Usted ha introducido un baúl inválido para cambiar"
+    88       "Usted cambió al baúl {} con exito"
+    89       "Usted no tiene permiso para utilizar /reset"
+    90       "Usted no puede utilizar /reset en este momento"
+    91       "Usted necesita ser al menos level {} para utilizar /reset"
+    92       "Usted necesita tener al menos {} zen para utilizar /reset"
+    93       "Usted no puede tener más que {} resets"
+    94       "Usted no puede resetear con elementos equipados"
+    95       "Usted ha reseteado con éxito, y ahora tiene {} resets"
+    96       "Usted no tiene permiso para utilizar /gmmove"
+    97       "Usted ha introducido un comando no válido para /gmmove"
+    98       "Usted no tiene permiso para utilizar /gmpost"
+    99       "Usted no tiene permiso para utilizar /track"
+    100      "Usted ha introducido un comando no válido para /track"
+    101      "Usted no tiene permiso para utilizar /trace"
+    102      "Usted ha introducido un comando no válido para /trace"
+    103      "Usted no tiene permiso para utilizar /disconnect"
+    104      "Usted ha introducido un comando no válido para /disconnect"
+    105      "Usted no tiene permiso para utilizar /fireworks"
+    106      "Usted no tiene permiso para utilizar /make"
+    107      "Has creado un item con éxito"
+    108      "Usted no tiene permiso para utilizar /skin"
+    109      "Usted ha introducido un comando no válido para /skin"
+    110      "Usted no tiene permiso para utilizar /setmoney"
+    111      "Usted ha introducido un comando no válido para /setmoney"
+    112      "Ha introducido un valor no válido para /setmoney"
+    113      "Usted no tiene permiso para utilizar /notice"
+    114      "Adición automática de puntos: Activada ({})"
+    115      "Adición automática de puntos: Desativada"
+    116      "Reset automático: Activado"
+    117      "Reset automático: Desativado"
+    118      "Usted no tiene permiso para utilizar /mreset"
+    119      "Usted no puede utilizar /mreset en este momento"
+    120      "Usted necesita tener al menos {} levels para utilizar /mreset"
+    121      "Usted necesita tener al menos {} resets para utilizar /mreset"
+    122      "Usted necesita tener al menos {} zen para utilizar /mreset"
+    123      "Usted no puede tener más que {} master resets"
+    124      "Usted no puede Master Resetear con elementos equipados"
+    125      "Usted maestro se ha restaurado con éxito, y ahora tiene {} Master Resets"
+    126      "Recibimiento de solicitudes: Activado"
+    127      "Recibimiento de solicitudes: Desactivado"
+    128      "Recibimiento de solicitudes: Automático"
+    129      "Sólo se puede resetear {} veces por dia"
+    130      "Sólo se puede resetear {} veces por semana"
+    131      "Sólo se puede resetear {} veces por mes"
+    132      "Sólo se puede master resetear {} veces por dia"
+    133      "Sólo se puede master resetear {} veces por semana"
+    134      "Sólo se puede master resetear {} veces por mes"
+    135      "Usted no tiene permiso para utilizar /hide"
+    136      "Reserved 136"
+    137      "Reserved 137"
+    138      "Reserved 138"
+    139      "Reserved 139"
+    140      "Reserved 140"
+    141      "Reserved 141"
+    142      "Reserved 142"
+    143      "Reserved 143"
 
-//--------------------
-// Custom Messages
-//--------------------
-890	"EXEDES LOS REQUISITOS PARA JUGAR AQUI"
-891	"EXEDES LOS REQUISITOS PARA JUGAR AQUI"
-892	"CustomAttack Disabled on this Map!"
-893	"CustomStore Offline Disabled on this Map!"
-894	"CustomPick Disabled on this Map!"
-895	"Party Disabled on this Map!"
-896	"Trade Disabled on this Map!"
-897	"Vuelve otro dia"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    144      "Devil Square se cerrará en {} minuto(s)"
+    145      "Devil Square cerró"
+    146      "Devil Square {} comenzará en {} minuto(s)"
+    147      "Devil Square comenzó"
+    148      "Devil Square termino"
+    149      "Eres muy debil para entrar al Devil Square {}"
+    150      "Reserved 150"
+    151      "Reserved 151"
+    152      "Reserved 152"
+    153      "Reserved 153"
+    154      "Reserved 154"
+    155      "Reserved 155"
+    156      "Reserved 156"
+    157      "Reserved 157"
+    158      "Reserved 158"
+    159      "Reserved 159"
 
-//--------------------
-// Right Click System
-//--------------------
-900	"Ya tiene una arma de 2 manos equipada"
-901	"No puedes equiparte doble Mazo/Scepter"
-902	"No puedes equiparte doble Staff/Stick"
-903	"Ya tienes un item equipado alli!"
-904	"Ya tienes un pendiente equipado"
-905	"Ya tenias un ring, asi que lo pusimos en otro lugar"
-906	"Este item no puede equiparse"
-907	"Este item no es para tu raza"
-908	"No tienes espacio para ese item"
-909	"Acomoda tu inventario!"
-910	"Lucky Items no pueden moverse al Chaos Box"
-911	"Scrolls no pueden moverse al Chaos Box"
-912	"No hay espacio en la chaos machine"
-913	"No hay espacio suficiente en el trade"
-914	"No cumples con los requisitos para usar este item"
-915 "No puedes mover Items Periodicos a este lugar"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    160      "Ese personaje no esta conectado."
+    161      "No puedes hacer duelo en este momento."
+    162      "El personaje rechazo tu peticion automaticamente."
+    163      "Ya has soliticado un duelo."
+    164      "Alguien ya ha solicitado un duelo a ese personaje."
+    165      "No se puede hacer duelo durante una Guild War."
+    166      "El otro personaje esta en una Guild War."
+    167      "No se puede solicitar duelo en este mapa."
+    168      "No puedes hacer duelo durante el Castle Siege."
+    169      "Ese personaje no esta conectado o no existe."
+    170      "No puedes hacer duelo en este momento [Self Defense]"
+    171      "El otro jugador esta incapacitado.[Self Defense]"
+    172      "El jugador rechazo tu peticio de duelo"
+    173      "Todas las Arenas están llenas en este momento"
+    174      "Un duelo entre {} y {} ha comenzado!"
+    175      "El jugador {} vencio a {} en duelo!"
 
-//--------------------
-//Event Alarm Texts
-//--------------------
-920  "[BloodCastle] Necesitas la entrada +{}"
-921  "[DevilSquare] Necesitas la entrada +{}"
-922  "[ChaosCastle] No tienes la entrada"
-923  "[IllusionTemple] Necesitas la entrada +{}"
-924  "[DoubleGoer] No tienes la entrada"
-925  "[SkyEvent] No tienes la entrada"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    176      "El Illusion Temple se cerrará en {} minuto(s)"
+    177      "El Illusion Temple cerró"
+    178      "El Illusion Temple {} comenzará en {} minuto(s)"
+    179      "El Illusion Temple comenzo"
+    180      "El Illusion Temple termino"
+    181      "Eres muy debil para entrar al Illusion Temple {}"
+    182      "No tienes la entrada correcta para entrar al Illusion Temple {}"
+    183      "El jugador {} dejó caer el artefacto"
+    184      "El jugador {} ha cogido el artefacto"
 
-//--------------------
-// Sky Event
-//--------------------
-950	"No puedes moverte en este momento."
-951	"Necesitas fenrir o dinorant para entrar a SkyEvent."
-952	"Necesitas alas para entrar a SkyEvent."
-953	"[SkyEvent] Stage Save Failed! Event Ended"
-954	"[SkyEvent] You will be moved to Devias in {} seconds"
-955	"[SkyEvent] Ended"
-956	"[SkyEvent] Stage started by {} Minutes"
-957	"[SkyEvent] Will start in {} seconds"
-958	"[SkyEvent] Failed, Not enough players to Start"
-959	"[SkyEvent] Stage will end in {} minute(s), Kill all monsters before that."
-960	"[SkyEvent] Stage will end in {} minute(s)"
-961	"[SkyEvent] Gate will close in {} minute(s)"
-962	"[SkyEvent] Event is Full"
-963	"[SkyEvent] Event is only for Masters"
-964	"[SkyEvent] PKs are not Allowed to Enter"
-965	"[SkyEvent] Min Level to enter is {}"
-966	"[SkyEvent] Max Level to enter is {}"
-967	"[SkyEvent] Min Resets to enter is {}"
-968	"[SkyEvent] Max Resets to enter is {}"
-969	"[SkyEvent] Min MResets to enter is {}"
-970	"[SkyEvent] Max MResets to enter is {}"
-971	"[SkyEvent] Min Account Level is {}"
-972	"[SkyEvent] No puedes tracer a tu pareja!"
-973	"[SkyEvent] No puedes usar este skill dentro del evento!"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    192      "Skeletong King Invasión!"
+    193      "Red Dragon Invasión!"
+    194      "Golden Dragon Invasión!"
+    195      "White Wizard Invasión!"
+    196      "New Year Pounch Invasión!"
+    197      "White Rabbit Invasion!"
+    198      "Summer Event Started!"
+    199      "Cursed Santa Event Started!"
+    200      "Medusa  Invasion!"
+    202      "{} derrotó a Skeleton King!"
+    203      "{} derrotó a Red Dragon!"
+    204      "{} derrotó a Golden Great Dragon!"
+    205      "{} derrotó a White Wizard!"
+    206      "{} derrotó a Cursed Santa!"
+    207      "{} derrotó a Medusa!"
+    208      "El Moss Merchant ha vuelto!"
+    209      "El Moss Merchant ha partido!"
+    210      "Cursed Demon Invasion!"
+    211      "Eggs Invasion!"
+    212      "Monsters {}"
+    213      "Reserved 213"
+    214      "Restan {} Monsters."
+    215      "Reserved 215"
+    216      "Reserved 216"
+    217      "Reserved 217"
+    218      "Reserved 218"
+    219      "Reserved 219"
+    220      "Reserved 220"
+    221      "Reserved 221"
+    222      "Reserved 222"
+    223      "Reserved 223"
 
-//--------------------
-// Ruud System
-//--------------------
-974 "¡[MasteryBox] {} Ruud obtenido!"
-975 "[MasteryBox] La caja está vacía"
-976 "[Ruud] {} ¡Ruud obtenido!"
-977 "¡[Contribución] {} obtenida!"
-978 "[Ruud] {} Ruud ah sido removido"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    224      "Necesitas ser level {} para moverte."
+    225      "Necesitas al menos {} zen para moverte."
+    226      "No puedes moverte en este momento."
+    227      "No puedes moverte por ser PK."
+    228      "Necesitas alas, fenrir o dinorant para moverte a ese lugar."
+    229      "Solo miembros de una familia Gens, pueden moverse."
+    230      "Debes ser level {} para entrar a ese lugar."
+    231      "Debes tener {} resets para entrar a ese lugar."
+    232      "Solo jugadores con menos de {} resetspueden entrar a ese lugar."
 
-//--------------------
-// MSPro Quest System
-//--------------------
-980 "[Misión] {} añadido"
-981 "[Misión] {} terminada"
-982 "[Misión] {} eliminado"
-984 "[Misión] Has alcanzado el límite de misiones que puedes aceptar"
-984 "[Misión] {} de Zen con descuento"
-985 "[Misión] {} de Zen ganado"
-986 "[Misión] {} volverá a estar disponible en {}"
-987 "días"
-988 "horas"
-989 "minutos"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    240      "[Senior] El Castle Siege no esta disponible!"
+    241      "[Senior] no funciono durante el Castle Siege."
+    242      "[Senior] No perteneces a un guild registrado en el Castle Siege."
+    243      "[Senior] Deber ser el guild master para interactuar."
+    244      "[Guardsman] no funciono durante el Castle Siege."
 
-//--------------------
-// TvT Event - 
-//--------------------
-990 "[TvTEvent] Cierra en {} minuto(s)"
-991 "¡[TvTEvent] ya está abierto!"
-992 "[TvTEvent] ¡Cerrado!"
-993 "[TvTEvent] Comienza en {} minuto(s)"
-994 "[TvTEvent] ¡Comenzó!"
-995 "[TvTEvent] Terminado"
-996 "[TvTEvent] ¡No puedes entrar al evento!"
-997 "[TvTEvent] ¡Ha cerrado ahora!"
-998 "[TvTEvent] ¡¡faltan algunos elementos!!"
-999  "Moriste {} veces"
-1000 "Matas a {} usuarios"
-1001 "[BlueTeam]: {} Vs [RedTeam]: {}"
-1002 "[RedTeam]: {} Vs [BlueTeam]: {}"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    245      "Ya perteneces a un guild."
+    246      "Debes ser level {} para crear un guild."
+    247      "La tienda está vacia"
+    248      "Nível de cuenta: Gratis"
+    249      "Nível de cuenta: Bronze-Dias Restantes({})"
+    250      "Nível de cuenta: Plata-Dias Restantes({})"
+    251      "Nível de cuenta: Oro-Dias Restantes({})"
+    256      "Bienvenido {} Disfruta tu estadía"
+    257      "Necesitas tener level 40 para usar el anillo."
+    258      "Necesitas tener level 80 para usar el anillo."
+    259      "No puedes moverte a este mapa en este momento."
+    260      "Este item no te pertenece!."
+    261      "No puedes salir, con el Trade abierto"
+    262      "No puedes salir, con el Vault abierto"
+    263      "No puedes salir, con el Chaos Machine abierta"
+    264      "No puedes salir, con el Pet Trainer abierto"
+    265      "No puedes salir, con la defensa activa!"
+    266      "Usted está en el level máximo"
+    267      "Usted está en el master level máximo"
+    268      "Sólo puede agregar {} puntos"
+    269      "Usted no puede hablar durante {} segundos"
+    270      "No puedes enviar un mensaje a ti mismo"
+    271      " "
+    272      "No se pudo realizar el teletransporte"
+    273      "Usted será teletransportado en {} segundo(s)"
+    274      "No se puede mover a este mapa con monturas"
+    275      "No se puede mover a este mapa sin alas"
+    276      "Has recibido un Gift en el Cash Shop"
+    277      "El inventario fue limpiado con exito"
+    278      "Data/Messages (Numero 278)"
+    279      "Usted o su contrincante, necesitan tener Level {} para un duelo!"
+    280      "Entraste al BC Nivel {}"
+    281      "Entraste al DS Nivel {}"
+    282      "¡No le vendo a gente como tú!"
+    283      "Reservado"
+    284      "Reservado"
+    285      "Reservado"
+    286      "Reservado"
+    287      "Has superado tu limite de acceso por hoy[{}]"
+    288      "Guild Create are disable on this server!"
+    289      "Tu necesitas {} WC-Coins para crear un guild"
+    290      "Tu necesitas {} WP-Coins para crear un guild"
+    291      "Tu necesitas {} GoblinCoins para crear un guild"
 
-//--------------------
-// Penalty System Messages(V7)
-//--------------------
-1200	"[Penalty] Te quedan ({}) min para poder Moverte"
-1201	"[Penalty] Te quedan ({}) min para poder Tradear"
-1202	"[Penalty] Te quedan ({}) min para poder Comprar/Vender"
-1203	"[Penalty] Reservado 1203"
-1204	"[Penalty] Reservado 1204"
-1205	"[Penalty] Reservado 1205"
-1206	"[Penalty] Reservado 1206"
-1207	"[Penalty] Reservado 1207"
-1208	"[Penalty] Reservado 1208"
-1209	"[Penalty] Reservado 1209"
-1210	"[Penalty] Reservado 1210"
-1211	"[Penalty] Quedaste libre para Moverte"
-1212	"[Penalty] Quedaste libre para Tradear"
-1213	"[Penalty] Quedaste libre para Comprar/Vender"
-1214	"[Penalty] Reservado 1214"
-1215	"[Penalty] Reservado 1215"
-1216	"[Penalty] Reservado 1216"
-1217	"[Penalty] Reservado 1217"
-1218	"[Penalty] Reservado 1218"
-1219	"[Penalty] Reservado 1219"
-1220	"[Penalty] Reservado 1220"
-1221	"[Penalty] Reservado 1221"
-1222	"[Penalty] {} WC-Coins descontada"
-1223	"[Penalty] {} WP-Coins descontada"
-1224	"[Penalty] {} GoblinPoints descontada"
-1225	"[Penalty] {} Zen descontado"
-1226	"[Penalty] Has dropeado {}!"
-1227	"[Penalty] Reservado 1227"
-1228	"[Penalty] Reservado 1228"
-1229	"[Penalty] Reservado 1229"
-1230	"[Penalty] Reservado 1230"
-1231	"[Penalty] Reservado 1231"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    304      "El Ice Walker aparecio!"
+    305      "Eres muy debil para entrar al evento."
+    306      "El Ice Walker fue derrotado!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    320      "Raklion Event cerrará en {} minuto(s)"
+    321      "Raklion Event ha cerrado!"
+    322      "{} derroto al Selupan!"
+    323      "Raklion Event se abrirá de nuevo en {} minuto(s)"
+    324      "Raklion Event abrió!"
+    325      "Raklion Event está cerrado"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    336      "La Torre de Refineria se cerrará en 60 minuto(s)"
+    337      "La Torre de Refineria se cerrará en 20 minuto(s)"
+    338      "La puerta de Kanturu se abrirá en 1 minuto(s)"
+    339      "La batalla contra Maya comenzará pronto!"
+    340      "La próxima batalla comenzará en 1 minuto(s)"
+    341      "¡Nightmare ha aparecido!"
+    342      "¡Nightmare fue derrotado! La Torre de Refineria esta abierta!"
+    343      "Maya triunfo! Seras expulsado del lugar!"
+    344      "Solo personajes mayores a Level {} pueden entrar"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    352      "Castle Deep Event comenzará en 5 minuto(s)"
+    353      "Castle Deep Event ha iniciado!"
+    354      "Castle Deep Event ha terminado!"
+    355      "El Erohim fue derrotado por el jugador {}"
+    356      "El {} fue derrotado por el jugador {}"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    368      "Balgass juntó fuerzas con la armada de Kundun y planean atacar Crywolf Fortress"
+    369      "Una Ejercito de Balgass atacara Crywolf Fortress!"
+    370      "Una Ejercito de Balgass está marchando a Crywolf Fortress"
+    371      "Una Ejercito de Balgass esta a punto de llegar a Crywolf Fortres"
+    372      "Sin elfas en el altar, la Estatua del Lobo quedo desprotegida"
+    373      "Balgass sobrevivio al final de la batalla."
+    374      "¡La defensa falló! la Estatua del Lob fue tomada por Balgass"
+    375      "¡La defensa ha tenido éxito! La estatua del lobo sagrado fue protegida"
+    376      "La conexion a los pedestales comenzará en {} segundo(s)"
+    377      "La conexion a los pedestales comenzará en {} minuto(s)"
+    378      "Una batallon de Balgass atacará en {} segundos(s)"
+    379      "Una batallon de Balgass atacará en {} minutos(s)"
+    380      "Sin elfas en el altar, la Estatua del Lobo quedo desprotegida"
+    381      "¡Balgass está llegando! Protejan la estatua del lobo!"
+    382      "El ejercito de Balgass esta atacando la estatua del lobo!"
+    383      "El ejercito de Balgass fue derrotado!"
+    384      "MvP Rank: {}"
+    385      "MvP Experiencia: {}"
+    386      "Balgass fue derrotado por {}!"
+    387      "Balgass fue derrotado!"
+    388      "Una Dark Elf {} fue derrotada por {}!"
+    389      "MvP Punto: {}"
+    390      "Conectado al altar {}"
+    391      "{} conectandose al altar {}"
+    392      "El altar {} fue conectado"
+    393      "La conexión al pedestal {} no ha comenzado todavía"
+    394      "El altar {} ya se ha conectado más de 2 veces"
+    395      "La posición para conectarse al altar {} está incorrecta"
+    396      "{} está tratando de conectarse al altar {}"
+    397      "Usted será conectado al altar en 5 segundo(s)"
+    398      "No se mueva hasta que la conexión esté completa"
+    399      "La conexión con el altar {} fue cancelada"
+    400      "La barrera de la estatua del lobo desapareció"
+    401      "Número de conexiones: {}, Vida de la estátua: {}"
+    402      "La barrera de la estatua del lobo fue creada"
+    403      "La conexion requiere una Elfa level {} o superior"
+    404      "Solo las elfas, pueden conectarse al pedestal"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    416      "El Castle Siege termino"
+    417      "El período de registro del Castle Siege comenzo"
+    418      "El período de registro de emblemas de Castle Siege comenzo"
+    419      "El período de selecion de guilds al Castle Siege comenzo"
+    420      "La selección de los guilds del Castle Siege fue concluida"
+    421      "El período de preparacion para el Castle Siege comenzo"
+    422      "El Castle Siege comenzara en {} minuto(s)"
+    423      "El Castle Siege está siendo disputado"
+    424      "La guild {} Defendio muy bien el Castillo"
+    425      "La guild {} se convirtió en el nuevo dueño del castillo"
+    426      "El dueño del castillo no fue definido"
+    427      "La Guardian Statue sigue en pie!"
+    432      "La posición del jugador {} fue cambiada a Asistente de Master"
+    433      "La posición del jugador {} fue cambiada a Battle Master"
+    434      "La posición del jugador {} fue cambiada a Miembro de Guild"
+    435      "El tipo de guild {} fue cambiado para {}"
+    436      "El guild entró en la alianza {}"
+    437      "El guild ahora es enemigo del guild {}"
+    438      "El guild {} entró en la alianza {}"
+    439      "El guild se retiró de la alianza"
+    440      "El guild {} se retiró de la alianza {}"
+    441      "El guild no es más de la alianza {}"
+    442      "El guild no es enemigo del guild {}"
+    443      "La Alianza {} fue disuelta"
+    448      "No puedes invocar a Life Stone fuera del Castle Siege"
+    449      "Sólo la alianza ofensiva puede invocar a Life Stone"
+    450      "Una Life Stone ya ha sido invocada"
+    451      "No puedes invocar a Life Stone dentro de la Torre del Dragón"
+    452      "Una Life Stone fue invocada con exito"
+    453      "Una Life Stone fallo al ser invocada"
+    454      "Reserved 454"
+    455      "Reserved 455"
+    456      "Reserved 456"
+    457      "Reserved 457"
+    458      "Reserved 458"
+    459      "Reserved 459"
+    460      "Reserved 460"
+    461      "Reserved 461"
+    462      "Reserved 462"
+    463      "Reserved 463"
+    464      "Usted no puede invocar al soldado fuera del Castle Siege"
+    465      "Sólo la alianza defensiva puede invocar al soldado"
+    466      "Sólo el Líder del guild y su Asistente pueden invocar al soldado"
+    467      "El número máximo de soldados fue excedido"
+    468      "El soldado fue invocado con exito"
+    469      "El soldado fallo al ser invocado"
+    470      "Reserved 470"
+    471      "Reserved 471"
+    472      "Reserved 472"
+    473      "Reserved 473"
+    474      "Reserved 474"
+    475      "Reserved 475"
+    476      "Reserved 476"
+    477      "Reserved 477"
+    478      "Reserved 478"
+    479      "Reserved 479"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    480      "El servidor cerró"
+    481      "El Servidor se cerrará automáticamente en {} segundo(s)"
+    482      "Este es un elemento duplicado, póngase en contacto con el administrador del Servidor"
+    483      "Su bloqueo de chat terminó"
+    484      "Usted saldrá del juego en {} segundo(s)"
+    485      "La auto defensa contra {} inicio"
+    486      "La auto defensa contra {} termino"
+    487      "El Servidor se apagará automáticamente en 1 minuto(s)"
+    488      "El Servidor se apagará automáticamente en 3 minuto(s)"
+    489      "El Servidor se apagará automáticamente en 5 minuto(s)"
+    490      "La partida comenzará automáticamente en 10 segundo(s)"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    491      "{} ha ganado {} Jewel of Bless"
+    492      "{} mato al Fenix"
+    493      "Ganaste {} punto(s) de evento y {} Golds"
+    494      "{} mato un Golden"
+    495      "Ganaste {} punto(s) de evento y {} Golds"
+    496      "{} mato un Erohin"
+    497      "Ganaste {} punto(s) de evento y {} Golds"
+    499      "Quitar los Errtel antes de colocar"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    500      "El evento Rey del Mu comenzo"
+    501      "El evento Rey del Mu termino"
+    502      "El evento Rey del Mu comienza en {} minuto(s)"
+    503      "Un guild {} tomó el castillo!"
+    504      "El evento Rey del Mu comienza en {} Segundo(s)"
+    506      "No eres miembro de ningún guild!"
+    507      "Su guild ya es dueña del castillo!"
+    508      "Usted no está en la coordenada correcta!"
+    509      "Su guild debe tener por lo menos {} miembros!"
+    510      "¡Enhorabuena! Su guild ahora es dueña del castillo!"
+    511      "Faltan {} minuto(s) para que termine el evento Rey del mu!"
+    512      " "
+    513      " "
+    514      " "
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    515      "{} Mato al noob de {}"
+    516      "{} Mato al noob de {}"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    518      "Usted no tiene permiso para utilizar /setvip"
+    519      "Vip agregado con éxito!"
+    520      "Esta cuenta no existe!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    521      "{} Usted no necesita más de mi ayuda"
+    522      "{} Su plan vip no permite el uso de este buff"
+    523      "{} Zen necesario: {}"
+    524      "{} PCPoints necesarios: {}"
+    525      "{} Usted necesita estar en la família Vanert"
+    526      "{} Usted necesita estar en la família Duprian"
+    527      "{} Usted necesita estar en la família Duprian"
+    528      "{} Usted necesita estar en la família Vanert"
+    529      "{} Necesario puntos de la família: {}"
+    530      "{} Tiempo: {} Minutos(s)"
+    531      "{} Descontado {} Zen"
+    532      "{} Descontado {} PCPoint(s)"
+    533      "{} Buff Aplicado!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    602      "No puedes casarte contigo mismo!"
+    603      "Te acabas de casar con {}!"
+    604      "Ya estas casado!"
+    605      "El otro personaje ya está casado!"
+    606      "Usa: [/marry to name | /marry divorce | /marry track or trace]!"
+    607      "No puede divorciarse en la primera semana de casarse!"
+    608      "Acabas de divorciarte!"
+    609      "No estás casado!"
+    610      "Seguiste a {}!"
+    611      "{} Te siguio"
+    612      "{} recién casados {}!"
+    613      "{} Recién divorciado {}!"
+    614      "Felicitaciones,"
+    615      "Entre {} y {}!"
+    616      "[Marry]No se permite entre hombres"
+    617      "Necesitas tener al menos level {}  para usar este comando!"
+    618      "Él / Ella necesita al menos level {} para usar este comando!"
+    619      "Marry ha sido deshabilitado!"
+    620      "Necesitas al menos {} zen para usar este comando!"
+    621      "Necesitas estar en la posición correcta en Devias2!"
+    622      "Su objetivo debe mantenerse en la posición correcta en Devias2!"
+    623      "Info: [level Minimo : {} | Track&Trace Cost : {} zen]!"
+    624      "No puedes divorciarte mientras él / ella está desconectado!"
+    625      "El otro personaje está desconectado!"
+    626      "Skin {} applied to {} players!"
+    627      "{} no esta conectado[Marry]"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    630      "Usted necesita estar en el level {} para usar este comando!"
+    631      "Solo puedes abrir vault en safe zone!"
+    632      " "
+    633      "Comando no habilitado para su cuenta!"
+    634      "Comando: [/cambiarraza dw, dk, elf, mg, dl, su]"
+    635      "Usted debe elegir una raza diferente a la suya!"
+    636      "Debes quitarte todos tus items equipados"
+    637      "Clase no disponible!"
+    638      "Resets necesarios: {}!"
+    639      "[GM] {} está Online!"
+    640      "{} se ha conectado!"
+    641      "Usted no tiene permiso para utilizar!"
+    642      "Personaje no encontrado!"
+    643      "Comando: [/premiar CHAR TIPO VALOR]"
+    644      "Tipo del premio no disponible!"
+    645      "Valor del premio mayor que el permitido!"
+    646      "Premio otorgado con exito!"
+    647      "Usted no puede premiarse usted mismo!"
+    648      "Comando: [/reload tipo | Ex: /reload common]"
+    649      "Reload ejecutado con éxito!"
+    650      "Comando: [/premiarall TIPO VALOR]"
+    651      "El nombre debe tener un máximo de 10 letras."
+    652      "Este nombre ya existe."
+    653      "Espere {} segundos para utilizar nuevamente."
+    654      "Este nombre ya existe!"
+    655      "Nombre cambiado con éxito!"
+    656      "Nombre no ha sido cambiado!"
+    657      "El personaje {} cambio su nombre a {}!"
+    658      "Debes salir del guild para cambiar de nombre."
+    659      "Usted no puede utilizar ahora."
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    660      "[BUSQUEDA] Comenzó en {}!"
+    661      "[BUSQUEDA] termina en {} minuto(s)!"
+    662      "[BUSQUEDA] termina en {} segundo(s)!"
+    663      "[BUSQUEDA] Ganador {}!"
+    664      "[BUSQUEDA] Fin del evento - No hubo ganador!"
+    665      "[BUSQUEDA] Ve a las coordenadas x{} y{}"
+    666      "[BUSQUEDA] Fin del evento - Evento cancelado!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    667      "Personaje no encontrado o sin conexión!"
+    668      "Cuenta baneada con éxito!"
+    669      "Personaje baneado con éxito!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    670      "[EVENTO] Termina en {} segundo(s)"
+    671      "[EVENTO] Tiempo para ingresar termino!"
+    672      "[EVENTO] Cancelado!"
+    673      "[EVENTO] {} inicio un evento!"
+    674      "[EVENTO] Escriba /participar para entrar!"
+    675      "[EVENTO] Participante {} ha entrado!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    676      "[Hide&Seek] Acaba en {} segundo(s)"
+    677      "[Hide&Seek] Acabo sin ganador!"
+    678      "[Hide&Seek] Cancelado!"
+    679      "[Hide&Seek] {} inicio un evento!"
+    680      "[Hide&Seek] Buscar al GM y Tradear!"
+    681      "[Hide&Seek] {} Gano el evento!"
+    682      "[Hide&Seek] El evento termina en {} minuto(s)!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    683      "[PEGAPEGA] Cerró!"
+    684      "[PEGAPEGA] Evento iniciado. Corre!"
+    685      "[PEGAPEGA] Tiempo agotado!"
+    686      "[PEGAPEGA] Cancelado!"
+    687      "[PEGAPEGA] Abrio!"
+    688      "[PEGAPEGA] Escriba /quieroir para participar!"
+    689      "[PEGAPEGA] Participante {} ha ingresado!"
+    690      "[PEGAPEGA] {} Gano el evento!"
+    691      "[PEGAPEGA] {} ha sido atrapado!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    692      "[QUEST {}] Usted necesita ser level {} o +!"
+    693      "[QUEST {}] Usted necesita tener {} Reset(s) o +!"
+    694      "[QUEST {}] Usted necesita tener {} Master Reset(s) o +!"
+    695      "[QUEST {}] Usted necesita tener {} zen o +!"
+    696      "[QUEST {}] Usted debe ir para {} (x{},y{})!"
+    697      "[QUEST {}] Usted no tiene el plan vip necesario!"
+    698      "[QUEST {}] Item necesario: {}!"
+    699      "[QUEST {}] Usted debe matar {} {} (Faltan: {})!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    700      "[QUEST] Enhorabuena, has completado todas las misiones!"
+    701      "[QUEST {}] Concluida! Ganaste: {} WC, {} WP, {} GB!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    702      "Enhorabuena has recibido un regalo!"
+    703      "Usted ha recibido todos sus regalos!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    704      "[RuletaRussa] Cerró!"
+    705      "[RuletaRussa] Evento iniciado!"
+    706      "[RuletaRussa] Tiempo agotado!"
+    707      "[RuletaRussa] Cancelado!"
+    708      "[RuletaRussa] Abrio (Max Participantes: {})!"
+    709      "[RuletaRussa] Escriba /quieroir para participar!"
+    710      "[RuletaRussa] Participante {}: {} ha ingresado!"
+    711      "[RuletaRussa] {} gano el evento!"
+    712      "[RuletaRussa] Colocando una bala en el tambor...!"
+    713      "[RuletaRussa] Girando el tambor...!"
+    714      "[RuletaRussa] Engatillando...!"
+    715      "[RuletaRussa] FUEGO!"
+    716      "[RuletaRussa] HeadShot {} fue eliminado!"
+    717      "[RuletaRussa] {} se escapó ileso!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    718      "[King of MU] Awards Ceremony"
+    719      "[King of MU] Guild {} won the Event!!!"
+    720      "[King of MU] TOP Killers"
+    721      "[King of MU] #{} - {} x{} ({})"
+    722      "[King of MU] TOP Conquerors"
+    723      "[King of MU] #{} - {} x{} ({})"
+    724      "[King of MU] There was no Winner!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    730      "Usted ha sido premiado con {} WC!"
+    731      "Usted ha sido premiado con {} WP!"
+    732      "Usted ha sido premiado con {} GP!"
+    733      "Comando: [/top tipo classe | Ex: /top rr dk]"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    734      "Comando: [/cambiarraza: dk,dw,fe,mg,dl,su]"
+    735      "Sin resultados!"
+    736      "{}° Colocado: {} ({})"
+    737      "Puntos redistribuidos"
+    738      "{} subio de rango a {}!"
+    739      "Usted ha alcanzado el rango {}!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    740      "Fui desativado =("
+    741      "Usted necesita tener 64 piezas del mismo tipo en el inventario"
+    742      "Muchas gracias, ya tomé los artículos y entregué su premio."
+    743      "Lo siento, no tengo interés en estos elementos."
+    744      "Usted ha cambiado sus artículos por premios!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    745      "[{}] Comienza en {} minuto(s)!"
+    746      "[{}] Pregunta: (Usa /resp para responder)"
+    747      "[{}] {}"
+    748      "[{}] {} ha acertado correctamente!"
+    749      "[{}] No tuvo ganador!"
+    750      "[{}] Respuesta incorrecta!"
+    751      "[{}] Respuesta: {}"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    752      "[Juntar {}] Activado!"
+    753      "[Juntar {}] Desactivado!"
+    754      "[Juntar] Desactivado!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    755      "[ReMaster] MasterSkillTree Reseteado!"
+    756      "[ReMaster] MasterSkillTree Error al Resetear!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    757      "[BuyVip] Usted no dispone del valor suficiente para comprarlo!"
+    758      "[BuyVip] Usted Asigno {}!"
+    759      "[BuyVip] El plan elegido es inferior al que usted tiene!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    760      "Removed {} WC!"
+    761      "Removed {} WP!"
+    762      "Removed {} GP!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    763      "You cant use custom attack with MuHelper enabled!"
+    764      "You cant use  MuHelper with custom attack enabled!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    765      "Max Level to use: {}"
+    766      "Usted Necesita: {} WC!"
+    767      "Usted Necesita: {} WP!"
+    768      "Usted Necesita: {} GP!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    769      "[IT]El equipo 1 ha ganado."
+    770      "[IT]El equipo 2 ha ganado."
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    771      "[OffPvp] Activado"
+    772      "[OffPvp] Desactivado"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    773      "[Lock] Activado - Items Bloqueados!"
+    774      "[Lock] Contraseña maxima de 8 caracteres!"
+    775      "[Lock] Ya esta Active, use /unlock!"
+    776      "[Lock] Desactivado!"
+    777      "[Lock] Contraseña Incorrecta!"
+    778      "[Lock] Accion bloqueada por contraseña!"
+    779      "Usted puede activar el comando en zona segura"
+    780      "Personal Shop esta vacia o los items no tienen precios"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    781      "ATENCIÓN!! Todos los items del Store seran vendidos por Jewel of Bless"
+    782      "ATENCIÓN!! Todos los items del Store seran vendidos por Jewel of Soul"
+    783      "ATENCIÓN!! Todos los items del Store seran vendidos por Jewel of Chaos"
+    784      "ATENCIÓN!! Todos los items del Store seran vendidos por WCoinC"
+    785      "ATENCIÓN!! Todos los items del Store seran vendidos por WCoinP"
+    786      "ATENCIÓN!! Todos los items del Store seran vendidos por Goblin Point"
+    787      "Usted necesita abrir la tienda personal antes"
+    788      "The command will run during {} minute(s)"
+    789      "The /store tiempo expirado"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    790      "[Attack] Desactivado"
+    791      "[Attack] NO puede ser usado aquí"
+    792      "[Attack] Usted no a seleccionado skill"
+    793      "[Attack] Usado tiempo: {} minuto(s)"
+    794      "[Attack] tiempo finalizado"
+    795      "[Attack] Activado"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    796      "[OffAttack] Use /attack antes"
+    797      "[OffAttack] No puede usarse aquí"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    798      "El Guild No Existe!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    799      "[PvP] Termino!"
+    800      "[PvP] Cancelado!"
+    801      "[PvP] {} x {} Empezo!"
+    802      "[PvP] {} {} x {} {}!"
+    803      "[PvP] {} Gano el evento!"
+    804      "[PvP] Comenzo!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    805      "[KillKill] Cerrado!"
+    806      "[KillKill] Comenzo!"
+    807      "[KillKill] Tiempo de espera!"
+    808      "[KillKill] Cancelado!"
+    809      "[KillKill] Abierto (Max usuarios: {})!"
+    810      "[KillKill] Escribe /quieroir Para Ingresar!"
+    811      "[KillKill] Personaje {}: {} Adherido!"
+    812      "[KillKill] 1º - {} ({} Puntos)!"
+    813      "[KillKill] 2º - {} ({} Puntos)!"
+    814      "[KillKill] 3º - {} ({} Puntos)!"
+    815      "[KillKill] Su Posición: {}º ({} Puntos)!"
+    816      "[KillKill] Score: {} Puntos!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    817      "Nuevo nombre contiene caracteres raros!"
+    818      "Requiere: {} master reset(s)."
+    819      "Max {} master to use!"
+    820      "Commando: [/pack (soul,bless) (10,20,30)]"
+    821      "Commando: [/unpack (soul,bless) (10,20,30)]"
+    822      "Usted no tiene el item requerido(s)."
+    823      "Commando completo satisfactoriamente."
+    824      "Inventario Lleno."
+    825      "[TvTEvent] Cierra en {} minuto(s)"
+    826      "Team vs Team entrada"
+    827      "[TvTEvent] Cerrado!"
+    828      "[TvTEvent] Comienza en {} minuto(s)"
+    829      "[TvTEvent] Comenzo!"
+    830      "[TvTEvent] Finalizo!"
+    831      "[TvTEvent] Usted no puede entrar!"
+    832      "[TvTEvent] Ha cerrado ahora!"
+    833      "[TvTEvent] Usted necesita item requerido para ingresar!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    834      "Zen insuficiente"
+    835      "No puedo usar el comando mientras está operando"
+    836      "Zen insuficiente. Necesitas tener {} de Zen"
+    837      "Para usar este comando, necesita WC {} WP {} GP {}"
+    838      ""
+    839      "¡Almacén ya cargado!"
+    840      "No puedes usar el almacén del gremio"
+    841      "Administrador {} bloqueado {} por {} días"
+    842      "Administrador {} cuenta prohibida {} por {} días"
+    843      "Correo de velocidad detectado"
+    844      "Zen insuficiente. Necesitas tener {} de Zen"
+    845      "Falta {} monedas WC"
+    846      "Falta {} Monedas Wp"
+    847      "Falta {} Puntos Goblin"
+    848      ""
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    849      "[QUEST {}] Necesitas WCoinsC {} para continuar"
+    850      "[QUEST {}] Necesitas WCoinsP {} para continuar"
+    851      "[QUEST {}] Necesitas GoblinPoints {} para continuar"
+    852      "[QUEST {}] No tienes espacio para guardar el item"
+    856      "Usted no posee el ranking de ballata suficiente"
+    857      "No cumples las espectativas"
+    858      "No puedo atenderte ahora"
+    859      "CHARACTER INDEX NOT FOUND"
+    860      "Vuelve cuando estes entre Level {} y {}"
+    861      "Vuelve cuando estes entre Reset {} y {}"
+    862      "Vuelve cuando estes entre MasterReset {} y {}"
+    863      "Solo VIP pueden continuar"
+    864      "No puedo atenderte ahora"
+    865      "Cuando seas {} vuelve a mi"
+    866      "A obtenido {} WCoinC"
+    867      "A obtenido {} WCoinP"
+    868      "A obtenido {} GoblinP"
+    869      "Vuelve cuando seas mayor a {} Resets."
+    870      "Vuelve cuando seas menor a {} Resets."
+    871      "Vuelve cuando seas mayor a {} MasterResets."
+    872      "Vuelve cuando seas menor a {} MasterResets."
+    873      "Vuelve cuando seas mayor a Level {}"
+    874      "Vuelve cuando seas menor a Level {}"
+    875      "Estoy buscando {}, ¿Tienes?"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    876      "[BloodCastle] Has ganado {} LevelPoints"
+    877      "[ChaosCastle] Has ganado {} LevelPoints"
+    878      "[DevilSquare] Has ganado {} LevelPoints"
+    879      "[BloodCastle] Has ganado {} Zen"
+    880      "[ChaosCastle] Has ganado {} Zen"
+    881      "[DevilSquare] Has ganado {} Zen"
+    882      "[BloodCastle] Has ganado WC:{} WP:{} GP:{}"
+    883      "[ChaosCastle] Has ganado WC:{} WP:{} GP:{}"
+    884      "[DevilSquare] Has ganado WC:{} WP:{} GP:{}"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    885      "El MoonStone Ring no puede moverse durante el evento"
+    886      "Fuistes expulsado por no poseer el MoonStone Ring"
+    887      "El MoonStone Ring no puede dropearse durante el evento"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    890      "EXEDES LOS REQUISITOS PARA JUGAR AQUI"
+    891      "EXEDES LOS REQUISITOS PARA JUGAR AQUI"
+    892      "CustomAttack Disabled on this Map!"
+    893      "CustomStore Offline Disabled on this Map!"
+    894      "CustomPick Disabled on this Map!"
+    895      "Party Disabled on this Map!"
+    896      "Trade Disabled on this Map!"
+    897      "Vuelve otro dia"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    900      "Ya tiene una arma de 2 manos equipada"
+    901      "No puedes equiparte doble Mazo/Scepter"
+    902      "No puedes equiparte doble Staff/Stick"
+    903      "Ya tienes un item equipado alli!"
+    904      "Ya tienes un pendiente equipado"
+    905      "Ya tenias un ring, asi que lo pusimos en otro lugar"
+    906      "Este item no puede equiparse"
+    907      "Este item no es para tu raza"
+    908      "No tienes espacio para ese item"
+    909      "Acomoda tu inventario!"
+    910      "Lucky Items no pueden moverse al Chaos Box"
+    911      "Scrolls no pueden moverse al Chaos Box"
+    912      "No hay espacio en la chaos machine"
+    913      "No hay espacio suficiente en el trade"
+    914      "No cumples con los requisitos para usar este item"
+    915      "No puedes mover Items Periodicos a este lugar"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    920      "[BloodCastle] Necesitas la entrada +{}"
+    921      "[DevilSquare] Necesitas la entrada +{}"
+    922      "[ChaosCastle] No tienes la entrada"
+    923      "[IllusionTemple] Necesitas la entrada +{}"
+    924      "[DoubleGoer] No tienes la entrada"
+    925      "[SkyEvent] No tienes la entrada"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    950      "No puedes moverte en este momento."
+    951      "Necesitas fenrir o dinorant para entrar a SkyEvent."
+    952      "Necesitas alas para entrar a SkyEvent."
+    953      "[SkyEvent] Stage Save Failed! Event Ended"
+    954      "[SkyEvent] You will be moved to Devias in {} seconds"
+    955      "[SkyEvent] Ended"
+    956      "[SkyEvent] Stage started by {} Minutes"
+    957      "[SkyEvent] Will start in {} seconds"
+    958      "[SkyEvent] Failed, Not enough players to Start"
+    959      "[SkyEvent] Stage will end in {} minute(s), Kill all monsters before that."
+    960      "[SkyEvent] Stage will end in {} minute(s)"
+    961      "[SkyEvent] Gate will close in {} minute(s)"
+    962      "[SkyEvent] Event is Full"
+    963      "[SkyEvent] Event is only for Masters"
+    964      "[SkyEvent] PKs are not Allowed to Enter"
+    965      "[SkyEvent] Min Level to enter is {}"
+    966      "[SkyEvent] Max Level to enter is {}"
+    967      "[SkyEvent] Min Resets to enter is {}"
+    968      "[SkyEvent] Max Resets to enter is {}"
+    969      "[SkyEvent] Min MResets to enter is {}"
+    970      "[SkyEvent] Max MResets to enter is {}"
+    971      "[SkyEvent] Min Account Level is {}"
+    972      "[SkyEvent] No puedes tracer a tu pareja!"
+    973      "[SkyEvent] No puedes usar este skill dentro del evento!"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    974      "¡[MasteryBox] {} Ruud obtenido!"
+    975      "[MasteryBox] La caja está vacía"
+    976      "[Ruud] {} ¡Ruud obtenido!"
+    977      "¡[Contribución] {} obtenida!"
+    978      "[Ruud] {} Ruud ah sido removido"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    980      "[Misión] {} añadido"
+    981      "[Misión] {} terminada"
+    982      "[Misión] {} eliminado"
+    984      "[Misión] Has alcanzado el límite de misiones que puedes aceptar"
+    984      "[Misión] {} de Zen con descuento"
+    985      "[Misión] {} de Zen ganado"
+    986      "[Misión] {} volverá a estar disponible en {}"
+    987      "días"
+    988      "horas"
+    989      "minutos"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    990      "[TvTEvent] Cierra en {} minuto(s)"
+    991      "¡[TvTEvent] ya está abierto!"
+    992      "[TvTEvent] ¡Cerrado!"
+    993      "[TvTEvent] Comienza en {} minuto(s)"
+    994      "[TvTEvent] ¡Comenzó!"
+    995      "[TvTEvent] Terminado"
+    996      "[TvTEvent] ¡No puedes entrar al evento!"
+    997      "[TvTEvent] ¡Ha cerrado ahora!"
+    998      "[TvTEvent] ¡¡faltan algunos elementos!!"
+    999      "Moriste {} veces"
+    1000     "Matas a {} usuarios"
+    1001     "[BlueTeam]: {} Vs [RedTeam]: {}"
+    1002     "[RedTeam]: {} Vs [BlueTeam]: {}"
+
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1200     "[Penalty] Te quedan ({}) min para poder Moverte"
+    1201     "[Penalty] Te quedan ({}) min para poder Tradear"
+    1202     "[Penalty] Te quedan ({}) min para poder Comprar/Vender"
+    1203     "[Penalty] Reservado 1203"
+    1204     "[Penalty] Reservado 1204"
+    1205     "[Penalty] Reservado 1205"
+    1206     "[Penalty] Reservado 1206"
+    1207     "[Penalty] Reservado 1207"
+    1208     "[Penalty] Reservado 1208"
+    1209     "[Penalty] Reservado 1209"
+    1210     "[Penalty] Reservado 1210"
+    1211     "[Penalty] Quedaste libre para Moverte"
+    1212     "[Penalty] Quedaste libre para Tradear"
+    1213     "[Penalty] Quedaste libre para Comprar/Vender"
+    1214     "[Penalty] Reservado 1214"
+    1215     "[Penalty] Reservado 1215"
+    1216     "[Penalty] Reservado 1216"
+    1217     "[Penalty] Reservado 1217"
+    1218     "[Penalty] Reservado 1218"
+    1219     "[Penalty] Reservado 1219"
+    1220     "[Penalty] Reservado 1220"
+    1221     "[Penalty] Reservado 1221"
+    1222     "[Penalty] {} WC-Coins descontada"
+    1223     "[Penalty] {} WP-Coins descontada"
+    1224     "[Penalty] {} GoblinPoints descontada"
+    1225     "[Penalty] {} Zen descontado"
+    1226     "[Penalty] Has dropeado {}!"
+    1227     "[Penalty] Reservado 1227"
+    1228     "[Penalty] Reservado 1228"
+    1229     "[Penalty] Reservado 1229"
+    1230     "[Penalty] Reservado 1230"
+    1231     "[Penalty] Reservado 1231"
 
 
-//--------------------
-// Reset System(V7)
-//--------------------
-1250	"No cumples los requisitos. Vuelve al Lvl: {}"
-1251	"Eres debil, vuelve cuando tengas {} Resets."
-1252	"Insuficientes WCoins. Necesitas {}"
-1253	"Insuficientes WPCoins. Necesitas {}"
-1254	"Insuficientes Goblin Points. Necesitas {}"
-1255	"Zen Insuficiente. Necesitas tener {} de Zen"
-1256	"No tienes el item requerido para esto!"
-1257	"Inventario reseteado con Exito!"
-1258	"SkillsList reseteado con Exito!"
-1259	"Quest reseteado con Exito!"
-1260	"Skill Tree reseteado con Exito!"
-1261	"Goblin Points han desaparecido!"
-1262	"Te han otorgado {} LevelPoints"
-1263	"Has recibido una bendicion de los dioses!"
-1264	""
-1265	""
-1266	""
-1267	""
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1250     "No cumples los requisitos. Vuelve al Lvl: {}"
+    1251     "Eres debil, vuelve cuando tengas {} Resets."
+    1252     "Insuficientes WCoins. Necesitas {}"
+    1253     "Insuficientes WPCoins. Necesitas {}"
+    1254     "Insuficientes Goblin Points. Necesitas {}"
+    1255     "Zen Insuficiente. Necesitas tener {} de Zen"
+    1256     "No tienes el item requerido para esto!"
+    1257     "Inventario reseteado con Exito!"
+    1258     "SkillsList reseteado con Exito!"
+    1259     "Quest reseteado con Exito!"
+    1260     "Skill Tree reseteado con Exito!"
+    1261     "Goblin Points han desaparecido!"
+    1262     "Te han otorgado {} LevelPoints"
+    1263     "Has recibido una bendicion de los dioses!"
+    1264     ""
+    1265     ""
+    1266     ""
+    1267     ""
 
-//--------------------
-// QuestSystem
-//--------------------
-1268    "Debe Esperar"
-1269    "Dias"
-1270    "Horas"
-1271    "Minutos"
-1272    "Segundos"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1268     "Debe Esperar"
+    1269     "Dias"
+    1270     "Horas"
+    1271     "Minutos"
+    1272     "Segundos"
 
-1273    "No es posible resetear en este mapa"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1273     "No es posible resetear en este mapa"
 
-//--------------------
-// Post Item System(V10)
-//--------------------
-1300 "[PostItem] Solo los Guild Masters pueden usar este comando"
-1301 "[PostItem] Necesitas estar entre {} y {} Nivel."
-1302 "[PostItem] Solo se permite MasterLevel"
-1303 "[PostItem] Debe estar entre {} y {} MasterLevel"
-1304 "[PostItem] Debe estar entre {} y {} Restablecer"
-1305 "[PostItem] Debe estar entre {} y {} MasterReset"
-1306 "[PostItem] Has cancelado"
-1307 "[PostItem] Reservado 1307"
-1308 "[PostItem] Reservado 1308"
-1309 "[PostItem] Reservado 1309"
-1310 "[PostItem] Ha cancelado {} de Zen"
-1311 "[PostItem] Reservado 1311"
-1312 "[PostItem] Reservado 1312"
-1313 "[PostItem] Reservado 1313"
-1314 "[PostItem] Reservado 1314"
-1316 "[PostItem] Reservado 1315"
-1317 "[PostItem] Este elemento está permitido entre el nivel {} y {}"
-1318 "[PostItem] Este elemento solo está permitido con Habilidad"
-1319 "[PostItem] Este artículo solo está permitido con Suerte"
-1320 "[PostItem] Este artículo tiene Life Option fuera de rango"
-1321 "[PostItem] Este artículo tiene un recuento de opciones excelentes no permitido"
-1322 "[PostItem] Este elemento solo está permitido si es Antiguo"
-1323 "[PostItem] Este elemento está sobre las opciones de socket permitidas"
-1324 "[PostItem] Reservado 1324"
-1325 "[PostItem] Reservado 1325"
-1326 "[PostItem] Reservado 1326"
-1327 "[PostItem] Reservado 1327"
-1328 "[PostItem] Reservado 1328"
-1329 "[PostItem] Reservado 1329"
-1330 "[PostItem] Reservado 1330" 
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1300     "[PostItem] Solo los Guild Masters pueden usar este comando"
+    1301     "[PostItem] Necesitas estar entre {} y {} Nivel."
+    1302     "[PostItem] Solo se permite MasterLevel"
+    1303     "[PostItem] Debe estar entre {} y {} MasterLevel"
+    1304     "[PostItem] Debe estar entre {} y {} Restablecer"
+    1305     "[PostItem] Debe estar entre {} y {} MasterReset"
+    1306     "[PostItem] Has cancelado"
+    1307     "[PostItem] Reservado 1307"
+    1308     "[PostItem] Reservado 1308"
+    1309     "[PostItem] Reservado 1309"
+    1310     "[PostItem] Ha cancelado {} de Zen"
+    1311     "[PostItem] Reservado 1311"
+    1312     "[PostItem] Reservado 1312"
+    1313     "[PostItem] Reservado 1313"
+    1314     "[PostItem] Reservado 1314"
+    1316     "[PostItem] Reservado 1315"
+    1317     "[PostItem] Este elemento está permitido entre el nivel {} y {}"
+    1318     "[PostItem] Este elemento solo está permitido con Habilidad"
+    1319     "[PostItem] Este artículo solo está permitido con Suerte"
+    1320     "[PostItem] Este artículo tiene Life Option fuera de rango"
+    1321     "[PostItem] Este artículo tiene un recuento de opciones excelentes no permitido"
+    1322     "[PostItem] Este elemento solo está permitido si es Antiguo"
+    1323     "[PostItem] Este elemento está sobre las opciones de socket permitidas"
+    1324     "[PostItem] Reservado 1324"
+    1325     "[PostItem] Reservado 1325"
+    1326     "[PostItem] Reservado 1326"
+    1327     "[PostItem] Reservado 1327"
+    1328     "[PostItem] Reservado 1328"
+    1329     "[PostItem] Reservado 1329"
+    1330     "[PostItem] Reservado 1330"
 
-//--------------------
-// ConnectMember(V8)
-//--------------------
-1380 "¡Solo pueden ingresar cuentas permitidas!"
-1381 "¡Ha ingresado al servidor con todos los permisos!"
-1382 "¡Solo los GameMasters pueden ingresar a este servidor!"
-1383 "¡Solo ciertos personajes pueden ingresar a este servidor!"
-1384 "[ConectarMiembro] Reservado 1384"
-1385 "[ConectarMiembro] Reservado 1385"
-1386 "[ConectarMiembro] Reservado 1386"
-1387 "[ConectarMiembro] Reservado 1387"
-1388 "[ConectarMiembro] Reservado 1388"
-1389 "[ConectarMiembro] Reservado 1389"
-1390 "[ConectarMiembro] Reservado 1390"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1380     "¡Solo pueden ingresar cuentas permitidas!"
+    1381     "¡Ha ingresado al servidor con todos los permisos!"
+    1382     "¡Solo los GameMasters pueden ingresar a este servidor!"
+    1383     "¡Solo ciertos personajes pueden ingresar a este servidor!"
+    1384     "[ConectarMiembro] Reservado 1384"
+    1385     "[ConectarMiembro] Reservado 1385"
+    1386     "[ConectarMiembro] Reservado 1386"
+    1387     "[ConectarMiembro] Reservado 1387"
+    1388     "[ConectarMiembro] Reservado 1388"
+    1389     "[ConectarMiembro] Reservado 1389"
+    1390     "[ConectarMiembro] Reservado 1390"
 
-//--------------------
-// Events
-//--------------------
-1500 "[Happy Hour] Started"
-1501 "[Happy Hour] Ended"
-1502 "Lord Of Ferea Arrive!"
-1503 "Lord Of Ferea killed by {}"
-1504 "Ferea General killed by {}"
-1505 "Lord Of Ferea Protection Fall!"
-1506 "Ferea Army has come to reinforce the fortress!"
-1507 "Lord Of Ferea Retreated"
-1508 "Ferea Fortress has fallen!"
-1509 "Reserved 1509"
-1510 "Reserved 1510"
-1511 "Reserved 1511"
-1512 "Reserved 1512"
-1513 "Reserved 1512"
-1514 "Nixie Boss Arrive!"
-1515 "Nixie Boss Magic Down!"
-1516 "Nixie Boss killed by {}"
-1517 "Nixie Boss Protected & Army Arrive!!"
-1518 "Nixie Boss Army Arrive!"
-1519 "Nixie Boss Army are Back!"
-1520 "Event is currently inactive."
-1521 "Event has already started, come back later."
-1522 "El evento inicio, vuelve luego."
-1523 "Vuelve en {} Minutos"
-1524 "Necesitas {} para acceder."
-1525 "Has entrado al evento gracias a {}"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1500     "[Happy Hour] Started"
+    1501     "[Happy Hour] Ended"
+    1502     "Lord Of Ferea Arrive!"
+    1503     "Lord Of Ferea killed by {}"
+    1504     "Ferea General killed by {}"
+    1505     "Lord Of Ferea Protection Fall!"
+    1506     "Ferea Army has come to reinforce the fortress!"
+    1507     "Lord Of Ferea Retreated"
+    1508     "Ferea Fortress has fallen!"
+    1509     "Reserved 1509"
+    1510     "Reserved 1510"
+    1511     "Reserved 1511"
+    1512     "Reserved 1512"
+    1513     "Reserved 1512"
+    1514     "Nixie Boss Arrive!"
+    1515     "Nixie Boss Magic Down!"
+    1516     "Nixie Boss killed by {}"
+    1517     "Nixie Boss Protected & Army Arrive!!"
+    1518     "Nixie Boss Army Arrive!"
+    1519     "Nixie Boss Army are Back!"
+    1520     "Event is currently inactive."
+    1521     "Event has already started, come back later."
+    1522     "El evento inicio, vuelve luego."
+    1523     "Vuelve en {} Minutos"
+    1524     "Necesitas {} para acceder."
+    1525     "Has entrado al evento gracias a {}"
 
-//--------------------
-// Party Gap Messages
-//--------------------
-1800 "[Party GAP] Creacion fallida. Diferencia Maxima de {} levels."  
-1801 "[Party GAP] User Rechazado, ya que sobrepasa limite por {} levels."  
-1802 "[Party GAP] User Rechazado, necesita {} levels para entrar." 
-1803 "[Party GAP] User Rechazado, ya que sobrepasa limite por {} Reset."  
-1804 "[Party GAP] User Rechazado, necesita {} Reset para entrar." 
-1805 "[Party GAP] User Rechazado, ya que sobrepasa limite por {} MReset."  
-1806 "[Party GAP] User Rechazado, necesita {} MReset para entrar."
-1807 "[Party] No puedes incluir mas Dw!"
-1808 "[Party] No puedes incluir mas DK!"
-1809 "[Party] No puedes incluir mas Elfs!"
-1810 "[Party] No puedes incluir mas MG!"
-1811 "[Party] No puedes incluir mas DL!"
-1812 "[Party] No puedes incluir mas Summoners!"
-1813 "[Party] No puedes incluir mas RageFighters!"
-1814 "[Party] Ya tienes demasiados usuarios normales!"
-1815 "[Party] Ya tienes demasiados usuarios Vip 1!"
-1816 "[Party] Ya tienes demasiados usuarios Vip 2!"
-1817 "[Party] Ya tienes demasiados usuarios Vip 3!"
-1818 "[Party GAP] Creacion fallida. Diferencia Maxima de {} Reset."  
-1819 "[Party GAP] Creacion fallida. Diferencia Maxima de {} MReset."  
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1800     "[Party GAP] Creacion fallida. Diferencia Maxima de {} levels."
+    1801     "[Party GAP] User Rechazado, ya que sobrepasa limite por {} levels."
+    1802     "[Party GAP] User Rechazado, necesita {} levels para entrar."
+    1803     "[Party GAP] User Rechazado, ya que sobrepasa limite por {} Reset."
+    1804     "[Party GAP] User Rechazado, necesita {} Reset para entrar."
+    1805     "[Party GAP] User Rechazado, ya que sobrepasa limite por {} MReset."
+    1806     "[Party GAP] User Rechazado, necesita {} MReset para entrar."
+    1807     "[Party] No puedes incluir mas Dw!"
+    1808     "[Party] No puedes incluir mas DK!"
+    1809     "[Party] No puedes incluir mas Elfs!"
+    1810     "[Party] No puedes incluir mas MG!"
+    1811     "[Party] No puedes incluir mas DL!"
+    1812     "[Party] No puedes incluir mas Summoners!"
+    1813     "[Party] No puedes incluir mas RageFighters!"
+    1814     "[Party] Ya tienes demasiados usuarios normales!"
+    1815     "[Party] Ya tienes demasiados usuarios Vip 1!"
+    1816     "[Party] Ya tienes demasiados usuarios Vip 2!"
+    1817     "[Party] Ya tienes demasiados usuarios Vip 3!"
+    1818     "[Party GAP] Creacion fallida. Diferencia Maxima de {} Reset."
+    1819     "[Party GAP] Creacion fallida. Diferencia Maxima de {} MReset."
 
-//-------------------
-//Interface Manager
-//-------------------
-1850 "No tienes suficiente zen"
-1851 "No perteneces a ese guild"
-1852 "No cumples con la cantidad de items"
-1853 "[ANTI-HACK] Recv forbidden Info"
-1854 "Ha ocurrido un problema! ({})"
-1855 "Ha ocurrido un problema! (Z{}/{}/{})"
-1856 "No has cumplido los requisitos, vuelve luego"
-1857 "Bienvenido a Sky Event, cuidate!"
-1858 "[ERROR][Check Event ID {}]"
-1859 "No puedo atenderte en este momento"
-1860 "[{}] El nivel minimo para entrar es {}"
-1861 "[{}] El nivel maximo para entrar es {}"
-1862 "[{}] El Reset minimo para entrar es {}"
-1863 "[{}] El Reset maximo para entrar es {}"
-1864 "[{}] El MasterReset minimo para entrar es {}"
-1865 "[{}] El MasterReset maximo para entrar es {}"
-1866 "[{}] Los PK no estan permitidos alli"
-1867 "[{}] Rank User Equivocado."
-1868 "[{}] Solo Usuarios privilegiados pueden entrar"
-1869 "{} Resets gained"
-1870 "{} M.Resets gained"
-1871 "{} LevelUpPoints gained"
-1872 "{} Resets removed"
-1873 "{} M.Resets removed"
-1874 "{} LevelUpPoints removed"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1850     "No tienes suficiente zen"
+    1851     "No perteneces a ese guild"
+    1852     "No cumples con la cantidad de items"
+    1853     "[ANTI-HACK] Recv forbidden Info"
+    1854     "Ha ocurrido un problema! ({})"
+    1855     "Ha ocurrido un problema! (Z{}/{}/{})"
+    1856     "No has cumplido los requisitos, vuelve luego"
+    1857     "Bienvenido a Sky Event, cuidate!"
+    1858     "[ERROR][Check Event ID {}]"
+    1859     "No puedo atenderte en este momento"
+    1860     "[{}] El nivel minimo para entrar es {}"
+    1861     "[{}] El nivel maximo para entrar es {}"
+    1862     "[{}] El Reset minimo para entrar es {}"
+    1863     "[{}] El Reset maximo para entrar es {}"
+    1864     "[{}] El MasterReset minimo para entrar es {}"
+    1865     "[{}] El MasterReset maximo para entrar es {}"
+    1866     "[{}] Los PK no estan permitidos alli"
+    1867     "[{}] Rank User Equivocado."
+    1868     "[{}] Solo Usuarios privilegiados pueden entrar"
+    1869     "{} Resets gained"
+    1870     "{} M.Resets gained"
+    1871     "{} LevelUpPoints gained"
+    1872     "{} Resets removed"
+    1873     "{} M.Resets removed"
+    1874     "{} LevelUpPoints removed"
 
-//--------------------
-// Bet Duel & Messages
-//--------------------
-1900 "Espera..."
-1901 "Estás queriendo salir de duelo"
-1902 "Tienes ganas de duelo"
-1903 "¡¡{} está tratando de abandonar el duelo!!"
-1904 "[Error {}] No puede ejecutar Off Helper en este momento"
-1905 "Off Helper está inactivo. Vuelva a intentarlo más tarde"
-1906 "No puedes usar el asistente de apagado en este mapa"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1900     "Espera..."
+    1901     "Estás queriendo salir de duelo"
+    1902     "Tienes ganas de duelo"
+    1903     "¡¡{} está tratando de abandonar el duelo!!"
+    1904     "[Error {}] No puede ejecutar Off Helper en este momento"
+    1905     "Off Helper está inactivo. Vuelva a intentarlo más tarde"
+    1906     "No puedes usar el asistente de apagado en este mapa"
 
-//--------------------
-// Custom Monster Message(V7)
-//--------------------
-1980	"Has obtenido"
-1981	"WCCoins {}"
-1982	"WPCoins {}"
-1983	"Goblin Points {}"
-1984	"Felicitaciones! Vip Obtenido por {} dias"
-1985	"Felicitaciones! Acceso a Kalima {} te fue otorgado"
-1986	"Has sido llevado a este mapa por el {}"
-1987	"[Custom Monster] Reservado 1987"
-1988	"[Custom Monster] Reservado 1988"
-1989	"[Custom Monster] Reservado 1989"
-1990	"[Custom Monster] Reservado 1990"
-1991	"[Custom Monster] Reservado 1991"
-1992	"[Custom Monster] Reservado 1992"
-1993	"[Custom Monster] Reservado 1993"
-1994	"[Custom Monster] Reservado 1994"
-1995	"[Custom Monster] Reservado 1995"
-1996	"[Custom Monster] Reservado 1996"
-1997	"[Custom Monster] Reservado 1997"
-1998	"[Custom Monster] Reservado 1998"
-1999	"[Custom Monster] Reservado 1999"
-2000	"El Protector Del Blood Castle ha aparecido, ¡¡TEN CUIDADO!!"
-2001    "{} mato al Protector Del Blood Castle, Su Fuerza es Absoluta"
-2002	"El Protector Del Devil Square ha aparecido, ¡¡TEN CUIDADO!!"
-2003    "{} mato al Protector Del DevilSquare, Su Fuerza es Absoluta"
-2004	"El Protector Del Chaos Castle ha aparecido, ¡¡TEN CUIDADO!!"
-2005    "{} mato al Protector Del ChaosCastle, Su Fuerza es Absoluta"
-2006    "Medussa ha Invadido Lorencia!"
-2007    "{} mato para el video"
-2008	"Con esta mascota, no puedes ir a ese lugar"
-2009	"Con esta mascota, Maya te ha rechazado."
-2010	"Con esta mascota, el BloodCastle no es para ti."
-2011	"Con esta mascota, el ChaosCastle no es para ti."
-2012	"Esta mascota no puede repararse."
-2013	"No puedes reparar esta mascota, por este metodo!"
-2014	"[Bless]La mascota ha sido reparada."
-2015	"No puedes reparar esta mascota, por este metodo!"
-2016	"[Life]La mascota ha sido reparada."
-2017	"Para reparar items, debes cerrar las ventanas"
-2018	"El movimiento de estos items estan prohibidos[11]"
-2019	"El movimiento de estos items estan prohibidos[12]"
-2020	"El movimiento de estos items estan prohibidos[13/14]"
-2021	"El movimiento de estos items estan prohibidos[15]"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    1980     "Has obtenido"
+    1981     "WCCoins {}"
+    1982     "WPCoins {}"
+    1983     "Goblin Points {}"
+    1984     "Felicitaciones! Vip Obtenido por {} dias"
+    1985     "Felicitaciones! Acceso a Kalima {} te fue otorgado"
+    1986     "Has sido llevado a este mapa por el {}"
+    1987     "[Custom Monster] Reservado 1987"
+    1988     "[Custom Monster] Reservado 1988"
+    1989     "[Custom Monster] Reservado 1989"
+    1990     "[Custom Monster] Reservado 1990"
+    1991     "[Custom Monster] Reservado 1991"
+    1992     "[Custom Monster] Reservado 1992"
+    1993     "[Custom Monster] Reservado 1993"
+    1994     "[Custom Monster] Reservado 1994"
+    1995     "[Custom Monster] Reservado 1995"
+    1996     "[Custom Monster] Reservado 1996"
+    1997     "[Custom Monster] Reservado 1997"
+    1998     "[Custom Monster] Reservado 1998"
+    1999     "[Custom Monster] Reservado 1999"
+    2000     "El Protector Del Blood Castle ha aparecido, ¡¡TEN CUIDADO!!"
+    2001     "{} mato al Protector Del Blood Castle, Su Fuerza es Absoluta"
+    2002     "El Protector Del Devil Square ha aparecido, ¡¡TEN CUIDADO!!"
+    2003     "{} mato al Protector Del DevilSquare, Su Fuerza es Absoluta"
+    2004     "El Protector Del Chaos Castle ha aparecido, ¡¡TEN CUIDADO!!"
+    2005     "{} mato al Protector Del ChaosCastle, Su Fuerza es Absoluta"
+    2006     "Medussa ha Invadido Lorencia!"
+    2007     "{} mato para el video"
+    2008     "Con esta mascota, no puedes ir a ese lugar"
+    2009     "Con esta mascota, Maya te ha rechazado."
+    2010     "Con esta mascota, el BloodCastle no es para ti."
+    2011     "Con esta mascota, el ChaosCastle no es para ti."
+    2012     "Esta mascota no puede repararse."
+    2013     "No puedes reparar esta mascota, por este metodo!"
+    2014     "[Bless]La mascota ha sido reparada."
+    2015     "No puedes reparar esta mascota, por este metodo!"
+    2016     "[Life]La mascota ha sido reparada."
+    2017     "Para reparar items, debes cerrar las ventanas"
+    2018     "El movimiento de estos items estan prohibidos[11]"
+    2019     "El movimiento de estos items estan prohibidos[12]"
+    2020     "El movimiento de estos items estan prohibidos[13/14]"
+    2021     "El movimiento de estos items estan prohibidos[15]"
 
-//--------------------
-// Lock Manager V10
-//--------------------
-2100 "[LockManager] No puedes mover items"
-2101 "[LockManager] No puedes usar la Tienda personal"
-2102 "[LockManager] No puedes comprar artículos"
-2103 "[LockManager] No puedes vender artículos"
-2104 "[LockManager] No puedes usar el Banco de Joyas"
-2105 "[LockManager] No puedes cambiar las estadísticas"
-2106 "[LockManager] No puedes usar Comandos"
-2107 "[LockManager] No puedes abandonar/disolver el guild"
-2108 "[LockManager] No puedes eliminar personajes"
-2109 "[LockManager] ¡El inventario de mascotas está protegido!"
-2110 "[LockManager] Cuenta protegida"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2100     "[LockManager] No puedes mover items"
+    2101     "[LockManager] No puedes usar la Tienda personal"
+    2102     "[LockManager] No puedes comprar artículos"
+    2103     "[LockManager] No puedes vender artículos"
+    2104     "[LockManager] No puedes usar el Banco de Joyas"
+    2105     "[LockManager] No puedes cambiar las estadísticas"
+    2106     "[LockManager] No puedes usar Comandos"
+    2107     "[LockManager] No puedes abandonar/disolver el guild"
+    2108     "[LockManager] No puedes eliminar personajes"
+    2109     "[LockManager] ¡El inventario de mascotas está protegido!"
+    2110     "[LockManager] Cuenta protegida"
 
-2150 "[JewelBank] No tienes espacio suficiente"
-2151 "[JewelBank] No se pueden guardar mas de {} de {}"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2150     "[JewelBank] No tienes espacio suficiente"
+    2151     "[JewelBank] No se pueden guardar mas de {} de {}"
 
-//--------------------
-// Account Limit Access(V9)
-//--------------------
-2200 "Tu personaje {} ha sido desconectado (HardwareID-Limit)"
-2201 "Tu personaje {} ha sido desconectado (límite de IP)"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2200     "Tu personaje {} ha sido desconectado (HardwareID-Limit)"
+    2201     "Tu personaje {} ha sido desconectado (límite de IP)"
 
-//--------------------
-// Custom Arena (V10)
-//--------------------
-2202 "[{}] cerrará en {} minuto(s)"
-2203 "[{}] cerrado"
-2204 "[{}] comenzará en {} minuto(s)"
-2205 "[{}] comenzó"
-2206 "[{}] terminado"
-2207 "[{}] {} es el ganador"
-2208 "[{}] Llegaste a la posición {} con {} puntos"
-2209 "No puedes entrar a la arena"
-2210 "Esta arena no está abierta actualmente"
-2211 "Número máximo de jugadores excedido"
-2212 "Debe tener al menos el nivel {}"
-2213 "Debe tener como máximo Nivel {}"
-2214 "Debe tener al menos el nivel maestro {}"
-2215 "Debe tener como máximo el nivel maestro {}"
-2216 "Debe tener al menos {} reinicios"
-2217 "Necesita tener un máximo de {} reinicios"
-2218 "Debe tener al menos {} reinicios maestros"
-2219 "Necesita tener un máximo de {} reinicios maestros"
-2220 "Su clase no está permitida en la arena"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2202     "[{}] cerrará en {} minuto(s)"
+    2203     "[{}] cerrado"
+    2204     "[{}] comenzará en {} minuto(s)"
+    2205     "[{}] comenzó"
+    2206     "[{}] terminado"
+    2207     "[{}] {} es el ganador"
+    2208     "[{}] Llegaste a la posición {} con {} puntos"
+    2209     "No puedes entrar a la arena"
+    2210     "Esta arena no está abierta actualmente"
+    2211     "Número máximo de jugadores excedido"
+    2212     "Debe tener al menos el nivel {}"
+    2213     "Debe tener como máximo Nivel {}"
+    2214     "Debe tener al menos el nivel maestro {}"
+    2215     "Debe tener como máximo el nivel maestro {}"
+    2216     "Debe tener al menos {} reinicios"
+    2217     "Necesita tener un máximo de {} reinicios"
+    2218     "Debe tener al menos {} reinicios maestros"
+    2219     "Necesita tener un máximo de {} reinicios maestros"
+    2220     "Su clase no está permitida en la arena"
 
-//--------------------
-// Custom EventDrop (V10)
-//--------------------
-2221	"[{}] will start in {} minute(s)"
-2222	"[{}] started"
-2223	"[{}] finished"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2221     "[{}] will start in {} minute(s)"
+    2222     "[{}] started"
+    2223     "[{}] finished"
 
-//--------------------
-// Online Lottery (V10)
-//--------------------"
-2224	"{} en {} minuto(s)"
-2225	"{} fue el ganador del sorteo. Bien Ahi!!"
-2226	"{} no tuvo ganador."
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2224     "{} en {} minuto(s)"
+    2225     "{} fue el ganador del sorteo. Bien Ahi!!"
+    2226     "{} no tuvo ganador."
 
-//--------------------
-// Chaos Mix Announce (V10)
-//--------------------
-2227	"{} put the item {} +15"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2227     "{} put the item {} +15"
 
-//--------------------
-// KeepMU
-//--------------------
-2500	"[KeepMU] Speed Attack Detected!"
-2501	"[KeepMU] Speed Walk Detected!"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2500     "[KeepMU] Speed Attack Detected!"
+    2501     "[KeepMU] Speed Walk Detected!"
 
-//--------------------
-// SkyEvent V2
-//--------------------
-2700	"[SkyEvent] {} Puntos Agregados!"
-2701	"[SkyEvent] {} Pago su Pase de ingreso!"
-2702	"[SkyEvent] Stage Pvp Ah Comenzado!!!"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2700     "[SkyEvent] {} Puntos Agregados!"
+    2701     "[SkyEvent] {} Pago su Pase de ingreso!"
+    2702     "[SkyEvent] Stage Pvp Ah Comenzado!!!"
 
-//--------------------
-// Gremory Case
-//--------------------
-2850	"[Gremory] ¡Item agregado al personaje Gremory!"
-2851	"[Gremory] ¡Item agregado a la cuenta Gremory!"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2850     "[Gremory] ¡Item agregado al personaje Gremory!"
+    2851     "[Gremory] ¡Item agregado a la cuenta Gremory!"
 
-//--------------------
-// Party Manager
-//--------------------
-2900    "[Party] Debe esperar {} segundos antes de que la Solicitud ingrese a otra Party"
-2901    "[Party] Party no válida"
-2902    "[Party] Inválido, Party Completa"
-2903    "[Party] La contraseña ingresada es incorrecta"
-2904    "[Party] Error de nivel mínimo requerido"
-2905    "[Party] Error de nivel máximo requerido"
-2906    "[Party] Error de Resets mínimo requerido"
-2907    "[Party] Error de Resets máximo requerido"
-2908    "[Party] Error de Master Resets mínimo requerido"
-2909    "[Party] Error de Master Resets máximo requerido"
-2910    "[Party] El líder del grupo no puede verificar su solicitud en este momento"
-2911    "[Party] Solicitud enviada al líder de la Party"
-2912    "- ¡Por favor, espera la aprobacion para ingresar!"
-2913    "[Party] Tiene una solicitud de Party de {}"
-2914    "La solicitud de [Party] ha caducado"
-2915    "El líder [del grupo] ah rechazado su solicitud para ingresar"
-2916    "[Party] Ajustes guardados"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2900     "[Party] Debe esperar {} segundos antes de que la Solicitud ingrese a otra Party"
+    2901     "[Party] Party no válida"
+    2902     "[Party] Inválido, Party Completa"
+    2903     "[Party] La contraseña ingresada es incorrecta"
+    2904     "[Party] Error de nivel mínimo requerido"
+    2905     "[Party] Error de nivel máximo requerido"
+    2906     "[Party] Error de Resets mínimo requerido"
+    2907     "[Party] Error de Resets máximo requerido"
+    2908     "[Party] Error de Master Resets mínimo requerido"
+    2909     "[Party] Error de Master Resets máximo requerido"
+    2910     "[Party] El líder del grupo no puede verificar su solicitud en este momento"
+    2911     "[Party] Solicitud enviada al líder de la Party"
+    2912     "- ¡Por favor, espera la aprobacion para ingresar!"
+    2913     "[Party] Tiene una solicitud de Party de {}"
+    2914     "La solicitud de [Party] ha caducado"
+    2915     "El líder [del grupo] ah rechazado su solicitud para ingresar"
+    2916     "[Party] Ajustes guardados"
 
-//--------------------
-// Boss Penalty
-//--------------------
-2950	"[BossPenalty] "
-2951	"{} Levels"
-2952	"{} Resets"
-2953	"{} M.Resets"
-2954	"{} Zen"
-2955	"{} WP"
-2956	"{} WC"
-2957	"{} GP"
-2958	"{} Ruud"
-2959	" reduced"
-2960	"[BossPenalty] An item was cursed and disappeared from your inventory!"
-2961	"[BossPenalty] An item was cursed and some options where downgraded!"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    2950     "[BossPenalty] "
+    2951     "{} Levels"
+    2952     "{} Resets"
+    2953     "{} M.Resets"
+    2954     "{} Zen"
+    2955     "{} WP"
+    2956     "{} WC"
+    2957     "{} GP"
+    2958     "{} Ruud"
+    2959     " reduced"
+    2960     "[BossPenalty] An item was cursed and disappeared from your inventory!"
+    2961     "[BossPenalty] An item was cursed and some options where downgraded!"
 
-//--------------------
-// MSJ Kill Boss/Monster
-//--------------------
-3000	"{} killed the boss, congrulations!!"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    3000     "{} killed the boss, congrulations!!"
 
 
-//------------------------------------------
-// Guild Warehouse - V17
-//------------------------------------------
-3310	"You don't have permission to manage warehouse settings"
-3311	"You cannot modify your own permissions"
-3312	"You cannot modify permissions of a higher or equal rank member"
-// Auctions: global publication notice
-3400 "[Subastas] {} puso {} en subasta. Abre Subastas para ofertar."
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    3310     "You don't have permission to manage warehouse settings"
+    3311     "You cannot modify your own permissions"
+    3312     "You cannot modify permissions of a higher or equal rank member"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    3400     "[Subastas] {} puso {} en subasta. Abre Subastas para ofertar."
 
-// V17.2 Item Market Search / Achievements localization
-3502 "Cazador"
-3503 "Jefes"
-3504 "Eventos"
-3505 "Progresión"
-3506 "Artesano"
-3507 "PvP"
-3508 "Aventura"
-3509 "Gremio"
-3510 "Escuadrón"
-3511 "Cartógrafo"
-3512 "Desafíos"
-3513 "Exterminador"
-3514 "Mata monstruos"
-3515 "Cazador veterano"
-3516 "Mata monstruos de nivel 80 o más"
-3517 "Terror de Devias"
-3518 "Mata monstruos en Devias"
-3519 "Caída de Kundun"
-3520 "Derrota a Kundun"
-3521 "Señor de Raklion"
-3522 "Derrota a Selupan"
-3523 "Leyenda de Crywolf"
-3524 "Derrota a Balgass"
-3525 "Matajefes"
-3526 "Derrota jefes"
-3527 "Castillo de Sangre"
-3528 "Gana Blood Castle"
-3529 "Plaza del Diablo"
-3530 "Gana Devil Square"
-3531 "Castillo del Caos"
-3532 "Gana Chaos Castle"
-3533 "Todoterreno"
-3534 "Gana cualquier evento"
-3535 "Ascenso"
-3536 "Sube niveles"
-3537 "Renacido"
-3538 "Haz resets"
-3539 "Camino del maestro"
-3540 "Sube niveles master"
-3541 "Gran maestro"
-3542 "Haz master resets"
-3543 "Alquimista"
-3544 "Mezclas exitosas en la Chaos Machine"
-3545 "Mala racha"
-3546 "Mezclas fallidas"
-3547 "Bendecido"
-3548 "Mejora items con Jewel of Bless"
-3549 "Alma fuerte"
-3550 "Mejoras exitosas con Jewel of Soul"
-3551 "+9 o más"
-3552 "Lleva un item a +9 o más con Soul"
-3553 "Duelista"
-3554 "Gana duelos"
-3555 "Asesino"
-3556 "Mata jugadores de nivel 150 o más"
-3557 "Veterano"
-3558 "Minutos jugados"
-3559 "Misionero"
-3560 "Completa quests"
-3561 "Coleccionista"
-3562 "Recoge Jewels of Bless"
-3563 "Cazador de elite"
-3564 "Mata monstruos de nivel 120 o mas"
-3565 "Sombra de Atlans"
-3566 "Mata monstruos en Atlans"
-3567 "Aniquilador"
-3568 "Mata 100.000 monstruos"
-3569 "Pesadilla"
-3570 "Derrota a Nightmare"
-3571 "Mirada de Medusa"
-3572 "Derrota a Medusa"
-3573 "Cazarrecompensas"
-3574 "Derrota jefes de cualquier mapa"
-3575 "Templo de la Ilusion"
-3576 "Gana Illusion Temple"
-3577 "Doble o nada"
-3578 "Gana Doppelganger"
-3579 "Guardia imperial"
-3580 "Gana Imperial Fortress"
-3581 "Leyenda viviente"
-3582 "Sube 50.000 niveles en total"
-3583 "Maratonista"
-3584 "Haz 250 resets"
-3585 "Maestro joyero"
-3586 "1.000 mezclas exitosas"
-3587 "Vida eterna"
-3588 "Mejoras exitosas con Jewel of Life"
-3589 "Gladiador"
-3590 "Gana 500 duelos"
-3591 "Terror del servidor"
-3592 "Mata jugadores"
-3593 "Charlatan"
-3594 "Habla con NPCs"
-3595 "Buscador de joyas"
-3596 "Recoge Jewels of Soul"
-3597 "Trotamundos"
-3598 "50.000 minutos jugados"
-3599 "Guardian de Crywolf"
-3600 "Gana el evento Crywolf"
-3601 "Relicario de Kanturu"
-3602 "Gana el evento Kanturu"
-3603 "Toma del castillo"
-3604 "Gana el Castle Siege con tu gremio"
-3605 "Colores del gremio"
-3606 "Mata jugadores estando en un gremio"
-3607 "Cacería de hermandad"
-3608 "Derrota jefes estando en un gremio"
-3609 "Mejor acompañado"
-3610 "Mata monstruos estando en grupo"
-3611 "Cacería coordinada"
-3612 "Derrota jefes estando en grupo"
-3613 "Compañeros de evento"
-3614 "Gana eventos estando en grupo"
-3615 "Guardaespaldas"
-3616 "Mata jugadores estando en grupo"
-3617 "Tierras de inicio"
-3618 "Mata monstruos en Lorencia, Dungeon, Devias, Noria y Elbeland"
-3619 "Torre y desierto"
-3620 "Mata monstruos en Lost Tower, Atlans y Tarkan"
-3621 "Cielo y ruinas"
-3622 "Mata monstruos en Icarus y Aida"
-3623 "Los siete Kalima"
-3624 "Mata monstruos en Kalima"
-3625 "Relicario de Kanturu"
-3626 "Mata monstruos en Kanturu"
-3627 "Crywolf y el pantano"
-3628 "Mata monstruos en Crywolf y Swamp of Calmness"
-3629 "Nido de Raklion"
-3630 "Mata monstruos en Raklion"
-3631 "Karutan y Vulcanus"
-3632 "Mata monstruos en Karutan y Vulcanus"
-3633 "Los confines"
-3634 "Mata monstruos en Silent, Barracks, Refuge, Ferea y Archeron"
-3635 "Cartógrafo maestro"
-3636 "Recorre el mundo entero y sigue cazando"
-3637 "Fiebre del oro"
-3638 "Derrota monstruos dorados"
-3639 "Señor de la Torre"
-3640 "Derrota a Balrog y Death Gorgon en Lost Tower"
-3641 "Hidra de Atlans"
-3642 "Derrota Hydras y Lizard Kings"
-3643 "Filo de Tarkan"
-3644 "Derrota Death Beam Knights y Zaikan"
-3645 "Alas de Icarus"
-3646 "Derrota Phoenix of Darkness y Great Drakan"
-3647 "Sangre de Aida"
-3648 "Derrota Bloody Golems, Soram y Balram"
-3649 "Guerreros de Kanturu"
-3650 "Derrota Genocider y Gigantis Warriors"
-3651 "Amos del pantano"
-3652 "Derrota Shadow Masters, Ice Napins y los gigantes de Raklion"
-3653 "Fuego y arena"
-3654 "Derrota Crypos, Crypta y los gigantes de lava"
-3655 "Azote de reinos"
-3656 "Sigue cazando jefes despues de dominar cada region"
-3657 "Rompehuesos"
-3658 "Rompe items intentando mejorarlos"
-3659 "Al limite"
-3660 "Lleva un item a +13 o mas"
-3661 "Verdugo"
-3662 "Mata monstruos de nivel 100 o mas"
-3663 "Cazatitanes"
-3664 "Mata monstruos de nivel 130 o mas"
-3665 "Sin piedad"
-3666 "Mata monstruos de nivel 30 o menos"
-3667 "Sin rival"
-3668 "Domina los tres desafios y segui cazando"
-3500 "[Logro] %s (%d/%d)"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    3502     "Cazador"
+    3503     "Jefes"
+    3504     "Eventos"
+    3505     "Progresión"
+    3506     "Artesano"
+    3507     "PvP"
+    3508     "Aventura"
+    3509     "Gremio"
+    3510     "Escuadrón"
+    3511     "Cartógrafo"
+    3512     "Desafíos"
+    3513     "Exterminador"
+    3514     "Mata monstruos"
+    3515     "Cazador veterano"
+    3516     "Mata monstruos de nivel 80 o más"
+    3517     "Terror de Devias"
+    3518     "Mata monstruos en Devias"
+    3519     "Caída de Kundun"
+    3520     "Derrota a Kundun"
+    3521     "Señor de Raklion"
+    3522     "Derrota a Selupan"
+    3523     "Leyenda de Crywolf"
+    3524     "Derrota a Balgass"
+    3525     "Matajefes"
+    3526     "Derrota jefes"
+    3527     "Castillo de Sangre"
+    3528     "Gana Blood Castle"
+    3529     "Plaza del Diablo"
+    3530     "Gana Devil Square"
+    3531     "Castillo del Caos"
+    3532     "Gana Chaos Castle"
+    3533     "Todoterreno"
+    3534     "Gana cualquier evento"
+    3535     "Ascenso"
+    3536     "Sube niveles"
+    3537     "Renacido"
+    3538     "Haz resets"
+    3539     "Camino del maestro"
+    3540     "Sube niveles master"
+    3541     "Gran maestro"
+    3542     "Haz master resets"
+    3543     "Alquimista"
+    3544     "Mezclas exitosas en la Chaos Machine"
+    3545     "Mala racha"
+    3546     "Mezclas fallidas"
+    3547     "Bendecido"
+    3548     "Mejora items con Jewel of Bless"
+    3549     "Alma fuerte"
+    3550     "Mejoras exitosas con Jewel of Soul"
+    3551     "+9 o más"
+    3552     "Lleva un item a +9 o más con Soul"
+    3553     "Duelista"
+    3554     "Gana duelos"
+    3555     "Asesino"
+    3556     "Mata jugadores de nivel 150 o más"
+    3557     "Veterano"
+    3558     "Minutos jugados"
+    3559     "Misionero"
+    3560     "Completa quests"
+    3561     "Coleccionista"
+    3562     "Recoge Jewels of Bless"
+    3563     "Cazador de elite"
+    3564     "Mata monstruos de nivel 120 o mas"
+    3565     "Sombra de Atlans"
+    3566     "Mata monstruos en Atlans"
+    3567     "Aniquilador"
+    3568     "Mata 100.000 monstruos"
+    3569     "Pesadilla"
+    3570     "Derrota a Nightmare"
+    3571     "Mirada de Medusa"
+    3572     "Derrota a Medusa"
+    3573     "Cazarrecompensas"
+    3574     "Derrota jefes de cualquier mapa"
+    3575     "Templo de la Ilusion"
+    3576     "Gana Illusion Temple"
+    3577     "Doble o nada"
+    3578     "Gana Doppelganger"
+    3579     "Guardia imperial"
+    3580     "Gana Imperial Fortress"
+    3581     "Leyenda viviente"
+    3582     "Sube 50.000 niveles en total"
+    3583     "Maratonista"
+    3584     "Haz 250 resets"
+    3585     "Maestro joyero"
+    3586     "1.000 mezclas exitosas"
+    3587     "Vida eterna"
+    3588     "Mejoras exitosas con Jewel of Life"
+    3589     "Gladiador"
+    3590     "Gana 500 duelos"
+    3591     "Terror del servidor"
+    3592     "Mata jugadores"
+    3593     "Charlatan"
+    3594     "Habla con NPCs"
+    3595     "Buscador de joyas"
+    3596     "Recoge Jewels of Soul"
+    3597     "Trotamundos"
+    3598     "50.000 minutos jugados"
+    3599     "Guardian de Crywolf"
+    3600     "Gana el evento Crywolf"
+    3601     "Relicario de Kanturu"
+    3602     "Gana el evento Kanturu"
+    3603     "Toma del castillo"
+    3604     "Gana el Castle Siege con tu gremio"
+    3605     "Colores del gremio"
+    3606     "Mata jugadores estando en un gremio"
+    3607     "Cacería de hermandad"
+    3608     "Derrota jefes estando en un gremio"
+    3609     "Mejor acompañado"
+    3610     "Mata monstruos estando en grupo"
+    3611     "Cacería coordinada"
+    3612     "Derrota jefes estando en grupo"
+    3613     "Compañeros de evento"
+    3614     "Gana eventos estando en grupo"
+    3615     "Guardaespaldas"
+    3616     "Mata jugadores estando en grupo"
+    3617     "Tierras de inicio"
+    3618     "Mata monstruos en Lorencia, Dungeon, Devias, Noria y Elbeland"
+    3619     "Torre y desierto"
+    3620     "Mata monstruos en Lost Tower, Atlans y Tarkan"
+    3621     "Cielo y ruinas"
+    3622     "Mata monstruos en Icarus y Aida"
+    3623     "Los siete Kalima"
+    3624     "Mata monstruos en Kalima"
+    3625     "Relicario de Kanturu"
+    3626     "Mata monstruos en Kanturu"
+    3627     "Crywolf y el pantano"
+    3628     "Mata monstruos en Crywolf y Swamp of Calmness"
+    3629     "Nido de Raklion"
+    3630     "Mata monstruos en Raklion"
+    3631     "Karutan y Vulcanus"
+    3632     "Mata monstruos en Karutan y Vulcanus"
+    3633     "Los confines"
+    3634     "Mata monstruos en Silent, Barracks, Refuge, Ferea y Archeron"
+    3635     "Cartógrafo maestro"
+    3636     "Recorre el mundo entero y sigue cazando"
+    3637     "Fiebre del oro"
+    3638     "Derrota monstruos dorados"
+    3639     "Señor de la Torre"
+    3640     "Derrota a Balrog y Death Gorgon en Lost Tower"
+    3641     "Hidra de Atlans"
+    3642     "Derrota Hydras y Lizard Kings"
+    3643     "Filo de Tarkan"
+    3644     "Derrota Death Beam Knights y Zaikan"
+    3645     "Alas de Icarus"
+    3646     "Derrota Phoenix of Darkness y Great Drakan"
+    3647     "Sangre de Aida"
+    3648     "Derrota Bloody Golems, Soram y Balram"
+    3649     "Guerreros de Kanturu"
+    3650     "Derrota Genocider y Gigantis Warriors"
+    3651     "Amos del pantano"
+    3652     "Derrota Shadow Masters, Ice Napins y los gigantes de Raklion"
+    3653     "Fuego y arena"
+    3654     "Derrota Crypos, Crypta y los gigantes de lava"
+    3655     "Azote de reinos"
+    3656     "Sigue cazando jefes despues de dominar cada region"
+    3657     "Rompehuesos"
+    3658     "Rompe items intentando mejorarlos"
+    3659     "Al limite"
+    3660     "Lleva un item a +13 o mas"
+    3661     "Verdugo"
+    3662     "Mata monstruos de nivel 100 o mas"
+    3663     "Cazatitanes"
+    3664     "Mata monstruos de nivel 130 o mas"
+    3665     "Sin piedad"
+    3666     "Mata monstruos de nivel 30 o menos"
+    3667     "Sin rival"
+    3668     "Domina los tres desafios y segui cazando"
+    3500     "[Logro] %s (%d/%d)"
 
-3670 "¡No puedes vender este item!"
-3671 "¡No tienes espacio suficiente para recibir este item!"
+//----------------------------------------------------------
+// Messages
+// In-game system text by ID, per language · Message_SPN.txt
+//----------------------------------------------------------
+//  Blood    Castle
+//----------------------------------------------------------
+    3670     "¡No puedes vender este item!"
+    3671     "¡No tienes espacio suficiente para recibir este item!"
 end

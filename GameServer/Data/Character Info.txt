@@ -1,817 +1,818 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-=================================================
-Character Damage Rate Settings
-=================================================
-
-DuelDamageRate -> Percentage of total damage that will be caused in duel.
-GensDamageRate -> Percentage of total damage that will be caused in PvP Gens.
-ChaosCastleDamageRate -> Percentage of total damage that will be caused in PvP Chaos Castle.
-IllusionTempleDamageRate -> Percentage of total damage that will be caused in PvP Illusion Temple.
-CastleSiegeDamageRate1 -> Damage Percentage applied to the Castle Siege between different guilds players.
-CastleSiegeDamageRate2 -> Damage Percentage applied to the Castle Siege between players from the same guild.
-CastleSiegeDamageRate3 -> Damage Percentage applied to the Castle Siege doors and statues.
-CastleSiegeDamageRate4 -> Damage Percentage applied to non CS user X CS User.
-CastleSiegeDamageRate5 -> Damage Percentage applied to CS User to non CS User.
-CastleSiegeDamageRate6 -> Damage Percentage applied to non CS user X non CS User.
-CastleSiegeDamageRate7 -> Damage Percentage applied to non CS user X doors and statues.
-CastleSiegeDamageRateUserCrown -> Damage Percentage applied to user holding the crown switch
-GeneralDamageRatePvP -> Percentage of total damage that will be caused in PvP.
-GeneralDamageRatePvM -> Percentage of total damage that will be caused in PvE.
-ReflectDamageRatePvP -> Percentage reflected damage that will be caused in PvP.
-ReflectDamageRatePvM -> Percentage reflected damage that will be caused in PvE.
-GeneralDarkSpiritDamageRatePvP -> Dark Spirit damage rate PvP.
-GeneralDarkSpiritDamageRatePvM -> Dark Spirit damage rate PvM.
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
 
 =================================================
-Character Class Damage Rate Settings
+Character                                            Damage    Rate    Settings
 =================================================
 
-DWDamageRatePvP -> Percentage of damage caused by the Dark Wizard in PvP.
-DKDamageRatePvP -> Percentage of damage caused by the Dark Knight in PvP.
-FEDamageRatePvP -> Percentage of damage caused by Fairy Elf in PvP.
-MGDamageRatePvP -> Percentage of damage caused by the Magic Gladiator PvP.
-DLDamageRatePvP -> Percentage of damage caused by the Dark Lord in PvP.
-SUDamageRatePvP -> Percentage of damage caused by the Summoner in PvP.
-RFDamageRatePvP -> Percentage of damage caused by Rage Fighter in PvP.
-DWDamageRatePvM -> Percentage of damage caused by the Dark Wizard in PvE.
-DKDamageRatePvM -> Percentage of damage caused by the Dark Knight in PvE.
-FEDamageRatePvM -> Percentage of damage caused by Fairy Elf in PvE.
-MGDamageRatePvM -> Percentage of damage caused by the Magic Gladiator in PvE.
-DLDamageRatePvM -> Percentage of damage caused by the Dark Lord in PvE.
-SUDamageRatePvM -> Percentage of damage caused by the Summoner in PvE.
-RFDamageRatePvM -> Percentage of damage caused by Rage Fighter in PvE.
+DuelDamageRate                    ->    Percentage    of            total      damage    that    will       be        caused     in           duel.
+GensDamageRate                    ->    Percentage    of            total      damage    that    will       be        caused     in           PvP         Gens.
+ChaosCastleDamageRate             ->    Percentage    of            total      damage    that    will       be        caused     in           PvP         Chaos       Castle.
+IllusionTempleDamageRate          ->    Percentage    of            total      damage    that    will       be        caused     in           PvP         Illusion    Temple.
+CastleSiegeDamageRate1            ->    Damage        Percentage    applied    to        the     Castle     Siege     between    different    guilds      players.
+CastleSiegeDamageRate2            ->    Damage        Percentage    applied    to        the     Castle     Siege     between    players      from        the         same       guild.
+CastleSiegeDamageRate3            ->    Damage        Percentage    applied    to        the     Castle     Siege     doors      and          statues.
+CastleSiegeDamageRate4            ->    Damage        Percentage    applied    to        non     CS         user      X          CS           User.
+CastleSiegeDamageRate5            ->    Damage        Percentage    applied    to        CS      User       to        non        CS           User.
+CastleSiegeDamageRate6            ->    Damage        Percentage    applied    to        non     CS         user      X          non          CS          User.
+CastleSiegeDamageRate7            ->    Damage        Percentage    applied    to        non     CS         user      X          doors        and         statues.
+CastleSiegeDamageRateUserCrown    ->    Damage        Percentage    applied    to        user    holding    the       crown      switch
+GeneralDamageRatePvP              ->    Percentage    of            total      damage    that    will       be        caused     in           PvP.
+GeneralDamageRatePvM              ->    Percentage    of            total      damage    that    will       be        caused     in           PvE.
+ReflectDamageRatePvP              ->    Percentage    reflected     damage     that      will    be         caused    in         PvP.
+ReflectDamageRatePvM              ->    Percentage    reflected     damage     that      will    be         caused    in         PvE.
+GeneralDarkSpiritDamageRatePvP    ->    Dark          Spirit        damage     rate      PvP.
+GeneralDarkSpiritDamageRatePvM    ->    Dark          Spirit        damage     rate      PvM.
 
 =================================================
-Character Class X Class Damage Rate Settings
+Character                                            Class    Damage    Rate    Settings
 =================================================
 
-DWDamageRateToDW -> Percentage of damage caused by the Dark Wizard against DWs.
-DWDamageRateToDK -> Percentage of damage caused by the Dark Wizard against DKs.
-DWDamageRateToFE -> Percentage of damage caused by the Dark Wizard against AGs.
-DWDamageRateToMG -> Percentage of damage caused by the Dark Wizard against MGs.
-DWDamageRateToDL -> Percentage of damage caused by the Dark Wizard against DLs.
-DWDamageRateToSU -> Percentage of damage caused by the Dark Wizard against SUs.
-DWDamageRateToRF -> Percentage of damage caused by the Dark Wizard against RFs.
-DKDamageRateToDW -> Percentage of damage caused by the Dark Knight against DWs.
-DKDamageRateToDK -> Percentage of damage caused by the Dark Knight against DKs.
-DKDamageRateToFE -> Percentage of damage caused by the Dark Knight against AGs.
-DKDamageRateToMG -> Percentage of damage caused by the Dark Knight against MGs.
-DKDamageRateToDL -> Percentage of damage caused by the Dark Knight against DLs.
-DKDamageRateToSU -> Percentage of damage caused by the Dark Knight against SUs.
-DKDamageRateToRF -> Percentage of damage caused by the Dark Knight against RFs.
-FEDamageRateToDW -> Percentage of damage caused by Fairy Elf against DWs.
-FEDamageRateToDK -> Percentage of damage caused by Fairy Elf against DKs.
-FEDamageRateToFE -> Percentage of damage caused by Fairy Elf against AGs.
-FEDamageRateToMG -> Percentage of damage caused by Fairy Elf against MGs.
-FEDamageRateToDL -> Percentage of damage caused by Fairy Elf against DLs.
-FEDamageRateToSU -> Percentage of damage caused by Fairy Elf against SUs.
-FEDamageRateToRF -> Percentage of damage caused by Fairy Elf against RFs.
-MGDamageRateToDW -> Percentage of damage caused by the Magic Gladiator against DWs.
-MGDamageRateToDK -> Percentage of damage caused by the Magic Gladiator against DKs.
-MGDamageRateToFE -> Percentage of damage caused by the Magic Gladiator against AGs.
-MGDamageRateToMG -> Percentage of damage caused by the Magic Gladiator against MGs.
-MGDamageRateToDL -> Percentage of damage caused by the Magic Gladiator against DLs.
-MGDamageRateToSU -> Percentage of damage caused by the Magic Gladiator against SUs.
-MGDamageRateToRF -> Percentage of damage caused by the Magic Gladiator against RFs.
-DLDamageRateToDW -> Percentage of damage caused by the Dark Lord against DWs.
-DLDamageRateToDK -> Percentage of damage caused by the Dark Lord against DKs.
-DLDamageRateToFE -> Percentage of damage caused by the Dark Lord against AGs.
-DLDamageRateToMG -> Percentage of damage caused by the Dark Lord against MGs.
-DLDamageRateToDL -> Percentage of damage caused by the Dark Lord against DLs.
-DLDamageRateToSU -> Percentage of damage caused by the Dark Lord against SUs.
-DLDamageRateToRF -> Percentage of damage caused by the Dark Lord against RFs.
-SUDamageRateToDW -> Percentage of damage caused by Summoner against DWs.
-SUDamageRateToDK -> Percentage of damage caused by Summoner against DKs.
-SUDamageRateToFE -> Percentage of damage caused by Summoner against AGs.
-SUDamageRateToMG -> Percentage of damage caused by Summoner against MGs.
-SUDamageRateToDL -> Percentage of damage caused by Summoner against DLs.
-SUDamageRateToSU -> Percentage of damage caused by Summoner against SUs.
-SUDamageRateToRF -> Percentage of damage caused by Summoner against RFs.
-RFDamageRateToDW -> Percentage of damage caused by Rage Fighter against DWs.
-RFDamageRateToDK -> Percentage of damage caused by Rage Fighter against DKs.
-RFDamageRateToFE -> Percentage of damage caused by Rage Fighter against AGs.
-RFDamageRateToMG -> Percentage of damage caused by Rage Fighter against MGs.
-RFDamageRateToDL -> Percentage of damage caused by Rage Fighter against DLs.
-RFDamageRateToSU -> Percentage of damage caused by Rage Fighter against SUs.
-RFDamageRateToRF -> Percentage of damage caused by Rage Fighter against RFs.
+DWDamageRatePvP    ->    Percentage    of    damage    caused    by    the      Dark        Wizard       in      PvP.
+DKDamageRatePvP    ->    Percentage    of    damage    caused    by    the      Dark        Knight       in      PvP.
+FEDamageRatePvP    ->    Percentage    of    damage    caused    by    Fairy    Elf         in           PvP.
+MGDamageRatePvP    ->    Percentage    of    damage    caused    by    the      Magic       Gladiator    PvP.
+DLDamageRatePvP    ->    Percentage    of    damage    caused    by    the      Dark        Lord         in      PvP.
+SUDamageRatePvP    ->    Percentage    of    damage    caused    by    the      Summoner    in           PvP.
+RFDamageRatePvP    ->    Percentage    of    damage    caused    by    Rage     Fighter     in           PvP.
+DWDamageRatePvM    ->    Percentage    of    damage    caused    by    the      Dark        Wizard       in      PvE.
+DKDamageRatePvM    ->    Percentage    of    damage    caused    by    the      Dark        Knight       in      PvE.
+FEDamageRatePvM    ->    Percentage    of    damage    caused    by    Fairy    Elf         in           PvE.
+MGDamageRatePvM    ->    Percentage    of    damage    caused    by    the      Magic       Gladiator    in      PvE.
+DLDamageRatePvM    ->    Percentage    of    damage    caused    by    the      Dark        Lord         in      PvE.
+SUDamageRatePvM    ->    Percentage    of    damage    caused    by    the      Summoner    in           PvE.
+RFDamageRatePvM    ->    Percentage    of    damage    caused    by    Rage     Fighter     in           PvE.
+
+=================================================
+Character                                            Class    X    Class    Damage    Rate    Settings
+=================================================
+
+DWDamageRateToDW    ->    Percentage    of    damage    caused    by    the         Dark       Wizard       against    DWs.
+DWDamageRateToDK    ->    Percentage    of    damage    caused    by    the         Dark       Wizard       against    DKs.
+DWDamageRateToFE    ->    Percentage    of    damage    caused    by    the         Dark       Wizard       against    AGs.
+DWDamageRateToMG    ->    Percentage    of    damage    caused    by    the         Dark       Wizard       against    MGs.
+DWDamageRateToDL    ->    Percentage    of    damage    caused    by    the         Dark       Wizard       against    DLs.
+DWDamageRateToSU    ->    Percentage    of    damage    caused    by    the         Dark       Wizard       against    SUs.
+DWDamageRateToRF    ->    Percentage    of    damage    caused    by    the         Dark       Wizard       against    RFs.
+DKDamageRateToDW    ->    Percentage    of    damage    caused    by    the         Dark       Knight       against    DWs.
+DKDamageRateToDK    ->    Percentage    of    damage    caused    by    the         Dark       Knight       against    DKs.
+DKDamageRateToFE    ->    Percentage    of    damage    caused    by    the         Dark       Knight       against    AGs.
+DKDamageRateToMG    ->    Percentage    of    damage    caused    by    the         Dark       Knight       against    MGs.
+DKDamageRateToDL    ->    Percentage    of    damage    caused    by    the         Dark       Knight       against    DLs.
+DKDamageRateToSU    ->    Percentage    of    damage    caused    by    the         Dark       Knight       against    SUs.
+DKDamageRateToRF    ->    Percentage    of    damage    caused    by    the         Dark       Knight       against    RFs.
+FEDamageRateToDW    ->    Percentage    of    damage    caused    by    Fairy       Elf        against      DWs.
+FEDamageRateToDK    ->    Percentage    of    damage    caused    by    Fairy       Elf        against      DKs.
+FEDamageRateToFE    ->    Percentage    of    damage    caused    by    Fairy       Elf        against      AGs.
+FEDamageRateToMG    ->    Percentage    of    damage    caused    by    Fairy       Elf        against      MGs.
+FEDamageRateToDL    ->    Percentage    of    damage    caused    by    Fairy       Elf        against      DLs.
+FEDamageRateToSU    ->    Percentage    of    damage    caused    by    Fairy       Elf        against      SUs.
+FEDamageRateToRF    ->    Percentage    of    damage    caused    by    Fairy       Elf        against      RFs.
+MGDamageRateToDW    ->    Percentage    of    damage    caused    by    the         Magic      Gladiator    against    DWs.
+MGDamageRateToDK    ->    Percentage    of    damage    caused    by    the         Magic      Gladiator    against    DKs.
+MGDamageRateToFE    ->    Percentage    of    damage    caused    by    the         Magic      Gladiator    against    AGs.
+MGDamageRateToMG    ->    Percentage    of    damage    caused    by    the         Magic      Gladiator    against    MGs.
+MGDamageRateToDL    ->    Percentage    of    damage    caused    by    the         Magic      Gladiator    against    DLs.
+MGDamageRateToSU    ->    Percentage    of    damage    caused    by    the         Magic      Gladiator    against    SUs.
+MGDamageRateToRF    ->    Percentage    of    damage    caused    by    the         Magic      Gladiator    against    RFs.
+DLDamageRateToDW    ->    Percentage    of    damage    caused    by    the         Dark       Lord         against    DWs.
+DLDamageRateToDK    ->    Percentage    of    damage    caused    by    the         Dark       Lord         against    DKs.
+DLDamageRateToFE    ->    Percentage    of    damage    caused    by    the         Dark       Lord         against    AGs.
+DLDamageRateToMG    ->    Percentage    of    damage    caused    by    the         Dark       Lord         against    MGs.
+DLDamageRateToDL    ->    Percentage    of    damage    caused    by    the         Dark       Lord         against    DLs.
+DLDamageRateToSU    ->    Percentage    of    damage    caused    by    the         Dark       Lord         against    SUs.
+DLDamageRateToRF    ->    Percentage    of    damage    caused    by    the         Dark       Lord         against    RFs.
+SUDamageRateToDW    ->    Percentage    of    damage    caused    by    Summoner    against    DWs.
+SUDamageRateToDK    ->    Percentage    of    damage    caused    by    Summoner    against    DKs.
+SUDamageRateToFE    ->    Percentage    of    damage    caused    by    Summoner    against    AGs.
+SUDamageRateToMG    ->    Percentage    of    damage    caused    by    Summoner    against    MGs.
+SUDamageRateToDL    ->    Percentage    of    damage    caused    by    Summoner    against    DLs.
+SUDamageRateToSU    ->    Percentage    of    damage    caused    by    Summoner    against    SUs.
+SUDamageRateToRF    ->    Percentage    of    damage    caused    by    Summoner    against    RFs.
+RFDamageRateToDW    ->    Percentage    of    damage    caused    by    Rage        Fighter    against      DWs.
+RFDamageRateToDK    ->    Percentage    of    damage    caused    by    Rage        Fighter    against      DKs.
+RFDamageRateToFE    ->    Percentage    of    damage    caused    by    Rage        Fighter    against      AGs.
+RFDamageRateToMG    ->    Percentage    of    damage    caused    by    Rage        Fighter    against      MGs.
+RFDamageRateToDL    ->    Percentage    of    damage    caused    by    Rage        Fighter    against      DLs.
+RFDamageRateToSU    ->    Percentage    of    damage    caused    by    Rage        Fighter    against      SUs.
+RFDamageRateToRF    ->    Percentage    of    damage    caused    by    Rage        Fighter    against      RFs.
 
 ;==================================================
-; Character Max Rate Settings
+;                                                      Character    Max        Rate      Settings
 ;==================================================
-MaxReflectRate -> Max total character relect rate.
-MaxDamageReductionRate -> Max total character damage reduction rate.
-MaxCriticalDamageRate -> Max total critical damage rate.
-MaxExcellentDamageRate -> Mas total excellent damage rate.
-MaxDoubleDamageRate -> Max total double damage rate.
-MaxTripleDamageRate -> Max total triple damage rate.
+MaxReflectRate                                         ->           Max        total     character    relect      rate.
+MaxDamageReductionRate                                 ->           Max        total     character    damage      reduction    rate.
+MaxCriticalDamageRate                                  ->           Max        total     critical     damage      rate.
+MaxExcellentDamageRate                                 ->           Mas        total     excellent    damage      rate.
+MaxDoubleDamageRate                                    ->           Max        total     double       damage      rate.
+MaxTripleDamageRate                                    ->           Max        total     triple       damage      rate.
 ==================================================
-Character Class Reflect Damage Rate Settings
+Character                                              Class        Reflect    Damage    Rate         Settings
 ==================================================
 
-DWReflectDamageRate -> Max DW reflect damage rate.
-DKReflectDamageRate -> Max DK reflect damage rate.
-FEReflectDamageRate -> Max FE reflect damage rate.
-MGReflectDamageRate -> Max MG reflect damage rate.
-DLReflectDamageRate -> Max DL reflect damage rate.
-SUReflectDamageRate -> Max SU reflect damage rate.
-RFReflectDamageRate -> Max RF reflect damage rate.
+DWReflectDamageRate    ->    Max    DW    reflect    damage    rate.
+DKReflectDamageRate    ->    Max    DK    reflect    damage    rate.
+FEReflectDamageRate    ->    Max    FE    reflect    damage    rate.
+MGReflectDamageRate    ->    Max    MG    reflect    damage    rate.
+DLReflectDamageRate    ->    Max    DL    reflect    damage    rate.
+SUReflectDamageRate    ->    Max    SU    reflect    damage    rate.
+RFReflectDamageRate    ->    Max    RF    reflect    damage    rate.
 
 =================================================
-Character Stuck Rate Settings
+Character                                            Stuck    Rate    Settings
 =================================================
 
-DWDamageStuckRate -> Character chance to take Percentage stuck to taking damage.
-DKDamageStuckRate -> Character chance to take Percentage stuck to taking damage.
-FEDamageStuckRate -> Character chance to take Percentage stuck to taking damage.
-MGDamageStuckRate -> Character chance to take Percentage stuck to taking damage.
-DLDamageStuckRate -> Character chance to take Percentage stuck to taking damage.
-SUDamageStuckRate -> Character chance to take Percentage stuck to taking damage.
-RFDamageStuckRate -> Character chance to take Percentage stuck to taking damage.
-FenrirDamageStuckRate -> Character chance to take Percentage stuck to taking damage when riding fenrir.
-DarkHorseDamageStuckRate -> Character chance to take Percentage stuck to taking damage when riding dark horse.
-UniriaDamageStuckRate -> Character chance to take Percentage stuck to taking damage when riding uniria.
-DinorantDamageStuckRate -> Character chance to take Percentage stuck to taking damage when riding dinorant.
+DWDamageStuckRate           ->    Character    chance    to    take    Percentage    stuck    to    taking    damage.
+DKDamageStuckRate           ->    Character    chance    to    take    Percentage    stuck    to    taking    damage.
+FEDamageStuckRate           ->    Character    chance    to    take    Percentage    stuck    to    taking    damage.
+MGDamageStuckRate           ->    Character    chance    to    take    Percentage    stuck    to    taking    damage.
+DLDamageStuckRate           ->    Character    chance    to    take    Percentage    stuck    to    taking    damage.
+SUDamageStuckRate           ->    Character    chance    to    take    Percentage    stuck    to    taking    damage.
+RFDamageStuckRate           ->    Character    chance    to    take    Percentage    stuck    to    taking    damage.
+FenrirDamageStuckRate       ->    Character    chance    to    take    Percentage    stuck    to    taking    damage     when    riding    fenrir.
+DarkHorseDamageStuckRate    ->    Character    chance    to    take    Percentage    stuck    to    taking    damage     when    riding    dark         horse.
+UniriaDamageStuckRate       ->    Character    chance    to    take    Percentage    stuck    to    taking    damage     when    riding    uniria.
+DinorantDamageStuckRate     ->    Character    chance    to    take    Percentage    stuck    to    taking    damage     when    riding    dinorant.
 
 =================================================
-Character Damage Multiplier Settings
+Character                                            Damage    Multiplier    Settings
 =================================================
 
-DKDamageMultiplierConstA -> Energy divider of the Dark Knight damage multiplier.
-DLDamageMultiplierConstA -> Energy divider of the Dark Lord damage multiplier.
-RFDamageMultiplierConstA -> Dexterity divider of the Rage Fighter damage multiplier.
-RFDamageMultiplierConstB -> Vitality divider of the Rage Fighter damage multiplier.
-RFDamageMultiplierConstC -> Energy divider of the Rage Fighter damage multiplier.
+DKDamageMultiplierConstA    ->    Energy       divider    of    the    Dark    Knight     damage    multiplier.
+DLDamageMultiplierConstA    ->    Energy       divider    of    the    Dark    Lord       damage    multiplier.
+RFDamageMultiplierConstA    ->    Dexterity    divider    of    the    Rage    Fighter    damage    multiplier.
+RFDamageMultiplierConstB    ->    Vitality     divider    of    the    Rage    Fighter    damage    multiplier.
+RFDamageMultiplierConstC    ->    Energy       divider    of    the    Rage    Fighter    damage    multiplier.
 
 =================================================
-Character Dark Spirit Settings
+Character                                            Dark    Spirit    Settings
 =================================================
 
-DarkSpiritRangeAttackRate -> Dark Spirit chance Percentage carry out an attack in the area.
-DarkSpiritCriticalDamageRate -> Dark Spirit chance Percentage perform a critical attack.
-DarkSpiritExcellentDamageRate -> Dark Spirit chance Percentage doing an excellent attack.
-DarkSpiritAttackDamageMinConstA -> Constant formula for calculating the minimum damage of the Dark Spirit.
-DarkSpiritAttackDamageMinConstB -> Constant formula for calculating the minimum damage of the Dark Spirit.
-DarkSpiritAttackDamageMinConstC -> Constant formula for calculating the minimum damage of the Dark Spirit.
-DarkSpiritAttackDamageMaxConstA -> Constant formula for calculating the maximum damage of the Dark Spirit.
-DarkSpiritAttackDamageMaxConstB -> Constant formula for calculating the maximum damage of the Dark Spirit.
-DarkSpiritAttackDamageMaxConstC -> Constant formula for calculating the maximum damage of the Dark Spirit.
-DarkSpiritAttackSpeedConstA -> Constant calculation formula of the Dark Spirit attack speed.
-DarkSpiritAttackSpeedConstB -> Constant calculation formula of the Dark Spirit attack speed.
-DarkSpiritAttackSpeedConstC -> Constant calculation formula of the Dark Spirit attack speed.
-DarkSpiritAttackSpeedConstD -> Constant calculation formula of the Dark Spirit attack speed.
-DarkSpiritAttackSuccessRateConstA -> Constant formula for calculating the chance of Dark Spirit attack.
-DarkSpiritAttackSuccessRateConstB -> Constant formula for calculating the chance of Dark Spirit attack.
-DarkSpiritAttackSuccessRateConstC -> Constant formula for calculating the chance of Dark Spirit attack.
+DarkSpiritRangeAttackRate            ->    Dark        Spirit         chance     Percentage     carry      out        an           attack     in        the        area.
+DarkSpiritCriticalDamageRate         ->    Dark        Spirit         chance     Percentage     perform    a          critical     attack.
+DarkSpiritExcellentDamageRate        ->    Dark        Spirit         chance     Percentage     doing      an         excellent    attack.
+DarkSpiritAttackDamageMinConstA      ->    Constant    formula        for        calculating    the        minimum    damage       of         the       Dark       Spirit.
+DarkSpiritAttackDamageMinConstB      ->    Constant    formula        for        calculating    the        minimum    damage       of         the       Dark       Spirit.
+DarkSpiritAttackDamageMinConstC      ->    Constant    formula        for        calculating    the        minimum    damage       of         the       Dark       Spirit.
+DarkSpiritAttackDamageMaxConstA      ->    Constant    formula        for        calculating    the        maximum    damage       of         the       Dark       Spirit.
+DarkSpiritAttackDamageMaxConstB      ->    Constant    formula        for        calculating    the        maximum    damage       of         the       Dark       Spirit.
+DarkSpiritAttackDamageMaxConstC      ->    Constant    formula        for        calculating    the        maximum    damage       of         the       Dark       Spirit.
+DarkSpiritAttackSpeedConstA          ->    Constant    calculation    formula    of             the        Dark       Spirit       attack     speed.
+DarkSpiritAttackSpeedConstB          ->    Constant    calculation    formula    of             the        Dark       Spirit       attack     speed.
+DarkSpiritAttackSpeedConstC          ->    Constant    calculation    formula    of             the        Dark       Spirit       attack     speed.
+DarkSpiritAttackSpeedConstD          ->    Constant    calculation    formula    of             the        Dark       Spirit       attack     speed.
+DarkSpiritAttackSuccessRateConstA    ->    Constant    formula        for        calculating    the        chance     of           Dark       Spirit    attack.
+DarkSpiritAttackSuccessRateConstB    ->    Constant    formula        for        calculating    the        chance     of           Dark       Spirit    attack.
+DarkSpiritAttackSuccessRateConstC    ->    Constant    formula        for        calculating    the        chance     of           Dark       Spirit    attack.
 
-# FORMULA = (DarkSpiritAttackDamageMinConstA+(DarkSpiritLevel*DarkSpiritAttackDamageMinConstB)+(PlayerLeadership/DarkSpiritAttackDamageMinConstC)) #
-# FORMULA = (DarkSpiritAttackDamageMaxConstA+(DarkSpiritLevel*DarkSpiritAttackDamageMaxConstB)+(PlayerLeadership/DarkSpiritAttackDamageMaxConstC)) #
-# FORMULA = (DarkSpiritAttackSpeedConstA+((DarkSpiritLevel*DarkSpiritAttackSpeedConstB)/DarkSpiritAttackSpeedConstC)+(PlayerLeadership/DarkSpiritAttackSpeedConstD)) #
-# FORMULA = (DarkSpiritAttackSuccessRateConstA+((DarkSpiritLevel*DarkSpiritAttackSuccessRateConstB)/DarkSpiritAttackSuccessRateConstC)) #
+#    FORMULA    =    (DarkSpiritAttackDamageMinConstA+(DarkSpiritLevel*DarkSpiritAttackDamageMinConstB)+(PlayerLeadership/DarkSpiritAttackDamageMinConstC))                      #
+#    FORMULA    =    (DarkSpiritAttackDamageMaxConstA+(DarkSpiritLevel*DarkSpiritAttackDamageMaxConstB)+(PlayerLeadership/DarkSpiritAttackDamageMaxConstC))                      #
+#    FORMULA    =    (DarkSpiritAttackSpeedConstA+((DarkSpiritLevel*DarkSpiritAttackSpeedConstB)/DarkSpiritAttackSpeedConstC)+(PlayerLeadership/DarkSpiritAttackSpeedConstD))    #
+#    FORMULA    =    (DarkSpiritAttackSuccessRateConstA+((DarkSpiritLevel*DarkSpiritAttackSuccessRateConstB)/DarkSpiritAttackSuccessRateConstC))                                 #
 
 =================================================
-Character Dark Horse Settings
+Character                                            Dark    Horse    Settings
 =================================================
 
-DarkHorseDamageReductionConstA -> Constant formula of the Dark Horse damage reduction calculation.
-DarkHorseDamageReductionConstB -> Constant formula of the Dark Horse damage reduction calculation.
-# FORMULA = ((DarkHorseDamageReductionConstA DarkHorseLevel +) / DarkHorseDamageReductionConstB) #
+DarkHorseDamageReductionConstA    ->         Constant    formula                             of                the    Dark    Horse                              damage    reduction    calculation.
+DarkHorseDamageReductionConstB    ->         Constant    formula                             of                the    Dark    Horse                              damage    reduction    calculation.
+#                                 FORMULA    =           ((DarkHorseDamageReductionConstA    DarkHorseLevel    +)     /       DarkHorseDamageReductionConstB)    #
 
 ;==================================================
-; Character Combo Skill Damage Settings
+;                                                      Character    Combo       Skill      Damage    Settings
 ;==================================================
-DWComboDamageConstA -> Constant formula of calculating the additional Combo damage.
-DWComboDamageConstB -> Constant formula of calculating the additional Combo damage.
-DKComboDamageConstA -> Constant formula of calculating the additional Combo damage.
-DKComboDamageConstB -> Constant formula of calculating the additional Combo damage.
-FEComboDamageConstA -> Constant formula of calculating the additional Combo damage.
-FEComboDamageConstB -> Constant formula of calculating the additional Combo damage.
-MGComboDamageConstA -> Constant formula of calculating the additional Combo damage.
-MGComboDamageConstB -> Constant formula of calculating the additional Combo damage.
-DLComboDamageConstA -> Constant formula of calculating the additional Combo damage.
-DLComboDamageConstB -> Constant formula of calculating the additional Combo damage.
-SUComboDamageConstA -> Constant formula of calculating the additional Combo damage.
-SUComboDamageConstB -> Constant formula of calculating the additional Combo damage.
-RFComboDamageConstA -> Constant formula of calculating the additional Combo damage.
-RFComboDamageConstB -> Constant formula of calculating the additional Combo damage.
+DWComboDamageConstA                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+DWComboDamageConstB                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+DKComboDamageConstA                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+DKComboDamageConstB                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+FEComboDamageConstA                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+FEComboDamageConstB                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+MGComboDamageConstA                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+MGComboDamageConstB                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+DLComboDamageConstA                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+DLComboDamageConstB                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+SUComboDamageConstA                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+SUComboDamageConstB                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+RFComboDamageConstA                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
+RFComboDamageConstB                                    ->           Constant    formula    of        calculating    the    additional    Combo    damage.
 
-# FORMULA = (((PlayerStrength + PlayerDexterity + PlayerEnergy) / ComboDamageConstA) * ComboDamageConstB) #
-
-=================================================
-Character Skill Earthquake Damage Settings
-=================================================
-
-EarthquakeDamageConstA -> Constant formula of calculating the additional damage of Earthquake magic.
-EarthquakeDamageConstB -> Constant formula of calculating the additional damage of Earthquake magic.
-EarthquakeDamageConstC -> Constant formula of calculating the additional damage of Earthquake magic.
-# FORMULA = ((PlayerStrength/EarthquakeDamageConstA)+(PlayerLeadership/EarthquakeDamageConstB)+(DarkHorseLevel*EarthquakeDamageConstC)) #
+#    FORMULA    =    (((PlayerStrength    +    PlayerDexterity    +    PlayerEnergy)    /    ComboDamageConstA)    *    ComboDamageConstB)    #
 
 =================================================
-Character Electric Spark Skill Damage Settings
+Character                                            Skill    Earthquake    Damage    Settings
 =================================================
 
-ElectricSparkDamageConstA -> Constant formula of calculating the additional damage of magic Electric Spark.
-ElectricSparkDamageConstB -> Constant formula of calculating the additional damage of magic Electric Spark.
-# FORMULA = ((PlayerLeadership / ElectricSparkDamageConstA) + ElectricSparkDamageConstB) #
+EarthquakeDamageConstA    ->         Constant    formula                                                                                                                        of    calculating    the    additional    damage    of    Earthquake    magic.
+EarthquakeDamageConstB    ->         Constant    formula                                                                                                                        of    calculating    the    additional    damage    of    Earthquake    magic.
+EarthquakeDamageConstC    ->         Constant    formula                                                                                                                        of    calculating    the    additional    damage    of    Earthquake    magic.
+#                         FORMULA    =           ((PlayerStrength/EarthquakeDamageConstA)+(PlayerLeadership/EarthquakeDamageConstB)+(DarkHorseLevel*EarthquakeDamageConstC))    #
 
 =================================================
-Character Dark Lord Skill Damage Settings
+Character                                            Electric    Spark    Skill    Damage    Settings
 =================================================
 
-DLSkillDamageConstA -> Constant formula of calculating the additional damage of the spells of the Dark Lord.
-DLSkillDamageConstB -> Constant formula of calculating the additional damage of the spells of the Dark Lord.
-# FORMULA = ((PlayerStrength / DLSkillDamageConstA) + (PlayerEnergy / DLSkillDamageConstB)) #
+ElectricSparkDamageConstA    ->         Constant    formula               of    calculating                   the    additional                    damage    of    magic    Electric    Spark.
+ElectricSparkDamageConstB    ->         Constant    formula               of    calculating                   the    additional                    damage    of    magic    Electric    Spark.
+#                            FORMULA    =           ((PlayerLeadership    /     ElectricSparkDamageConstA)    +      ElectricSparkDamageConstB)    #
 
 =================================================
-New Character Skill Damage Settings
+Character                                            Dark    Lord    Skill    Damage    Settings
 =================================================
 
-NovaDamageConstA -> Constant formula of calculating the additional damage the new magic.
-NovaDamageConstB -> Constant formula of calculating the additional damage the new magic.
-NovaDamageConstC -> Constant formula of calculating the additional damage the new magic.
-# FORMULA = ((NovaDamageConstA * (* NovaCount NovaDamageConstB)) + (PlayerStrength / NovaDamageConstC)) #
+DLSkillDamageConstA    ->         Constant    formula             of    calculating             the    additional       damage    of                       the    spells    of    the    Dark    Lord.
+DLSkillDamageConstB    ->         Constant    formula             of    calculating             the    additional       damage    of                       the    spells    of    the    Dark    Lord.
+#                      FORMULA    =           ((PlayerStrength    /     DLSkillDamageConstA)    +      (PlayerEnergy    /         DLSkillDamageConstB))    #
 
 =================================================
-Character HP Recovery Settings
+New                                                  Character    Skill    Damage    Settings
 =================================================
 
-DWHPRecoveryRate -> HP periodic recovery percentage (Dark Wizard).
-DKHPRecoveryRate -> HP periodic recovery percentage (Dark Knight).
-FEHPRecoveryRate -> HP periodic recovery percentage (Fairy Elf).
-MGHPRecoveryRate -> HP periodic recovery percentage (Magic Gladiator).
-DLHPRecoveryRate -> HP periodic recovery percentage (Dark Lord).
-SUHPRecoveryRate -> HP periodic recovery percentage (Summoner).
-RFHPRecoveryRate -> HP periodic recovery percentage (Rage Fighter).
+NovaDamageConstA    ->         Constant    formula               of    calculating    the          additional            damage    the                new    magic.
+NovaDamageConstB    ->         Constant    formula               of    calculating    the          additional            damage    the                new    magic.
+NovaDamageConstC    ->         Constant    formula               of    calculating    the          additional            damage    the                new    magic.
+#                   FORMULA    =           ((NovaDamageConstA    *     (*             NovaCount    NovaDamageConstB))    +         (PlayerStrength    /      NovaDamageConstC))    #
 
 =================================================
-Character MP Recovery Settings
+Character                                            HP    Recovery    Settings
 =================================================
 
-DWMPRecoveryRate -> Percentage of periodic recovery MP (Dark Wizard).
-DKMPRecoveryRate -> Percentage of periodic recovery MP (Dark Knight).
-FEMPRecoveryRate -> Percentage of periodic recovery MP (Fairy Elf).
-MGMPRecoveryRate -> Percentage of periodic recovery of MP (Magic Gladiator).
-DLMPRecoveryRate -> Percentage of periodic recovery MP (Dark Lord).
-SUMPRecoveryRate -> Percentage of periodic recovery MP (Summoner).
-RFMPRecoveryRate -> Percentage of periodic recovery MP (Rage Fighter).
+DWHPRecoveryRate    ->    HP    periodic    recovery    percentage    (Dark          Wizard).
+DKHPRecoveryRate    ->    HP    periodic    recovery    percentage    (Dark          Knight).
+FEHPRecoveryRate    ->    HP    periodic    recovery    percentage    (Fairy         Elf).
+MGHPRecoveryRate    ->    HP    periodic    recovery    percentage    (Magic         Gladiator).
+DLHPRecoveryRate    ->    HP    periodic    recovery    percentage    (Dark          Lord).
+SUHPRecoveryRate    ->    HP    periodic    recovery    percentage    (Summoner).
+RFHPRecoveryRate    ->    HP    periodic    recovery    percentage    (Rage          Fighter).
 
 =================================================
-Character BP Recovery Settings
+Character                                            MP    Recovery    Settings
 =================================================
 
-DWBPRecoveryRate -> Percentage of periodic recovery BP (Dark Wizard).
-DKBPRecoveryRate -> Percentage of periodic recovery BP (Dark Knight).
-FEBPRecoveryRate -> periodic recovery Percentage of BP (Fairy Elf).
-MGBPRecoveryRate -> Percentage of periodic recovery BP (Magic Gladiator).
-DLBPRecoveryRate -> Percentage of periodic recovery BP (Dark Lord).
-SUBPRecoveryRate -> periodic recovery Percentage of BP (Summoner).
-RFBPRecoveryRate -> Percentage of periodic recovery BP (Rage Fighter).
+DWMPRecoveryRate    ->    Percentage    of    periodic    recovery    MP    (Dark          Wizard).
+DKMPRecoveryRate    ->    Percentage    of    periodic    recovery    MP    (Dark          Knight).
+FEMPRecoveryRate    ->    Percentage    of    periodic    recovery    MP    (Fairy         Elf).
+MGMPRecoveryRate    ->    Percentage    of    periodic    recovery    of    MP             (Magic       Gladiator).
+DLMPRecoveryRate    ->    Percentage    of    periodic    recovery    MP    (Dark          Lord).
+SUMPRecoveryRate    ->    Percentage    of    periodic    recovery    MP    (Summoner).
+RFMPRecoveryRate    ->    Percentage    of    periodic    recovery    MP    (Rage          Fighter).
 
 =================================================
-Character SD Recovery Settings
+Character                                            BP    Recovery    Settings
 =================================================
 
-DWSDRecoveryRate -> SD periodic recovery percentage (Dark Wizard).
-DKSDRecoveryRate -> SD periodic recovery percentage (Dark Knight).
-FESDRecoveryRate -> SD periodic recovery percentage (Fairy Elf).
-MGSDRecoveryRate -> SD periodic recovery percentage (Magic Gladiator).
-DLSDRecoveryRate -> SD periodic recovery percentage (Dark Lord).
-SUSDRecoveryRate -> SD periodic recovery percentage (Summoner).
-RFSDRecoveryRate -> SD periodic recovery percentage (Rage Fighter).
+DWBPRecoveryRate    ->    Percentage    of          periodic      recovery    BP    (Dark          Wizard).
+DKBPRecoveryRate    ->    Percentage    of          periodic      recovery    BP    (Dark          Knight).
+FEBPRecoveryRate    ->    periodic      recovery    Percentage    of          BP    (Fairy         Elf).
+MGBPRecoveryRate    ->    Percentage    of          periodic      recovery    BP    (Magic         Gladiator).
+DLBPRecoveryRate    ->    Percentage    of          periodic      recovery    BP    (Dark          Lord).
+SUBPRecoveryRate    ->    periodic      recovery    Percentage    of          BP    (Summoner).
+RFBPRecoveryRate    ->    Percentage    of          periodic      recovery    BP    (Rage          Fighter).
 
 =================================================
-Character Skill Plasma Storm Damage Settings
+Character                                            SD    Recovery    Settings
 =================================================
 
-DWPlasmaStormDamageConstA -> Constant formula for calculating the damage from the spell Plasma Storm Dark Wizard.
-DWPlasmaStormDamageConstB -> Constant formula for calculating the damage from the spell Plasma Storm Dark Wizard.
-DWPlasmaStormDamageConstC -> Constant formula for calculating the damage from the spell Plasma Storm Dark Wizard.
-DWPlasmaStormDamageConstD -> Constant formula for calculating the damage from the spell Plasma Storm Dark Wizard.
-# FORMULA = ((PlayerStrength/DWPlasmaStormDamageConstA)+(PlayerDexterity/DWPlasmaStormDamageConstB)+(PlayerVitality/DWPlasmaStormDamageConstC)+(PlayerEnergy/DWPlasmaStormDamageConstD)) #
-DKPlasmaStormDamageConstA -> Constant formula for calculating the damage from the spell Plasma Storm Dark Knight.
-DKPlasmaStormDamageConstB -> Constant formula for calculating the damage from the spell Plasma Storm Dark Knight.
-DKPlasmaStormDamageConstC -> Constant formula for calculating the damage from the spell Plasma Storm Dark Knight.
-DKPlasmaStormDamageConstD -> Constant formula for calculating the damage from the spell Plasma Storm Dark Knight.
-# FORMULA = ((PlayerStrength/DKPlasmaStormDamageConstA)+(PlayerDexterity/DKPlasmaStormDamageConstB)+(PlayerVitality/DKPlasmaStormDamageConstC)+(PlayerEnergy/DKPlasmaStormDamageConstD)) #
-FEPlasmaStormDamageConstA -> Constant magic damage calculation formula Plasma Storm Fairy Elf.
-FEPlasmaStormDamageConstB -> Constant magic damage calculation formula Plasma Storm Fairy Elf.
-FEPlasmaStormDamageConstC -> Constant magic damage calculation formula Plasma Storm Fairy Elf.
-FEPlasmaStormDamageConstD -> Constant magic damage calculation formula Plasma Storm Fairy Elf.
-# FORMULA = ((PlayerStrength/FEPlasmaStormDamageConstA)+(PlayerDexterity/FEPlasmaStormDamageConstB)+(PlayerVitality/FEPlasmaStormDamageConstC)+(PlayerEnergy/FEPlasmaStormDamageConstD)) #
-MGPlasmaStormDamageConstA -> Constant formula for calculating the damage from the spell Plasma Storm of Magic Gladiator.
-MGPlasmaStormDamageConstB -> Constant formula for calculating the damage from the spell Plasma Storm of Magic Gladiator.
-MGPlasmaStormDamageConstC -> Constant formula for calculating the damage from the spell Plasma Storm of Magic Gladiator.
-MGPlasmaStormDamageConstD -> Constant formula for calculating the damage from the spell Plasma Storm of Magic Gladiator.
-# FORMULA = ((PlayerStrength/MGPlasmaStormDamageConstA)+(PlayerDexterity/MGPlasmaStormDamageConstB)+(PlayerVitality/MGPlasmaStormDamageConstC)+(PlayerEnergy/MGPlasmaStormDamageConstD)) #
-DLPlasmaStormDamageConstA -> Constant formula for calculating the damage from the spell Plasma Storm of the Dark Lord.
-DLPlasmaStormDamageConstB -> Constant formula for calculating the damage from the spell Plasma Storm of the Dark Lord.
-DLPlasmaStormDamageConstC -> Constant formula for calculating the damage from the spell Plasma Storm of the Dark Lord.
-DLPlasmaStormDamageConstD -> Constant formula for calculating the damage from the spell Plasma Storm of the Dark Lord.
-DLPlasmaStormDamageConstE -> Constant formula for calculating the damage from the spell Plasma Storm of the Dark Lord.
-# FORMULA = ((PlayerStrength/DLPlasmaStormDamageConstA)+(PlayerDexterity/DLPlasmaStormDamageConstB)+(PlayerVitality/DLPlasmaStormDamageConstC)+(PlayerEnergy/DLPlasmaStormDamageConstD)+(PlayerLeadership/DLPlasmaStormDamageConstE)) #
-SUPlasmaStormDamageConstA -> Constant formula for calculating the damage the Plasma Storm Summoner magic.
-SUPlasmaStormDamageConstB -> Constant formula for calculating the damage the Plasma Storm Summoner magic.
-SUPlasmaStormDamageConstC -> Constant formula for calculating the damage the Plasma Storm Summoner magic.
-SUPlasmaStormDamageConstD -> Constant formula for calculating the damage the Plasma Storm Summoner magic.
-# FORMULA = ((PlayerStrength/SUPlasmaStormDamageConstA)+(PlayerDexterity/SUPlasmaStormDamageConstB)+(PlayerVitality/SUPlasmaStormDamageConstC)+(PlayerEnergy/SUPlasmaStormDamageConstD)) #
-RFPlasmaStormDamageConstA -> Constant formula for calculating the damage from the spell Plasma Storm Rage Fighter.
-RFPlasmaStormDamageConstB -> Constant formula for calculating the damage from the spell Plasma Storm Rage Fighter.
-RFPlasmaStormDamageConstC -> Constant formula for calculating the damage from the spell Plasma Storm Rage Fighter.
-RFPlasmaStormDamageConstD -> Constant formula for calculating the damage from the spell Plasma Storm Rage Fighter.
-# FORMULA = ((PlayerStrength/RFPlasmaStormDamageConstA)+(PlayerDexterity/RFPlasmaStormDamageConstB)+(PlayerVitality/RFPlasmaStormDamageConstC)+(PlayerEnergy/RFPlasmaStormDamageConstD)) #
+DWSDRecoveryRate    ->    SD    periodic    recovery    percentage    (Dark          Wizard).
+DKSDRecoveryRate    ->    SD    periodic    recovery    percentage    (Dark          Knight).
+FESDRecoveryRate    ->    SD    periodic    recovery    percentage    (Fairy         Elf).
+MGSDRecoveryRate    ->    SD    periodic    recovery    percentage    (Magic         Gladiator).
+DLSDRecoveryRate    ->    SD    periodic    recovery    percentage    (Dark          Lord).
+SUSDRecoveryRate    ->    SD    periodic    recovery    percentage    (Summoner).
+RFSDRecoveryRate    ->    SD    periodic    recovery    percentage    (Rage          Fighter).
 
 =================================================
-Character Damage Settings
+Character                                            Skill    Plasma    Storm    Damage    Settings
 =================================================
 
-DWPhysiDamageMinConstA -> Constant formula for calculating the minimum physical damage of the Dark Wizard.
-DWPhysiDamageMaxConstA -> Constant formula for calculating the maximum physical damage of the Dark Wizard.
-DWMagicDamageMinConstA -> Constant formula for calculating the minimum magic damage the Dark Wizard.
-DWMagicDamageMaxConstA -> Constant formula for calculating the maximum magic damage the Dark Wizard.
-# FORMULA = (PlayerStrength / DWPhysiDamageMinConstA) #
-# FORMULA = (PlayerStrength / DWPhysiDamageMaxConstA) #
-# FORMULA = (PlayerEnergy / DWMagicDamageMinConstA) #
-# FORMULA = (PlayerEnergy / DWMagicDamageMaxConstA) #
-DKPhysiDamageMinConstA -> Constant formula for calculating the minimum physical damage of the Dark Knight.
-DKPhysiDamageMaxConstA -> Constant formula for calculating the maximum physical damage of the Dark Knight.
-DKMagicDamageMinConstA -> Constant formula for calculating the minimum magic damage of the Dark Knight.
-DKMagicDamageMaxConstA -> Constant formula for calculating the maximum magic damage of the Dark Knight.
-# FORMULA = (PlayerStrength / DKPhysiDamageMinConstA) #
-# FORMULA = (PlayerStrength / DKPhysiDamageMaxConstA) #
-# FORMULA = (PlayerEnergy / DKMagicDamageMinConstA) #
-# FORMULA = (PlayerEnergy / DKMagicDamageMaxConstA) #
-FEPhysiDamageMinConstA -> Constant formula for calculating the minimum physical damage of the Fairy Elf.
-FEPhysiDamageMaxConstA -> Constant formula for calculating the maximum physical damage Fairy Elf.
-FEPhysiDamageMinBowConstA -> Constant minimum physical damage calculation formula with bow Fairy Elf.
-FEPhysiDamageMinBowConstB -> Constant minimum physical damage calculation formula with bow Fairy Elf.
-FEPhysiDamageMaxBowConstA -> Constant formula for calculating the maximum physical damage with bow Fairy Elf.
-FEPhysiDamageMaxBowConstB -> Constant formula for calculating the maximum physical damage with bow Fairy Elf.
-FEMagicDamageMinConstA -> Constant formula for calculating the minimum magic damage Fairy Elf.
-FEMagicDamageMaxConstA -> Constant formula for calculating the maximum magic damage Fairy Elf.
-# FORMULA = ((PlayerStrength PlayerDexterity +) / FEPhysiDamageMinConstA) #
-# FORMULA = ((PlayerStrength PlayerDexterity +) / FEPhysiDamageMaxConstA) #
-# FORMULA = ((PlayerStrength / FEPhysiDamageMinBowConstA) + (PlayerDexterity / FEPhysiDamageMinBowConstB)) #
-# FORMULA = ((PlayerStrength / FEPhysiDamageMaxBowConstA) + (PlayerDexterity / FEPhysiDamageMaxBowConstB)) #
-# FORMULA = (PlayerEnergy / FEMagicDamageMinConstA) #
-# FORMULA = (PlayerEnergy / FEMagicDamageMaxConstA) #
-MGPhysiDamageMinConstA -> Constant formula for calculating the minimum physical damage of the Magic Gladiator.
-MGPhysiDamageMinConstB -> Constant formula for calculating the minimum physical damage of the Magic Gladiator.
-MGPhysiDamageMaxConstA -> Constant formula for calculating the maximum physical damage Magic Gladiator.
-MGPhysiDamageMaxConstB -> Constant formula for calculating the maximum physical damage Magic Gladiator.
-MGMagicDamageMinConstA -> Constant formula for calculating the minimum magic damage Magic Gladiator.
-MGMagicDamageMaxConstA -> Constant formula for calculating the maximum magical damage Magic Gladiator.
-# FORMULA = ((PlayerStrength / MGPhysiDamageMinConstA) + (PlayerEnergy / MGPhysiDamageMinConstB)) #
-# FORMULA = ((PlayerStrength / MGPhysiDamageMaxConstA) + (PlayerEnergy / MGPhysiDamageMaxConstB)) #
-# FORMULA = (PlayerEnergy / MGMagicDamageMinConstA) #
-# FORMULA = (PlayerEnergy / MGMagicDamageMaxConstA) #
-DLPhysiDamageMinConstA -> Constant formula for calculating the minimum physical damage of the Dark Lord.
-DLPhysiDamageMinConstB -> Constant formula for calculating the minimum physical damage of the Dark Lord.
-DLPhysiDamageMaxConstA -> Constant formula for calculating the maximum physical damage of the Dark Lord.
-DLPhysiDamageMaxConstB -> Constant formula for calculating the maximum physical damage of the Dark Lord.
-DLMagicDamageMinConstA -> Constant formula for calculating the minimum magic damage of the Dark Lord.
-DLMagicDamageMaxConstA -> Constant formula for calculating the maximum magic damage of the Dark Lord.
-# FORMULA = ((PlayerStrength / DLPhysiDamageMinConstA) + (PlayerEnergy / DLPhysiDamageMinConstB)) #
-# FORMULA = ((PlayerStrength / DLPhysiDamageMaxConstA) + (PlayerEnergy / DLPhysiDamageMaxConstB)) #
-# FORMULA = (PlayerEnergy / DLMagicDamageMinConstA) #
-# FORMULA = (PlayerEnergy / DLMagicDamageMaxConstA) #
-SUPhysiDamageMinConstA -> Constant formula for calculating the minimum physical damage of the Summoner.
-SUPhysiDamageMaxConstA -> Constant formula for calculating the maximum physical damage Summoner.
-SUMagicDamageMinConstA -> Constant formula for calculating the minimum magic damage the Summoner.
-SUMagicDamageMaxConstA -> Constant formula for calculating the maximum magic damage the Summoner.
-# FORMULA = ((PlayerStrength PlayerDexterity +) / SUPhysiDamageMinConstA) #
-# FORMULA = ((PlayerStrength PlayerDexterity +) / SUPhysiDamageMaxConstA) #
-# FORMULA = (PlayerEnergy / SUMagicDamageMinConstA) #
-# FORMULA = (PlayerEnergy / SUMagicDamageMaxConstA) #
-RFPhysiDamageMinConstA -> Constant formula for calculating the minimum physical damage of Rage Fighter.
-RFPhysiDamageMinConstB -> Constant formula for calculating the minimum physical damage of Rage Fighter.
-RFPhysiDamageMaxConstA -> Constant formula for calculating the maximum physical damage Rage Fighter.
-RFPhysiDamageMaxConstB -> Constant formula for calculating the maximum physical damage Rage Fighter.
-RFMagicDamageMinConstA -> Constant formula for calculating the minimum magic damage of Rage Fighter.
-RFMagicDamageMaxConstA -> Constant formula for calculating the maximum magic damage of Rage Fighter.
-# FORMULA = ((PlayerStrength / RFPhysiDamageMinConstA) + (PlayerVitality / RFPhysiDamageMinConstB)) #
-# FORMULA = ((PlayerStrength / RFPhysiDamageMaxConstA) + (PlayerVitality / RFPhysiDamageMaxConstB)) #
-# FORMULA = (PlayerEnergy / RFMagicDamageMinConstA) #
-# FORMULA = (PlayerEnergy / RFMagicDamageMaxConstA) #
+DWPlasmaStormDamageConstA    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Dark    Wizard.
+DWPlasmaStormDamageConstB    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Dark    Wizard.
+DWPlasmaStormDamageConstC    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Dark    Wizard.
+DWPlasmaStormDamageConstD    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Dark    Wizard.
+#                            FORMULA    =           ((PlayerStrength/DWPlasmaStormDamageConstA)+(PlayerDexterity/DWPlasmaStormDamageConstB)+(PlayerVitality/DWPlasmaStormDamageConstC)+(PlayerEnergy/DWPlasmaStormDamageConstD))                                                 #
+DKPlasmaStormDamageConstA    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Dark    Knight.
+DKPlasmaStormDamageConstB    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Dark    Knight.
+DKPlasmaStormDamageConstC    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Dark    Knight.
+DKPlasmaStormDamageConstD    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Dark    Knight.
+#                            FORMULA    =           ((PlayerStrength/DKPlasmaStormDamageConstA)+(PlayerDexterity/DKPlasmaStormDamageConstB)+(PlayerVitality/DKPlasmaStormDamageConstC)+(PlayerEnergy/DKPlasmaStormDamageConstD))                                                 #
+FEPlasmaStormDamageConstA    ->         Constant    magic                                                                                                                                                                                                                        damage    calculation    formula    Plasma    Storm    Fairy     Elf.
+FEPlasmaStormDamageConstB    ->         Constant    magic                                                                                                                                                                                                                        damage    calculation    formula    Plasma    Storm    Fairy     Elf.
+FEPlasmaStormDamageConstC    ->         Constant    magic                                                                                                                                                                                                                        damage    calculation    formula    Plasma    Storm    Fairy     Elf.
+FEPlasmaStormDamageConstD    ->         Constant    magic                                                                                                                                                                                                                        damage    calculation    formula    Plasma    Storm    Fairy     Elf.
+#                            FORMULA    =           ((PlayerStrength/FEPlasmaStormDamageConstA)+(PlayerDexterity/FEPlasmaStormDamageConstB)+(PlayerVitality/FEPlasmaStormDamageConstC)+(PlayerEnergy/FEPlasmaStormDamageConstD))                                                 #
+MGPlasmaStormDamageConstA    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      Magic       Gladiator.
+MGPlasmaStormDamageConstB    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      Magic       Gladiator.
+MGPlasmaStormDamageConstC    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      Magic       Gladiator.
+MGPlasmaStormDamageConstD    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      Magic       Gladiator.
+#                            FORMULA    =           ((PlayerStrength/MGPlasmaStormDamageConstA)+(PlayerDexterity/MGPlasmaStormDamageConstB)+(PlayerVitality/MGPlasmaStormDamageConstC)+(PlayerEnergy/MGPlasmaStormDamageConstD))                                                 #
+DLPlasmaStormDamageConstA    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      the         Dark          Lord.
+DLPlasmaStormDamageConstB    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      the         Dark          Lord.
+DLPlasmaStormDamageConstC    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      the         Dark          Lord.
+DLPlasmaStormDamageConstD    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      the         Dark          Lord.
+DLPlasmaStormDamageConstE    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     of      the         Dark          Lord.
+#                            FORMULA    =           ((PlayerStrength/DLPlasmaStormDamageConstA)+(PlayerDexterity/DLPlasmaStormDamageConstB)+(PlayerVitality/DLPlasmaStormDamageConstC)+(PlayerEnergy/DLPlasmaStormDamageConstD)+(PlayerLeadership/DLPlasmaStormDamageConstE))    #
+SUPlasmaStormDamageConstA    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    the      Plasma    Storm    Summoner    magic.
+SUPlasmaStormDamageConstB    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    the      Plasma    Storm    Summoner    magic.
+SUPlasmaStormDamageConstC    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    the      Plasma    Storm    Summoner    magic.
+SUPlasmaStormDamageConstD    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    the      Plasma    Storm    Summoner    magic.
+#                            FORMULA    =           ((PlayerStrength/SUPlasmaStormDamageConstA)+(PlayerDexterity/SUPlasmaStormDamageConstB)+(PlayerVitality/SUPlasmaStormDamageConstC)+(PlayerEnergy/SUPlasmaStormDamageConstD))                                                 #
+RFPlasmaStormDamageConstA    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Rage    Fighter.
+RFPlasmaStormDamageConstB    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Rage    Fighter.
+RFPlasmaStormDamageConstC    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Rage    Fighter.
+RFPlasmaStormDamageConstD    ->         Constant    formula                                                                                                                                                                                                                      for       calculating    the        damage    from     the       spell    Plasma      Storm     Rage    Fighter.
+#                            FORMULA    =           ((PlayerStrength/RFPlasmaStormDamageConstA)+(PlayerDexterity/RFPlasmaStormDamageConstB)+(PlayerVitality/RFPlasmaStormDamageConstC)+(PlayerEnergy/RFPlasmaStormDamageConstD))                                                 #
 
 =================================================
-Character Attack Success Rate Settings
+Character                                            Damage    Settings
 =================================================
 
-DWAttackSuccessRateConstA -> Constant formula for calculating the chance of the Dark Wizard attacks.
-DWAttackSuccessRateConstB -> Constant formula for calculating the chance of the Dark Wizard attacks.
-DWAttackSuccessRateConstC -> Constant formula for calculating the chance of the Dark Wizard attacks.
-DWAttackSuccessRateConstD -> Constant formula for calculating the chance of the Dark Wizard attacks.
-# FORMULA = ((PlayerLevel*DWAttackSuccessRateConstA)+((PlayerDexterity*DWAttackSuccessRateConstB)/DWAttackSuccessRateConstC)+(PlayerStrength/DWAttackSuccessRateConstD)) #
-DKAttackSuccessRateConstA -> Constant formula for calculating the chance of the Dark Knight attack.
-DKAttackSuccessRateConstB -> Constant formula for calculating the chance of the Dark Knight attack.
-DKAttackSuccessRateConstC -> Constant formula for calculating the chance of the Dark Knight attack.
-DKAttackSuccessRateConstD -> Constant formula for calculating the chance of the Dark Knight attack.
-# FORMULA = ((PlayerLevel*DKAttackSuccessRateConstA)+((PlayerDexterity*DKAttackSuccessRateConstB)/DKAttackSuccessRateConstC)+(PlayerStrength/DKAttackSuccessRateConstD)) #
-FEAttackSuccessRateConstA -> Constant formula for calculating the chance of Fairy Elf attack.
-FEAttackSuccessRateConstB -> Constant formula for calculating the chance of Fairy Elf attack.
-FEAttackSuccessRateConstC -> Constant formula for calculating the chance of Fairy Elf attack.
-FEAttackSuccessRateConstD -> Constant formula for calculating the chance of Fairy Elf attack.
-# FORMULA = ((PlayerLevel*FEAttackSuccessRateConstA)+((PlayerDexterity*FEAttackSuccessRateConstB)/FEAttackSuccessRateConstC)+(PlayerStrength/FEAttackSuccessRateConstD)) #
-MGAttackSuccessRateConstA -> Constant formula for calculating the chance of the Magic Gladiator attack.
-MGAttackSuccessRateConstB -> Constant formula for calculating the chance of the Magic Gladiator attack.
-MGAttackSuccessRateConstC -> Constant formula for calculating the chance of the Magic Gladiator attack.
-MGAttackSuccessRateConstD -> Constant formula for calculating the chance of the Magic Gladiator attack.
-# FORMULA = ((PlayerLevel*MGAttackSuccessRateConstA)+((PlayerDexterity*MGAttackSuccessRateConstB)/MGAttackSuccessRateConstC)+(PlayerStrength/MGAttackSuccessRateConstD)) #
-DLAttackSuccessRateConstA -> Constant formula for calculating the chance of the Dark Lord attack.
-DLAttackSuccessRateConstB -> Constant formula for calculating the chance of the Dark Lord attack.
-DLAttackSuccessRateConstC -> Constant formula for calculating the chance of the Dark Lord attack.
-DLAttackSuccessRateConstD -> Constant formula for calculating the chance of the Dark Lord attack.
-DLAttackSuccessRateConstE -> Constant formula for calculating the chance of the Dark Lord attack.
-# FORMULA = ((PlayerLevel*DLAttackSuccessRateConstA)+((PlayerDexterity*DLAttackSuccessRateConstB)/DLAttackSuccessRateConstC)+(PlayerStrength/DLAttackSuccessRateConstD)+(PlayerLeadership/DLAttackSuccessRateConstE)) #
-SUAttackSuccessRateConstA -> Constant formula for calculating the chance of Summoner attack.
-SUAttackSuccessRateConstB -> Constant formula for calculating the chance of Summoner attack.
-SUAttackSuccessRateConstC -> Constant formula for calculating the chance of Summoner attack.
-SUAttackSuccessRateConstD -> Constant formula for calculating the chance of Summoner attack.
-# FORMULA = ((PlayerLevel*SUAttackSuccessRateConstA)+((PlayerDexterity*SUAttackSuccessRateConstB)/SUAttackSuccessRateConstC)+(PlayerStrength/SUAttackSuccessRateConstD)) #
-RFAttackSuccessRateConstA -> Constant formula for calculating the chance of Rage Fighter attack.
-RFAttackSuccessRateConstB -> Constant formula for calculating the chance of Rage Fighter attack.
-RFAttackSuccessRateConstC -> Constant formula for calculating the chance of Rage Fighter attack.
-RFAttackSuccessRateConstD -> Constant formula for calculating the chance of Rage Fighter attack.
-# FORMULA = ((PlayerLevel*RFAttackSuccessRateConstA)+((PlayerDexterity*RFAttackSuccessRateConstB)/RFAttackSuccessRateConstC)+(PlayerStrength/RFAttackSuccessRateConstD)) #
+DWPhysiDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           the           Dark         Wizard.
+DWPhysiDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         of           the           Dark         Wizard.
+DWMagicDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    magic       damage                         the          Dark          Wizard.
+DWMagicDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    magic       damage                         the          Dark          Wizard.
+#                            FORMULA    =           (PlayerStrength     /                  DWPhysiDamageMinConstA)       #
+#                            FORMULA    =           (PlayerStrength     /                  DWPhysiDamageMaxConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  DWMagicDamageMinConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  DWMagicDamageMaxConstA)       #
+DKPhysiDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           the           Dark         Knight.
+DKPhysiDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         of           the           Dark         Knight.
+DKMagicDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    magic       damage                         of           the           Dark         Knight.
+DKMagicDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    magic       damage                         of           the           Dark         Knight.
+#                            FORMULA    =           (PlayerStrength     /                  DKPhysiDamageMinConstA)       #
+#                            FORMULA    =           (PlayerStrength     /                  DKPhysiDamageMaxConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  DKMagicDamageMinConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  DKMagicDamageMaxConstA)       #
+FEPhysiDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           the           Fairy        Elf.
+FEPhysiDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         Fairy        Elf.
+FEPhysiDamageMinBowConstA    ->         Constant    minimum             physical           damage                        calculation    formula                    with        bow                            Fairy        Elf.
+FEPhysiDamageMinBowConstB    ->         Constant    minimum             physical           damage                        calculation    formula                    with        bow                            Fairy        Elf.
+FEPhysiDamageMaxBowConstA    ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         with         bow           Fairy        Elf.
+FEPhysiDamageMaxBowConstB    ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         with         bow           Fairy        Elf.
+FEMagicDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    magic       damage                         Fairy        Elf.
+FEMagicDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    magic       damage                         Fairy        Elf.
+#                            FORMULA    =           ((PlayerStrength    PlayerDexterity    +)                            /              FEPhysiDamageMinConstA)    #
+#                            FORMULA    =           ((PlayerStrength    PlayerDexterity    +)                            /              FEPhysiDamageMaxConstA)    #
+#                            FORMULA    =           ((PlayerStrength    /                  FEPhysiDamageMinBowConstA)    +              (PlayerDexterity           /           FEPhysiDamageMinBowConstB))    #
+#                            FORMULA    =           ((PlayerStrength    /                  FEPhysiDamageMaxBowConstA)    +              (PlayerDexterity           /           FEPhysiDamageMaxBowConstB))    #
+#                            FORMULA    =           (PlayerEnergy       /                  FEMagicDamageMinConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  FEMagicDamageMaxConstA)       #
+MGPhysiDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           the           Magic        Gladiator.
+MGPhysiDamageMinConstB       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           the           Magic        Gladiator.
+MGPhysiDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         Magic        Gladiator.
+MGPhysiDamageMaxConstB       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         Magic        Gladiator.
+MGMagicDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    magic       damage                         Magic        Gladiator.
+MGMagicDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    magical     damage                         Magic        Gladiator.
+#                            FORMULA    =           ((PlayerStrength    /                  MGPhysiDamageMinConstA)       +              (PlayerEnergy              /           MGPhysiDamageMinConstB))       #
+#                            FORMULA    =           ((PlayerStrength    /                  MGPhysiDamageMaxConstA)       +              (PlayerEnergy              /           MGPhysiDamageMaxConstB))       #
+#                            FORMULA    =           (PlayerEnergy       /                  MGMagicDamageMinConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  MGMagicDamageMaxConstA)       #
+DLPhysiDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           the           Dark         Lord.
+DLPhysiDamageMinConstB       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           the           Dark         Lord.
+DLPhysiDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         of           the           Dark         Lord.
+DLPhysiDamageMaxConstB       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         of           the           Dark         Lord.
+DLMagicDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    magic       damage                         of           the           Dark         Lord.
+DLMagicDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    magic       damage                         of           the           Dark         Lord.
+#                            FORMULA    =           ((PlayerStrength    /                  DLPhysiDamageMinConstA)       +              (PlayerEnergy              /           DLPhysiDamageMinConstB))       #
+#                            FORMULA    =           ((PlayerStrength    /                  DLPhysiDamageMaxConstA)       +              (PlayerEnergy              /           DLPhysiDamageMaxConstB))       #
+#                            FORMULA    =           (PlayerEnergy       /                  DLMagicDamageMinConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  DLMagicDamageMaxConstA)       #
+SUPhysiDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           the           Summoner.
+SUPhysiDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         Summoner.
+SUMagicDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    magic       damage                         the          Summoner.
+SUMagicDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    magic       damage                         the          Summoner.
+#                            FORMULA    =           ((PlayerStrength    PlayerDexterity    +)                            /              SUPhysiDamageMinConstA)    #
+#                            FORMULA    =           ((PlayerStrength    PlayerDexterity    +)                            /              SUPhysiDamageMaxConstA)    #
+#                            FORMULA    =           (PlayerEnergy       /                  SUMagicDamageMinConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  SUMagicDamageMaxConstA)       #
+RFPhysiDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           Rage          Fighter.
+RFPhysiDamageMinConstB       ->         Constant    formula             for                calculating                   the            minimum                    physical    damage                         of           Rage          Fighter.
+RFPhysiDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         Rage         Fighter.
+RFPhysiDamageMaxConstB       ->         Constant    formula             for                calculating                   the            maximum                    physical    damage                         Rage         Fighter.
+RFMagicDamageMinConstA       ->         Constant    formula             for                calculating                   the            minimum                    magic       damage                         of           Rage          Fighter.
+RFMagicDamageMaxConstA       ->         Constant    formula             for                calculating                   the            maximum                    magic       damage                         of           Rage          Fighter.
+#                            FORMULA    =           ((PlayerStrength    /                  RFPhysiDamageMinConstA)       +              (PlayerVitality            /           RFPhysiDamageMinConstB))       #
+#                            FORMULA    =           ((PlayerStrength    /                  RFPhysiDamageMaxConstA)       +              (PlayerVitality            /           RFPhysiDamageMaxConstB))       #
+#                            FORMULA    =           (PlayerEnergy       /                  RFMagicDamageMinConstA)       #
+#                            FORMULA    =           (PlayerEnergy       /                  RFMagicDamageMaxConstA)       #
 
 =================================================
-Character Attack Success Rate PvP Settings
+Character                                            Attack    Success    Rate    Settings
 =================================================
 
-DWAttackSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP attack the Dark Wizard.
-DWAttackSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP attack the Dark Wizard.
-DWAttackSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP attack the Dark Wizard.
-DWAttackSuccessRatePvPConstD -> Constant formula for calculating the chance of PvP attack the Dark Wizard.
-# FORMULA = (((PlayerLevel*DWAttackSuccessRatePvPConstA)/DWAttackSuccessRatePvPConstB)+((PlayerDexterity*DWAttackSuccessRatePvPConstC)/DWAttackSuccessRatePvPConstD)) #
-DKAttackSuccessRatePvPConstA -> Constant formula for calculating the chance of the Dark Knight PvP attack.
-DKAttackSuccessRatePvPConstB -> Constant formula for calculating the chance of the Dark Knight PvP attack.
-DKAttackSuccessRatePvPConstC -> Constant formula for calculating the chance of the Dark Knight PvP attack.
-DKAttackSuccessRatePvPConstD -> Constant formula for calculating the chance of the Dark Knight PvP attack.
-# FORMULA = (((PlayerLevel*DKAttackSuccessRatePvPConstA)/DKAttackSuccessRatePvPConstB)+((PlayerDexterity*DKAttackSuccessRatePvPConstC)/DKAttackSuccessRatePvPConstD)) #
-FEAttackSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP attack Fairy Elf.
-FEAttackSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP attack Fairy Elf.
-FEAttackSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP attack Fairy Elf.
-FEAttackSuccessRatePvPConstD -> Constant formula for calculating the chance of PvP attack Fairy Elf.
-# FORMULA = (((PlayerLevel*FEAttackSuccessRatePvPConstA)/FEAttackSuccessRatePvPConstB)+((PlayerDexterity*FEAttackSuccessRatePvPConstC)/FEAttackSuccessRatePvPConstD)) #
-MGAttackSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP attack the Magic Gladiator.
-MGAttackSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP attack the Magic Gladiator.
-MGAttackSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP attack the Magic Gladiator.
-MGAttackSuccessRatePvPConstD -> Constant formula for calculating the chance of PvP attack the Magic Gladiator.
-# FORMULA = (((PlayerLevel*MGAttackSuccessRatePvPConstA)/MGAttackSuccessRatePvPConstB)+((PlayerDexterity*MGAttackSuccessRatePvPConstC)/MGAttackSuccessRatePvPConstD)) #
-DLAttackSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP attack the Dark Lord.
-DLAttackSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP attack the Dark Lord.
-DLAttackSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP attack the Dark Lord.
-DLAttackSuccessRatePvPConstD -> Constant formula for calculating the chance of PvP attack the Dark Lord.
-# FORMULA = (((PlayerLevel*DLAttackSuccessRatePvPConstA)/DLAttackSuccessRatePvPConstB)+((PlayerDexterity*DLAttackSuccessRatePvPConstC)/DLAttackSuccessRatePvPConstD)) #
-SUAttackSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP attack the Summoner.
-SUAttackSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP attack the Summoner.
-SUAttackSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP attack the Summoner.
-SUAttackSuccessRatePvPConstD -> Constant formula for calculating the chance of PvP attack the Summoner.
-# FORMULA = (((PlayerLevel*SUAttackSuccessRatePvPConstA)/SUAttackSuccessRatePvPConstB)+((PlayerDexterity*SUAttackSuccessRatePvPConstC)/SUAttackSuccessRatePvPConstD)) #
-RFAttackSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP Rage Fighter attack.
-RFAttackSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP Rage Fighter attack.
-RFAttackSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP Rage Fighter attack.
-RFAttackSuccessRatePvPConstD -> Constant formula for calculating the chance of PvP Rage Fighter attack.
-# FORMULA = (((PlayerLevel*RFAttackSuccessRatePvPConstA)/RFAttackSuccessRatePvPConstB)+((PlayerDexterity*RFAttackSuccessRatePvPConstC)/RFAttackSuccessRatePvPConstD)) #
+DWAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Wizard       attacks.
+DWAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Wizard       attacks.
+DWAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Wizard       attacks.
+DWAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Wizard       attacks.
+#                            FORMULA    =           ((PlayerLevel*DWAttackSuccessRateConstA)+((PlayerDexterity*DWAttackSuccessRateConstB)/DWAttackSuccessRateConstC)+(PlayerStrength/DWAttackSuccessRateConstD))                                                 #
+DKAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Knight       attack.
+DKAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Knight       attack.
+DKAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Knight       attack.
+DKAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Knight       attack.
+#                            FORMULA    =           ((PlayerLevel*DKAttackSuccessRateConstA)+((PlayerDexterity*DKAttackSuccessRateConstB)/DKAttackSuccessRateConstC)+(PlayerStrength/DKAttackSuccessRateConstD))                                                 #
+FEAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Fairy       Elf        attack.
+FEAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Fairy       Elf        attack.
+FEAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Fairy       Elf        attack.
+FEAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Fairy       Elf        attack.
+#                            FORMULA    =           ((PlayerLevel*FEAttackSuccessRateConstA)+((PlayerDexterity*FEAttackSuccessRateConstB)/FEAttackSuccessRateConstC)+(PlayerStrength/FEAttackSuccessRateConstD))                                                 #
+MGAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Magic      Gladiator    attack.
+MGAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Magic      Gladiator    attack.
+MGAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Magic      Gladiator    attack.
+MGAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Magic      Gladiator    attack.
+#                            FORMULA    =           ((PlayerLevel*MGAttackSuccessRateConstA)+((PlayerDexterity*MGAttackSuccessRateConstB)/MGAttackSuccessRateConstC)+(PlayerStrength/MGAttackSuccessRateConstD))                                                 #
+DLAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Lord         attack.
+DLAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Lord         attack.
+DLAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Lord         attack.
+DLAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Lord         attack.
+DLAttackSuccessRateConstE    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    the         Dark       Lord         attack.
+#                            FORMULA    =           ((PlayerLevel*DLAttackSuccessRateConstA)+((PlayerDexterity*DLAttackSuccessRateConstB)/DLAttackSuccessRateConstC)+(PlayerStrength/DLAttackSuccessRateConstD)+(PlayerLeadership/DLAttackSuccessRateConstE))    #
+SUAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Summoner    attack.
+SUAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Summoner    attack.
+SUAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Summoner    attack.
+SUAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Summoner    attack.
+#                            FORMULA    =           ((PlayerLevel*SUAttackSuccessRateConstA)+((PlayerDexterity*SUAttackSuccessRateConstB)/SUAttackSuccessRateConstC)+(PlayerStrength/SUAttackSuccessRateConstD))                                                 #
+RFAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Rage        Fighter    attack.
+RFAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Rage        Fighter    attack.
+RFAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Rage        Fighter    attack.
+RFAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                                      for    calculating    the    chance    of    Rage        Fighter    attack.
+#                            FORMULA    =           ((PlayerLevel*RFAttackSuccessRateConstA)+((PlayerDexterity*RFAttackSuccessRateConstB)/RFAttackSuccessRateConstC)+(PlayerStrength/RFAttackSuccessRateConstD))                                                 #
 
 =================================================
-Character Speed Settings
+Character                                            Attack    Success    Rate    PvP    Settings
 =================================================
 
-DWPhysiSpeedConstA -> Constant calculation formula of the Dark Wizard attack speed.
-DWMagicSpeedConstA -> Constant calculation formula of the Dark Wizard attack speed.
-# FORMULA = (PlayerDexterity / DWPhysiSpeedConstA) #
-# FORMULA = (PlayerDexterity / DWMagicSpeedConstA) #
-DKPhysiSpeedConstA -> Constant calculation formula of the Dark Knight attack speed.
-DKMagicSpeedConstA -> Constant calculation formula of the Dark Knight attack speed.
-# FORMULA = (PlayerDexterity / DKPhysiSpeedConstA) #
-# FORMULA = (PlayerDexterity / DKMagicSpeedConstA) #
-FEPhysiSpeedConstA -> Constant calculation formula of the Fairy Elf attack speed.
-FEMagicSpeedConstA -> Constant calculation formula of the Fairy Elf attack speed.
-# FORMULA = (PlayerDexterity / FEPhysiSpeedConstA) #
-# FORMULA = (PlayerDexterity / FEMagicSpeedConstA) #
-MGPhysiSpeedConstA -> Constant calculation formula of the Magic Gladiator attack speed.
-MGMagicSpeedConstA -> Constant calculation formula of the Magic Gladiator attack speed.
-# FORMULA = (PlayerDexterity / MGPhysiSpeedConstA) #
-# FORMULA = (PlayerDexterity / MGMagicSpeedConstA) #
-DLPhysiSpeedConstA -> Constant formula calculating the attack speed of the Dark Lord.
-DLMagicSpeedConstA -> Constant formula calculating the attack speed of the Dark Lord.
-# FORMULA = (PlayerDexterity / DLPhysiSpeedConstA) #
-# FORMULA = (PlayerDexterity / DLMagicSpeedConstA) #
-SUPhysiSpeedConstA -> Constant calculation formula of the Summoner attack speed.
-SUMagicSpeedConstA -> Constant calculation formula of the Summoner attack speed.
-# FORMULA = (PlayerDexterity / SUPhysiSpeedConstA) #
-# FORMULA = (PlayerDexterity / SUMagicSpeedConstA) #
-RFPhysiSpeedConstA -> Constant calculation formula of Rage Fighter Attack Speed.
-RFMagicSpeedConstA -> Constant calculation formula of Rage Fighter Attack Speed.
-# FORMULA = (PlayerDexterity / RFPhysiSpeedConstA) #
-# FORMULA = (PlayerDexterity / RFMagicSpeedConstA) #
+DWAttackSuccessRatePvPConstA    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Dark         Wizard.
+DWAttackSuccessRatePvPConstB    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Dark         Wizard.
+DWAttackSuccessRatePvPConstC    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Dark         Wizard.
+DWAttackSuccessRatePvPConstD    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Dark         Wizard.
+#                               FORMULA    =           (((PlayerLevel*DWAttackSuccessRatePvPConstA)/DWAttackSuccessRatePvPConstB)+((PlayerDexterity*DWAttackSuccessRatePvPConstC)/DWAttackSuccessRatePvPConstD))    #
+DKAttackSuccessRatePvPConstA    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    the    Dark      Knight     PvP          attack.
+DKAttackSuccessRatePvPConstB    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    the    Dark      Knight     PvP          attack.
+DKAttackSuccessRatePvPConstC    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    the    Dark      Knight     PvP          attack.
+DKAttackSuccessRatePvPConstD    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    the    Dark      Knight     PvP          attack.
+#                               FORMULA    =           (((PlayerLevel*DKAttackSuccessRatePvPConstA)/DKAttackSuccessRatePvPConstB)+((PlayerDexterity*DKAttackSuccessRatePvPConstC)/DKAttackSuccessRatePvPConstD))    #
+FEAttackSuccessRatePvPConstA    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    Fairy      Elf.
+FEAttackSuccessRatePvPConstB    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    Fairy      Elf.
+FEAttackSuccessRatePvPConstC    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    Fairy      Elf.
+FEAttackSuccessRatePvPConstD    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    Fairy      Elf.
+#                               FORMULA    =           (((PlayerLevel*FEAttackSuccessRatePvPConstA)/FEAttackSuccessRatePvPConstB)+((PlayerDexterity*FEAttackSuccessRatePvPConstC)/FEAttackSuccessRatePvPConstD))    #
+MGAttackSuccessRatePvPConstA    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Magic        Gladiator.
+MGAttackSuccessRatePvPConstB    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Magic        Gladiator.
+MGAttackSuccessRatePvPConstC    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Magic        Gladiator.
+MGAttackSuccessRatePvPConstD    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Magic        Gladiator.
+#                               FORMULA    =           (((PlayerLevel*MGAttackSuccessRatePvPConstA)/MGAttackSuccessRatePvPConstB)+((PlayerDexterity*MGAttackSuccessRatePvPConstC)/MGAttackSuccessRatePvPConstD))    #
+DLAttackSuccessRatePvPConstA    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Dark         Lord.
+DLAttackSuccessRatePvPConstB    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Dark         Lord.
+DLAttackSuccessRatePvPConstC    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Dark         Lord.
+DLAttackSuccessRatePvPConstD    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Dark         Lord.
+#                               FORMULA    =           (((PlayerLevel*DLAttackSuccessRatePvPConstA)/DLAttackSuccessRatePvPConstB)+((PlayerDexterity*DLAttackSuccessRatePvPConstC)/DLAttackSuccessRatePvPConstD))    #
+SUAttackSuccessRatePvPConstA    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Summoner.
+SUAttackSuccessRatePvPConstB    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Summoner.
+SUAttackSuccessRatePvPConstC    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Summoner.
+SUAttackSuccessRatePvPConstD    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    attack    the        Summoner.
+#                               FORMULA    =           (((PlayerLevel*SUAttackSuccessRatePvPConstA)/SUAttackSuccessRatePvPConstB)+((PlayerDexterity*SUAttackSuccessRatePvPConstC)/SUAttackSuccessRatePvPConstD))    #
+RFAttackSuccessRatePvPConstA    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    Rage      Fighter    attack.
+RFAttackSuccessRatePvPConstB    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    Rage      Fighter    attack.
+RFAttackSuccessRatePvPConstC    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    Rage      Fighter    attack.
+RFAttackSuccessRatePvPConstD    ->         Constant    formula                                                                                                                                                      for    calculating    the    chance    of    PvP    Rage      Fighter    attack.
+#                               FORMULA    =           (((PlayerLevel*RFAttackSuccessRatePvPConstA)/RFAttackSuccessRatePvPConstB)+((PlayerDexterity*RFAttackSuccessRatePvPConstC)/RFAttackSuccessRatePvPConstD))    #
 
 =================================================
-Character Defense Success Rate Settings
+Character                                            Speed    Settings
 =================================================
 
-DWDefenseSuccessRateConstA -> Constant formula for calculating the chance of defending the Dark Wizard.
-# FORMULA = (PlayerDexterity / DWDefenseSuccessRateConstA) #
-DKDefenseSuccessRateConstA -> Constant formula for calculating the chance of defending the Dark Knight.
-# FORMULA = (PlayerDexterity / DKDefenseSuccessRateConstA) #
-FEDefenseSuccessRateConstA -> Constant formula for calculating the chance of defending the Fairy Elf.
-# FORMULA = (PlayerDexterity / FEDefenseSuccessRateConstA) #
-MGDefenseSuccessRateConstA -> Constant formula for calculating the chance of defending the Magic Gladiator.
-# FORMULA = (PlayerDexterity / MGDefenseSuccessRateConstA) #
-DLDefenseSuccessRateConstA -> Constant formula for calculating the chance of defending the Dark Lord.
-# FORMULA = (PlayerDexterity / DLDefenseSuccessRateConstA) #
-SUDefenseSuccessRateConstA -> Constant formula for calculating the chance of defending the Summoner.
-# FORMULA = (PlayerDexterity / SUDefenseSuccessRateConstA) #
-RFDefenseSuccessRateConstA -> Constant formula for calculating the chance of defending the Rage Fighter.
-# FORMULA = (PlayerDexterity / RFDefenseSuccessRateConstA) #
+DWPhysiSpeedConstA    ->         Constant    calculation         formula        of                     the       Dark        Wizard       attack    speed.
+DWMagicSpeedConstA    ->         Constant    calculation         formula        of                     the       Dark        Wizard       attack    speed.
+#                     FORMULA    =           (PlayerDexterity    /              DWPhysiSpeedConstA)    #
+#                     FORMULA    =           (PlayerDexterity    /              DWMagicSpeedConstA)    #
+DKPhysiSpeedConstA    ->         Constant    calculation         formula        of                     the       Dark        Knight       attack    speed.
+DKMagicSpeedConstA    ->         Constant    calculation         formula        of                     the       Dark        Knight       attack    speed.
+#                     FORMULA    =           (PlayerDexterity    /              DKPhysiSpeedConstA)    #
+#                     FORMULA    =           (PlayerDexterity    /              DKMagicSpeedConstA)    #
+FEPhysiSpeedConstA    ->         Constant    calculation         formula        of                     the       Fairy       Elf          attack    speed.
+FEMagicSpeedConstA    ->         Constant    calculation         formula        of                     the       Fairy       Elf          attack    speed.
+#                     FORMULA    =           (PlayerDexterity    /              FEPhysiSpeedConstA)    #
+#                     FORMULA    =           (PlayerDexterity    /              FEMagicSpeedConstA)    #
+MGPhysiSpeedConstA    ->         Constant    calculation         formula        of                     the       Magic       Gladiator    attack    speed.
+MGMagicSpeedConstA    ->         Constant    calculation         formula        of                     the       Magic       Gladiator    attack    speed.
+#                     FORMULA    =           (PlayerDexterity    /              MGPhysiSpeedConstA)    #
+#                     FORMULA    =           (PlayerDexterity    /              MGMagicSpeedConstA)    #
+DLPhysiSpeedConstA    ->         Constant    formula             calculating    the                    attack    speed       of           the       Dark      Lord.
+DLMagicSpeedConstA    ->         Constant    formula             calculating    the                    attack    speed       of           the       Dark      Lord.
+#                     FORMULA    =           (PlayerDexterity    /              DLPhysiSpeedConstA)    #
+#                     FORMULA    =           (PlayerDexterity    /              DLMagicSpeedConstA)    #
+SUPhysiSpeedConstA    ->         Constant    calculation         formula        of                     the       Summoner    attack       speed.
+SUMagicSpeedConstA    ->         Constant    calculation         formula        of                     the       Summoner    attack       speed.
+#                     FORMULA    =           (PlayerDexterity    /              SUPhysiSpeedConstA)    #
+#                     FORMULA    =           (PlayerDexterity    /              SUMagicSpeedConstA)    #
+RFPhysiSpeedConstA    ->         Constant    calculation         formula        of                     Rage      Fighter     Attack       Speed.
+RFMagicSpeedConstA    ->         Constant    calculation         formula        of                     Rage      Fighter     Attack       Speed.
+#                     FORMULA    =           (PlayerDexterity    /              RFPhysiSpeedConstA)    #
+#                     FORMULA    =           (PlayerDexterity    /              RFMagicSpeedConstA)    #
 
 =================================================
-Character Defense Success Rate PvP Settings
+Character                                            Defense    Success    Rate    Settings
 =================================================
 
-DWDefenseSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP defense of the Dark Wizard.
-DWDefenseSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP defense of the Dark Wizard.
-DWDefenseSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP defense of the Dark Wizard.
-# FORMULA = (((PlayerLevel*DWDefenseSuccessRatePvPConstA)/DWDefenseSuccessRatePvPConstB)+(PlayerDexterity/DWDefenseSuccessRatePvPConstC)) #
-DKDefenseSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP defense of the Dark Knight.
-DKDefenseSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP defense of the Dark Knight.
-DKDefenseSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP defense of the Dark Knight.
-# FORMULA = (((PlayerLevel*DKDefenseSuccessRatePvPConstA)/DKDefenseSuccessRatePvPConstB)+(PlayerDexterity/DKDefenseSuccessRatePvPConstC)) #
-FEDefenseSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP defense Fairy Elf.
-FEDefenseSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP defense Fairy Elf.
-FEDefenseSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP defense Fairy Elf.
-# FORMULA = (((PlayerLevel*FEDefenseSuccessRatePvPConstA)/FEDefenseSuccessRatePvPConstB)+(PlayerDexterity/FEDefenseSuccessRatePvPConstC)) #
-MGDefenseSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP defense of Magic Gladiator.
-MGDefenseSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP defense of Magic Gladiator.
-MGDefenseSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP defense of Magic Gladiator.
-# FORMULA = (((PlayerLevel*MGDefenseSuccessRatePvPConstA)/MGDefenseSuccessRatePvPConstB)+(PlayerDexterity/MGDefenseSuccessRatePvPConstC)) #
-DLDefenseSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP defense of the Dark Lord.
-DLDefenseSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP defense of the Dark Lord.
-DLDefenseSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP defense of the Dark Lord.
-# FORMULA = (((PlayerLevel*DLDefenseSuccessRatePvPConstA)/DLDefenseSuccessRatePvPConstB)+(PlayerDexterity/DLDefenseSuccessRatePvPConstC)) #
-SUDefenseSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP Summoner's defense.
-SUDefenseSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP Summoner's defense.
-SUDefenseSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP Summoner's defense.
-# FORMULA = (((PlayerLevel*SUDefenseSuccessRatePvPConstA)/SUDefenseSuccessRatePvPConstB)+(PlayerDexterity/SUDefenseSuccessRatePvPConstC)) #
-RFDefenseSuccessRatePvPConstA -> Constant formula for calculating the chance of PvP defense of Rage Fighter.
-RFDefenseSuccessRatePvPConstB -> Constant formula for calculating the chance of PvP defense of Rage Fighter.
-RFDefenseSuccessRatePvPConstC -> Constant formula for calculating the chance of PvP defense of Rage Fighter.
-# FORMULA = (((PlayerLevel*RFDefenseSuccessRatePvPConstA)/RFDefenseSuccessRatePvPConstB)+(PlayerDexterity/RFDefenseSuccessRatePvPConstC)) #
+DWDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                    the    chance    of    defending    the    Dark         Wizard.
+#                             FORMULA    =           (PlayerDexterity    /      DWDefenseSuccessRateConstA)    #
+DKDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                    the    chance    of    defending    the    Dark         Knight.
+#                             FORMULA    =           (PlayerDexterity    /      DKDefenseSuccessRateConstA)    #
+FEDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                    the    chance    of    defending    the    Fairy        Elf.
+#                             FORMULA    =           (PlayerDexterity    /      FEDefenseSuccessRateConstA)    #
+MGDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                    the    chance    of    defending    the    Magic        Gladiator.
+#                             FORMULA    =           (PlayerDexterity    /      MGDefenseSuccessRateConstA)    #
+DLDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                    the    chance    of    defending    the    Dark         Lord.
+#                             FORMULA    =           (PlayerDexterity    /      DLDefenseSuccessRateConstA)    #
+SUDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                    the    chance    of    defending    the    Summoner.
+#                             FORMULA    =           (PlayerDexterity    /      SUDefenseSuccessRateConstA)    #
+RFDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                    the    chance    of    defending    the    Rage         Fighter.
+#                             FORMULA    =           (PlayerDexterity    /      RFDefenseSuccessRateConstA)    #
 
 =================================================
-Character Defense Settings
+Character                                            Defense    Success    Rate    PvP    Settings
 =================================================
 
-DWDefenseConstA -> Constant calculation formula of defense of the Dark Wizard.
-# FORMULA = (PlayerDexterity / DWDefenseConstA) #
-DKDefenseConstA -> Constant calculation formula of defense of the Dark Knight.
-# FORMULA = (PlayerDexterity / DKDefenseConstA) #
-FEDefenseConstA -> Constant calculation formula of defense Fairy Elf.
-# FORMULA = (PlayerDexterity / FEDefenseConstA) #
-MGDefenseConstA -> Constant calculation formula the defense of Magic Gladiator.
-# FORMULA = (PlayerDexterity / MGDefenseConstA) #
-DLDefenseConstA -> Constant calculation formula of defense of the Dark Lord.
-# FORMULA = (PlayerDexterity / DLDefenseConstA) #
-SUDefenseConstA -> Constant calculation formula of defense Summoner.
-# FORMULA = (PlayerDexterity / SUDefenseConstA) #
-RFDefenseConstA -> Constant calculation formula of defense of Rage Fighter.
-# FORMULA = (PlayerDexterity / RFDefenseConstA) #
+DWDefenseSuccessRatePvPConstA    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Wizard.
+DWDefenseSuccessRatePvPConstB    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Wizard.
+DWDefenseSuccessRatePvPConstC    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Wizard.
+#                                FORMULA    =           (((PlayerLevel*DWDefenseSuccessRatePvPConstA)/DWDefenseSuccessRatePvPConstB)+(PlayerDexterity/DWDefenseSuccessRatePvPConstC))    #
+DKDefenseSuccessRatePvPConstA    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Knight.
+DKDefenseSuccessRatePvPConstB    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Knight.
+DKDefenseSuccessRatePvPConstC    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Knight.
+#                                FORMULA    =           (((PlayerLevel*DKDefenseSuccessRatePvPConstA)/DKDefenseSuccessRatePvPConstB)+(PlayerDexterity/DKDefenseSuccessRatePvPConstC))    #
+FEDefenseSuccessRatePvPConstA    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       Fairy       Elf.
+FEDefenseSuccessRatePvPConstB    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       Fairy       Elf.
+FEDefenseSuccessRatePvPConstC    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       Fairy       Elf.
+#                                FORMULA    =           (((PlayerLevel*FEDefenseSuccessRatePvPConstA)/FEDefenseSuccessRatePvPConstB)+(PlayerDexterity/FEDefenseSuccessRatePvPConstC))    #
+MGDefenseSuccessRatePvPConstA    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          Magic    Gladiator.
+MGDefenseSuccessRatePvPConstB    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          Magic    Gladiator.
+MGDefenseSuccessRatePvPConstC    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          Magic    Gladiator.
+#                                FORMULA    =           (((PlayerLevel*MGDefenseSuccessRatePvPConstA)/MGDefenseSuccessRatePvPConstB)+(PlayerDexterity/MGDefenseSuccessRatePvPConstC))    #
+DLDefenseSuccessRatePvPConstA    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Lord.
+DLDefenseSuccessRatePvPConstB    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Lord.
+DLDefenseSuccessRatePvPConstC    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          the      Dark          Lord.
+#                                FORMULA    =           (((PlayerLevel*DLDefenseSuccessRatePvPConstA)/DLDefenseSuccessRatePvPConstB)+(PlayerDexterity/DLDefenseSuccessRatePvPConstC))    #
+SUDefenseSuccessRatePvPConstA    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    Summoner's    defense.
+SUDefenseSuccessRatePvPConstB    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    Summoner's    defense.
+SUDefenseSuccessRatePvPConstC    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    Summoner's    defense.
+#                                FORMULA    =           (((PlayerLevel*SUDefenseSuccessRatePvPConstA)/SUDefenseSuccessRatePvPConstB)+(PlayerDexterity/SUDefenseSuccessRatePvPConstC))    #
+RFDefenseSuccessRatePvPConstA    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          Rage     Fighter.
+RFDefenseSuccessRatePvPConstB    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          Rage     Fighter.
+RFDefenseSuccessRatePvPConstC    ->         Constant    formula                                                                                                                          for    calculating    the    chance    of    PvP    defense       of          Rage     Fighter.
+#                                FORMULA    =           (((PlayerLevel*RFDefenseSuccessRatePvPConstA)/RFDefenseSuccessRatePvPConstB)+(PlayerDexterity/RFDefenseSuccessRatePvPConstC))    #
 
 =================================================
-Character Elemental Damage Rate Settings
+Character                                            Defense    Settings
 =================================================
 
-DuelElementalDamageRate -> Percentage of total elemental damage that will be caused in duel.
-GensElementalDamageRate -> Percentage of total elemental damage that will be caused in PvP Gens.
-ChaosCastleElementalDamageRate -> Percentage of total elemental damage that will be caused in PvP Chaos Castle.
-IllusionTempleElementalDamageRate -> Percentage of total elemental damage that will be caused in PvP Illusion Temple.
-CastleSiegeElementalDamageRate1 -> elemental damage Percentage applied to the Castle Siege between different guilds players.
-CastleSiegeElementalDamageRate2 -> elemental damage Percentage applied to the Castle Siege between players from the same guild.
-GeneralElementalDamageRatePvP -> Percentage of total elemental damage that will be caused in PvP.
-GeneralElementalDamageRatePvM -> Percentage of total elemental damage that will be caused in PvE.
+DWDefenseConstA    ->         Constant    calculation         formula    of                  defense    of           the      Dark          Wizard.
+#                  FORMULA    =           (PlayerDexterity    /          DWDefenseConstA)    #
+DKDefenseConstA    ->         Constant    calculation         formula    of                  defense    of           the      Dark          Knight.
+#                  FORMULA    =           (PlayerDexterity    /          DKDefenseConstA)    #
+FEDefenseConstA    ->         Constant    calculation         formula    of                  defense    Fairy        Elf.
+#                  FORMULA    =           (PlayerDexterity    /          FEDefenseConstA)    #
+MGDefenseConstA    ->         Constant    calculation         formula    the                 defense    of           Magic    Gladiator.
+#                  FORMULA    =           (PlayerDexterity    /          MGDefenseConstA)    #
+DLDefenseConstA    ->         Constant    calculation         formula    of                  defense    of           the      Dark          Lord.
+#                  FORMULA    =           (PlayerDexterity    /          DLDefenseConstA)    #
+SUDefenseConstA    ->         Constant    calculation         formula    of                  defense    Summoner.
+#                  FORMULA    =           (PlayerDexterity    /          SUDefenseConstA)    #
+RFDefenseConstA    ->         Constant    calculation         formula    of                  defense    of           Rage     Fighter.
+#                  FORMULA    =           (PlayerDexterity    /          RFDefenseConstA)    #
 
 =================================================
-Character Class Elemental Damage Rate Settings
+Character                                            Elemental    Damage    Rate    Settings
 =================================================
 
-DWElementalDamageRatePvP -> Percentage elemental damage caused by the Dark Wizard in PvP.
-DKElementalDamageRatePvP -> Percentage elemental damage caused by the Dark Knight in PvP.
-FEElementalDamageRatePvP -> elemental damage caused by Percentage Fairy Elf in PvP.
-MGElementalDamageRatePvP -> Percentage elemental damage caused by the Magic Gladiator PvP.
-DLElementalDamageRatePvP -> Percentage elemental damage caused by the Dark Lord in PvP.
-SUElementalDamageRatePvP -> elemental damage caused by Percentage Summoner in PvP.
-RFElementalDamageRatePvP -> elemental damage caused by Percentage Rage Fighter in PvP.
-DWElementalDamageRatePvM -> Percentage elemental damage caused by the Dark Wizard in PvE.
-DKElementalDamageRatePvM -> elemental elemental damage caused by Percentage Dark Knight in PvE.
-FEElementalDamageRatePvM -> elemental damage caused by Percentage Fairy Elf in PvE.
-MGElementalDamageRatePvM -> Percentage elemental damage caused by the Magic Gladiator in PvE.
-DLElementalDamageRatePvM -> Percentage elemental damage caused by the Dark Lord in PvE.
-SUElementalDamageRatePvM -> elemental damage caused by Percentage Summoner in PvE.
-RFElementalDamageRatePvM -> elemental damage caused by Percentage Rage Fighter in PvE.
+DuelElementalDamageRate              ->    Percentage    of        total         elemental    damage    that    will      be       caused     in           duel.
+GensElementalDamageRate              ->    Percentage    of        total         elemental    damage    that    will      be       caused     in           PvP       Gens.
+ChaosCastleElementalDamageRate       ->    Percentage    of        total         elemental    damage    that    will      be       caused     in           PvP       Chaos       Castle.
+IllusionTempleElementalDamageRate    ->    Percentage    of        total         elemental    damage    that    will      be       caused     in           PvP       Illusion    Temple.
+CastleSiegeElementalDamageRate1      ->    elemental     damage    Percentage    applied      to        the     Castle    Siege    between    different    guilds    players.
+CastleSiegeElementalDamageRate2      ->    elemental     damage    Percentage    applied      to        the     Castle    Siege    between    players      from      the         same       guild.
+GeneralElementalDamageRatePvP        ->    Percentage    of        total         elemental    damage    that    will      be       caused     in           PvP.
+GeneralElementalDamageRatePvM        ->    Percentage    of        total         elemental    damage    that    will      be       caused     in           PvE.
 
 =================================================
-Character Class X Class Elemental Damage Rate Settings
+Character                                            Class    Elemental    Damage    Rate    Settings
 =================================================
 
-DWElementalDamageRateToDW -> elemental damage caused by Percentage Dark Wizard against DWs.
-DWElementalDamageRateToDK -> elemental damage caused by Percentage Dark Wizard against DKs.
-DWElementalDamageRateToFE -> elemental damage caused by Percentage Dark Wizard against AGs.
-DWElementalDamageRateToMG -> elemental damage caused by Percentage Dark Wizard against MGs.
-DWElementalDamageRateToDL -> elemental damage caused by Percentage Dark Wizard against DLs.
-DWElementalDamageRateToSU -> elemental damage caused by Percentage Dark Wizard against SUs.
-DWElementalDamageRateToRF -> elemental damage caused by Percentage Dark Wizard against RFs.
-DKElementalDamageRateToDW -> Percentage elemental damage caused by the Dark Knight against DWs.
-DKElementalDamageRateToDK -> Percentage elemental damage caused by the Dark Knight against DKs.
-DKElementalDamageRateToFE -> Percentage elemental damage caused by the Dark Knight against AGs.
-DKElementalDamageRateToMG -> Percentage elemental damage caused by the Dark Knight against MGs.
-DKElementalDamageRateToDL -> Percentage elemental damage caused by the Dark Knight against DLs.
-DKElementalDamageRateToSU -> Percentage elemental damage caused by the Dark Knight against SUs.
-DKElementalDamageRateToRF -> Percentage elemental damage caused by the Dark Knight against RFs.
-FEElementalDamageRateToDW -> elemental damage caused by Percentage Fairy Elf against DWs.
-FEElementalDamageRateToDK -> elemental damage caused by Percentage Fairy Elf against DKs.
-FEElementalDamageRateToFE -> elemental damage caused by Percentage Fairy Elf against AGs.
-FEElementalDamageRateToMG -> elemental damage caused by Percentage Fairy Elf against MGs.
-FEElementalDamageRateToDL -> elemental damage caused by Percentage Fairy Elf against DLs.
-FEElementalDamageRateToSU -> elemental damage caused by Percentage Fairy Elf against SUs.
-FEElementalDamageRateToRF -> elemental damage caused by Percentage Fairy Elf against RFs.
-MGElementalDamageRateToDW -> Percentage elemental damage caused by the Magic Gladiator against DWs.
-MGElementalDamageRateToDK -> Percentage elemental damage caused by the Magic Gladiator against DKs.
-MGElementalDamageRateToFE -> Percentage elemental damage caused by the Magic Gladiator against AGs.
-MGElementalDamageRateToMG -> Percentage elemental damage caused by the Magic Gladiator against MGs.
-MGElementalDamageRateToDL -> Percentage elemental damage caused by the Magic Gladiator against DLs.
-MGElementalDamageRateToSU -> Percentage elemental damage caused by the Magic Gladiator against SUs.
-MGElementalDamageRateToRF -> Percentage elemental damage caused by the Magic Gladiator against RFs.
-DLElementalDamageRateToDW -> Percentage elemental damage caused by the Dark Lord against DWs.
-DLElementalDamageRateToDK -> Percentage elemental damage caused by the Dark Lord against DKs.
-DLElementalDamageRateToFE -> Percentage elemental damage caused by the Dark Lord against AGs.
-DLElementalDamageRateToMG -> Percentage elemental damage caused by the Dark Lord against MGs.
-DLElementalDamageRateToDL -> Percentage elemental damage caused by the Dark Lord against DLs.
-DLElementalDamageRateToSU -> Percentage elemental damage caused by the Dark Lord against SUs.
-DLElementalDamageRateToRF -> Percentage elemental damage caused by the Dark Lord against RFs.
-SUElementalDamageRateToDW -> elemental damage caused by Percentage Summoner against DWs.
-SUElementalDamageRateToDK -> elemental damage caused by Percentage Summoner against DKs.
-SUElementalDamageRateToFE -> elemental damage caused by Percentage Summoner against AGs.
-SUElementalDamageRateToMG -> elemental damage caused by Percentage Summoner against MGs.
-SUElementalDamageRateToDL -> elemental damage caused by Percentage Summoner against DLs.
-SUElementalDamageRateToSU -> elemental damage caused by Percentage Summoner against SUs.
-SUElementalDamageRateToRF -> elemental damage caused by Percentage Summoner against RFs.
-RFElementalDamageRateToDW -> elemental damage caused by Percentage Rage Fighter against DWs.
-RFElementalDamageRateToDK -> elemental damage caused by Percentage Rage Fighter against DKs.
-RFElementalDamageRateToFE -> elemental damage caused by Percentage Rage Fighter against AGs.
-RFElementalDamageRateToMG -> elemental damage caused by Percentage Rage Fighter against MGs.
-RFElementalDamageRateToDL -> elemental damage caused by Percentage Rage Fighter against DLs.
-RFElementalDamageRateToSU -> elemental damage caused by Percentage Rage Fighter against SUs.
-RFElementalDamageRateToRF -> elemental damage caused by Percentage Rage Fighter against RFs.
+DWElementalDamageRatePvP    ->    Percentage    elemental    damage    caused    by            the           Dark       Wizard       in      PvP.
+DKElementalDamageRatePvP    ->    Percentage    elemental    damage    caused    by            the           Dark       Knight       in      PvP.
+FEElementalDamageRatePvP    ->    elemental     damage       caused    by        Percentage    Fairy         Elf        in           PvP.
+MGElementalDamageRatePvP    ->    Percentage    elemental    damage    caused    by            the           Magic      Gladiator    PvP.
+DLElementalDamageRatePvP    ->    Percentage    elemental    damage    caused    by            the           Dark       Lord         in      PvP.
+SUElementalDamageRatePvP    ->    elemental     damage       caused    by        Percentage    Summoner      in         PvP.
+RFElementalDamageRatePvP    ->    elemental     damage       caused    by        Percentage    Rage          Fighter    in           PvP.
+DWElementalDamageRatePvM    ->    Percentage    elemental    damage    caused    by            the           Dark       Wizard       in      PvE.
+DKElementalDamageRatePvM    ->    elemental     elemental    damage    caused    by            Percentage    Dark       Knight       in      PvE.
+FEElementalDamageRatePvM    ->    elemental     damage       caused    by        Percentage    Fairy         Elf        in           PvE.
+MGElementalDamageRatePvM    ->    Percentage    elemental    damage    caused    by            the           Magic      Gladiator    in      PvE.
+DLElementalDamageRatePvM    ->    Percentage    elemental    damage    caused    by            the           Dark       Lord         in      PvE.
+SUElementalDamageRatePvM    ->    elemental     damage       caused    by        Percentage    Summoner      in         PvE.
+RFElementalDamageRatePvM    ->    elemental     damage       caused    by        Percentage    Rage          Fighter    in           PvE.
 
 =================================================
-Character Elemental Defense Settings
+Character                                            Class    X    Class    Elemental    Damage    Rate    Settings
 =================================================
 
-DWElementalDefenseConstA -> Constant formula calculating the elemental defense of the Dark Wizard.
-# FORMULA = (PlayerDexterity / DWElementalDefenseConstA) #
-DKElementalDefenseConstA -> Constant formula calculating the elemental defense of the Dark Knight.
-# FORMULA = (PlayerDexterity / DKElementalDefenseConstA) #
-FEElementalDefenseConstA -> Constant formula calculating the elemental defense Fairy Elf.
-# FORMULA = (PlayerDexterity / FEElementalDefenseConstA) #
-MGElementalDefenseConstA -> Constant formula calculating the elemental defense of Magic Gladiator.
-# FORMULA = (PlayerDexterity / MGElementalDefenseConstA) #
-DLElementalDefenseConstA -> Constant formula calculating the elemental defense of the Dark Lord.
-# FORMULA = (PlayerDexterity / DLElementalDefenseConstA) #
-SUElementalDefenseConstA -> Constant formula calculating the elemental defense of Summoner.
-# FORMULA = (PlayerDexterity / SUElementalDefenseConstA) #
-RFElementalDefenseConstA -> Constant formula calculating the elemental defense of Rage Fighter.
-# FORMULA = (PlayerDexterity / RFElementalDefenseConstA) #
+DWElementalDamageRateToDW    ->    elemental     damage       caused    by        Percentage    Dark        Wizard     against      DWs.
+DWElementalDamageRateToDK    ->    elemental     damage       caused    by        Percentage    Dark        Wizard     against      DKs.
+DWElementalDamageRateToFE    ->    elemental     damage       caused    by        Percentage    Dark        Wizard     against      AGs.
+DWElementalDamageRateToMG    ->    elemental     damage       caused    by        Percentage    Dark        Wizard     against      MGs.
+DWElementalDamageRateToDL    ->    elemental     damage       caused    by        Percentage    Dark        Wizard     against      DLs.
+DWElementalDamageRateToSU    ->    elemental     damage       caused    by        Percentage    Dark        Wizard     against      SUs.
+DWElementalDamageRateToRF    ->    elemental     damage       caused    by        Percentage    Dark        Wizard     against      RFs.
+DKElementalDamageRateToDW    ->    Percentage    elemental    damage    caused    by            the         Dark       Knight       against    DWs.
+DKElementalDamageRateToDK    ->    Percentage    elemental    damage    caused    by            the         Dark       Knight       against    DKs.
+DKElementalDamageRateToFE    ->    Percentage    elemental    damage    caused    by            the         Dark       Knight       against    AGs.
+DKElementalDamageRateToMG    ->    Percentage    elemental    damage    caused    by            the         Dark       Knight       against    MGs.
+DKElementalDamageRateToDL    ->    Percentage    elemental    damage    caused    by            the         Dark       Knight       against    DLs.
+DKElementalDamageRateToSU    ->    Percentage    elemental    damage    caused    by            the         Dark       Knight       against    SUs.
+DKElementalDamageRateToRF    ->    Percentage    elemental    damage    caused    by            the         Dark       Knight       against    RFs.
+FEElementalDamageRateToDW    ->    elemental     damage       caused    by        Percentage    Fairy       Elf        against      DWs.
+FEElementalDamageRateToDK    ->    elemental     damage       caused    by        Percentage    Fairy       Elf        against      DKs.
+FEElementalDamageRateToFE    ->    elemental     damage       caused    by        Percentage    Fairy       Elf        against      AGs.
+FEElementalDamageRateToMG    ->    elemental     damage       caused    by        Percentage    Fairy       Elf        against      MGs.
+FEElementalDamageRateToDL    ->    elemental     damage       caused    by        Percentage    Fairy       Elf        against      DLs.
+FEElementalDamageRateToSU    ->    elemental     damage       caused    by        Percentage    Fairy       Elf        against      SUs.
+FEElementalDamageRateToRF    ->    elemental     damage       caused    by        Percentage    Fairy       Elf        against      RFs.
+MGElementalDamageRateToDW    ->    Percentage    elemental    damage    caused    by            the         Magic      Gladiator    against    DWs.
+MGElementalDamageRateToDK    ->    Percentage    elemental    damage    caused    by            the         Magic      Gladiator    against    DKs.
+MGElementalDamageRateToFE    ->    Percentage    elemental    damage    caused    by            the         Magic      Gladiator    against    AGs.
+MGElementalDamageRateToMG    ->    Percentage    elemental    damage    caused    by            the         Magic      Gladiator    against    MGs.
+MGElementalDamageRateToDL    ->    Percentage    elemental    damage    caused    by            the         Magic      Gladiator    against    DLs.
+MGElementalDamageRateToSU    ->    Percentage    elemental    damage    caused    by            the         Magic      Gladiator    against    SUs.
+MGElementalDamageRateToRF    ->    Percentage    elemental    damage    caused    by            the         Magic      Gladiator    against    RFs.
+DLElementalDamageRateToDW    ->    Percentage    elemental    damage    caused    by            the         Dark       Lord         against    DWs.
+DLElementalDamageRateToDK    ->    Percentage    elemental    damage    caused    by            the         Dark       Lord         against    DKs.
+DLElementalDamageRateToFE    ->    Percentage    elemental    damage    caused    by            the         Dark       Lord         against    AGs.
+DLElementalDamageRateToMG    ->    Percentage    elemental    damage    caused    by            the         Dark       Lord         against    MGs.
+DLElementalDamageRateToDL    ->    Percentage    elemental    damage    caused    by            the         Dark       Lord         against    DLs.
+DLElementalDamageRateToSU    ->    Percentage    elemental    damage    caused    by            the         Dark       Lord         against    SUs.
+DLElementalDamageRateToRF    ->    Percentage    elemental    damage    caused    by            the         Dark       Lord         against    RFs.
+SUElementalDamageRateToDW    ->    elemental     damage       caused    by        Percentage    Summoner    against    DWs.
+SUElementalDamageRateToDK    ->    elemental     damage       caused    by        Percentage    Summoner    against    DKs.
+SUElementalDamageRateToFE    ->    elemental     damage       caused    by        Percentage    Summoner    against    AGs.
+SUElementalDamageRateToMG    ->    elemental     damage       caused    by        Percentage    Summoner    against    MGs.
+SUElementalDamageRateToDL    ->    elemental     damage       caused    by        Percentage    Summoner    against    DLs.
+SUElementalDamageRateToSU    ->    elemental     damage       caused    by        Percentage    Summoner    against    SUs.
+SUElementalDamageRateToRF    ->    elemental     damage       caused    by        Percentage    Summoner    against    RFs.
+RFElementalDamageRateToDW    ->    elemental     damage       caused    by        Percentage    Rage        Fighter    against      DWs.
+RFElementalDamageRateToDK    ->    elemental     damage       caused    by        Percentage    Rage        Fighter    against      DKs.
+RFElementalDamageRateToFE    ->    elemental     damage       caused    by        Percentage    Rage        Fighter    against      AGs.
+RFElementalDamageRateToMG    ->    elemental     damage       caused    by        Percentage    Rage        Fighter    against      MGs.
+RFElementalDamageRateToDL    ->    elemental     damage       caused    by        Percentage    Rage        Fighter    against      DLs.
+RFElementalDamageRateToSU    ->    elemental     damage       caused    by        Percentage    Rage        Fighter    against      SUs.
+RFElementalDamageRateToRF    ->    elemental     damage       caused    by        Percentage    Rage        Fighter    against      RFs.
 
 =================================================
-Character Elemental Damage Settings
+Character                                            Elemental    Defense    Settings
 =================================================
 
-DWElementalDamageMinConstA -> Constant formula for calculating the minimum elemental damage of the Dark Wizard.
-DWElementalDamageMaxConstA -> Constant formula for calculating the maximum elemental damage of the Dark Wizard.
-# FORMULA = (PlayerEnergy / DWElementalDamageMinConstA) #
-# FORMULA = (PlayerEnergy / DWElementalDamageMaxConstA) #
-DKElementalDamageMinConstA -> Constant formula for calculating the minimum elemental damage of the Dark Knight.
-DKElementalDamageMaxConstA -> Constant formula for calculating the maximum elemental damage of the Dark Knight.
-# FORMULA = (PlayerStrength / DKElementalDamageMinConstA) #
-# FORMULA = (PlayerStrength / DKElementalDamageMaxConstA) #
-FEElementalDamageMinConstA -> Constant formula for calculating the minimum elemental damage Fairy Elf.
-FEElementalDamageMinConstB -> Constant formula for calculating the minimum elemental damage Fairy Elf.
-FEElementalDamageMaxConstA -> Constant formula for calculating the maximum elemental damage Fairy Elf.
-FEElementalDamageMaxConstB -> Constant formula for calculating the maximum elemental damage Fairy Elf.
-# FORMULA = ((PlayerStrength / FEElementalDamageMinConstA) + (PlayerDexterity / FEElementalDamageMinConstB)) #
-# FORMULA = ((PlayerStrength / FEElementalDamageMaxConstA) + (PlayerDexterity / FEElementalDamageMaxConstB)) #
-MGElementalDamageMinConstA -> Constant formula for calculating the minimum elemental damage Magic Gladiator.
-MGElementalDamageMinConstB -> Constant formula for calculating the minimum elemental damage Magic Gladiator.
-MGElementalDamageMaxConstA -> Constant formula for calculating the maximum elemental damage Magic Gladiator.
-MGElementalDamageMaxConstB -> Constant formula for calculating the maximum elemental damage Magic Gladiator.
-# FORMULA = ((PlayerStrength / MGElementalDamageMinConstA) + (PlayerEnergy / MGElementalDamageMinConstB)) #
-# FORMULA = ((PlayerStrength / MGElementalDamageMaxConstA) + (PlayerEnergy / MGElementalDamageMaxConstB)) #
-DLElementalDamageMinConstA -> Constant formula for calculating the minimum elemental damage of the Dark Lord.
-DLElementalDamageMinConstB -> Constant formula for calculating the minimum elemental damage of the Dark Lord.
-DLElementalDamageMaxConstA -> Constant formula for calculating the maximum elemental damage of the Dark Lord.
-DLElementalDamageMaxConstB -> Constant formula for calculating the maximum elemental damage of the Dark Lord.
-# FORMULA = ((PlayerStrength / DLElementalDamageMinConstA) + (PlayerEnergy / DLElementalDamageMinConstB)) #
-# FORMULA = ((PlayerStrength / DLElementalDamageMaxConstA) + (PlayerEnergy / DLElementalDamageMaxConstB)) #
-SUElementalDamageMinConstA -> Constant formula for calculating the minimum elemental damage Summoner.
-SUElementalDamageMaxConstA -> Constant formula for calculating the maximum elemental damage Summoner.
-# FORMULA = (PlayerEnergy / SUElementalDamageMinConstA) #
-# FORMULA = (PlayerEnergy / SUElementalDamageMaxConstA) #
-RFElementalDamageMinConstA -> Constant formula for calculating the minimum elemental damage Rage Fighter.
-RFElementalDamageMinConstB -> Constant formula for calculating the minimum elemental damage Rage Fighter.
-RFElementalDamageMaxConstA -> Constant formula for calculating the maximum elemental damage Rage Fighter.
-RFElementalDamageMaxConstB -> Constant formula for calculating the maximum elemental damage Rage Fighter.
-# FORMULA = ((PlayerStrength / RFElementalDamageMinConstA) + (PlayerVitality / RFElementalDamageMinConstB)) #
-# FORMULA = ((PlayerStrength / RFElementalDamageMaxConstA) + (PlayerVitality / RFElementalDamageMaxConstB)) #
+DWElementalDefenseConstA    ->         Constant    formula             calculating    the                          elemental    defense    of       the          Dark          Wizard.
+#                           FORMULA    =           (PlayerDexterity    /              DWElementalDefenseConstA)    #
+DKElementalDefenseConstA    ->         Constant    formula             calculating    the                          elemental    defense    of       the          Dark          Knight.
+#                           FORMULA    =           (PlayerDexterity    /              DKElementalDefenseConstA)    #
+FEElementalDefenseConstA    ->         Constant    formula             calculating    the                          elemental    defense    Fairy    Elf.
+#                           FORMULA    =           (PlayerDexterity    /              FEElementalDefenseConstA)    #
+MGElementalDefenseConstA    ->         Constant    formula             calculating    the                          elemental    defense    of       Magic        Gladiator.
+#                           FORMULA    =           (PlayerDexterity    /              MGElementalDefenseConstA)    #
+DLElementalDefenseConstA    ->         Constant    formula             calculating    the                          elemental    defense    of       the          Dark          Lord.
+#                           FORMULA    =           (PlayerDexterity    /              DLElementalDefenseConstA)    #
+SUElementalDefenseConstA    ->         Constant    formula             calculating    the                          elemental    defense    of       Summoner.
+#                           FORMULA    =           (PlayerDexterity    /              SUElementalDefenseConstA)    #
+RFElementalDefenseConstA    ->         Constant    formula             calculating    the                          elemental    defense    of       Rage         Fighter.
+#                           FORMULA    =           (PlayerDexterity    /              RFElementalDefenseConstA)    #
 
 =================================================
-Character Elemental Attack Success Rate Settings
+Character                                            Elemental    Damage    Settings
 =================================================
 
-DWElementalAttackSuccessRateConstA -> Constant formula for calculating the chance of elemental attack the Dark Wizard.
-DWElementalAttackSuccessRateConstB -> Constant formula for calculating the chance of elemental attack the Dark Wizard.
-DWElementalAttackSuccessRateConstC -> Constant formula for calculating the chance of elemental attack the Dark Wizard.
-DWElementalAttackSuccessRateConstD -> Constant formula for calculating the chance of elemental attack the Dark Wizard.
-# FORMULA = ((PlayerLevel*DWElementalAttackSuccessRateConstA)+(PlayerStrength/DWElementalAttackSuccessRateConstB)+((PlayerDexterity*DWElementalAttackSuccessRateConstC)/DWElementalAttackSuccessRateConstD)) #
-DKElementalAttackSuccessRateConstA -> Constant formula for calculating the chance of elemental attack the Dark Knight.
-DKElementalAttackSuccessRateConstB -> Constant formula for calculating the chance of elemental attack the Dark Knight.
-DKElementalAttackSuccessRateConstC -> Constant formula for calculating the chance of elemental attack the Dark Knight.
-DKElementalAttackSuccessRateConstD -> Constant formula for calculating the chance of elemental attack the Dark Knight.
-# FORMULA = ((PlayerLevel*DKElementalAttackSuccessRateConstA)+(PlayerStrength/DKElementalAttackSuccessRateConstB)+((PlayerDexterity*DKElementalAttackSuccessRateConstC)/DKElementalAttackSuccessRateConstD)) #
-FEElementalAttackSuccessRateConstA -> Constant formula for calculating the chance of elemental attack Fairy Elf.
-FEElementalAttackSuccessRateConstB -> Constant formula for calculating the chance of elemental attack Fairy Elf.
-FEElementalAttackSuccessRateConstC -> Constant formula for calculating the chance of elemental attack Fairy Elf.
-FEElementalAttackSuccessRateConstD -> Constant formula for calculating the chance of elemental attack Fairy Elf.
-# FORMULA = ((PlayerLevel*FEElementalAttackSuccessRateConstA)+(PlayerStrength/FEElementalAttackSuccessRateConstB)+((PlayerDexterity*FEElementalAttackSuccessRateConstC)/FEElementalAttackSuccessRateConstD)) #
-MGElementalAttackSuccessRateConstA -> Constant formula for calculating the chance of elemental attack the Magic Gladiator.
-MGElementalAttackSuccessRateConstB -> Constant formula for calculating the chance of elemental attack the Magic Gladiator.
-MGElementalAttackSuccessRateConstC -> Constant formula for calculating the chance of elemental attack the Magic Gladiator.
-MGElementalAttackSuccessRateConstD -> Constant formula for calculating the chance of elemental attack the Magic Gladiator.
-# FORMULA = ((PlayerLevel*MGElementalAttackSuccessRateConstA)+(PlayerStrength/MGElementalAttackSuccessRateConstB)+((PlayerDexterity*MGElementalAttackSuccessRateConstC)/MGElementalAttackSuccessRateConstD)) #
-DLElementalAttackSuccessRateConstA -> Constant formula for calculating the chance of elemental attack the Dark Lord.
-DLElementalAttackSuccessRateConstB -> Constant formula for calculating the chance of elemental attack the Dark Lord.
-DLElementalAttackSuccessRateConstC -> Constant formula for calculating the chance of elemental attack the Dark Lord.
-DLElementalAttackSuccessRateConstD -> Constant formula for calculating the chance of elemental attack the Dark Lord.
-# FORMULA = ((PlayerLevel*DLElementalAttackSuccessRateConstA)+(PlayerStrength/DLElementalAttackSuccessRateConstB)+((PlayerDexterity*DLElementalAttackSuccessRateConstC)/DLElementalAttackSuccessRateConstD)) #
-SUElementalAttackSuccessRateConstA -> Constant formula for calculating the chance of elemental attack the Summoner.
-SUElementalAttackSuccessRateConstB -> Constant formula for calculating the chance of elemental attack the Summoner.
-SUElementalAttackSuccessRateConstC -> Constant formula for calculating the chance of elemental attack the Summoner.
-SUElementalAttackSuccessRateConstD -> Constant formula for calculating the chance of elemental attack the Summoner.
-# FORMULA = ((PlayerLevel*SUElementalAttackSuccessRateConstA)+(PlayerStrength/SUElementalAttackSuccessRateConstB)+((PlayerDexterity*SUElementalAttackSuccessRateConstC)/SUElementalAttackSuccessRateConstD)) #
-RFElementalAttackSuccessRateConstA -> Constant formula for calculating the chance of elemental attack Rage Fighter.
-RFElementalAttackSuccessRateConstB -> Constant formula for calculating the chance of elemental attack Rage Fighter.
-RFElementalAttackSuccessRateConstC -> Constant formula for calculating the chance of elemental attack Rage Fighter.
-RFElementalAttackSuccessRateConstD -> Constant formula for calculating the chance of elemental attack Rage Fighter.
-# FORMULA = ((PlayerLevel*RFElementalAttackSuccessRateConstA)+(PlayerStrength/RFElementalAttackSuccessRateConstB)+((PlayerDexterity*RFElementalAttackSuccessRateConstC)/RFElementalAttackSuccessRateConstD)) #
+DWElementalDamageMinConstA    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          of           the           Dark    Wizard.
+DWElementalDamageMaxConstA    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          of           the           Dark    Wizard.
+#                             FORMULA    =           (PlayerEnergy       /      DWElementalDamageMinConstA)    #
+#                             FORMULA    =           (PlayerEnergy       /      DWElementalDamageMaxConstA)    #
+DKElementalDamageMinConstA    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          of           the           Dark    Knight.
+DKElementalDamageMaxConstA    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          of           the           Dark    Knight.
+#                             FORMULA    =           (PlayerStrength     /      DKElementalDamageMinConstA)    #
+#                             FORMULA    =           (PlayerStrength     /      DKElementalDamageMaxConstA)    #
+FEElementalDamageMinConstA    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          Fairy        Elf.
+FEElementalDamageMinConstB    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          Fairy        Elf.
+FEElementalDamageMaxConstA    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          Fairy        Elf.
+FEElementalDamageMaxConstB    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          Fairy        Elf.
+#                             FORMULA    =           ((PlayerStrength    /      FEElementalDamageMinConstA)    +      (PlayerDexterity    /            FEElementalDamageMinConstB))    #
+#                             FORMULA    =           ((PlayerStrength    /      FEElementalDamageMaxConstA)    +      (PlayerDexterity    /            FEElementalDamageMaxConstB))    #
+MGElementalDamageMinConstA    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          Magic        Gladiator.
+MGElementalDamageMinConstB    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          Magic        Gladiator.
+MGElementalDamageMaxConstA    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          Magic        Gladiator.
+MGElementalDamageMaxConstB    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          Magic        Gladiator.
+#                             FORMULA    =           ((PlayerStrength    /      MGElementalDamageMinConstA)    +      (PlayerEnergy       /            MGElementalDamageMinConstB))    #
+#                             FORMULA    =           ((PlayerStrength    /      MGElementalDamageMaxConstA)    +      (PlayerEnergy       /            MGElementalDamageMaxConstB))    #
+DLElementalDamageMinConstA    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          of           the           Dark    Lord.
+DLElementalDamageMinConstB    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          of           the           Dark    Lord.
+DLElementalDamageMaxConstA    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          of           the           Dark    Lord.
+DLElementalDamageMaxConstB    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          of           the           Dark    Lord.
+#                             FORMULA    =           ((PlayerStrength    /      DLElementalDamageMinConstA)    +      (PlayerEnergy       /            DLElementalDamageMinConstB))    #
+#                             FORMULA    =           ((PlayerStrength    /      DLElementalDamageMaxConstA)    +      (PlayerEnergy       /            DLElementalDamageMaxConstB))    #
+SUElementalDamageMinConstA    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          Summoner.
+SUElementalDamageMaxConstA    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          Summoner.
+#                             FORMULA    =           (PlayerEnergy       /      SUElementalDamageMinConstA)    #
+#                             FORMULA    =           (PlayerEnergy       /      SUElementalDamageMaxConstA)    #
+RFElementalDamageMinConstA    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          Rage         Fighter.
+RFElementalDamageMinConstB    ->         Constant    formula             for    calculating                    the    minimum             elemental    damage                          Rage         Fighter.
+RFElementalDamageMaxConstA    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          Rage         Fighter.
+RFElementalDamageMaxConstB    ->         Constant    formula             for    calculating                    the    maximum             elemental    damage                          Rage         Fighter.
+#                             FORMULA    =           ((PlayerStrength    /      RFElementalDamageMinConstA)    +      (PlayerVitality     /            RFElementalDamageMinConstB))    #
+#                             FORMULA    =           ((PlayerStrength    /      RFElementalDamageMaxConstA)    +      (PlayerVitality     /            RFElementalDamageMaxConstB))    #
 
 =================================================
-Character Elemental Defense Success Rate Settings
+Character                                            Elemental    Attack    Success    Rate    Settings
 =================================================
 
-DWElementalDefenseSuccessRateConstA -> Constant formula for calculating the chance of elemental defense of the Dark Wizard.
-# FORMULA = (PlayerDexterity / DWElementalDefenseSuccessRateConstA) #
-DKElementalDefenseSuccessRateConstA -> Constant formula for calculating the chance of elemental defense of the Dark Knight.
-# FORMULA = (PlayerDexterity / DKElementalDefenseSuccessRateConstA) #
-FEElementalDefenseSuccessRateConstA -> Constant formula for calculating the chance of elemental defense Fairy Elf.
-# FORMULA = (PlayerDexterity / FEElementalDefenseSuccessRateConstA) #
-MGElementalDefenseSuccessRateConstA -> Constant formula for calculating the chance of elemental defense of Magic Gladiator.
-# FORMULA = (PlayerDexterity / MGElementalDefenseSuccessRateConstA) #
-DLElementalDefenseSuccessRateConstA -> Constant formula for calculating the chance of elemental defense of the Dark Lord.
-# FORMULA = (PlayerDexterity / DLElementalDefenseSuccessRateConstA) #
-SUElementalDefenseSuccessRateConstA -> Constant formula for calculating the chance of elemental defense of Summoner.
-# FORMULA = (PlayerDexterity / SUElementalDefenseSuccessRateConstA) #
-RFElementalDefenseSuccessRateConstA -> Constant formula for calculating the chance of elemental defense of Rage Fighter.
-# FORMULA = (PlayerDexterity / RFElementalDefenseSuccessRateConstA) #
+DWElementalAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Wizard.
+DWElementalAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Wizard.
+DWElementalAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Wizard.
+DWElementalAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Wizard.
+#                                     FORMULA    =           ((PlayerLevel*DWElementalAttackSuccessRateConstA)+(PlayerStrength/DWElementalAttackSuccessRateConstB)+((PlayerDexterity*DWElementalAttackSuccessRateConstC)/DWElementalAttackSuccessRateConstD))    #
+DKElementalAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Knight.
+DKElementalAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Knight.
+DKElementalAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Knight.
+DKElementalAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Knight.
+#                                     FORMULA    =           ((PlayerLevel*DKElementalAttackSuccessRateConstA)+(PlayerStrength/DKElementalAttackSuccessRateConstB)+((PlayerDexterity*DKElementalAttackSuccessRateConstC)/DKElementalAttackSuccessRateConstD))    #
+FEElementalAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    Fairy    Elf.
+FEElementalAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    Fairy    Elf.
+FEElementalAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    Fairy    Elf.
+FEElementalAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    Fairy    Elf.
+#                                     FORMULA    =           ((PlayerLevel*FEElementalAttackSuccessRateConstA)+(PlayerStrength/FEElementalAttackSuccessRateConstB)+((PlayerDexterity*FEElementalAttackSuccessRateConstC)/FEElementalAttackSuccessRateConstD))    #
+MGElementalAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Magic        Gladiator.
+MGElementalAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Magic        Gladiator.
+MGElementalAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Magic        Gladiator.
+MGElementalAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Magic        Gladiator.
+#                                     FORMULA    =           ((PlayerLevel*MGElementalAttackSuccessRateConstA)+(PlayerStrength/MGElementalAttackSuccessRateConstB)+((PlayerDexterity*MGElementalAttackSuccessRateConstC)/MGElementalAttackSuccessRateConstD))    #
+DLElementalAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Lord.
+DLElementalAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Lord.
+DLElementalAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Lord.
+DLElementalAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Dark         Lord.
+#                                     FORMULA    =           ((PlayerLevel*DLElementalAttackSuccessRateConstA)+(PlayerStrength/DLElementalAttackSuccessRateConstB)+((PlayerDexterity*DLElementalAttackSuccessRateConstC)/DLElementalAttackSuccessRateConstD))    #
+SUElementalAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Summoner.
+SUElementalAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Summoner.
+SUElementalAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Summoner.
+SUElementalAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    the      Summoner.
+#                                     FORMULA    =           ((PlayerLevel*SUElementalAttackSuccessRateConstA)+(PlayerStrength/SUElementalAttackSuccessRateConstB)+((PlayerDexterity*SUElementalAttackSuccessRateConstC)/SUElementalAttackSuccessRateConstD))    #
+RFElementalAttackSuccessRateConstA    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    Rage     Fighter.
+RFElementalAttackSuccessRateConstB    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    Rage     Fighter.
+RFElementalAttackSuccessRateConstC    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    Rage     Fighter.
+RFElementalAttackSuccessRateConstD    ->         Constant    formula                                                                                                                                                                                             for    calculating    the    chance    of    elemental    attack    Rage     Fighter.
+#                                     FORMULA    =           ((PlayerLevel*RFElementalAttackSuccessRateConstA)+(PlayerStrength/RFElementalAttackSuccessRateConstB)+((PlayerDexterity*RFElementalAttackSuccessRateConstC)/RFElementalAttackSuccessRateConstD))    #
 
-;==================================================
-; Two Weapons Damage Rate
-;==================================================
-DWTwoWeaponsDamageRate -> Two Weapon damage rate DW.
-DKTwoWeaponsDamageRate -> Two Weapon damage rate DK.
-FETwoWeaponsDamageRate -> Two Weapon damage rate FE.
-MGTwoWeaponsDamageRate -> Two Weapon damage rate MG.
-DLTwoWeaponsDamageRate -> Two Weapon damage rate DL.
-SUTwoWeaponsDamageRate -> Two Weapon damage rate SU.
-RFTwoWeaponsDamageRate -> Two Weapon damage rate RF.
+=================================================
+Character                                            Elemental    Defense    Success    Rate    Settings
+=================================================
+
+DWElementalDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                             the    chance    of    elemental    defense    of       the          Dark          Wizard.
+#                                      FORMULA    =           (PlayerDexterity    /      DWElementalDefenseSuccessRateConstA)    #
+DKElementalDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                             the    chance    of    elemental    defense    of       the          Dark          Knight.
+#                                      FORMULA    =           (PlayerDexterity    /      DKElementalDefenseSuccessRateConstA)    #
+FEElementalDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                             the    chance    of    elemental    defense    Fairy    Elf.
+#                                      FORMULA    =           (PlayerDexterity    /      FEElementalDefenseSuccessRateConstA)    #
+MGElementalDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                             the    chance    of    elemental    defense    of       Magic        Gladiator.
+#                                      FORMULA    =           (PlayerDexterity    /      MGElementalDefenseSuccessRateConstA)    #
+DLElementalDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                             the    chance    of    elemental    defense    of       the          Dark          Lord.
+#                                      FORMULA    =           (PlayerDexterity    /      DLElementalDefenseSuccessRateConstA)    #
+SUElementalDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                             the    chance    of    elemental    defense    of       Summoner.
+#                                      FORMULA    =           (PlayerDexterity    /      SUElementalDefenseSuccessRateConstA)    #
+RFElementalDefenseSuccessRateConstA    ->         Constant    formula             for    calculating                             the    chance    of    elemental    defense    of       Rage         Fighter.
+#                                      FORMULA    =           (PlayerDexterity    /      RFElementalDefenseSuccessRateConstA)    #
 
 ;==================================================
-; Character Max Attack Speed Settings
+;                                                      Two    Weapons    Damage    Rate
 ;==================================================
-DWMaxAttackPhysiSpeed -> Maximum character physi speed.
-DKMaxAttackPhysiSpeed -> Maximum character physi speed.
-FEMaxAttackPhysiSpeed -> Maximum character physi speed.
-MGMaxAttackPhysiSpeed -> Maximum character physi speed.
-DLMaxAttackPhysiSpeed -> Maximum character physi speed.
-SUMaxAttackPhysiSpeed -> Maximum character physi speed.
-RFMaxAttackPhysiSpeed -> Maximum character physi speed.
-DWMaxAttackMagicSpeed -> Maximum character magic speed.
-DKMaxAttackMagicSpeed -> Maximum character magic speed.
-FEMaxAttackMagicSpeed -> Maximum character magic speed.
-MGMaxAttackMagicSpeed -> Maximum character magic speed.
-DLMaxAttackMagicSpeed -> Maximum character magic speed.
-SUMaxAttackMagicSpeed -> Maximum character magic speed.
-RFMaxAttackMagicSpeed -> Maximum character magic speed.
+DWTwoWeaponsDamageRate                                 ->     Two        Weapon    damage    rate    DW.
+DKTwoWeaponsDamageRate                                 ->     Two        Weapon    damage    rate    DK.
+FETwoWeaponsDamageRate                                 ->     Two        Weapon    damage    rate    FE.
+MGTwoWeaponsDamageRate                                 ->     Two        Weapon    damage    rate    MG.
+DLTwoWeaponsDamageRate                                 ->     Two        Weapon    damage    rate    DL.
+SUTwoWeaponsDamageRate                                 ->     Two        Weapon    damage    rate    SU.
+RFTwoWeaponsDamageRate                                 ->     Two        Weapon    damage    rate    RF.
+
+;==================================================
+;                                                      Character    Max        Attack       Speed    Settings
+;==================================================
+DWMaxAttackPhysiSpeed                                  ->           Maximum    character    physi    speed.
+DKMaxAttackPhysiSpeed                                  ->           Maximum    character    physi    speed.
+FEMaxAttackPhysiSpeed                                  ->           Maximum    character    physi    speed.
+MGMaxAttackPhysiSpeed                                  ->           Maximum    character    physi    speed.
+DLMaxAttackPhysiSpeed                                  ->           Maximum    character    physi    speed.
+SUMaxAttackPhysiSpeed                                  ->           Maximum    character    physi    speed.
+RFMaxAttackPhysiSpeed                                  ->           Maximum    character    physi    speed.
+DWMaxAttackMagicSpeed                                  ->           Maximum    character    magic    speed.
+DKMaxAttackMagicSpeed                                  ->           Maximum    character    magic    speed.
+FEMaxAttackMagicSpeed                                  ->           Maximum    character    magic    speed.
+MGMaxAttackMagicSpeed                                  ->           Maximum    character    magic    speed.
+DLMaxAttackMagicSpeed                                  ->           Maximum    character    magic    speed.
+SUMaxAttackMagicSpeed                                  ->           Maximum    character    magic    speed.
+RFMaxAttackMagicSpeed                                  ->           Maximum    character    magic    speed.

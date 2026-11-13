@@ -1,19 +1,30 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-// NPC Settings
-//--------------------------------------------------------------------------------------------------------------------------------------------------
-//	Monster: 	Index from Monster/Monster.txt
-//	Style: 		10 - Gift Code
-//---------------------------------------------------------------------------------------------------------------------------------------
-// 	[0~2000]	[ X ]		[ -1 / 0~3 ]	[  -1 / 1~1000  ]		[  -1/0~99999   ] 	[   -1/0~99999    ]		[-1 / 0~6] 	[-1 / 0~100]
-// 	Monster		Style		AccountLevel	MinLevel MaxLevel		MinReset MaxReset 	MinMReset MaxMReset		PKLevel    	RankUser    
-//---------------------------------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// Settings
+// Which NPC it is, what it does and who may use it.
+//   NPC: The NPC players talk to.
+//   Type: Free Access files carry one more value after the type (turn the NPC window off). The panel does not show it.
+//   Min. Account Level: -1 Any | 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Lowest level: The lowest character level that can use it.
+//   Highest level: The highest character level that can use it.
+//   Fewest resets: The fewest resets a character can have to use it.
+//   Most resets: The most resets a character can have to use it.
+//   Fewest master resets: The fewest master resets a character can have to use it.
+//   Most master resets: The most master resets a character can have to use it.
+//   Highest PK level: The highest PK level that can use it (6 is the worst; the server does not accept more than 6).
+//   Lowest user rank: The lowest user rank that can use it.
+//----------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [0~3]           [Number]    [Number]    [Number]    [Number]    [Number]     [Number]     [Number]    [Number]
+//  Npc         Style       AccountLevel    MinLevel    MaxLevel    MinReset    MaxReset    MinMReset    MaxMReset    PkLevel     RankUser
+//----------------------------------------------------------------------------------------------------------------------------------------
 0                                                                                                                                       
-	256			10			-1				-1		-1		  		-1	  	-1			-1	      -1			-1	     	-1
+    256         10          -1              -1          -1          -1          -1          -1           -1           -1          -1
 end
 
 //----------------------------------------------------

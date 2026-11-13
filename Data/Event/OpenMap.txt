@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //--------------------------------------------------------------------------------------------------------------------------------------
 //		[0-113]																		[   0 / 1   ]		Gate		[1 - 999]		[Msg]		[Msg]		[Msg]
 //		Map Number		Enter Gate		X1	Y1	X2	Y2			Time	EnterTime	MoveMapOpened		Exit		MaxUsers		Open		Close		CantEnter
@@ -22,29 +23,41 @@ end
 //		50				-1			-1			17			11
 end
 
-//--------------------------------------------------------------------------------------------------------------------------------------
-// ENG
-//--------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------
+// Messages, English
+// The texts of the open map in English: 0 opened, 1 closed, 2 cannot enter.
+//   When: 0 Map opened | 1 Map closed | 2 Cannot enter
+//----------------------------------------------------------
+//  Index    Message
+//----------------------------------------------------------
 2
-	0	"Dungeon Map is opened now!"
-	1	"Dungeon Map has closed!"
-	2	"Can't enter Dungeon now... try again later."
+    0        "Dungeon Map is opened now!"
+    1        "Dungeon Map has closed!"
+    2        "Can't enter Dungeon now... try again later."
 end
 
-//--------------------------------------------------------------------------------------------------------------------------------------
-// SPN
-//--------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------
+// Messages, Spanish
+// The texts of the open map in Spanish: 0 opened, 1 closed, 2 cannot enter.
+//   When: 0 Map opened | 1 Map closed | 2 Cannot enter
+//----------------------------------------------------------
+//  Index    Message
+//----------------------------------------------------------
 3
-	0	"Dungeon Map is opened now!"
-	1	"Dungeon Map has closed!"
-	2	"Can't enter Dungeon now... try again later."
+    0        "Dungeon Map is opened now!"
+    1        "Dungeon Map has closed!"
+    2        "Can't enter Dungeon now... try again later."
 end
 
-//--------------------------------------------------------------------------------------------------------------------------------------
-// POR
-//--------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------
+// Messages, Portuguese
+// The texts of the open map in Portuguese: 0 opened, 1 closed, 2 cannot enter.
+//   When: 0 Map opened | 1 Map closed | 2 Cannot enter
+//----------------------------------------------------------
+//  Index    Message
+//----------------------------------------------------------
 4
-	0	"Dungeon Map is opened now!"
-	1	"Dungeon Map has closed!"
-	2	"Can't enter Dungeon now... try again later."
+    0        "Dungeon Map is opened now!"
+    1        "Dungeon Map has closed!"
+    2        "Can't enter Dungeon now... try again later."
 end

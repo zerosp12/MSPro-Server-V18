@@ -1,40 +1,107 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//--------------------------------------------------------------------------------------------------------------------
-//  Block Skill Use on Event Map
-//--------------------------------------------------------------------------------------------------------------------
-//          [   Rango   ]   [0/1]
-//	IDSkill	Map1	Map2	EnableUseOnSafe	
-//--------------------------------------------------------------------------------------------------------------------
-//Manashield
-	16		11		17		1	//ManaShield - Blood Castle 1 / 7
-	16		52		52		1	//ManaShield - Blood Castle 8
+//----------------------------------------------------------
+// Skill Safe Zones
+// Which skills (buffs) a player may cast while standing on the safe zone cells of a map. A skill that is not listed cannot be cast there. Careful: the GameServer source compares the maps in a way that makes a row match every map up to its first map, not the range (unverified in the shipped build).
+//   Skill: Skill the row is for.
+//   First map: First map of the range.
+//   Last map: Last map of the range.
+//   Usable in the safe zone: Yes lets the skill be cast on the safe zone; No keeps it blocked.
+//----------------------------------------------------------
+//  IDSkill    Map1    Map2    EnableUseOnSafe
+//----------------------------------------------------------
+    16         11      17      1                  //ManaShield - Blood Castle 1 / 7
+    16         52      52      1                  //ManaShield - Blood Castle 8
 	
-//Infinity Arrow
-	77		11		17		1
-	77		52		52		1
-//Berserker
-	218		11		17		1
-	218		52		52		1
+//----------------------------------------------------------
+// Skill Safe Zones
+// Which skills (buffs) a player may cast while standing on the safe zone cells of a map. A skill that is not listed cannot be cast there. Careful: the GameServer source compares the maps in a way that makes a row match every map up to its first map, not the range (unverified in the shipped build).
+//   Skill: Skill the row is for.
+//   First map: First map of the range.
+//   Last map: Last map of the range.
+//   Usable in the safe zone: Yes lets the skill be cast on the safe zone; No keeps it blocked.
+//----------------------------------------------------------
+//  IDSkill    Map1    Map2    EnableUseOnSafe
+//----------------------------------------------------------
+    77         11      17      1
+    77         52      52      1
+//----------------------------------------------------------
+// Skill Safe Zones
+// Which skills (buffs) a player may cast while standing on the safe zone cells of a map. A skill that is not listed cannot be cast there. Careful: the GameServer source compares the maps in a way that makes a row match every map up to its first map, not the range (unverified in the shipped build).
+//   Skill: Skill the row is for.
+//   First map: First map of the range.
+//   Last map: Last map of the range.
+//   Usable in the safe zone: Yes lets the skill be cast on the safe zone; No keeps it blocked.
+//----------------------------------------------------------
+//  IDSkill    Map1    Map2    EnableUseOnSafe
+//----------------------------------------------------------
+    218        11      17      1
+    218        52      52      1
 	
-//Greater Life		
-	48		11		17		1	//Greater Life - Blood Castle 1 / 7
-	48		52		52		1	//Greater Life - Blood Castle 8
-//Greater Defense		
-	27		11		17		1	//Greater Defense - Blood Castle 1 / 7
-	27		52		52		1	//Greater Defense - Blood Castle 8
-//Greater Damage		
-	28		11		17		1	//Greater Damage - Blood Castle 1 / 7
-	28		52		52		1	//Greater Damage - Blood Castle 8
-//Critical Damage 		
-	64		11		17		1	//Critical Damage - Blood Castle 1 / 7
-	64		52		17		1	//Critical Damage - Blood Castle 8
-//Damage Reflect	
-	217		11		17		1	//Damage Reflect - Blood Castle 1 / 7
-	217		52		52		1	//Damage Reflect - Blood Castle 8	
+//----------------------------------------------------------
+// Skill Safe Zones
+// Which skills (buffs) a player may cast while standing on the safe zone cells of a map. A skill that is not listed cannot be cast there. Careful: the GameServer source compares the maps in a way that makes a row match every map up to its first map, not the range (unverified in the shipped build).
+//   Skill: Skill the row is for.
+//   First map: First map of the range.
+//   Last map: Last map of the range.
+//   Usable in the safe zone: Yes lets the skill be cast on the safe zone; No keeps it blocked.
+//----------------------------------------------------------
+//  IDSkill    Map1    Map2    EnableUseOnSafe
+//----------------------------------------------------------
+    48         11      17      1                  //Greater Life - Blood Castle 1 / 7
+    48         52      52      1                  //Greater Life - Blood Castle 8
+//----------------------------------------------------------
+// Skill Safe Zones
+// Which skills (buffs) a player may cast while standing on the safe zone cells of a map. A skill that is not listed cannot be cast there. Careful: the GameServer source compares the maps in a way that makes a row match every map up to its first map, not the range (unverified in the shipped build).
+//   Skill: Skill the row is for.
+//   First map: First map of the range.
+//   Last map: Last map of the range.
+//   Usable in the safe zone: Yes lets the skill be cast on the safe zone; No keeps it blocked.
+//----------------------------------------------------------
+//  IDSkill    Map1    Map2    EnableUseOnSafe
+//----------------------------------------------------------
+    27         11      17      1                  //Greater Defense - Blood Castle 1 / 7
+    27         52      52      1                  //Greater Defense - Blood Castle 8
+//----------------------------------------------------------
+// Skill Safe Zones
+// Which skills (buffs) a player may cast while standing on the safe zone cells of a map. A skill that is not listed cannot be cast there. Careful: the GameServer source compares the maps in a way that makes a row match every map up to its first map, not the range (unverified in the shipped build).
+//   Skill: Skill the row is for.
+//   First map: First map of the range.
+//   Last map: Last map of the range.
+//   Usable in the safe zone: Yes lets the skill be cast on the safe zone; No keeps it blocked.
+//----------------------------------------------------------
+//  IDSkill    Map1    Map2    EnableUseOnSafe
+//----------------------------------------------------------
+    28         11      17      1                  //Greater Damage - Blood Castle 1 / 7
+    28         52      52      1                  //Greater Damage - Blood Castle 8
+//----------------------------------------------------------
+// Skill Safe Zones
+// Which skills (buffs) a player may cast while standing on the safe zone cells of a map. A skill that is not listed cannot be cast there. Careful: the GameServer source compares the maps in a way that makes a row match every map up to its first map, not the range (unverified in the shipped build).
+//   Skill: Skill the row is for.
+//   First map: First map of the range.
+//   Last map: Last map of the range.
+//   Usable in the safe zone: Yes lets the skill be cast on the safe zone; No keeps it blocked.
+//----------------------------------------------------------
+//  IDSkill    Map1    Map2    EnableUseOnSafe
+//----------------------------------------------------------
+    64         11      17      1                  //Critical Damage - Blood Castle 1 / 7
+    64         52      17      1                  //Critical Damage - Blood Castle 8
+//----------------------------------------------------------
+// Skill Safe Zones
+// Which skills (buffs) a player may cast while standing on the safe zone cells of a map. A skill that is not listed cannot be cast there. Careful: the GameServer source compares the maps in a way that makes a row match every map up to its first map, not the range (unverified in the shipped build).
+//   Skill: Skill the row is for.
+//   First map: First map of the range.
+//   Last map: Last map of the range.
+//   Usable in the safe zone: Yes lets the skill be cast on the safe zone; No keeps it blocked.
+//----------------------------------------------------------
+//  IDSkill    Map1    Map2    EnableUseOnSafe
+//----------------------------------------------------------
+    217        11      17      1                  //Damage Reflect - Blood Castle 1 / 7
+    217        52      52      1                  //Damage Reflect - Blood Castle 8
 end

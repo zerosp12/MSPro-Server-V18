@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
 //--------------------------------------------------------------------------------------------
 // [0~29]       [*/0000]    [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
@@ -20,16 +21,46 @@
 end
 
 1
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// [0~29]       [Max 32 Char]  [1~59]      [InMin]     [InMin]     [InMin]     [Gate.txt]  [Gate.txt]  [1~100]   [1~100]   [*/N]      [*/0/N]    [*/N]      [*/N]      [*/N]     [*/N]     [*/N]     [*/N]       [*/N]	     [			       (Class 0~2)				        ]
-// EventIndex   Name           AlarmTime   StandTime   EventTime   CloseTime   StartGate   FinalGate   MinUser   MaxUser   MaxDeath   MinLevel   MaxLevel   MinMastLv  MaxMastLv MinReset  MaxReset  MinMasterR  MaxMasterR   DW      DK      FE      MG      DL      SU      RF      GL
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   0           "Ultimate"      5           1           1           5           750         1           2         100       6          0          400        *          *         *         *         *           *            1       1       1       1       1       1       1	1
-   1           "DMxDM"         5           0           5           0           751         1           4         100       *          0          400        *          *         *         *         *           *            0       0       0       1       0       0       0	0
-   2           "GMxGM"         5           0           5           0           752         1           4         100       *          0          400        *          *         *         *         *           *            1       0       0       0       0       0       0	0
-   3           "BMxBM"         5           0           5           0           753         1           4         100       *          0          400        *          *         *         *         *           *            0       1       0       0       0       0       0	0
-   4           "FMxFM"         5           0           5           0           754         1           4         100       *          0          400        *          *         *         *         *           *            0       0       0       0       0       0       1	0
-   5           "LExLE"         5           0           5           0           755         1           4         100       *          0          400        *          *         *         *         *           *            0       0       0       0       1       0       0	0
-   6           "ELFxELF"       5           0           5           0           756         1           4         100       *          0          400        *          *         *         *         *           *            0       0       1       0       0       0       0	0
-   7           "SUMxSUM"       5           0           5           0           757         1           4         100       *          0          400        *          *         *         *         *           *            0       0       0       0       0       1       0	0
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Arenas
+// One row per arena: its times, gates and who may enter. A row must exist for the arena to work.
+//   Arena: Number of the arena (0 to 29). The prizes and the schedule use it.
+//   Name: Name of the arena shown in the announcements (up to 31 characters).
+//   Alarm before (minutes): Minutes before the scheduled time that the doors open and players can enter (1 to 59). Everyone is told at each minute.
+//   Waiting time (minutes): Minutes of waiting inside after the doors close, before the fight starts.
+//   Lasts (minutes): Minutes the fight lasts.
+//   Closes after (minutes): Minutes after the fight before the arena can open again. The prizes are given when it starts.
+//   Gate to enter: Gate players walk into to enter the arena (Gate.txt).
+//   Gate at the end: Gate where players are taken when they are defeated or when it ends.
+//   Fewest players: Fewest players for the fight to start; with fewer it is cancelled and the arena goes back to waiting. * counts as 1.
+//   Most players: Most players that can enter (up to 100).
+//   Deaths allowed: Deaths after which a player is taken out. * means never.
+//   Lowest level: The lowest number of level that can enter. * has no limit.
+//   Highest level: The highest number of level that can enter. * has no limit.
+//   Lowest master level: The lowest number of master level that can enter. * has no limit.
+//   Highest master level: The highest number of master level that can enter. * has no limit.
+//   Fewest resets: The lowest number of resets that can enter. * has no limit.
+//   Most resets: The highest number of resets that can enter. * has no limit.
+//   Fewest master resets: The lowest number of master resets that can enter. * has no limit.
+//   Most master resets: The highest number of master resets that can enter. * has no limit.
+//   Dark Wizard: 0 Not allowed | 1 Allowed, any evolution | 2 From the second evolution | 3 From the third evolution | 4 Only the fourth evolution
+//   Dark Knight: 0 Not allowed | 1 Allowed, any evolution | 2 From the second evolution | 3 From the third evolution | 4 Only the fourth evolution
+//   Fairy Elf: 0 Not allowed | 1 Allowed, any evolution | 2 From the second evolution | 3 From the third evolution | 4 Only the fourth evolution
+//   Magic Gladiator: 0 Not allowed | 1 Allowed, any evolution | 2 From the second evolution | 3 From the third evolution | 4 Only the fourth evolution
+//   Dark Lord: 0 Not allowed | 1 Allowed, any evolution | 2 From the second evolution | 3 From the third evolution | 4 Only the fourth evolution
+//   Summoner: 0 Not allowed | 1 Allowed, any evolution | 2 From the second evolution | 3 From the third evolution | 4 Only the fourth evolution
+//   Rage Fighter: 0 Not allowed | 1 Allowed, any evolution | 2 From the second evolution | 3 From the third evolution | 4 Only the fourth evolution
+//   Grow Lancer: 0 Not allowed | 1 Allowed, any evolution | 2 From the second evolution | 3 From the third evolution | 4 Only the fourth evolution
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~29]    [Text]        [1~59]       [Number]     [Number]     [Number]     [Number]     [Number]     [1~100]    [1~100]    [Number]    [Number]    [Number]    [Number]          [Number]          [Number]    [Number]    [Number]          [Number]          [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  Index     Name          AlarmTime    StandTime    EventTime    CloseTime    StartGate    FinalGate    MinUser    MaxUser    MaxDeath    MinLevel    MaxLevel    MinMasterLevel    MaxMasterLevel    MinReset    MaxReset    MinMasterReset    MaxMasterReset    DW          DK          FE          MG          DL          SU          RF          GL
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         "Ultimate"    5            1            1            5            750          1            2          100        6           0           400         *                 *                 *           *           *                 *                 1           1           1           1           1           1           1           1
+    1         "DMxDM"       5            0            5            0            751          1            4          100        *           0           400         *                 *                 *           *           *                 *                 0           0           0           1           0           0           0           0
+    2         "GMxGM"       5            0            5            0            752          1            4          100        *           0           400         *                 *                 *           *           *                 *                 1           0           0           0           0           0           0           0
+    3         "BMxBM"       5            0            5            0            753          1            4          100        *           0           400         *                 *                 *           *           *                 *                 0           1           0           0           0           0           0           0
+    4         "FMxFM"       5            0            5            0            754          1            4          100        *           0           400         *                 *                 *           *           *                 *                 0           0           0           0           0           0           1           0
+    5         "LExLE"       5            0            5            0            755          1            4          100        *           0           400         *                 *                 *           *           *                 *                 0           0           0           0           1           0           0           0
+    6         "ELFxELF"     5            0            5            0            756          1            4          100        *           0           400         *                 *                 *           *           *                 *                 0           0           1           0           0           0           0           0
+    7         "SUMxSUM"     5            0            5            0            757          1            4          100        *           0           400         *                 *                 *           *           *                 *                 0           0           0           0           0           1           0           0
 end             

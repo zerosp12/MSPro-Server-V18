@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
 //---------------------------------------------------------------------------------------
 // [0~40]       [*/N]  [*/0~12]  [*/0~31]  [*/1~7]  [*/0~23]  [*/0~59]  [*/0~59]
@@ -13,17 +14,33 @@
 end
 
 1
-//----------------------------------------------------------------
-// [0~40]	   [Max 128 Char] 			  [1~59]      [InMin]
-// QuizIndex   Global NameTitle           AlarmTime   EventTime
-//----------------------------------------------------------------
-   0           "Questions"                1           1
+//----------------------------------------------------------
+// Quizzes
+// One row per quiz: its name and how long the question stays open.
+//   Quiz: Number of the quiz (0 to 23).
+//   Name: Name shown in the announcements (up to 31 characters).
+//   Alarm before (minutes): Minutes before the start that everyone is warned (1 to 59).
+//   Lasts (minutes): Minutes the question stays open.
+//----------------------------------------------------------
+//  [0~23]    [Text]         [1~59]       [Number]
+//  Quiz      Name           AlarmTime    EventTime
+//----------------------------------------------------------
+    0         "Questions"    1            1
 end
 
 2
-//------------------------------------------------------------------------------
-// [0~40]	     [   0~9999999999   ]		 [Max 128 Char]       [Max 32 Char]
-// QuizIndex     WC      WP	      GP         Question			  Answer		 
-//------------------------------------------------------------------------------
-   0      		 10       0       0	     	 "1+1?"				   "2"
+//------------------------------------------------------------------
+// Questions
+// The questions. When a quiz starts, one question is picked at random among all of them.
+//   Question number: Number of the question. Use 0, 1, 2, 3... with no gaps and no repeats: a repeated number is ignored and a missing number makes a quiz start with no question.
+//   WCoin C: WCoin C given to the first right answer. 0 gives none.
+//   WCoin P: WCoin P given to the first right answer. 0 gives none.
+//   Goblin Points: Goblin Points given to the first right answer. 0 gives none.
+//   Question: The question that is announced (up to 127 characters).
+//   Answer: The right answer (up to 127 characters). Letter case does not matter.
+//------------------------------------------------------------------
+//  [0~40]    [Number]    [Number]    [Number]    [Text]      [Text]
+//  Quiz      WC          WP          GP          Question    Answer
+//------------------------------------------------------------------
+    0         10          0           0           "1+1?"      "2"
 end

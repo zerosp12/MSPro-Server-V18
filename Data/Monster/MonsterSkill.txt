@@ -1,13 +1,36 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Monster Skills
-// The skill units each monster uses.
+// The skill units each monster uses, up to 10. Each one has a kind (Type) that tells the server when to use it, and the unit that runs.
+//   Monster: Monster that uses these skills. One row per monster; a second row for the same monster replaces the first.
+//   Name: Only a note for you; the server does not use it.
+//   Kind 1: When the server looks for this skill: 0 = the monster's normal attack (a unit of kind 0 is chosen at random); 1 and 2 = the first and second chance of the AI action Skill attack; 10, 20, 30 and 31 = skills the Kanturu, Raklion and Nightmare scripts call by this number. Several units of the same kind: one is picked at random.
+//   Skill unit 1: Skill unit that runs (a row of Monster Skill Units). None leaves this slot empty.
+//   Kind 2: Same as kind 1.
+//   Skill unit 2: Same as unit 1.
+//   Kind 3: Same as kind 1.
+//   Skill unit 3: Same as unit 1.
+//   Kind 4: Same as kind 1.
+//   Skill unit 4: Same as unit 1.
+//   Kind 5: Same as kind 1.
+//   Skill unit 5: Same as unit 1.
+//   Kind 6: Same as kind 1.
+//   Skill unit 6: Same as unit 1.
+//   Kind 7: Same as kind 1.
+//   Skill unit 7: Same as unit 1.
+//   Kind 8: Same as kind 1.
+//   Skill unit 8: Same as unit 1.
+//   Kind 9: Same as kind 1.
+//   Skill unit 9: Same as unit 1.
+//   Kind 10: Same as kind 1.
+//   Skill unit 10: Same as unit 1.
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //  Monster    Name                    Type1    Unit1    Type2    Unit2    Type3    Unit3    Type4    Unit4    Type5    Unit5    Type6    Unit6    Type7    Unit7    Type8    Unit8    Type9    Unit9    Type10    Unit10
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -81,7 +104,29 @@
     613        "Silla"                 *        *        0        91       0        92       0        93       *        *        *        *        *        *        *        *        *        *        *         *
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Monster Skills
-// The skill units each monster uses.
+// The skill units each monster uses, up to 10. Each one has a kind (Type) that tells the server when to use it, and the unit that runs.
+//   Monster: Monster that uses these skills. One row per monster; a second row for the same monster replaces the first.
+//   Name: Only a note for you; the server does not use it.
+//   Kind 1: When the server looks for this skill: 0 = the monster's normal attack (a unit of kind 0 is chosen at random); 1 and 2 = the first and second chance of the AI action Skill attack; 10, 20, 30 and 31 = skills the Kanturu, Raklion and Nightmare scripts call by this number. Several units of the same kind: one is picked at random.
+//   Skill unit 1: Skill unit that runs (a row of Monster Skill Units). None leaves this slot empty.
+//   Kind 2: Same as kind 1.
+//   Skill unit 2: Same as unit 1.
+//   Kind 3: Same as kind 1.
+//   Skill unit 3: Same as unit 1.
+//   Kind 4: Same as kind 1.
+//   Skill unit 4: Same as unit 1.
+//   Kind 5: Same as kind 1.
+//   Skill unit 5: Same as unit 1.
+//   Kind 6: Same as kind 1.
+//   Skill unit 6: Same as unit 1.
+//   Kind 7: Same as kind 1.
+//   Skill unit 7: Same as unit 1.
+//   Kind 8: Same as kind 1.
+//   Skill unit 8: Same as unit 1.
+//   Kind 9: Same as kind 1.
+//   Skill unit 9: Same as unit 1.
+//   Kind 10: Same as kind 1.
+//   Skill unit 10: Same as unit 1.
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //  Monster    Name                   Type1    Unit1    Type2    Unit2    Type3    Unit3    Type4    Unit4    Type5    Unit5    Type6    Unit6    Type7    Unit7    Type8    Unit8    Type9    Unit9    Type10    Unit10
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

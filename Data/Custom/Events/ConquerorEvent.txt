@@ -1,98 +1,156 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//--------------------------------------------------------------------
-// PVP Event
-//--------------------------------------------------------------------
-//		Min	Max	Event	NPC	NPC	NPC						OnlyFor	Debug
-//	ON	Player	Player	MapID	Index	X	Y	Guild	Log
-//--------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------------------------------
+// Event
+// The basic settings of the event.
+//   Enabled: 1 turns the event on, 0 off.
+//   Fewest players: Fewest registered players needed when the registration closes; with fewer, the event is cancelled.
+//   Most players: Most players. The server does not use this value (unverified: it is read but never checked).
+//   Map: Map where the registration NPC stands.
+//   Registration NPC: Monster number of the NPC that registers players.
+//   NPC X: Position X of the registration NPC on that map.
+//   NPC Y: Position Y of the registration NPC on that map.
+//   Only for guild members: Keep at 0. With 1 the server code refuses the players that are in a guild (it looks inverted; unverified in game).
+//   Write a log (debug): 1 writes every step of the event to the log (only to look for problems).
+//-------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]      [Number]      [Number]    [Number]    [0~255]    [0~255]    [Number]     [Number]
+//  Enable      MinPlayers    MaxPlayers    MapID       NpcIndex    NpcX       NpcY       OnlyGuild    Log
+//-------------------------------------------------------------------------------------------------------------
 0
-	1	2	10	38	241	108	160	0	1
+    1           2             10            38          241         108        160        0            1
 end
 
-//--------------------------------------------------------------------
-// Event Times.
-// Wait:	Time for Register
-// Start: 	Seconds before Event Start
-// Duration: 	Minutes for Event
-// End: 	Seconds to warp Players after Event End
-//	 Wait	Start	Duration	End	
-//--------------------------------------------------------------------
+//----------------------------------------------------------
+// Times
+// The times of one run of the event.
+//   Time to register: Minutes before the start time when the NPC appears and registration opens.
+//   Seconds before it starts: Seconds players wait inside after the registration closes, before the event starts.
+//   Duration (minutes): Minutes the event lasts once it starts.
+//   Seconds before players are warped out: Seconds between the end of the event (prizes given) and the moment players are moved out.
+//----------------------------------------------------------
+//  Wait    Start    Duration    End
+//----------------------------------------------------------
 1
-	2	30	3		10
+    2       30       3           10
 end
 
-//--------------------------------------------------------------------
-// Event Schedule
-//	Year	Month	Day	DayOfW	Hour	Minutes	Sec
-//--------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+// Schedule
+// When the event opens. The second is not used: it starts on the minute.
+//   Year: The year when the registration is due to start. * means every year.
+//   Month: The month when the registration is due to start. * means every month.
+//   Day: The day of the month when the registration is due to start. * means every day of the month.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour when the registration is due to start. * means every hour.
+//   Minute: The minute when the registration is due to start. * means every minute.
+//   Second: The second when the registration is due to start. * means every second.
+//----------------------------------------------------------------------------------------
+//  [*/1970~9999]    [*/1~12]    [*/1~31]    [Number]     [*/0~23]    [*/0~59]    [*/0~59]
+//  Year             Month       Day         DayOfWeek    Hour        Minute      Second
+//----------------------------------------------------------------------------------------
 2
-	*	*	*	*	16	58	0
-	*	*	*	*	17	45	0
-	*	*	*	*	20	03	0
+    *                *           *           *            16          58          0
+    *                *           *           *            17          45          0
+    *                *           *           *            20          03          0
 end
 
-//--------------------------------------------------------------------
-// Event Coords.
-//--------------------------------------------------------------------
-//	In/Out	Map	X	Y	X2	Y2
-//--------------------------------------------------------------------
+//------------------------------------------------------------------
+// Coordinates
+// Areas of the event. Each zone is a rectangle on a map; when players are placed in one, a free spot of the rectangle is chosen.
+//   Zone: 0 Event zone (where points count) | 1 Player warp zone (where players start and respawn) | 2 Exit zone (where players who log in inside the event are sent) | 3 End zone (where players go when it ends)
+//   Map: Map of the zone.
+//   From X: Left side of the zone.
+//   From Y: Top side of the zone.
+//   To X: Right side of the zone (not less than the left side).
+//   To Y: Bottom side of the zone (not less than the top side).
+//------------------------------------------------------------------
+//  [Number]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]
+//  Pos         Map         X          Y          X2         Y2
+//------------------------------------------------------------------
 3
-	0	38	40	171	90	237	//Event Zone
-	1	38	43	173	51	178	//Player Warp Zone
-	2	0	125	125	125	125	//Character Close - Player Coords.
-	3	38	108	160	38	160	//End Event - Player Coords.
+    0           38          40         171        90         237        //Event Zone
+    1           38          43         173        51         178        //Player Warp Zone
+    2           0           125        125        125        125        //Character Close - Player Coords.
+    3           38          108        160        38         160        //End Event - Player Coords.
 end
 
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // Monsters
-//	ID	X1	Y1	X2	Y2	Count	Points
-//--------------------------------------------------------------------
+// Monsters created when the event starts. Killing one inside the event zone gives points.
+//   Monster: Monster that is created.
+//   From X: Left side of the area where they appear.
+//   From Y: Top side of the area where they appear.
+//   To X: Right side of the area where they appear.
+//   To Y: Bottom side of the area where they appear.
+//   How many: How many of this monster are created.
+//   Points: Points the player gets for killing each one. 0 gives none.
+//------------------------------------------------------------------------------
+//  [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [Number]    [Number]
+//  Monster     X1         Y1         X2         Y2         Count       Points
+//------------------------------------------------------------------------------
 4
-	334	75	205	81	205	5	200	//Derecha
-	358	46	223	48	227	5	200	//Arriba Derecha
-	301	103	203	19	205	10	200	//Arriba Izquierda
-	77	51	202	58	203	10	200	//Centro
+    334         75         205        81         205        5           200         //Derecha
+    358         46         223        48         227        5           200         //Arriba Derecha
+    301         103        203        19         205        10          200         //Arriba Izquierda
+    77          51         202        58         203        10          200         //Centro
 end
 
 
-//--------------------------------------------------------------------
-//	Monster Power Up Settings
-//	ID	DmgMin	DmgMax	Def	MaxLife	Att%	Def%
-//--------------------------------------------------------------------
+//---------------------------------------------------------------------
+// Monster Power Up
+// Multipliers for the monsters of the event (1 keeps the normal value, 2 doubles it). The server applies every row to every monster of the event, whatever the Monster column says (unverified in game).
+//   Monster: Monster of the row (the server does not check it when applying: unverified).
+//   Minimum damage x: Multiplier of the minimum damage. Decimals are allowed.
+//   Maximum damage x: Multiplier of the maximum damage. Decimals are allowed.
+//   Defense x: Multiplier of the defense. Decimals are allowed.
+//   Life x: Multiplier of the life. Decimals are allowed.
+//   Attack rate x: Multiplier of the attack rate. Decimals are allowed.
+//   Defense rate x: Multiplier of the defense rate. Decimals are allowed.
+//---------------------------------------------------------------------
+//  Monster    DmgMin    DmgMax    Def    MaxLife    AttRate    DefRate
+//---------------------------------------------------------------------
 5
-	334	1.0	1.0	1.0	1.0	1.0	1.0
-	358	1.0	1.0	1.0	1.0	1.0	1.0
-	301	1.0	1.0	1.0	1.0	1.0	1.0
-	77	1.0	1.0	1.0	1.0	1.0	1.0
+    334        1.0       1.0       1.0    1.0        1.0        1.0
+    358        1.0       1.0       1.0    1.0        1.0        1.0
+    301        1.0       1.0       1.0    1.0        1.0        1.0
+    77         1.0       1.0       1.0    1.0        1.0        1.0
 end
 
-//--------------------------------------------------------------------
-// Rank Reward
-//	Pos	BagID
-//--------------------------------------------------------------------
+//----------------------------------------------------------
+// Rank Rewards
+// Item bag given to each position of the final ranking.
+//   Position: Position in the ranking (1 is the winner). Players that are not connected are skipped.
+//   Item bag: Item bag that is dropped for the player of that position.
+//----------------------------------------------------------
+//  Pos    BagID
+//----------------------------------------------------------
 6
-	1	150
-	2	149
-	3	148
-	4	147
-	5	147
-	6	147
-	7	147
-	8	147
-	9	147
-	10	147
+    1      150
+    2      149
+    3      148
+    4      147
+    5      147
+    6      147
+    7      147
+    8      147
+    9      147
+    10     147
 end
-//--------------------------------------------------------------------
-// Rank Flag
-//	Pos	Flag ID
-//--------------------------------------------------------------------
+//----------------------------------------------------------
+// Rank Flags
+// Flag (see Flag System) shown on the players that are in each position while the event goes on.
+//   Position: Position in the live ranking (1 is the leader).
+//   Flag: Number of the flag given to the player in that position (the IndexFlag of Flag System). Players outside these positions lose their flag.
+//----------------------------------------------------------
+//  Pos    Flag
+//----------------------------------------------------------
 7
-	1	10
-	2	11
-	3	12
+    1      10
+    2      11
+    3      12
 end

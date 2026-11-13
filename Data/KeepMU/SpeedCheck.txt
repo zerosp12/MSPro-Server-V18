@@ -1,21 +1,35 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // [Ref-1]
 //==============
 //0: Disconnect  / 1: Stuck Character / 2: Save Log Only / 3: Nothing
 
 0
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//															[Ref-1]
-//	[ 0 / 1 ]		[ 1 to 99 ]		[ Milliseconds ]		[ 0,1,2 ]		[ 0 / 1 ]		[ Seconds ]		[  0 / 1  ]			[     0 / 1    ]		[Latency / Base]	[Base x Add]	[Max PlusHits]
-//  [Enabled]		[Tolerance]		[Tolerance Time]		[Actions]		[Message]		[StuckTime]		[DebugTest]			[UseAttackSpeed]		[Base]				[ PlusHits ]
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	0				 3				4000				    2			    1				 0				0					1						100					1			     10
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Speed Check
+// Detects attacks faster than the character's speed allows and what to do with the player.
+//   Enabled: Turns the speed check on or off.
+//   Tolerance: How many too-fast attacks are allowed inside the tolerance time before the action is taken.
+//   Tolerance time (ms): Milliseconds after which the count of too-fast attacks starts again.
+//   Action: 0 Disconnect | 1 Stuck the character | 2 Save the log only | 3 Nothing
+//   Warn the player: Yes: the player is told that the attack was too fast.
+//   Stuck for (seconds): Seconds the character is stunned. Only for the stuck action.
+//   Debug log: Yes: writes the times of every attack to the log.
+//   The value compared is: 0 Agility | 1 Attack speed / magic speed
+//   Latency base: Milliseconds of latency that count as one step of extra tolerance.
+//   Latency times extra tolerance: Extra attacks allowed for each step of latency.
+//   Most extra hits allowed: The most extra attacks the latency can add.
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [1~99]       [Number]         [Number]    [Number]    [Number]     [Number]    [Number]          [Number]       [Number]               [Number]
+//  Enabled     Tolerance    ToleranceTime    Action      Message     StuckTime    DebugLog    UseAttackSpeed    LatencyBase    LatencyAddTolerance    LatencyAddMax
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           3            4000             2           1           0            0           1                 100            1                      10
 end
 
 //-----------------------------------------------------------------------------------
@@ -28,18 +42,23 @@ end
 //-----------------------------------------------------------------------------------
 
 1
-//-----------------------------------------------------------------------------------
+//----------------------------------------------------------
 // General Checks
-//-----------------------------------------------------------------------------------
-//  [0 / 6]											[ 0 to 9999 ]
-//	Class		Min Value		Max Value			Max SpeedTime
-//-----------------------------------------------------------------------------------
-    0             0               80                  440
-    0             81              160                 270
-    0             161             300                 200
-    0             301             800                 100
-    0             801             1500                60
-    0             1501            4500                35
+// The shortest time between attacks (in milliseconds) for each range of agility or attack speed, by class. A lower number is a faster attack.
+//   Class: The class this row is for.
+//   From value: The row applies from this agility or attack speed.
+//   To value: The row applies up to this agility or attack speed.
+//   Shortest time between attacks (ms): Milliseconds that must pass between two attacks. A lower number is a faster attack.
+//----------------------------------------------------------
+//  [Number]    [0~9999]        [0~9999]        [Number]
+//  Class       MinParameter    MaxParameter    Value
+//----------------------------------------------------------
+    0           0               80              440
+    0           81              160             270
+    0           161             300             200
+    0           301             800             100
+    0           801             1500            60
+    0           1501            4500            35
 end
 
 

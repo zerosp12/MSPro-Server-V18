@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //[0~99]       [0~8191]    [0~15]         [0~15]		 [*/0-1]          [*/0-1]          [*/0~6]          [*/0~7]          [*/0~5]            [*/0~6]            [*/0~2]			  [*/0~4]				[*/0~5]				  [0-1]				 [0-1]			   [0-1]			[0~100]			  [0~100]           [0~100]		      [0~100]           [0~2000000000]
@@ -13,29 +14,65 @@ end
 
 
 1
-//----------------------------------------------------------------------------------------------------
-//[Index]      [0~15]      [0-1]         [0-1]        [0~7]       [0~6]       [5-6]      [0-5]
-//JewelIndex   ItemLevel   SkillSwitch   LuckSwitch   Aditional   Excellent   SetOption  SocketOption
-//----------------------------------------------------------------------------------------------------
- 0            15      	   0             0            0           0           0          0
- 1            0       	   1             0            0           0           0          0
- 2            0       	   0             1            0           0           0          0
- 3            0       	   0             0            7           0           0          0
- 4            0       	   0             0            0           1           0          0
- 5            0       	   0             0            0           0           0          1
- 6            0       	   0             0            0           0           5          0
- 7            0       	   0             0            0           0           6          0
- //8          15      	   1             1            7           6           0          0
- 8            0       	   0             0            7           0           0          0
- 9            1       	   0             0            0           1           0          0
+//--------------------------------------------------------------------------------------------------
+// Success Result
+// What the jewel does when it works. Every value is ADDED to what the item already has (up to the maximum of each).
+//   Jewel: Jewel (the Index of the first part).
+//   Item level: Levels added to the item (never above +15).
+//   Skill: 1 gives the item its skill.
+//   Luck: 1 gives the item luck.
+//   Additional option: Additional option levels added (up to the server maximum).
+//   Excellent option: Number of excellent options added, picked at random using the chances of part 4. A value of 11 or more adds the options of the bit mask (value minus 10).
+//   Ancient option: Ancient option: 5 gives the first ancient type and 6 the second (the bits 1 and 2 are the type, 4 and 8 the bonus level; unverified).
+//   Socket option: Number of empty sockets added (0 to 5).
+//--------------------------------------------------------------------------------------------------
+//  [0~99]    [0~15]    [Number]    [Number]    [0~7]         [0~6]        [Number]     [0~5]
+//  Index     Level     Skill       Luck        Additional    Excellent    SetOption    SocketOption
+//--------------------------------------------------------------------------------------------------
+    0         15        0           0           0             0            0            0
+    1         0         1           0           0             0            0            0
+    2         0         0           1           0             0            0            0
+    3         0         0           0           7             0            0            0
+    4         0         0           0           0             1            0            0
+    5         0         0           0           0             0            0            1
+    6         0         0           0           0             0            5            0
+    7         0         0           0           0             0            6            0
+//--------------------------------------------------------------------------------------------------
+// Success Result
+// What the jewel does when it works. Every value is ADDED to what the item already has (up to the maximum of each).
+//   Jewel: Jewel (the Index of the first part).
+//   Item level: Levels added to the item (never above +15).
+//   Skill: 1 gives the item its skill.
+//   Luck: 1 gives the item luck.
+//   Additional option: Additional option levels added (up to the server maximum).
+//   Excellent option: Number of excellent options added, picked at random using the chances of part 4. A value of 11 or more adds the options of the bit mask (value minus 10).
+//   Ancient option: Ancient option: 5 gives the first ancient type and 6 the second (the bits 1 and 2 are the type, 4 and 8 the bonus level; unverified).
+//   Socket option: Number of empty sockets added (0 to 5).
+//--------------------------------------------------------------------------------------------------
+//  [0~99]    [0~15]    [Number]    [Number]    [0~7]         [0~6]        [Number]     [0~5]
+//  Index     Level     Skill       Luck        Additional    Excellent    SetOption    SocketOption
+//--------------------------------------------------------------------------------------------------
+    8         0         0           0           7             0            0            0
+    9         1         0           0           0             1            0            0
 end
 
 2
-//----------------------------------------------------------------------------------------------------
-//[Index]      [0~13]      [0-1]         [0-1]        [0~7]       [0~6]       [5-6]      [0-5]
-//JewelIndex   ItemLevel   SkillSwitch   LuckSwitch   Aditional   Excellent   SetOption  SocketOption
-//----------------------------------------------------------------------------------------------------
- 8            0				0				0			0			1			0			0
+//--------------------------------------------------------------------------------------------------
+// Failure Result
+// What the jewel does when it fails. Every value is TAKEN AWAY from the item.
+//   Jewel: Jewel (the Index of the first part).
+//   Item level: Levels taken from the item (never below 0).
+//   Skill: 1 takes away the skill of the item.
+//   Luck: 1 takes away the luck of the item.
+//   Additional option: Additional option levels taken away.
+//   Excellent option: Number of excellent options taken away, picked at random.
+//   Ancient option: Any value above 0 takes away the ancient option.
+//   Socket option: Number of sockets taken away (the last ones).
+//--------------------------------------------------------------------------------------------------
+//  [0~99]    [0~13]    [Number]    [Number]    [0~7]         [0~6]        [Number]     [0~5]
+//  Index     Level     Skill       Luck        Additional    Excellent    SetOption    SocketOption
+//--------------------------------------------------------------------------------------------------
+    8         0         0           0           0             1            0            0
 end
 
 //-------------------------------------------------------------------------------------------------

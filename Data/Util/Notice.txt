@@ -1,29 +1,47 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//----------
-// Horarios
-//-------------------------------------------------------------------------------------------
-// 			[*/0000]     [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
-//	[Index]	StartYear    StartMonth   StartDay   StartDoW   StartHour   StartMin   StartSec
-//-------------------------------------------------------------------------------------------
-	0       *          	 *            *          *          *          	00           0
-	0       *          	 *            *          *          *          	10           0
-	0       *          	 *            *          *          *          	20           0
-	0       *          	 *            *          *          *          	30           0
-	0       *          	 *            *          *          *          	40           0
-	0       *          	 *            *          *          *          	50           0
+//---------------------------------------------------------------------------------------------------
+// Notice Schedules
+// When each standard notice is sent. A wildcard means every year, month, day, hour or minute.
+//   Notice: The notice (next section) sent at this time.
+//   Year: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Month: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Day: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Minute: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Second: When the notice is sent. Leave it on Every to ignore this part of the date.
+//---------------------------------------------------------------------------------------------------
+//  [Number]    [*/-1~9999]    [*/-1~12]    [*/-1~31]    [Number]     [*/-1~23]    [-1~59]    [-1~59]
+//  Index       Year           Month        Day          DayOfWeek    Hour         Minute     Second
+//---------------------------------------------------------------------------------------------------
+    0           *              *            *            *            *            00         0
+    0           *              *            *            *            *            10         0
+    0           *              *            *            *            *            20         0
+    0           *              *            *            *            *            30         0
+    0           *              *            *            *            *            40         0
+    0           *              *            *            *            *            50         0
 end
 
 1
-//-------------------------------------------------------------------------------------------------------
-//	[Index]		[Message]										[MapNumber]		[AL]   	[Type]
-//-------------------------------------------------------------------------------------------------------
-	0       	"Powered by MSPro"					*				*		1
+//-----------------------------------------------------------------------
+// Notices
+// The standard notices.
+//   Message: The text of the notice. Up to 127 characters.
+//   Map: The map that gets the notice. Every map sends it everywhere.
+//   Account level: -1 Every account level | 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Notice type: How the notice looks (type sent to the client, 0 to 255).
+//-----------------------------------------------------------------------
+//  [Number]    [Text]                [Number]    [Number]        [0~255]
+//  Index       Message               Map         AccountLevel    Type
+//-----------------------------------------------------------------------
+    0           "Powered by MSPro"    *           *               1
 end
 
 2
@@ -31,40 +49,112 @@ end
 //	[Index]		[R		G		B		Transparencia]
 //-------------------------------------------------------------------------------------------------------
 
-	//Default Notice (Yellow)
-	0			0.0		0.0		0.0		0.5
-	1			1.0		0.78	0.3		1.0
-	2			1.0		0.78	0.3		0.5
-	//Guild Notice
-	3			0.0		0.0		0.0		0.5
-	4			0.4		1.0		0.78	1.0
-	5			0.4		1.0		0.78	1.0
-	//Fondo para Todos
-	6			0.0		0.0		0.0		0.5 	//Background
-	//Custom Color
-	7			0.3		1.0		0.5		1.0 	//Text 1
-	8			0.3		1.0		0.5		0.5 	//Text 2 (Parpadeo)
-	//Custom Color 2
-	9			0.3		0.6		0.8		1.0 	//Text 1
-	10			0.3		0.6		0.8		0.5 	//Text 2 (Parpadeo)
-	//Custom Color 2
-	11			0.8		0.6		0.0		1.0 	//Text 1
-	12			0.8		0.6		0.0		0.5 	//Text 2 (Parpadeo)
+//----------------------------------------------------------
+// Notice Colors
+// Colors as red, green, blue and transparency, from 0.0 to 1.0.
+//   Red: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Green: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Blue: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Transparency: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//----------------------------------------------------------
+//  Index    Red    Green    Blue    Transparency
+//----------------------------------------------------------
+    0        0.0    0.0      0.0     0.5
+    1        1.0    0.78     0.3     1.0
+    2        1.0    0.78     0.3     0.5
+//----------------------------------------------------------
+// Notice Colors
+// Colors as red, green, blue and transparency, from 0.0 to 1.0.
+//   Red: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Green: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Blue: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Transparency: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//----------------------------------------------------------
+//  Index    Red    Green    Blue    Transparency
+//----------------------------------------------------------
+    3        0.0    0.0      0.0     0.5
+    4        0.4    1.0      0.78    1.0
+    5        0.4    1.0      0.78    1.0
+//----------------------------------------------------------
+// Notice Colors
+// Colors as red, green, blue and transparency, from 0.0 to 1.0.
+//   Red: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Green: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Blue: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Transparency: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//----------------------------------------------------------
+//  Index    Red    Green    Blue    Transparency
+//----------------------------------------------------------
+    6        0.0    0.0      0.0     0.5             //Background
+//----------------------------------------------------------
+// Notice Colors
+// Colors as red, green, blue and transparency, from 0.0 to 1.0.
+//   Red: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Green: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Blue: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Transparency: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//----------------------------------------------------------
+//  Index    Red    Green    Blue    Transparency
+//----------------------------------------------------------
+    7        0.3    1.0      0.5     1.0             //Text 1
+    8        0.3    1.0      0.5     0.5             //Text 2 (Parpadeo)
+//----------------------------------------------------------
+// Notice Colors
+// Colors as red, green, blue and transparency, from 0.0 to 1.0.
+//   Red: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Green: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Blue: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Transparency: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//----------------------------------------------------------
+//  Index    Red    Green    Blue    Transparency
+//----------------------------------------------------------
+    9        0.3    0.6      0.8     1.0             //Text 1
+    10       0.3    0.6      0.8     0.5             //Text 2 (Parpadeo)
+//----------------------------------------------------------
+// Notice Colors
+// Colors as red, green, blue and transparency, from 0.0 to 1.0.
+//   Red: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Green: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Blue: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//   Transparency: A fraction from 0.0 to 1.0 (the server multiplies it by 255).
+//----------------------------------------------------------
+//  Index    Red    Green    Blue    Transparency
+//----------------------------------------------------------
+    11       0.8    0.6      0.0     1.0             //Text 1
+    12       0.8    0.6      0.0     0.5             //Text 2 (Parpadeo)
 end
 
 3
-//----------
-// Horarios
-//-------------------------------------------------------------------------------------------
-// 			[*/0000]     [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
-//	[Index]	StartYear    StartMonth   StartDay   StartDoW   StartHour   StartMin   StartSec
-//-------------------------------------------------------------------------------------------
-	0       *          	 *            *          *          *          	*			0
+//-----------------------------------------------------------------------------------------------------
+// Colored Notice Schedules
+// When each colored notice is sent.
+//   Notice: The notice (next section) sent at this time.
+//   Year: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Month: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Day: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Minute: When the notice is sent. Leave it on Every to ignore this part of the date.
+//   Second: When the notice is sent. Leave it on Every to ignore this part of the date.
+//-----------------------------------------------------------------------------------------------------
+//  [Number]    [*/-1~9999]    [*/-1~12]    [*/-1~31]    [Number]     [*/-1~23]    [*/-1~59]    [-1~59]
+//  Index       Year           Month        Day          DayOfWeek    Hour         Minute       Second
+//-----------------------------------------------------------------------------------------------------
+    0           *              *            *            *            *            *            0
 end
 
 4
-//---------------------------------------------------------------------------------------------------------------------------------------------
-//	[Index]		[Message]									[MapNumber]		[AL]   	[Blink]		[Background]	[Color1]	[Color2]	
-//---------------------------------------------------------------------------------------------------------------------------------------------
-	0       	"MuServer powered by MSPro"					*				*		1			6				7			8
+//--------------------------------------------------------------------------------------------------------
+// Colored Notices
+// Notices with a blinking text and a background; the colors are numbers of Notice Colors.
+//   Message: The text of the notice. Up to 127 characters.
+//   Map: The map that gets the notice. Every map sends it everywhere.
+//   Account level: -1 Every account level | 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Background color: Number of a row of Notice Colors (section 2), not a color value.
+//   Text color: Number of a row of Notice Colors (section 2), not a color value.
+//   Blink color: Number of a row of Notice Colors (section 2), not a color value.
+//--------------------------------------------------------------------------------------------------------
+//  Index    Message                        Map    AccountLevel    Blink    Background    Color1    Color2
+//--------------------------------------------------------------------------------------------------------
+    0        "MuServer powered by MSPro"    *      *               1        6             7         8
 end

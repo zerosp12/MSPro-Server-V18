@@ -1,27 +1,28 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // [INFO]
 //==============
 //     TYPE INDEX : 0 - NPC // 1 - SPOTS  // 2 - MONSTER INDIVIDUAL //  4 - EVENTS
 
 0
-//------
-// NPCS
-//---------------------------------------------------------------
-//                [0~30]        [1~255]     [1~255]     [-1/0~8]
-// MonsterIndex   SpawnRadius   LocationX   LocationY   Direction
-//---------------------------------------------------------------
-   577            00            121         102         03           //Leina the General Goods Merchan
-   578            00            117         126         03           //Weapons Merchant Bolo
-   240            00            123         132         02           //Safety Guardian
-   240            00            122         096         03           //Safety Guardian
-   240            00            157         127         01           //Safety Guardian
-	0582          00            125         122         03 //Gillard (Quests)
+//--------------------------------------------------------------------
+// Part 0
+// Monster spawn placement · 080 - Karutan 1.txt
+//--------------------------------------------------------------------
+//  MonsterIndex    SpawnRadius    LocationX    LocationY    Direction
+//--------------------------------------------------------------------
+    577             00             121          102          03           //Leina the General Goods Merchan
+    578             00             117          126          03           //Weapons Merchant Bolo
+    240             00             123          132          02           //Safety Guardian
+    240             00             122          096          03           //Safety Guardian
+    240             00             157          127          01           //Safety Guardian
+    0582            00             125          122          03           //Gillard (Quests)
 end
 1
 //-------
@@ -31,26 +32,32 @@ end
 // MonsterIndex   SpawnRadius   RangeStartX   RangeStartY   RangeEndX   RangeEndY   Direction   MaxSpawnCount
 //-----------------------------------------------------------------------------------------------------------
 
-   571            1            156         182			157			183				0         4             //Orcus
-   571            1            156         182			157			183				0         4             //Orcus
-   571            1            218		   182			222			185				0         15             //Orcus
-	569    4    124   54    134   64    -1   4    //Venomous Chain Scorpion
-	569    4    103   188   113   198   -1   4    //Venomous Chain Scorpion
-	569    4    204   165   214   175   -1   4    //Venomous Chain Scorpion
-	569    4    209   29    219   39    -1   4    //Venomous Chain Scorpion
-	569    4    221   98    231   108   -1   3    //Venomous Chain Scorpion
-	570    4    127   62    137   72    -1   5    //Bone Scorpion
-	570    4    188   187   198   197   -1   5    //Bone Scorpion
-	570    4    83    171   93    181   -1   4    //Bone Scorpion
-	570    4    210   98    220   108   -1   4    //Bone Scorpion
-	570    4    196   26    206   36    -1   4    //Bone Scorpion
-	570    4    61    112   71    122   -1   4    //Bone Scorpion
-	571    4    176   184   186   194   -1   3    //Orcus
-	571    4    201   29    211   39    -1   3    //Orcus
-	573    4    34    181   44    191   -1   5    //Crypta
-	573    4    37    51    47    61    -1   5    //Crypta
-	574    4    35    69    45    79    -1   4    //Crypos
-	574    4    33    168   43    178   -1   3    //Crypos
+//-------------------------------------------------------------------------------------------------------------------
+// Part 1
+// Monster spawn placement · 080 - Karutan 1.txt
+//-------------------------------------------------------------------------------------------------------------------
+//  MonsterIndex    SpawnRadius    RangeStartX    RangeStartY    RangeEndX    RangeEndY    Direction    MaxSpawnCount
+//-------------------------------------------------------------------------------------------------------------------
+    571             1              156            182            157          183          0            4                //Orcus
+    571             1              156            182            157          183          0            4                //Orcus
+    571             1              218            182            222          185          0            15               //Orcus
+    569             4              124            54             134          64           -1           4                //Venomous Chain Scorpion
+    569             4              103            188            113          198          -1           4                //Venomous Chain Scorpion
+    569             4              204            165            214          175          -1           4                //Venomous Chain Scorpion
+    569             4              209            29             219          39           -1           4                //Venomous Chain Scorpion
+    569             4              221            98             231          108          -1           3                //Venomous Chain Scorpion
+    570             4              127            62             137          72           -1           5                //Bone Scorpion
+    570             4              188            187            198          197          -1           5                //Bone Scorpion
+    570             4              83             171            93           181          -1           4                //Bone Scorpion
+    570             4              210            98             220          108          -1           4                //Bone Scorpion
+    570             4              196            26             206          36           -1           4                //Bone Scorpion
+    570             4              61             112            71           122          -1           4                //Bone Scorpion
+    571             4              176            184            186          194          -1           3                //Orcus
+    571             4              201            29             211          39           -1           3                //Orcus
+    573             4              34             181            44           191          -1           5                //Crypta
+    573             4              37             51             47           61           -1           5                //Crypta
+    574             4              35             69             45           79           -1           4                //Crypos
+    574             4              33             168            43           178          -1           3                //Crypos
 end
 
 2

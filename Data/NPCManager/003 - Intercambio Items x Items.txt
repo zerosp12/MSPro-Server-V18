@@ -1,29 +1,45 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-// NPC Settings
-//--------------------------------------------------------------------------------------------------------------------------------------------------
-//	Monster: 	Index from Monster/Monster.txt
-//	Style: 		6 - Exchange Item -> Item
-//--------------------------------------------------------------------------------------------------------------------------------------------------
-// 	[0~2000]	[ X ]		[ -1 / 0~3 ]	[  -1 / 1~1000  ]		[  -1/0~99999   ] 	[   -1/0~99999    ]		[-1 / 0~6] 	[-1 / 0~100]
-// 	Monster		Style		AccountLevel	MinLevel MaxLevel		MinReset MaxReset 	MinMReset MaxMReset		PKLevel    	RankUser
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// Settings
+// Which NPC it is, what it does and who may use it.
+//   NPC: The NPC players talk to.
+//   Type: Free Access files carry one more value after the type (turn the NPC window off). The panel does not show it.
+//   Min. Account Level: -1 Any | 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Lowest level: The lowest character level that can use it.
+//   Highest level: The highest character level that can use it.
+//   Fewest resets: The fewest resets a character can have to use it.
+//   Most resets: The most resets a character can have to use it.
+//   Fewest master resets: The fewest master resets a character can have to use it.
+//   Most master resets: The most master resets a character can have to use it.
+//   Highest PK level: The highest PK level that can use it (6 is the worst; the server does not accept more than 6).
+//   Lowest user rank: The lowest user rank that can use it.
+//----------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [0~3]           [Number]    [Number]    [Number]    [Number]    [Number]     [Number]     [Number]    [Number]
+//  Npc         Style       AccountLevel    MinLevel    MaxLevel    MinReset    MaxReset    MinMReset    MaxMReset    PkLevel     RankUser
+//----------------------------------------------------------------------------------------------------------------------------------------
 0
-	256			6			-1				-1		-1		  		-1	  	-1			-1	      -1			-1	     	-1	
+    256         6           -1              -1          -1          -1          -1          -1           -1           -1          -1
 end
 
-//----------------------------------------------------
-//	Maps (Allow multiple Locations)
-//----------------------------------------------------
-// 	[0 ~ 255]	[1 ~ 255]	[1 ~ 255]	[0 ~ 8]
-// 	Map			X			Y			Dir
-//----------------------------------------------------
+//----------------------------------------------------------
+// Locations
+// Where the NPC stands. Several places are allowed; none leaves the NPC off the map.
+//   Map: The map where the NPC stands.
+//   X: Column where the NPC stands.
+//   Y: Row where the NPC stands.
+//   Direction: The way the NPC faces, 0 to 8.
+//----------------------------------------------------------
+//  [0~255]    [1~255]    [1~255]    [0~8]
+//  Map        X          Y          Dir
+//----------------------------------------------------------
 1
-	2			210			46			0
+    2          210        46         0
 end
 
 //-----------------------------------------------------------------
@@ -34,13 +50,53 @@ end
 //	Type		ItemType	ItemIndex	Level		Luck   		Skill		Durability		Option  	Excellent	Ancient  	[		   Socket 1 ~ 5	  	     ]			Count	
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 6
-//--------------
-//Requirements
-//--------------
-	1			12	    	37			0	    	0	   		0			*				0			0			0			*		*		*		*		*			1
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Item for Item
+// Items the player hands in and items the player receives.
+//   Taken or given: 1 Taken (required) | 2 Given (reward)
+//   Item category: The category of the item.
+//   Item index: The number of the item inside its category.
+//   Item level: The level of the item. Any accepts or gives any level.
+//   Luck: 1 the item has luck, 0 it has not. Any does not look at it.
+//   Skill: 1 the item has skill, 0 it has not. Any does not look at it.
+//   Durability: The durability of the item. Any does not look at it.
+//   Additional option: The additional option, 0 to 7. Any does not look at it.
+//   Excellent options: The excellent options: the sum of the options' values (up to 63). Any does not look at it.
+//   Ancient option: 0 none, 1 and 2 are the two ancient sets.
+//   Socket 1: The option of socket 1. Any does not look at it.
+//   Socket 2: The option of socket 2. Any does not look at it.
+//   Socket 3: The option of socket 3. Any does not look at it.
+//   Socket 4: The option of socket 4. Any does not look at it.
+//   Socket 5: The option of socket 5. Any does not look at it.
+//   How many: How many of this item. 0 is taken as 1.
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]      [0~511]      [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [1~255]
+//  Pos         ItemType    ItemIndex    Level       Luck        Skill       Dur         Opt         ExcOpt      Anc         S1          S2          S3          S4          S5          Count
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1           12          37           0           0           0           *           0           0           0           *           *           *           *           *           1
 
-//--------------							
-// Rewards							
-//--------------							
-	2			13	    	37			0	    	0	   		0			*				0			4			0			*		*		*		*		*			10
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Item for Item
+// Items the player hands in and items the player receives.
+//   Taken or given: 1 Taken (required) | 2 Given (reward)
+//   Item category: The category of the item.
+//   Item index: The number of the item inside its category.
+//   Item level: The level of the item. Any accepts or gives any level.
+//   Luck: 1 the item has luck, 0 it has not. Any does not look at it.
+//   Skill: 1 the item has skill, 0 it has not. Any does not look at it.
+//   Durability: The durability of the item. Any does not look at it.
+//   Additional option: The additional option, 0 to 7. Any does not look at it.
+//   Excellent options: The excellent options: the sum of the options' values (up to 63). Any does not look at it.
+//   Ancient option: 0 none, 1 and 2 are the two ancient sets.
+//   Socket 1: The option of socket 1. Any does not look at it.
+//   Socket 2: The option of socket 2. Any does not look at it.
+//   Socket 3: The option of socket 3. Any does not look at it.
+//   Socket 4: The option of socket 4. Any does not look at it.
+//   Socket 5: The option of socket 5. Any does not look at it.
+//   How many: How many of this item. 0 is taken as 1.
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [0~15]      [0~511]      [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [1~255]
+//  Pos         ItemType    ItemIndex    Level       Luck        Skill       Dur         Opt         ExcOpt      Anc         S1          S2          S3          S4          S5          Count
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2           13          37           0           0           0           *           0           4           0           *           *           *           *           *           10
 end

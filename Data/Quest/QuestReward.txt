@@ -1,26 +1,226 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//Number   Type   Index   Quantity   Level   Option1   Option2   Option3   NewOption   RequireIndex   RequireState   DW      DK      FE      MG      DL      SU      RF      GL
-//Change Class 1 - Step 1
-0          1      200     10         0       0         0         0         0           0              1              1       1       1       0       0       1       0	0
-//Change Class 1 - Step 2
-0          1      200     10         0       0         0         0         0           1              1              1       1       1       0       0       1       0	0
-1          2      201     0          0       0         0         0         0           1              1              1       1       1       0       0       1       0	0
-//Marlon Step 1
-0          4      202     0          0       0         0         0         0           2              1              2       2       2       0       0       2       0	0
-//Marlon Step 2 (Custom Combo)
-0          8      203     0          0       0         0         0         0           3              1              2       2       2       0       0       2       0	0
-//Level 3 Class - Step 1
-0          1      200     20         0       0         0         0         0           4              1              2       2       2       1       1       2       1	1
-//Level 3 Class - Step 2
-0          1      200     20         0       0         0         0         0           5              1              2       2       2       1       1       2       1	1
-//Level 3 Class - Step 3
-0          1      200     30         0       0         0         0         0           6              1              2       2       2       1       1       2       1	1
-1          16     204     0          0       0         0         0         0           6              1              2       2       2       1       1       2       1	1
-//Marlon Step 2 (Custom Combo)
-0          8      203     0          0       0         0         0         0           7              1              0       0       0       1       1       0       1	1
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Rewards
+// What a player receives when a step of a quest is finished. Rewards here are points and class changes only: they never give items (the item columns are read and ignored). The GameServer reads 100 rows at most.
+//   Quest Step: Not used by the GameServer; it only keeps the rows of a quest in order.
+//   Reward: 0 None | 1 Stat Points | 2 2nd Class Evolution | 4 Hero Stat Points | 8 Combo Skill (Notify) | 16 3rd Class Evolution
+//   Client Display Id: Number sent to the client with the reward so it shows the right message; it is not an item or a monster.
+//   Amount: Stat Points: how many points. Combo Skill: sent to the client. The other kinds do not use it.
+//   Item level: Not used: this file gives no items (the server reads the value and ignores it).
+//   Skill: Not used: this file gives no items (the server reads the value and ignores it).
+//   Luck: Not used: this file gives no items (the server reads the value and ignores it).
+//   Additional option: Not used: this file gives no items (the server reads the value and ignores it).
+//   Excellent options: Not used: this file gives no items (the server reads the value and ignores it).
+//   Quest It Belongs To: The quest that gives this reward.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number      Type        Index       Quantity    Level       Option1     Option2     Option3     NewOption    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           1           200         10          0           0           0           0           0            0               1               1        1        1        0        0        1        0        0
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Rewards
+// What a player receives when a step of a quest is finished. Rewards here are points and class changes only: they never give items (the item columns are read and ignored). The GameServer reads 100 rows at most.
+//   Quest Step: Not used by the GameServer; it only keeps the rows of a quest in order.
+//   Reward: 0 None | 1 Stat Points | 2 2nd Class Evolution | 4 Hero Stat Points | 8 Combo Skill (Notify) | 16 3rd Class Evolution
+//   Client Display Id: Number sent to the client with the reward so it shows the right message; it is not an item or a monster.
+//   Amount: Stat Points: how many points. Combo Skill: sent to the client. The other kinds do not use it.
+//   Item level: Not used: this file gives no items (the server reads the value and ignores it).
+//   Skill: Not used: this file gives no items (the server reads the value and ignores it).
+//   Luck: Not used: this file gives no items (the server reads the value and ignores it).
+//   Additional option: Not used: this file gives no items (the server reads the value and ignores it).
+//   Excellent options: Not used: this file gives no items (the server reads the value and ignores it).
+//   Quest It Belongs To: The quest that gives this reward.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number      Type        Index       Quantity    Level       Option1     Option2     Option3     NewOption    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           1           200         10          0           0           0           0           0            1               1               1        1        1        0        0        1        0        0
+    1           2           201         0           0           0           0           0           0            1               1               1        1        1        0        0        1        0        0
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Rewards
+// What a player receives when a step of a quest is finished. Rewards here are points and class changes only: they never give items (the item columns are read and ignored). The GameServer reads 100 rows at most.
+//   Quest Step: Not used by the GameServer; it only keeps the rows of a quest in order.
+//   Reward: 0 None | 1 Stat Points | 2 2nd Class Evolution | 4 Hero Stat Points | 8 Combo Skill (Notify) | 16 3rd Class Evolution
+//   Client Display Id: Number sent to the client with the reward so it shows the right message; it is not an item or a monster.
+//   Amount: Stat Points: how many points. Combo Skill: sent to the client. The other kinds do not use it.
+//   Item level: Not used: this file gives no items (the server reads the value and ignores it).
+//   Skill: Not used: this file gives no items (the server reads the value and ignores it).
+//   Luck: Not used: this file gives no items (the server reads the value and ignores it).
+//   Additional option: Not used: this file gives no items (the server reads the value and ignores it).
+//   Excellent options: Not used: this file gives no items (the server reads the value and ignores it).
+//   Quest It Belongs To: The quest that gives this reward.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number      Type        Index       Quantity    Level       Option1     Option2     Option3     NewOption    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           4           202         0           0           0           0           0           0            2               1               2        2        2        0        0        2        0        0
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Rewards
+// What a player receives when a step of a quest is finished. Rewards here are points and class changes only: they never give items (the item columns are read and ignored). The GameServer reads 100 rows at most.
+//   Quest Step: Not used by the GameServer; it only keeps the rows of a quest in order.
+//   Reward: 0 None | 1 Stat Points | 2 2nd Class Evolution | 4 Hero Stat Points | 8 Combo Skill (Notify) | 16 3rd Class Evolution
+//   Client Display Id: Number sent to the client with the reward so it shows the right message; it is not an item or a monster.
+//   Amount: Stat Points: how many points. Combo Skill: sent to the client. The other kinds do not use it.
+//   Item level: Not used: this file gives no items (the server reads the value and ignores it).
+//   Skill: Not used: this file gives no items (the server reads the value and ignores it).
+//   Luck: Not used: this file gives no items (the server reads the value and ignores it).
+//   Additional option: Not used: this file gives no items (the server reads the value and ignores it).
+//   Excellent options: Not used: this file gives no items (the server reads the value and ignores it).
+//   Quest It Belongs To: The quest that gives this reward.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number      Type        Index       Quantity    Level       Option1     Option2     Option3     NewOption    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           8           203         0           0           0           0           0           0            3               1               2        2        2        0        0        2        0        0
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Rewards
+// What a player receives when a step of a quest is finished. Rewards here are points and class changes only: they never give items (the item columns are read and ignored). The GameServer reads 100 rows at most.
+//   Quest Step: Not used by the GameServer; it only keeps the rows of a quest in order.
+//   Reward: 0 None | 1 Stat Points | 2 2nd Class Evolution | 4 Hero Stat Points | 8 Combo Skill (Notify) | 16 3rd Class Evolution
+//   Client Display Id: Number sent to the client with the reward so it shows the right message; it is not an item or a monster.
+//   Amount: Stat Points: how many points. Combo Skill: sent to the client. The other kinds do not use it.
+//   Item level: Not used: this file gives no items (the server reads the value and ignores it).
+//   Skill: Not used: this file gives no items (the server reads the value and ignores it).
+//   Luck: Not used: this file gives no items (the server reads the value and ignores it).
+//   Additional option: Not used: this file gives no items (the server reads the value and ignores it).
+//   Excellent options: Not used: this file gives no items (the server reads the value and ignores it).
+//   Quest It Belongs To: The quest that gives this reward.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number      Type        Index       Quantity    Level       Option1     Option2     Option3     NewOption    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           1           200         20          0           0           0           0           0            4               1               2        2        2        1        1        2        1        1
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Rewards
+// What a player receives when a step of a quest is finished. Rewards here are points and class changes only: they never give items (the item columns are read and ignored). The GameServer reads 100 rows at most.
+//   Quest Step: Not used by the GameServer; it only keeps the rows of a quest in order.
+//   Reward: 0 None | 1 Stat Points | 2 2nd Class Evolution | 4 Hero Stat Points | 8 Combo Skill (Notify) | 16 3rd Class Evolution
+//   Client Display Id: Number sent to the client with the reward so it shows the right message; it is not an item or a monster.
+//   Amount: Stat Points: how many points. Combo Skill: sent to the client. The other kinds do not use it.
+//   Item level: Not used: this file gives no items (the server reads the value and ignores it).
+//   Skill: Not used: this file gives no items (the server reads the value and ignores it).
+//   Luck: Not used: this file gives no items (the server reads the value and ignores it).
+//   Additional option: Not used: this file gives no items (the server reads the value and ignores it).
+//   Excellent options: Not used: this file gives no items (the server reads the value and ignores it).
+//   Quest It Belongs To: The quest that gives this reward.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number      Type        Index       Quantity    Level       Option1     Option2     Option3     NewOption    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           1           200         20          0           0           0           0           0            5               1               2        2        2        1        1        2        1        1
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Rewards
+// What a player receives when a step of a quest is finished. Rewards here are points and class changes only: they never give items (the item columns are read and ignored). The GameServer reads 100 rows at most.
+//   Quest Step: Not used by the GameServer; it only keeps the rows of a quest in order.
+//   Reward: 0 None | 1 Stat Points | 2 2nd Class Evolution | 4 Hero Stat Points | 8 Combo Skill (Notify) | 16 3rd Class Evolution
+//   Client Display Id: Number sent to the client with the reward so it shows the right message; it is not an item or a monster.
+//   Amount: Stat Points: how many points. Combo Skill: sent to the client. The other kinds do not use it.
+//   Item level: Not used: this file gives no items (the server reads the value and ignores it).
+//   Skill: Not used: this file gives no items (the server reads the value and ignores it).
+//   Luck: Not used: this file gives no items (the server reads the value and ignores it).
+//   Additional option: Not used: this file gives no items (the server reads the value and ignores it).
+//   Excellent options: Not used: this file gives no items (the server reads the value and ignores it).
+//   Quest It Belongs To: The quest that gives this reward.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number      Type        Index       Quantity    Level       Option1     Option2     Option3     NewOption    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           1           200         30          0           0           0           0           0            6               1               2        2        2        1        1        2        1        1
+    1           16          204         0           0           0           0           0           0            6               1               2        2        2        1        1        2        1        1
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Rewards
+// What a player receives when a step of a quest is finished. Rewards here are points and class changes only: they never give items (the item columns are read and ignored). The GameServer reads 100 rows at most.
+//   Quest Step: Not used by the GameServer; it only keeps the rows of a quest in order.
+//   Reward: 0 None | 1 Stat Points | 2 2nd Class Evolution | 4 Hero Stat Points | 8 Combo Skill (Notify) | 16 3rd Class Evolution
+//   Client Display Id: Number sent to the client with the reward so it shows the right message; it is not an item or a monster.
+//   Amount: Stat Points: how many points. Combo Skill: sent to the client. The other kinds do not use it.
+//   Item level: Not used: this file gives no items (the server reads the value and ignores it).
+//   Skill: Not used: this file gives no items (the server reads the value and ignores it).
+//   Luck: Not used: this file gives no items (the server reads the value and ignores it).
+//   Additional option: Not used: this file gives no items (the server reads the value and ignores it).
+//   Excellent options: Not used: this file gives no items (the server reads the value and ignores it).
+//   Quest It Belongs To: The quest that gives this reward.
+//   State It Belongs To: 0 Not Started | 1 In Progress | 2 Completed | 3 Cancelled
+//   Dark Wizard: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Knight: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Fairy Elf: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Magic Gladiator: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Dark Lord: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Summoner: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Rage Fighter: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//   Grow Lancer: 0 Cannot use | 1 Any evolution | 2 2nd evolution or higher | 3 3rd evolution
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [0~199]         [0~3]           [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]    [0~3]
+//  Number      Type        Index       Quantity    Level       Option1     Option2     Option3     NewOption    RequireIndex    RequireState    DW       DK       FE       MG       DL       SU       RF       GL
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           8           203         0           0           0           0           0           0            7               1               0        0        0        1        1        0        1        1
 end

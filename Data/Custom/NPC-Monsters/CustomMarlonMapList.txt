@@ -1,18 +1,27 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//-------------------------------------------------------------
-//              [0~255]     [0~255]      [0~6]       [InMin] 
-//	MapNumber   LocationX   LocationY 	 Direction   Duration
-//-------------------------------------------------------------
-	0			137			87			 1			 1
-	2			198			47			 2			 1
-	3			169			89			 2			 1
-	7			17			25			 2			 1
-	4			200			77			 2			 1
-	8			189			76			 1			 1
+//----------------------------------------------------------
+// Marlon Locations
+// The places Marlon appears in and how many minutes he stays in each.
+//   Map: Map where Marlon (monster 229) can appear. The list needs at least two different maps: with only one map the GameServer loops forever when it tries to move him.
+//   X: Column of the cell where he stands, 0 to 255.
+//   Y: Row of the cell where he stands, 0 to 255.
+//   Direction: Direction he faces, 0 to 7.
+//   Stays (minutes): Minutes he stays in this place before moving to another one of the list. Do not use 0.
+//----------------------------------------------------------
+//  [Number]    [0~255]    [0~255]    [0~7]        [Number]
+//  Map         X          Y          Direction    Duration
+//----------------------------------------------------------
+    0           137        87         1            1
+    2           198        47         2            1
+    3           169        89         2            1
+    7           17         25         2            1
+    4           200        77         2            1
+    8           189        76         1            1
 end

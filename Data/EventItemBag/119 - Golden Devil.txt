@@ -1,15 +1,29 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//EventName              DropZen   ItemDropRate   ItemDropCount   SetItemDropRate   ItemDropType   Fireworks	
-"Golden Devil"	         1000	   100		  1		  0		    0		   0
+//-------------------------------------------------------------------------------------------------------------------
+// Bag
+// The bag's name, the zen it gives when a roll gives no item, the chance of an item and how many rolls each opening makes.
+//   Ancient Chance: Out of 10,000.
+//-------------------------------------------------------------------------------------------------------------------
+//  [Text]            [0~2000000000]    [0~100]         [1~255]          [0~10000]          [Number]        [Number]
+//  EventName         DropZen           ItemDropRate    ItemDropCount    SetItemDropRate    ItemDropType    Fireworks
+//-------------------------------------------------------------------------------------------------------------------
+    "Golden Devil"    1000              100             1                0                  0               0
 end
 
 1
-//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent
-14          11     9          9          0       0      0        0
+//-------------------------------------------------------------------------------------------
+// Items
+// Each item the bag can give, with its levels, luck, skill and options.
+//-------------------------------------------------------------------------------------------
+//  [0~15]     [0~511]    [0~15]      [0~15]      [Number]    [Number]    [0~7]     [0~6]
+//  Section    Type       MinLevel    MaxLevel    Skill       Luck        Option    Excellent
+//-------------------------------------------------------------------------------------------
+    14         11         9           9           0           0           0         0
 end

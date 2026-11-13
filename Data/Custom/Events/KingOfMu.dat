@@ -1,100 +1,150 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//-----------------------------------------------------------------------------------------------------------------
-//	Style:
-//		0 - Last Guild Capture the Castle
-//		1 - Longest ocupation Time of All [Can use OcupationMaxTime to Finish Event]
-//		2 - Longest ocupation Time Interval
-//-----------------------------------------------------------------------------------------------------------------
-//	[0-1]		[1~80]			[0~2]		[0~200]		[0~1999]	[0~7]		[0~254]		[0~254]		[0~1]
-//	Enabled		MinMembers		Style		Map			NPC ID  	NPC Dir   	NPC X    	NPC Y		Increase PK
-//-----------------------------------------------------------------------------------------------------------------
-	1			1				1			2			380			1			225			237			0
+//--------------------------------------------------------------------------------------------------------
+// Settings
+// Switch and basic rules.
+//   Event enabled: 1 turns the event on, 0 off.
+//   Minimum guild members: Members a guild needs to take the castle.
+//   How the winner is decided: 0 Guild holding the castle at the end | 1 Most total time holding it | 2 Longest single hold
+//   Event map: Map where the event takes place.
+//   Castle NPC: Monster number of the castle NPC that players must stand next to.
+//   NPC direction: Way the NPC faces (0 to 7).
+//   NPC X: Position X of the NPC.
+//   NPC Y: Position Y of the NPC.
+//   Kills raise PK level: 1 makes a kill inside the event area raise the PK level of the killer, 0 makes it free.
+//--------------------------------------------------------------------------------------------------------
+//  [0~1]      [1~80]        [0~2]    [0~200]    [0~1999]    [0~7]        [0~254]    [0~254]    [0~1]
+//  Enabled    MinMembers    Style    Map        NPC         Direction    X          Y          IncreasePK
+//--------------------------------------------------------------------------------------------------------
+    1          1             1        2          380         1            225        237        0
 end
 
 1
-//------------------------------------------------------------
-// 	Event Area
-//------------------------------------------------------------
-//	[0-1]		[0~254]		[0~254]		[0~254]		[0~254]
-//	Type		StartX    	StartY		EndX		EndY
-//------------------------------------------------------------
-	0			193			188			255			255			//Event Area
-	1			200			190			244			200			//Respawn Area
-	2			210			208			244			240			//PvP Zone
+//----------------------------------------------------------
+// Event Zones
+// Areas of the event (a rectangle each). The respawn area must be bigger than one cell. The PvP zone is optional: with no PvP zone the whole event area is PvP.
+//   Zone: 0 Event Area | 1 Respawn Area | 2 PvP Zone
+//   Left side: Left side of the area.
+//   Top side: Top side of the area.
+//   Right side: Right side of the area.
+//   Bottom side: Bottom side of the area.
+//----------------------------------------------------------
+//  [0~2]    [0~254]    [0~254]    [0~254]    [0~254]
+//  Zone     StartX     StartY     EndX       EndY
+//----------------------------------------------------------
+    0        193        188        255        255        //Event Area
+    1        200        190        244        200        //Respawn Area
+    2        210        208        244        240        //PvP Zone
 end
 
 2
-//-----------------------------------------------------------------------------------------------------------------
-//	OccupationRange
-//		1: Guild Master
-//		2: Battle Master
-//		3: Battle Assitant
-//		4: All
-//
-//	[1~59]       [Minutes]		[1~4]				[* / Seconds]		[* / Minutes]
-//	AlarmTime    EventTime		OccupationRange		OccupationDelay		OcupationMaxTime
-//-----------------------------------------------------------------------------------------------------------------
-	5            2				4					5					1
+//-----------------------------------------------------------------------------------
+// Timing
+// The times and rules of one event.
+//   Warning before start (minutes): Minutes before the start that everyone is warned (1 to 59).
+//   Duration (minutes): Minutes the event lasts.
+//   Who can take the castle: 1 Guild master only | 2 Assistant or higher | 3 Battle master or higher | 4 Any guild member
+//   Time to take the castle (seconds): Seconds the player must stand at the NPC, without moving or dying, to take the castle (1 to 255).
+//   End early at (minutes): Minutes of total holding after which the event ends and that guild wins. * never ends early. Only used with the style 1 and 2.
+//-----------------------------------------------------------------------------------
+//  [1~59]       [Number]     [Number]           [1~255]            [Number]
+//  AlarmTime    EventTime    OccupationRange    OccupationDelay    OccupationMaxTime
+//-----------------------------------------------------------------------------------
+    5            2            4                  5                  1
 end
 
 3
-//-----------------------------------------------------------------------------------------------------------------
-//	[*/N]  		[*/0~12]		[*/0~31]		[*/1~7]			[*/0~23]		[*/0~59]		[*/0~59]
-//	Year   		Month			Day				DoW				Hour			Minute			Second   	Comment
-//-----------------------------------------------------------------------------------------------------------------
-	*			*				*				4				22				00				0			//
-	*			*				*				7				22				00				0			//
+//----------------------------------------------------------------------------------------
+// Schedule
+// When the event starts. The second is not used: it starts on the minute.
+//   Year: The year when the event starts. * means every year.
+//   Month: The month when the event starts. * means every month.
+//   Day: The day of the month when the event starts. * means every day of the month.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour when the event starts. * means every hour.
+//   Minute: The minute when the event starts. * means every minute.
+//   Second: The second when the event starts. * means every second.
+//----------------------------------------------------------------------------------------
+//  [*/1970~9999]    [*/1~12]    [*/1~31]    [*/1~7]      [*/0~23]    [*/0~59]    [*/0~59]
+//  Year             Month       Day         DayOfWeek    Hour        Minute      Second
+//----------------------------------------------------------------------------------------
+    *                *           *           4            22          00          0           //
+    *                *           *           7            22          00          0           //
 end
 
 4
-//-----------------------------------------------------------------------------------------------------------------
-//	Reward Winner Guild
-//-----------------------------------------------------------------------------------------------------------------
-//										[-1 / 0 ~ 999]		[-1 / 1~255]	[Seconds]
-//	WC		WP		GP		Ruuds		ItemBag				Buff			BuffTime	Val1	Val2
-//-----------------------------------------------------------------------------------------------------------------
-	9		0		0		0			*					*				0			0		0
+//------------------------------------------------------------------------------------------------------------------------------
+// Winner Guild Reward
+// Prize for every member of the winner guild.
+//   WCoin C: WCoin C given to each member of the winner guild. 0 gives none.
+//   WCoin P: WCoin P given to each member of the winner guild. 0 gives none.
+//   Goblin Points: Goblin Points given to each member of the winner guild. 0 gives none.
+//   Ruud: Ruud given to each member of the winner guild. 0 gives none.
+//   Item Bag: Item bag dropped for each member of the winner guild. * gives none.
+//   Buff: Effect (Effect.txt) given as a buff. * or 0 gives none.
+//   Buff time (minutes): Minutes the buff lasts (the server multiplies it by 60, so the value is in minutes, not seconds).
+//   Buff value 1: First power value of the buff (see the effect).
+//   Buff value 2: Second power value of the buff (see the effect).
+//------------------------------------------------------------------------------------------------------------------------------
+//  [0~999999999]    [0~999999999]    [0~999999999]    [0~999999999]    [Number]    [Number]    [Number]    [Number]    [Number]
+//  WC               WP               GP               Ruuds            ItemBag     Buff        BuffTime    Val1        Val2
+//------------------------------------------------------------------------------------------------------------------------------
+    9                0                0                0                *           *           0           0           0
 end
 
 5
-//-----------------------------------------------------------------------------------------------------------------
-//	Reward Ocupation Characters
-//-----------------------------------------------------------------------------------------------------------------
-//	Top		WC		WP		GP		Ruuds		ItemBag
-//-----------------------------------------------------------------------------------------------------------------
-	1		8		0		0		0			*
+//-----------------------------------------------------------------------------------------
+// Conquest Rewards
+// Prizes for the players who held the castle the most (conquest ranking).
+//   Position: Position of the player in the conquest ranking (1 is the best).
+//   WCoin C: WCoin C given to that player. 0 gives none.
+//   WCoin P: WCoin P given to that player. 0 gives none.
+//   Goblin Points: Goblin Points given to that player. 0 gives none.
+//   Ruud: Ruud given to that player. 0 gives none.
+//   Item Bag: Item bag dropped for that player. * gives none.
+//-----------------------------------------------------------------------------------------
+//  [1~100]    [0~999999999]    [0~999999999]    [0~999999999]    [0~999999999]    [Number]
+//  Top        WC               WP               GP               Ruuds            ItemBag
+//-----------------------------------------------------------------------------------------
+    1          8                0                0                0                *
 end
 
 6
-//-----------------------------------------------------------------------------------------------------------------
-//	Reward Kill Ranking
-//-----------------------------------------------------------------------------------------------------------------
-//	Top		WC		WP		GP		Ruuds		ItemBag
-//-----------------------------------------------------------------------------------------------------------------
-	1		8		0		0		0			*
+//-----------------------------------------------------------------------------------------
+// Kill Ranking Rewards
+// Prizes for the players with the most kills (kill ranking).
+//   Position: Position of the player in the kill ranking (1 is the best).
+//   WCoin C: WCoin C given to that player. 0 gives none.
+//   WCoin P: WCoin P given to that player. 0 gives none.
+//   Goblin Points: Goblin Points given to that player. 0 gives none.
+//   Ruud: Ruud given to that player. 0 gives none.
+//   Item Bag: Item bag dropped for that player. * gives none.
+//-----------------------------------------------------------------------------------------
+//  [1~100]    [0~999999999]    [0~999999999]    [0~999999999]    [0~999999999]    [Number]
+//  Top        WC               WP               GP               Ruuds            ItemBag
+//-----------------------------------------------------------------------------------------
+    1          8                0                0                0                *
 end
 
 7
 //-----------------------------------------------------------------------------------------------------------------
 //	Kill Points
-//-----------------------------------------------------------------------------------------------------------------
-//	Range
-//		1: Guild Master
-//		2: Battle Master
-//		3: Battle Assitant
-//		4: Member
-//-----------------------------------------------------------------------------------------------------------------
-//	[1-4]
-//	Range		Points
-//-----------------------------------------------------------------------------------------------------------------
-	1			10
-	2			8
-	3			8
-	4			5
+//----------------------------------------------------------
+// Kill Points
+// Points a kill gives, by the rank of the player killed in his guild.
+//   Killed player's rank: 1 Guild Master | 2 Assistant Guild Master | 3 Battle Master | 4 Member
+//   Points: Points the killer gets for killing a player of that rank.
+//----------------------------------------------------------
+//  Range    Points
+//----------------------------------------------------------
+    1        10
+    2        8
+    3        8
+    4        5
 end

@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //------------------------------------------------------------------------------------------------------------------------
 // MSPro Quest System
 // QuestIndex: 1407
@@ -14,27 +15,54 @@
 // SECTION 0 - Quest Information
 //------------------------------------------------------------------------------------------------------------------------
 0
-//	[FinishType]	[Cycle Count]	[Cycle Reset]	[Min / Max Level]		[Min / Max R]		[Min / Max MR]		[Min / Max VIP]			[DW		DK		ELF		MG		DL		SUM		RF		GL]
-	1				*				*				200		400				*		*			*		*			*		*				0		0		0		0		0		0		0		1
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Quest Information
+// How the quest is finished, how many times it can be done and who may do it. Only for NPC quests.
+//   Finished From: 0 Side Menu Only | 1 NPC Dialog Only
+//   Times A Player Can Do It: How many times each character can finish the quest. Unlimited never blocks it.
+//   Counter Resets After (Minutes): Minutes, counted from the moment the character reaches the limit above, before the count starts again. Never keeps the limit forever.
+//   Lowest Level: Lowest character level that can take the quest.
+//   Highest Level: Highest character level that can take the quest.
+//   Fewest Resets: Fewest resets the character must have.
+//   Most Resets: Most resets the character may have.
+//   Fewest Master Resets: Fewest master resets the character must have.
+//   Most Master Resets: Most master resets the character may have.
+//   Lowest VIP: Lowest account level (VIP) that can take the quest. 0 is a free account.
+//   Highest VIP: Highest account level (VIP) that can take the quest.
+//   Dark Wizard: 0 Cannot Do It | 1 Can Do It
+//   Dark Knight: 0 Cannot Do It | 1 Can Do It
+//   Fairy Elf: 0 Cannot Do It | 1 Can Do It
+//   Magic Gladiator: 0 Cannot Do It | 1 Can Do It
+//   Dark Lord: 0 Cannot Do It | 1 Can Do It
+//   Summoner: 0 Cannot Do It | 1 Can Do It
+//   Rage Fighter: 0 Cannot Do It | 1 Can Do It
+//   Grow Lancer: 0 Cannot Do It | 1 Can Do It
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [*/0~1]       [*/1~9999]    [*/1~9999]    [*/0~65535]    [*/0~65535]    [*/0~65535]    [*/0~65535]    [*/0~65535]       [*/0~65535]       [*/0~255]    [*/0~255]    [0~1]    [0~1]    [0~1]    [0~1]    [0~1]    [0~1]    [0~1]    [0~1]
+//  FinishType    CycleCount    CycleReset    MinLevel       MaxLevel       MinReset       MaxReset       MinMasterReset    MaxMasterReset    MinVip       MaxVip       DW       DK       FE       MG       DL       SU       RF       GL
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1             *             *             200            400            *              *              *                 *                 *            *            0        0        0        0        0        0        0        1
 end
 
 //------------------------------------------------------------------------------------------------------------------------
 // SECTION 1 - Quest Requirements (Monster: 1 [Monster] [Count] / Item: 3 ... / Zen: 0 [Amount] / Event: 4 [Index] [Level] [Wins])
 //------------------------------------------------------------------------------------------------------------------------
 1
-	1				77				5			//Matar 5 Phoenix of Darkness
-	3				14				13				*				5			*				*				*				*				*				*				//Entregar 5 Jewel of Bless
+	1    77    5     //Matar 5 Phoenix of Darkness
+	3    14    13    *    5    *    *    *    *    *    *    //Entregar 5 Jewel of Bless
 end
 
-//------------------------------------------------------------------------------------------------------------------------
-// SECTION 2 - Quest Rewards (Zen: 0 / LevelPoints: 1 [Type] [Points] / Item: 3 [19 cols] / Experience: 4)
-//	Item	[Type]	[Index]	[Class]	[Count]	[Level]	[Durability]	[Skill]	[Luck]	[Option]	[Excellent]	[Ancient]	[Harmony]	[380]	[Socket x5]	[Time]
-//------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Rewards
+// What the player receives, at most 6 rows in total. Rows have different columns: the first number is the kind and the rest depend on it. 0 Zen: Amount. 1 Points: Kind (0 level-up points, 1 master points, 2 level-up points that resets do not remove), Points. 2 Coins: WCoinC, WCoinP, Goblin Points. 3 Item: Item Type (0 to 15), Item Index (0 to 511), Class (* any class, or the only class that gets it), Count, Level (0 to 15), Durability (0 or * the usual one), Skill (0, 1), Luck (0, 1), Additional Option (0 to 7), Excellent (0 to 63), Ancient (0 none, 1 or 21 first set, 2 or 22 second set, 3, 4), Harmony, 380 Option, five Socket values (* empty), Time (seconds the item lasts, 0 forever). 4 Experience: Amount. 5 Buff: Effect, Value 1, Value 2, Minutes. 6 Ruud: Amount. 7 Item Bag: Item Bag, Count (how many times it drops). 8 VIP: Kind (0 add days to the same VIP level, 1 raise VIP when lower, 2 only add days), Level (0 to 3), Days. 9 Flag: Flag (0 to 254), Minutes. 10 Gremory Item: the same columns as Item plus Stored In (0 account, 1 character). 11 Battle Pass Points: Points (only on servers built with the Battle Pass).
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  Value1    Value2      Value3    Value4    Value5    Value6    Value7    Value8    Value9    Value10    Value11    Value12    Value13    Value14    Value15    Value16    Value17    Value18    Value19    Value20
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2
-	0				12650000
-	3				7				92				7				1				9				*				0				1				2				1				0				0				0				*				*				*				*				*				0			//Gru Hill Helmet +9
-	3				8				92				7				1				9				*				0				1				2				1				0				0				0				*				*				*				*				*				0			//Gru Hill Armor +9
-	3				9				92				7				1				9				*				0				1				2				1				0				0				0				*				*				*				*				*				0			//Gru Hill Pants +9
-	3				10				92				7				1				9				*				0				1				2				1				0				0				0				*				*				*				*				*				0			//Gru Hill Gloves +9
-	3				11				92				7				1				9				*				0				1				2				1				0				0				0				*				*				*				*				*				0			//Gru Hill Boots +9
+    0         12650000
+    3         7           92        7         1         9         *         0         1         2          1          0          0          0          *          *          *          *          *          0          //Gru Hill Helmet +9
+    3         8           92        7         1         9         *         0         1         2          1          0          0          0          *          *          *          *          *          0          //Gru Hill Armor +9
+    3         9           92        7         1         9         *         0         1         2          1          0          0          0          *          *          *          *          *          0          //Gru Hill Pants +9
+    3         10          92        7         1         9         *         0         1         2          1          0          0          0          *          *          *          *          *          0          //Gru Hill Gloves +9
+    3         11          92        7         1         9         *         0         1         2          1          0          0          0          *          *          *          *          *          0          //Gru Hill Boots +9
 end

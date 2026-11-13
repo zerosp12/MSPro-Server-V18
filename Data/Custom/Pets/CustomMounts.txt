@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //=========
 // [Ref-1]
 //=========
@@ -12,11 +13,26 @@
 //      2 - Fenrir		 
 
 0
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//  [1~25]  [0~15]    [0~511]    [1~2][Ref-1]  [0~100]	     [ALLOW][0~1]  [ALLOW][0~1] [ALLOW][0~1]	[0~1]        	[0~1]         	[0~1]          	[0~1]   
-//	Index	TypeItem  IndexItem  TypeMount     RepairSucess  RepairManual  RepairBless  Repair Life		DiePet_AL1	 	DiePet_AL2	  	DiePet_AL3	   	DiePet_AL4	
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	1		13		  400		 1             100		     0			   1			0				0            	0             	0              	0
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Mounts
+// One row per mount.
+//   Mount: Number of the mount (1 to 24). The bonuses part uses it.
+//   Item: Item category of the mount item.
+//   Item index: Item index of the mount item.
+//   Type: 1 Horse | 2 Fenrir
+//   Repair chance (%): Chance (%) that a repair works.
+//   Can be repaired by hand: 1 lets the player repair it by hand like any item.
+//   Can be repaired with Bless: 1 lets the player repair it with a Jewel of Bless.
+//   Can be repaired with Life: 1 lets the player repair it with a Jewel of Life.
+//   Wears out, free account: For a free account: 1 means the mount takes damage and loses durability; 0 means it never wears out.
+//   Wears out, VIP 1 account: For a VIP 1 account: 1 means the mount takes damage and loses durability; 0 means it never wears out.
+//   Wears out, VIP 2 account: For a VIP 2 account: 1 means the mount takes damage and loses durability; 0 means it never wears out.
+//   Wears out, VIP 3 account: For a VIP 3 account: 1 means the mount takes damage and loses durability; 0 means it never wears out.
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [1~25]    [0~15]      [0~511]      [Number]     [0~100]          [Number]             [Number]            [Number]           [Number]    [Number]    [Number]    [Number]
+//  Index     ItemType    ItemIndex    MountType    RepairSuccess    AllowRepairManual    AllowRepairBless    AllowRepairLife    DieFree     DieVip1     DieVip2     DieVip3
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1         13          400          1            100              0                    1                   0                  0           0           0           0
 end                                                                                                	  	
 
 

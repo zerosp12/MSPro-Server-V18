@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // [Ref-1]
 //==============
@@ -15,38 +16,73 @@
 // Party Enter: 0 - NO Party Enter / 1 - Will move all Party members in 10 Cords arround who Talk to NPC (All Need Tickets) / 2: Same as 1 but only need 1 Ticket (Who talk to NPC)
 
 0
-//--------------------------------------------------------------------------------------------------------------------------------------------------------
-//  [0~1] 	    [Ref-1]					[1~30]			[1~30]			[0~1]				[0~1]			    [0~1]					[Ref-2]
-//	Enabled		Kill All Monsters 		Min Players		Max Players		Require Item		Only Masters		Allow PK Enter			PartyEnter
-//--------------------------------------------------------------------------------------------------------------------------------------------------------
-	1			1						1				20				1					0					1						2
+//--------------------------------------------------------------------------------------------------------------------
+// Event Settings
+// Switch and basic rules of the event.
+//   Every monster must die: A monster stage only ends when all its monsters are dead; if time runs out first, the event fails.
+//   Players needed: Players needed to start; with fewer the event is cancelled.
+//   Players allowed: Most players that can enter (up to 30).
+//   Needs an entry item: 1 takes the entry item (second part below) from each player who enters.
+//   Only master characters: 1 lets in only characters at their third evolution or higher.
+//   PKs can enter: 1 lets players with a PK level (murderers) in; 0 keeps them out.
+//   Party entry: 0 Only the player who asks | 1 Whole party, each member needs a ticket | 2 Whole party, only the one who asks needs a ticket
+//--------------------------------------------------------------------------------------------------------------------
+//  [0~1]      [Number]           [1~30]        [1~30]        [0~1]          [0~1]          [0~1]           [Number]
+//  Enabled    KillAllMonsters    MinPlayers    MaxPlayers    RequireItem    OnlyMasters    AllowPKEnter    PartyEnter
+//--------------------------------------------------------------------------------------------------------------------
+    1          1                  1             20            1              0              1               2
 end
 
 1
-//--------------------------------------------------------------------
-// Timers:
-// (Before Event Start)	(Seconds to warp Players after Event End)	
-// [Secons]				[Secons]
-// Start 				End	
-//--------------------------------------------------------------------
-   30					30
+//----------------------------------------------------------
+// Timers
+// Waiting times.
+//   Wait before it starts (seconds): Seconds the players wait inside before the first stage starts.
+//   Wait before players are moved out (seconds): Seconds after the event ends before the players are moved out.
+//----------------------------------------------------------
+//  [0~99999]    [0~99999]
+//  StartTime    EndTime
+//----------------------------------------------------------
+    30           30
 end
 
 2
-//---------------------------------------------------------------------------------------------------------------------------------------------------
-// Enter Requirements:
-// [0~15]		[0~512]		[0~15]  [0~9999]	[0~15]		[1~1000]	[0~999999]		[0~999999]		[0~999999]		[0~999999]		[0~3]
-// ItemIndex	ItemType	ItemLvl	ItemCount	MinLevel	MaxLevel	Min Resets		Max Resets		Min M.Resets	Max M.Resets	AccountLevel
-//---------------------------------------------------------------------------------------------------------------------------------------------------	
-   12			15			0		1			0			400			0				10000			0				999				-1
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Who Can Enter
+// What a player needs to enter. * in a limit means no limit.
+//   Entry item: Item category of the entry item.
+//   Entry item index: Item index of the entry item.
+//   Item level: Level the entry item must have. * accepts any level.
+//   How many: How many of the entry item are taken from each player.
+//   Level, at least: The lowest level that can enter. * has no limit.
+//   Level, at most: The highest level that can enter. * has no limit.
+//   Resets, at least: The fewest resets that can enter. * has no limit.
+//   Resets, at most: The most resets that can enter. * has no limit.
+//   Master resets, at least: The fewest master resets that can enter. * has no limit.
+//   Master resets, at most: The most master resets that can enter. * has no limit.
+//   Account level: -1 Every account level | 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~15]         [0~511]      [*/0~15]     [0~9999]     [*/0~15000]    [*/1~15000]    [*/0~999999]    [*/0~999999]    [*/0~999999]      [*/0~999999]      [0~3]
+//  ItemSection    ItemIndex    ItemLevel    ItemCount    MinLevel       MaxLevel       MinReset        MaxReset        MinMasterReset    MaxMasterReset    AccountLevel
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    12             15           0            1            0              400            0               10000           0                 999               -1
 end
 
 3
-//--------------------------------------------------------------------
-// [*/0000]    [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59] 
-// StartYear   StartMonth   StartDay   StartDoW   StartHour   StartMin 
-//--------------------------------------------------------------------
-   *		   *			*		   *		  10	      46
+//----------------------------------------------------------------------------
+// Schedule
+// When the event starts. The seconds do not exist here: it starts on the minute.
+//   Year: The year when the event starts. * means every year.
+//   Month: The month when the event starts. * means every month.
+//   Day: The day of the month when the event starts. * means every day of the month.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour when the event starts. * means every hour.
+//   Minute: The minute when the event starts. * means every minute.
+//----------------------------------------------------------------------------
+//  [*/1970~9999]    [*/1~12]    [*/1~31]    [*/1~7]      [*/0~23]    [*/0~59]
+//  Year             Month       Day         DayOfWeek    Hour        Minute
+//----------------------------------------------------------------------------
+    *                *           *           *            10          46
 end
 
 //==============
@@ -55,27 +91,33 @@ end
 // Type: 0: Normal (Need to Kill Monsters taking settings of time and etc...) / 1: PvP Only (No Monsters Check no matter Settings - Monsters will be addade anyway if you set bellow)
 
 4
-//--------------------------------------------------------------------
-// [0~300] 	[InMin]		[Ref-3]
-// Stages  	Settings	PvP Enabled
-//--------------------------------------------------------------------
-   0	   2			0
-   1	   2			0
-   2	   2			0
-   3	   2			0
-   4	   2			0
-   5	   2			0
-   6	   2			0
-   6	   2			0
-   7	   2			0
-   8	   2			0
-   9	   2			0
-   10	   2			0
-   11	   2			0
-   12	   2			0
-   13	   2			0
-   14	   2			0
-   15	   2			0
+//----------------------------------------------------------
+// Stages
+// The stages, in the order of the file. Each lasts its minutes; the next one starts when the time ends (or, in a monster stage that needs every monster dead, when they are all dead).
+//   Stage: Number of the stage. The monsters and the points use it.
+//   Lasts (minutes): Minutes the stage lasts.
+//   Kind: 0 Monsters | 1 PvP only | 2 PvP, back to the start
+//----------------------------------------------------------
+//  [0~300]    [0~9999]    [Number]
+//  Stage      Minutes     StageType
+//----------------------------------------------------------
+    0          2           0
+    1          2           0
+    2          2           0
+    3          2           0
+    4          2           0
+    5          2           0
+    6          2           0
+    6          2           0
+    7          2           0
+    8          2           0
+    9          2           0
+    10         2           0
+    11         2           0
+    12         2           0
+    13         2           0
+    14         2           0
+    15         2           0
 end
 
 //==============
@@ -84,134 +126,362 @@ end
 // Monster Type: 0: Normal / 1: Boss 		(Used to Calculate Points in final Rank)
 
 5
-//--------------------------------------------------------------------------------------
-//  Monsters:
-//  [0~300] [Monster.txt] [			  0~255		     ]      [0~50]		[Ref-4]
-//	Stage	IndexMonster   X1		Y1		X2		Y2		Count		Monster Type
-//--------------------------------------------------------------------------------------
-//--- Stage 1
-	0		334			   169		66		197		83		5			0
-	0		358			   169		66		197		83		5			0
-	0		301			   169		66		197		83		5			0
-	0		77			   169		66		197		83		5			0
-	0		334			   169		66		197		83		5			0
-	0		358			   169		66		197		83		5			0
-	0		301			   169		66		197		83		5			0
-//--- Stage 2		       
-	1		334			   169		66		197		83		5			0
-	1		358			   169		66		197		83		5			0
-	1		301			   169		66		197		83		5			0
-	1		77			   169		66		197		83		5			0
-	1		334			   169		66		197		83		5			0
-	1		358			   169		66		197		83		5			0
-	1		301			   169		66		197		83		5			0
-//--- Stage 3		       
-	2		334			   169		66		197		83		5			0
-	2		358			   169		66		197		83		5			0
-	2		301			   169		66		197		83		5			0
-	2		77			   169		66		197		83		5			0
-	2		334			   169		66		197		83		5			0
-	2		358			   169		66		197		83		5			0
-	2		301			   169		66		197		83		5			0
-////--- Stage 4		       
-	3		77			   169		66		197		83		5			0
-	3		77			   169		66		197		83		5			0
-////--- Stage 5	       
-	4		334			   169		66		197		83		5			0
-	4		358			   169		66		197		83		5			0
-	4		301			   169		66		197		83		5			0
-	4		77			   169		66		197		83		5			0
-	4		334			   169		66		197		83		5			0
-	4		358			   169		66		197		83		5			0
-	4		301			   169		66		197		83		5			0
-////--- Stage 6		       
-	5		334			   169		66		197		83		5			0
-	5		358			   169		66		197		83		5			0
-	5		301			   169		66		197		83		5			0
-	5		77			   169		66		197		83		5			0
-	5		334			   169		66		197		83		5			0
-	5		358			   169		66		197		83		5			0
-	5		301			   169		66		197		83		5			0
-////--- Stage 7	       
-	6		334			   169		66		197		83		5			0
-	6		358			   169		66		197		83		5			0
-	6		301			   169		66		197		83		5			0
-	6		77			   169		66		197		83		5			0
-	6		334			   169		66		197		83		5			0
-	6		358			   169		66		197		83		5			0
-	6		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    0          334         169        66         197        83         5         0
+    0          358         169        66         197        83         5         0
+    0          301         169        66         197        83         5         0
+    0          77          169        66         197        83         5         0
+    0          334         169        66         197        83         5         0
+    0          358         169        66         197        83         5         0
+    0          301         169        66         197        83         5         0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    1          334         169        66         197        83         5         0
+    1          358         169        66         197        83         5         0
+    1          301         169        66         197        83         5         0
+    1          77          169        66         197        83         5         0
+    1          334         169        66         197        83         5         0
+    1          358         169        66         197        83         5         0
+    1          301         169        66         197        83         5         0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    2          334         169        66         197        83         5         0
+    2          358         169        66         197        83         5         0
+    2          301         169        66         197        83         5         0
+    2          77          169        66         197        83         5         0
+    2          334         169        66         197        83         5         0
+    2          358         169        66         197        83         5         0
+    2          301         169        66         197        83         5         0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    3          77          169        66         197        83         5         0
+    3          77          169        66         197        83         5         0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    4          334         169        66         197        83         5         0
+    4          358         169        66         197        83         5         0
+    4          301         169        66         197        83         5         0
+    4          77          169        66         197        83         5         0
+    4          334         169        66         197        83         5         0
+    4          358         169        66         197        83         5         0
+    4          301         169        66         197        83         5         0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    5          334         169        66         197        83         5         0
+    5          358         169        66         197        83         5         0
+    5          301         169        66         197        83         5         0
+    5          77          169        66         197        83         5         0
+    5          334         169        66         197        83         5         0
+    5          358         169        66         197        83         5         0
+    5          301         169        66         197        83         5         0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    6          334         169        66         197        83         5         0
+    6          358         169        66         197        83         5         0
+    6          301         169        66         197        83         5         0
+    6          77          169        66         197        83         5         0
+    6          334         169        66         197        83         5         0
+    6          358         169        66         197        83         5         0
+    6          301         169        66         197        83         5         0
 	
-	7		334			   169		66		197		83		5			0
-	7		358			   169		66		197		83		5			0
-	7		301			   169		66		197		83		5			0
-	7		77			   169		66		197		83		5			0
-	7		334			   169		66		197		83		5			0
-	7		358			   169		66		197		83		5			0
-	7		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    7          334         169        66         197        83         5         0
+    7          358         169        66         197        83         5         0
+    7          301         169        66         197        83         5         0
+    7          77          169        66         197        83         5         0
+    7          334         169        66         197        83         5         0
+    7          358         169        66         197        83         5         0
+    7          301         169        66         197        83         5         0
 	
-	8		334			   169		66		197		83		5			0
-	8		358			   169		66		197		83		5			0
-	8		301			   169		66		197		83		5			0
-	8		77			   169		66		197		83		5			0
-	8		334			   169		66		197		83		5			0
-	8		358			   169		66		197		83		5			0
-	8		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    8          334         169        66         197        83         5         0
+    8          358         169        66         197        83         5         0
+    8          301         169        66         197        83         5         0
+    8          77          169        66         197        83         5         0
+    8          334         169        66         197        83         5         0
+    8          358         169        66         197        83         5         0
+    8          301         169        66         197        83         5         0
 	
-	9		334			   169		66		197		83		5			0
-	9		358			   169		66		197		83		5			0
-	9		301			   169		66		197		83		5			0
-	9		77			   169		66		197		83		5			0
-	9		334			   169		66		197		83		5			0
-	9		358			   169		66		197		83		5			0
-	9		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    9          334         169        66         197        83         5         0
+    9          358         169        66         197        83         5         0
+    9          301         169        66         197        83         5         0
+    9          77          169        66         197        83         5         0
+    9          334         169        66         197        83         5         0
+    9          358         169        66         197        83         5         0
+    9          301         169        66         197        83         5         0
 	
-	10		334			   169		66		197		83		5			0
-	10		358			   169		66		197		83		5			0
-	10		301			   169		66		197		83		5			0
-	10		77			   169		66		197		83		5			0
-	10		334			   169		66		197		83		5			0
-	10		358			   169		66		197		83		5			0
-	10		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    10         334         169        66         197        83         5         0
+    10         358         169        66         197        83         5         0
+    10         301         169        66         197        83         5         0
+    10         77          169        66         197        83         5         0
+    10         334         169        66         197        83         5         0
+    10         358         169        66         197        83         5         0
+    10         301         169        66         197        83         5         0
 	
-	11		334			   169		66		197		83		5			0
-	11		358			   169		66		197		83		5			0
-	11		301			   169		66		197		83		5			0
-	11		77			   169		66		197		83		5			0
-	11		334			   169		66		197		83		5			0
-	11		358			   169		66		197		83		5			0
-	11		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    11         334         169        66         197        83         5         0
+    11         358         169        66         197        83         5         0
+    11         301         169        66         197        83         5         0
+    11         77          169        66         197        83         5         0
+    11         334         169        66         197        83         5         0
+    11         358         169        66         197        83         5         0
+    11         301         169        66         197        83         5         0
 	
-	12		334			   169		66		197		83		5			0
-	12		358			   169		66		197		83		5			0
-	12		301			   169		66		197		83		5			0
-	12		77			   169		66		197		83		5			0
-	12		334			   169		66		197		83		5			0
-	12		358			   169		66		197		83		5			0
-	12		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    12         334         169        66         197        83         5         0
+    12         358         169        66         197        83         5         0
+    12         301         169        66         197        83         5         0
+    12         77          169        66         197        83         5         0
+    12         334         169        66         197        83         5         0
+    12         358         169        66         197        83         5         0
+    12         301         169        66         197        83         5         0
 	
-	13		334			   169		66		197		83		5			0
-	13		358			   169		66		197		83		5			0
-	13		301			   169		66		197		83		5			0
-	13		77			   169		66		197		83		5			0
-	13		334			   169		66		197		83		5			0
-	13		358			   169		66		197		83		5			0
-	13		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    13         334         169        66         197        83         5         0
+    13         358         169        66         197        83         5         0
+    13         301         169        66         197        83         5         0
+    13         77          169        66         197        83         5         0
+    13         334         169        66         197        83         5         0
+    13         358         169        66         197        83         5         0
+    13         301         169        66         197        83         5         0
 	
-	14		334			   169		66		197		83		5			0
-	14		358			   169		66		197		83		5			0
-	14		301			   169		66		197		83		5			0
-	14		77			   169		66		197		83		5			0
-	14		334			   169		66		197		83		5			0
-	14		358			   169		66		197		83		5			0
-	14		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    14         334         169        66         197        83         5         0
+    14         358         169        66         197        83         5         0
+    14         301         169        66         197        83         5         0
+    14         77          169        66         197        83         5         0
+    14         334         169        66         197        83         5         0
+    14         358         169        66         197        83         5         0
+    14         301         169        66         197        83         5         0
 	
-	15		334			   169		66		197		83		5			0
-	15		358			   169		66		197		83		5			0
-	15		301			   169		66		197		83		5			0
-	15		77			   169		66		197		83		5			0
-	15		334			   169		66		197		83		5			0
-	15		358			   169		66		197		83		5			0
-	15		301			   169		66		197		83		5			0
+//---------------------------------------------------------------------------------------
+// Monsters
+// The monsters created in each stage.
+//   Stage: Stage where these monsters appear.
+//   Monster: Monster that is created.
+//   Area from X: Left side of the area where they appear.
+//   Area from Y: Top side of the area where they appear.
+//   Area to X: Right side of the area where they appear.
+//   Area to Y: Bottom side of the area where they appear.
+//   How many: How many are created.
+//   Counts as: 0 Monster | 1 Boss
+//---------------------------------------------------------------------------------------
+//  [0~300]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]    [0~50]    [Number]
+//  Stage      Monster     X1         Y1         X2         Y2         Count     ScoreAs
+//---------------------------------------------------------------------------------------
+    15         334         169        66         197        83         5         0
+    15         358         169        66         197        83         5         0
+    15         301         169        66         197        83         5         0
+    15         77          169        66         197        83         5         0
+    15         334         169        66         197        83         5         0
+    15         358         169        66         197        83         5         0
+    15         301         169        66         197        83         5         0
 end
 
 //==============
@@ -220,65 +490,95 @@ end
 // Points Type: 0: Normal Monsters / 1: Boss Monsters / 2: PvP
 
 6
-//--------------------------------------------------------------------------------------
-//  Stage Points
-//  [0~300] [Ref-5] 		[0~9999]
-//	Stage	Points Type   	Points
-//--------------------------------------------------------------------------------------
-	0		0				10	//Normal Monster - Stage 0
-	1		0				20	//Boss Monster - Stage 1
-	1		0				30	//PvP - Stage 0
-	3		0				20	//Boss Monster - Stage 3
-	4		0				10	//Normal Monster - Stage 0
-	6		0				15	//Boss Monster - Stage 6
-	7		0				15	//Boss Monster - Stage 6
-	8		0				15	//Boss Monster - Stage 6
-	9		0				15	//Boss Monster - Stage 6
-	10		0				15	//Boss Monster - Stage 6
-	11		0				15	//Boss Monster - Stage 6
-	12		0				15	//Boss Monster - Stage 6
-	13		0				15	//Boss Monster - Stage 6
-	14		0				15	//Boss Monster - Stage 6
-	15		0				15	//Boss Monster - Stage 6
+//----------------------------------------------------------
+// Points
+// Points a kill gives in each stage. The first row that fits the stage and the kind of kill is used.
+//   Stage: Stage where the points are given.
+//   For killing: 0 Normal monsters | 1 Boss monsters | 2 Players (PvP)
+//   Points: Points a kill gives.
+//----------------------------------------------------------
+//  [0~300]    [Number]      [0~9999]
+//  Stage      PointsType    Points
+//----------------------------------------------------------
+    0          0             10          //Normal Monster - Stage 0
+    1          0             20          //Boss Monster - Stage 1
+    1          0             30          //PvP - Stage 0
+    3          0             20          //Boss Monster - Stage 3
+    4          0             10          //Normal Monster - Stage 0
+    6          0             15          //Boss Monster - Stage 6
+    7          0             15          //Boss Monster - Stage 6
+    8          0             15          //Boss Monster - Stage 6
+    9          0             15          //Boss Monster - Stage 6
+    10         0             15          //Boss Monster - Stage 6
+    11         0             15          //Boss Monster - Stage 6
+    12         0             15          //Boss Monster - Stage 6
+    13         0             15          //Boss Monster - Stage 6
+    14         0             15          //Boss Monster - Stage 6
+    15         0             15          //Boss Monster - Stage 6
 end
 
 7
-//--------------------------------------------------------------------------------------
-//  Rewards
-//  [Ref-5] 		[0~14]	[0~9999]
-//	Points Type   	Rank	Min Points		ItemBag
-//--------------------------------------------------------------------------------------
-// Normal Monsters
-	0				0		100				123			//Top 1
-	0				1		40				-1			//Top 2
-	0				2		30				-1			//Top 3
-	0				3		20				-1			//Top 4
-	0				4		10				-1			//Top 5
-	0				5		10				-1			//Top 6
-	0				6		50				-1			//Top 7
-	0				7		50				-1			//Top 8
-	0				8		50				-1			//Top 9
-	0				9		50				-1			//Top 10
-// Boss Monsters
-	1				0		50000			122			//Top 1
-	1				1		40000			-1			//Top 2
-	1				2		30000			-1			//Top 3
-	1				3		20000			-1			//Top 4
-	1				4		10000			-1			//Top 5
-	1				5		10000			-1			//Top 6
-	1				6		50000			-1			//Top 7
-	1				7		50000			-1			//Top 8
-	1				8		50000			-1			//Top 9
-	1				9		50000			-1			//Top 10
-// PvP
-	2				0		50000			-1			//Top 1
-	2				1		40000			-1			//Top 2
-	2				2		30000			-1			//Top 3
-	2				3		20000			-1			//Top 4
-	2				4		10000			-1			//Top 5
-	2				5		10000			-1			//Top 6
-	2				6		50000			-1			//Top 7
-	2				7		50000			-1			//Top 8
-	2				8		50000			-1			//Top 9
-	2				9		50000			-1			//Top 10
+//----------------------------------------------------------
+// Rewards
+// Item bag prizes for the three rankings (normal monsters, boss monsters, players). Up to 15 places each. Known server issue (unverified in game): after giving a prize the server does not move on to the next place.
+//   Ranking: 0 Normal monsters | 1 Boss monsters | 2 Players (PvP)
+//   Place: Place in that ranking (0 is Top 1).
+//   Points, at least: Points the player needs to get the prize.
+//   Item bag: Item bag given. -1 gives none.
+//----------------------------------------------------------
+//  [Number]      [Number]    [0~99999999]    [Number]
+//  PointsType    Rank        MinPoints       ItemBag
+//----------------------------------------------------------
+    0             0           100             123         //Top 1
+    0             1           40              -1          //Top 2
+    0             2           30              -1          //Top 3
+    0             3           20              -1          //Top 4
+    0             4           10              -1          //Top 5
+    0             5           10              -1          //Top 6
+    0             6           50              -1          //Top 7
+    0             7           50              -1          //Top 8
+    0             8           50              -1          //Top 9
+    0             9           50              -1          //Top 10
+//----------------------------------------------------------
+// Rewards
+// Item bag prizes for the three rankings (normal monsters, boss monsters, players). Up to 15 places each. Known server issue (unverified in game): after giving a prize the server does not move on to the next place.
+//   Ranking: 0 Normal monsters | 1 Boss monsters | 2 Players (PvP)
+//   Place: Place in that ranking (0 is Top 1).
+//   Points, at least: Points the player needs to get the prize.
+//   Item bag: Item bag given. -1 gives none.
+//----------------------------------------------------------
+//  [Number]      [Number]    [0~99999999]    [Number]
+//  PointsType    Rank        MinPoints       ItemBag
+//----------------------------------------------------------
+    1             0           50000           122         //Top 1
+    1             1           40000           -1          //Top 2
+    1             2           30000           -1          //Top 3
+    1             3           20000           -1          //Top 4
+    1             4           10000           -1          //Top 5
+    1             5           10000           -1          //Top 6
+    1             6           50000           -1          //Top 7
+    1             7           50000           -1          //Top 8
+    1             8           50000           -1          //Top 9
+    1             9           50000           -1          //Top 10
+//----------------------------------------------------------
+// Rewards
+// Item bag prizes for the three rankings (normal monsters, boss monsters, players). Up to 15 places each. Known server issue (unverified in game): after giving a prize the server does not move on to the next place.
+//   Ranking: 0 Normal monsters | 1 Boss monsters | 2 Players (PvP)
+//   Place: Place in that ranking (0 is Top 1).
+//   Points, at least: Points the player needs to get the prize.
+//   Item bag: Item bag given. -1 gives none.
+//----------------------------------------------------------
+//  [Number]      [Number]    [0~99999999]    [Number]
+//  PointsType    Rank        MinPoints       ItemBag
+//----------------------------------------------------------
+    2             0           50000           -1          //Top 1
+    2             1           40000           -1          //Top 2
+    2             2           30000           -1          //Top 3
+    2             3           20000           -1          //Top 4
+    2             4           10000           -1          //Top 5
+    2             5           10000           -1          //Top 6
+    2             6           50000           -1          //Top 7
+    2             7           50000           -1          //Top 8
+    2             8           50000           -1          //Top 9
+    2             9           50000           -1          //Top 10
 end

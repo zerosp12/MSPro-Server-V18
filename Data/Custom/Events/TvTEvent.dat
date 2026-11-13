@@ -1,41 +1,80 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//---------------------------------------------------
-//[1~59]        [InMin]     [InMin]     [InMin]  
-//AlarmTime   	StandTime   EventTime   CloseTime
-//---------------------------------------------------
-  2           	1           5           0             
+//----------------------------------------------------------
+// Timing (minutes)
+// The times of one event.
+//   Warning before start: Minutes before the start that the doors open and everyone is warned (1 to 59).
+//   Waiting room: Minutes players wait inside before the fight starts.
+//   Duration: Minutes the fight lasts.
+//   Closing: Minutes after the fight before the event can start again.
+//----------------------------------------------------------
+//  [1~59]       [Number]     [Number]     [Number]
+//  AlarmTime    StandTime    EventTime    CloseTime
+//----------------------------------------------------------
+    2            1            5            0
 end
 
 1
-//------------------------------------------------------------------------------
-//[*/0000]    [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
-//StartYear   StartMonth   StartDay   StartDoW   StartHour   StartMin   StartSec
-//------------------------------------------------------------------------------
-  *        	  *            *          *          *           50         0
-  *        	  *            *          *          14          5          0
-  *        	  *            *          *          22          5          0
+//----------------------------------------------------------------------------------------
+// Schedule
+// When the event starts. An event may have several rows.
+//   Year: The year when the event starts. * means every year.
+//   Month: The month when the event starts. * means every month.
+//   Day: The day of the month when the event starts. * means every day of the month.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour when the event starts. * means every hour.
+//   Minute: The minute when the event starts. * means every minute.
+//   Second: The second when the event starts. * means every second.
+//----------------------------------------------------------------------------------------
+//  [*/1970~9999]    [*/1~12]    [*/1~31]    [*/1~7]      [*/0~23]    [*/0~59]    [*/0~59]
+//  Year             Month       Day         DayOfWeek    Hour        Minute      Second
+//----------------------------------------------------------------------------------------
+    *                *           *           *            *           50          0
+    *                *           *           *            14          5           0
+    *                *           *           *            22          5           0
 end
 
 2
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//[0~99]		 [0~8191]       [0~15]			[0~114]		[Gate.txt]	  [Gate.txt]     [Gate.txt]    [0~1]    [*/0~1000] [*/0~1000] [*/0~1000] [*/0~1000] [*/0~1000]	   [*/0~1000]
-// ReqItemCount  ReqItemIndex   ReqItemLevel   	MapNumber    WaitingGate   BlueTeamGate   RedTeamGate   SetSkin	MinLevel   MaxLevel   MinReset 	 MaxReset   MinMasterReset MaxMasterReset
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   1             6159           0           	1            17           17            17           1        50	  	   * 	      *	    	 *	        *		       *
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Entry and Places
+// What a player needs to enter and where the teams are placed.
+//   How many: How many of the required item are taken from each player who enters. 0 asks for no item.
+//   Required item: Required item (category x 512 + index).
+//   Item level: Level the required item must have.
+//   Event map: Map of the event.
+//   Waiting room: Gate where players wait for the fight.
+//   Blue team: Gate where the Blue team starts.
+//   Red team: Gate where the Red team starts.
+//   Team outfit: 1 changes the look of each player to his team color during the event.
+//   Minimum level: The lowest level that can enter. * has no limit.
+//   Maximum level: The highest level that can enter. * has no limit.
+//   Minimum resets: The fewest resets that can enter. * has no limit.
+//   Maximum resets: The most resets that can enter. * has no limit.
+//   Minimum master resets: The fewest master resets that can enter. * has no limit.
+//   Maximum master resets: The most master resets that can enter. * has no limit.
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  ReqItemCount    ReqItem    ReqItemLevel    Map    WaitingGate    BlueTeamGate    RedTeamGate    SetSkin    MinLevel    MaxLevel    MinReset    MaxReset    MinMasterReset    MaxMasterReset
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1               6159       0               1      17             17              17             1          50          *           *           *           *                 *
 end
 
 
 3
-//------------------------------------------------------------------------------
-//Reward Characters:
-//[0~999999999]
-//WC  WP  GP
-//------------------------------------------------------------------------------
-  10  0	 0
+//----------------------------------------------------------
+// Winner Reward
+// Prize for every player of the winning team (nothing is given in a draw).
+//   WCoin C: WCoin C given to each winner. 0 gives none.
+//   WCoin P: WCoin P given to each winner. 0 gives none.
+//   Goblin Points: Goblin Points given to each winner. 0 gives none.
+//----------------------------------------------------------
+//  [0~999999999]    [0~999999999]    [0~999999999]
+//  WC               WP               GP
+//----------------------------------------------------------
+    10               0                0
 end

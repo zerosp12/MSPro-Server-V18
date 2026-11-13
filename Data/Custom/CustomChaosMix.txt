@@ -1,15 +1,30 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//  [0~65000] [99~65000] [           0~100          ]   [              0~2000000000               ]   
-//	Index	  MixID		 Rate0	Rate1	Rate2	Rate3	ZenReq  	ZenReq 		ZenReq 		ZenReq 			NamemixGsLog		 				   Comment
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------	                        	    	    									                                	    	    									        
-	1		  99   	 100    100		100		100		0			0			0			0				"Red Cherry Blossom"	               //Red Cherry Blossom [OK]
+//-------------------------------------------------------------------------------------------------------------------------------------------------------
+// Custom Chaos Mixes
+// One row per custom mix: its price and chance by account level. The items it asks for and the reward are set in the next parts.
+//   Mix: Number of the mix inside this file. The other parts use it to point at this mix (the reward and the Talisman of Luck).
+//   Mix number: Mix number the Chaos Machine uses to recognize this mix (99 or more). The items it asks for and the announcements use it.
+//   Chance, free account (%): Success chance of the mix for a free account. 100 always succeeds; the roll is 0 to 99 and 'up to the chance' wins, so even 0 can succeed 1 time in 100.
+//   Chance, VIP 1 (%): Success chance of the mix for a VIP 1. 100 always succeeds; the roll is 0 to 99 and 'up to the chance' wins, so even 0 can succeed 1 time in 100.
+//   Chance, VIP 2 (%): Success chance of the mix for a VIP 2. 100 always succeeds; the roll is 0 to 99 and 'up to the chance' wins, so even 0 can succeed 1 time in 100.
+//   Chance, VIP 3 (%): Success chance of the mix for a VIP 3. 100 always succeeds; the roll is 0 to 99 and 'up to the chance' wins, so even 0 can succeed 1 time in 100.
+//   Zen, free account: Zen the mix costs for a free account (the castle tax is added).
+//   Zen, VIP 1: Zen the mix costs for a VIP 1 (the castle tax is added).
+//   Zen, VIP 2: Zen the mix costs for a VIP 2 (the castle tax is added).
+//   Zen, VIP 3: Zen the mix costs for a VIP 3 (the castle tax is added).
+//   Name: Name of the mix, only for the server log (up to 59 characters).
+//-------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~65000]    [99~65000]    [0~100]    [0~100]    [0~100]    [0~100]    [0~2000000000]    [0~2000000000]    [0~2000000000]    [0~2000000000]    [Text]
+//  Index        MixID         Rate0      Rate1      Rate2      Rate3      Zen0              Zen1              Zen2              Zen3              Name
+//-------------------------------------------------------------------------------------------------------------------------------------------------------
+    1            99            100        100        100        100        0                 0                 0                 0                 "Red Cherry Blossom"    //Red Cherry Blossom [OK]
 end
 
 
@@ -19,27 +34,61 @@ end
 //Range: 0 Solo el item que queres, 1 rango de items, pero solo toma 1.
 
 1
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// [0~65000][99~65000]   [Ref-1][0~15]  [0~511] [0~15]  [0~511]		[-1/0~15]   [-1/0~15] [-1/0~1] [-1/0~1] [   -1/1~7   ]  [   -1/1~6   ]  [-1/0~1][-1/0~1][-1/0~255] [/0~9999]
-// Index	MixID		 Range	Type	ID		Type2	ID2			LevelMin	LevelMax  Luck	   Skill	Optmin 	OpMax	Excmin	Excmax	Ancient	 Socket  Durab     Count     Comment
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------		
-	1		99	 		 0	  	14 	  	14	    -1	  	-1		    -1	      	-1	      -1	   -1       -1	  	-1		-1	    -1		-1    	-1		-1         1		 //Red Cherry Blossom [OK]
-	1		99  		 0	  	14 	  	13	    -1	  	-1			-1	      	-1	      -1	   -1       -1	  	-1		-1	    -1		-1    	-1		-1         1         //Golden Cherry Blossom [OK]
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Items It Asks For
+// Items the Chaos Machine must hold for a mix. Every row of a mix must be met, with exactly the amount it says, or the mix does not start.
+//   Mix: Number of the mix inside this file.
+//   Mix number: Mix number this requirement belongs to (the MixID of the first part).
+//   Item: 0 Only the item below | 1 Any item of the range (takes one)
+//   Item: Item category of the item (or of the first one of the range).
+//   Item index: Item index in that category (or of the first one of the range).
+//   Last item: Item category of the last item of the range. Only used when Range is 1; -1 otherwise.
+//   Last item index: Item index of the last item of the range. Only used when Range is 1; -1 otherwise.
+//   Level from: Lowest item level accepted. -1 accepts any.
+//   Level to: Highest item level accepted. -1 accepts any.
+//   Luck: 1 asks for an item with luck, 0 without. -1 does not check.
+//   Skill: 1 asks for an item with its skill, 0 without. -1 does not check.
+//   Additional option from: Lowest additional option level accepted (0 to 7). -1 accepts any.
+//   Additional option to: Highest additional option level accepted (0 to 7). -1 accepts any.
+//   Excellent options from: Fewest excellent options accepted. -1 accepts any.
+//   Excellent options to: Most excellent options accepted. -1 accepts any.
+//   Ancient: Any value other than -1 asks for an ancient item (the exact value is not compared). -1 does not check.
+//   Socket: Any value other than -1 asks for an item with at least one socket (the number is not compared). -1 does not check.
+//   Durability: Exact durability the item must have. -1 does not check. For stackable items (such as jewels) it is the amount in each stack, and the total asked is Count x this.
+//   How many: How many items that fit must be in the machine; it must match exactly. For stackable items it is the number of stacks.
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~65000]    [99~65000]    [Number]    [0~15]    [0~511]    [-1~15]    [-1~511]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]      [0~9999]
+//  Index        MixID         Range       Type      ID         Type2      ID2         LevelMin    LevelMax    Luck        Skill       OptMin      OptMax      ExcMin      ExcMax      Ancient     Socket      Durability    Count
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    1            99            0           14        14         -1         -1          -1          -1          -1          -1          -1          -1          -1          -1          -1          -1          -1            1           //Red Cherry Blossom [OK]
+    1            99            0           14        13         -1         -1          -1          -1          -1          -1          -1          -1          -1          -1          -1          -1          -1            1           //Golden Cherry Blossom [OK]
 
 end
 
-//	Index	Bag
+//----------------------------------------------------------
+// Reward Item Bags
+// The item bag that is dropped when the mix succeeds.
+//   Mix: Number of the mix inside this file.
+//   Reward itembag: Special value of the item bag that gives the reward. -1 gives nothing.
+//----------------------------------------------------------
+//  [0~65000]    [Number]
+//  Index        BagID
+//----------------------------------------------------------
 2
-	1		11	   //Red Cherry Blossom [OK]
+    1            11          //Red Cherry Blossom [OK]
 end
 
 //-------------------------------
 //CustomChaosMix.dat:
 //-------------------------------
 3
-//=================
-// TalismanOfLuck
-// Index   [0/1]
-//=================
-	1		1
+//----------------------------------------------------------
+// Talisman of Luck
+// Mixes where the Talisman of Luck can raise the chance.
+//   Mix number: MixID of the mix (the same number the first part uses as Mix number).
+//----------------------------------------------------------
+//  [0~65000]    [Number]
+//  Index        AllowTalisman
+//----------------------------------------------------------
+    1            1
 end

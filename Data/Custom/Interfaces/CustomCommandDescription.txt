@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //-------------------------------------------------------------------------------------
 // System to create customs commands / Sistema para crear comandos customs
 //-------------------------------------------------------------------------------------
@@ -11,9 +12,14 @@
 // * No crear un comando que exista ya en Command.txt e CustomMove.txt
 // * Do not create a command that already exists in Command.txt and CustomMove.txt
 
-//----------------------------------------------------------------------------------------------------------------
-//						[Max 127 Let.]
-// [0~50] [/xxxxx]	    [text description]
-// ID     Command		String       	 
-//----------------------------------------------------------------------------------------------------------------
-   0	  "/testeando"	"Comando test"
+//----------------------------------------------------------
+// Command Description
+// One row per command. When a player types the command, he receives the description.
+//   Row ID: Number of the row (0 to 50). It must be different in every row.
+//   Command: The chat command, with the slash, e.g. /rules (up to 31 characters). Letter case does not matter.
+//   Description: Text the player receives (up to 127 characters). {0} is replaced by the name of the player; do not use other braces.
+//----------------------------------------------------------
+//  [0~50]    [Text]          [Text]
+//  ID        Command         Description
+//----------------------------------------------------------
+    0         "/testeando"    "Comando test"

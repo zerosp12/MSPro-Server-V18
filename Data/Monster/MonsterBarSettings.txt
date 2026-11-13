@@ -1,13 +1,17 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //----------------------------------------------------------
 // Monster Health Bars
-// Which monsters show a health bar and how.
+// Which monsters show a health bar above them and how. A monster that is not in the list shows no bar.
+//   Monster: Monster the bar is for.
+//   Health Bar: Whether the bar is on for this monster.
 //   Shown When: 0 Always | 1 Only when attacked
+//   Shows the level: Shows the level of the monster next to its name.
 //----------------------------------------------------------
 //  Monster    Status    Style    ShowLevel
 //----------------------------------------------------------

@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 //==============
 // [Ref-1]
 //==============
@@ -20,14 +21,24 @@
 // MinUsersToStart (-1 Inicia sin importar Usuarios / 1 ~ 1000: Inicia siempre que la cantidad de usuarios Online sea mayor o igual)
 
 0
-//-----------------------
-// Configuracion General
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//																  [Ref-1]  		                                [OFF / ON]									[	 Ref-6	  ]
-//							[InMin]		 [  Envia Sonido 0~1   ]  [0~4]			 [0~999 Min]   [0~1]          	[0~1]         		[0~3]					[-1 / 1 ~ 1000]
-//  Nameinvasion			Duracion	 AlIniciar   AlFinalizar  Monster Count  Forced Delay  Log(AllMonster)	ActiveInvasion		ActiveInfoMinAL			MinUsersToStart
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	"Spot Event"		    10			 1			 1			  0				 0			   0                0					0						0
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+// General
+// How long the invasion lasts, the sounds and messages and who can start it.
+//   Name: The name of the invasion, for the panel and the logs (up to 254 characters).
+//   Duration (minutes): Minutes the invasion lasts.
+//   Sound at the start: Plays a sound for everyone when the invasion starts.
+//   Sound at the end: Plays a sound for everyone when the invasion ends.
+//   Monster count message: 0 Disabled | 1 Golden message (center) | 2 Blue message (left side) | 3 Golden message, boss only | 4 Blue message, boss only
+//   Forced delay (minutes): Minutes between starting the invasion by hand and the moment it really starts. 0 starts it at once.
+//   Log every monster: Writes a log line for every monster of the invasion that dies.
+//   Tell players it is active: Sends the players the information that the invasion is active.
+//   Lowest account level told: 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Players needed to start: The invasion only starts when at least this many players are online. -1 starts with any number.
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Text]          [Number]    [Number]      [Number]    [Number]     [0~999]        [Number]          [Number]          [0~3]              [Number]
+//  Name            Duration    StartSound    EndSound    KillCount    ForcedDelay    LogAllMonsters    ActiveInvasion    ActiveInfoMinAL    MinUsersToStart
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+    "Spot Event"    10          1             1           0            0              0                 0                 0                  0
 end
 
 //==============
@@ -54,18 +65,39 @@ end
 // INFO: When TypeMsj 4 is enabled -> TypeMsj 2 will be disabled automatically
 // INFO: Cuando el TypeMsj 4 esta activo -> TypeMsg 2 se desactivara automaticamente
 
-//English
-	0		0		  "SpotEvent a comenzado"    
-	1		0		  "SpotEvent a terminado"      
-	2		0		  "{} defeated Kundun"  
-//Español                
-	0		1		  "SpotEvent a comenzado"    
-	1		1		  "SpotEvent a terminado" 
-	2		1		  "{} Derroto al Kundun" 
-//Portugues        
-	0		2		  "SpotEvent a comenzado"   
-	1		2		  "SpotEvent a terminado" 
-	2		2		  "{} defeated Kundun" 
+//----------------------------------------------------------
+// Messages
+// The texts of the invasion in each language. {} is replaced by the player or the minutes.
+//   When: 0 Start | 1 End | 2 Boss killed | 3 Time left | 4 Boss killed by a player, with map and coordinates | 5 Not enough players
+//   Language: 0 English | 1 Spanish | 2 Portuguese
+//----------------------------------------------------------
+//  Type    Language    Message
+//----------------------------------------------------------
+    0       0           "SpotEvent a comenzado"
+    1       0           "SpotEvent a terminado"
+    2       0           "{} defeated Kundun"
+//----------------------------------------------------------
+// Messages
+// The texts of the invasion in each language. {} is replaced by the player or the minutes.
+//   When: 0 Start | 1 End | 2 Boss killed | 3 Time left | 4 Boss killed by a player, with map and coordinates | 5 Not enough players
+//   Language: 0 English | 1 Spanish | 2 Portuguese
+//----------------------------------------------------------
+//  Type    Language    Message
+//----------------------------------------------------------
+    0       1           "SpotEvent a comenzado"
+    1       1           "SpotEvent a terminado"
+    2       1           "{} Derroto al Kundun"
+//----------------------------------------------------------
+// Messages
+// The texts of the invasion in each language. {} is replaced by the player or the minutes.
+//   When: 0 Start | 1 End | 2 Boss killed | 3 Time left | 4 Boss killed by a player, with map and coordinates | 5 Not enough players
+//   Language: 0 English | 1 Spanish | 2 Portuguese
+//----------------------------------------------------------
+//  Type    Language    Message
+//----------------------------------------------------------
+    0       2           "SpotEvent a comenzado"
+    1       2           "SpotEvent a terminado"
+    2       2           "{} defeated Kundun"
 end
 
 //==============
@@ -74,24 +106,39 @@ end
 // StartDoW: (1: Domingo / 2: Lunes / 3: Martes / 4: Miercoles / 5: Jueves / 6: Viernes / 7: Sabado)
 
 2
-//----------
-// Horarios
-//--------------------------------------------------------------------------------
-//									    [Ref-4]
-// [*/0000]     [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
-// StartYear    StartMonth   StartDay   StartDoW   StartHour   StartMin   StartSec
-//--------------------------------------------------------------------------------
-      *             *           *          *          14           0          *
+//-------------------------------------------------------------------------------------
+// Schedule
+// When the invasion starts. A wildcard means every year, month, day, hour or minute.
+//   Year: The year it starts. A wildcard means every year.
+//   Month: The month it starts, 1 to 12. A wildcard means every month.
+//   Day: The day of the month it starts, 1 to 31. A wildcard means every day.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour it starts, 0 to 23. A wildcard means every hour.
+//   Minute: The minute it starts, 0 to 59. A wildcard means every minute.
+//   Second: The second it starts, 0 to 59.
+//-------------------------------------------------------------------------------------
+//    [Number]    [*/0~12]    [*/0~31]    [*/1~7]      [*/0~23]    [*/0~59]    [*/0~59]
+//    Year        Month       Day         DayOfWeek    Hour        Minute      Second
+//-------------------------------------------------------------------------------------
+      *           *           *           *            14          0           *
 
 end
 3
-//------------------
-// Grupos de Mapas
-//------------------------------------------------------------------------
-// [0~99]     [0~20]            [          1~255         ]      
-// IndexGrupo SubGrupo	NumMap	X1      Y1      X2      Y2
-//------------------------------------------------------------------------
-   0      	  0         85    	48      85      48      85                 //
+//----------------------------------------------------------------------------
+// Map Groups
+// The areas where the monsters of each group appear.
+//   Group: The group of monsters this area is for (0 to 99). The monsters of the same group appear in the areas of the group.
+//   Subgroup: The subgroup inside the group, 0 to 19.
+//   Map: The map of the area.
+//   From X: Left edge of the area where the monsters appear.
+//   From Y: Top edge of the area where the monsters appear.
+//   To X: Right edge of the area where the monsters appear.
+//   To Y: Bottom edge of the area where the monsters appear.
+//----------------------------------------------------------------------------
+//  [0~99]    [0~19]      [Number]    [0~255]    [0~255]    [0~255]    [0~255]
+//  Group     Subgroup    Map         X1         Y1         X2         Y2
+//----------------------------------------------------------------------------
+    0         0           85          48         85         48         85         //
 
 end
 
@@ -107,14 +154,24 @@ end
 //MinUsersToSpawn (-1 Spawnea siempre sin importar Usuarios / 1 ~ 1000: Spawnea siempre que la cantidad de usuarios Online sea mayor o igual)
 
 4
-//-----------
+//-------------------------------------------------------------------------------------------------------------------------
 // Monsters
-//----------------------------------------------------------------------------------------------------------------------
-//															[       Ref-5        ]				 [	 Ref-6	  ]
-// [0~99]       [0~20]              [0~30]	[1~99]  [0~1]	[0~1]       [InSec]     [-1/*N Bag]  [-1 / 1 ~ 1000]
-// IndexGrupo	SubGrupo  Monster	Range	Canti	Boss	RegenType   RegenTime	ItemBag      MinUsersToSpawn
-//----------------------------------------------------------------------------------------------------------------------  
-   0         	0		  24		0		8		0		1			1			-1           -1				  //
+// The monsters that appear in each group of the invasion.
+//   Group: The group of the monster (0 to 99). It appears in the areas of the same group and subgroup.
+//   Subgroup: The subgroup inside the group, 0 to 19.
+//   Monster: The monster that appears.
+//   Move range: How far, in squares, the monster may wander from where it appeared.
+//   How many: How many of this monster appear.
+//   Is the boss: Marks it as the boss of the invasion: it is announced when it dies.
+//   Regeneration type: 0 Does not come back | 1 Comes back
+//   Regeneration time (seconds): Seconds before a dead monster comes back. Only when it comes back.
+//   Item bag: The item bag the monster drops when it dies.
+//   Players needed to appear: The monster only appears when at least this many players are online. -1 means any number.
+//-------------------------------------------------------------------------------------------------------------------------
+//  [0~99]    [0~19]      [Number]    [Number]     [Number]    [Number]    [Number]     [Number]     [Number]    [Number]
+//  Group     Subgroup    Monster     MoveRange    Count       Boss        RegenType    RegenTime    ItemBag     MinPlayers
+//-------------------------------------------------------------------------------------------------------------------------
+    0         0           24          0            8           0           1            1            -1          -1            //
 
 
 end

@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 // El sistema realiza un sorteo entre todos los users online, da items al ganador 
 // IMPORTANTE:
 // El itembag que hace referencia al ganador es 127 - Lottery.txt
@@ -22,18 +23,31 @@
 end
 
 1
-//---------------------------------------------------------------------------
-// [0~29]       [Max 32 Char]                                [1~59]   
-// EventIndex   Name                            DropMap      AlarmTime
-//---------------------------------------------------------------------------
-   0            "Sorteo por Wcoins(C)"          0            5            
+//-----------------------------------------------------------
+// Lotteries
+// One row per lottery: its name and who can take part.
+//   Lottery: Number of the lottery (0 to 23).
+//   Name: Name shown in the announcements (up to 31 characters).
+//   Map where the item drops: Only players standing on this map can win. -1 lets every online player take part.
+//   Alarm before (minutes): Minutes before the draw that everyone is warned (1 to 59).
+//-----------------------------------------------------------
+//  [0~23]    [Text]                    [Number]    [1~59]
+//  Event     Name                      DropMap     AlarmTime
+//-----------------------------------------------------------
+    0         "Sorteo por Wcoins(C)"    0           5
 end
 
 2
-//-------------------------------
-//REWARD:
-// [0~29]      [0~9999999]
-// EventIndex   WC	WP	GP 
-//-------------------------------
-   0			50	0	0	
+//----------------------------------------------------------
+// Lottery Rewards
+// Coins the winner gets, besides the item bag.
+//   Lottery: Number of the lottery (0 to 23).
+//   WCoin C: WCoin C given to the winner. 0 gives none.
+//   WCoin P: WCoin P given to the winner. 0 gives none.
+//   Goblin Points: Goblin Points given to the winner. 0 gives none.
+//----------------------------------------------------------
+//  [0~23]    [Number]    [Number]    [Number]
+//  Event     WC          WP          GP
+//----------------------------------------------------------
+    0         50          0           0
 end

@@ -1,22 +1,27 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
 //-----------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 // PK Penalty Settings
-//-----------------------------------------------------------------------------------
-// [Ref-1]
-//	Type:
-//	0: Account
-//	1: Character
-//-----------------------------------------------------------------------------------
-//	[0-1]		[0-1]		[0-1]	  	[Ref-1]		[	InMin   0-999999       ]	
-//	D.Log		Save		Penalty	  	Type	 	TimeMove	TimeTrade	Shop
-//-----------------------------------------------------------------------------------
-	0			0			0		  	1			 10		    10		    10
+// Whether the PK penalty is on and the minutes a penalized player cannot move, trade or shop.
+//   Debug log: Writes the penalties to the server log.
+//   Save the penalty: Yes saves the penalty times in the DataServer so they survive a relog.
+//   PK penalty: Turns the PK penalty system on or off.
+//   Penalty applies to: 0 Account | 1 Character
+//   Move block (minutes): Minutes the penalized player cannot move (teleport), when the penalty of the area blocks it.
+//   Trade block (minutes): Minutes the penalized player cannot trade, when the penalty of the area blocks it.
+//   Shop block (minutes): Minutes the penalized player cannot use shops, when the penalty of the area blocks it.
+//----------------------------------------------------------------------------------------
+//  [Number]    [Number]    [Number]    [Number]    [0~999999]    [0~999999]    [0~999999]
+//  DebugLog    Save        Penalty     Type        TimeMove      TimeTrade     TimeShop
+//----------------------------------------------------------------------------------------
+    0           0           0           1           10            10            10
 end
 
 1

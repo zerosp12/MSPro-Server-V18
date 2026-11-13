@@ -1,85 +1,121 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//-------------------------------------------------
-// [Minutes]     [Minutes]    [Minutes]   [Minutes]
-// WarningTime   NotifyTime   EventTime   CloseTime
-//-------------------------------------------------
-   5             1            15          4         
+//----------------------------------------------------------
+// Timing
+// How long before the event opens, when it is announced, how long it lasts and when it closes.
+//   Warning: Minutes before the start in which players can already go in. The server announces it every minute.
+//   Waiting Time: Minutes players wait inside after the entrance closes, before the event begins.
+//   Event: Minutes the event lasts once it begins.
+//   Closing: Minutes after the event ends before the place is cleaned and everyone is sent out.
+//----------------------------------------------------------
+//  WarningTime    NotifyTime    EventTime    CloseTime
+//----------------------------------------------------------
+    5              1             15           4
 end
 
 
 1
-//---------------------------------------------------------------
-//  [0~5]   [1~1000] [1~1000]
-//	Level	MinLvl   MaxLvl
-//---------------------------------------------------------------
-	0	    0	     4 
-	1	    5	     19 
-	2	    20	     39 
-	3	    40	     59 
-	4	    60	     79 
-	5	    80	     1000 
-	6		0		0
+//----------------------------------------------------------
+// Level Groups
+// The character levels that can enter each temple.
+//   Level: 0 to 5 are Illusion Temple 1 to 6.
+//   Min level: The lowest value that enters this temple. It is compared with the character's level, resets or master resets, as the IllusionTempleStyle setting of the Event settings says (0 level, 1 resets, 2 master resets).
+//   Max level: The highest value that enters this temple.
+//----------------------------------------------------------
+//  [0~5]    [0~1000]    [0~1000]
+//  Level    MinLevel    MaxLevel
+//----------------------------------------------------------
+    0        0           4
+    1        5           19
+    2        20          39
+    3        40          59
+    4        60          79
+    5        80          1000
+    6        0           0
 end
 
 2
-//-------------------------------------------------------------------------------
-// [*/0000]    [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
-// StartYear   StartMonth   StartDay   StartDoW   StartHour   StartMin   StartSec
-//-------------------------------------------------------------------------------
-   *           *            *          *          0           45         0
-   *           *            *          *          1           45         0
-   *           *            *          *          2           45         0
-   *           *            *          *          3           45         0
-   *           *            *          *          4           45         0
-   *           *            *          *          5           45         0
-   *           *            *          *          6           45         0
-   *           *            *          *          7           45         0
-   *           *            *          *          8           45         0
-   *           *            *          *          9           45         0
-   *           *            *          *          10          45         0
-   *           *            *          *          11          45         0
-   *           *            *          *          12          45         0
-   *           *            *          *          13          45         0
-   *           *            *          *          14          45         0
-   *           *            *          *          15          45         0
-   *           *            *          *          16          45         0
-   *           *            *          *          17          45         0
-   *           *            *          *          18          45         0
-   *           *            *          *          19          45         0
-   *           *            *          *          20          45         0
-   *           *            *          *          21          45         0
-   *           *            *          *          22          45         0
-   *           *            *          *          23          45         0
+//-----------------------------------------------------------------------------------
+// Schedules
+// When the Illusion Temple starts.
+//   Year: The year it starts. A wildcard means every year.
+//   Month: The month it starts, 1 to 12. A wildcard means every month.
+//   Day: The day of the month it starts, 1 to 31. A wildcard means every day.
+//   Day of the week: -1 Every day | 1 Sunday | 2 Monday | 3 Tuesday | 4 Wednesday | 5 Thursday | 6 Friday | 7 Saturday
+//   Hour: The hour it starts, 0 to 23. A wildcard means every hour.
+//   Minute: The minute it starts, 0 to 59. A wildcard means every minute.
+//   Second: The second it starts, 0 to 59.
+//-----------------------------------------------------------------------------------
+//  [Number]    [*/0~12]    [*/0~31]    [*/1~7]      [*/0~23]    [*/0~59]    [*/0~59]
+//  Year        Month       Day         DayOfWeek    Hour        Minute      Second
+//-----------------------------------------------------------------------------------
+    *           *           *           *            0           45          0
+    *           *           *           *            1           45          0
+    *           *           *           *            2           45          0
+    *           *           *           *            3           45          0
+    *           *           *           *            4           45          0
+    *           *           *           *            5           45          0
+    *           *           *           *            6           45          0
+    *           *           *           *            7           45          0
+    *           *           *           *            8           45          0
+    *           *           *           *            9           45          0
+    *           *           *           *            10          45          0
+    *           *           *           *            11          45          0
+    *           *           *           *            12          45          0
+    *           *           *           *            13          45          0
+    *           *           *           *            14          45          0
+    *           *           *           *            15          45          0
+    *           *           *           *            16          45          0
+    *           *           *           *            17          45          0
+    *           *           *           *            18          45          0
+    *           *           *           *            19          45          0
+    *           *           *           *            20          45          0
+    *           *           *           *            21          45          0
+    *           *           *           *            22          45          0
+    *           *           *           *            23          45          0
 end
 
-//-------------------------------------------------
-// [0~5]        [0~50000000]       [0~50000000]
-// EventIndex   ExperienceTable1   ExperienceTable2
-//-------------------------------------------------
+//----------------------------------------------------------
+// Experience
+// The experience each team gets: a base amount and an amount by score.
+//   Level: The temple: 0 to 5 are Illusion Temple 1 to 6.
+//   Base EXP: Experience every team gets just for taking part.
+//   Score EXP: Extra experience for each point of score. The winning team earns double, counting the difference in points.
+//----------------------------------------------------------
+//  [0~5]    [0~50000000]    [0~50000000]
+//  Level    BaseExp         ScoreExp
+//----------------------------------------------------------
 3
-   0            300000             50000
-   1            340000             60000
-   2            380000             70000
-   3            420000             80000
-   4            460000             90000
-   5            500000             100000
+    0        300000          50000
+    1        340000          60000
+    2        380000          70000
+    3        420000          80000
+    4        460000          90000
+    5        500000          100000
 end
 
-//---------------------------------------------------------------
-//[0~5]  [  0~99999999  ] 
-//Level   WC	 WP	   GP 
-//---------------------------------------------------------------
+//----------------------------------------------------------
+// Winner Reward
+// Coins the winners receive.
+//   Level: The temple: 0 to 5 are Illusion Temple 1 to 6.
+//   WCoin C: WCoin C the winners receive.
+//   WCoin P: WCoin P the winners receive.
+//   Goblin point: Goblin points the winners receive.
+//----------------------------------------------------------
+//  [0~5]    [Number]    [Number]    [Number]
+//  Level    WC          WP          GP
+//----------------------------------------------------------
 4         
-	0	  10	 0	   0		
-	1	  10	 0	   0
-	2	  10	 0	   0
-	3	  10	 0	   0
-	4	  10	 0	   0
-	5	  10	 0	   0
+    0        10          0           0
+    1        10          0           0
+    2        10          0           0
+    3        10          0           0
+    4        10          0           0
+    5        10          0           0
 end

@@ -1,19 +1,30 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-// NPC Settings
-//--------------------------------------------------------------------------------------------------------------------------------------------------
-//	Monster: 	Index from Monster/Monster.txt
-//	Style: 		7 - Exchange Item -> Thing
-//--------------------------------------------------------------------------------------------------------------------------------------------------
-// 	[0~2000]	[ X ]		[ -1 / 0~3 ]	[  -1 / 1~1000  ]		[  -1/0~99999   ] 	[   -1/0~99999    ]		[-1 / 0~6] 	[-1 / 0~100]
-// 	Monster		Style		AccountLevel	MinLevel MaxLevel		MinReset MaxReset 	MinMReset MaxMReset		PKLevel    	RankUser
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// Settings
+// Which NPC it is, what it does and who may use it.
+//   NPC: The NPC players talk to.
+//   Type: Free Access files carry one more value after the type (turn the NPC window off). The panel does not show it.
+//   Min. Account Level: -1 Any | 0 Free | 1 VIP 1 | 2 VIP 2 | 3 VIP 3
+//   Lowest level: The lowest character level that can use it.
+//   Highest level: The highest character level that can use it.
+//   Fewest resets: The fewest resets a character can have to use it.
+//   Most resets: The most resets a character can have to use it.
+//   Fewest master resets: The fewest master resets a character can have to use it.
+//   Most master resets: The most master resets a character can have to use it.
+//   Highest PK level: The highest PK level that can use it (6 is the worst; the server does not accept more than 6).
+//   Lowest user rank: The lowest user rank that can use it.
+//----------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [0~3]           [Number]    [Number]    [Number]    [Number]    [Number]     [Number]     [Number]    [Number]
+//  Npc         Style       AccountLevel    MinLevel    MaxLevel    MinReset    MaxReset    MinMReset    MaxMReset    PkLevel     RankUser
+//----------------------------------------------------------------------------------------------------------------------------------------
 0
-	380			7			-1				-1		-1		  		-1	  	-1			-1	      -1			-1	     	-1	
+    380         7           -1              -1          -1          -1          -1          -1           -1           -1          -1
 end
 
 //----------------------------------------------------
@@ -40,17 +51,33 @@ end
 //		05 - Ruud
 //		06 - Zen
 //		07 - LevelPoints
-//		08 - Vip(Only Type 7)     
-//		09 - Level   
-//		10 - ItemBag
-//		11 - VIP Days
-//		12 - Flags
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//  [0 ~ 15]	[0 ~ 511] 	[0 ~ 15]	[0 / 1]		[0 / 1]		[-1 ~ 255]		[0 ~ 7]   	[0 ~ 63] 	[0 ~ 2]    												[1 ~ 255]		[Ref-1]   		[0~99999999]	[FlagOnly]
-//	ItemType	ItemIndex	Level		Luck   		Skill		Durability		Option  	Excellent	Ancient  	[		   Socket 1 ~ 5	  	     ]			Count			RewardType		Value       	TimeInSeconds
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Item for Value
+// One item the player hands in, and a value (Zen, WCoin, resets...) the player receives.
+//   Item category: The category of the item.
+//   Item index: The number of the item inside its category.
+//   Item level: The level of the item. Any accepts or gives any level.
+//   Luck: 1 the item has luck, 0 it has not. Any does not look at it.
+//   Skill: 1 the item has skill, 0 it has not. Any does not look at it.
+//   Durability: The durability of the item. Any does not look at it.
+//   Additional option: The additional option, 0 to 7. Any does not look at it.
+//   Excellent options: The excellent options: the sum of the options' values (up to 63). Any does not look at it.
+//   Ancient option: 0 none, 1 and 2 are the two ancient sets.
+//   Socket 1: The option of socket 1. Any does not look at it.
+//   Socket 2: The option of socket 2. Any does not look at it.
+//   Socket 3: The option of socket 3. Any does not look at it.
+//   Socket 4: The option of socket 4. Any does not look at it.
+//   Socket 5: The option of socket 5. Any does not look at it.
+//   How many: How many of this item. 0 is taken as 1.
+//   Value taken: What the player receives for the item: resets, master resets, coins, Zen and so on.
+//   Amount taken: How much of that value the player receives.
+//   Lasts (seconds): Only for rewards that expire.
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~15]      [0~511]      [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [1~255]    [Number]    [Number]    [Number]
+//  ItemType    ItemIndex    Level       Luck        Skill       Dur         Opt         ExcOpt      Anc         S1          S2          S3          S4          S5          Count      ReqType     ReqCount    ReqTime
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 7                                                                                                                                                                                                           
-	14			13	    	0	 	   	0		   	0			10				0			0			0			-1		-1		-1		-1		-1			1	    		10	    		10         	0
+    14          13           0           0           0           10          0           0           0           -1          -1          -1          -1          -1          1          10          10          0
 end
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,24 +1,42 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 1
-//--------------------------------------------------------------------
-//[1~20] [0~15] [0~511] [0~2]  [0~2]    [0~2]   [0~2]   [0~100]
-//Index	 Type	Item	MinLvl	MaxLvl	MinOpt	MaxOpt	Sucess Comment
-//--------------------------------------------------------------------
-  1	     14	    253	    0	    1	    0		1	    100    //Jewel para una evo
-  2	     14	    254	    1	    2	    1		2	    100    //Jewel de Evo 1 a Evo 2
+//----------------------------------------------------------------------------------------------
+// Pet Jewels
+// One row per jewel: its item, the levels it works on and its chance. The jewel adds one level (evolution) to the pet.
+//   Jewel: Number of the jewel (1 to 20). The ranges part uses it.
+//   Item: Item category of the jewel item.
+//   Item index: Item index of the jewel item.
+//   Lowest pet level: Not checked by the server (only the highest values are).
+//   Highest pet level: The pet must have a level below this to be upgraded (1 works on pets of level 0).
+//   Lowest option: Not checked by the server (only the highest values are).
+//   Highest option: The pet must have an additional option (Option 3) below this to be upgraded.
+//   Chance of success (%): Chance (%) that the jewel works. 100 always works.
+//----------------------------------------------------------------------------------------------
+//  [1~20]    [0~15]    [0~511]    [0~2]       [0~2]       [0~2]        [0~2]        [0~100]
+//  Index     Type      Item       MinLevel    MaxLevel    MinOption    MaxOption    SuccessRate
+//----------------------------------------------------------------------------------------------
+    1         14        253        0           1           0            1            100            //Jewel para una evo
+    2         14        254        1           2           1            2            100            //Jewel de Evo 1 a Evo 2
 end
 
 
 2
-//-------------------------------
-//[1~20] [   0~8191    ]
-//Index	 MinItem MaxItem  Comment
-//-------------------------------
-  1	     6856	 7055     //Pets Rango 1 Evo
-  2      6926	 7055     //Pets Rango 2 Evo
+//----------------------------------------------------------
+// Pet Ranges
+// Which pets each jewel can be used on. A jewel with no range (or 0 and 0) works on any item.
+//   Jewel: Jewel (the Index of the first part).
+//   First pet: First pet of the range (by item number).
+//   Last pet: Last pet of the range (by item number).
+//----------------------------------------------------------
+//  [1~20]    [Number]    [Number]
+//  Index     MinItem     MaxItem
+//----------------------------------------------------------
+    1         6856        7055        //Pets Rango 1 Evo
+    2         6926        7055        //Pets Rango 2 Evo
 end

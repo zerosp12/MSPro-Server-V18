@@ -1,17 +1,21 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 0
-//---------------
+//----------------------------------------------------------
 // Information
-//-----------------------------
-//	[ON/OFF] Annouced [0/1]	
-//	Debug 	 Enable	  AllMaps
-//-----------------------------
-	0		 1		  1
+// Turns the event on and sets how it is announced.
+//   Debug log: 1 writes extra lines about the event to the log.
+//   Event is on: Turns the event on or off.
+//   Announce only on the map: The file calls this AllMaps; the GameServer reads it as AnnounceOnlyMap.
+//----------------------------------------------------------
+//  Debug    Enable    AnnounceOnlyMap
+//----------------------------------------------------------
+    0        1         1
 end
 
 
@@ -26,60 +30,90 @@ end
 //	     0> Solo consume entrada el que inicia el evento / 1> Toda la party debe tener la entrada
 
 1
-//--------------------------
-// Nixie Lake Boss Settings.
-//--------------------------------------------------------------------------------------------------------------------------------------
-//	[Ref-1]		  [Ref-1]
-//  [0/1/2]       [-1/0/1]		[TypeItem]			[IndexItem]			 [0~15/-1]        [Time Minutes]			 [Time Minutes]
-//	Event Style | Party Style | Entrance Key Type | Entrance Key Index | Entrance Level	| Time to Move Player(End) | Revitalization Time 
-//--------------------------------------------------------------------------------------------------------------------------------------
-	1			  0				14					399					 -1			       1					     2
+//---------------------------------------------------------------------------------------------------------
+// Entry
+// How players get in: by ticket and by level, and the waiting and revival times.
+//   Entry style: 0 Free | 1 With a ticket | 2 With a ticket (whole party)
+//   Ticket style: 1 also takes a ticket from every party member who comes in; 0 only takes the ticket of whoever talks to the NPC.
+//   Ticket item: The category of the ticket item.
+//   Ticket item index: The number of the ticket item inside its category.
+//   Ticket level: The level the ticket must have. No limit accepts any.
+//   Waiting room (minutes): Minutes players stay in the zone after the boss dies before they are moved out.
+//   Revive after (minutes): Minutes after the event ends before it can open again.
+//---------------------------------------------------------------------------------------------------------
+//  [0~2]         [0~1]          [0~15]        [0~511]        [*/0~15]       [Number]    [Number]
+//  EntryStyle    TicketStyle    TicketType    TicketIndex    TicketLevel    WaitTime    RevitalizationTime
+//---------------------------------------------------------------------------------------------------------
+    1             0              14            399            -1             1           2
 end
 
 2
-//---------------------------
-// Nixie Lake Boss Settings
-//--------------------------------------------------------------------------
-//				 Refill		Min Life Rate    Min Life to Reg.  Max Regen 
-//	Regen Rate 	 LifeTimes 	for Invoke Army  Stones Times      Stone Count
-//	(0 - 100%)	(Secons)	(0 - 100%)		(Seconds)		   +Army(Group)
-//--------------------------------------------------------------------------
-	05			30			60				 60			       4
+//------------------------------------------------------------------------------
+// Boss Settings
+// How the boss recovers life and when it calls its army and the stones.
+//   Life recovered (%): Percentage of its current life the boss recovers each time.
+//   Recovers every (seconds): Seconds between one recovery and the next.
+//   Invoke the army below (% of life): The boss calls its army when its life falls to this percentage or below.
+//   Invoke the stones every (seconds): Seconds between one call of the crystal stones and the next.
+//   Most stones: The most crystal stones that can be called in the whole event. Each one also calls a wave of the army.
+//------------------------------------------------------------------------------
+//  [0~100]      [Number]         [0~100]               [Number]      [Number]
+//  RegenLife    RegenLifeTime    MinLifeToRegenArmy    StonesTime    StoneCount
+//------------------------------------------------------------------------------
+    05           30               60                    60            4
 end
 
 3
-//-------------------------
-// Player Respawn Coords.
-//------------------------------------------------------------------------
-// [0~3]   [83-119] [	0 ~ 255   ]
-// In/Out  Map		X	Y	 X2	 Y2     Comment
-//------------------------------------------------------------------------
-   0	   83		21	229	 28	 231	//Enter Coords
-   1	   83		25	117	 29	 121	//Character Close - Player Coords.
-   2	   83		36	113	 42	 126	//End Event - Player Coords.
+//------------------------------------------------------------------
+// Player Coordinates
+// Where players enter the zone and where they go when the event closes. Place 0 is the entrance, 1 is where they go when their character is closed out, 2 is where they go when the event ends.
+//   Place: 0 Where players enter | 1 Where players go when their character is closed out | 2 Where players go when the event ends
+//   Map: The map of the place.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//------------------------------------------------------------------
+//  [Number]    [Number]    [0~255]    [0~255]    [0~255]    [0~255]
+//  Pos         Map         X          Y          X2         Y2
+//------------------------------------------------------------------
+    0           83          21         229        28         231        //Enter Coords
+    1           83          25         117        29         121        //Character Close - Player Coords.
+    2           83          36         113        42         126        //End Event - Player Coords.
 end
 
 4
-//----------------------------------
-// Crystal Stone Position Coords.
-//-------------------------------------
-//  [1~4]   [	0 ~ 255   ]
-//	Index	X	Y	 X2	 Y2		Comment
-//-------------------------------------
-	1		30	225	 30	 225	// UP
-	2		33	211	 33	 211	// Down
-	3		23	215	 23	 215	// Left
-	4		37	220	 37	 200	// Right
+//----------------------------------------------------------
+// Crystal Stones
+// Where each crystal stone stands.
+//   Stone: The stone: 1 to 4. Each one is called after the boss calls its army.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//----------------------------------------------------------
+//  [1~4]    [0~255]    [0~255]    [0~255]    [0~255]
+//  Index    X          Y          X2         Y2
+//----------------------------------------------------------
+    1        30         225        30         225        // UP
+    2        33         211        33         211        // Down
+    3        23         215        23         215        // Left
+    4        37         220        37         200        // Right
 end
 
 5
-//-------------------------
-// Nixie Lake Boss Coords.
-//------------------------------
-//  [	0 ~ 255   ] 
-//	X	Y	 X2	 Y2
-//------------------------------
-	30	218	 31	 219
+//----------------------------------------------------------
+// Boss Coordinates
+// Where the boss appears.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//----------------------------------------------------------
+//  [0~255]    [0~255]    [0~255]    [0~255]
+//  X          Y          X2         Y2
+//----------------------------------------------------------
+    30         218        31         219
 end
 
 //=========================================
@@ -97,37 +131,113 @@ end
 //-Stage4-Crystal + Group 3
 
 6
-//--------------------------------------------------------------------------------------------------------------------
-// Boss Area Zone
-//	Group	Monster	Count	Att	 X	Y	X2	Y2		DmgMin	DmgMax	Def		Atk%	Def%
-//--------------------------------------------------------------------------------------------------------------------
-//Invocacion Army (Only Army) /Stage incial
-//Invocacition Army + Cystal Stones 1 /Stage 1					
-	0		743		1		60	 14	202	47	236		1.0		1.0		1.0		1.0		1.0
-	0		743		1		60	 14	202	47	236		1.0		1.0		1.0		1.0		1.0
-	0		743		1		60	 14	202	47	236		1.0		1.0		1.0		1.0		1.0
-//Invocacion Army + Cystal Stones 2	/Stage 2													
-	1		744		1		60	 14	202	47	236		1.1		1.1		1.1		1.1		1.1
-	1		744		1		60	 14	202	47	236		1.1		1.1		1.1		1.1		1.1
-	1		744		1		60	 14	202	47	236		1.1		1.1		1.1		1.1		1.1
-//Invocacion Army + Cystal Stones 3	/Stage 3													
-	2		745		1		60	 14	202	47	236		1.2		1.2		1.2		1.2		1.2
-	2		745		1		60	 14	202	47	236		1.2		1.2		1.2		1.2		1.2
-	2		745		1		60	 14	202	47	236		1.2		1.2		1.2		1.2		1.2
-//Invocacion Army + Cystal Stones 4	/Stage 4												
-	3		750		1		60	 14	202	47	236		1.3		1.3		1.3		1.3		1.3
-	3		750		1		60	 14	202	47	236		1.3		1.3		1.3		1.3		1.3
-	3		750		1		60	 14	202	47	236		1.3		1.3		1.3		1.3		1.3
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+// Army
+// The monsters each group spawns and the multipliers applied to them.
+//   Group: The wave: 0 is the first one (only the army); the next ones come together with the crystal stones.
+//   Monster: The monster that appears.
+//   Monsters per group: How many of this monster appear.
+//   Attribute: The attribute (element) the monster has.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Minimum damage x: What its minimum damage is multiplied by. -1 leaves it as it is.
+//   Maximum damage x: What its maximum damage is multiplied by. -1 leaves it as it is.
+//   Defense x: What its defense is multiplied by. -1 leaves it as it is.
+//   Attack rate x: What its attack success rate is multiplied by. -1 leaves it as it is.
+//   Defense rate x: What its defense success rate is multiplied by. -1 leaves it as it is.
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [0~255]    [Number]     [0~255]    [0~255]    [0~255]    [0~255]    [Text]    [Text]    [Text]     [Text]        [Text]
+//  Group       Monster     Count      Attribute    X          Y          X2         Y2         DmgMin    DmgMax    Defense    AttackRate    DefenseRate
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+    0           743         1          60           14         202        47         236        1.0       1.0       1.0        1.0           1.0
+    0           743         1          60           14         202        47         236        1.0       1.0       1.0        1.0           1.0
+    0           743         1          60           14         202        47         236        1.0       1.0       1.0        1.0           1.0
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+// Army
+// The monsters each group spawns and the multipliers applied to them.
+//   Group: The wave: 0 is the first one (only the army); the next ones come together with the crystal stones.
+//   Monster: The monster that appears.
+//   Monsters per group: How many of this monster appear.
+//   Attribute: The attribute (element) the monster has.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Minimum damage x: What its minimum damage is multiplied by. -1 leaves it as it is.
+//   Maximum damage x: What its maximum damage is multiplied by. -1 leaves it as it is.
+//   Defense x: What its defense is multiplied by. -1 leaves it as it is.
+//   Attack rate x: What its attack success rate is multiplied by. -1 leaves it as it is.
+//   Defense rate x: What its defense success rate is multiplied by. -1 leaves it as it is.
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [0~255]    [Number]     [0~255]    [0~255]    [0~255]    [0~255]    [Text]    [Text]    [Text]     [Text]        [Text]
+//  Group       Monster     Count      Attribute    X          Y          X2         Y2         DmgMin    DmgMax    Defense    AttackRate    DefenseRate
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+    1           744         1          60           14         202        47         236        1.1       1.1       1.1        1.1           1.1
+    1           744         1          60           14         202        47         236        1.1       1.1       1.1        1.1           1.1
+    1           744         1          60           14         202        47         236        1.1       1.1       1.1        1.1           1.1
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+// Army
+// The monsters each group spawns and the multipliers applied to them.
+//   Group: The wave: 0 is the first one (only the army); the next ones come together with the crystal stones.
+//   Monster: The monster that appears.
+//   Monsters per group: How many of this monster appear.
+//   Attribute: The attribute (element) the monster has.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Minimum damage x: What its minimum damage is multiplied by. -1 leaves it as it is.
+//   Maximum damage x: What its maximum damage is multiplied by. -1 leaves it as it is.
+//   Defense x: What its defense is multiplied by. -1 leaves it as it is.
+//   Attack rate x: What its attack success rate is multiplied by. -1 leaves it as it is.
+//   Defense rate x: What its defense success rate is multiplied by. -1 leaves it as it is.
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [0~255]    [Number]     [0~255]    [0~255]    [0~255]    [0~255]    [Text]    [Text]    [Text]     [Text]        [Text]
+//  Group       Monster     Count      Attribute    X          Y          X2         Y2         DmgMin    DmgMax    Defense    AttackRate    DefenseRate
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+    2           745         1          60           14         202        47         236        1.2       1.2       1.2        1.2           1.2
+    2           745         1          60           14         202        47         236        1.2       1.2       1.2        1.2           1.2
+    2           745         1          60           14         202        47         236        1.2       1.2       1.2        1.2           1.2
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+// Army
+// The monsters each group spawns and the multipliers applied to them.
+//   Group: The wave: 0 is the first one (only the army); the next ones come together with the crystal stones.
+//   Monster: The monster that appears.
+//   Monsters per group: How many of this monster appear.
+//   Attribute: The attribute (element) the monster has.
+//   From X: Left edge of the area.
+//   From Y: Top edge of the area.
+//   To X: Right edge of the area.
+//   To Y: Bottom edge of the area.
+//   Minimum damage x: What its minimum damage is multiplied by. -1 leaves it as it is.
+//   Maximum damage x: What its maximum damage is multiplied by. -1 leaves it as it is.
+//   Defense x: What its defense is multiplied by. -1 leaves it as it is.
+//   Attack rate x: What its attack success rate is multiplied by. -1 leaves it as it is.
+//   Defense rate x: What its defense success rate is multiplied by. -1 leaves it as it is.
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [Number]    [Number]    [0~255]    [Number]     [0~255]    [0~255]    [0~255]    [0~255]    [Text]    [Text]    [Text]     [Text]        [Text]
+//  Group       Monster     Count      Attribute    X          Y          X2         Y2         DmgMin    DmgMax    Defense    AttackRate    DefenseRate
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+    3           750         1          60           14         202        47         236        1.3       1.3       1.3        1.3           1.3
+    3           750         1          60           14         202        47         236        1.3       1.3       1.3        1.3           1.3
+    3           750         1          60           14         202        47         236        1.3       1.3       1.3        1.3           1.3
 end
 
 
 7
-//--------------------------------------------------------------------------------------------------------------------
-//  Boss Area Zone
-// [Skill.txt]	[0~100]  [Segs]
-// SkillID		Rate	 Time   Comment
-//--------------------------------------------------------------------------------------------------------------------
-	7			40		 5	    // Ice
-	39			30		 10	    // Ice Storm	
-	219			10		 15	    // Sleep (Summoner)
+//----------------------------------------------------------
+// Boss Skills
+// The skills the boss uses.
+//   Skill: The skill given to the boss. Which attack it is comes from the position of the row: row 1 is Ice, row 2 Ice Storm and row 3 Sleep.
+//   Chance (%): Chance of using it each time the boss attacks.
+//   Time (seconds): Seconds before the boss can use it again.
+//----------------------------------------------------------
+//  [Number]    [0~100]    [Number]
+//  Skill       Rate       Time
+//----------------------------------------------------------
+    7           40         5           // Ice
+    39          30         10          // Ice Storm
+    219         10         15          // Sleep (Summoner)
 end

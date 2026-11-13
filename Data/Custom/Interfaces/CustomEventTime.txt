@@ -1,9 +1,10 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
 // CustomEventTime
 //------------------------------------------------
 // [Ref-1] Pagina:
@@ -21,58 +22,86 @@
 //	Pagina		Tipo	Index
 //------------------------------------------------
 
-//------------------------------------------------
-// Pagina 1 - Webzen Events & Custom Events
-//------------------------------------------------
-	1			0		0		//Blood Castle
-	1			0		1		//Devil Square
-	1			0		2		//Chaos Castle
-	1			0		3		//Illusion Temple
-	1			0		4		//Moss Merchant
-	1			0		8		//Raklion
-	1			0		9		//Kanturu
-	1			0		10		//Doppelganger
-	1			0		11		//Imperial Guardian 
-	1			0		5		//Crywolf		[GSCS]
-	1			0		6		//Siege			[GSCS]
-	1			0		7		//Loren Deep	[GSCS]
-//------------------------------------------------
-// Pagina 2 - Eventos Customs
-//------------------------------------------------
-	2			0		12		//Online Lotterycc
-	2			0		13		//Custom Quiz
-	2			4		0		//Custom Bonus
-	2			0		15		//Custom Drop
-	2			0		16		//King of MU
-	2			0		17		//TvT Event
-	2			0		18		//Nixie
-	2			0		19		//Ferea
-	2			0		20		//Conqueror
-	2			0		21		//SkyEvent
-	2			0		22		//Guild Battle
-//------------------------------------------------
-// Pagina 3 - Invasions
-//------------------------------------------------
-	3			1		0		//Skeleton King
-	3			1		1		//Red Dragon
-	3			1		2		//Golden Dragon
-	3			1		3		//White Wizard
-	3			1		4		//New Year
-	3			1		5		//Rabbits
-	3			1		6		//Summer Event
-	3			1		7		//Cursed Santa
-	3			1		8		//Medussa
-//------------------------------------------------
-// Pagina 4 - Arenas
-//------------------------------------------------
-	4			3		0		//Survivor
-	4			3		1		//DMxDM
-	4			3		2		//GMxGM
-	4			3		3		//BMxBM
-	4			3		4		//FMxFM
-	4			3		5		//LExLE
-	4			3		6		//ELFxELF
-	4			3		7		//SUMxSUM
-	5			4		0		//Bonus Test
+//----------------------------------------------------------
+// Event Time
+// One row per event shown. Rows are shown in the order of the file.
+//   Page: Page of the window where the event is listed (1 to 9). -1 hides it.
+//   Kind of event: 0 Webzen and custom events | 1 Invasions | 2 NPC invasions | 3 Custom arenas | 4 Bonus manager
+//   Event number: Number of the event inside its kind. Webzen and custom events: 0 Blood Castle, 1 Devil Square, 2 Chaos Castle, 3 Illusion Temple, 4 Moss Merchant, 5 Crywolf, 6 Castle Siege, 7 Loren Deep, 8 Raklion, 9 Kanturu, 10 Doppelganger, 11 Imperial Guardian, 12 Online Lottery, 13 Quiz, 14 Bonus, 15 Item Rain, 16 King of Mu, 17 TvT, 18 Nixie, 19 Ferea, 20 Conqueror, 21 Sky Event, 22 Guild Battle. For the other kinds it is the number of the invasion, NPC invasion, custom arena or bonus event.
+//----------------------------------------------------------
+//  [-1~9]    [Number]    [Number]
+//  Page      Type        Index
+//----------------------------------------------------------
+    1         0           0           //Blood Castle
+    1         0           1           //Devil Square
+    1         0           2           //Chaos Castle
+    1         0           3           //Illusion Temple
+    1         0           4           //Moss Merchant
+    1         0           8           //Raklion
+    1         0           9           //Kanturu
+    1         0           10          //Doppelganger
+    1         0           11          //Imperial Guardian
+    1         0           5           //Crywolf		[GSCS]
+    1         0           6           //Siege			[GSCS]
+    1         0           7           //Loren Deep	[GSCS]
+//----------------------------------------------------------
+// Event Time
+// One row per event shown. Rows are shown in the order of the file.
+//   Page: Page of the window where the event is listed (1 to 9). -1 hides it.
+//   Kind of event: 0 Webzen and custom events | 1 Invasions | 2 NPC invasions | 3 Custom arenas | 4 Bonus manager
+//   Event number: Number of the event inside its kind. Webzen and custom events: 0 Blood Castle, 1 Devil Square, 2 Chaos Castle, 3 Illusion Temple, 4 Moss Merchant, 5 Crywolf, 6 Castle Siege, 7 Loren Deep, 8 Raklion, 9 Kanturu, 10 Doppelganger, 11 Imperial Guardian, 12 Online Lottery, 13 Quiz, 14 Bonus, 15 Item Rain, 16 King of Mu, 17 TvT, 18 Nixie, 19 Ferea, 20 Conqueror, 21 Sky Event, 22 Guild Battle. For the other kinds it is the number of the invasion, NPC invasion, custom arena or bonus event.
+//----------------------------------------------------------
+//  [-1~9]    [Number]    [Number]
+//  Page      Type        Index
+//----------------------------------------------------------
+    2         0           12          //Online Lotterycc
+    2         0           13          //Custom Quiz
+    2         4           0           //Custom Bonus
+    2         0           15          //Custom Drop
+    2         0           16          //King of MU
+    2         0           17          //TvT Event
+    2         0           18          //Nixie
+    2         0           19          //Ferea
+    2         0           20          //Conqueror
+    2         0           21          //SkyEvent
+    2         0           22          //Guild Battle
+//----------------------------------------------------------
+// Event Time
+// One row per event shown. Rows are shown in the order of the file.
+//   Page: Page of the window where the event is listed (1 to 9). -1 hides it.
+//   Kind of event: 0 Webzen and custom events | 1 Invasions | 2 NPC invasions | 3 Custom arenas | 4 Bonus manager
+//   Event number: Number of the event inside its kind. Webzen and custom events: 0 Blood Castle, 1 Devil Square, 2 Chaos Castle, 3 Illusion Temple, 4 Moss Merchant, 5 Crywolf, 6 Castle Siege, 7 Loren Deep, 8 Raklion, 9 Kanturu, 10 Doppelganger, 11 Imperial Guardian, 12 Online Lottery, 13 Quiz, 14 Bonus, 15 Item Rain, 16 King of Mu, 17 TvT, 18 Nixie, 19 Ferea, 20 Conqueror, 21 Sky Event, 22 Guild Battle. For the other kinds it is the number of the invasion, NPC invasion, custom arena or bonus event.
+//----------------------------------------------------------
+//  [-1~9]    [Number]    [Number]
+//  Page      Type        Index
+//----------------------------------------------------------
+    3         1           0           //Skeleton King
+    3         1           1           //Red Dragon
+    3         1           2           //Golden Dragon
+    3         1           3           //White Wizard
+    3         1           4           //New Year
+    3         1           5           //Rabbits
+    3         1           6           //Summer Event
+    3         1           7           //Cursed Santa
+    3         1           8           //Medussa
+//----------------------------------------------------------
+// Event Time
+// One row per event shown. Rows are shown in the order of the file.
+//   Page: Page of the window where the event is listed (1 to 9). -1 hides it.
+//   Kind of event: 0 Webzen and custom events | 1 Invasions | 2 NPC invasions | 3 Custom arenas | 4 Bonus manager
+//   Event number: Number of the event inside its kind. Webzen and custom events: 0 Blood Castle, 1 Devil Square, 2 Chaos Castle, 3 Illusion Temple, 4 Moss Merchant, 5 Crywolf, 6 Castle Siege, 7 Loren Deep, 8 Raklion, 9 Kanturu, 10 Doppelganger, 11 Imperial Guardian, 12 Online Lottery, 13 Quiz, 14 Bonus, 15 Item Rain, 16 King of Mu, 17 TvT, 18 Nixie, 19 Ferea, 20 Conqueror, 21 Sky Event, 22 Guild Battle. For the other kinds it is the number of the invasion, NPC invasion, custom arena or bonus event.
+//----------------------------------------------------------
+//  [-1~9]    [Number]    [Number]
+//  Page      Type        Index
+//----------------------------------------------------------
+    4         3           0           //Survivor
+    4         3           1           //DMxDM
+    4         3           2           //GMxGM
+    4         3           3           //BMxBM
+    4         3           4           //FMxFM
+    4         3           5           //LExLE
+    4         3           6           //ELFxELF
+    4         3           7           //SUMxSUM
+    5         4           0           //Bonus Test
 	
 end

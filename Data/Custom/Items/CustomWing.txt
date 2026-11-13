@@ -1,11 +1,41 @@
-//--------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  2020 - 2026 MuServerPro Team
-//--------------------------------------------------------------------------------------------------------------
-//ID	 IndexItem	 DefA			 IncDmgA		   IncDmgB			 DecDmgA		   DecDmgB		     Opt1	        Opt1	       Opt2		      Opt2   		 Opt3		    Opt3		   NewOpt1		     NewOpt1		   NewOpt2		     NewOpt2		   NewOpt3			 NewOpt3		   NewOpt4		     NewOpt4	       ModelType  ModelName
-0        6294        4               139               2                 61                2                 80             4              85             1              83             4              110               5                 111               5                 109               5                 102               5                 0          "alaevobkv2"
-1        6295        4               139               2                 61                2                 80             4              85             1              83             4              110               5                 111               5                 109               5                 102               5                 0          "demonicsoul"
-2        6296        4               139               2                 61                2                 80             4              85             1              83             4              110               5                 111               5                 109               5                 102               5                 0          "darkdemonicmg"
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Custom Wings
+// One row per custom wing.
+//   Number: Number of the wing in this file (0 to 99). It must be different in every row.
+//   Wing: Item that is the wing.
+//   Defense constant: Defense the wing adds for each level of the item (this value x item level).
+//   Damage increase A: Damage dealt, in %, at level 0 (100 changes nothing). The damage % is this value plus the level x the next value.
+//   Damage increase B: Damage dealt, in %: added for each item level.
+//   Damage decrease A: Damage received, in %, at level 0 (100 changes nothing). The damage % is this value minus the level x the next value.
+//   Damage decrease B: Damage received, in %: taken away for each item level.
+//   Option 1: Effect given by the normal option of the wing (the additional option of the item). The value below is multiplied by the additional option level.
+//   Option 1 value: Amount of the effect for each level of the additional option.
+//   Option 2: Effect given by the normal option when the wing has the excellent option 16 (the additional option of the item). The value below is multiplied by the additional option level.
+//   Option 2 value: Amount of the effect for each level of the additional option.
+//   Option 3: Effect given by the normal option when the wing has the excellent option 32 (the additional option of the item). The value below is multiplied by the additional option level.
+//   Option 3 value: Amount of the effect for each level of the additional option.
+//   Excellent option 1: Effect given by the excellent option 1 of the wing.
+//   Excellent option 1 value: Amount of that effect.
+//   Excellent option 2: Effect given by the excellent option 2 of the wing.
+//   Excellent option 2 value: Amount of that effect.
+//   Excellent option 3: Effect given by the excellent option 4 of the wing.
+//   Excellent option 3 value: Amount of that effect.
+//   Excellent option 4: Effect given by the excellent option 8 of the wing.
+//   Excellent option 4 value: Amount of that effect.
+//   Model type: Kind of 3D model the client uses for this wing.
+//   Model: The name of the wing's 3D model in the client (up to 31 characters).
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  [0~99]    [Number]     [Number]    [Number]    [Number]    [Number]    [Number]    [Number]    [Number]     [Number]    [Number]     [Number]    [Number]     [Number]    [Number]        [Number]    [Number]        [Number]    [Number]        [Number]    [Number]        [Number]     [Text]
+//  ID        IndexItem    DefA        IncDmgA     IncDmgB     DecDmgA     DecDmgB     Opt1        Opt1Value    Opt2        Opt2Value    Opt3        Opt3Value    NewOpt1     NewOpt1Value    NewOpt2     NewOpt2Value    NewOpt3     NewOpt3Value    NewOpt4     NewOpt4Value    ModelType    ModelName
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0         6294         4           139         2           61          2           80          4            85          1            83          4            110         5               111         5               109         5               102         5               0            "alaevobkv2"
+    1         6295         4           139         2           61          2           80          4            85          1            83          4            110         5               111         5               109         5               102         5               0            "demonicsoul"
+    2         6296         4           139         2           61          2           80          4            85          1            83          4            110         5               111         5               109         5               102         5               0            "darkdemonicmg"
 end
