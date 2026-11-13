@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 // NPC 0  // SPOTS 1  // MONSTER INDIVIDUAL 2 
@@ -16,7 +16,7 @@
 0
 //--------------------------------------------------------------------
 // Part 0
-// Monster spawn placement · 004 - Lost Tower.txt
+// Monster spawn placement - 004 - Lost Tower.txt
 //--------------------------------------------------------------------
 //  MonsterIndex    SpawnRadius    LocationX    LocationY    Direction
 //--------------------------------------------------------------------
@@ -26,7 +26,7 @@ end
 1
 //-------------------------------------------------------------------------------------------------------------------
 // Part 1
-// Monster spawn placement · 004 - Lost Tower.txt
+// Monster spawn placement - 004 - Lost Tower.txt
 //-------------------------------------------------------------------------------------------------------------------
 //  MonsterIndex    SpawnRadius    RangeStartX    RangeStartY    RangeEndX    RangeEndY    Direction    MaxSpawnCount
 //-------------------------------------------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ end
 	
 //-------------------------------------------------------------------------------------------------------------------
 // Part 1
-// Monster spawn placement · 004 - Lost Tower.txt
+// Monster spawn placement - 004 - Lost Tower.txt
 //-------------------------------------------------------------------------------------------------------------------
 //  MonsterIndex    SpawnRadius    RangeStartX    RangeStartY    RangeEndX    RangeEndY    Direction    MaxSpawnCount
 //-------------------------------------------------------------------------------------------------------------------
@@ -111,7 +111,7 @@ end
 2
 //--------------------------------------------------------------------
 // Part 2
-// Monster spawn placement · 004 - Lost Tower.txt
+// Monster spawn placement - 004 - Lost Tower.txt
 //--------------------------------------------------------------------
 //  MonsterIndex    SpawnRadius    LocationX    LocationY    Direction
 //--------------------------------------------------------------------

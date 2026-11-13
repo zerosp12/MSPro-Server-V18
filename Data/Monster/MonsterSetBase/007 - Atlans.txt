@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //==============
@@ -12,7 +12,7 @@
 
 //-------------------------------------------------------------------
 // Part 0
-// Monster spawn placement · 007 - Atlans.txt
+// Monster spawn placement - 007 - Atlans.txt
 //-------------------------------------------------------------------
 //  MonsterIndex    SpawnRange    LocationX    LocationY    Direction
 //-------------------------------------------------------------------
@@ -22,7 +22,7 @@ end
 
 //---------------------------------------------------------------------------------------------------------------
 // Part 1
-// Monster spawn placement · 007 - Atlans.txt
+// Monster spawn placement - 007 - Atlans.txt
 //---------------------------------------------------------------------------------------------------------------
 //  MonsterIndex    SpawnRange    RangeStartX    RangeStartY    RangeEndX    RangeEndY    Direction    SpawnCount
 //---------------------------------------------------------------------------------------------------------------

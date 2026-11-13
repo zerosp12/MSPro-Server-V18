@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  Â© 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ end
 //----------------------------------------------------------------------------------------------------------
 // Configuraciones de Caracteristicas - Seccion 1
 //----------------------------------------------------------------------------------------------------------
-//	(1) Index 				--> Corresponde al Index de la SecciÃ³n 0 !!!
+//	(1) Index 				--> Corresponde al Index de la Sección 0 !!!
 //	(2) Max Rango Ataque	--> Minimo: 1 / Maximo: 6 - Limita el rango de Ataque
 //	(3) Party Buff Elf		--> 0: NO Permite / 1: Permite
 //	(4) Reparar Items		--> 0: NO Permite / 1: Permite
@@ -54,7 +54,7 @@ end
 //----------------------------------------------------------------------------------------------------------
 // ATENCION: Una vez que el PJ termina las 5 etapas sera desconectado del Juego
 //----------------------------------------------------------------------------------------------------------
-//	(1) Index 				--> Corresponde al Index de la SecciÃ³n 0 !!!
+//	(1) Index 				--> Corresponde al Index de la Sección 0 !!!
 //	(2) Etapa				--> 1 al 5 - Tienen que estar las 5
 //	(3) Minutos				--> Minutos que dura una Etapa
 //	(4) Zen					--> Zen Base
@@ -74,7 +74,7 @@ end
 //----------------------------------------------------------------------------------------------------------
 // Configuraciones de Personaje al Morir - Seccion 3
 //----------------------------------------------------------------------------------------------------------
-//	(1) Index 				--> Corresponde al Index de la SecciÃ³n 0 !!!
+//	(1) Index 				--> Corresponde al Index de la Sección 0 !!!
 //	(2) Opcion al Morir		--> 0: Vuelve al Safe / 1: Vuelve al lugar donde murio para continuar
 //	(3) Zen					--> Costo de Zen (Utilizar solo en caso de cobrar para volver)
 //	(4) WC					--> Costo de WC (Utilizar solo en caso de cobrar para volver)

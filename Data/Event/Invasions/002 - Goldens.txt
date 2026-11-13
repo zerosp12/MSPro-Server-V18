@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  Â© 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //==============
@@ -51,7 +51,7 @@ end
 //==============
 // [Ref-3]
 //==============
-// Lenguaje (0: English / 1: EspaÃ±ol / 2: Portugues)
+// Lenguaje (0: English / 1: Español / 2: Portugues)
 
 1
 //----------
@@ -91,8 +91,8 @@ end
     1       1           "El Dragon Dorado ha retirado sus tropas"
     2       1           "El Dragon Dorado fue derrotado por {}"
     3       1           "El Dragon Dorado nos invaden en {} minutos"
-    4       1           "{} derrotÃ³ a {} en {} - {}, {}"
-    5       1           "Â¡Golden Dragon no tiene suficientes guerreros contra los que luchar!"
+    4       1           "{} derrotó a {} en {} - {}, {}"
+    5       1           "¡Golden Dragon no tiene suficientes guerreros contra los que luchar!"
 //----------------------------------------------------------
 // Messages
 // The texts of the invasion in each language. {} is replaced by the player or the minutes.

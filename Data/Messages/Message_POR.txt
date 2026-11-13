@@ -2,12 +2,12 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -30,7 +30,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -42,7 +42,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -53,7 +53,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -61,7 +61,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -149,7 +149,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -172,7 +172,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -195,7 +195,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -211,7 +211,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -249,7 +249,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -265,7 +265,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -277,7 +277,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -327,7 +327,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -337,7 +337,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -350,7 +350,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -366,7 +366,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -378,7 +378,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -422,7 +422,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -445,7 +445,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -500,7 +500,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -518,7 +518,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -533,7 +533,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -554,7 +554,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -564,7 +564,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -574,7 +574,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -594,7 +594,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -627,7 +627,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -664,7 +664,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -678,7 +678,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -688,7 +688,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -701,7 +701,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -715,7 +715,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -731,7 +731,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -746,7 +746,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -755,7 +755,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -764,7 +764,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -785,7 +785,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -799,7 +799,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -809,7 +809,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -823,7 +823,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -835,7 +835,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -849,7 +849,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -859,7 +859,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -868,7 +868,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -878,7 +878,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -888,7 +888,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -897,7 +897,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -908,7 +908,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -917,7 +917,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -926,7 +926,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -941,7 +941,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -957,7 +957,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -970,7 +970,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -979,7 +979,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -987,7 +987,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1000,7 +1000,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1019,7 +1019,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1043,7 +1043,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1065,7 +1065,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1099,7 +1099,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1115,7 +1115,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1127,7 +1127,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1144,7 +1144,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1171,7 +1171,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1184,7 +1184,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1215,7 +1215,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1227,7 +1227,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1244,7 +1244,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1264,7 +1264,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1303,7 +1303,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1324,7 +1324,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1335,7 +1335,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1347,7 +1347,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1356,7 +1356,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1393,7 +1393,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1411,7 +1411,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1444,7 +1444,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1469,7 +1469,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1501,7 +1501,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1515,7 +1515,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1542,7 +1542,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1571,7 +1571,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1590,7 +1590,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1601,7 +1601,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1610,7 +1610,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1636,7 +1636,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1646,7 +1646,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1656,7 +1656,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1664,7 +1664,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1673,7 +1673,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1689,7 +1689,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1699,7 +1699,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1716,7 +1716,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1725,7 +1725,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1749,7 +1749,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1768,14 +1768,14 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
     3000     "{} killed the boss, congrulations!!"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1783,7 +1783,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1958,7 +1958,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_POR.txt
+// In-game system text by ID, per language - Message_POR.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------

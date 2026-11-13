@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //==============
@@ -12,7 +12,7 @@
 
 //-------------------------------------------------------------------
 // Part 0
-// Monster spawn placement · 000 - Lorencia.txt
+// Monster spawn placement - 000 - Lorencia.txt
 //-------------------------------------------------------------------
 //  MonsterIndex    SpawnRange    LocationX    LocationY    Direction
 //-------------------------------------------------------------------
@@ -46,7 +46,7 @@ end
 1
 //-------------------------------------------------------------------------------------------------------------------
 // Part 1
-// Monster spawn placement · 000 - Lorencia.txt
+// Monster spawn placement - 000 - Lorencia.txt
 //-------------------------------------------------------------------------------------------------------------------
 //  MonsterIndex    SpawnRadius    RangeStartX    RangeStartY    RangeEndX    RangeEndY    Direction    MaxSpawnCount
 //-------------------------------------------------------------------------------------------------------------------

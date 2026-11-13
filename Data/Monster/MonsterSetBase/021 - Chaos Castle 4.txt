@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //==============
@@ -13,7 +13,7 @@
 4
 //--------------------------------------------------------------------
 // Part 4
-// Monster spawn placement · 021 - Chaos Castle 4.txt
+// Monster spawn placement - 021 - Chaos Castle 4.txt
 //--------------------------------------------------------------------
 //  MonsterIndex    SpawnRadius    LocationX    LocationY    Direction
 //--------------------------------------------------------------------

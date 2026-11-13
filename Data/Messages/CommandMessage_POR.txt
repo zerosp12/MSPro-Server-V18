@@ -2,12 +2,12 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -43,7 +43,7 @@
     29        "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -75,7 +75,7 @@
     55        "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -86,7 +86,7 @@
     60        "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -97,7 +97,7 @@
     65        "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -105,7 +105,7 @@
     67        "Level Points Restored"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -113,7 +113,7 @@
     69        "[ReMaster] MasterSkillTree Reset Failed."
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -121,7 +121,7 @@
     71        "[Helper] Created {} x{} On {} {} {}"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -129,14 +129,14 @@
     73        "You are now invisible"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
     74        "Inventory was cleared successfully"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -144,7 +144,7 @@
     76        "You have successfully created an Set"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -154,7 +154,7 @@
     80        "You must remove all your equipped items"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -162,7 +162,7 @@
     82        "[DisablePVP] Enabled"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -171,7 +171,7 @@
     85        "Receipt of applications: Automatic"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -183,7 +183,7 @@
     91        "[{}] All have earned {} GoblinPoint(s)!"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -197,7 +197,7 @@
     99        "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -207,7 +207,7 @@
     103       "Admin {} banned account {} for {} Days"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -220,7 +220,7 @@
     110       "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -238,7 +238,7 @@
     122       "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -255,7 +255,7 @@
     133       "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -277,7 +277,7 @@
     149       "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -288,7 +288,7 @@
     153       "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · CommandMessage_POR.txt
+// In-game system text by ID, per language - CommandMessage_POR.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------

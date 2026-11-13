@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  Â© 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //==============
@@ -51,7 +51,7 @@ end
 //==============
 // [Ref-3]
 //==============
-// Lenguaje (0: English / 1: EspaÃ±ol / 2: Portugues)
+// Lenguaje (0: English / 1: Español / 2: Portugues)
 
 1
 //----------
@@ -84,7 +84,7 @@ end
 //----------------------------------------------------------
 //  Type    Language    Message
 //----------------------------------------------------------
-    0       1           "Invasion de aÃ±o nuevo ha comenzado!"
+    0       1           "Invasion de año nuevo ha comenzado!"
     1       1           ""
     2       1           ""
 //----------------------------------------------------------

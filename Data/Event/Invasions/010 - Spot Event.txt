@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //==============
@@ -51,7 +51,7 @@ end
 //==============
 // [Ref-3]
 //==============
-// Lenguaje (0: English / 1: Español / 2: Portugues)
+// Lenguaje (0: English / 1: Espa�ol / 2: Portugues)
 
 1
 //----------

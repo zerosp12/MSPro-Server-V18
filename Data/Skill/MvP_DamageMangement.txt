@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //==============
@@ -11,7 +11,7 @@
 //           DAMAGE: 1.0 = 100 Power Dmg / Example: 0.5 is 50% Power Dmg 
 
 //------------------------------------------------------
-// Administracion de Daño de Player a Monsters por Clase
+// Administracion de Da�o de Player a Monsters por Clase
 //------------------------------------------------------
 0
 //------------------------------------------------------------------

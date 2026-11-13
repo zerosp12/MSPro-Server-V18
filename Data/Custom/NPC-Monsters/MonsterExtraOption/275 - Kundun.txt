@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  Â© 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ end
 //	Action: 
 // 	- 0: Cambia el VIP a cuentas Free al configurado en AL_Target
 // 	- 1: Cambia el VIP a cuentas Free o inferiores al configurado en AL_Target
-// 	- 2: Suma dÃ­as VIP solo si coincide con el configurado en AL_Target
+// 	- 2: Suma días VIP solo si coincide con el configurado en AL_Target
 //-------------------
 // Map Reward Addons
 //--------------------------------------------------------------------------------------------------------------------------------------
@@ -131,7 +131,7 @@ end
 //==============
 // [Ref-6]
 //==============
-// Lenguaje (0: English / 1: EspaÃ±ol / 2: Portugues)
+// Lenguaje (0: English / 1: Español / 2: Portugues)
 
 9
 //----------------------------------------------------------

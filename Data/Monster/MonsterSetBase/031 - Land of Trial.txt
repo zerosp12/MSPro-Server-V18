@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //==============
@@ -22,7 +22,7 @@ end
 1
 //-------------------------------------------------------------------------------------------------------------------
 // Part 1
-// Monster spawn placement · 031 - Land of Trial.txt
+// Monster spawn placement - 031 - Land of Trial.txt
 //-------------------------------------------------------------------------------------------------------------------
 //  MonsterIndex    SpawnRadius    RangeStartX    RangeStartY    RangeEndX    RangeEndY    Direction    MaxSpawnCount
 //-------------------------------------------------------------------------------------------------------------------
@@ -59,7 +59,7 @@ end
 2
 //--------------------------------------------------------------------
 // Part 2
-// Monster spawn placement · 031 - Land of Trial.txt
+// Monster spawn placement - 031 - Land of Trial.txt
 //--------------------------------------------------------------------
 //  MonsterIndex    SpawnRadius    LocationX    LocationY    Direction
 //--------------------------------------------------------------------

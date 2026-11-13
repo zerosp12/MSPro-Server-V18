@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -101,7 +101,7 @@ end
 //  Lang    Type    Message
 //----------------------------------------------------------
     0       0       "{} won the Wheel of Fortune grand prize!"
-    1       0       "{} ganhou o grande prêmio da Roda da Fortuna!"
+    1       0       "{} ganhou o grande pr�mio da Roda da Fortuna!"
     2       0       "{} gano el gran premio de la Rueda de la Fortuna!"
 //----------------------------------------------------------
 // Announcements

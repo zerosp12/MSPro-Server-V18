@@ -2,13 +2,13 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 0
 //----------------------------------------------------------
 // Part 0
-// Monster spawn placement · 039 - Kanturu Remain.txt
+// Monster spawn placement - 039 - Kanturu Remain.txt
 //----------------------------------------------------------
 //  Index    Range    PositionX    PositionY    Direction
 //----------------------------------------------------------

@@ -2,12 +2,12 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Swords
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -81,7 +81,7 @@ end
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Axes
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -130,7 +130,7 @@ end
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Maces and scepters
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -189,7 +189,7 @@ end
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Spears
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -247,7 +247,7 @@ end
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Bows and crossbows
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -312,7 +312,7 @@ end
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Staffs and sticks
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -382,7 +382,7 @@ end
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Shields
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -443,7 +443,7 @@ end
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Helms
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -544,7 +544,7 @@ end
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Armors
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -653,7 +653,7 @@ end
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Pants
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -762,7 +762,7 @@ end
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Gloves
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -866,7 +866,7 @@ end
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Boots
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -975,7 +975,7 @@ end
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Wings and orbs
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -1123,7 +1123,7 @@ end
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Pets, rings and pendants
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -1299,7 +1299,7 @@ end
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Consumables and jewels
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.
@@ -1484,7 +1484,7 @@ end
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Scrolls
-//   Slot: Position inside its category; the item number the game uses is category × 512 + slot.
+//   Slot: Position inside its category; the item number the game uses is category x 512 + slot.
 //   Equip slot: Where it is worn; not equippable for potions, jewels and similar.
 //   Skill: The skill the item gives or uses when equipped. 0 means none.
 //   Width: Inventory slots across.

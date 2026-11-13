@@ -2,12 +2,12 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  © 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -30,7 +30,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -42,7 +42,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -53,7 +53,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -61,7 +61,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -149,7 +149,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -172,7 +172,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -195,7 +195,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -211,7 +211,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -249,7 +249,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -265,7 +265,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -277,7 +277,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -327,7 +327,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -337,7 +337,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -350,7 +350,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -366,7 +366,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -378,7 +378,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -422,7 +422,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -485,7 +485,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -503,7 +503,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -518,7 +518,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -539,7 +539,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -548,7 +548,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -558,7 +558,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -578,7 +578,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -611,7 +611,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -648,7 +648,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -662,7 +662,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -672,7 +672,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -685,7 +685,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -699,7 +699,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -715,7 +715,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -730,7 +730,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -739,7 +739,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -748,7 +748,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -769,7 +769,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -783,7 +783,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -794,7 +794,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -807,7 +807,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -819,7 +819,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -833,7 +833,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -843,7 +843,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -852,7 +852,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -862,7 +862,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -872,7 +872,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -881,7 +881,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -892,7 +892,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -901,7 +901,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -910,7 +910,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -925,7 +925,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -941,7 +941,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -954,7 +954,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -963,7 +963,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -971,7 +971,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -984,7 +984,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1003,7 +1003,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1027,7 +1027,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1049,7 +1049,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1080,7 +1080,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1096,7 +1096,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1106,7 +1106,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1121,7 +1121,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1144,7 +1144,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1157,7 +1157,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1188,7 +1188,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1200,7 +1200,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1217,7 +1217,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1237,7 +1237,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1277,7 +1277,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1302,7 +1302,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1314,7 +1314,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1322,7 +1322,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1359,7 +1359,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1377,7 +1377,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1410,7 +1410,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1437,7 +1437,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1469,7 +1469,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1483,7 +1483,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1532,7 +1532,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1550,7 +1550,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1559,7 +1559,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1568,7 +1568,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1594,7 +1594,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1604,7 +1604,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1614,7 +1614,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1622,7 +1622,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1631,7 +1631,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1641,7 +1641,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1650,7 +1650,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1674,7 +1674,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1693,7 +1693,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1702,7 +1702,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1711,7 +1711,7 @@
     3312     "You cannot modify permissions of a higher or equal rank member"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1719,7 +1719,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------
@@ -1894,7 +1894,7 @@
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language · Message_SPN.txt
+// In-game system text by ID, per language - Message_SPN.txt
 //----------------------------------------------------------
 //  Blood    Castle
 //----------------------------------------------------------

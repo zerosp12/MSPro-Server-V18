@@ -2,12 +2,12 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  Â© 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -17,9 +17,9 @@
     3         "Comando deshabilitado"
     4         "No tienes suficiente Zen. Necesitas ({}) Zen"
     5         "Necesitas tener {} nivel para usar este cmd"
-    6         "Ha excedido {} lÃ­mite de nivel para usar este comando"
+    6         "Ha excedido {} límite de nivel para usar este comando"
     7         "Necesitas tener {} Restablecer para usar este cmd"
-    8         "Ha excedido {} LÃ­mite de restablecimiento para usar este comando"
+    8         "Ha excedido {} Límite de restablecimiento para usar este comando"
     9         "Necesita tener MasterReset {} para usar este cmd"
     10        "Ha excedido {} MasterReset Limit para usar este comando"
     11        "Solo PkLevel {} puede usar este comando"
@@ -29,45 +29,45 @@
     15        "Necesitas {} GoblinPoints para usar este comando"
     16        "Esta clase no ha permitido usar este comando"
     17        "Comando ejecutado"
-    18        "Personaje sin conexiÃ³n"
-    19        "Â¡El gremio no existÃ­a!"
+    18        "Personaje sin conexión"
+    19        "¡El gremio no existía!"
     20        "Sintaxis de comando incorrecta"
     21        "Has cancelado {} Zen"
     22        "Has cancelado {} WCCoin(s)"
     23        "Has cancelado {} WPCoin(s)"
     24        "Has cancelado {} GoblinPoint(s)"
-    25        "Perdes {} niveles tiene penalizaciÃ³n"
-    26        "Tu pierdes {} Resets tiene penalizaciÃ³n"
-    27        "Usted pierde {} MasterResets tiene penalizaciÃ³n"
+    25        "Perdes {} niveles tiene penalización"
+    26        "Tu pierdes {} Resets tiene penalización"
+    27        "Usted pierde {} MasterResets tiene penalización"
     28        "Has cancelado {} Ruuds"
     29        "Please Stop. Try lower number than {}"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
     30        "Ya tienes otra propuesta de matrimonio"
     31        "No puedes casarte contigo mismo"
-    32        "Ya estÃ¡s casado"
-    33        "Ya estÃ¡ casado"
-    34        "Â¡Mapa incorrecto para casarse!"
+    32        "Ya estás casado"
+    33        "Ya está casado"
+    34        "¡Mapa incorrecto para casarse!"
     35        "Coordenadas X/Y incorrectas"
-    36        "Â¡Personaje bloqueado para casarse en este momento!"
-    37        "Â¡El matrimonio homosexual no estÃ¡ permitido en este servidor!"
+    36        "¡Personaje bloqueado para casarse en este momento!"
+    37        "¡El matrimonio homosexual no está permitido en este servidor!"
     38        "No tienes ninguna propuesta de matrimonio para aceptar"
     39        "Tu pareja esta en un mapa que no tiene permitido el traceo"
-    40        "El socio estÃ¡ desconectado"
-    41        "No estÃ¡s casado"
-    42        "Casado con {} durante {} dÃ­as"
+    40        "El socio está desconectado"
+    41        "No estás casado"
+    42        "Casado con {} durante {} días"
     43        "Casarse Estado: Soltero"
-    44        "Usted pidiÃ³ casarse con {}"
+    44        "Usted pidió casarse con {}"
     45        "{} propuso casarse contigo"
-    46        "{} ahora estÃ¡n casados con {}"
-    47        "Ahora estÃ¡s divorciado"
-    48        "Estado de matrimonio: Divorciado. Â¡Bloqueado durante {} dÃ­as!"
+    46        "{} ahora están casados con {}"
+    47        "Ahora estás divorciado"
+    48        "Estado de matrimonio: Divorciado. ¡Bloqueado durante {} días!"
     49        "Casarse Estado: Divorciado"
-    50        "No puedo mudarme allÃ­ sin Wings, Pet o Dinorant"
+    50        "No puedo mudarme allí sin Wings, Pet o Dinorant"
     51        "No puedes moverte ahora"
     52        "No cumples con los requisitos para moverte"
     53        "RESERVED"
@@ -75,53 +75,53 @@
     55        "RESERVED"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    56        "Â¡Este es un comando exclusivo para Dark Lord!"
+    56        "¡Este es un comando exclusivo para Dark Lord!"
     57        "No tienes suficientes puntos para sumar"
     58        "Has agregado {} puntos, te quedan {} puntos"
     59        "RESERVADO"
     60        "RESERVADO"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
     61        "No eres PK"
-    62        "Has borrado con Ã©xito tu PK"
+    62        "Has borrado con éxito tu PK"
     63        "RESERVADO"
     64        "RESERVADO"
     65        "RESERVADO"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    66        "Â¡AcciÃ³n denegada! Volver mÃ¡s tarde"
+    66        "¡Acción denegada! Volver más tarde"
     67        "Puntos de nivel restaurados"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    68        "Â¡[ReMaster] MasterSkillTree reinicio exitoso!"
+    68        "¡[ReMaster] MasterSkillTree reinicio exitoso!"
     69        "[ReMaster] Error al restablecer MasterSkillTree"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
     70        "[Ayudante] No se puede usar en este mapa"
-    71        "[Ayudante] creÃ³ {} x{} el {} {} {}"
+    71        "[Ayudante] creó {} x{} el {} {} {}"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -129,32 +129,32 @@
     73        "Ahora eres invisible"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    74        "El inventario se borrÃ³ con Ã©xito"
+    74        "El inventario se borró con éxito"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    75        "Ha creado con Ã©xito un elemento"
-    76        "Ha creado con Ã©xito un Conjunto"
+    75        "Ha creado con éxito un elemento"
+    76        "Ha creado con éxito un Conjunto"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    77        "Â¡AcciÃ³n denegada! Volver mÃ¡s tarde"
+    77        "¡Acción denegada! Volver más tarde"
     78        "Utilice /cambie (dw, dk, elf, mg, dl, su)"
-    79        "Â¡Debes elegir una raza diferente a la tuya!"
+    79        "¡Debes elegir una raza diferente a la tuya!"
     80        "Debes eliminar todos tus elementos equipados"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -162,52 +162,52 @@
     82        "[DeshabilitarPVP] Habilitado"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    83        "RecepciÃ³n de solicitudes: Activado"
+    83        "Recepción de solicitudes: Activado"
     84        "Solicitar recibo: Deshabilitado"
-    85        "RecepciÃ³n de solicitudes: AutomÃ¡tica"
+    85        "Recepción de solicitudes: Automática"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    86        "Â¡[{}] {} recibiÃ³ {} WCCoin(s)!"
-    87        "Â¡[{}] {} recibiÃ³ {} WPCoin(s)!"
-    88        "Â¡[{}] {} recibiÃ³ {} GoblinPoint(s)!"
-    89        "[{}] Â¡Todos han ganado {} WCCoin(s)!"
-    90        "[{}] Â¡Todos han ganado {} WPCoin(s)!"
-    91        "[{}] Â¡Todos han ganado {} GoblinPoint(s)!"
+    86        "¡[{}] {} recibió {} WCCoin(s)!"
+    87        "¡[{}] {} recibió {} WPCoin(s)!"
+    88        "¡[{}] {} recibió {} GoblinPoint(s)!"
+    89        "[{}] ¡Todos han ganado {} WCCoin(s)!"
+    90        "[{}] ¡Todos han ganado {} WPCoin(s)!"
+    91        "[{}] ¡Todos han ganado {} GoblinPoint(s)!"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    92        "Â¡AcciÃ³n denegada! Volver mÃ¡s tarde"
+    92        "¡Acción denegada! Volver más tarde"
     93        "No puedo cambiar el nombre del personaje siendo el maestro del gremio"
-    94        "Â¡Comando no habilitado para su cuenta!"
-    95        "El nombre debe tener un mÃ¡ximo de 10 letras"
-    96        "Â¡El nuevo nombre contiene caracteres raros!"
-    97        "Â¡El personaje {} cambiÃ³ su nombre a {}!"
+    94        "¡Comando no habilitado para su cuenta!"
+    95        "El nombre debe tener un máximo de 10 letras"
+    96        "¡El nuevo nombre contiene caracteres raros!"
+    97        "¡El personaje {} cambió su nombre a {}!"
     98        "Debes esperar {} segundos para volver a cambiar tu nombre."
     99        "RESERVADO"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
     100       "Comando fallido"
-    101       "Â¡Prohibido con Ã©xito!"
-    102       "Administrador {} bloqueado {} por {} dÃ­as"
-    103       "Administrador {} cuenta prohibida {} por {} dÃ­as"
+    101       "¡Prohibido con éxito!"
+    102       "Administrador {} bloqueado {} por {} días"
+    103       "Administrador {} cuenta prohibida {} por {} días"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -220,7 +220,7 @@
     110       "RESERVADO"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
@@ -238,35 +238,35 @@
     122       "RESERVADO"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    123       "No eres lÃ­der del partido"
-    124       "Longitud de contraseÃ±a incorrecta"
-    125       "ContraseÃ±a configurada"
-    126       "No perteneces a ningÃºn partido"
-    127       "Â¡Ya estÃ¡s dentro de la fiesta!"
-    128       "Â¡Partido no encontrado!"
+    123       "No eres líder del partido"
+    124       "Longitud de contraseña incorrecta"
+    125       "Contraseña configurada"
+    126       "No perteneces a ningún partido"
+    127       "¡Ya estás dentro de la fiesta!"
+    128       "¡Partido no encontrado!"
     129       "Te uniste a la fiesta"
-    130       "LÃ­der a la izquierda. Por favor, establezca una nueva contraseÃ±a"
+    130       "Líder a la izquierda. Por favor, establezca una nueva contraseña"
     131       "RESERVADO"
     132       "RESERVADO"
     133       "RESERVADO"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    134       "[Bloquear] Â¡Ya activo, use /desbloquear!"
-    135       "[Bloquear] Desbordamiento de contraseÃ±a mÃ¡xima!"
-    136       "[Bloquear] Â¡ContraseÃ±a incorrecta!"
-    137       "Â¡[Bloquear] Deshabilitado!"
-    138       "[Bloquear] Habilitado - Â¡Elementos bloqueados!"
-    139       "[Bloquear] Â¡AcciÃ³n bloqueada por contraseÃ±a!"
+    134       "[Bloquear] ¡Ya activo, use /desbloquear!"
+    135       "[Bloquear] Desbordamiento de contraseña máxima!"
+    136       "[Bloquear] ¡Contraseña incorrecta!"
+    137       "¡[Bloquear] Deshabilitado!"
+    138       "[Bloquear] Habilitado - ¡Elementos bloqueados!"
+    139       "[Bloquear] ¡Acción bloqueada por contraseña!"
     140       "[Bloquear] Puedes activar el comando en zona segura"
-    141       "[Bloquear] La tienda personal estÃ¡ vacÃ­a o los artÃ­culos no tienen precio"
+    141       "[Bloquear] La tienda personal está vacía o los artículos no tienen precio"
     142       "RESERVADO"
     143       "RESERVADO"
     144       "RESERVADO"
@@ -277,27 +277,27 @@
     149       "RESERVADO"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    150       "Â¡Solo puedes abrir la bÃ³veda en la zona segura!"
+    150       "¡Solo puedes abrir la bóveda en la zona segura!"
     150       "RESERVADO"
     151       "RESERVADO"
     152       "RESERVADO"
     153       "RESERVADO"
 //----------------------------------------------------------
 // Messages
-// In-game system text by ID, per language Â· CommandMessage_SPN.txt
+// In-game system text by ID, per language - CommandMessage_SPN.txt
 //----------------------------------------------------------
 //  Access    Part
 //----------------------------------------------------------
-    200       "[TraceMarry] El nivel mÃ­nimo para mover es {}"
-    201       "[TraceMarry] El nivel mÃ¡ximo para mover es {}"
+    200       "[TraceMarry] El nivel mínimo para mover es {}"
+    201       "[TraceMarry] El nivel máximo para mover es {}"
     202       "[TraceMarry] Min Resets to move is {}"
     203       "[TraceMarry] Max Resets to move is {}"
-    204       "[TraceMarry] El nivel VIP mÃ­nimo para moverse es {}"
-    205       "[TraceMarry] PK no puede moverse allÃ­"
+    204       "[TraceMarry] El nivel VIP mínimo para moverse es {}"
+    205       "[TraceMarry] PK no puede moverse allí"
     206       "[TraceMarry] Necesita {} WCCoins para moverse"
     207       "[TraceMarry] Necesita {} WPCoins para moverse"
     208       "[TraceMarry] Necesita {} GoblinPoints para moverse"
@@ -316,6 +316,6 @@
     221       "[Marry] Necesita {} Ruuds para divorciarse"
     222       "{} debe esperar {} dias para volver a casarse"
     223       "Tu debe esperar{} dias para volver a casarse"
-    224       "Â¡{} y {} ahora estÃ¡n divorciados!"
+    224       "¡{} y {} ahora están divorciados!"
     225       "No se puede divorciar en este mapa"
 end

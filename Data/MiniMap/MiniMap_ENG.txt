@@ -2,7 +2,7 @@
 //->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
 //->>  Web: www.muserverpro.com
 //->>  FB: @mspromu
-//->>  Â© 2020 - 2026 MuServerPro Team
+//->>  2020 - 2026 MuServerPro Team
 //-----------------------------------------------------------------------------------------------------------------
 
 //-----------------------------------------------------------
@@ -128,10 +128,10 @@
     80         0        4        115        45         "Entrance to Aida"
     80         0        3        187        212        "Entrance to Karutan 2"
     81         0        5        162        9          "Entrance to Karutan 1"
-    56         0        3        139        125        "Entrada para os Campos de caÃ§a"
-    56         0        5        124        109        "Entrada para os Campos de caÃ§a"
-    56         0        7        140        95         "Entrada para os Campos de caÃ§a"
-    56         0        1        150        109        "Entrada para os Campos de caÃ§a"
+    56         0        3        139        125        "Entrada para os Campos de caça"
+    56         0        5        124        109        "Entrada para os Campos de caça"
+    56         0        7        140        95         "Entrada para os Campos de caça"
+    56         0        1        150        109        "Entrada para os Campos de caça"
     56         0        6        185        188        "Entrada para a Zona segura"
     56         0        5        56         177        "Entrada para a Zona segura"
     56         0        2        68         52         "Entrada para a Zona segura"
