@@ -1,0 +1,135 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+0
+//-----------------------------------------------------------------------------------------------------------
+// [Max 20 Char]     [0~2000000000] [0~100] 	   [1~255] 		   [0~10000]         [0-1]          [0-1]  
+// EventName         DropZen   		ItemDropRate   ItemDropCount   SetItemDropRate   ItemDropType   Fireworks
+//-----------------------------------------------------------------------------------------------------------		
+"Green Ribbon Box"	 1000	   		100		  	   1		  	   0		    	 0		   		0
+end
+
+1
+//----------------------------------------------------------------------------------
+// [0~15]    [0~511][0~15]	   [0~15]     [0~1]   [0~1]  [0~7]    [0~6] 
+// Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent  Comment
+//----------------------------------------------------------------------------------
+//Swords
+   0         14     4          6          1       1      1        0          //Lighting Sword
+//Bow-Crossbow
+   4         13     4          6          1       1      1        0          //Bluewing Crossbow
+//Staffs-Sticks  
+   5         5      4          6          1       1      1        0          //Legendary Staff
+//Shields
+   6         13     4          6          1       1      1        0          //Dragon Shield    
+   6         14     4          6          1       1      1        0          //Legendary Shield  
+//   
+   7         1      4          6          0       1      1        0          //Dragon Set
+   8         1      4          6          0       1      1        0          //Dragon Set
+   9         1      4          6          0       1      1        0          //Dragon Set
+   10        1      4          6          0       1      1        0          //Dragon Set
+   11        1      4          6          0       1      1        0          //Dragon Set
+//
+   7         3      4          6          0       1      1        0          //Legendary Set
+   8         3      4          6          0       1      1        0          //Legendary Set
+   9         3      4          6          0       1      1        0          //Legendary Set
+   10        3      4          6          0       1      1        0          //Legendary Set
+   11        3      4          6          0       1      1        0          //Legendary Set
+//
+   8         15     3          5          0       1      1        0          //Storm Crow Set
+   9         15     3          5          0       1      1        0          //Storm Crow Set
+   10        15     3          5          0       1      1        0          //Storm Crow Set
+   11        15     3          5          0       1      1        0          //Storm Crow Set
+//
+   7         14     4          6          0       1      1        0          //Guardian Set
+   8         14     4          6          0       1      1        0          //Guardian Set
+   9         14     4          6          0       1      1        0          //Guardian Set
+   10        14     4          6          0       1      1        0          //Guardian Set
+   11        14     4          6          0       1      1        0          //Guardian Set
+//
+   7         26     3          5          0       1      1        0          //Adamantine Set
+   8         26     3          5          0       1      1        0          //Adamantine Set
+   9         26     3          5          0       1      1        0          //Adamantine Set
+   10        26     3          5          0       1      1        0          //Adamantine Set
+   11        26     3          5          0       1      1        0          //Adamantine Set
+//
+   7         34     3          5          0       1      1        0          //Ashcrow Set
+   8         34     3          5          0       1      1        0          //Ashcrow Set
+   9         34     3          5          0       1      1        0          //Ashcrow Set
+   10        34     3          5          0       1      1        0          //Ashcrow Set
+   11        34     3          5          0       1      1        0          //Ashcrow Set
+//
+   7         35     3          5          0       1      1        0          //Eclipse Set
+   8         35     3          5          0       1      1        0          //Eclipse Set
+   9         35     3          5          0       1      1        0          //Eclipse Set
+   10        35     3          5          0       1      1        0          //Eclipse Set
+   11        35     3          5          0       1      1        0          //Eclipse Set
+//
+   7         36     3          5          0       1      1        0          //Iris Set
+   8         36     3          5          0       1      1        0          //Iris Set
+   9         36     3          5          0       1      1        0          //Iris Set
+   10        36     3          5          0       1      1        0          //Iris Set
+   11        36     3          5          0       1      1        0          //Iris Set
+//---------------------------------Exe items--------------------------------------------------//
+//Swords
+   0         14     4          6          1       1      1        1          //Lighting Sword
+//Bow-Crossbow
+   4         13     4          6          1       1      1        1          //Bluewing Crossbow
+//Staffs-Sticks  
+   5         5      4          6          1       1      1        1          //Legendary Staff
+//Shields
+   6         13     4          6          1       1      1        1          //Dragon Shield    
+   6         14     4          6          1       1      1        1          //Legendary Shield  
+//   
+   7         1      4          6          0       1      1        1          //Dragon Set
+   8         1      4          6          0       1      1        1          //Dragon Set
+   9         1      4          6          0       1      1        1          //Dragon Set
+   10        1      4          6          0       1      1        1          //Dragon Set
+   11        1      4          6          0       1      1        1          //Dragon Set
+//
+   7         3      4          6          0       1      1        1          //Legendary Set
+   8         3      4          6          0       1      1        1          //Legendary Set
+   9         3      4          6          0       1      1        1          //Legendary Set
+   10        3      4          6          0       1      1        1          //Legendary Set
+   11        3      4          6          0       1      1        1          //Legendary Set
+//
+   8         15     3          5          0       1      1        1          //Storm Crow Set
+   9         15     3          5          0       1      1        1          //Storm Crow Set
+   10        15     3          5          0       1      1        1          //Storm Crow Set
+   11        15     3          5          0       1      1        1          //Storm Crow Set
+//
+   7         14     4          6          0       1      1        1          //Guardian Set
+   8         14     4          6          0       1      1        1          //Guardian Set
+   9         14     4          6          0       1      1        1          //Guardian Set
+   10        14     4          6          0       1      1        1          //Guardian Set
+   11        14     4          6          0       1      1        1          //Guardian Set
+//
+   7         26     3          5          0       1      1        1          //Adamantine Set
+   8         26     3          5          0       1      1        1          //Adamantine Set
+   9         26     3          5          0       1      1        1          //Adamantine Set
+   10        26     3          5          0       1      1        1          //Adamantine Set
+   11        26     3          5          0       1      1        1          //Adamantine Set
+//
+   7         34     3          5          0       1      1        1          //Ashcrow Set
+   8         34     3          5          0       1      1        1          //Ashcrow Set
+   9         34     3          5          0       1      1        1          //Ashcrow Set
+   10        34     3          5          0       1      1        1          //Ashcrow Set
+   11        34     3          5          0       1      1        1          //Ashcrow Set
+//
+   7         35     3          5          0       1      1        1          //Eclipse Set
+   8         35     3          5          0       1      1        1          //Eclipse Set
+   9         35     3          5          0       1      1        1          //Eclipse Set
+   10        35     3          5          0       1      1        1          //Eclipse Set
+   11        35     3          5          0       1      1        1          //Eclipse Set
+//
+   7         36     3          5          0       1      1        1          //Iris Set
+   8         36     3          5          0       1      1        1          //Iris Set
+   9         36     3          5          0       1      1        1          //Iris Set
+   10        36     3          5          0       1      1        1          //Iris Set
+   11        36     3          5          0       1      1        1          //Iris Set  
+ 
+end

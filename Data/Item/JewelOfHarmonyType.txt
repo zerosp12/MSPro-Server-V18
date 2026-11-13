@@ -1,0 +1,109 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//------------------------------
+// [0~15]   [0~511][0~15]
+// Section  Type   Level Comment
+//------------------------------
+//Swords
+   0	    0	   4     //Kriss
+   0	    1	   4     //Short Sword
+   0	    2	   4     //Rapier
+   0	    4	   4     //Sword of Assassin
+//Axe
+   1	    0	   4     //Small Axe
+   1	    1	   4     //Hand Axe
+   1	    2	   4     //Double Axe
+//Mace
+   2	    0	   4     //Mace
+   2	    1	   4     //Morning Star
+   2	    2	   4     //Flail
+//Spear
+   3	    1	   4     //Spear
+   3	    2	   4     //Dragon Lance
+   3	    3	   4     //Giant Trident
+   3	    5	   4     //Double Poleaxe
+   3	    6	   4     //Halberd
+//Bow-Crossbow
+   4	    0	   4     //Short Bow
+   4	    1	   4     //Bow
+   4	    2	   4     //Elven Bow
+   4	    3	   4     //Battle Bow
+   4	    8	   4     //Crossbow
+   4	    9	   4     //Golden Crossbow
+   4	    10	   4     //Arquebus
+   4	    11	   4     //Light Crossbow
+//Staff
+   5	    0	   4     //Skull Staff
+   5	    1	   4     //Angelic Staff
+   5	    2	   4     //Serpent Staff
+//Shields
+   6	    0	   4     //Small Shield
+   6	    1	   4     //Horn Shield
+   6	    2	   4     //Kite Shield
+   6	    3	   4     //Elven Shield
+   6	    4	   4     //Buckler
+   6	    6	   4     //Skull Shield
+   6	    7	   4     //Spiked Shield
+   6	    9	   4     //Plate Shield
+   6	    10	   4     //Large Round Shield
+//Helms
+   7	    0	   4     //Bronze Helm
+   7	    2	   4     //Pad Helm
+   7	    4	   4     //Bone Helm
+   7	    5	   4     //Leather Helm
+   7	    6	   4     //Scale Helm
+   7	    7	   4     //Sphinx Mask
+   7	    8	   4     //Brass Helm
+   7	    10	   4     //Vine Helm
+   7	    11	   4     //Silk Helm
+   7	    12	   4     //Wind Helm
+//Armors
+   8	    0	   4     //Bronze Armor
+   8	    2	   4     //Pad Armor
+   8	    4	   4     //Bone Armor
+   8	    5	   4     //Leather Armor
+   8	    6	   4     //Scale Armor
+   8	    7	   4     //Sphinx Armor
+   8	    8	   4     //Brass Armor
+   8	    10	   4     //Vine Armor
+   8	    11	   4     //Silk Armor
+   8	    12	   4     //Wind Armor
+//Pants
+   9	    0	   4     //Bronze Pants
+   9	    2	   4     //Pad Pants
+   9	    4	   4     //Bone Pants
+   9	    5	   4     //Leather Pants
+   9	    6	   4     //Scale Pants
+   9	    7	   4     //Sphinx Pants
+   9	    8	   4     //Brass Pants
+   9	    10	   4     //Vine Pants
+   9	    11	   4     //Silk Pants
+   9	    12	   4     //Wind Pants
+//Gloves
+   10	    0	   4     //Bronze Gloves
+   10	    2	   4     //Pad Gloves
+   10	    4	   4     //Bone Gloves
+   10	    5	   4     //Leather Gloves
+   10	    6	   4     //Scale Gloves
+   10	    7	   4     //Sphinx Gloves
+   10	    8	   4     //Brass Gloves
+   10	    10	   4     //Vine Gloves
+   10	    11	   4     //Silk Gloves
+   10	    12	   4     //Wind Gloves
+//Boots
+   11	    0	   4     //Bronze Boots
+   11	    2	   4     //Pad Boots
+   11	    4	   4     //Bone Boots
+   11	    5	   4     //Leather Boots
+   11	    6	   4     //Scale Boots
+   11	    7	   4     //Sphinx Boots
+   11	    8	   4     //Brass Boots
+   11	    10	   4     //Vine Boots
+   11	    11	   4     //Silk Boots
+   11	    12	   4     //Wind Boots
+end

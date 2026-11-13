@@ -1,0 +1,99 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+[GameServerInfo]
+;==================================================
+; Quickly Event (Rapido)
+;==================================================
+QuicklyEvent = 1
+QuicklyEventAutoReward1 = 0   ;[WC]
+QuicklyEventAutoReward2 = 0   ;[WP]
+QuicklyEventAutoReward3 = 0   ;[GP]
+
+;==================================================
+; Event Start (Iniciar Evento)
+;==================================================
+EventStartSwitch = 1
+EventStartTime   = 15
+
+;==================================================
+; Event Hide and Seek (Hide-Hide)
+;==================================================
+EventHideAndSeekSwitch  	= 1
+EventHideAndSeekMaxTime 	= 5
+EventHideAndSeekAutoReward1 = 0  ;[WC]
+EventHideAndSeekAutoReward2 = 0  ;[WP]
+EventHideAndSeekAutoReward3 = 0  ;[GP]
+
+;==================================================
+; Event Run And Catch (Hit-Hit)
+;==================================================
+EventRunAndCatchSwitch      = 1
+EventRunAndCatchTimeToEnter = 10
+EventRunAndCatchMaxTime     = 10
+EventRunAndCatchAutoReward1 = 0  ;[WC]
+EventRunAndCatchAutoReward2 = 0  ;[WP]
+EventRunAndCatchAutoReward3 = 0  ;[GP]
+
+;==================================================
+; Event Russian Roulette (Ruleta Rusa)
+;==================================================
+EventRussianRouletteSwitch       = 1
+EventRussianRouletteTimeToEnter	 = 10
+EventRussianRouletteMaxTime	     = 10
+EventRussianRouletteMaxPlayer    = 8
+EventRussianRouletteAutoReward1  = 0  ;[WC]
+EventRussianRouletteAutoReward2  = 0  ;[WP]
+EventRussianRouletteAutoReward3  = 0  ;[GP]
+
+;==================================================
+; Event PvP  (1 x 1)
+;==================================================
+EventPvPSwitch 	 	= 1
+EventPvPMaxScore 	= 3
+EventPvPMaxTime	 	= 3
+EventPvPAutoReward1 = 0
+EventPvPAutoReward2 = 0
+EventPvPAutoReward3 = 100
+
+;==================================================
+; Event Kill All (Mata-Mata Geral)
+;==================================================
+EventKillAllSwitch 		     = 1
+EventKillAllTimeToEnter  	 = 20
+EventKillAllDeadDecrease 	 = 1
+EventKillAllKillIncrease     = 2
+EventKillAllMaxScore         = 20
+EventKillAllMinPlayers       = 2
+EventKillAllMaxPlayers       = 20
+EventKillAllMaxTime          = 2
+//--
+EventKillAllAutoReward1Rank1 = 0    ;[WC]
+EventKillAllAutoReward1Rank2 = 0    ;[WP]
+EventKillAllAutoReward1Rank3 = 0    ;[GP]
+//--
+EventKillAllAutoReward2Rank1 = 0    ;[WC]
+EventKillAllAutoReward2Rank2 = 0    ;[WP]
+EventKillAllAutoReward2Rank3 = 0    ;[GP]
+//--
+EventKillAllAutoReward3Rank1 = 0    ;[WC]
+EventKillAllAutoReward3Rank2 = 0    ;[WP]
+EventKillAllAutoReward3Rank3 = 0    ;[GP]
+
+;==================================================
+; Event Team vs Team
+;==================================================
+EventTvtSwitch   = 1
+EventTvtNpc 	 = 380
+EventTvtNpcMap   = 0
+EventTvtNpcX 	 = 130
+EventTvtNpcY 	 = 121
+EventTvtMinUsers = 2
+EventTvtMaxUsers = 20
+
+;==================================================
+; King of Mu Event Settings
+;==================================================

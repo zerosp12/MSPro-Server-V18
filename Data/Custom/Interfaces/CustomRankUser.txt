@@ -1,0 +1,29 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2025 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//==============
+// Info:
+//==============
+//  Agregar siempre en el ultimo rank el valor ResetMax el (-1) /Always add in the last rank the value ResetMax el (-1)
+//  ResetMin siempre comienza con el 0 / ResetMin always starts with 0
+
+//---------------------------------------------------------------------------------------
+//  [0~99] 		 [Max13Let]      [0~99999]   [-1/0~99999]   [        0~9999999      ] 
+//  RankIndex    Name            ResetMin    ResetMax       WcoinC     WcoinP     GP		 
+//---------------------------------------------------------------------------------------
+0
+    0            "Novato"          0         17             7000        0          0
+    1            "Guerrero"        18        35             7000        0          0
+    2            "Veterano"        36        53             7000        0          0
+    3            "Elite"           54        71             7000        0          0
+    4            "Maestro"         72        89             7000        0          0
+    5            "Gran Maestro"    90        107            7000        0          0
+    6            "Leyenda"         108       125            7000        0          0
+	7            "Heroe"           126       143            7000        0          0
+	8            "Mitico"          144       175            7000        0          0
+	9            "Sobreviviente"   176       -1             0           0          0
+end

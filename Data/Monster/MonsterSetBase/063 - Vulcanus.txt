@@ -1,0 +1,70 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  © 2020 - 2022 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+//==============
+// [INFO]
+//==============
+//     TYPE INDEX : 0 - NPC // 1 - SPOTS  // 2 - MONSTER INDIVIDUAL //  4 - EVENTS
+
+0
+//------
+// NPCS
+//---------------------------------------------------------------
+//                [0~30]        [1~255]     [1~255]     [-1/0~8]
+// MonsterIndex   SpawnRadius   LocationX   LocationY   Direction
+//---------------------------------------------------------------
+   479            0             122         135         1           //Doorkeeper Titus
+	0582          00            123         129         03 //Gillard (Quests)
+end
+
+1
+//-------
+// SPOTS
+//-----------------------------------------------------------------------------------------------------------
+//                [0~30]        [1~255]       [1~255]       [1~255]     [1~255]     [-1/0~8]    [1~1000]
+// MonsterIndex   SpawnRadius   RangeStartX   RangeStartY   RangeEndX   RangeEndY   Direction   MaxSpawnCount
+//-----------------------------------------------------------------------------------------------------------
+	480    4    102   55    112   65    -1   5    //Zombie Fighter
+	480    4    22    93    32    103   -1   5    //Zombie Fighter
+	480    4    36    13    46    23    -1   4    //Zombie Fighter
+	480    4    92    15    102   25    -1   4    //Zombie Fighter
+	480    4    47    52    57    62    -1   4    //Zombie Fighter
+	480    4    66    85    76    95    -1   4    //Zombie Fighter
+	482    4    74    73    84    83    -1   5    //Resurrected Gladiator
+	482    4    34    225   44    235   -1   4    //Resurrected Gladiator
+	482    4    46    147   56    157   -1   4    //Resurrected Gladiator
+	482    4    86    7     96    17    -1   4    //Resurrected Gladiator
+	482    4    23    54    33    64    -1   4    //Resurrected Gladiator
+	484    4    24    127   34    137   -1   4    //Ash Slaughterer
+	484    4    227   205   237   215   -1   4    //Ash Slaughterer
+	484    4    101   223   111   233   -1   4    //Ash Slaughterer
+	484    4    27    200   37    210   -1   4    //Ash Slaughterer
+	484    4    161   198   171   208   -1   4    //Ash Slaughterer
+	484    4    79    160   89    170   -1   4    //Ash Slaughterer
+	484    4    64    210   74    220   -1   4    //Ash Slaughterer
+	486    4    132   197   142   207   -1   5    //Blood Assassin
+	486    4    236   121   246   131   -1   5    //Blood Assassin
+	486    4    213   216   223   226   -1   4    //Blood Assassin
+	486    4    168   106   178   116   -1   4    //Blood Assassin
+	487    4    173   110   183   120   -1   4    //Cruel Blood Assassin
+	487    4    220   184   230   194   -1   4    //Cruel Blood Assassin
+	489    4    173   68    183   78    -1   5    //Burning Lava Giant
+	489    4    160   6     170   16    -1   4    //Burning Lava Giant
+	489    4    232   61    242   71    -1   4    //Burning Lava Giant
+	489    4    209   21    219   31    -1   4    //Burning Lava Giant
+	490    4    188   14    198   24    -1   4    //Ruthless Lava Giant
+	490    4    159   73    169   83    -1   4    //Ruthless Lava Giant
+end                                                                                                                
+
+2
+//---------------------
+// INDIVIDUAL MONSTERS
+//---------------------------------------------------------------
+//                [0~30]        [1~255]     [1~255]     [-1/0~8]
+// MonsterIndex   SpawnRadius   LocationX   LocationY   Direction
+//---------------------------------------------------------------
+end

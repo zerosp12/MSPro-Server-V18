@@ -1,0 +1,20 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6132
+// Caceria Doble - Swamp of Calmness
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			4320				87	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				557				88			//Matar 88 Sapi Queen
+	1				559				72			//Matar 72 Shadow Master
+end
+
+2
+	0				2175000
+	7				101				2			//Silver Box x2
+	7				133				1			//Quest Chest T4 (class gear)
+end

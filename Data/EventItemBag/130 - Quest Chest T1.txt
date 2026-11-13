@@ -1,0 +1,161 @@
+//---------------------------------------------------------------------------------------------------------------
+// Quest Chest T1 (class gear, ItemBagEx format). Dropped via quest reward type 7.
+//---------------------------------------------------------------------------------------------------------------
+
+3
+//Index   DropRate
+0         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW DK FE MG DL SU RF GL
+0         5         10000         0             2             1  0  0  0  0  0  0  0
+0         6         10000         0             2             0  1  0  0  0  0  0  0
+0         7         10000         0             2             0  0  1  0  0  0  0  0
+0         8         10000         0             2             0  0  0  1  0  0  0  0
+0         9         10000         0             2             0  0  0  0  1  0  0  0
+0         10        10000         0             2             0  0  0  0  0  1  0  0
+0         11        10000         0             2             0  0  0  0  0  0  1  0
+0         12        10000         0             2             0  0  0  0  0  0  0  1
+end
+
+5
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DW)
+5701	0	0	27	11	13	20	11	*	*	*	//Lucky Legendary Boots
+3078	0	0	27	11	13	20	11	*	*	*	//Skull Shield
+5189	0	0	27	11	13	20	11	*	*	*	//Lucky Legendary Gloves
+3591	0	0	27	11	13	20	11	*	*	*	//Sphinx Mask
+3587	0	0	27	11	13	20	11	*	*	*	//Legendary Helm
+5696	0	0	27	11	13	20	11	*	*	*	//Lucky Sphinx Boots
+5	0	0	27	13	13	20	11	*	*	*	//Blade
+5639	0	0	27	11	13	20	11	*	*	*	//Sphinx Boots
+3588	0	0	27	11	13	20	11	*	*	*	//Bone Helm
+5636	0	0	27	11	13	20	11	*	*	*	//Bone Boots
+5127	0	0	27	11	13	20	11	*	*	*	//Sphinx Gloves
+4103	0	0	27	11	13	20	11	*	*	*	//Sphinx Armor
+4100	0	0	27	11	13	20	11	*	*	*	//Bone Armor
+5184	0	0	27	11	13	20	11	*	*	*	//Lucky Sphinx Gloves
+end
+
+6
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DK)
+3078	0	0	27	11	13	20	11	*	*	*	//Skull Shield
+4096	0	0	27	11	13	20	11	*	*	*	//Bronze Armor
+3	0	0	27	13	13	20	11	*	*	*	//Katana
+3079	0	0	27	11	13	20	11	*	*	*	//Spiked Shield
+3646	0	0	27	11	13	20	11	*	*	*	//Lucky Scale Helm
+3083	0	0	27	11	13	20	11	*	*	*	//Serpent Shield
+5120	0	0	27	11	13	20	11	*	*	*	//Bronze Gloves
+5128	0	0	27	11	13	20	11	*	*	*	//Brass Gloves
+4	0	0	27	13	13	20	11	*	*	*	//Sword of Assassin
+1026	0	0	27	11	13	20	11	*	*	*	//Flail
+4617	0	0	27	11	13	20	11	*	*	*	//Plate Pants
+3077	0	0	27	11	13	20	11	*	*	*	//Dragon Slayer Shield
+1540	0	0	27	13	13	20	11	*	*	*	//Serpent Spear
+4608	0	0	27	11	13	20	11	*	*	*	//Bronze Pants
+end
+
+7
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (ELF)
+4109	0	0	27	11	13	20	11	*	*	*	//Spirit Armor
+1539	0	0	27	11	13	20	11	*	*	*	//Giant Trident
+2051	0	0	27	13	13	20	11	*	*	*	//Battle Bow
+6	0	0	27	13	13	20	11	*	*	*	//Gladius
+1542	0	0	27	11	13	20	11	*	*	*	//Halberd
+4108	0	0	27	11	13	20	11	*	*	*	//Wind Armor
+5695	0	0	27	11	13	20	11	*	*	*	//Lucky Silk Boots
+1537	0	0	27	11	13	20	11	*	*	*	//Spear
+518	0	0	27	13	13	20	11	*	*	*	//Nikea Axe
+3083	0	0	27	11	13	20	11	*	*	*	//Serpent Shield
+5645	0	0	27	11	13	20	11	*	*	*	//Spirit Boots
+4107	0	0	27	11	13	20	11	*	*	*	//Silk Armor
+2050	0	0	27	13	13	20	11	*	*	*	//Elven Bow
+2058	0	0	27	13	13	20	11	*	*	*	//Arquebus
+end
+
+8
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (MG)
+1536	0	0	27	13	13	20	11	*	*	*	//Light Spear
+10	0	0	27	13	13	20	11	*	*	*	//Light Saber
+1539	0	0	27	11	13	20	11	*	*	*	//Giant Trident
+4100	0	0	27	11	13	20	11	*	*	*	//Bone Armor
+1541	0	0	27	11	13	20	11	*	*	*	//Double Poleaxe
+2561	0	0	27	11	13	20	11	*	*	*	//Angelic Staff
+4614	0	0	27	11	13	20	11	*	*	*	//Scale Pants
+4102	0	0	27	11	13	20	11	*	*	*	//Scale Armor
+5640	0	0	27	11	13	20	11	*	*	*	//Brass Boots
+517	0	0	27	13	13	20	11	*	*	*	//Battle Axe
+4612	0	0	27	11	13	20	11	*	*	*	//Bone Pants
+4105	0	0	27	11	13	20	11	*	*	*	//Plate Armor
+1538	0	0	27	11	13	20	11	*	*	*	//Dragon Lance
+5632	0	0	27	11	13	20	11	*	*	*	//Bronze Boots
+end
+
+9
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DL)
+3080	0	0	27	11	13	20	11	*	*	*	//Tower Shield
+3078	0	0	27	11	13	20	11	*	*	*	//Skull Shield
+4614	0	0	27	11	13	20	11	*	*	*	//Scale Pants
+5638	0	0	27	11	13	20	11	*	*	*	//Scale Boots
+3584	0	0	27	11	13	20	11	*	*	*	//Bronze Helm
+5182	0	0	27	11	13	20	11	*	*	*	//Lucky Scale Gloves
+5632	0	0	27	11	13	20	11	*	*	*	//Bronze Boots
+3646	0	0	27	11	13	20	11	*	*	*	//Lucky Scale Helm
+4158	0	0	27	11	13	20	11	*	*	*	//Lucky Scale Armor
+4	0	0	27	13	13	20	11	*	*	*	//Sword of Assassin
+4096	0	0	27	11	13	20	11	*	*	*	//Bronze Armor
+3079	0	0	27	11	13	20	11	*	*	*	//Spiked Shield
+3590	0	0	27	11	13	20	11	*	*	*	//Scale Helm
+4102	0	0	27	11	13	20	11	*	*	*	//Scale Armor
+end
+
+10
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (SUM)
+4647	0	0	27	11	13	20	11	*	*	*	//Violent Wind Pants
+5190	0	0	27	11	13	20	11	*	*	*	//Lucky Red Wing Gloves
+5159	0	0	27	11	13	20	11	*	*	*	//Violent Wind Gloves
+5702	0	0	27	11	13	20	11	*	*	*	//Lucky Red Wing Boots
+5185	0	0	27	11	13	20	11	*	*	*	//Lucky Violent Wind Gloves
+2574	0	0	27	11	13	20	11	*	*	*	//Mystery Stick
+2575	0	0	27	11	13	20	11	*	*	*	//Violent Wind Stick
+5672	0	0	27	11	13	20	11	*	*	*	//Red Wing Boots
+3624	0	0	27	11	13	20	11	*	*	*	//Red Wing Helm
+4673	0	0	27	11	13	20	11	*	*	*	//Lucky Violent Wind Pants
+516	0	0	27	11	13	20	11	*	*	*	//Elven Axe
+3649	0	0	27	11	13	20	11	*	*	*	//Lucky Violent Wind Helm
+5671	0	0	27	11	13	20	11	*	*	*	//Violent Wind Boots
+4161	0	0	27	11	13	20	11	*	*	*	//Lucky Violent Wind Armor
+end
+
+11
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (RF)
+5691	0	0	27	11	13	20	11	*	*	*	//Sacred Boots
+4616	0	0	27	11	13	20	11	*	*	*	//Brass Pants
+1025	0	0	27	13	13	20	11	*	*	*	//Morning Star
+3590	0	0	27	11	13	20	11	*	*	*	//Scale Helm
+4105	0	0	27	11	13	20	11	*	*	*	//Plate Armor
+4102	0	0	27	11	13	20	11	*	*	*	//Scale Armor
+5182	0	0	27	11	13	20	11	*	*	*	//Lucky Scale Gloves
+4617	0	0	27	11	13	20	11	*	*	*	//Plate Pants
+4614	0	0	27	11	13	20	11	*	*	*	//Scale Pants
+515	0	0	27	13	13	20	11	*	*	*	//Tomahawk
+5694	0	0	27	11	13	20	11	*	*	*	//Lucky Scale Boots
+4104	0	0	27	11	13	20	11	*	*	*	//Brass Armor
+5638	0	0	27	11	13	20	11	*	*	*	//Scale Boots
+5640	0	0	27	11	13	20	11	*	*	*	//Brass Boots
+end
+
+12
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (GL)
+5723	0	0	27	11	13	20	11	*	*	*	//Robust Boots
+5212	0	0	27	11	13	20	11	*	*	*	//Gru Hill Gloves
+1553	0	0	27	13	13	20	11	*	*	*	//Prickle Lance
+3676	0	0	27	11	13	20	11	*	*	*	//Gru Hill Helmet
+3675	0	0	27	11	13	20	11	*	*	*	//Robust Helmet
+5724	0	0	27	11	13	20	11	*	*	*	//Gru Hill Boots
+1549	0	0	27	11	13	20	11	*	*	*	//Lapid Lance
+4187	0	0	27	11	13	20	11	*	*	*	//Robust Armor
+4699	0	0	27	11	13	20	11	*	*	*	//Robust Pants
+3101	0	0	27	11	13	20	11	*	*	*	//Lapid Shield
+5211	0	0	27	11	13	20	11	*	*	*	//Robust Gloves
+end

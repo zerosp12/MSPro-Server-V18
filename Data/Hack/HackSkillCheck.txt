@@ -1,0 +1,24 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  © 2020 - 2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------
+// Skill Speed Checks
+// How often a skill may be used for each range of attack speed. It only works when SpeedHackSkillEnable is on in the server settings. The comment at the end of each row names the skill.
+//   Skill: The skill this row checks.
+//   Lowest attack speed: The row applies from this attack speed of the character.
+//   Highest attack speed: The row applies up to this attack speed. No limit means all the speeds above.
+//   Longest delay (ms): Milliseconds of the window in which the uses are counted.
+//   Most uses: The most uses allowed inside the window. Beyond it the server acts as the server settings say (disconnect, ignore the use...).
+//------------------------------------------------------------------
+//  Skill    MinSpeed    MaxSpeed    MaxDelay    MaxCount    Comment
+//------------------------------------------------------------------
+    230      000         125         1000        30          //Red Storm
+    230      126         250         1000        30          //Red Storm
+    230      251         500         1000        30          //Red Storm
+    230      501         1000        1000        30          //Red Storm
+    230      1001        *           1000        30          //Red Storm
+end

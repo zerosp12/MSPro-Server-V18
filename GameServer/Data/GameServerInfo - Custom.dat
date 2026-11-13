@@ -1,0 +1,348 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+[GameServerInfo]
+;==================================================
+; Custom Settings
+;==================================================
+CustomQuestSwitch 					= 1
+CustomDeathMessageSwitch			= 1
+CustomQuizSwitch 					= 1
+CustomNpcCollectorSwitch			= 1
+CustomRankingSwitch 				= 1
+CustomEventTimeSwitch 				= 1
+CustomNpcQuestSwitch 				= 1
+CustomNpcRequerimentEnabled 		= 1
+ConnectMemberLoad 					= 0	//V8
+PeriodicItemsSellPriceZero  		= 1 //V8
+Check380MixItemLevel        		= 0 //V10 Permite mix items 380, sin solicitar nivel
+BlockAccountShowMessage   			= 1
+BlockCharacterShowMessage 			= 1
+DisableSpecialClassMoveLevel 		= 0 //(0/1)DESACTIVA DIFERENCIA DE NIVEL DL,MG,RF
+JewelOfHarmonyOptionMaxLevel		= 13
+
+;==================================================
+; Custom Guild Warehouse
+; Member Status to use: 
+; 0 	- All Members
+; 32 	- Battle Master
+; 64 	- Guild Assistente
+; 128 	- Guild Master
+;==================================================
+GuildWarehouseEnable 				= 1
+GuildWarehouseStatus 				= 0
+
+;==================================================
+; Custom Shop MessageBox
+;==================================================
+; Types:
+; 0: Disabled
+; 1: Only for coins
+; 2: All purchases
+;==================================================
+CustomShopMessageBox 			    = 0
+
+;==================================================
+; Die Message System(Bulling System)
+;==================================================
+AllowDieMsgOnUser 					= 1
+
+DieMsgOnUser_Back_R					= 255
+DieMsgOnUser_Back_G					= 0
+DieMsgOnUser_Back_B					= 0
+DieMsgOnUser_Back_A					= 200
+DieMsgOnUser_Text_R					= 255
+DieMsgOnUser_Text_G					= 255
+DieMsgOnUser_Text_B					= 255
+DieMsgOnUser_Text_A					= 255
+
+AllowDieMsgOnMonster				= 1
+
+DieMsgOnMonster_Back_R				= 255
+DieMsgOnMonster_Back_G				= 0
+DieMsgOnMonster_Back_B				= 0
+DieMsgOnMonster_Back_A				= 200
+DieMsgOnMonster_Text_R				= 255
+DieMsgOnMonster_Text_G				= 255
+DieMsgOnMonster_Text_B				= 255
+DieMsgOnMonster_Text_A				= 255
+
+;==================================================
+; Online User System
+;==================================================
+OnlineGmSwitch 						= 1
+OnlineUserSwitch 					= 1
+
+OnlineUser_Back_R				= 255
+OnlineUser_Back_G				= 180
+OnlineUser_Back_B				= 20
+OnlineUser_Back_A				= 200
+OnlineUser_Text_R				= 0
+OnlineUser_Text_G				= 0
+OnlineUser_Text_B				= 0
+OnlineUser_Text_A				= 255
+
+;==================================================
+; Plus Item Level Mix Announce
+;==================================================
+AnnounceChaosMix 					= 0
+
+;==================================================
+; Custom Arena Settings
+;==================================================
+CustomArenaSwitch 					= 1
+CustomArenaVictimScoreDecrease 		= 10
+CustomArenaKillerScoreIncrease 		= 100
+
+;==================================================
+; Custom Event Drop Settings
+;==================================================
+CustomEventDropSwitch 				= 1
+
+;==================================================
+; Custom Store Settings
+;==================================================
+CustomStoreMapZone 					= -1
+CustomStoreTime_AL0 				= 0
+CustomStoreTime_AL1 				= 0
+CustomStoreTime_AL2 				= 0
+CustomStoreTime_AL3 				= 0
+CustomStoreCommandJoBSyntax 		= bless
+CustomStoreCommandJoSSyntax 		= soul
+CustomStoreCommandJoCSyntax 		= chaos
+CustomStoreCommandWCCSyntax 		= wcc
+CustomStoreCommandWCPSyntax 		= wcp
+CustomStoreCommandWCGSyntax 		= wcg
+CustomStoreJoBName 					= .::BLESS STORE::.
+CustomStoreJoSName 					= .::SOUL STORE::.
+CustomStoreJoCName 					= .::CHAOS STORE::.
+CustomStoreWCCName 					= .::WCC STORE::.
+CustomStoreWCPName 					= .::WCP STORE::.
+CustomStoreWCGName 					= .::WCG STORE::.
+CustomStoreAllowUseName				= 0
+CustomStoreOpenBuyDelay				= 15 ; Seg
+
+;==================================================
+; Custom Store Offline Settings
+;==================================================
+CustomStoreOfflineGPGain 			= 0
+CustomStoreOfflineMapZone 			= -1
+
+;==================================================
+; Custom Attack Settings
+;==================================================
+CustomAttackTime_AL0 				= 70000
+CustomAttackTime_AL1 				= 70000
+CustomAttackTime_AL2 				= 70000
+CustomAttackTime_AL3 				= 70000
+CustomAttackAutoBuff_AL0 			= 1
+CustomAttackAutoBuff_AL1 			= 1
+CustomAttackAutoBuff_AL2 			= 1
+CustomAttackAutoBuff_AL3 			= 1
+CustomAttackAutoBuffDelay 			= 10000
+CustomAttackAutoResume_AL0 			= 1
+CustomAttackAutoResume_AL1 			= 1
+CustomAttackAutoResume_AL2 			= 1
+CustomAttackAutoResume_AL3 			= 1
+DisableAttackWhenSkillPressed 		= 1
+
+;==================================================
+; Custom Attack Offline Settings
+;==================================================
+CustomAttackOfflineGPGain 			= 0
+
+;==================================================
+; Custom Online Lottery Settings
+;==================================================
+CustomOnlineLotterySwitch 			= 1
+CustomOnlineLotteryNoOff 			= 1
+
+;==================================================
+; Custom RankUser Settings (CustomRankUser.txt)
+; Type Reset = 0, Type Master Reset = 1, Type Level = 2
+;==================================================
+CustomRankUserSwitch 				= 1
+CustomRankUserType 					= 0
+CustomRankUserRewardSwitch 			= 1
+CustomRankUserNoticeToAll 			= 1
+CustomRankUserNoticeToUser 			= 1
+
+;==================================================
+; Custom - Startitem - Items de inicio al personaje
+;==================================================
+[CustomStartItem]
+EnableStartItem   					= 1
+EnableStartSeal    					= 1
+EnableStartStats   					= 1
+EnableUpdateDB     					= 1
+
+[DragonInvasion]
+RedDragon_InvasionIndex	     		= 1
+GoldenDragon_InvasionIndex     		= 2
+EnableRedDragonAnimation     		= 0
+EnableGoldenDragonAnimation    		= 0
+
+[RightClickItemMove]
+Enable_OnInventory					= 1
+Enable_OnChaosMachine				= 1
+Enable_OnTrade						= 1
+Enable_OnPShop   					= 1
+
+EnableLuckyItemMove    				= 0
+EnableAllowDoubleScepter			= 0
+EnableAllowDoubleStick				= 0	//Only Check for Summoner!
+EnableAllowDoubleStaff				= 0	//Only DW.
+EnableAllowDoubleStaffMG			= 0
+
+[CustomMixInfo]
+Enable    							= 1
+
+;==================================================
+; Interface Manager - Custom NPC Interfaces
+;==================================================
+[InterfaceManager]
+Enable    							= 1
+
+;==================================================
+; PlayerDie Log Information [V7]
+;==================================================
+[PlayerLog]
+Enable    							= 0
+
+;==================================================
+; Penalty System [V7]
+;==================================================
+[PenaltySystem]
+Enable    							= 0
+Save    							= 1
+PenaltyType    						= 1	// 0 Account 1 Character
+PenaltyMoveTime     				= 1	// Minutes
+PenaltyTradeTime    				= 1	// Minutes
+PenaltyShopTime    					= 1	// Minutes
+DebugLog     						= 1
+
+;==================================================
+; Party Extension Settings [V7]
+;==================================================
+[PartyExtension]
+
+;==================================================
+; Rune Effects on Client Side
+;==================================================
+[UserEffects]
+Enable = 0
+Check_GM = 2 			//1: Check CtlCode 32 - 2: Check GM List using GM_Level
+Check_GM_Level = 2
+Check_AccountLevel_1 = 1
+Check_AccountLevel_2 = 1
+Check_AccountLevel_3 = 1
+Check_FullStat = 1
+Check_Penalty = 1
+MaxStr = 65000 			//Max Stats to Check FullStats Effect
+MaxAgi = 65000
+MaxVit = 65000
+MaxEne = 65000
+MaxCmd = 65000
+
+;==================================================
+; Ruudsystem  [V8]
+;==================================================
+[RuudSystem]
+Enable = 1
+ShowContributionMsg   = 1 //Muestra mensaje al obtener Contribution Points - Solo Type 0
+//0: Borra Contribution al terminar el Evento - Entrega Mastery Box
+//1: Entrega los Puntos directamente en Ruud - No entrega Mastery Box
+EventContributionType = 0  
+
+//-------------------------------------
+// Warehouse Selector UI
+//-------------------------------------
+[WareHouseSeletor]
+Enable = 1
+MaxWarehouse_AL0 = 10
+MaxWarehouse_AL1 = 10
+MaxWarehouse_AL2 = 10
+MaxWarehouse_AL3 = 10
+
+[PetInventory]
+Enable = 1
+
+[AutoSystem]
+Enable = 1 //V10
+
+;==================================================
+; AddStats Panel [Have Encoder Switch!]  [V11]
+;==================================================
+[AddStatsPanel]
+Enable = 1
+ActivateAutoAddWhenReset = 1
+
+;==================================================
+; Flags System [Have Encoder Switch!]  [V11]
+;==================================================
+[FlagsSystem]
+Enable = 1
+
+[TalismanOfLuck]
+MaxTalismanCount = 20
+
+;==================================================
+; Gremory Case Enable [Have Encoder Switch!]
+;==================================================
+[GremoryCase]
+Enable = 1
+ExpirationDays = 30
+
+[SDShield]
+SDShieldBrokeAnimation = 0 //0: Default (SD Shield in 0 AND Still have +20% Life) / 1: Always Show when SD Shield is broken
+
+;==================================================
+; Lock Manager UI (Disable to use Old Commands)
+;==================================================
+[LockManager]
+Enable = 1
+
+;==================================================
+; Party Control UI Settings [V14]
+;==================================================
+[PartyControl]
+Enable = 1
+MinAccountLevel = 0
+MinLevel = 0
+MinResets = 0
+MinMasterResets = 0
+
+
+[ItemMarket]
+Enable = 1
+SafeZoneCheck = 0
+Enable_OffMarket = 1
+
+SendJewelsToBank = 0
+
+//Enable Currency
+Zen_Enable = 1
+WC_Enable = 1
+WP_Enable = 1
+GP_Enable = 0
+Ruuds_Enable = 0
+JoChaos_Enable = 1
+JoBless_Enable = 1
+JoSoul_Enable = 1
+JoLife_Enable = 0
+JoCreation_Enable = 0
+
+[CharExtraInfo]
+Enabled = 1
+ShowMasterLevel = 0
+ShowResets = 1
+ShowMasterResets = 0
+ShowMasterResets = 0
+ShowExperience = 1
+ShowItemDrop = 1
+
+[BuffManager]
+BuffAlwaysOverwrite = 0 //Overwrite Buffs without check if current value is higher

@@ -1,0 +1,21 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//=========
+// Info:
+//=========
+// Solo monster custom o sin skill / only monster custom or monster without skill
+
+0
+//-----------------------------------------------
+// [Monster.txt] [Skill.txt]
+// Monster		 SkillID  Comment
+//--------------------------------------------------
+//	965			 9   	  //Golden Kundun
+//	965 		 14  	  //Golden Kundun
+//	965 		 238 	  //Golden Kundun
+end

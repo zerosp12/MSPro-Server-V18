@@ -1,0 +1,20 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------
+// System to create customs commands / Sistema para crear comandos customs
+//-------------------------------------------------------------------------------------
+// Info:
+// * No crear un comando que exista ya en Command.txt e CustomMove.txt
+// * Do not create a command that already exists in Command.txt and CustomMove.txt
+
+//----------------------------------------------------------------------------------------------------------------
+//						[Max 127 Let.]
+// [0~50] [/xxxxx]	    [text description]
+// ID     Command		String       	 
+//----------------------------------------------------------------------------------------------------------------
+   0	  "/testeando"	"Comando test"

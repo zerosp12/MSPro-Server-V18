@@ -1,0 +1,22 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6013
+// Mision Semanal - Lorencia
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			10080				1	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				4				28			//Matar 28 Elite Bull Fighter
+	1				2				16			//Matar 16 Budge Dragon
+end
+
+2
+	0				900000
+	7				100				1			//Golden Box
+	7				130				2			//Quest Chest T1 (class gear)
+	6				20				//Ruud
+	1				2				5			//Bonus points (kept after resets)
+end

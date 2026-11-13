@@ -1,0 +1,18 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6101
+// Caza Diaria - Aida
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			1440				57	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				306				67			//Matar 67 Death Rider
+end
+
+2
+	0				690000
+	7				101				1			//Silver Box
+end

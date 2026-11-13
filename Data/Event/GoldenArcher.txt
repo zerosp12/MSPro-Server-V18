@@ -1,0 +1,59 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+
+//==============
+// [Ref-1]
+//==============
+//	     Type:
+//	          0: Resta Renas 1 x 1
+//	          1: Resta todas las Renas
+//	          2: Resta todas las renas, pero no da premio.(Ranking)
+
+0
+//------------------------------------------
+//			       [Ref-1]
+// [0~114] [0~1]   [0~2]
+// Map	   Enable  Type	  Count		Comment
+//------------------------------------------
+   0	   1	   1	  10		    //Con 255 renas, me intercambia.(1x1)
+   2	   1	   1	  10		//Con 255 renas, me intercambia.(Todas)
+end
+
+1
+//------------------
+// Reward Item List
+//-----------------------------------------
+// [0~114] [0~65000] [0~999999] [0~999999]
+// Map	   BagID	 WC	 WP	 GP	 Ruud
+//-----------------------------------------
+	0	   120		 0	 10	 10	 20
+	2	   120		 0	 0	 0	 0
+end
+
+
+//==============
+// [Ref-2]
+//==============
+//	   Action:
+//	        0: Solo agrega VIP a los que no tienen (Se agrega el nivel que se pone en TargetVipLevel)
+//	        1: Permite actualizar el VIP o agregar en caso de que no tengan (Si el nivel es mayor al del TargetVipLevel no hace nada)
+//	        2: Permite sumar dias de VIP solo a los que ya lo son (Tiene que coincidir el nivel con el TargetVipLevel)
+//          3: Suma Vip de forma independiente en dias segun su nivel
+
+
+2
+//----------------
+// VIP Map Reward
+//-------------------------------------------
+//	               [Ref-2]
+// [0~114] [0~100] [0~3]   [0~3]   [0~999999]
+// Map	   Rate    Action  VipLvl  Days   
+//-------------------------------------------
+// 0	   50	   2	   3	   10
+// 2	   100	   2	   3	   10
+end

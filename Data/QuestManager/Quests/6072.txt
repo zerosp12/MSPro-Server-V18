@@ -1,0 +1,20 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6072
+// Caceria Doble - Atlans
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			4320				30	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				51				74			//Matar 74 Great Bahamut
+	1				48				74			//Matar 74 Lizard King
+end
+
+2
+	0				1275000
+	7				101				2			//Silver Box x2
+	7				131				1			//Quest Chest T2 (class gear)
+end

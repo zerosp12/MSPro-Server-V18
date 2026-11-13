@@ -1,0 +1,23 @@
+# Repack: only the configuration and data. Each server owner adds these themselves.
+*.exe
+*.dll
+*.bat
+*.cmd
+Data.xtr
+Error.txt
+lits.txt
+_Backups/
+*.bak
+*.bak-*
+*.backup-*
+*.zip
+*.rar
+*.pdb
+*.dmp
+*.log
+# log folders: the empty folder is kept (.gitkeep), never its contents
+*LOG/**
+*_LOG*/**
+LOG_*/**
+!**/.gitkeep
+DiscordSettings.txt

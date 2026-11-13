@@ -1,0 +1,72 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+0
+//---------------------------------------------------------------------------------------
+// [0~9]        [*/N]  [*/0~12]  [*/0~31]  [*/1~7]  [*/0~23]  [*/0~59]  [*/0~59]
+// EventIndex   Year   Month     Day       DoW      Hour      Minute    Second   Comment
+//---------------------------------------------------------------------------------------
+//  0            *      *         *         2        20        0         0	     //Lorencia (Lunes 20 hrs)
+//  1            *      *         *         3        20        0         0        //Devias (Martes 20 hrs)
+//  2            *      *         *         4        20        0         0		 //Noria (Miercoles 20 hrs)
+end
+
+1
+//------------------------------------------------------------------------------------------------------------------------
+// [0~9]        [Max 128 Char]                                   [0~255]     [0~255]     [0~30]       [1~59]      [InMin]
+// EventIndex   Name                                 MapNumber   LocationX   LocationY   DropRadius   AlarmTime   EventTime
+//------------------------------------------------------------------------------------------------------------------------
+   0            "Lluvia de Joyas-Lorecia"               0        145     	 128     	 5            5           3
+   1            "Lluvia de Joyas-Devias"                2        245      	 43      	 5            5           3
+   2            "Lluvia de Joyas-Noria"                 3        178     	 117     	 5            5           3
+end
+
+2
+//---------------------------------------------------------------------
+// [0~9]        [0~8191]    [0~15]      [0~100]     [InSec]
+// EventIndex   ItemIndex   ItemLevel   DropCount   DropDelay   Comment
+//---------------------------------------------------------------------
+//LORENCIA
+   0            6159        0           3           00          //Jewel of Chaos
+   0            6159        0           3           10          //Jewel of Chaos
+   0            7181        0           3           20          //Jewel of Chaos
+   0            7181        0           3           30          //Jewel of Bless
+   0            7181        0           3           40          //Jewel of Bless
+   0            7181        0           3           50          //Jewel of Bless
+   0            7182        0           3           60          //Jewel of Soul
+   0            7182        0           3           70          //Jewel of Soul
+   0            7182        0           3           80          //Jewel of Soul
+   0            7184        0           3           90          //Jewel of Life
+   0            7184        0           3           100         //Jewel of Life
+   0            7184        0           3           110         //Jewel of Life
+//DEVIAS
+   1            6159        0           3           00          //Jewel of Chaos
+   1            6159        0           3           10          //Jewel of Chaos
+   1            7181        0           3           20          //Jewel of Chaos
+   1            7181        0           3           30          //Jewel of Bless
+   1            7181        0           3           40          //Jewel of Bless
+   1            7181        0           3           50          //Jewel of Bless
+   1            7182        0           3           60          //Jewel of Soul
+   1            7182        0           3           70          //Jewel of Soul
+   1            7182        0           3           80          //Jewel of Soul
+   1            7184        0           3           90          //Jewel of Life
+   1            7184        0           3           100         //Jewel of Life
+   1            7184        0           3           110         //Jewel of Life
+//NORIA
+   2            6159        0           3           00          //Jewel of Chaos
+   2            6159        0           3           10          //Jewel of Chaos
+   2            7181        0           3           20          //Jewel of Chaos
+   2            7181        0           3           30          //Jewel of Bless
+   2            7181        0           3           40          //Jewel of Bless
+   2            7181        0           3           50          //Jewel of Bless
+   2            7182        0           3           60          //Jewel of Soul
+   2            7182        0           3           70          //Jewel of Soul
+   2            7182        0           3           80          //Jewel of Soul
+   2            7184        0           3           90          //Jewel of Life
+   2            7184        0           3           100         //Jewel of Life
+   2            7184        0           3           110         //Jewel of Life
+end

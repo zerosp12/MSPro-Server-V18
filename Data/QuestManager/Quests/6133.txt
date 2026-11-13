@@ -1,0 +1,22 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6133
+// Mision Semanal - Swamp of Calmness
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			10080				87	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				558				92			//Matar 92 Ice Napin
+	1				443				56			//Matar 56 Sapi-Tres
+end
+
+2
+	0				5220000
+	7				100				1			//Golden Box
+	7				133				2			//Quest Chest T4 (class gear)
+	6				80				//Ruud
+	1				2				5			//Bonus points (kept after resets)
+end

@@ -1,0 +1,109 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+// Configuraciones Basicas - Seccion 0
+//----------------------------------------------------------------------------------------------------------
+//	(1) Index 				--> Utilizado en las demas Secciones
+//	(2) Nivel Min			--> -1 Desactiva Check
+//	(3) Nivel Max			--> -1 Desactiva Check
+//	(4) Resets Min			--> -1 Desactiva Check
+//	(5) Resets Max			--> -1 Desactiva Check
+//	(6) M.Resets Min		--> -1 Desactiva Check
+//	(7) M.Resets Max		--> -1 Desactiva Check
+//	(8) AccountLevel    	--> (-1: Todos / 0 ~ 4 Nivel de Cuenta)
+//	(9) Admite PKs    		--> 0: No / 1: Si
+//	(10) Add Exp			--> Base 1.0 (Exp * Valor)
+//	(11) Add M.Exp			--> Base 1.0 (Exp * Valor)
+//	(12) Return to safe
+//----------------------------------------------------------------------------------------------------------
+//	(1)		(2)		(3)		(4)		(5)		(6)		(7)		(8)		(9)		(10)	(11)  (12)
+//----------------------------------------------------------------------------------------------------------
+0	
+	1		0		400		-1		-1		-1		-1		-1		1		1.0		1.0    1
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Configuraciones de Caracteristicas - Seccion 1
+//----------------------------------------------------------------------------------------------------------
+//	(1) Index 				--> Corresponde al Index de la Sección 0 !!!
+//	(2) Max Rango Ataque	--> Minimo: 1 / Maximo: 6 - Limita el rango de Ataque
+//	(3) Party Buff Elf		--> 0: NO Permite / 1: Permite
+//	(4) Reparar Items		--> 0: NO Permite / 1: Permite
+//	(5)	-----				--> Dejar en 0
+//	(6) Recoger Items		--> 0: NO Permite / 1: Permite
+//	(7) Rango Recoger Items	--> Minimo: 1 / Maximo: 8 - Limita el rango para recoger los Items
+//	(8) Recoger Excellent	--> 0: NO Permite / 1: Permite - Habilita opcion de recoger Items Excellent
+//	(9) Recoger Ancient		--> 0: NO Permite / 1: Permite - Habilita opcion de recoger Items Ancient
+//	(10) Recoger Jewels		--> 0: NO Permite / 1: Permite - Habilita opcion de recoger Jewels
+//	(11) Recoger Zen		--> 0: NO Permite / 1: Permite - Habilita opcion de recoger Zen
+//	(12) Recoger Lista		--> 0: NO Permite / 1: Permite - Habilita opcion de usar la lista de Items
+//----------------------------------------------------------------------------------------------------------
+//	(1)		(2)		(3)		(4)		(5)		(6)		(7)		(8)		(9)		(10)	(11)	(12)
+//----------------------------------------------------------------------------------------------------------
+1
+	1		6		1		1		0		1		8		0		1		1		0		0
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Configuraciones de Tiempos - Seccion 2
+//----------------------------------------------------------------------------------------------------------
+// ATENCION: Una vez que el PJ termina las 5 etapas sera desconectado del Juego
+//----------------------------------------------------------------------------------------------------------
+//	(1) Index 				--> Corresponde al Index de la Sección 0 !!!
+//	(2) Etapa				--> 1 al 5 - Tienen que estar las 5
+//	(3) Minutos				--> Minutos que dura una Etapa
+//	(4) Zen					--> Zen Base
+//	(5)	Minutos de Cobro	--> Cada cuantos minutos cobra Zen
+//	(6) Tipo de Cobro		--> 0: Zen * Nivel del PJ / 1: Solo el Zen Ingresado
+//----------------------------------------------------------------------------------------------------------
+//	(1)		(2)		(3)		(4)		(5)		(6)
+//----------------------------------------------------------------------------------------------------------
+2
+	1		1		120		1000	5		0
+	1		2		120		1000	5		0
+	1		3		120		1000	5		0
+	1		4		120		1000	5		0
+	1		5		120		1000	5		0
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Configuraciones de Personaje al Morir - Seccion 3
+//----------------------------------------------------------------------------------------------------------
+//	(1) Index 				--> Corresponde al Index de la Sección 0 !!!
+//	(2) Opcion al Morir		--> 0: Vuelve al Safe / 1: Vuelve al lugar donde murio para continuar
+//	(3) Zen					--> Costo de Zen (Utilizar solo en caso de cobrar para volver)
+//	(4) WC					--> Costo de WC (Utilizar solo en caso de cobrar para volver)
+//	(5)	WP					--> Costo de WP (Utilizar solo en caso de cobrar para volver)
+//	(6) GP					--> Costo de GP (Utilizar solo en caso de cobrar para volver)
+//----------------------------------------------------------------------------------------------------------
+//	(1)		(2)		(3)			(4)		(5)		(6)
+//----------------------------------------------------------------------------------------------------------
+3
+	1		1		100000		0		0		0
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Lista Negra de Monsters - Seccion 4
+//----------------------------------------------------------------------------------------------------------
+//	(1) Index 				--> Monster del Index que NO queremos atacar !!!
+//----------------------------------------------------------------------------------------------------------
+//	(1)	
+//----------------------------------------------------------------------------------------------------------
+4
+end
+
+//----------------------------------------------------------------------------------------------------------
+// Lista de Mapas donde esta Permitido el Off Helper
+//----------------------------------------------------------------------------------------------------------
+//	(1) Mapa 				--> Mapa
+//	(1) Estado 				--> 0: NO / 1: SI permite Off Helper
+//----------------------------------------------------------------------------------------------------------
+//	(1)	
+//----------------------------------------------------------------------------------------------------------
+5
+end
+

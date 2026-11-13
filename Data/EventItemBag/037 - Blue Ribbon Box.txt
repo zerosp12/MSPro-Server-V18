@@ -1,0 +1,72 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+0
+//-----------------------------------------------------------------------------------------------------------
+// [Max 20 Char]     [0~2000000000] [0~100] 	   [1~255] 		   [0~10000]         [0-1]          [0-1]  
+// EventName         DropZen   		ItemDropRate   ItemDropCount   SetItemDropRate   ItemDropType   Fireworks
+//-----------------------------------------------------------------------------------------------------------	
+"Blue Ribbon Box"	 1000	   100		  1		  0		    0		   0
+end
+
+1
+//----------------------------------------------------------------------------------
+// [0~15]    [0~511][0~15]	   [0~15]     [0~1]   [0~1]  [0~7]    [0~6] 
+// Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent  Comment
+//----------------------------------------------------------------------------------
+//Swords
+   0         16     4          6          1       1      1        0          //Sword of Destruction
+   0         32     4          6          1       1      1        0          //Sacred Glove
+//Mace-Scepters
+   2         10     4          6          1       1      1        0          //Great Scepter
+//Bows-Crossbows
+   4         16     4          6          1       1      1        0          //Saint Crossbow
+//Staffs-Sticks
+   5         6      4          6          1       1      1        0          //Staff of Resurrection
+   5         8      3          5          1       1      1        0          //Staff of Destruction
+   5         15     3          5          1       1      1        0          //Stick Violent Wind
+//
+   7         17     4          6          0       1      1        0          //Set Dark Phoenix
+   8         17     4          6          0       1      1        0          //Set Dark Phoenix
+   9         17     4          6          0       1      1        0          //Set Dark Phoenix
+   10        17     4          6          0       1      1        0          //Set Dark Phoenix
+   11        17     4          6          0       1      1        0          //Set Dark Phoenix
+//
+   7         19     4          6          0       1      1        0          //Set Divine
+   8         19     4          6          0       1      1        0          //Set Divine
+   9         19     4          6          0       1      1        0          //Set Divine
+   10        19     4          6          0       1      1        0          //Set Divine
+   11        19     4          6          0       1      1        0          //Set Divine
+//
+   7         18     4          6          0       1      1        0          //Set Grand Soul
+   8         18     4          6          0       1      1        0          //Set Grand Soul
+   9         18     4          6          0       1      1        0          //Set Grand Soul
+   10        18     4          6          0       1      1        0          //Set Grand Soul
+   11        18     4          6          0       1      1        0          //Set Grand Soul
+//
+   8         20     4          6          0       1      1        0          //Set Thunder
+   9         20     4          6          0       1      1        0          //Set Thunder
+   10        20     4          6          0       1      1        0          //Set Thunder
+   11        20     4          6          0       1      1        0          //Set Thunder
+//
+   7         27     4          6          0       1      1        0          //Set Dark Steel
+   8         27     4          6          0       1      1        0          //Set Dark Steel
+   9         27     4          6          0       1      1        0          //Set Dark Steel
+   10        27     4          6          0       1      1        0          //Set Dark Steel
+   11        27     4          6          0       1      1        0          //Set Dark Steel
+//
+   7         39     4          6          0       1      1        0          //Set Violent Wind
+   8         39     4          6          0       1      1        0          //Set Violent Wind
+   9         39     4          6          0       1      1        0          //Set Violent Wind
+   10        39     4          6          0       1      1        0          //Set Violent Wind
+   11        39     4          6          0       1      1        0          //Set Violent Wind
+//
+   7         59     4          6          0       1      1        0          //Set Sacred
+   8         59     4          6          0       1      1        0          //Set Sacred
+   9         59     4          6          0       1      1        0          //Set Sacred
+   11        59     4          6          0       1      1        0          //Set Sacred
+end

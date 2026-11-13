@@ -1,0 +1,916 @@
+//-------------------------------------------------------------------------------------------------------------------------------------------
+//	MSPro Command Manager V2 - www.muserverpro.com
+//-------------------------------------------------------------------------------------------------------------------------------------------
+//	COMMANDS OPTIONS
+//-------------------------------------------------------------------------------------------------------------------------------------------
+//	[Value]					[Info]								[Default]				[Format]
+//-------------------------------------------------------------------------------------------------------------------------------------------
+//
+//	Syntax					Command Syntax 												"/command"
+//	Enable					0: OFF ~ 1: ON						1,1,1,1					AL0, AL1, AL2, AL3
+//	OnlyGuildMaster			0: OFF ~ 1: ON						0,0,0,0         		AL0, AL1, AL2, AL3
+//	OnlySafeZone			0: OFF ~ 1: ON						0,0,0,0         		AL0, AL1, AL2, AL3
+//	OnlyGameMaster			0: OFF ~ 1-99: GM Level             0,0,0,0					AL0, AL1, AL2, AL3
+//	Delay              		-1: OFF ~ Time in Seconds			-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	MinLevel				-1: OFF ~ 1-65.000					-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	MaxLevel            	-1: OFF ~ 1-65.000					-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	MinReset			 	-1: OFF ~ 1-65.000					-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	MaxReset            	-1: OFF ~ 1-65.000					-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	MinMasterReset			-1: OFF ~ 1-65.000					-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	MaxMasterReset      	-1: OFF ~ 1-65.000					-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	AllowPK             	-1: OFF ~ 0-6			    		-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	Money               	-1: OFF ~ 1-2.000.000.000			-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	WC						-1: OFF ~ 1-2.000.000.000			-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	WP                  	-1: OFF ~ 1-2.000.000.000			-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	GP                  	-1: OFF ~ 1-2.000.000.000			-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	Ruud				 	-1: OFF ~ 1-2.000.000.000			-1,-1,-1,-1	    		AL0, AL1, AL2, AL3
+//	ValueLimit				-1: OFF                             -1,-1,-1,-1				AL0, AL1, AL2, AL3 			(EVO & WARE ONLY)
+//	AllowClass          	0: OFF ~ 1: ON						1,1,1,1,1,1,1,1			DW, DK, ELF, MG, DL, SU, RF, GL
+//	BG_RGB					RED, GREEN, BLUE, ALPHA 			255,200,50,150			R,G,B,A						(POST ONLY)
+//	Font_RGB            	RED, GREEN, BLUE, ALPHA 			255,200,50,150			R,G,B,A						(POST ONLY)
+//
+//-------------------------------------------------------------------------------------------------------------------------------------------
+// Commands
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+[MOVE]
+Syntax = "/move"
+Enable = 1,1,1,1
+Delay = 100,100,100,100
+
+[POST]
+Syntax = "/post"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+BG_RGBA = 255,200,50,150
+Font_RGBA = 0,0,0,255
+SendAllServers = 1
+ShowServerName = 1
+
+[ADDSTR]
+Syntax = "/addstr"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[ADDAGI]
+Syntax = "/addagi"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[ADDVIT]
+Syntax = "/addvit"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[ADDENE]
+Syntax = "/addene"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[ADDCMD]
+Syntax = "/addcmd"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+AllowClass = 0,0,0,0,1,0,0,0
+
+[PKCLEAR]
+Syntax = "/pkclear"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MONEY]
+//-----
+//Info - /money			<Value>						- Add Zen
+//-----
+Syntax = "/zen"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[READD]
+//-----
+//Info - /readd										- ReAdd Stats
+//-----
+Syntax = "/readd"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[READD_SKILLTREE]
+//-----
+//Info - /remaster									- ReAdd Master Skill Tree
+//-----
+Syntax = "/remaster"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[WARE]
+//-----
+//Info - /ware				<Num>					- Change Warehouse
+//-----
+Syntax = "/ware"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+ValueLimit = 5,10,15,20
+
+[HELPER]
+//-----
+//Info - /help										- Summon Help Monster
+//-----
+Syntax = "/help"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+MonsterID = 7
+MonsterCount = 4
+
+[GUILD_WAR]
+//-----
+//Info - /war				<Guild>					- Challenge another Guild
+//-----
+Syntax = "/guildwar"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[BATTLE_SOCCER]
+//-----
+//Info - /battlesoccer		<Guild>					- Challenge another Guild to Battle Soccer
+//-----
+Syntax = "/battlesoccer"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[HIDE]
+Syntax = "/hide"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[FIREWORKS]
+Syntax = "/fireworks"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[RESET]
+Syntax = "/reset"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+ResetAutoEnable = 1
+
+[MASTERRESET]
+Syntax = "/masterreset"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[CLEARINVENTORY]
+//-----
+//Info - /limpiarinv								- Clear Inventory
+//-----
+Syntax = "/limpiarinv"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[TRACKGUILD]
+Syntax = "/trackguild"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SERVERINFO]
+Syntax = "/serverinfo"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[DISABLE_PVP]
+//-----
+//Info - /offpvp									- Disable PvP
+//-----
+Syntax = "/offpvp"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[JEWEL_PACK]
+//-----
+//Info - /pack				<Type> <Value>			- Command for Pack Jewels
+//-----
+Syntax = "/pack"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[JEWEL_UNPACK]
+//-----
+//Info - /unpack			<Type> <Value>			- Command for Unpack Jewels
+//-----
+Syntax = "/unpack"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[PICK]
+Syntax = "/pick"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[ATTACK]
+//-----
+//Info - /attack			<Skill> <Buff>			- Start Custom Attack
+//-----
+Syntax = "/attack"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[OFFATTACK]
+//-----
+//Info - /offattack								- Start Custom Attack Offline
+//-----
+Syntax = "/offattack"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[REQUEST]
+//-----
+//Info - /re				<On / Off / Auto>		- Request System
+//-----
+Syntax = "/re"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[QUEST]
+//-----
+//Info - /quest										- Quest Command
+//-----
+Syntax = "/quest"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[STORE]
+//-----
+//Info - /store			<Type>						- Open Custom Store
+//-----
+Syntax = "/store"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[OFFSTORE]
+//-----
+//Info - /offstore									- Open Custom Store Offline
+//-----
+Syntax = "/offstore"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[OFFHELPER]
+//-----
+//Info - /offhelper										- Start Custom Off Helper
+//-----
+Syntax = "/offhelper"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[OPENWARE]
+Syntax = "/openware"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[LOCK]
+//-----
+//Info - /lock				<Password>				- Block Itens Move
+//-----
+Syntax = "/lock"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[UNLOCK]
+//-----
+//Info - /unlock			<Password>				- Desbloc Itens Move
+//-----
+Syntax = "/unlock"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[EVO]
+Syntax = "/evo"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[EVENT_JOIN]
+// This is for RUN AND CATCH, EVENT RUSSIAN ROULETTE, EVENT KILL ALL
+//-----
+//Info - /join  									- Go to Run and Catch event
+//-----
+Syntax = "/eventjoin"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[RELOAD]
+//-----
+//Info - /reload			<Type>					- Reload Config
+//-----
+Syntax = "/reload"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[INFO]
+//-----
+//Info - /info				<Name>					- Character Status
+//-----
+Syntax = "/info"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MAKE]
+//-----
+//Info - /make				<Group> <Item> <Level> <Skill> <Luck> <Option> <Exe> <Set> <Socket 1 to 5>
+//-----
+Syntax = "/make"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MAKE_DUR]
+Syntax = "/makedur"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MAKE_SET]
+//-----
+//Info - /makeset			<Item> <Level> <Skill> <Luck> <Option> <Exe> <Set> <Socket>
+//-----
+Syntax = "/makeset"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[DROP]
+//-----
+//Info - /drop				<Group> <Item> <Level> <Skill> <Luck> <Option> <Exe> <Set> <Socket>
+//-----
+Syntax = "/drop"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SKIN]
+//-----
+//Info - /skin				<Name> <MonsterNumber>	- Change player Skin
+//-----
+Syntax = "/skin"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[TRACK]
+//-----
+//Info - /track			<Name>						- Go to Player
+//-----
+Syntax = "/track"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[TRACE]
+//-----
+//Info - /trace			<Name>						- Bring a Player to us
+//-----
+Syntax = "/trace"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[DISCONNECT]
+//-----
+//Info - /disconnect		<Name>					- Disconnect Player
+//-----
+Syntax = "/disconnect"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[GMMOVE]
+//-----
+//Info - /gmmove			<Name> <Map> <X> <Y>	- Move a Player
+//-----
+Syntax = "/gmmove"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[GMPOST]
+Syntax = "/gmpost"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[NOTICE]
+Syntax = "/notice"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[BAN_ACCOUNT]
+//-----
+//Info - /banacc			<Account>				- Ban Account
+//-----
+Syntax = "/banaccount"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[BAN_CHARACTER]
+//-----
+//Info - /banchar			<Name>					- Ban Character
+//-----
+Syntax = "/bancharacter"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[GIFT]
+//-----
+//Info - /gift										- Gift Command
+//-----
+Syntax = "/gift"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+MaxPerAccount = 1
+
+[MOVEALL]
+//-----
+//Info - /moveall			<Map> <X> <Y>			- Move all Players
+//-----
+Syntax = "/moveall"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MOVEGUILD]
+//-----
+//Info - /moveguild		<Guild> <Map> <X> <Y>		- Move all Guild
+//-----
+Syntax = "/moveguild"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SPOT]
+//-----
+//Info - /spot				<Monster> <Value>		- Summon monsters
+//-----
+Syntax = "/spot"
+OnlyGameMaster = 0
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[CHANGECLASS]
+//-----
+//Info - /class			<Type>						- Change Character Class
+//-----
+Syntax = "/change"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SET_MONEY]
+//-----
+//Info - /setmoney			<Name> <Value>			- Change player Zen
+//-----
+Syntax = "/setmoney"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SET_VIP]
+//-----
+//Info - /setvip			<Account> <Type> <Days>	- Add VIP to Account
+//-----
+Syntax = "/setvip"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SET_COIN]
+//-----
+//Info - /setcoin			<Char> <Coin> <Value>	- Command for Add or Remove Coins
+//-----
+Syntax = "/setcoin"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SET_RUUD]
+Syntax = "/setruud"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SET_LEVEL]
+Syntax = "/setlevel"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MOVEGATE]
+Syntax = "/movegate"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[DROP_BAG]
+//-----
+//Info - /dropbag			<EventItemBag ID>		- Drop ItemBag
+//-----
+Syntax = "/dropbag"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[RENAME_CHARACTER]
+Syntax = "/rename"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+ValueLimit = 3600,3600,3600,3600
+NeedTicket = 0
+
+[REWARD_COINS]
+Syntax = "/rewardcoins"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[DROP_ZEN]
+Syntax = "/dropzen"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MOD_ITEM]
+//-----
+//Info - /moditem <Pos 0 ~ 236> <Level> <Skill> <Luck> <Option> <Exe> <Set> <Socket>
+//-----
+Syntax = "/moditem"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SET_STATS]
+//-----
+//Command to modify Stats - Example /setstats <Name> <Type 0~5> <+ - Amount>
+//-----
+Syntax = "/setstats"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MOVEALL_WITHPARAMS]
+Syntax = "/moveallp"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[REWARD_COINSALL]
+Syntax = "/rewardcoinsall"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_BOTSTORE]
+Syntax = "/startbotstore"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_BC]
+//-----
+//Info - /startbc									- Start Blood Castle Event
+//-----
+Syntax = "/startbc"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_DS]
+//-----
+//Info - /startds									- Start Devil Square Event
+//-----
+Syntax = "/startds"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_CC]
+//-----
+//Info - /startcc									- Start Chaos Castle Event
+//-----
+Syntax = "/startcc"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_IT]
+//-----
+//Info - /startit									- Start Illusion Temple Event
+//-----
+Syntax = "/startit"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_QUIZ]
+//-----
+//Info - /startquiz									- Start Quiz Event
+//-----
+Syntax = "/startquiz"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_EVENT_DROP]
+//-----
+//Info - /startdrop									- Start Drop Event
+//-----
+Syntax = "/starteventdrop"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_KING_OF_MU]
+//-----
+//Info - /startking									- Start King of MU Event
+//-----
+Syntax = "/startking"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_TVT]
+//-----
+//Info - /starttvt									- Start Team vs Team Event
+//-----
+Syntax = "/starttvt"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_INVASION]
+//-----
+//Info - /startinvasion	<Index>						- Start Invasion
+//-----
+Syntax = "/startinvasion"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_CUSTOM_ARENA]
+//-----
+//Info - /startarena		<Index>					- Start Custom Arena
+//-----
+Syntax = "/startcustomarena"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_CASTLESIEGE]
+Syntax = "/startcastlesiege"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_RAKLION]
+Syntax = "/startraklion"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_NPCINVASION]
+Syntax = "/startnpcinvasion"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_FEREA]
+Syntax = "/startferea"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_NIXIE]
+Syntax = "/startnixie"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_CORE]
+Syntax = "/startcore"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_PVP]
+//-----
+//Info - /startpvp										- Start PvP Event
+//-----
+Syntax = "/startpvp"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_KILLALL]
+//-----
+//Info - /startkillall									- Start Kill All Event
+//-----
+Syntax = "/startkillall"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_HIDEANDSEEK]
+//-----
+//Info - /starthideandseek								- Start Hide and Seek Event
+//-----
+Syntax = "/starthideandseek"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_SKY_EVENT]
+//-----
+//Info - /startsky										- Start SkyEvent
+//-----
+Syntax = "/startsky"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_ROULETTE]
+//-----
+//Info - /startroulette								- Start Russian Roullete Event
+//-----
+Syntax = "/startroulette"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_SEARCH_EVENT]
+Syntax = "/startsearchevent"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_GMEVENT]
+// This is for GM Event Announcement
+Syntax = "/startgmevent"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_GMEVENT_JOIN]
+// This is for GM Event Announcement
+Syntax = "/startgmeventjoin"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_RUN_AND_CATCH]
+//-----
+//Info - /startrunandcatch                   	     - Start Run and Catch Event
+//-----
+Syntax = "/startrunandcatch"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[QUIZ_RESP]
+//-----
+//Info - /resp				<Msg>					- Quiz Event
+//-----
+Syntax = "/resp"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_HIDE_AND_SEEK_ESCAPE]
+Syntax = "/starthideescape"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[KING_OF_MU]
+//-----
+//Info - /king										- Seize throne in King of MU Event
+//-----
+Syntax = "/king"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MARRY_PROPOSE]
+//-----
+//Info - /marry			<Name>						- Marry Character
+//-----
+Syntax = "/marry"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MARRY_ACCEPT]
+//-----
+//Info - /accept										- Accept Marry
+//-----
+Syntax = "/marryaccept"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MARRY_DIVORCE]
+//-----
+//Info - /divorce										- Try to Divorce
+//-----
+Syntax = "/marrydivorce"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[MARRY_FORCEDIVORCE]
+//-----
+//Info - /forcedivorce									- Force Divorce
+//-----
+Syntax = "/marryforce"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[TRACE_MARRY]
+//-----
+//Info - /tracemarry									- Go to Married Character
+//-----
+Syntax = "/tracemarry"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SET_PARTY]
+//-----
+//Info - /setparty			<Password>					- Create Password for Party
+//-----
+Syntax = "/setparty"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[JOIN_PARTY]
+//-----
+//Info - /joinparty		<Password>					- Join to Party using password created with /setparty
+//-----
+Syntax = "/joinparty"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[PKTIME]
+Syntax = "/pktime"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[CLEAR_BUFFS]
+Syntax = "/clearbuffs"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[ONLINE]
+Syntax = "/online"
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[SET_BUFF]
+Syntax = "/setbuff"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[PKSET]
+//-----
+//Info - /pkset <Name> <PKLevel> <PKCount> <PKTime>                - Change PKLevel, PKCount and PKTime
+//-----
+Syntax = "/pkset"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[BANCHAT]
+//-----
+//Info - /banchar <Name> <Minutes>                - Ban Chat - Use 0 Minutes to Unban!
+//-----
+Syntax = "/banchat"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_CONQUEROR]
+//-----
+//Info - /startconqueror										- Start Conqueror Event
+//-----
+Syntax = "/startconqueror"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+[START_MOSS]
+Syntax = "/startmoss"
+OnlyGameMaster = 1
+Enable = 1,1,1,1
+Delay = 0,0,0,0
+
+

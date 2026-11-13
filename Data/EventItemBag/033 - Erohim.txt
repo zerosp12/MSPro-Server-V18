@@ -1,0 +1,76 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+0
+//-----------------------------------------------------------------------------------------------------------
+// [Max 20 Char]     [0~2000000000] [0~100] 	   [1~255] 		   [0~10000]         [0-1]          [0-1]  
+// EventName         DropZen   		ItemDropRate   ItemDropCount   SetItemDropRate   ItemDropType   Fireworks
+//-----------------------------------------------------------------------------------------------------------
+"Erohim"	         100	        100		       1		       0		         0		        0
+end
+
+1
+//----------------------------------------------------------------------------------
+// [0~15]    [0~511][0~15]	   [0~15]     [0~1]   [0~1]  [0~7]    [0~6] 
+// Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent  Comment
+//----------------------------------------------------------------------------------
+   7         29     0          0          0       1      1        2          // Dragon Knight Helm
+   8         29     0          0          0       1      1        2          // Dragon Knight Armor
+   9         29     0          0          0       1      1        2          // Dragon Knight Pants
+   10        29     0          0          0       1      1        2          // Dragon Knight Gloves
+   11        29     0          0          0       1      1        2          // Dragon Knight Boots
+//                                                                           
+   7         30     0          0          0       1      1        2          // Venom Mist Helm
+   8         30     0          0          0       1      1        2          // Venom Mist Armor
+   9         30     0          0          0       1      1        2          // Venom Mist Pants
+   10        30     0          0          0       1      1        2          // Venom Mist Gloves
+   11        30     0          0          0       1      1        2          // Venom Mist Boots
+//                                                                           
+   7         31     0          0          0       1      1        2          // Sunlight Helm
+   8         31     0          0          0       1      1        2          // Sunlight Armor
+   9         31     0          0          0       1      1        2          // Sunlight Pants
+   10        31     0          0          0       1      1        2          // Sunlight Gloves
+   11        31     0          0          0       1      1        2          // Sunlight Boots
+//                                                                           
+   8         31     0          0          0       1      1        2          // Volcano Armor
+   9         31     0          0          0       1      1        2          // Volcano Pants
+   10        31     0          0          0       1      1        2          // Volcano Gloves
+   11        31     0          0          0       1      1        2          // Volcano Boots
+//                                                                           
+   7         31     0          0          0       1      1        2          // Sylphid Ray Helm
+   8         31     0          0          0       1      1        2          // Sylphid Ray Armor
+   9         31     0          0          0       1      1        2          // Sylphid Ray Pants
+   10        31     0          0          0       1      1        2          // Sylphid Ray Gloves
+   11        31     0          0          0       1      1        2          // Sylphid Ray Boots
+//                                                                           
+   7         43     0          0          0       1      1        2          // Aura Helm
+   8         43     0          0          0       1      1        2          // Aura Armor
+   9         43     0          0          0       1      1        2          // Aura Pants
+   10        43     0          0          0       1      1        2          // Aura Gloves
+   11        43     0          0          0       1      1        2          // Aura Boots
+//                                                                           
+   7         73     0          0          0       1      1        2          // Phoenix Soul Helm
+   8         73     0          0          0       1      1        2          // Phoenix Soul Amor
+   9         73     0          0          0       1      1        2          // Phoenix Soul Pants
+   10        73     0          0          0       1      1        2          // Phoenix Soul Gloves
+   11        73     0          0          0       1      1        2          // Phoenix Soul Boots
+//                                                                           
+   0         22     0          0          1       1      1        2          // Bone Blade
+   0         23     0          0          1       1      1        2          // Explosion Blade
+   4         21     0          0          1       1      1        2          // Sylph Wind Bow
+   2         14     0          0          1       1      1        2          // Soleil Scepter
+   5         12     0          0          1       1      1        2          // Viper Staff
+   5         19     0          0          1       1      1        2          // Aura stick
+   0         35     0          0          1       1      1        2          // Phoenix Soul Claw
+end
+
+2
+//---------------------------------------------------------------------------------------------------
+// [0~15]    [0~511][0~15]	   [0~15]     [0~1]   [0~1]  [0~7]    [0~6]      [0~2]    [0~5]
+// Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent  Ancient  Socket  Comment
+//---------------------------------------------------------------------------------------------------  
+end

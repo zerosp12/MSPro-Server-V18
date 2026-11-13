@@ -1,0 +1,140 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+[GameServerInfo]
+;==================================================
+; Blood Castle Event Settings
+;==================================================
+BloodCastleEvent = 0
+BloodCastleMaxUser = 10
+
+;==================================================
+; Bonus Manager Settings
+;==================================================
+BonusManagerSwitch = 1
+
+;==================================================
+; Castle Deep Event Settings
+;==================================================
+CastleDeepEvent = 1
+CastleDeepEventTime = 30
+
+;==================================================
+; Castle Siege Event Settings
+;==================================================
+CastleSiegeEvent 		    = 1
+CastleSiegeCycleStartYear   =0
+CastleSiegeCycleStartMonth  =0
+CastleSiegeCycleStartDay 	=0
+CastleSiegeSpecificState 	=0
+CastleSiegeStateStartYear =0
+CastleSiegeStateStartMonth =0
+CastleSiegeStateStartDay =0
+CastleSiegeStateStartHour =0
+CastleSiegeStateStartMinute =0
+CastleSiegeOffensiveWeaponDamage = 300
+CastleSiegeDefensiveWeaponDamage = 200
+CastleSiegeLowerAccumulatedTimeValue = 0
+CastleSiegeDecayAccumulatedTimeValue = 0
+CastleSiegeOnlyAttackersCanKillNPCs = 1 ;0: All players Attack Siege NPCs - 1: Only Attackers Alliance
+CastleSiegeMinMembersToRegisterGuild = 1
+CastleSiegeAllowNonAllianceRegister = 1 ;Allow to Register Guilds with no Alliance
+CastleSiegeLifeStoneWarpActivationTime = 30 ;Seconds to Warp using LifeStone
+CastleSiegeResetAccumulatedTimeValue = 1  ; Reset accumulated time when die.
+CastleSiegeGetCrownUserGuildLevel 	 = 2  ; Allow User guild level to get crown. 0: Normal User / 1: Battle Master / 2: Assistant / 3: Guild Master
+CastleSiegeGetCrownTime				 = 60 ; Time to get the crown.(seconds)
+CastleSiegeSeniorMixUnlimitedUse	 = 2  ; Use the senior mix without limits per day.
+
+
+;==================================================
+; Chaos Castle Event Settings
+;==================================================
+ChaosCastleEvent = 0
+ChaosCastleMinUser = 1
+ChaosCastleBlowUserRate = 50
+
+;==================================================
+; Crywolf Event Settings
+;==================================================
+CrywolfEvent = 1
+CrywolfBenefitSwitch = 1
+CrywolfBenefitChaosRate = 10
+CrywolfBenefitMonsterLife = 80
+CrywolfPenaltySwitch = 0
+CrywolfPenaltyJewelDrop = 70
+CrywolfPenaltyExperience = 70
+
+;==================================================
+; Devil Square Event Settings
+;==================================================
+DevilSquareEvent = 0
+DevilSquareMaxUser = 15
+
+;==================================================
+; Double Goer Event Settings
+;==================================================
+DoubleGoerEvent = 0
+DoubleGoerDifficultRate = 100
+
+;==================================================
+; Illusion Temple Event Settings
+;==================================================
+IllusionTempleEvent = 0
+IllusionTempleMinUser = 2
+IllusionTempleRewardFenrirRate = 5
+
+;==================================================
+; Imperial Guardian Event Settings
+;==================================================
+ImperialGuardianEvent = 0
+ImperialGuardianDifficultRate = 100
+
+;==================================================
+; Invasion Manager Settings
+;==================================================
+InvasionManagerSwitch = 0
+
+;==================================================
+; Kanturu Event Settings
+;==================================================
+KanturuEvent = 0
+
+;==================================================
+; Moss Merchant Event Settings
+;==================================================
+MossMerchantEvent = 0
+MossMerchantEventTime = 120
+
+;==================================================
+; Raklion Event Settings
+;==================================================
+RaklionEvent = 0
+
+
+;==================================================
+; Event Access Settings V8
+; 0 All - 1 VIP1 - 2 VIP2 - 3 VIP3
+;==================================================
+[EventAlarm]
+Enable 							= 1
+BloodCastle_NotifyMinAccLvl		= 0
+DevilSquare_NotifyMinAccLvl		= 0
+ChaosCastle_NotifyMinAccLvl		= 0
+IllusionTemple_NotifyMinAccLvl	= 0
+DoppelGanger_NotifyMinAccLvl	= 0
+SkyEvent_NotifyMinAccLvl		= 0
+
+BloodCastle_EnterMinAccLvl		= 0
+DevilSquare_EnterMinAccLvl		= 0
+ChaosCastle_EnterMinAccLvl		= 0
+IllusionTemple_EnterMinAccLvl	= 0
+DoppelGanger_EnterMinAccLvl		= 0
+SkyEvent_EnterMinAccLvl			= 0
+
+EnableTicket_BC = 1
+EnableTicket_DS = 1
+EnableTicket_CC = 1
+EnableTicket_IT = 1

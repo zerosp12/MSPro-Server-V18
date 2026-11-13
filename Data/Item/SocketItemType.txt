@@ -1,0 +1,78 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//-------------------------------------
+// [0~15]    [0~511] [1~5]
+// Section   Type    MaxSocket  Comment
+//-------------------------------------
+//Swords
+   0         26      5          //Flameberge          
+   0         27      5          //Sword Breaker       
+   0         28      5          //Rune Bastard Sword             
+//Mace-Scepter
+   2         16      5  	    //Frost Mace       
+   2         17      5  	    //Absolute Scepter		
+//Bow-Crossbow
+   4         23      5          //Dark Stinger		  
+//Staff-Stick
+   5         30      5          //Deadly Staff
+   5         31      5          //Inberial Staff
+   5         32      5          //Summon Spirit Stick	
+//Shields
+   6         17      5          //Crimson Glory
+   6         18      5          //Salamander Shield
+   6         19      5          //Frost Barrier
+   6         20      5          //Guardian Shield
+//Helm
+   7         45      5          //Titan Helm"      
+   7         46      5          //Brave Helm"      
+   7         49      5          //Seraphim Helm"   
+   7         50      5          //faith Helm"      
+   7         51      5          //Royal Mask"      
+   7         52      5          //Hades Helm"      
+   7         53      5          //Queen Helm"
+//Armor
+   8         45      5          //Titan Armor    
+   8         46      5          //Brave Armor     
+   8         47      5          //Phantom Armor   
+   8         48      5          //Destroy Armor   
+   8         49      5          //Seraphim Armor  
+   8         50      5          //Divine Armor  
+   8         51      5          //Royal Armor     
+   8         52      5          //Hades Armor     
+   8         53      5          //Queen Armor  
+//Pants
+   9         45      5          //Titan Pants       
+   9         46      5          //Brave Pants         
+   9         47      5          //Phantom  Pants      
+   9         48      5          //Destroy Pants      
+   9         49      5          //Seraphim Pants      
+   9         50      5          //Divine Pants        
+   9         51      5          //Royal Pants         
+   9         52      5          //Hades Pants         
+   9         53      5          //Queen Pants
+//Gloves
+   10        45      5          //Titan  Gloves   
+   10        46      5          //Brave Gloves   
+   10        47      5          //Phantom  Gloves
+   10        48      5          //Destroy Gloves 
+   10        49      5          //Seraphim Gloves 
+   10        50      5          //Divine Gloves   
+   10        51      5          //Royal Gloves  
+   10        52      5          //Hades Gloves    
+   10        53      5          //Queen Gloves
+//Boots
+   11        45      5          //Titan Boots    
+   11        46      5          //Brave Boots   
+   11        47      5          //Phantom Boots   
+   11        48      5          //Destroy Boots   
+   11        49      5          //Seraphim Boots  
+   11        50      5          //Divine Boots    
+   11        51      5          //Royal Boots     
+   11        52      5          //Hades Boots     
+   11        53      5          //Queen Boots	
+end

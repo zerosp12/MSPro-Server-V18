@@ -1,0 +1,125 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  © 2020 - 2022 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+//==============
+// [INFO]
+//==============
+//     TYPE INDEX : 0 - NPC // 1 - SPOTS  // 2 - MONSTER INDIVIDUAL //  4 - EVENTS
+
+0
+//------
+// NPCS
+//---------------------------------------------------------------
+//                [0~30]        [1~255]     [1~255]     [-1/0~8]
+// MonsterIndex   SpawnRadius   LocationX   LocationY   Direction
+//---------------------------------------------------------------
+   232            0             10          9           1		    //Archangel
+end
+
+4
+//------
+//EVENTS
+//---------------------------------------------------------------
+//                [0~30]        [1~255]     [1~255]     [-1/0~8]
+// MonsterIndex   SpawnRadius   LocationX   LocationY   Direction
+//---------------------------------------------------------------
+   126            30            13          45          5           //Chief Skeleton Archer
+   129            30            13          78          5           //Red Skeleton Knight
+   127            30            15          46          5           //Dark Skull Soldier
+   129            30            14          83          5           //Red Skeleton Knight
+   129            30            14          78          5           //Red Skeleton Knight
+   127            30            15          63          5           //Dark Skull Soldier
+   128            30            13          69          5           //Giant Ogre
+   125            30            14          34          5           //Chief Skeleton Warrior
+   127            30            15          53          5           //Dark Skull Soldier
+   126            30            13          23          5           //Chief Skeleton Archer
+   126            30            15          43          5           //Chief Skeleton Archer
+   125            30            14          38          5           //Chief Skeleton Warrior
+   127            30            13          65          5           //Dark Skull Soldier
+   129            30            15          78          5           //Red Skeleton Knight
+   127            30            13          67          5           //Dark Skull Soldier
+   128            30            14          61          5           //Giant Ogre
+   129            30            16          80          5           //Red Skeleton Knight
+   127            30            15          59          5           //Dark Skull Soldier
+   127            30            13          59          5           //Dark Skull Soldier
+   127            30            15          55          5           //Dark Skull Soldier
+   126            30            15          39          5           //Chief Skeleton Archer
+   125            30            13          35          5           //Chief Skeleton Warrior
+   127            30            13          62          5           //Dark Skull Soldier
+   128            30            13          55          5           //Giant Ogre
+   126            30            15          37          5           //Chief Skeleton Archer
+   125            30            13          28          5           //Chief Skeleton Warrior
+   126            30            13          29          5           //Chief Skeleton Archer
+   126            30            15          28          5           //Chief Skeleton Archer
+   126            30            13          25          5           //Chief Skeleton Archer
+   126            30            13          21          5           //Chief Skeleton Archer
+   126            30            14          22          5           //Chief Skeleton Archer
+   126            30            15          21          5           //Chief Skeleton Archer
+   126            30            13          31          5           //Chief Skeleton Archer
+   126            30            15          30          5           //Chief Skeleton Archer
+   126            30            15          33          5           //Chief Skeleton Archer
+   128            30            14          58          5           //Giant Ogre
+   125            30            15          35          5           //Chief Skeleton Warrior
+   125            30            14          33          5           //Chief Skeleton Warrior
+   125            30            15          41          5           //Chief Skeleton Warrior
+   125            30            14          42          5           //Chief Skeleton Warrior
+   126            30            14          21          5           //Chief Skeleton Archer
+   125            30            15          25          5           //Chief Skeleton Warrior
+   125            30            15          23          5           //Chief Skeleton Warrior
+   125            30            13          26          5           //Chief Skeleton Warrior
+   127            30            13          41          5           //Dark Skull Soldier
+   127            30            15          69          5           //Dark Skull Soldier
+   125            30            13          37          5           //Chief Skeleton Warrior
+   126            30            13          43          5           //Chief Skeleton Archer
+   127            30            13          50          5           //Dark Skull Soldier
+   127            30            15          48          5           //Dark Skull Soldier
+   127            30            13          46          5           //Dark Skull Soldier
+   129            30            15          62          5           //Red Skeleton Knight
+   128            30            14          52          5           //Giant Ogre
+   128            30            15          50          5           //Giant Ogre
+   128            30            15          66          5           //Giant Ogre
+   129            30            17          83          5           //Red Skeleton Knight
+   129            30            14          90          5           //Red Skeleton Knight
+   129            30            11          83          5           //Red Skeleton Knight
+   129            30            15          94          5           //Red Skeleton Knight
+   125            30            14          40          5           //Chief Skeleton Warrior
+   125            30            13          39          5           //Chief Skeleton Warrior
+   129            30            20          82          5           //Red Skeleton Knight
+   129            30            20          88          5           //Red Skeleton Knight
+   125            30            14          27          5           //Chief Skeleton Warrior
+   125            30            14          24          5           //Chief Skeleton Warrior
+   125            30            14          32          5           //Chief Skeleton Warrior
+   127            30            14          44          5           //Dark Skull Soldier
+   127            30            15          51          5           //Dark Skull Soldier
+   127            30            14          49          5           //Dark Skull Soldier
+   128            30            14          56          5           //Giant Ogre
+   127            30            15          57          5           //Dark Skull Soldier
+   127            30            14          64          5           //Dark Skull Soldier
+   127            30            14          67          5           //Dark Skull Soldier
+   128            30            14          70          5           //Giant Ogre
+   127            30            13          53          5           //Dark Skull Soldier
+   125            30            15          45          5           //Chief Skeleton Warrior
+   129            30            14          54          5           //Red Skeleton Knight
+   129            30            14          36          5           //Red Skeleton Knight
+   129            30            15          68          5           //Red Skeleton Knight
+   128            30            13          48          5           //Giant Ogre
+   129            30            14          47          5           //Red Skeleton Knight
+   128            30            13          63          5           //Giant Ogre
+   127            30            15          65          5           //DGiant Ogreark Skull Soldier
+   127            30            15          60          5           //Dark Skull Soldier
+   127            30            13          57          5           //Dark Skull Soldier
+   125            30            15          31          5           //Chief Skeleton Warrior
+   126            30            15          26          5           //Chief Skeleton Archer
+   130            30            16          87          5           //Magic Skeleton
+   130            30            12          81          5           //Magic Skeleton
+   130            30            13          88          5           //Magic Skeleton
+   130            30            13          85          5           //Magic Skeleton
+   130            30            19          85          5           //Magic Skeleton
+   130            30            13          93          5           //Magic Skeleton
+   130            30            14          80          5           //Magic Skeleton
+   130            30            18          81          5           //Magic Skeleton
+end

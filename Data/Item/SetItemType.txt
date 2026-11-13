@@ -1,0 +1,231 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------=
+//				          Statt increase (0=str, 1=agi, 2=ene, 3=vit)										=
+//Swords                                                                                                    =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		   =  Nombre Acc2   =
+//===========================================================================================================
+0	    2	   	0	      21	     0      //Short Sword           ==  Ceto               =                =
+0	    14	   	0	      11	     0      //Lighting Sword        ==  Hyon               =                =
+0       32	   	0         37	     38     //Sacred Glove          ==  Vega               =  Chamer        =
+//Scepters & Maces                                                 
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		   =  Nombre Acc2   =
+//===========================================================================================================
+2		1		0 		1			0		//Morning Star          ==  Warrior            =                =
+//===========================================================================================================
+//Bows & Crossbows                                                                                          =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		   =  Nombre Acc2   =
+//===========================================================================================================
+4		5		1		29			0		//Silver Bow            ==  Gywen              =                =
+4		9		1		23			0		//Golden Crossbow       ==  Gaia               =                =
+//===========================================================================================================
+//Staffs & Sticks                                                                                           =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		   =  Nombre Acc2   =
+//===========================================================================================================
+5		0		2		13			0		//Skull Staff           == 	Apollo             =                ==
+//===========================================================================================================
+//Shields                                                                                                   =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		   =  Nombre Acc2   =
+//===========================================================================================================
+6		0		3		0			2		//Small Shield          ==  		           =  Anonymous     =
+6		6		3		17			0		//Skull Shield          ==  Heras              =                =
+6		9		3		5			0		//Plate Shield          ==  Eplete             =                =
+//===========================================================================================================
+//Helms & Masks                                                                                             =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		   =  Nombre Acc2   =
+//===========================================================================================================
+7		0		3		0			4		//Bronze Helm           ==             		   =  Mist          =
+7		1		3		11			12		//Dragon Helm           ==  Hyon               =  Vicious       =
+7		2		3		13			14		//Pad Helm              ==  Apollo             =  Barnake       =
+7		3		3		19			20		//Legendary Helm        ==  Anubis             =  Isis          =
+7		4		3		0			16		//Bone Helm             ==                     =  Sylion        =
+7		5		3		1			2		//Leather Helm          ==  Warrior            =  Anonymous     =
+7		6		3		5			6		//Scale Helm            ==  Eplete             =  Berserker     =
+7		7		3		17			0		//Sphinx Mask           ==  Heras              =                =
+7		8		3		0			8		//Brass Helm            ==                     =  Cloud         =
+7		9		3		0			10		//Plate Helm            ==                     =  Rave          =
+7		10		3		21			22		//Vine Helm             ==  Ceto               =  Drake         =
+7		11		3		23			0		//Silk Helm             ==  Gaia               =                =
+7		12		3		25			0		//Wind Helm             ==  Odin               =                =
+7		13		3		0			28		//Spirit Helm           ==                     =  Karis         =
+7		14		3		0			30		//Guardian Helm         ==                     =  Aruan         =
+7		26		3		33			0		//Adamantine Mask       ==  Agnis              =                =
+7		40		3		35			36		//Red Wing Helm         ==  Chrono             =  Sedemen       =
+7		59		3		37			0		//Sacred Fire Helm      ==  Vega               =                =
+7		62		3		39			0		//Scale Helm            ==  Moros              =                =
+7		63		3		40			0		//Silk Helm             ==  Dione              =                =
+7		64		3		41			0		//Sphinx Helm           ==  Hades              =                =
+7		65		3		42			0		//Violent Wind Helm     ==  Ophion             =                =
+7		66		3		43			0		//Adamantine Helm       ==  Meter              =                =
+7		67		3		44			0		//Dragon Helm           ==  Hegaton            =                =
+7		68		3		45			0		//Guardian Helm         ==  Castol             =                =
+7		69		3		46			0		//Legendary Helm        ==  Taros              =                =
+7		70		3		47			0		//Red Wing Helm         ==  Nemesis            =                =
+7		72		3		49			0		//Storm Jahad Helm      ==  Trite              =                =
+//===================================================================================================================
+//Armors                                                                                                    =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		   =  Nombre Acc2   =
+//===========================================================================================================
+8		0		3		3			0		//Bronze Armor          ==  Hyperion           =                =
+8		1		3		0			12		//Dragon Armor          ==                     =  Vicious       =
+8		2		3		13			0		//Pad Armor             ==  Apollo             =                =
+8		3		3		19			20		//Legendary Armor       ==  Anubis             =  Isis          =
+8		4		3		15			16		//Bone Armor            ==  Evis               =  Sylion        =
+8		5		3		1			0		//Leather Armor         ==  Warrior            =                =
+8		6		3		5			6		//Scale Armor           ==  Eplete             =  Berserker     =
+8		7		3		17			18		//Sphinx Armor          ==  Heras              =  Minet         =
+8		8		3		7			0		//Brass Armor           ==  Garuda             =                =
+8		9		3		9			10		//Plate Armor           ==  Kantata            =  Rave          =
+8		10		3		0			22		//Vine Armor            ==                     =  Drake         =
+8		11		3		23			0		//Silk Armor            ==  Gaia               =                =
+8		12		3		25			0		//Wind Armor            ==  Odin               =                =
+8		13		3		27			0		//Spirit Armor          ==  Argo               =                =
+8		14		3		29			30		//Guardian Armor        ==  Gywen              =  Aruan         =
+8		15		3		31			32		//Storm Crow Armor      ==  Gaion              =  Muren         =
+8		26		3		33			0		//Adamantine Armor      ==  Agnis              =                =
+8		40		3		0			36		//Red Wing Armor        ==                     =  Sedemen       =
+8		59		3		37			38		//Sacred Fire Armor     ==  Vega               =  Chamer        =
+8		62		3		39			0		//Scale Armor           ==  Moros              =                =
+8		63		3		40			0		//Silk Armor            ==  Dione              =                =
+8		64		3		41			0		//Sphinx Armor          ==  Hades              =                =
+8		65		3		42			0		//Violent Wind Armor    ==  Ophion             =                =
+8		66		3		43			0		//Adamantine Armor      ==  Meter              =                =
+8		67		3		44			0		//Dragon Armor          ==  Hegaton            =                =
+8		68		3		45			0		//Guardian Armor        ==  Castol             =                =
+8		69		3		46			0		//Legendary Armor       ==  Taros              =                =
+8		70		3		47			0		//Red Wing Armor        ==  Nemesis            =                =
+8		71		3		48			0		//Storm Crow Armor      ==  Amis               =                =
+8		72		3		49			0		//Storm Jahad Armor     ==  Trite              =                =
+//===================================================================================================================
+//Pants                                                                                                     =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		   =  Nombre Acc2   =
+//===========================================================================================================
+9		0		3		3			4		//Bronze Pants          ==  Hyperion           =  Mist          =
+9		1		3		0			12		//Dragon Pants          ==                     =  Vicious       =
+9		2		3		13			14		//Pad Pants             ==  Apollo             =  Barnake       =
+9		3		3		0			20		//Legendary Pants       ==                     =  Isis          =
+9		4		3		15			0		//Bone Pants            ==  Evis               =                =
+9		5		3		1			2		//Leather Pants         ==  Warrior            =  Anonymous     =
+9		6		3		5			6		//Scale Pants           ==  Eplete             =  Berserker     =
+9		7		3		17			18		//Sphinx Pants          ==  Heras              =  Minet         =
+9		8		3		7			8		//Brass Pants           ==  Garuda             =  Cloud         =
+9		9		3		0			10		//Plate Pants           ==                     =  Rave          =
+9		10		3		21			22		//Vine Pants            ==  Ceto               =  Drake         =
+9		11		3		23			24		//Silk Pants            ==  Gaia               =  Fase          =
+9		12		3		25			26		//Wind Pants            ==  Odin               =  Elvian        =
+9		13		3		27			28		//Spirit Pants          ==  Argo               =  Karis         =
+9		14		3		0			30		//Guardian Pants        ==                     =  Aruan         =
+9		15		3		31			32		//Storm Crow Pants      ==  Gaion              =  Muren         =
+9		26		3		33			34		//Adamantine Pants      ==  Agnis              =  Broy          =
+9		40		3		35			0		//Red Wing Pants        ==  Chrono             =                =
+9		59		3		37			38		//Sacred Fire Pants     ==  Vega               =  Chamer        =
+9		62		3		39			0		//Scale Pants           ==  Moros              =                =
+9		63		3		40			0		//Silk Pants            ==  Dione              =                =
+9		64		3		41			0		//Sphinx Pants          ==  Hades              =                =
+9		65		3		42			0		//Violent Wind Pants    ==  Ophion             =                =
+9		66		3		43			0		//Adamantine Pants      ==  Meter              =                =
+9		67		3		44			0		//Dragon Pants          ==  Hegaton            =                =
+9		68		3		45			0		//Guardian Pants        ==  Castol             =                =
+9		69		3		46			0		//Legendary Pants       ==  Taros              =                =
+9		70		3		47			0		//Red Wing Pants        ==  Nemesis            =                =
+9		71		3		48			0		//Storm Crow Pants      ==  Amis               =                =
+9		72		3		49			0		//Storm Jahad Pants     ==  Trite              =                =
+//=================================================================================================================
+//Gloves                                                                                                    =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		    =  Nombre Acc2  =
+//===========================================================================================================
+10		0		3		0			4		//Bronze Gloves         ==                      =  Mist         =  
+10		1		3		11			0		//Dragon Gloves         ==  Hyon                =               =  
+10		2		3		13			0		//Pad Gloves            ==  Apollo              =               =    
+10		3		3		19			0		//Legendary Gloves      ==  Anubis              =               =    
+10		4		3		0			16		//Bone Gloves           ==                      =  Sylion       =    
+10		5		3		1			0		//Leather Gloves        ==  Warrior             =               =     
+10		6		3		0			6		//Scale Gloves          ==                      =  Berserker    =       
+10		7		3		17			0		//Sphinx Gloves         ==  Heras               =               =   
+10		8		3		7			0		//Brass Gloves          ==  Garuda              =               =    
+10		9		3		9			0		//Plate Gloves          ==  Kantata             =               =     
+10		10		3		21			0		//Vine Gloves           ==  Ceto                =               =  
+10		11		3		23			24		//Silk Gloves           ==  Gaia                =  Fase         =      
+10		12		3		25			0		//Wind Gloves           ==  Odin                =               =  
+10		13		3		27			0		//Spirit Gloves         ==  Argo                =               =  
+10		14		3		29			0		//Guardian Gloves       ==  Gywen               =               =   
+10		15		3		0			32		//Storm Crow Gloves     ==                      =  Muren        =  
+10		26		3		0			34		//Adamantine Gloves     ==                      =  Broy         =  
+10		40		3		35			36		//Red Wing Gloves       ==  Chrono              =  Sedemen      =            
+10		62		3		39			0		//Scale Gloves          ==  Moros               =               =   
+10		63		3		40			0		//Silk Gloves           ==  Dione               =               =      
+10		64		3		41			0		//Sphinx Gloves         ==  Hades               =               =      
+10		65		3		42			0		//Violent Wind Glove    ==  Ophion              =               =      
+10		66		3		43			0		//Adamantine Gloves     ==  Meter               =               =      
+10		67		3		44			0		//Dragon Gloves         ==  Hegaton             =               =      
+10		68		3		45			0		//Guardian Gloves       ==  Castol              =               =      
+10		69		3		46			0		//Legendary Gloves      ==  Taros               =               =      
+10		70		3		47			0		//Red Wing Gloves       ==  Nemesis             =               =     
+10		71		3		48			0		//Storm Crow Gloves     ==  Amis                =               =
+//===================================================================================================================
+//Boots                                                                                                     =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		    =  Nombre Acc2  =
+//===========================================================================================================
+11		0		3		3			0		//Bronze Boots          ==  Hyperion            =               =
+11		1		3		11			0		//Dragon Boots          ==  Hyon                =               =  
+11		2		3		0			14		//Pad Boots             ==                      =  Barnake      =     
+11		3		3		0			20		//Legendary Boots       ==                      =  Isis         =  
+11		4		3		15			16		//Bone Boots            ==  Evis                =  Sylion       =        
+11		5		3		1			2		//Leather Boots         ==  Warrior             =  Anonymous    =              
+11		6		3		0			6		//Scale Boots           ==                      =  Berserker    =       
+11		7		3		17			18		//Sphinx Boots          ==  Heras               =  Minet        =        
+11		8		3		7			0		//Brass Boots           ==  Garuda              =               =    
+11		9		3		9			0		//Plate Boots           ==  Kantata             =               =     
+11		10		3		21			22		//Vine Boots            ==  Ceto                =  Drake        =       
+11		11		3		0			24		//Silk Boots            ==                      =  Fase         =  
+11		12		3		25			26		//Wind Boots            ==  Odin                =  Elvian       =        
+11		13		3		0			28		//Spirit Boots          ==                      =  Karis        =   
+11		14		3		29			30		//Guardian Boots        ==  Gywen               =  Aruan        =        
+11		15		3		31			0		//Storm Crow Boots      ==  Gaion               =               =      
+11		26		3		0			34		//Adamantine Boots      ==                      =  Broy         =  
+11		40		3		0			36		//Red Wing Boots        ==                      =  Sedemen      =      
+11		59		3		38			0		//Sacred Fire Boots     ==  Chamer              =               =    
+11		62		3		39			0		//Scale Boots           ==  Moros               =               =   
+11		63		3		40			0		//Silk Boots            ==  Dione               =               =      
+11		64		3		41			0		//Sphinx Boots          ==  Hades               =               =      
+11		65		3		42			0		//Violent Wind Boots    ==  Ophion              =               =      
+11		66		3		43			0		//Adamantine Boots      ==  Meter               =               =      
+11		67		3		44			0		//Dragon Boots          ==  Hegaton             =               =      
+11		68		3		45			0		//Guardian Boots        ==  Castol              =               =      
+11		69		3		46			0		//Legendary Boots       ==  Taros               =               =      
+11		70		3		47			0		//Red Wing Boots        ==  Nemesis             =               =      
+11		71		3		48			0		//Storm Crow Boots      ==  Amis                =               =      
+11		72		3		49			0		//Storm Jahad Boots     ==  Trite               =               = 
+//=================================================================================================================
+//Rings & Pendants                                                                                          =
+//===========================================================================================================
+//Type	Index 	Statt	Ancient1	Ancient2                        ==	Nombre Acc1		    =  Nombre Acc2  =
+//===========================================================================================================
+13		8		1		1			0		//Ring of Ice           ==  Warrior             =  Elune        =   
+13		9		3		9			33		//Ring of Poison        ==  Kantata             =  Agnis        =   
+13		12		2		5			0		//Pendant of Lighting   ==  Eplete              =  Tyr          =
+13		13		0		7			0		//Pendant of Fire       ==  Garuda              =  Apis         = 
+13		21		2		19			32		//Ring of Fire          ==  Anubis              =  Muren        =  
+13		22		0		21			12		//Ring of Earth         ==  Ceto                =  Vicious      =  
+13		23		1		9			0		//Ring of Wind          ==  Kantata             =  Magni        =   
+13		24		2		13			35		//Ring of Magic         ==  Apollo              =  Chrono       =   
+13		25		0		13			34		//Pendant of Ice        ==  Apollo              =  Broy         = 
+13		26		1		15			0		//Pendant of Wind       ==  Evis                =  Frigg        =
+13		27		3		31			0		//Pendant of Water      ==  Gaion               =  Alvis        = 
+13		28		1		29			0		//Pendant of Ability    ==  Gywen               =  Horus        =
+end

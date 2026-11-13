@@ -1,0 +1,62 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2024 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------
+//	[0~15]  [0~511] 	[*/0~15]	[1~255]		[*/0~15]	[*/0~511]
+//	Type	Index		Level  		MaxStack	CreateType	CreateIndex		Comments
+//-----------------------------------------------------------------------------------------------------------------
+	14		9			*			30			*			*				//Ale
+	12		15			*			30			*			*				//Jewel of Chaos
+	14		13			*			30			*			*				//Jewel of Bless
+	14		14			*			30			*			*				//Jewel of Soul
+	14		16			*			30			*			*				//Jewel of Life
+	14		22			*			30			*			*				//Jewel of Creation
+	14		42			*			30			*			*				//Jewel of Harmony     
+	14		43			*			30			*			*				//Lower refining Stone 
+	14		44			*			30			*			*				//Higher refining Stone
+	14		11			12			30			*			*				//Box of Kundun +5
+	14		11			11			30			*			*				//Box of Kundun +4
+	4		7			*			255			*			*				//Bolt
+	4		15			*			255			*			*				//Arrow
+	13		32			*			20			*			*				//Splinter of Armor
+	13		33			*			20			*			*				//Bless of Guardian
+	13		34			*			10			*			*				//Claw of Beast
+	14		0			*			255			*			*				//Apple
+	14		1			*			255			*			*				//Small Healing Potion
+	14		2			*			255			*			*				//Healing Potion
+	14		3			*			255			*			*				//Large Healing Potion
+	14		4			*			255			*			*				//Small Mana Potion
+	14		5			*			255			*			*				//Mana Potion
+	14		6			*			255			*			*				//Large Mana Potion
+	14		7			*			255			*			*				//Siege Potion
+	14		8			*			255			*			*				//Antidote
+	14		21			*			255			*			*				//Rena
+	14		29			*			5			14			28				//Symbol of Kundun
+	14		35			*			255			*			*				//Small SD Potion
+	14		36			*			255			*			*				//SD Potion
+	14		37			*			255			*			*				//Large SD Potion
+	14		38			*			255			*			*				//Small Complex Potion
+	14		39			*			255			*			*				//Complex Potion
+	14		40      	*			255			*			*				//Large Complex Potion
+	14		46			*			3			*			*				//Jack O'Lantern Blessings
+	14		47			*			3			*			*				//Jack O'Lantern Wrath
+	14		48			*			3			*			*				//Jack O'Lantern Cry
+	14		49			*			3			*			*				//Jack O'Lantern Food
+	14		50			*			3			*			*				//Jack O'Lantern Drink
+	14		70			*			255			*			*				//Elite Healing Potion
+	14		71			*			255			*			*				//Elite Mana Potion
+	14		85			*			3			*			*				//Cherry Blossom Wine
+	14		86			*			3			*			*				//Cherry Blossom Rice Cake
+	14		87			*			3			*			*				//Cherry Blossom Flower Petal
+	14		88      	*			10			*			*				//White Cherry Blossom Branch
+	14		89			*			30			*			*				//Red Cherry Blossom Branch
+	14		90			*			255			*			*				//Golden Cherry Blossom Branch
+	14		100			*			255			*			*				//Lucky Coin
+	14		101			*			5			14			102				//Suspicious Scrap of Paper
+	14		110			*			5			14			111				//Sign of Dimensions
+	14		133			*			255			*			*				//Elite SD Potion
+end

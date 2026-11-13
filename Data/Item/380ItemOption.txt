@@ -1,0 +1,26 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2026 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------
+// 380 Item Options
+// The eight PvP options a 380 item can carry, with their default value. 380ItemType.txt picks which option each item has; its own value overrides the default here. Keep the 8 numbers: the server's code is tied to them.
+//   Option Number: 1 to 8, as used by 380ItemType.txt. 1 Attack Success Rate PvP, 2 Damage PvP, 3 Defense Success Rate PvP, 4 Defense PvP, 5 Max HP, 6 Max SD, 7 SD Recovery Type, 8 SD Recovery Rate. The server holds 10 slots; a number outside 0 to 9 is ignored.
+//   Name: Text only, up to 31 characters; the server does not use it to decide anything.
+//   Default Value: Amount added to the character when the option is active (for option 7 it is the recovery type, not an amount). Used when 380ItemType.txt gives the item no value of its own (*).
+//----------------------------------------------------------
+//  [0~9]    [Text]                            [Number]
+//  Index    Name                              Value
+//----------------------------------------------------------
+    1        "Add Attack Success Rate PvP"     10
+    2        "Add Damage PvP"                  200
+    3        "Add Defense Success Rate PvP"    10
+    4        "Add Defense PvP"                 200
+    5        "Add Max HP"                      200
+    6        "Add Max SD"                      700
+    7        "Set SD Recovery Type"            1
+    8        "Add SD Recovery Rate"            2
+end

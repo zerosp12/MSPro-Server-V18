@@ -1,0 +1,145 @@
+//---------------------------------------------------------------------------------------------------------------
+// Quest Chest T3 (class gear, ItemBagEx format). Dropped via quest reward type 7.
+//---------------------------------------------------------------------------------------------------------------
+
+3
+//Index   DropRate
+0         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW DK FE MG DL SU RF GL
+0         5         10000         0             2             1  0  0  0  0  0  0  0
+0         6         10000         0             2             0  1  0  0  0  0  0  0
+0         7         10000         0             2             0  0  1  0  0  0  0  0
+0         8         10000         0             2             0  0  0  1  0  0  0  0
+0         9         10000         0             2             0  0  0  0  1  0  0  0
+0         10        10000         0             2             0  0  0  0  0  1  0  0
+0         11        10000         0             2             0  0  0  0  0  0  1  0
+0         12        10000         0             2             0  0  0  0  0  0  0  1
+end
+
+5
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DW)
+5684	0	0	34	11	12	24	18	*	*	*	//Hades Boots
+2568	0	0	34	11	12	24	18	*	*	*	//Staff of Destruction
+5172	0	0	34	11	12	24	18	*	*	*	//Hades Gloves
+4114	0	0	34	11	12	24	18	*	*	*	//Grand Soul Armor
+2569	0	0	34	11	12	24	18	*	*	*	//Dragon Soul Staff
+5142	0	0	34	11	12	24	18	*	*	*	//Dark Soul Gloves
+2570	0	0	34	11	12	24	18	*	*	*	//Divine Staff of Archangel
+4626	0	0	34	11	12	24	18	*	*	*	//Grand Soul Pants
+5654	0	0	34	11	12	24	18	*	*	*	//Dark Soul Boots
+end
+
+6
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DK)
+4625	0	0	34	11	12	24	18	*	*	*	//Dark Phoenix Pants
+5166	0	0	34	11	12	24	18	*	*	*	//Brave Gloves
+5649	0	0	34	11	12	24	18	*	*	*	//Dark Phoenix Boots
+19	0	0	34	13	12	24	18	*	*	*	//Divine Sword of Archangel
+5137	0	0	34	11	12	24	18	*	*	*	//Dark Phoenix Gloves
+3600	0	0	34	11	12	24	18	*	*	*	//Black Dragon Helm
+4112	0	0	34	11	12	24	18	*	*	*	//Black Dragon Armor
+3089	0	0	34	11	12	24	18	*	*	*	//Crimson Glory
+17	0	0	34	13	12	24	18	*	*	*	//Dark Breaker
+3601	0	0	34	11	12	24	18	*	*	*	//Dark Phoenix Helm
+4624	0	0	34	11	12	24	18	*	*	*	//Black Dragon Pants
+5677	0	0	34	11	12	24	18	*	*	*	//Titan Boots
+1546	0	0	34	13	12	24	18	*	*	*	//Dragon Spear
+5165	0	0	34	11	12	24	18	*	*	*	//Titan  Gloves
+end
+
+7
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (ELF)
+4115	0	0	34	11	12	24	18	*	*	*	//Divine Armor
+5170	0	0	34	11	12	24	18	*	*	*	//Faith Gloves
+5656	0	0	34	11	12	24	18	*	*	*	//Red Spirit Boots
+2065	0	0	34	13	12	24	18	*	*	*	//Celestial Bow
+5144	0	0	34	11	12	24	18	*	*	*	//Red Spirit Gloves
+4632	0	0	34	11	12	24	18	*	*	*	//Red Spirit Pants
+3608	0	0	34	11	12	24	18	*	*	*	//Red Spirit Helm
+5682	0	0	34	11	12	24	18	*	*	*	//Faith Boots
+3634	0	0	34	11	12	24	18	*	*	*	//Faith Helm
+2067	0	0	34	13	12	24	18	*	*	*	//Great Reign Crossbow
+1031	0	0	34	11	12	24	18	*	*	*	//Elemental Mace
+2066	0	0	34	13	12	24	18	*	*	*	//Divine Crossbow of Archangel
+3603	0	0	34	11	12	24	18	*	*	*	//Divine Helm
+5681	0	0	34	11	12	24	18	*	*	*	//Seraphim Boots
+end
+
+8
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (MG)
+5140	0	0	34	11	12	24	18	*	*	*	//Thunder Hawk Gloves
+5669	0	0	34	11	12	24	18	*	*	*	//Valiant Boots
+5143	0	0	34	11	12	24	18	*	*	*	//Hurricane Gloves
+5680	0	0	34	11	12	24	18	*	*	*	//Destroy Boots
+2568	0	0	34	11	12	24	18	*	*	*	//Staff of Destruction
+16	0	0	34	13	12	24	18	*	*	*	//Sword of Destruction
+2570	0	0	34	11	12	24	18	*	*	*	//Divine Staff of Archangel
+3090	0	0	34	11	12	24	18	*	*	*	//Salamander Shield
+5157	0	0	34	11	12	24	18	*	*	*	//Valiant Gloves
+31	0	0	34	13	12	24	18	*	*	*	//Rune Blade
+19	0	0	34	13	12	24	18	*	*	*	//Divine Sword of Archangel
+5167	0	0	34	11	12	24	18	*	*	*	//Phantom  Gloves
+5679	0	0	34	11	12	24	18	*	*	*	//Phantom Boots
+5652	0	0	34	11	12	24	18	*	*	*	//Thunder Hawk Boots
+end
+
+9
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DL)
+1034	0	0	34	13	12	24	18	*	*	*	//Great Scepter
+3622	0	0	34	11	12	24	18	*	*	*	//Glorious Mask
+4635	0	0	34	11	12	24	18	*	*	*	//Dark Steel Pants
+5660	0	0	34	11	12	24	18	*	*	*	//Dark Master Boots
+4646	0	0	34	11	12	24	18	*	*	*	//Glorious Pants
+4123	0	0	34	11	12	24	18	*	*	*	//Dark Steel Armor
+3611	0	0	34	11	12	24	18	*	*	*	//Dark Steel Mask
+5171	0	0	34	11	12	24	18	*	*	*	//Royal Gloves
+5659	0	0	34	11	12	24	18	*	*	*	//Dark Steel Boots
+5158	0	0	34	11	12	24	18	*	*	*	//Glorious Gloves
+5670	0	0	34	11	12	24	18	*	*	*	//Glorious Boots
+5683	0	0	34	11	12	24	18	*	*	*	//Royal Boots
+1035	0	0	34	13	12	24	18	*	*	*	//Lord Scepter
+5148	0	0	34	11	12	24	18	*	*	*	//Dark Master Gloves
+end
+
+10
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (SUM)
+4138	0	0	34	11	12	24	18	*	*	*	//Demonic Armor
+5676	0	0	34	11	12	24	18	*	*	*	//Eternal Boots
+2578	0	0	34	11	12	24	18	*	*	*	//Demonic Stick
+4650	0	0	34	11	12	24	18	*	*	*	//Demonic Pants
+5163	0	0	34	11	12	24	18	*	*	*	//Storm Blitz Gloves
+5675	0	0	34	11	12	24	18	*	*	*	//Storm Blitz Boots
+2596	0	0	34	11	12	24	18	*	*	*	//Divine Stick of Archangel
+5164	0	0	34	11	12	24	18	*	*	*	//Eternal Gloves
+end
+
+11
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (RF)
+34	0	0	34	13	12	24	18	*	*	*	//Piercing Glove
+4157	0	0	34	11	12	24	18	*	*	*	//Piercing Armor
+33	0	0	34	13	12	24	18	*	*	*	//Holly Storm Claws
+4156	0	0	34	11	12	24	18	*	*	*	//Storm Hard Armor
+4168	0	0	34	11	12	24	18	*	*	*	//Lucky Storm Hard Armor
+3645	0	0	34	11	12	24	18	*	*	*	//Piercing Helm
+5693	0	0	34	11	12	24	18	*	*	*	//Piercing Boots
+4669	0	0	34	11	12	24	18	*	*	*	//Piercing Pants
+end
+
+12
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (GL)
+4189	0	0	34	11	12	24	18	*	*	*	//Princie Armor
+1552	0	0	34	13	12	24	18	*	*	*	//Vis Lance
+4188	0	0	34	11	12	24	18	*	*	*	//Gru Hill Armor
+4700	0	0	34	11	12	24	18	*	*	*	//Gru Hill Pants
+4701	0	0	34	11	12	24	18	*	*	*	//Princie Pants
+5725	0	0	34	11	12	24	18	*	*	*	//Princie Boots
+1554	0	0	34	13	12	24	18	*	*	*	//Alacran Lance
+3677	0	0	34	11	12	24	18	*	*	*	//Princie Helmet
+5213	0	0	34	11	12	24	18	*	*	*	//Princie Gloves
+3102	0	0	34	11	12	24	18	*	*	*	//Pluma Shield
+1551	0	0	34	13	12	24	18	*	*	*	//Pluma Lance
+1550	0	0	34	13	12	24	18	*	*	*	//Conmocion Lance
+end

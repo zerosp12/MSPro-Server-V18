@@ -1,0 +1,65 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  © 2020 - 2024 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+//==============
+// [Ref-1]
+//==============
+// Class:	*: ALL Class
+//			0: DW
+//			1: DK
+//			2: ELF
+//			3: MG
+//			4: DL
+//			5: SUM
+//			6: RF
+//			7: GL
+//----------------------------------------------------------------------------------------------------------------
+// Start Character Items
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//	[Ref-1] 	[0~15]		[0~511]   	[0~15]   	[*/0~255]  		[0-1]   [0-1]  	[0~7]	 	[0~63] 		[0/1~4] 	[0~173] 	[0-128]   	[255 No Socket / 254 Empty Slot / 200~246 Options]   		[InSec 3600 = 1 HR]
+// 	Class  		ItemType  	ItemIndex   Level    	Durability     	Skill   Luck   	Option   	ExcOp		SetOpion  	JoH	  		380	 		Socket1 	Socket2 	Socket3 	Socket4 	Socket5		Time
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0
+end
+
+
+//==============
+// [Ref-2]
+//==============
+// Examples
+//	29   		Seal of Ascension               Increase EXP		(Value1)
+//	30   		Seal of Wealth                  Increase EXP		(Value1) / Increase ItemDrop 	(Value2)
+//	44   		Scroll of Quick                 Attack Speed		(Value1)
+//	45   		Scroll of Defense               Increase Defense 	(Value1)
+//	46   		Scroll of Damage                Attack Power		(Value1)
+//	47   		Scroll of Magic Damage          Wizardry Damage		(Value1)
+//	48   		Scroll of Life                  Increase HP 		(Value1)
+//	49   		Scroll of Mana                  Increase MP 		(Value1)
+//	87   		Seal of Life                    Increase EXP 		(Value1) / Auto Recovery HP 	(Value2)
+//	88   		Seal of Mana                    Increase EXP 		(Value1) / Auto Recovery MP 	(Value2)
+//	89   		Scroll of Battle                Critical Damage 	(Value1)
+//	90   		Scroll of Strength              Excelent Damage 	(Value1)
+//	113  		Max AG Boost Aura               Increase Max AG		(Value1)
+//	114  		Max SD Boost Aura               Increase Max SD		(Value1)
+//	121  		Scroll of Healing		        HP Regeneration		(Value1)
+//----------------------------------------------------------------------------------------------------------------
+// Start Character Buff
+//----------------------------------------------------------------------------------------------------------------
+//	[Ref-1]		[Ref-2] 	[	0~99999999999	] 		[Minutes]
+//	Class		Effect		Value1		Value2			Time 
+//----------------------------------------------------------------------------------------------------------------
+1
+end
+
+//----------------------------------------------------------------------------------------------------------------
+// Start Character (Stats / Resets / Etc)
+//----------------------------------------------------------------------------------------------------------------
+//	[Ref-1]  	[0~65535]    	[             0~65535             ]    		[0~9999]		[0~9999]    	[0~2000000000]
+//	Class		LevelPoints  	STR		AGI		VIT		CMD		ENE			Resets			M.Resets		Zen
+//----------------------------------------------------------------------------------------------------------------
+2
+end

@@ -1,0 +1,565 @@
+//--------------------------------------------------------------
+// MSPro Quest System
+//--------------------------------------------------------------
+// File Version: 2.0
+// Date: 10-02-2024
+// Last view: Zero
+//--------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------
+// [SECTION 0] NPC List
+//--------------------------------------------------------------------------------------
+//	[ 0~9999 ]
+//	[NPCIndex]		[MonsterIndex]		[Map]	[X]		[Y]
+//--------------------------------------------------------------------------------------
+0
+	1    			582					0		130		125
+	2   			582					3  		174		110
+	3   			582					51 		52 		223
+	4   			582					2  		207		40 
+	5   			582					1  		108		245
+	6	582	4	206	82
+	7   			582					7  		21 		15 
+	8   			582					8  		195		59 
+	9   			582					10 		13 		13 
+	10  			582					33 		84 		9  
+	11  			582					63 		123		129
+	12  			582					80 		125		122
+	13  			582					56 		138		106
+	14  			582					57 		223		209
+end
+
+//--------------------------------------------------------------------------------------
+// [SECTION 1] Quests List
+//--------------------------------------------------------------------------------------
+//	Ref-0:
+//		This number will be used to read File ... (Ex: Quests\5000.txt)
+//--------------------------------------------------------------------------------------
+//	[Ref-0]
+//	[0~65535]
+//	[QuestIndex]	[Name]
+//--------------------------------------------------------------------------------------
+1
+//Progressive Quests (100 pasos - los pasos con premio por clase usan IDs 1000 + Paso*10 + Clase)
+	1				"01 - Primeros Pasos"
+	1020				"02 - Alas de Aprendiz (DW)"
+	1021				"02 - Alas de Aprendiz (DK)"
+	1022				"02 - Alas de Aprendiz (ELF)"
+	1023				"02 - Alas de Aprendiz (MG)"
+	1024				"02 - Alas de Aprendiz (DL)"
+	1025				"02 - Alas de Aprendiz (SUM)"
+	1026				"02 - Alas de Aprendiz (RF)"
+	1027				"02 - Alas de Aprendiz (GL)"
+	3				"03 - Escorpiones de Noria"
+	4				"04 - Bosque de Noria"
+	5				"05 - Elite de Lorencia"
+	6				"06 - Golems y Gigantes"
+	7				"07 - Lobos de Elbeland"
+	1080				"08 - Arma del Guerrero (DW)"
+	1081				"08 - Arma del Guerrero (DK)"
+	1082				"08 - Arma del Guerrero (ELF)"
+	1083				"08 - Arma del Guerrero (MG)"
+	1084				"08 - Arma del Guerrero (DL)"
+	1085				"08 - Arma del Guerrero (SUM)"
+	1086				"08 - Arma del Guerrero (RF)"
+	1087				"08 - Arma del Guerrero (GL)"
+	9				"09 - Primeras Joyas"
+	10				"10 - Osos de Elbeland"
+	11				"11 - Ofrenda del Caos"
+	12				"12 - Dungeon I"
+	13				"13 - Dungeon II"
+	14				"14 - Yetis de Elite"
+	1150				"15 - Armadura del Heroe (DW)"
+	1151				"15 - Armadura del Heroe (DK)"
+	1152				"15 - Armadura del Heroe (ELF)"
+	1153				"15 - Armadura del Heroe (MG)"
+	1154				"15 - Armadura del Heroe (DL)"
+	1155				"15 - Armadura del Heroe (SUM)"
+	1156				"15 - Armadura del Heroe (RF)"
+	1157				"15 - Armadura del Heroe (GL)"
+	16				"16 - Reina de Hielo"
+	17				"17 - Profundidades del Dungeon"
+	18				"18 - Plaza del Diablo I"
+	19				"19 - Cazador de Gorgonas"
+	1200				"20 - Alas de Primer Nivel (DW)"
+	1201				"20 - Alas de Primer Nivel (DK)"
+	1202				"20 - Alas de Primer Nivel (ELF)"
+	1203				"20 - Alas de Primer Nivel (MG)"
+	1204				"20 - Alas de Primer Nivel (DL)"
+	1205				"20 - Alas de Primer Nivel (SUM)"
+	1206				"20 - Alas de Primer Nivel (RF)"
+	1207				"20 - Alas de Primer Nivel (GL)"
+	21				"21 - Atlans I"
+	22				"22 - Torre Perdida I"
+	23				"23 - Torre Perdida II"
+	24				"24 - Caballeros de la Muerte"
+	25				"25 - Senor Balrog"
+	26				"26 - Atlans II"
+	27				"27 - Rey Lagarto"
+	28				"28 - Castillo de Sangre I"
+	29				"29 - Tarkan I"
+	1300				"30 - Arma Legendaria (DW)"
+	1301				"30 - Arma Legendaria (DK)"
+	1302				"30 - Arma Legendaria (ELF)"
+	1303				"30 - Arma Legendaria (MG)"
+	1304				"30 - Arma Legendaria (DL)"
+	1305				"30 - Arma Legendaria (SUM)"
+	1306				"30 - Arma Legendaria (RF)"
+	1307				"30 - Arma Legendaria (GL)"
+	31				"31 - Tarkan II"
+	32				"32 - Caballero del Rayo"
+	33				"33 - Aida I"
+	34				"34 - Aida II"
+	35				"35 - Bruja de Aida"
+	36				"36 - Icarus I"
+	37				"37 - Icarus II"
+	38				"38 - Plaza del Diablo II"
+	39				"39 - Icarus III"
+	1400				"40 - Armadura Ancestral (DW)"
+	1401				"40 - Armadura Ancestral (DK)"
+	1402				"40 - Armadura Ancestral (ELF)"
+	1403				"40 - Armadura Ancestral (MG)"
+	1404				"40 - Armadura Ancestral (DL)"
+	1405				"40 - Armadura Ancestral (SUM)"
+	1406				"40 - Armadura Ancestral (RF)"
+	1407				"40 - Armadura Ancestral (GL)"
+	41				"41 - Tierra de Prueba I"
+	42				"42 - Tierra de Prueba II"
+	43				"43 - Tierra de Prueba"
+	44				"44 - Kalima Oscura"
+	45				"45 - Kanturu I"
+	46				"46 - Kanturu II"
+	47				"47 - Kanturu III"
+	48				"48 - Castillo de Sangre II"
+	49				"49 - Ruinas de Kanturu"
+	1500				"50 - Alas de Segundo Nivel (DW)"
+	1501				"50 - Alas de Segundo Nivel (DK)"
+	1502				"50 - Alas de Segundo Nivel (ELF)"
+	1503				"50 - Alas de Segundo Nivel (MG)"
+	1504				"50 - Alas de Segundo Nivel (DL)"
+	1505				"50 - Alas de Segundo Nivel (SUM)"
+	1506				"50 - Alas de Segundo Nivel (RF)"
+	1507				"50 - Alas de Segundo Nivel (GL)"
+	51				"51 - Torre de Refinamiento"
+	52				"52 - Tributo de Kanturu"
+	53				"53 - Barracas de Balgass I"
+	54				"54 - Fortaleza de Crywolf"
+	55				"55 - Refugio de Balgass"
+	56				"56 - Pantano de la Calma I"
+	57				"57 - Pantano de la Calma II"
+	58				"58 - Pantano de la Calma III"
+	59				"59 - Cazador de Napins"
+	1600				"60 - Arma Divina (DW)"
+	1601				"60 - Arma Divina (DK)"
+	1602				"60 - Arma Divina (ELF)"
+	1603				"60 - Arma Divina (MG)"
+	1604				"60 - Arma Divina (DL)"
+	1605				"60 - Arma Divina (SUM)"
+	1606				"60 - Arma Divina (RF)"
+	1607				"60 - Arma Divina (GL)"
+	61				"61 - Raklion I"
+	62				"62 - Raklion II"
+	63				"63 - Caballeros de Hierro"
+	64				"64 - Selupan"
+	65				"65 - Vulcanus I"
+	66				"66 - Vulcanus II"
+	67				"67 - Vulcanus III"
+	68				"68 - Templo de la Ilusion"
+	69				"69 - Karutan I"
+	1700				"70 - Armadura Real (DW)"
+	1701				"70 - Armadura Real (DK)"
+	1702				"70 - Armadura Real (ELF)"
+	1703				"70 - Armadura Real (MG)"
+	1704				"70 - Armadura Real (DL)"
+	1705				"70 - Armadura Real (SUM)"
+	1706				"70 - Armadura Real (RF)"
+	1707				"70 - Armadura Real (GL)"
+	71				"71 - Karutan II"
+	72				"72 - Karutan III"
+	73				"73 - Aida Sangrienta I"
+	74				"74 - Aida Sangrienta II"
+	75				"75 - Guerreros de Kanturu"
+	76				"76 - Castillo de Sangre III"
+	77				"77 - Genocidas"
+	78				"78 - Pantano Oscuro"
+	79				"79 - Raklion Oscuro"
+	80				"80 - Montura Legendaria"
+	81				"81 - Veterano de Kalima"
+	82				"82 - Castillo del Caos"
+	83				"83 - Doppelganger"
+	84				"84 - Cazador de Jefes I"
+	85				"85 - Kundun"
+	86				"86 - Guardian Imperial"
+	87				"87 - Coleccionista de Joyas"
+	88				"88 - Maestro Joyero"
+	89				"89 - Cazador de Jefes II"
+	1900				"90 - Alas de Tercer Nivel (DW)"
+	1901				"90 - Alas de Tercer Nivel (DK)"
+	1902				"90 - Alas de Tercer Nivel (ELF)"
+	1903				"90 - Alas de Tercer Nivel (MG)"
+	1904				"90 - Alas de Tercer Nivel (DL)"
+	1905				"90 - Alas de Tercer Nivel (SUM)"
+	1906				"90 - Alas de Tercer Nivel (RF)"
+	1907				"90 - Alas de Tercer Nivel (GL)"
+	91				"91 - Fin de la Pesadilla"
+	92				"92 - Senor de Raklion"
+	93				"93 - Furia de Medusa"
+	94				"94 - Arena de Campeones"
+	1950				"95 - Arma Suprema (DW)"
+	1951				"95 - Arma Suprema (DK)"
+	1952				"95 - Arma Suprema (ELF)"
+	1953				"95 - Arma Suprema (MG)"
+	1954				"95 - Arma Suprema (DL)"
+	1955				"95 - Arma Suprema (SUM)"
+	1956				"95 - Arma Suprema (RF)"
+	1957				"95 - Arma Suprema (GL)"
+	96				"96 - Plaza del Diablo Final"
+	97				"97 - Templo Final"
+	98				"98 - Masacre Final"
+	99				"99 - Ofrenda Final"
+	2000				"100 - Leyenda de MU (DW)"
+	2001				"100 - Leyenda de MU (DK)"
+	2002				"100 - Leyenda de MU (ELF)"
+	2003				"100 - Leyenda de MU (MG)"
+	2004				"100 - Leyenda de MU (DL)"
+	2005				"100 - Leyenda de MU (SUM)"
+	2006				"100 - Leyenda de MU (RF)"
+	2007				"100 - Leyenda de MU (GL)"
+
+//NPC Quests
+	5000			"First Quest"
+//NPC Quests - repetibles (diaria / 3 dias / semanal)
+	6011			"Caza Diaria - Lorencia"
+	6012			"Caceria Doble - Lorencia"
+	6013			"Mision Semanal - Lorencia"
+	6014			"Encargo de Joyas - Lorencia"
+	6021			"Caza Diaria - Noria"
+	6022			"Caceria Doble - Noria"
+	6023			"Mision Semanal - Noria"
+	6024			"Encargo de Joyas - Noria"
+	6031			"Caza Diaria - Elbeland"
+	6032			"Caceria Doble - Elbeland"
+	6033			"Mision Semanal - Elbeland"
+	6034			"Encargo de Joyas - Elbeland"
+	6041			"Caza Diaria - Devias"
+	6042			"Caceria Doble - Devias"
+	6043			"Mision Semanal - Devias"
+	6044			"Encargo de Joyas - Devias"
+	6051			"Caza Diaria - Dungeon"
+	6052			"Caceria Doble - Dungeon"
+	6053			"Mision Semanal - Dungeon"
+	6054			"Encargo de Joyas - Dungeon"
+	6061			"Caza Diaria - Lost Tower"
+	6062			"Caceria Doble - Lost Tower"
+	6063			"Mision Semanal - Lost Tower"
+	6064			"Encargo de Joyas - Lost Tower"
+	6071			"Caza Diaria - Atlans"
+	6072			"Caceria Doble - Atlans"
+	6073			"Mision Semanal - Atlans"
+	6074			"Encargo de Joyas - Atlans"
+	6081			"Caza Diaria - Tarkan"
+	6082			"Caceria Doble - Tarkan"
+	6083			"Mision Semanal - Tarkan"
+	6084			"Encargo de Joyas - Tarkan"
+	6091			"Caza Diaria - Icarus"
+	6092			"Caceria Doble - Icarus"
+	6093			"Mision Semanal - Icarus"
+	6094			"Encargo de Joyas - Icarus"
+	6101			"Caza Diaria - Aida"
+	6102			"Caceria Doble - Aida"
+	6103			"Mision Semanal - Aida"
+	6104			"Encargo de Joyas - Aida"
+	6111			"Caza Diaria - Vulcanus"
+	6112			"Caceria Doble - Vulcanus"
+	6113			"Mision Semanal - Vulcanus"
+	6114			"Encargo de Joyas - Vulcanus"
+	6121			"Caza Diaria - Karutan"
+	6122			"Caceria Doble - Karutan"
+	6123			"Mision Semanal - Karutan"
+	6124			"Encargo de Joyas - Karutan"
+	6131			"Caza Diaria - Swamp of Calmness"
+	6132			"Caceria Doble - Swamp of Calmness"
+	6133			"Mision Semanal - Swamp of Calmness"
+	6134			"Encargo de Joyas - Swamp of Calmness"
+	6141			"Caza Diaria - Raklion"
+	6142			"Caceria Doble - Raklion"
+	6143			"Mision Semanal - Raklion"
+	6144			"Encargo de Joyas - Raklion"
+end
+
+//--------------------------------------------------------------------------------------
+// [SECTION 2] NPC Quests
+//--------------------------------------------------------------------------------------
+//	Ref-0:
+//		NPCIndex from SECTION 0
+//------------
+//	Ref-1:
+//		QuestIndex from SECTION 1 - WARNING! DON'T PUT INDEXES ALREADY USED IN SECTION 3!!!! DON'T MIX NPC AND PROGRESSIVE QUESTS!!!!!
+//									ADVERTENCIA! NO PONER INDEX USADOS EN LA SECTION 3!!! NO MEZCLAR QUESTS NPC Y PROGRESIVAS!!!!!
+//------------
+//	Ref-2:
+//		QuestIndex of Quest required to be completed before Start Quest
+//--------------------------------------------------------------------------------------
+//	[Ref-0]			[Ref-1]				[Ref-2 / -1 Don't Need Quest]
+//	[NPCIndex]		[QuestIndex]		[ReqQuestIndex]
+//--------------------------------------------------------------------------------------
+2
+	1		 		5000				*			//Quest 5000 (First Quest)
+	1				6011				-1
+	1				6012				-1
+	1				6013				-1
+	1				6014				-1
+	2				6021				-1
+	2				6022				-1
+	2				6023				-1
+	2				6024				-1
+	3				6031				-1
+	3				6032				-1
+	3				6033				-1
+	3				6034				-1
+	4				6041				-1
+	4				6042				-1
+	4				6043				-1
+	4				6044				-1
+	5				6051				-1
+	5				6052				-1
+	5				6053				-1
+	5				6054				-1
+	6				6061				-1
+	6				6062				-1
+	6				6063				-1
+	6				6064				-1
+	7				6071				-1
+	7				6072				-1
+	7				6073				-1
+	7				6074				-1
+	8				6081				-1
+	8				6082				-1
+	8				6083				-1
+	8				6084				-1
+	9				6091				-1
+	9				6092				-1
+	9				6093				-1
+	9				6094				-1
+	10				6101				-1
+	10				6102				-1
+	10				6103				-1
+	10				6104				-1
+	11				6111				-1
+	11				6112				-1
+	11				6113				-1
+	11				6114				-1
+	12				6121				-1
+	12				6122				-1
+	12				6123				-1
+	12				6124				-1
+	13				6131				-1
+	13				6132				-1
+	13				6133				-1
+	13				6134				-1
+	14				6141				-1
+	14				6142				-1
+	14				6143				-1
+	14				6144				-1
+end
+
+//----------------------------------------------------------------------------------------------------------
+// [SECTION 3] Progressive Quests
+//----------------------------------------------------------------------------------------------------------
+//	Ref-0:
+//		QuestIndex from SECTION 1 - WARNING! DON'T PUT INDEXES ALREADY USED IN SECTION 2!!!! DON'T MIX NPC AND PROGRESSIVE QUESTS!!!!!
+//									ADVERTENCIA! NO PONER INDEX USADOS EN LA SECTION 2!!! NO MEZCLAR QUESTS NPC Y PROGRESIVAS!!!!!
+//------------
+//	Ref-1:
+//		Quest number will added once current Quest is Finished / Numero de Quest que se agregara automaticamente al Finalizar la actual Quest
+//		Ex: QuestIndex: 1 --> NextDW: 2 --- will start Quest 2 when DW Finish Quest 1
+//----------------------------------------------------------------------------------------------------------
+//	[Ref-0]			[									Ref-1									   ]
+//	[QuestIndex]	[NextDW]	[NextDK]	[NextELF]	[NextMG]	[NextDL]	[NextSUM]	[NextRF]	[NextGL]
+//----------------------------------------------------------------------------------------------------------
+3
+	1				1020			1021			1022			1023			1024			1025			1026			1027		//Paso 1
+	1020				3			*			*			*			*			*			*			*		//Paso 2 exclusivo DW
+	1021				*			3			*			*			*			*			*			*		//Paso 2 exclusivo DK
+	1022				*			*			3			*			*			*			*			*		//Paso 2 exclusivo ELF
+	1023				*			*			*			3			*			*			*			*		//Paso 2 exclusivo MG
+	1024				*			*			*			*			3			*			*			*		//Paso 2 exclusivo DL
+	1025				*			*			*			*			*			3			*			*		//Paso 2 exclusivo SUM
+	1026				*			*			*			*			*			*			3			*		//Paso 2 exclusivo RF
+	1027				*			*			*			*			*			*			*			3		//Paso 2 exclusivo GL
+	3				4			4			4			4			4			4			4			4		//Paso 3
+	4				5			5			5			5			5			5			5			5		//Paso 4
+	5				6			6			6			6			6			6			6			6		//Paso 5
+	6				7			7			7			7			7			7			7			7		//Paso 6
+	7				1080			1081			1082			1083			1084			1085			1086			1087		//Paso 7
+	1080				9			*			*			*			*			*			*			*		//Paso 8 exclusivo DW
+	1081				*			9			*			*			*			*			*			*		//Paso 8 exclusivo DK
+	1082				*			*			9			*			*			*			*			*		//Paso 8 exclusivo ELF
+	1083				*			*			*			9			*			*			*			*		//Paso 8 exclusivo MG
+	1084				*			*			*			*			9			*			*			*		//Paso 8 exclusivo DL
+	1085				*			*			*			*			*			9			*			*		//Paso 8 exclusivo SUM
+	1086				*			*			*			*			*			*			9			*		//Paso 8 exclusivo RF
+	1087				*			*			*			*			*			*			*			9		//Paso 8 exclusivo GL
+	9				10			10			10			10			10			10			10			10		//Paso 9
+	10				11			11			11			11			11			11			11			11		//Paso 10
+	11				12			12			12			12			12			12			12			12		//Paso 11
+	12				13			13			13			13			13			13			13			13		//Paso 12
+	13				14			14			14			14			14			14			14			14		//Paso 13
+	14				1150			1151			1152			1153			1154			1155			1156			1157		//Paso 14
+	1150				16			*			*			*			*			*			*			*		//Paso 15 exclusivo DW
+	1151				*			16			*			*			*			*			*			*		//Paso 15 exclusivo DK
+	1152				*			*			16			*			*			*			*			*		//Paso 15 exclusivo ELF
+	1153				*			*			*			16			*			*			*			*		//Paso 15 exclusivo MG
+	1154				*			*			*			*			16			*			*			*		//Paso 15 exclusivo DL
+	1155				*			*			*			*			*			16			*			*		//Paso 15 exclusivo SUM
+	1156				*			*			*			*			*			*			16			*		//Paso 15 exclusivo RF
+	1157				*			*			*			*			*			*			*			16		//Paso 15 exclusivo GL
+	16				17			17			17			17			17			17			17			17		//Paso 16
+	17				18			18			18			18			18			18			18			18		//Paso 17
+	18				19			19			19			19			19			19			19			19		//Paso 18
+	19				1200			1201			1202			1203			1204			1205			1206			1207		//Paso 19
+	1200				21			*			*			*			*			*			*			*		//Paso 20 exclusivo DW
+	1201				*			21			*			*			*			*			*			*		//Paso 20 exclusivo DK
+	1202				*			*			21			*			*			*			*			*		//Paso 20 exclusivo ELF
+	1203				*			*			*			21			*			*			*			*		//Paso 20 exclusivo MG
+	1204				*			*			*			*			21			*			*			*		//Paso 20 exclusivo DL
+	1205				*			*			*			*			*			21			*			*		//Paso 20 exclusivo SUM
+	1206				*			*			*			*			*			*			21			*		//Paso 20 exclusivo RF
+	1207				*			*			*			*			*			*			*			21		//Paso 20 exclusivo GL
+	21				22			22			22			22			22			22			22			22		//Paso 21
+	22				23			23			23			23			23			23			23			23		//Paso 22
+	23				24			24			24			24			24			24			24			24		//Paso 23
+	24				25			25			25			25			25			25			25			25		//Paso 24
+	25				26			26			26			26			26			26			26			26		//Paso 25
+	26				27			27			27			27			27			27			27			27		//Paso 26
+	27				28			28			28			28			28			28			28			28		//Paso 27
+	28				29			29			29			29			29			29			29			29		//Paso 28
+	29				1300			1301			1302			1303			1304			1305			1306			1307		//Paso 29
+	1300				31			*			*			*			*			*			*			*		//Paso 30 exclusivo DW
+	1301				*			31			*			*			*			*			*			*		//Paso 30 exclusivo DK
+	1302				*			*			31			*			*			*			*			*		//Paso 30 exclusivo ELF
+	1303				*			*			*			31			*			*			*			*		//Paso 30 exclusivo MG
+	1304				*			*			*			*			31			*			*			*		//Paso 30 exclusivo DL
+	1305				*			*			*			*			*			31			*			*		//Paso 30 exclusivo SUM
+	1306				*			*			*			*			*			*			31			*		//Paso 30 exclusivo RF
+	1307				*			*			*			*			*			*			*			31		//Paso 30 exclusivo GL
+	31				32			32			32			32			32			32			32			32		//Paso 31
+	32				33			33			33			33			33			33			33			33		//Paso 32
+	33				34			34			34			34			34			34			34			34		//Paso 33
+	34				35			35			35			35			35			35			35			35		//Paso 34
+	35				36			36			36			36			36			36			36			36		//Paso 35
+	36				37			37			37			37			37			37			37			37		//Paso 36
+	37				38			38			38			38			38			38			38			38		//Paso 37
+	38				39			39			39			39			39			39			39			39		//Paso 38
+	39				1400			1401			1402			1403			1404			1405			1406			1407		//Paso 39
+	1400				41			*			*			*			*			*			*			*		//Paso 40 exclusivo DW
+	1401				*			41			*			*			*			*			*			*		//Paso 40 exclusivo DK
+	1402				*			*			41			*			*			*			*			*		//Paso 40 exclusivo ELF
+	1403				*			*			*			41			*			*			*			*		//Paso 40 exclusivo MG
+	1404				*			*			*			*			41			*			*			*		//Paso 40 exclusivo DL
+	1405				*			*			*			*			*			41			*			*		//Paso 40 exclusivo SUM
+	1406				*			*			*			*			*			*			41			*		//Paso 40 exclusivo RF
+	1407				*			*			*			*			*			*			*			41		//Paso 40 exclusivo GL
+	41				42			42			42			42			42			42			42			42		//Paso 41
+	42				43			43			43			43			43			43			43			43		//Paso 42
+	43				44			44			44			44			44			44			44			44		//Paso 43
+	44				45			45			45			45			45			45			45			45		//Paso 44
+	45				46			46			46			46			46			46			46			46		//Paso 45
+	46				47			47			47			47			47			47			47			47		//Paso 46
+	47				48			48			48			48			48			48			48			48		//Paso 47
+	48				49			49			49			49			49			49			49			49		//Paso 48
+	49				1500			1501			1502			1503			1504			1505			1506			1507		//Paso 49
+	1500				51			*			*			*			*			*			*			*		//Paso 50 exclusivo DW
+	1501				*			51			*			*			*			*			*			*		//Paso 50 exclusivo DK
+	1502				*			*			51			*			*			*			*			*		//Paso 50 exclusivo ELF
+	1503				*			*			*			51			*			*			*			*		//Paso 50 exclusivo MG
+	1504				*			*			*			*			51			*			*			*		//Paso 50 exclusivo DL
+	1505				*			*			*			*			*			51			*			*		//Paso 50 exclusivo SUM
+	1506				*			*			*			*			*			*			51			*		//Paso 50 exclusivo RF
+	1507				*			*			*			*			*			*			*			51		//Paso 50 exclusivo GL
+	51				52			52			52			52			52			52			52			52		//Paso 51
+	52				53			53			53			53			53			53			53			53		//Paso 52
+	53				54			54			54			54			54			54			54			54		//Paso 53
+	54				55			55			55			55			55			55			55			55		//Paso 54
+	55				56			56			56			56			56			56			56			56		//Paso 55
+	56				57			57			57			57			57			57			57			57		//Paso 56
+	57				58			58			58			58			58			58			58			58		//Paso 57
+	58				59			59			59			59			59			59			59			59		//Paso 58
+	59				1600			1601			1602			1603			1604			1605			1606			1607		//Paso 59
+	1600				61			*			*			*			*			*			*			*		//Paso 60 exclusivo DW
+	1601				*			61			*			*			*			*			*			*		//Paso 60 exclusivo DK
+	1602				*			*			61			*			*			*			*			*		//Paso 60 exclusivo ELF
+	1603				*			*			*			61			*			*			*			*		//Paso 60 exclusivo MG
+	1604				*			*			*			*			61			*			*			*		//Paso 60 exclusivo DL
+	1605				*			*			*			*			*			61			*			*		//Paso 60 exclusivo SUM
+	1606				*			*			*			*			*			*			61			*		//Paso 60 exclusivo RF
+	1607				*			*			*			*			*			*			*			61		//Paso 60 exclusivo GL
+	61				62			62			62			62			62			62			62			62		//Paso 61
+	62				63			63			63			63			63			63			63			63		//Paso 62
+	63				64			64			64			64			64			64			64			64		//Paso 63
+	64				65			65			65			65			65			65			65			65		//Paso 64
+	65				66			66			66			66			66			66			66			66		//Paso 65
+	66				67			67			67			67			67			67			67			67		//Paso 66
+	67				68			68			68			68			68			68			68			68		//Paso 67
+	68				69			69			69			69			69			69			69			69		//Paso 68
+	69				1700			1701			1702			1703			1704			1705			1706			1707		//Paso 69
+	1700				71			*			*			*			*			*			*			*		//Paso 70 exclusivo DW
+	1701				*			71			*			*			*			*			*			*		//Paso 70 exclusivo DK
+	1702				*			*			71			*			*			*			*			*		//Paso 70 exclusivo ELF
+	1703				*			*			*			71			*			*			*			*		//Paso 70 exclusivo MG
+	1704				*			*			*			*			71			*			*			*		//Paso 70 exclusivo DL
+	1705				*			*			*			*			*			71			*			*		//Paso 70 exclusivo SUM
+	1706				*			*			*			*			*			*			71			*		//Paso 70 exclusivo RF
+	1707				*			*			*			*			*			*			*			71		//Paso 70 exclusivo GL
+	71				72			72			72			72			72			72			72			72		//Paso 71
+	72				73			73			73			73			73			73			73			73		//Paso 72
+	73				74			74			74			74			74			74			74			74		//Paso 73
+	74				75			75			75			75			75			75			75			75		//Paso 74
+	75				76			76			76			76			76			76			76			76		//Paso 75
+	76				77			77			77			77			77			77			77			77		//Paso 76
+	77				78			78			78			78			78			78			78			78		//Paso 77
+	78				79			79			79			79			79			79			79			79		//Paso 78
+	79				80			80			80			80			80			80			80			80		//Paso 79
+	80				81			81			81			81			81			81			81			81		//Paso 80
+	81				82			82			82			82			82			82			82			82		//Paso 81
+	82				83			83			83			83			83			83			83			83		//Paso 82
+	83				84			84			84			84			84			84			84			84		//Paso 83
+	84				85			85			85			85			85			85			85			85		//Paso 84
+	85				86			86			86			86			86			86			86			86		//Paso 85
+	86				87			87			87			87			87			87			87			87		//Paso 86
+	87				88			88			88			88			88			88			88			88		//Paso 87
+	88				89			89			89			89			89			89			89			89		//Paso 88
+	89				1900			1901			1902			1903			1904			1905			1906			1907		//Paso 89
+	1900				91			*			*			*			*			*			*			*		//Paso 90 exclusivo DW
+	1901				*			91			*			*			*			*			*			*		//Paso 90 exclusivo DK
+	1902				*			*			91			*			*			*			*			*		//Paso 90 exclusivo ELF
+	1903				*			*			*			91			*			*			*			*		//Paso 90 exclusivo MG
+	1904				*			*			*			*			91			*			*			*		//Paso 90 exclusivo DL
+	1905				*			*			*			*			*			91			*			*		//Paso 90 exclusivo SUM
+	1906				*			*			*			*			*			*			91			*		//Paso 90 exclusivo RF
+	1907				*			*			*			*			*			*			*			91		//Paso 90 exclusivo GL
+	91				92			92			92			92			92			92			92			92		//Paso 91
+	92				93			93			93			93			93			93			93			93		//Paso 92
+	93				94			94			94			94			94			94			94			94		//Paso 93
+	94				1950			1951			1952			1953			1954			1955			1956			1957		//Paso 94
+	1950				96			*			*			*			*			*			*			*		//Paso 95 exclusivo DW
+	1951				*			96			*			*			*			*			*			*		//Paso 95 exclusivo DK
+	1952				*			*			96			*			*			*			*			*		//Paso 95 exclusivo ELF
+	1953				*			*			*			96			*			*			*			*		//Paso 95 exclusivo MG
+	1954				*			*			*			*			96			*			*			*		//Paso 95 exclusivo DL
+	1955				*			*			*			*			*			96			*			*		//Paso 95 exclusivo SUM
+	1956				*			*			*			*			*			*			96			*		//Paso 95 exclusivo RF
+	1957				*			*			*			*			*			*			*			96		//Paso 95 exclusivo GL
+	96				97			97			97			97			97			97			97			97		//Paso 96
+	97				98			98			98			98			98			98			98			98		//Paso 97
+	98				99			99			99			99			99			99			99			99		//Paso 98
+	99				2000			2001			2002			2003			2004			2005			2006			2007		//Paso 99
+	2000				*			*			*			*			*			*			*			*		//Paso 100 exclusivo DW
+	2001				*			*			*			*			*			*			*			*		//Paso 100 exclusivo DK
+	2002				*			*			*			*			*			*			*			*		//Paso 100 exclusivo ELF
+	2003				*			*			*			*			*			*			*			*		//Paso 100 exclusivo MG
+	2004				*			*			*			*			*			*			*			*		//Paso 100 exclusivo DL
+	2005				*			*			*			*			*			*			*			*		//Paso 100 exclusivo SUM
+	2006				*			*			*			*			*			*			*			*		//Paso 100 exclusivo RF
+	2007				*			*			*			*			*			*			*			*		//Paso 100 exclusivo GL
+end

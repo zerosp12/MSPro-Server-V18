@@ -1,0 +1,157 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+0
+//-----------------------------------------------------------------------------------------------------------
+// [Max 20 Char]     [0~2000000000] [0~100] 	   [1~255] 		   [0~10000]         [0-1]          [0-1]  
+// EventName         DropZen   		ItemDropRate   ItemDropCount   SetItemDropRate   ItemDropType   Fireworks
+//-----------------------------------------------------------------------------------------------------------	
+"Pink Chocolate Box" 1000	   	    100		  	   1		  	   0		    	 0		        0
+end
+
+1
+//----------------------------------------------------------------------------------
+// [0~15]    [0~511][0~15]	   [0~15]     [0~1]   [0~1]  [0~7]    [0~6] 
+// Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent  Comment
+//----------------------------------------------------------------------------------
+//--------------------------NORMAL ITEMS--------------------------------------------//
+//Swords
+   0         3      6          9          1       1      1        0          //Rapier
+   0         5      6          9          1       1      1        0          //Blade
+   0         7      6          9          1       1      1        0          //Falchion
+   0         8      6          9          1       1      1        0          //Serpent Sword
+   0         10     6          9          1       1      1        0          //Light Saber      
+   0         11     6          9          1       1      1        0          //Legendary Sword   
+//Axes
+   1         3      6          9          1       1      1        0          //Tomahawk
+   1         5      6          9          1       1      1        0          //Battle Axe
+   1         6      6          9          1       1      1        0          //Nikea Axe
+//Maces-Scepters
+   2         1      6          9          1       1      1        0          //Morning Star
+   2         3      6          9          1       1      1        0          //Great Hammer
+   2         8      6          9          1       1      1        0          //Battle Scepter
+//Spears
+   3         0      6          9          1       1      1        0          //Light Spear
+   3         2      6          9          1       1      1        0          //Dragon Lance
+//Bows-Crossbows
+   4         2      6          9          1       1      1        0          //Elven Bow
+   4         4      6          9          1       1      1        0          //Tiger Bow
+   4         9      6          9          1       1      1        0          //Golden Crossbow
+   4         10     6          9          1       1      1        0          //Arquebus
+   4         12     6          9          1       1      1        0          //Serpent Crossbow
+//Staffs-Sticks
+   5         0      6          9          1       1      1        0          //Skull Staff
+   5         2      6          9          1       1      1        0          //Serpent Staff
+   5         3      6          9          1       1      1        0          //Thunder Staff
+//Shields
+   6         3      6          9          1       1      1        0          //Elven Shield
+   6         5      6          9          1       1      1        0          //Dragon Slayer Shield
+   6         6      6          9          1       1      1        0          //Skull Shield
+   6         8      6          9          1       1      1        0          //Tower Shield
+   6         9      6          9          1       1      1        0          //Plate Shield
+//
+   7         2      6          9          0       1      1        0          //Set Pad
+   8         2      6          9          0       1      1        0          //Set Pad
+   9         2      6          9          0       1      1        0          //Set Pad
+   10        2      6          9          0       1      1        0          //Set Pad
+   11        2      6          9          0       1      1        0          //Set Pad
+//
+   7         4      6          9          0       1      1        0          //Set Bone
+   8         4      6          9          0       1      1        0          //Set Bone
+   9         4      6          9          0       1      1        0          //Set Bone
+   10        4      6          9          0       1      1        0          //Set Bone
+   11        4      6          9          0       1      1        0          //Set Bone
+//
+   7         5      6          9          0       1      1        0          //Set Leather
+   8         5      6          9          0       1      1        0          //Set Leather
+   9         5      6          9          0       1      1        0          //Set Leather
+   10        5      6          9          0       1      1        0          //Set Leather
+   11        5      6          9          0       1      1        0          //Set Leather
+//
+   7         6      6          9          0       1      1        0          //Set Scale
+   8         6      6          9          0       1      1        0          //Set Scale
+   9         6      6          9          0       1      1        0          //Set Scale
+   10        6      6          9          0       1      1        0          //Set Scale
+   11        6      6          9          0       1      1        0          //Set Scale
+//
+   7         7      6          9          0       1      1        0          //Set Sphinx
+   8         7      6          9          0       1      1        0          //Set Sphinx
+   9         7      6          9          0       1      1        0          //Set Sphinx
+   10        7      6          9          0       1      1        0          //Set Sphinx
+   11        7      6          9          0       1      1        0          //Set Sphinx
+//
+   7         8      6          9          0       1      1        0          //Set Brass
+   8         8      6          9          0       1      1        0          //Set Brass
+   9         8      6          9          0       1      1        0          //Set Brass
+   10        8      6          9          0       1      1        0          //Set Brass
+   11        8      6          9          0       1      1        0          //Set Brass
+//
+   7         9      6          9          0       1      1        0          //Set Plate
+   8         9      6          9          0       1      1        0          //Set Plate
+   9         9      6          9          0       1      1        0          //Set Plate
+   10        9      6          9          0       1      1        0          //Set Plate
+   11        9      6          9          0       1      1        0          //Set Plate
+//
+   7         10     6          9          0       1      1        0          //Set Vine
+   8         10     6          9          0       1      1        0          //Set Vine
+   9         10     6          9          0       1      1        0          //Set Vine
+   10        10     6          9          0       1      1        0          //Set Vine
+   11        10     6          9          0       1      1        0          //Set Vine
+//
+   7         11     6          9          0       1      1        0          //Set Silk
+   8         11     6          9          0       1      1        0          //Set Silk
+   9         11     6          9          0       1      1        0          //Set Silk
+   10        11     6          9          0       1      1        0          //Set Silk
+   11        11     6          9          0       1      1        0          //Set Silk
+//
+   7         13     6          9          0       1      1        0          //Set Spirit
+   8         13     6          9          0       1      1        0          //Set Spirit
+   9         13     6          9          0       1      1        0          //Set Spirit
+   10        13     6          9          0       1      1        0          //Set Spirit
+   11        13     6          9          0       1      1        0          //Set Spirit
+//-----------------------EXCELENT ITEMS--------------------------------------//
+//Swords
+   0         5      0          0          1       1      1        1          //Blade
+   0         10     0          0          1       1      1        1          //Light Saber
+//Axes
+   1         6      0          0          1       1      1        1          //Nikea Axe
+//Mace-Scepters
+   3         0      0          0          1       1      1        1          //Great Hammer
+//Bows-Crossbows
+   4         3      0          0          1       1      1        1          //Battle Bow
+   4         11     0          0          1       1      1        1          //Light Crossbow
+//Staffs-Sticks
+   5         2      0          0          1       1      1        1          //Serpent Staff
+//Shields
+   6         8      0          0          1       0      0        1          //Tower Shield   
+   6         9      0          0          1       0      0        1          //Plate Shield  
+//
+   7         0      0          0          0       1      1        1          //Set Bronze
+   8         0      0          0          0       1      1        1          //Set Bronze
+   9         0      0          0          0       1      1        1          //Set Bronze
+   10        0      0          0          0       1      1        1          //Set Bronze
+   11        0      0          0          0       1      1        1          //Set Bronze
+//
+   7         4      0          0          0       1      1        1          //Set Bone
+   8         4      0          0          0       1      1        1          //Set Bone
+   9         4      0          0          0       1      1        1          //Set Bone
+   10        4      0          0          0       1      1        1          //Set Bone
+   11        4      0          0          0       1      1        1          //Set Bone
+//
+   7         11     0          0          0       1      1        1          //Set Silk
+   8         11     0          0          0       1      1        1          //Set Silk
+   9         11     0          0          0       1      1        1          //Set Silk
+   10        11     0          0          0       1      1        1          //Set Silk
+   11        11     0          0          0       1      1        1          //Set Silk
+//
+   12        15     0          0          0       0      0        0          //
+   14        13     0          0          0       0      0        0          //
+   14        14     0          0          0       0      0        0          //
+   14        19     3          4          0       0      0        0          //
+   13        18     4          5          0       0      0        0          //
+   14        28     3          5          0       0      0        0          //
+end

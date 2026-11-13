@@ -1,0 +1,11 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+[Settings]
+Enabled					= 0
+TimeInterval			= 15	; Tiempo en Segundos
+FreeIpinterval			= 2		; Tiempo en Minutos
+IPMaxTimeInterval		= 3		; Tiempo en Segundos(REVISAR)

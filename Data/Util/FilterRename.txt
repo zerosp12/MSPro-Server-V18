@@ -1,0 +1,12 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2023 MuServerPro Team
+//-------------------------------------------------------------------------------------------------------------------
+
+//Command Rename - Block name or part of the name
+//Max 10 caracters
+//Label
+"[gm]"
+end

@@ -1,0 +1,16 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//==============
+// Info:
+//==============
+//Sistema muestra los tops dentro del juego
+//Ver procedure WZ_CustomTop de acuardo con el index
+
+//Index	Command	Title
+1	"rr"	"TOP RR"
+2	"mr"	"TOP MR"

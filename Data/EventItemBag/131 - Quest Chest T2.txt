@@ -1,0 +1,161 @@
+//---------------------------------------------------------------------------------------------------------------
+// Quest Chest T2 (class gear, ItemBagEx format). Dropped via quest reward type 7.
+//---------------------------------------------------------------------------------------------------------------
+
+3
+//Index   DropRate
+0         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW DK FE MG DL SU RF GL
+0         5         10000         0             2             1  0  0  0  0  0  0  0
+0         6         10000         0             2             0  1  0  0  0  0  0  0
+0         7         10000         0             2             0  0  1  0  0  0  0  0
+0         8         10000         0             2             0  0  0  1  0  0  0  0
+0         9         10000         0             2             0  0  0  0  1  0  0  0
+0         10        10000         0             2             0  0  0  0  0  1  0  0
+0         11        10000         0             2             0  0  0  0  0  0  1  0
+0         12        10000         0             2             0  0  0  0  0  0  0  1
+end
+
+5
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DW)
+4165	0	0	31	11	13	22	11	*	*	*	//Lucky Legendary Armor
+3087	0	0	31	11	13	22	11	*	*	*	//Grand Soul Shield
+3602	0	0	31	11	13	22	11	*	*	*	//Grand Soul Helm
+3653	0	0	31	11	13	22	11	*	*	*	//Lucky Legendary Helm
+4611	0	0	31	11	13	22	11	*	*	*	//Legendary Pants
+2567	0	0	31	11	13	22	11	*	*	*	//Chaos Lighting Staff
+2566	0	0	31	11	13	22	11	*	*	*	//Staff of Resurrection
+5155	0	0	31	11	13	22	11	*	*	*	//Eclipse Gloves
+5650	0	0	31	11	13	22	11	*	*	*	//Grand Soul Boots
+4643	0	0	31	11	13	22	11	*	*	*	//Eclipse Pants
+2564	0	0	31	11	13	22	11	*	*	*	//Gorgon Staff
+3619	0	0	31	11	13	22	11	*	*	*	//Eclipse Helm
+4131	0	0	31	11	13	22	11	*	*	*	//Eclipse Armor
+5138	0	0	31	11	13	22	11	*	*	*	//Grand Soul Gloves
+end
+
+6
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DK)
+3585	0	0	31	11	13	22	11	*	*	*	//Dragon Helm
+4130	0	0	31	11	13	22	11	*	*	*	//Ashcrow Armor
+1028	0	0	31	13	13	22	11	*	*	*	//Crystal Morning Star
+1029	0	0	31	13	13	22	11	*	*	*	//Crystal Sword
+15	0	0	31	13	13	22	11	*	*	*	//Giant Sword
+1544	0	0	31	13	13	22	11	*	*	*	//Great Scythe
+1030	0	0	31	13	13	22	11	*	*	*	//Chaos Dragon Axe
+3651	0	0	31	11	13	22	11	*	*	*	//Lucky Dragon Helm
+5648	0	0	31	11	13	22	11	*	*	*	//Black Dragon Boots
+16	0	0	31	13	13	22	11	*	*	*	//Sword of Destruction
+3618	0	0	31	11	13	22	11	*	*	*	//Ashcrow Helm
+3085	0	0	31	11	13	22	11	*	*	*	//Dragon Shield
+5666	0	0	31	11	13	22	11	*	*	*	//Ashcrow Boots
+3084	0	0	31	11	13	22	11	*	*	*	//Bronze Shield
+end
+
+7
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (ELF)
+1544	0	0	31	13	13	22	11	*	*	*	//Great Scythe
+2053	0	0	31	13	13	22	11	*	*	*	//Silver Bow
+1545	0	0	31	13	13	22	11	*	*	*	//Bill of Balrog
+3088	0	0	31	11	13	22	11	*	*	*	//Elemental Shield
+2054	0	0	31	13	13	22	11	*	*	*	//Chaos Nature Bow
+5156	0	0	31	11	13	22	11	*	*	*	//Iris Gloves
+5134	0	0	31	11	13	22	11	*	*	*	//Guardian Gloves
+5188	0	0	31	11	13	22	11	*	*	*	//Lucky Guardian Gloves
+4622	0	0	31	11	13	22	11	*	*	*	//Guardian Pants
+3652	0	0	31	11	13	22	11	*	*	*	//Lucky Guardian Helm
+3598	0	0	31	11	13	22	11	*	*	*	//Guardian Helm
+5668	0	0	31	11	13	22	11	*	*	*	//Iris Boots
+4110	0	0	31	11	13	22	11	*	*	*	//Guardian Armor
+4676	0	0	31	11	13	22	11	*	*	*	//Lucky Guardian Pants
+end
+
+8
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (MG)
+4167	0	0	31	11	13	22	11	*	*	*	//Lucky Atlans Armor
+1028	0	0	31	13	13	22	11	*	*	*	//Crystal Morning Star
+2567	0	0	31	11	13	22	11	*	*	*	//Chaos Lighting Staff
+1544	0	0	31	13	13	22	11	*	*	*	//Great Scythe
+4111	0	0	31	11	13	22	11	*	*	*	//Storm Crow Armor
+5703	0	0	31	11	13	22	11	*	*	*	//Lucky Atlans Boots
+16	0	0	31	13	13	22	11	*	*	*	//Sword of Destruction
+12	0	0	31	13	13	22	11	*	*	*	//Heliacal Sword
+4099	0	0	31	11	13	22	11	*	*	*	//Legendary Armor
+5633	0	0	31	11	13	22	11	*	*	*	//Dragon Boots
+5191	0	0	31	11	13	22	11	*	*	*	//Lucky Atlans Gloves
+5121	0	0	31	11	13	22	11	*	*	*	//Dragon Gloves
+2565	0	0	31	11	13	22	11	*	*	*	//Legendary Staff
+4623	0	0	31	11	13	22	11	*	*	*	//Storm Crow Pants
+end
+
+9
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DL)
+5698	0	0	31	11	13	22	11	*	*	*	//Lucky Dark Soul Boots
+3093	0	0	31	11	13	22	11	*	*	*	//Cross Shield
+3650	0	0	31	11	13	22	11	*	*	*	//Lucky Dark Soul Helm
+1032	0	0	31	13	13	22	11	*	*	*	//Battle Scepter
+1034	0	0	31	13	13	22	11	*	*	*	//Great Scepter
+5146	0	0	31	11	13	22	11	*	*	*	//Adamantine Gloves
+5147	0	0	31	11	13	22	11	*	*	*	//Dark Steel Gloves
+1033	0	0	31	13	13	22	11	*	*	*	//Master Scepter
+4633	0	0	31	11	13	22	11	*	*	*	//Light Plate Pants
+4634	0	0	31	11	13	22	11	*	*	*	//Adamantine Pants
+4122	0	0	31	11	13	22	11	*	*	*	//Adamantine Armor
+5186	0	0	31	11	13	22	11	*	*	*	//Lucky Dark Soul Gloves
+4162	0	0	31	11	13	22	11	*	*	*	//Lucky Dark Soul Armor
+4674	0	0	31	11	13	22	11	*	*	*	//Lucky Dark Soul Pants
+end
+
+10
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (SUM)
+4166	0	0	31	11	13	22	11	*	*	*	//Lucky Red Wing Armor
+3654	0	0	31	11	13	22	11	*	*	*	//Lucky Red Wing Helm
+2576	0	0	31	11	13	22	11	*	*	*	//Red Wing Stick
+4649	0	0	31	11	13	22	11	*	*	*	//Ancient Pants
+3626	0	0	31	11	13	22	11	*	*	*	//Demonic Helm
+5161	0	0	31	11	13	22	11	*	*	*	//Ancient Gloves
+3624	0	0	31	11	13	22	11	*	*	*	//Red Wing Helm
+5162	0	0	31	11	13	22	11	*	*	*	//Demonic Gloves
+4137	0	0	31	11	13	22	11	*	*	*	//Ancient Armor
+5674	0	0	31	11	13	22	11	*	*	*	//Demonic Boots
+2577	0	0	31	11	13	22	11	*	*	*	//Ancient Stick
+4648	0	0	31	11	13	22	11	*	*	*	//Red Wing Pants
+2582	0	0	31	13	13	22	11	*	*	*	//Book of Neil
+3625	0	0	31	11	13	22	11	*	*	*	//Ancient Helm
+end
+
+11
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (RF)
+4668	0	0	31	11	13	22	11	*	*	*	//Storm Hard Pants
+4667	0	0	31	11	13	22	11	*	*	*	//Sacred Pants
+33	0	0	31	13	13	22	11	*	*	*	//Holly Storm Claws
+3644	0	0	31	11	13	22	11	*	*	*	//Storm Hard Helm
+5692	0	0	31	11	13	22	11	*	*	*	//Storm Hard Boots
+5691	0	0	31	11	13	22	11	*	*	*	//Sacred Boots
+4168	0	0	31	11	13	22	11	*	*	*	//Lucky Storm Hard Armor
+1028	0	0	31	13	13	22	11	*	*	*	//Crystal Morning Star
+32	0	0	31	13	13	22	11	*	*	*	//Sacred Glove
+4155	0	0	31	11	13	22	11	*	*	*	//Sacred Armor
+5693	0	0	31	11	13	22	11	*	*	*	//Piercing Boots
+4156	0	0	31	11	13	22	11	*	*	*	//Storm Hard Armor
+5704	0	0	31	11	13	22	11	*	*	*	//Lucky Storm Hard Boots
+3656	0	0	31	11	13	22	11	*	*	*	//Lucky Storm Hard Helm
+end
+
+12
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (GL)
+3677	0	0	31	11	13	22	11	*	*	*	//Princie Helmet
+3676	0	0	31	11	13	22	11	*	*	*	//Gru Hill Helmet
+1554	0	0	31	13	13	22	11	*	*	*	//Alacran Lance
+4700	0	0	31	11	13	22	11	*	*	*	//Gru Hill Pants
+4701	0	0	31	11	13	22	11	*	*	*	//Princie Pants
+3102	0	0	31	11	13	22	11	*	*	*	//Pluma Shield
+1550	0	0	31	13	13	22	11	*	*	*	//Conmocion Lance
+5213	0	0	31	11	13	22	11	*	*	*	//Princie Gloves
+5725	0	0	31	11	13	22	11	*	*	*	//Princie Boots
+4188	0	0	31	11	13	22	11	*	*	*	//Gru Hill Armor
+4189	0	0	31	11	13	22	11	*	*	*	//Princie Armor
+end

@@ -1,0 +1,135 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+
+//==============
+// [Ref-1]
+//==============
+//	 Monster Count:
+//				0->Disable
+//				1->Golden Message (Center) / Mensaje Dorado (Centro)
+//				2->Blue Message (Left Side) / Mensaje Azul (Lateral Izquierdo)
+//				3->(SOLO/ONLY BOSS) - Golden Message (Center) / Mensaje Dorado (Centro)
+//				4->(SOLO/ONLY BOSS) - Blue Message (Left Side) / Mensaje Azul (Lateral Izquierdo)
+
+//==============
+// [Ref-6]
+//==============
+// MinUsersToStart (-1 Inicia sin importar Usuarios / 1 ~ 1000: Inicia siempre que la cantidad de usuarios Online sea mayor o igual)
+
+0
+//-----------------------
+// Configuracion General
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//																  [Ref-1]  		                                [OFF / ON]									[	 Ref-6	  ]
+//							[InMin]		 [  Envia Sonido 0~1   ]  [0~4]			 [0~999 Min]   [0~1]          	[0~1]         		[0~3]					[-1 / 1 ~ 1000]
+//  Nameinvasion			Duracion	 AlIniciar   AlFinalizar  Monster Count  Forced Delay  Log(AllMonster)	ActiveInvasion		ActiveInfoMinAL			MinUsersToStart
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	"Medusa"	   		    10			 1			 1			  1				 0			   1                1					0						0
+end
+
+//==============
+// [Ref-2]
+//==============
+// TypeMsj: (0: START / 1: END / 2: KILL BOSS / 3: TIME LEFT)
+// New: (4:Kill Boss Player + Map + Cord / 5: Does not meet the minimum number of players)
+// Info: TypeMsj 4 disable type 2.
+
+//==============
+// [Ref-3]
+//==============
+// Lenguaje (0: English / 1: Español / 2: Portugues)
+
+1
+//----------
+// Mensajes
+//----------------------------------------------------------------
+// [Ref-2]  [Ref-3]
+// [0~5]    [0~2] 
+// TypeMsj	Lenguaje  Mensaje
+//----------------------------------------------------------------
+
+// INFO: When TypeMsj 4 is enabled -> TypeMsj 2 will be disabled automatically
+// INFO: Cuando el TypeMsj 4 esta activo -> TypeMsg 2 se desactivara automaticamente
+
+//English
+	0		0		  "Medusa Invasion!"    
+	1		0		  "Medusa retired"      
+	2		0		  "{} defeated Medusa"  
+//Español                
+	0		1		  "Medusa Nos Invade!"   
+	1		1		  "Medusa se ah retirado"     
+	2		1		  "{} Derroto a la Medusa" 
+//Portugues        
+	0		2		  "Medusa Invasion!"   
+	1		2		  "Medusa retired"     
+	2		2		  "{} defeated Medusa" 
+end
+
+//==============
+// [Ref-4]
+//==============
+// StartDoW: (1: Domingo / 2: Lunes / 3: Martes / 4: Miercoles / 5: Jueves / 6: Viernes / 7: Sabado)
+
+2
+//----------
+// Horarios
+//--------------------------------------------------------------------------------
+//									    [Ref-4]
+// [*/0000]     [*/0~12]     [*/0~31]   [*/1~7]    [*/0~23]    [*/0~59]   [*/0~59]
+// StartYear    StartMonth   StartDay   StartDoW   StartHour   StartMin   StartSec
+//--------------------------------------------------------------------------------
+   *            *       	 *    	    *     	   1           0          0
+   *            *       	 *    	    *     	   5           0          0
+   *            *       	 *    	    *     	   9           0          0
+   *            *       	 *    	    *     	   13          0          0
+   *            *       	 *    	    *     	   17          0          0
+   *            *       	 *    	    *     	   21          0          0
+end
+
+3
+//------------------
+// Grupos de Mapas
+//------------------------------------------------------------------------
+// [0~99]     [0~20]            [          1~255         ]      
+// IndexGrupo SubGrupo	NumMap	X1      Y1      X2      Y2
+//------------------------------------------------------------------------
+   0      	  1         56    	050     103     057     114                 //[Swamp of Calmness]
+   0      	  2         56    	127     162     136     171                 //[Swamp of Calmness]
+   0      	  3         56    	149     010     162     019                 //[Swamp of Calmness]
+   0      	  4         56    	178     114     184     129                 //[Swamp of Calmness]	
+end
+
+//==============
+// [Ref-5]
+//==============
+//RegenType (0: Solo 1 vez / 1: Segun el RegenTime)
+//RegenTime (Cuantos segundos demora en Renacer una vez que Muere)
+
+//==============
+// [Ref-6]
+//==============
+//MinUsersToSpawn (-1 Spawnea siempre sin importar Usuarios / 1 ~ 1000: Spawnea siempre que la cantidad de usuarios Online sea mayor o igual)
+
+4
+//-----------
+// Monsters
+//----------------------------------------------------------------------------------------------------------------------
+//															[       Ref-5        ]				 [	 Ref-6	  ]
+// [0~99]       [0~20]              [0~30]	[1~99]  [0~1]	[0~1]       [InSec]     [-1/*N Bag]  [-1 / 1 ~ 1000]
+// IndexGrupo	SubGrupo  Monster	Range	Canti	Boss	RegenType   RegenTime	ItemBag      MinUsersToSpawn
+//----------------------------------------------------------------------------------------------------------------------  
+   0         	1		  560		30		07		0		0			0			-1           -1				  //[Swamp of Calmness] - Sapi Queen
+   0         	1		  561		30		01		1		0			0			-1           -1				  //[Swamp of Calmness] - Medusa
+   0         	2		  560		30		07		0		0			0			-1           -1				  //[Swamp of Calmness] - Sapi Queen
+   0         	2		  561		30		01		1		0			0			-1           -1				  //[Swamp of Calmness] - Medusa
+   0         	3		  560		30		07		0		0			0			-1           -1				  //[Swamp of Calmness] - Sapi Queen
+   0         	3		  561		30		01		1		0			0			-1           -1				  //[Swamp of Calmness] - Medusa
+   0         	4		  560		30		07		0		0			0			-1           -1				  //[Swamp of Calmness] - Sapi Queen
+   0         	4		  561		30		01		1		0			0			-1           -1				  //[Swamp of Calmness] - Medusa
+end
+

@@ -1,0 +1,262 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------
+// Chaos Machine Sucess Rate
+// For Internal GameServer Math & Visual Ingame Rate!
+//---------------------------------------------------
+
+//==============
+// [Ref-1]
+//==============
+//       Level: -1(All Levels) / 1~15 (Exact Level)
+
+0
+//----------------------------------------------------------
+//			[Ref-1]
+// [1~52]   [-1/1~15] [0~100]	[0~100]	[0~100]	[0~100]	
+// MixID	Level	  Normal 	Vip1	Vip2	Vip3	Name
+//----------------------------------------------------------
+   1	    -1	      33	    50	    33	    33	    //Chaos Weapom
+   2	    1	      91	    92	    93	    94	    //Devil Square 1
+   2	    2	      80	    80	    80	    90	    //Devil Square 2
+   2	    3	      80	    80	    80	    90	    //Devil Square 3
+   2	    4	      80	    80	    80	    90	    //Devil Square 4
+   2	    5	      80	    80	    80	    90	    //Devil Square 5
+   2	    6	      70	    70	    70	    70	    //Devil Square 6
+   2	    7	      70	    70	    70	    70	    //Devil Square 7
+   3	    -1	      50	    50	    50	    50	    //Mix Item Level +10
+   4	    -1	      65	    65	    65	    65	    //Mix Item Level +11
+   5	    -1	      100	    100	    100	    100	    //Dinorant
+   6	    -1	      106	    100	    100	    100	    //Fruit
+   7	    -1	      60	    70	    80	    90	    //Wing Level 2						
+   8	    1	      99	    99	    99	    99	    //Blood Castle 1						
+   8	    2	      80	    80	    80	    80	    //Blood Castle 2
+   8	    3	      80	    80	    80	    80	    //Blood Castle 3
+   8	    4	      80	    80	    80	    80	    //Blood Castle 4
+   8	    5	      80	    80	    80	    80	    //Blood Castle 5
+   8	    6	      80	    80	    80	    80	    //Blood Castle 6
+   8	    7	      80	    80	    80	    80	    //Blood Castle 7
+   8	    8	      80	    80	    80	    80	    //Blood Castle 8
+   11	   -1	      99	    99	    99	    99	    //Wing Level 1
+   13	   -1	      75	    75	    75	    75	    //DarkRaven
+   14	   -1	      75	    75	    75	    75	    //DarkHorse
+   15	   -1	      60	    100	    100	    100	    //Bless Potion
+   16	   -1	      62	    100	    100	    100	    //Soul Potion
+   17	   -1	      100	    100	    100	    100	    //(Siege)Life Stone
+   18	   -1	      100	    100	    100	    100	    //(Siege)Señor Mix
+   22	   -1	      45	    50	    55	    60	    //Mix Item Level +12
+   23	   -1	      40	    45	    50	    55	    //Mix Item Level +13
+   24	   -1	      45	    55	    68	    68	    //Cloack(Cape Lvl 2)
+   25	   -1	      100	    100	    100	    100	    //(Fenrir)Piece Of Horn	            
+   26	   -1	      100	    100	    100	    100	    //(Fenrir)Broken Horn	                
+   27	   -1	      100	    100	    100	    100	    //(Fenrir)Horn of Fenrir	            
+   28	   -1	      100	    100	    100	    100	    //(Fenrir)Horn of Fenrir(Repair)      
+   30	   -1	      100	    100	    100	    100	    //(Siege)Small SD Potion              
+   31	   -1	      100	    100	    100	    100	    //(Siege)SD Potion                    
+   32	   -1	      100	    100	    100	    100	    //(Siege)Large SD Potion              
+   33	   -1	      100	    100	    100	    100	    //Gemstone                            
+   34	   -1	      100	    100	    100	    100	    //Lower refining stone		        
+   34	   1	      100	    100	    100	    100	    //Lower refining stone		        
+   35	   -1	      100	    100	    100	    100	    //Higher refining stone               
+   36	   1	      100	    100	    100	    100	    //(Item Restore) - Jewel Of Harmony	
+   36	   2	      100	    100	    100	    100	    //Item 380 - 7 or Higher				
+   37	   1	      70	    70	    70	    70	    //Ilusion Temple 1					
+   37	   2	      70	    70	    70	    70	    //Ilusion Temple 2					
+   37	   3	      70	    70	    70	    70	    //Ilusion Temple 3					
+   37	   4	      70	    70	    70	    70	    //Ilusion Temple 4					
+   37	   5	      70	    70	    70	    70	    //Ilusion Temple 5					
+   37	   6	      70	    70	    70	    70	    //Ilusion Temple 6					
+   38	   -1	      100	    100	    100	    100	    //Feather of Condor					
+   39	   -1	      100	    100	    100	    100	    //Wings Level 3						
+   42	   -1	      100	    100	    100	    100	    //create Seed							
+   43	   -1	      100	    100	    100	    100	    //create Seed Sphere					
+   46	   -1	      100	    100	    100	    100	    //Imperial Guardin Key(Rafe Fijo 100%)
+   47	   -1	      100	    100	    100	    100	    //Silver & Golden Chest(Rafe Fijo 100%
+   49	   -1	      50	    55	    60	    80	    //Mix Item Level +14					
+   50	   -1	      50	    55	    60	    80	    //Mix Item Level +15					
+   51	   -1	      100	    100	    100	    100	    //Lucky Item Create					
+   52	   1	      100	    100	    100	    100	    //Lucky Item Refine - Full Duration	
+   52	   2	      100	    100	    100	    100	    //Lucky Item Refine - Damaged			
+end
+
+//------------------
+// Chaos Machine Zen
+//------------------
+//==============
+// [Ref-2]
+//==============
+//     Type: 0 Normal - 1 Vip1 - 2 Vip2 - 3 Vip3
+//     Type: (-1) Zen value random(olny mix index 2) 
+
+1
+//---------------------------------------------------------
+//          [Ref-1]
+// [1~52]   [-1/1~15] [Ref-2]
+// MixID	Level	  Type	 QuantlyZen	  Name
+//---------------------------------------------------------
+   1		-1		  0		 500000		  //Chaos Weapom
+   2	    1	      0	     100000		  //Devil Square 1
+   2	    2	      0	     200000		  //Devil Square 2
+   2	    3	      0	     400000		  //Devil Square 3
+   2	    4	      0	     700000		  //Devil Square 4
+   2	    5	      0	     1100000	  //Devil Square 5
+   2	    6	      0	     1600000	  //Devil Square 6
+   2	    7	      0	     2000000	  //Devil Square 7
+   3	    -1	      0	     2000000	  //Mix Item Level +10
+   4	    -1	      0	     4000000	  //Mix Item Level +11
+   5	    -1	      0	     500000		  //Dinorant
+   6	    -1	      0	     3000000	  //Fruit
+   7	    -1	      0	     100000		  //Wing Level 2							(RATE x 10.000)
+   8	    1	      0	     50000		  //Blood Castle 1						 
+   8	    2	      0	     80000		  //Blood Castle 2
+   8	    3	      0	     150000		  //Blood Castle 3
+   8	    4	      0	     250000		  //Blood Castle 4
+   8	    5	      0	     400000		  //Blood Castle 5
+   8	    6	      0	     600000		  //Blood Castle 6
+   8	    7	      0	     850000		  //Blood Castle 7
+   8	    -1	      0	     1050000	  //Blood Castle 8
+   11	    -1	      0	     5000000	  //Wing Level 1
+   13	    -1	      0	     5000000	  //DarkRaven
+   14	    -1	      0	     1000000	  //DarkHorse
+   15	    -1	      0	     100000		  //Bless Potion
+   16	    -1	      0	     50000		  //Soul Potion
+   17	    -1	      0	     5000000	  //(Siege)Life Stone
+   18	    -1	      0	     1000000000	  //(Siege)Señor Mix
+   22	    -1	      0	     6000000	  //Mix Item Level +12
+   23	    -1	      0	     8000000	  //Mix Item Level +13
+   24	    -1	      0	     7000000	  //Cloaks(Cape Lvl 2)
+   25	    -1	      0	     0		      //(Fenrir)Piece Of Horn	              (NO REQUIEREN ZEN)
+   26	    -1	      0	     0		      //(Fenrir)Broken Horn	                  (NO REQUIEREN ZEN)
+   27	    -1	      0	     10000000	  //(Fenrir)Horn of Fenrir	             
+   28	    -1	      0	     10000000	  //(Fenrir)Horn of Fenrir(Repair)       
+   30	    -1	      0	     100000		  //(Siege)Small SD Potion               
+   31	    -1	      0	     500000		  //(Siege)SD Potion                     
+   32	    -1	      0	     1000000	  //(Siege)Large SD Potion               
+   33	    -1	      0	     0		      //Gemstone                              (NO REQUIEREN ZEN)
+   34	    -1	      0	     0		      //Lower refining stone		          (NO REQUIEREN ZEN)
+   34	    1	      0	     0		      //Lower refining stone		         
+   35	    -1	      0	     0		      //Higher refining stone                 (NO REQUIEREN ZEN)
+   36	    1	      0	     4000000	  //(Item Restore) - Jewel Of Harmony	 							
+   36	    2	      0	     7000000	  //Item 380 - 7 or Higher								
+   37	    1	      0	     3000000	  //Ilusion Temple 1												
+   37	    2	      0	     5000000	  //Ilusion Temple 2											
+   37	    3	      0	     7000000	  //Ilusion Temple 3											
+   37	    4	      0	     9000000	  //Ilusion Temple 4											
+   37	    5	      0	     11000000	  //Ilusion Temple 5											
+   37	    6	      0	     13000000	  //Ilusion Temple 6											
+   38	    -1	      0	     0		      //Feather of Condor					  (RATE x 200.000)
+   39	    -1	      0	     0		      //Wings Level 3											
+   42	    -1	      0	     1000000	  //create Seed											
+   43	    -1	      0	     1000000	  //create Seed Sphere											
+   46	    -1	      0	     1000000	  //Imperial Guardin Key(Rafe Fijo 100%) 											
+   47	    -1	      0	     0		      //Silver & Golden Chest(Rafe Fijo 100%) (NO REQUIEREN ZEN)
+   49	    -1	      0	     10000000	  //Mix Item Level +14											
+   50	    -1	      0	     12000000	  //Mix Item Level +15					 						
+   51	    -1	      0	     0		      //Lucky Item Create					  (NO REQUIEREN ZEN)
+   52	    1	      0	     0		      //Lucky Item Refine - Full Duration	  (NO REQUIEREN ZEN)
+   52	    2	      0	     0		      //Lucky Item Refine - Damaged			  (NO REQUIEREN ZEN)
+end
+
+2
+//----------------------------------------------------------------
+// Chaos Machine Random (NO AGREGAR MIXES, SOLO ESTOS SE PERMITEN)
+//----------------------------------------------------------------
+// 0: Use Mix Percent (Index 0)
+// 1: Use Item Value
+//----------------------------------------------------------------
+// [1~52]   [0~100] [0~100] [0~100] [0~100] 
+// MixID	Normal 	Vip1	Vip2	Vip3	Name
+//-----------------------------------------------
+   1		1	    1		1		1		//Chaos Weapon
+   7		1		1		1		1		//Wing Level 2
+   11	    1		1		1		1		//Wing Level 1
+   24		1		1		1		1		//Wing Level 3
+   28		1		1		1		1		//Horn Of Fenrir (Repair)
+   38		1		1		1		1		//Feather of Condor	
+   39		1		1		1		1		//Wings Level 3		
+   42		1		1		1		1		//create Seed
+   43		1		1		1		1		//create Seed Sphere
+end
+
+//------------------------------
+// Chaos Machine Success Message
+//------------------------------
+//==============
+// [Ref-3]
+//==============
+// MsgType:  0 - Only for Player
+//		     1 - Only on Player Map.
+//		     2 - All Connected Users(Same Server)
+
+3
+//----------------------------------------------------------
+//          [Ref-1]
+// [1~52]   [-1/1~15] [0/1]	    [Ref-3]	  ["" / 55 Letters]
+// MixID	Level	  Enable	MsgType	  Message
+//----------------------------------------------------------
+   1		-1		0		    0	      ""	   //Chaos Weapom
+   2		1		0		    0	      ""	   //Devil Square 1
+   2	    2	    0	        0	      ""	   //Devil Square 2
+   2	    3	    0	        0	      ""	   //Devil Square 3
+   2	    4	    0	        0	      ""	   //Devil Square 4
+   2	    5	    0	        0	      ""	   //Devil Square 5
+   2	    6	    0	        0	      ""	   //Devil Square 6
+   2	    7	    0	        0	      ""	   //Devil Square 7
+   3	    -1	    0	        0	      ""	   //Mix Item Level +10
+   4	    -1	    0	        0	      ""	   //Mix Item Level +11
+   5	    -1	    0	        0	      ""	   //Dinorant
+   6	    -1	    0	        0	      ""	   //Fruit
+   7	    -1	    0	        0	      ""	   //Wing Level 1
+   8	    1	    0	        0	      ""	   //Blood Castle 1
+   8	    2	    0	        0	      ""	   //Blood Castle 2
+   8	    3	    0	        0	      ""	   //Blood Castle 3
+   8	    4	    0	        0	      ""	   //Blood Castle 4
+   8	    5	    0	        0	      ""	   //Blood Castle 5
+   8	    6	    0	        0	      ""	   //Blood Castle 6
+   8	    7	    0	        0	      ""	   //Blood Castle 7
+   8	    8	    0	        0	      ""	   //Blood Castle 8
+   11	    -1	    0	        0	      ""	   //Wing Level 2
+   13	    -1	    0	        0	      ""	   //DarkRaven
+   14	    -1	    0	        0	      ""	   //DarkHorse
+   15	    -1	    0	        0	      ""	   //Bless Potion
+   16	    -1	    0	        0	      ""	   //Soul Potion
+   17	    -1	    0	        0	      ""	   //(Siege)Life Stone
+   18	    -1	    0	        0	      ""	   //(Siege)Señor Mix
+   22	    -1	    0	        0	      ""	   //Mix Item Level +12
+   23	    -1	    0	        0	      ""	   //Mix Item Level +13
+   24	    -1	    0	        0	      ""	   //Wing Level 3
+   25	    -1	    0	        0	      ""	   //(Fenrir)Piece Of Horn
+   26	    -1	    0	        0	      ""	   //(Fenrir)Broken Horn
+   27	    -1	    0	        0	      ""	   //(Fenrir)Horn of Fenrir
+   28	    -1	    0	        0	      ""	   //(Fenrir)Horn of Fenrir(Repair)
+   30	    -1	    0	        0	      ""	   //(Siege)Small SD Potion
+   31	    -1	    0	        0	      ""	   //(Siege)SD Potion
+   32	    -1	    0	        0	      ""	   //(Siege)Large SD Potion
+   33	    -1	    0	        0	      ""	   //Gemstone
+   34	    -1	    0	        0	      ""	   //Lower refining stone	
+   34	    1	    0	        0	      ""	   //Lower refining stone
+   35	    -1	    0	        0	      ""	   //(Item Restore) - Jewel Of Harmony
+   36	    1	    0	        0	      ""	   //Item 380 - 7 or Higher
+   36	    2	    0	        0	      ""	   //Item 380
+   37	    1	    0	        0	      ""	   //Ilusion Temple 1
+   37	    2	    0	        0	      ""	   //Ilusion Temple 2
+   37	    3	    0	        0	      ""	   //Ilusion Temple 3
+   37	    4	    0	        0	      ""	   //Ilusion Temple 4
+   37	    5	    0	        0	      ""	   //Ilusion Temple 5
+   37	    6	    0	        0	      ""	   //Ilusion Temple 6
+   38	    -1	    0	        0	      ""	   //Feather of Condor
+   39	    -1	    0	        0	      ""	   //??
+   42	    -1	    0	        0	      ""	   //Create Seed
+   43	    -1	    0	        0	      ""	   //Create Seed Sphere
+   46	    -1	    0	        0	      ""	   //Imperial Guardin Key(Rafe Fijo 100%)
+   47	    -1	    0	        0	      ""	   //Silver & Golden Chest(Rafe Fijo 100%)
+   49	    -1	    0	        0	      ""	   //Mix Item Level +14
+   50	    -1	    0	        0	      ""	   //Mix Item Level +15
+   51	    -1	    0	        0	      ""	   //Lucky Item Create
+   52	    1	    0	        0	      ""	   //Lucky Item Refine - Full Duration
+   52	    2	    0	        0	      ""	   //Lucky Item Refine - Damaged
+end

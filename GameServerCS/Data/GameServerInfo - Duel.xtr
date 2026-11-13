@@ -1,0 +1,19 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+[Duel]
+DisableWinEffect			= 0		; Disable Glatiator Buff - Deshabilitar/habilitar el buff al ganador del duelo
+MaxScoreToWin				= 5    ; Modificacion de cantidad maxima del duelo
+
+[BetDuel]
+IsEnabled					= 1     ; Enable/disable system bet -  Deshabilitar/habilitar apuesta en el duelo
+DisableSelectSrvOnDuel		= 1		; Disable Select Server Option On duel. Deshabilitar/habilitar Select Server permitido o no
+DisableSelectCharOnDuel		= 1		; Disable Select Character Option On duel. Deshabilitar/habilitar Select personaje permitido o no
+EnableLeftDuelMsg			= 1		; Annouce All Server that some user is trying to left bet duel. - Deshabilitar/habilitar Global "abandona el duelo"
+
+[BetDuel_ItemManagement]
+LeftDuelOptionEnable		= 1		; Enable Lost Item System. - Hablitar diferencial para perder por kills.
+LeftDuel_ScoreCountLostItem	= 2		; Score dif when user left betduel for loose it! - Diferencia entre kills para dar items por perdidos.

@@ -1,0 +1,14 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+[Settings]
+Enable					= 1
+AutoRepairTime			= 5.0
+AutoBuffTime			= 1.5
+AutoLifeRecoveryTime	= 0.5
+AutoPartyHealTime		= 0.5
+AutoPickMaxDistance 	= 4    //Max 8
+Debug					= 0

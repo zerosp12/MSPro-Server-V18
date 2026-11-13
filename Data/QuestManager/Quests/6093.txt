@@ -1,0 +1,22 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6093
+// Mision Semanal - Icarus
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			10080				60	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				69				32			//Matar 32 Alquamos
+	1				71				28			//Matar 28 Mega Crust
+end
+
+2
+	0				3780000
+	7				100				1			//Golden Box
+	7				132				2			//Quest Chest T3 (class gear)
+	6				60				//Ruud
+	1				2				5			//Bonus points (kept after resets)
+end

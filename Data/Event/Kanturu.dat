@@ -1,0 +1,190 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//==============
+// [Ref-1]
+//==============
+// KANTURU_STATE_NONE 				    0
+// KANTURU_STATE_BATTLE_STANTBY 		1
+// KANTURU_STATE_BATTLE_OF_MAYA 		2	
+// KANTURU_STATE_BATTLE_OF_NIGHTMARE    3
+// KANTURU_STATE_TOWER_OF_REFINEMENT 	4
+// KANTURU_STATE_END 				    5
+
+0
+//--------------------
+// Condition Settings
+//---------------------------------------
+// [Ref-1] [0-1]	   [InSec]	
+// State   Condition   SetTime    Comment
+//---------------------------------------
+   0        0          0          // None    
+   1        0          0          // Battle Standby
+   2        0          0          // Battle Of Maya
+   3        0          0          // Battle Of NightMare
+   4        0          0          // Tower Of Refinement
+   5        1          0          // End
+end
+
+1
+//----------------------------------
+// Maya Battle Preparation Settings 
+//--------------------------------------
+// [0~3]   [0-1]       [InSec]
+// State   Condition   SetTime   Comment
+//--------------------------------------
+   0       0           0         // None
+   1       1           300       // Start(For Standby time / Event Closed)
+   2       1           60        // Notify(For Enter - Gate)
+   3       0           0         // End
+end
+
+2
+//--------------------------------------
+// [0~2]   [0-1]       [InSec]
+// State   Condition   SetTime   Comment
+//--------------------------------------
+   0       1           900       // First Battle Scene
+   1       1           900       // Second Battle Scene
+   2       1           1200      // Third Battle Scene
+end
+
+3
+//------------------------------
+// Maya Battle Cycle Settings
+//--------------------------------------
+// [0~18]  [0-1]       [InSec]
+// State   Condition   SetTime   Comment
+//--------------------------------------
+   0       0           0
+//---------------------------------------------------------------------
+// First Cycle
+//---------------------------------------------------------------------
+   1       1           120       // Stand By
+   2       1           15        // Notify
+   3       0           0         // Start
+   4       0           0         // Maya
+   5       1           5         // End Maya
+   6       1           3         // End Cycle
+//---------------------------------------------------------------------
+// Second Cycle
+//---------------------------------------------------------------------
+   7       1           60        // Stand By
+   8       0           0         // Start
+   9       0           0         // Maya
+   10      1           5         // End Maya
+   11      1           3         // End Cycle
+//---------------------------------------------------------------------
+// Third Cycle
+//---------------------------------------------------------------------
+   12      1           120       // Stand By
+   13      0           0         // Start
+   14      0           0         // Maya
+   15      1           5         // End Maya
+   16      1           10        // End Cycle
+   17      1           3         // End
+   18      0           0         // End Cycle
+end
+
+4
+//-------------
+// [InSec]
+// AIChangeTime
+//-------------
+   3
+   60
+   60
+   900
+end
+
+5
+//------------------------
+// Ref: MonsterAIGroup.txt
+//------------------------
+// AIGroupNumber Comment
+//------------------------
+   20    		 // Maya Left Hand
+   21    		 // Maya Right Hand
+   22    		 // Maya Hands
+end
+
+6
+//-----------------------------
+// Maya Ice Storm Battle Skill 
+// [0~10000]
+//-----------------------------
+   60
+end
+
+7
+//------------------
+// Nightmare Cycle
+//--------------------------------------
+// [0~5]   [0-1]       [InSec]
+// State   Condition   SetTime   Comment
+//--------------------------------------
+   0       0           0         // None
+   1       1           5         // Idle
+   2       1           10        // Notify
+   3       1           1200      // Start
+   4       1           5         // End
+   5       0           0         // End Cycle
+end
+
+8
+//------------------------
+// Ref: MonsterAIGroup.txt
+//------------------------
+// AIGroupNumber
+//------------------------
+   23
+end
+
+9
+//==============
+// [Info]
+//==============
+//----------------------------------------------------------------------
+// Refinery Tower Settings(Event Duration Time on Seconds)
+// 1- Revitalization -> 82500 / 60 Seconds / 60 minutes -> 22,91 Hours
+// Formula: 2 Hours * 60 Min * 60 Seconds -> 7200 Seconds
+//----------------------------------------------------------------------
+// [0~5]   [0-1]       [InSec]
+// State   Condition   SetTime   Comment
+//--------------------------------------
+   0       0           0         // None
+   1       1           600       // Revitalization(Enter Time)
+   2       1           300       // Notify
+   3       1           2220      // Close
+   4       1           180       // Notify
+   5       1           5         // End
+end
+
+10
+//---------------------------
+// MoonStone Ring Settings
+//----------------------------------------------------------------------
+// RingRequeriment	BlockMovement  Gate for move player when ring is not equipped
+//----------------------------------------------------------------------
+   1			    0			   139
+end
+
+11
+//==============
+// [Info]
+//==============
+//--------------------------------------------------------------------------
+// Event Reward
+// For Each Monster Boss Die, give Rewards! Default: 4 Mayas & 1 Nightmare .
+//--------------------------------------------------------------------------
+// [361~363] [ 0~9999999 ]  [0~65000] [0~2000000000]
+// Level	 WC	   WP	GP	Points	  Zen			Comment
+//---------------------------------------------------------------
+   361	     0	   0	0	0		  0		//Nightmare
+   362	     0	   0	0	0		  0		//Maya Hand
+   363	     0	   0	0	0		  0		//Maya Hand
+end

@@ -1,0 +1,402 @@
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// MSPro - MapManager
+// File Version: 2.0
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Name						Map Name
+// NonPK					Allow PK												- Default: -1	(-1: Uses value from Common.dat / 0: NO / 1: YES / 2: YES - Don't add PK Level)
+// PKItemDrop				Allow to Drop Items when PK player is Killed 			- Default: 0 	(0: NO / 1: YES)
+// ViewRange				Monster View Range 										- Default: 15
+// DeathGate				Gate used when Character Dies 							- Default: -1 	(-1: Respawn in same coords)
+// LoginGate				Gate used when Character enter Game						- Default: -1 	(-1: Don't move when Login)
+//---------------------------------------------------
+// ExpRate					% of Experience											- Default: 100% (100 is 100% of Common.dat Value)
+// MasterExpRate			% of Master. Experience 								- Default: 100% (0: Disable Master EXP in Map)
+// DropRate					% of Item Drop 											- Default: 100%
+// ExeDropRate				% of Excellent Drop 									- Default: 1000 (MAX 100000)
+// SetItemDropRate			% of Set Item Drop 										- Default: 0 	(MAX 100000)
+// SocketItemDropRate		% of Socket Item Drop 									- Default: 0	(MAX 100000)
+// HelperEnable				Enable to use Helper	 								- Default: 1 	(0: NO / 1: YES)
+// PartyEnable				Enable to use Party System 								- Default: 1 	(0: NO / 1: YES)
+// TradeEnable				Enable to use Trade 									- Default: 1 	(0: NO / 1: YES)
+// ResetEnable				Enable to Reset / Master Reset 							- Default: 1 	(0: NO / 1: YES)
+//---------------------------------------------------
+// GensBattle				Enable Map as GensBattle Map 							- Default: 0 	(0: NO / 1: YES)
+//---------------------------------------------------
+// CustomStore				Enable Custom Store										- Default: 0 	(0: NO / 1: YES)
+// CustomAttack				Enable Custom Attack  									- Default: 1 	(0: NO / 1: YES)
+// CustomPick				Enable Custom Pick  									- Default: 1 	(0: NO / 1: YES)
+//
+//---------------------------------------------------
+// ZenType
+// 		0: Normal Drop				All Zen is droppped directly to Drop
+// 		1: Auto Pick Zen 			All Zen is picked directly by Character
+// 		2: Auto Pick Rate 			All Zen is picked using ZenRate as % Success (Ex: ZenRate = 50 - Have 50% of chances to pick Zen)
+// 		3: Auto Pick Part 			Zen is picked using ZenRate to determine how much Zen goes to Character (Ex: ZenRate = 50 - Pick 50% and Drop the other 50%)
+//		4: Disable Zen Drop in Map
+//
+// ZenRate					Percentages used in ZenType								- Default: 100%	(MAX 100%)
+//---------------------------------------------------
+// [V14]
+// PartyControlEnable		Enable to use Party Control System						- Default: 1 	(0: NO / 1: YES)
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[0]
+Name = "Lorencia"
+PKItemDrop = 1
+DeathGate = 17
+CustomPick = 0
+
+[1]
+Name = "Dungeon"
+DeathGate = 17
+CustomAttack = 0
+CustomPick = 0
+
+[2]
+Name = "Devias"
+DeathGate = 22
+CustomStore = 1
+CustomPick = 0
+
+[3]
+Name = "Noria"
+DeathGate = 27
+CustomStore = 1
+CustomPick = 0
+
+[4]
+Name = "LostTower"
+DeathGate = 42
+CustomPick = 0
+
+[5]
+Name = "Exile"
+CustomPick = 0
+
+[6]
+Name = "Arena"
+DeathGate = 115
+CustomPick = 0
+
+[7]
+Name = "Atlans"
+GensBattle = 1
+DeathGate = 49
+CustomPick = 0
+
+[8]
+Name = "Tarkan"
+DeathGate = 57
+CustomPick = 0
+
+[9]
+Name = "Devil Square 1"
+DeathGate = 27
+CustomPick = 0
+
+[10]
+Name = "Icarus"
+DeathGate = 42
+CustomPick = 0
+
+[11]
+Name = "Blood Castle 1"
+DeathGate = 22
+CustomPick = 0
+
+[12]
+Name = "Blood Castle 2"
+DeathGate = 22
+CustomPick = 0
+
+[13]
+Name = "Blood Castle 3"
+DeathGate = 22
+CustomPick = 0
+
+[14]
+Name = "Blood Castle 4"
+DeathGate = 22
+CustomPick = 0
+
+[15]
+Name = "Blood Castle 5"
+DeathGate = 22
+CustomPick = 0
+
+[16]
+Name = "Blood Castle 6"
+DeathGate = 22
+CustomPick = 0
+
+[17]
+Name = "Blood Castle 7"
+DeathGate = 22
+CustomPick = 0
+
+[18]
+Name = "Chaos Castle 1"
+DeathGate = 17
+CustomPick = 0
+
+[19]
+Name = "Chaos Castle 2"
+DeathGate = 17
+CustomPick = 0
+
+[20]
+Name = "Chaos Castle 3"
+DeathGate = 17
+CustomPick = 0
+
+[21]
+Name = "Chaos Castle 4"
+DeathGate = 17
+CustomPick = 0
+
+[22]
+Name = "Chaos Castle 5"
+DeathGate = 17
+CustomPick = 0
+
+[23]
+Name = "Chaos Castle 6"
+DeathGate = 17
+CustomPick = 0
+
+[24]
+Name = "Kalima 1"
+DeathGate = 17
+CustomPick = 0
+
+[25]
+Name = "Kalima 2"
+DeathGate = 17
+CustomPick = 0
+
+[26]
+Name = "Kalima 3"
+DeathGate = 17
+CustomPick = 0
+
+[27]
+Name = "Kalima 4"
+DeathGate = 17
+CustomPick = 0
+
+[28]
+Name = "Kalima 5"
+DeathGate = 17
+CustomPick = 0
+
+[29]
+Name = "Kalima 6"
+DeathGate = 17
+CustomPick = 0
+
+[30]
+Name = "Castle Siege"
+DeathGate = 17
+CustomPick = 0
+
+[31]
+Name = "Land of Trials"
+DeathGate = 106
+SetItemDropRate = 5000
+CustomPick = 0
+
+[32]
+Name = "Devil Square 2"
+DeathGate = 27
+CustomPick = 0
+
+[33]
+Name = "Aida"
+DeathGate = 119
+CustomPick = 0
+
+[34]
+Name = "Crywolf"
+DeathGate = 118
+CustomPick = 0
+
+[36]
+Name = "Kalima 7"
+DeathGate = 17
+CustomPick = 0
+
+[37]
+Name = "Kanturu 1"
+DeathGate = 138
+ExeDropRate = 300000
+CustomPick = 0
+
+[38]
+Name = "Kanturu 2"
+DeathGate = 139
+CustomPick = 0
+
+[39]
+Name = "Kanturu 3"
+DeathGate = 137
+CustomPick = 0
+
+[40]
+Name = "Silent"
+DeathGate = 402
+CustomPick = 0
+
+[41]
+Name = "Barracks"
+DeathGate = 256
+CustomPick = 0
+
+[42]
+Name = "Refuge"
+DeathGate = 256
+CustomPick = 0
+
+[45]
+Name = "Illusion Temple 1"
+DeathGate = 17
+CustomPick = 0
+
+[46]
+Name = "Illusion Temple 2"
+DeathGate = 17
+CustomPick = 0
+
+[47]
+Name = "Illusion Temple 3"
+DeathGate = 17
+CustomPick = 0
+
+[48]
+Name = "Illusion Temple 4"
+DeathGate = 17
+CustomPick = 0
+
+[49]
+Name = "Illusion Temple 5"
+DeathGate = 17
+CustomPick = 0
+
+[50]
+Name = "Illusion Temple 6"
+DeathGate = 17
+CustomPick = 0
+
+[51]
+Name = "Elbeland"
+DeathGate = 267
+CustomStore = 1
+CustomPick = 0
+
+[52]
+Name = "Blood Castle 8"
+DeathGate = 22
+CustomPick = 0
+
+[53]
+Name = "Chaos Castle 7"
+DeathGate = 17
+CustomPick = 0
+
+[56]
+Name = "Swamp of Calmness"
+DeathGate = 273
+CustomPick = 0
+
+[57]
+Name = "Raklion 1"
+DeathGate = 286
+SocketItemDropRate = 10000
+CustomPick = 0
+
+[58]
+Name = "Raklion 2"
+DeathGate = 286
+CustomPick = 0
+
+[62]
+Name = "Santa Town"
+DeathGate = 22
+CustomPick = 0
+
+[63]
+Name = "Vulcanus"
+DeathGate = 294
+LoginGate = 50
+CustomPick = 0
+
+[64]
+Name = "Duel Arena"
+DeathGate = 294
+CustomPick = 0
+
+[65]
+Name = "Doppelganger 1"
+DeathGate = 267
+CustomPick = 0
+
+[66]
+Name = "Doppelganger 2"
+DeathGate = 267
+CustomPick = 0
+
+[67]
+Name = "Doppelganger 3"
+DeathGate = 267
+CustomPick = 0
+
+[68]
+Name = "Doppelganger 4"
+DeathGate = 267
+CustomPick = 0
+
+[69]
+Name = "Imperial Guardian 1"
+DeathGate = 22
+CustomPick = 0
+
+[70]
+Name = "Imperial Guardian 2"
+DeathGate = 22
+CustomPick = 0
+
+[71]
+Name = "Imperial Guardian 3"
+DeathGate = 22
+CustomPick = 0
+
+[72]
+Name = "Imperial Guardian 4"
+DeathGate = 22
+CustomPick = 0
+
+[79]
+Name = "Loren Market"
+DeathGate = 333
+CustomPick = 0
+
+[80]
+Name = "Karutan 1"
+DeathGate = 335
+CustomPick = 0
+
+[81]
+Name = "Karutan 2"
+DeathGate = 335
+MasterExpRate = 50
+CustomPick = 0
+
+[84]
+Name = "Ferea"
+DeathGate = 17
+CustomPick = 0
+
+[95]
+Name = "Archeron"
+DeathGate = 522
+CustomStore = 1
+CustomPick = 0

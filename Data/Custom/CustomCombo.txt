@@ -1,0 +1,44 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+0
+//-------------------
+// Primary Skills
+//--------------------------------------
+// [Skill.txt]
+// IDSkill      Comment
+//----------------------------------
+	19			//Falling Slash
+	20			//Lunge
+	21			//Uppercut
+	22			//Cyclone
+	23			//Slash
+	6			//Teleport
+	214			//Drain Life
+	45			//Mana Glaive
+end
+
+1
+//--------------------------------
+// Secundary and thirty Skills
+//--------------------------------------
+// [Skill.txt]
+// IDSkill      Comment
+//--------------------------------------
+	17			//Energy Ball
+	38			//Decay
+	3			//Lightning
+	7			//Ice
+	12			//Aqua Beam
+	14			//Inferno
+	41			//Twisting Slash
+	42			//Rageful Blow
+	43			//Death Stab
+	232			//Frozen Stab S6+
+	215			//Chain Lightning
+	230			//Red Storm
+end

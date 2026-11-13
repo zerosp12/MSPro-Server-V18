@@ -1,0 +1,125 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  © 2020 - 2022 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+//==============
+// [INFO]
+//==============
+//     TYPE INDEX : 0 - NPC // 1 - SPOTS  // 2 - MONSTER INDIVIDUAL //  4 - EVENTS
+
+0
+//------
+// NPCS
+//---------------------------------------------------------------
+//                [0~30]        [1~255]     [1~255]     [-1/0~8]
+// MonsterIndex   SpawnRadius   LocationX   LocationY   Direction
+//---------------------------------------------------------------
+   232            0             10          9           1         //Archangel
+end
+
+4
+//--------
+// EVENTS
+//---------------------------------------------------------------
+//                [0~30]        [1~255]     [1~255]     [-1/0~8]
+// MonsterIndex   SpawnRadius   LocationX   LocationY   Direction
+//---------------------------------------------------------------
+   429            30            13          45          7         //Chief Skeleton Archer
+   432            30            13          78          7         //Red Skeleton Knight
+   430            30            15          46          7         //Dark Skull Soldier
+   432            30            14          83          7         //Red Skeleton Knight
+   432            30            14          78          7         //Red Skeleton Knight
+   430            30            15          63          7         //Dark Skull Soldier
+   431            30            13          69          7         //Giant Ogre
+   428            30            14          34          7         //Chief Skeleton Warrior
+   430            30            15          53          7         //Dark Skull Soldier
+   429            30            13          23          7         //Chief Skeleton Archer
+   429            30            15          43          7         //Chief Skeleton Archer
+   428            30            14          38          7         //Chief Skeleton Warrior
+   430            30            13          65          7         //Dark Skull Soldier
+   432            30            15          78          7         //Red Skeleton Knight
+   430            30            13          67          7         //Dark Skull Soldier
+   431            30            14          61          7         //Giant Ogre
+   432            30            16          80          7         //Red Skeleton Knight
+   430            30            15          59          7         //Dark Skull Soldier
+   430            30            13          59          7         //Dark Skull Soldier
+   430            30            15          55          7         //Dark Skull Soldier
+   429            30            15          39          7         //Chief Skeleton Archer
+   428            30            13          35          7         //Chief Skeleton Warrior
+   430            30            13          62          7         //Dark Skull Soldier
+   431            30            13          55          7         //Giant Ogre
+   429            30            15          37          7         //Chief Skeleton Archer
+   428            30            13          28          7         //Chief Skeleton Warrior
+   429            30            13          29          7         //Chief Skeleton Archer
+   429            30            15          28          7         //Chief Skeleton Archer
+   429            30            13          25          7         //Chief Skeleton Archer
+   429            30            13          21          7         //Chief Skeleton Archer
+   429            30            14          22          7         //Chief Skeleton Archer
+   429            30            15          21          7         //Chief Skeleton Archer
+   429            30            13          31          7         //Chief Skeleton Archer
+   429            30            15          30          7         //Chief Skeleton Archer
+   429            30            15          33          7         //Chief Skeleton Archer
+   431            30            14          58          7         //Giant Ogre
+   428            30            15          35          7         //Chief Skeleton Warrior
+   428            30            14          33          7         //Chief Skeleton Warrior
+   428            30            15          41          7         //Chief Skeleton Warrior
+   428            30            14          42          7         //Chief Skeleton Warrior
+   429            30            14          21          7         //Chief Skeleton Archer
+   428            30            15          25          7         //Chief Skeleton Warrior
+   428            30            15          23          7         //Chief Skeleton Warrior
+   428            30            13          26          7         //Chief Skeleton Warrior
+   430            30            13          41          7         //Dark Skull Soldier
+   430            30            15          69          7         //Dark Skull Soldier
+   428            30            13          37          7         //Chief Skeleton Warrior
+   429            30            13          43          7         //Chief Skeleton Archer
+   430            30            13          50          7         //Dark Skull Soldier
+   430            30            15          48          7         //Dark Skull Soldier
+   430            30            13          46          7         //Dark Skull Soldier
+   432            30            15          62          7         //Red Skeleton Knight
+   431            30            14          52          7         //Giant Ogre
+   431            30            15          50          7         //Giant Ogre
+   431            30            15          66          7         //Giant Ogre
+   432            30            17          83          7         //Red Skeleton Knight
+   432            30            14          90          7         //Red Skeleton Knight
+   432            30            11          83          7         //Red Skeleton Knight
+   432            30            15          94          7         //Red Skeleton Knight
+   428            30            14          40          7         //Chief Skeleton Warrior
+   428            30            13          39          7         //Chief Skeleton Warrior
+   432            30            20          82          7         //Red Skeleton Knight
+   432            30            20          88          7         //Red Skeleton Knight
+   428            30            14          27          7         //Chief Skeleton Warrior
+   428            30            14          24          7         //Chief Skeleton Warrior
+   428            30            14          32          7         //Chief Skeleton Warrior
+   430            30            14          44          7         //Dark Skull Soldier
+   430            30            15          51          7         //Dark Skull Soldier
+   430            30            14          49          7         //Dark Skull Soldier
+   431            30            14          56          7         //Giant Ogre
+   430            30            15          57          7         //Dark Skull Soldier
+   430            30            14          64          7         //Dark Skull Soldier
+   430            30            14          67          7         //Dark Skull Soldier
+   431            30            14          70          7         //Giant Ogre
+   430            30            13          53          7         //Dark Skull Soldier
+   428            30            15          45          7         //Chief Skeleton Warrior
+   432            30            14          54          7         //Red Skeleton Knight
+   432            30            14          36          7         //Red Skeleton Knight
+   432            30            15          68          7         //Red Skeleton Knight
+   431            30            13          48          7         //Giant Ogre
+   432            30            14          47          7         //Red Skeleton Knight
+   431            30            13          63          7         //Giant Ogre
+   430            30            15          65          7         //Dark Skull Soldier
+   430            30            15          60          7         //Dark Skull Soldier
+   430            30            13          57          7         //Dark Skull Soldier
+   428            30            15          31          7         //Chief Skeleton Warrior
+   429            30            15          26          7         //Chief Skeleton Archer
+   433            30            16          87          7         //Magic Skeleton
+   433            30            12          81          7         //Magic Skeleton
+   433            30            13          88          7         //Magic Skeleton
+   433            30            13          85          7         //Magic Skeleton
+   433            30            19          85          7         //Magic Skeleton
+   433            30            13          93          7         //Magic Skeleton
+   433            30            14          80          7         //Magic Skeleton
+   433            30            18          81          7         //Magic Skeleton
+end

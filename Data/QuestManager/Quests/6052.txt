@@ -1,0 +1,20 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6052
+// Caceria Doble - Dungeon
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			4320				4	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				17				66			//Matar 66 Cyclops
+	1				12				66			//Matar 66 Larva
+end
+
+2
+	0				975000
+	7				101				2			//Silver Box x2
+	7				130				1			//Quest Chest T1 (class gear)
+end

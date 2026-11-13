@@ -1,0 +1,22 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6063
+// Mision Semanal - Lost Tower
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			10080				32	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				39				130			//Matar 130 Poison Shadow
+	1				40				130			//Matar 130 Death Knight
+end
+
+2
+	0				2700000
+	7				100				1			//Golden Box
+	7				131				2			//Quest Chest T2 (class gear)
+	6				45				//Ruud
+	1				2				5			//Bonus points (kept after resets)
+end

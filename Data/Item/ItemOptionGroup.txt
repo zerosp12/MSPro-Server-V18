@@ -1,0 +1,264 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: mspromu
+//->>  2020 - 2024 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+//NOTE: THIS SYSTEM DOESN'T APPLY FOR ITEM TYPE 13+. USE 
+
+//==============
+// OptionType: "Server\Variables-Guias-Otros\Item Options.txt"
+//==============
+//0 = Option1 (Skill)
+//1 = Option2 (Luck)
+//2 = Option3 (Jewel of Life)
+//3 = NewOption1 (Excellent 1)
+//4 = NewOption2 (Excellent 2)
+//5 = NewOption3 (Excellent 4)
+//6 = NewOption4 (Excellent 8)
+//7 = NewOption5 (Excellent 16)
+//8 = NewOption6 (Excellent 32)
+//9 = Common1
+//10 = Common2
+//11 = Common3
+//12 = Common4
+//13 = Common5
+
+//80 = Add Physi Damage
+//81 = Add Magic Damage
+//82 = Add Defense Sucess Rate
+//83 = Add Defense
+//84 = Add Critical Damage Rate
+//85 = Add HP Recovery Rate
+//86 = Add Money Amount Drop Rate
+//87 = Mul Defense Sucess Rate
+//88 = Add Damage Reflect
+//89 = Add Damage Reduction
+//90 = Mul MP
+//91 = Mul HP
+//92 = Add Excellent Damage Rate
+//93 = Add Physic Damage by Level [Value of levels which add 1 Physic]
+//94 = Mul Physic Damage
+//95 = Add Magic Damage by Level [Value of levels which add 1 Magic] 
+//96 = Mul Magic Damage
+//97 = Add Speed
+//98 = Add Hunt HP [Total HP / Value]
+//99 = Add Hunt MP [Total MP / Value]
+//100 = Add Wing HP
+//101 = Add Wing MP
+//102 = Add Ignore Defense Rate
+//103 = Add AG
+//104 = Mul AG
+//105 = Add Wing Leadership
+//106 = Add Fenrir1
+//107 = Add Fenrir2
+//108 = Add Fenrir3
+//109 = Add Full Damage Reflect Rate
+//110 = Add Defensive Full HP Restore Rate
+//111 = Add Defensive Full MP Restore Rate
+//112 = Add Dinorant1
+//113 = Add Curse Damage
+//114 = Add Curse Damage by Level
+//115 = Mul Curse Damage
+//116 = Add Double Damage Rate
+//117 = Add Experience Rate
+//118 = Add Combo Experience Rate
+//119 = Add HP
+//120 = Add MP
+//121 = Add HP by Level
+//122 = Add MP by Level
+//123 = Add Damage
+//124 = Add Damage by Level
+//125 = Mul Damage
+//126 = Add Defense by Level
+//127 = Mul Defense
+//128 = TRIPLE DAMAGE RATE
+//129 = RESIST DOUBLE_DAMAGE_RATE
+//130 = RESIST IGNORE_DEFENSE_RATE
+//131 = RESIST IGNORE_SHIELD_RATE
+//132 = RESIST CRITICAL_DAMAGE_RATE
+//133 = RESIST EXCELLENT_DAMAGE_RATE
+//134 = BLOCK STUCK
+//135 = RESIST STUN RATE
+//136 = ADD STRENGHT 
+//137 = ADD DEXTERITY
+//138 = ADD VITALITY 
+//139 = ADD ENERGY
+//140 = ADD LEADERSHIP 
+//-----------------------------------------------
+//	[0~999999]		OptionType	Value
+//	OptionIndex
+//-----------------------------------------------
+//Note : do not add elemental or mastery stats
+//-----------------------------------------------
+0
+//Blood Angel Physic
+	0         		80			50  	//Physic Damage	
+//Blood Angel Physic/Magic
+	1         		80			50  	//Physic Damage	
+	1         		81			50  	//Magic Damage	
+//Blood Angel Magic
+	2         		81			50  	//Magic Damage
+//Blood Angel Magic/Curse
+	3         		81			50  	//Magic Damage
+	3         		113			50  	//Curse Damage
+//Blood Angel Stat
+	4         		136			10  	//STRENGHT
+	4         		137			10  	//DEXTERITY
+	4         		138			10  	//VITALITY
+	4         		139			10  	//ENERGY
+	4         		140			10  	//LEADERSHIP
+	
+	5         		119			1600  	//LEADERSHIP
+
+//Apocapypse 
+//DW
+	6				81			3160	//wizardry
+	6         		102			9	  	//Ignore Def
+	6         		136			680  	//STRENGHT
+	6         		137			680  	//DEXTERITY
+	6         		138			680  	//VITALITY
+	6         		139			680  	//ENERGY
+	6         		140			680  	//LEADERSHIP
+	6         		83			4280  	//Def [replace Webzen base Mastery Def] 
+	6         		128			12  	//X3 DmG rate
+	6         		119			10580  	//HP [replace Webzen base Mastery Life] 
+	6         		89			5  		//Damage Reduction [replace Webzen base Mastery Damage Decrease, 5% original stats] 
+//Elf
+	7         		83			10280  	//Def + Mastery Def
+	7         		119			12200  	//HP
+	7         		136			680  	//STRENGHT
+	7         		137			680  	//DEXTERITY
+	7         		138			680  	//VITALITY
+	7         		139			680  	//ENERGY
+	7         		140			680  	//LEADERSHIP
+	7         		119			8660  	//Add HP [replace Webzen base Mastery Life] 
+	7         		89			20  	//Damage Reduction [replace Webzen base Mastery Damage Decrease, 5% original stats]
+
+
+//-----------------------------------------------
+//[Guardians]
+//-----------------------------------------------
+//Phantasmal Steed +0
+	400				83 			400		//Def
+	400				123 		400		//Damage
+//-----------------------------------------------
+//[Muun]
+//-----------------------------------------------
+//Test
+	500				123			400		//damage
+	500				83			400		//damage
+end
+
+//-----------------------------------------------
+//	[0~999999]  	[0~999999]   
+//	Group   		OptionIndex     
+//-----------------------------------------------
+1
+	0         		0 
+	1         		1
+	2         		2
+	3         		3
+	4         		4
+	5         		5
+	6         		6
+	7         		7
+//Guardian
+	400				400
+//Muun
+	500				500
+end
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// [Ancient]
+//	*: Don't Check
+//	0: No Ancient
+//	1: 1st Ancient Type
+//	2: 2nd Ancient Type
+//	3: Both Ancient Types
+//
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//	[0~999999]  	[0~15 / 0~511] [0~15 / 0~511]      	[*/0-1]       [*/0-1]       [*/0~7]       [*/0~7]         	[*/0~63]     [*/0~15]	  [*/0~15]      [*/0~3]
+//	Group   		ItemMinIndex   ItemMaxIndex   		SkillSwitch   LuckSwitch    AditionalMin  AditionalMax    	Excellent    ItemLvlMin   ItemLvlMax    Ancient        Comment
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2
+//=======================================
+//[Ruud] Blood Angel +9 options
+//=======================================
+//[Physic Damage+50]
+//Others
+	0         		7		101    7		104			*             *             *             *					*            9			  15			  1			   //
+	0         		8		101    8		104			*             *             *             *					*            9			  15			  1			   //
+	0         		9		101    9		104			*             *             *             *					*            9			  15			  1			   //
+	0         		10		101    10		104			*             *             *             *					*            9			  15			  1			   //
+	0         		11		101    11		104			*             *             *             *					*            9			  15			  1			   //
+//RF
+	0         		7		106    7		106			*             *             *             *					*            9			  15			  1			   //
+	0         		8		106    8		106			*             *             *             *					*            9			  15			  1			   //
+	0         		9		106    9		106			*             *             *             *					*            9			  15			  1			   //
+	0         		11		106    11		106			*             *             *             *					*            9			  15			  1			   //
+//[Physic/Magic Damage+50]
+//DK set B
+	5         		7		101    7		101			*             *             *             *					*            9			  15			  2			   //
+	5         		8		101    8		101			*             *             *             *					*            9			  15			  2			   //
+	5         		9		101    9		101			*             *             *             *					*            9			  15			  2			   //
+	5         		10		101    10		101			*             *             *             *					*            9			  15			  2			   //
+	5         		11		101    11		101			*             *             *             *					*            9			  15			  2			   //
+//[Magic Damage+50]
+//DW
+	2         		7		100    7		100			*             *             *             *					*            9			  15			  1			   //
+	2         		8		100    8		100			*             *             *             *					*            9			  15			  1			   //
+	2         		9		100    9		100			*             *             *             *					*            9			  15			  1			   //
+	2         		10		100    10		100			*             *             *             *					*            9			  15			  1			   //
+	2         		11		100    11		100			*             *             *             *					*            9			  15			  1			   //
+//MG set B
+	2         		8		103    8		103			*             *             *             *					*            9			  15			  2			   //
+	2         		9		103    9		103			*             *             *             *					*            9			  15			  2			   //
+	2         		10		103    10		103			*             *             *             *					*            9			  15			  2			   //
+	2         		11		103    11		103			*             *             *             *					*            9			  15			  2			   //
+//[Magic/Curse Damage+50]
+//SUM
+	3         		7		105    7		105			*             *             *             *					*            9			  15			  1			   //
+	3         		8		105    8		105			*             *             *             *					*            9			  15			  1			   //
+	3         		9		105    9		105			*             *             *             *					*            9			  15			  1			   //
+	3         		10		105    10		105			*             *             *             *					*            9			  15			  1			   //
+	3         		11		105    11		105			*             *             *             *					*            9			  15			  1			   //
+//[All Stats +10]
+	4         		7		100    7		106			*             *             *             *					*            9			  15			  3			   //
+	4         		8		100    8		106			*             *             *             *					*            9			  15			  3			   //
+	4         		9		100    9		106			*             *             *             *					*            9			  15			  3			   //
+	4         		10		100    10		106			*             *             *             *					*            9			  15			  3			   //
+	4         		11		100    11		106			*             *             *             *					*            9			  15			  3			   //
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//=======================================
+//[Ruud] Apolalypse 
+//=======================================
+//dw
+	6         		7		156    7		156			*             *             *             *					*            *			  *			  	  1			   //
+	6         		8		156    8		156			*             *             *             *					*            *			  *			      1			   //
+	6         		9		156    9		156			*             *             *             *					*            *			  *			      1			   //
+	6         		10		156    10		156			*             *             *             *					*            *			  *			      1			   //
+//Elf
+	7         		7		158    7		158			*             *             *             *					*            *			  *			  	  2			   //
+	7         		8		158    8		158			*             *             *             *					*            *			  *			      2			   //
+	7         		9		158    9		158			*             *             *             *					*            *			  *			      2			   //
+	7         		10		158    10		158			*             *             *             *					*            *			  *			      2			   //
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//=======================================
+//Muun Pet 
+//=======================================
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//	[0~999999]  	[0~15 / 0~511] [0~15 / 0~511]      	[*/0-1]       [*/0-1]       [*/0~7]       [*/0~7]         	[*/0~63]     [*/0~15]	  [*/0~15]      [*/0~3]
+//	Group   		ItemMinIndex   ItemMaxIndex   		SkillSwitch   LuckSwitch    AditionalMin  AditionalMax    	Excellent    ItemLvlMin   ItemLvlMax    Ancient        Comment
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	500         	13		204    13		204			*             *             *             *					*            *			  *			  	  *			   //DarkWizard
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//=======================================
+//Guardian 
+//=======================================
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//	[0~999999]  	[0~15 / 0~511] [0~15 / 0~511]      	[*/0-1]       [*/0-1]       [*/0~7]       [*/0~7]         	[*/0~63]     [*/0~15]	  [*/0~15]      [*/0~3]
+//	Group   		ItemMinIndex   ItemMaxIndex   		SkillSwitch   LuckSwitch    AditionalMin  AditionalMax    	Excellent    ItemLvlMin   ItemLvlMax    Ancient        Comment
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	400         	13		400    13		400			*             *             *             *					*            *			  *			  	  *			   //Phantasmal Steed
+end

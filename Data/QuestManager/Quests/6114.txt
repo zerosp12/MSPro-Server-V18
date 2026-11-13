@@ -1,0 +1,20 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6114
+// Encargo de Joyas - Vulcanus
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			10080				75	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	3				14				13			*				8			*			*			*			*			*			*			//Entregar 8 Jewel of Bless
+	3				14				14			*				5			*			*			*			*			*			*			//Entregar 5 Jewel of Soul
+end
+
+2
+	0				3000000
+	7				100				1			//Golden Box
+	7				132				1			//Quest Chest T3 (class gear)
+end

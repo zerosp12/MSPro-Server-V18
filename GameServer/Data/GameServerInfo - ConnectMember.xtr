@@ -1,0 +1,20 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 -2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+0
+//---------------------------------------------------------------------------------------------
+// (0) -> Tipo
+// (1) -> Cuenta
+// (2) -> Nombre de Personaje (Solo para Tipo 2)
+//---------------------------------------------------------------------------------------------
+// 0 - Acceso Completo	-->		Permite Acceso a todos los PJS de la Cuenta
+// 1 - Solo GMs			-->		Este solo permitira conectar a los PJ GM (CtlCode 32)
+// 2 - Solo PJ x Nombre	-->     Este solo permte conectar al PJ que tenga el Nombre ingresado
+//---------------------------------------------------------------------------------------------
+//(0)	(1)			(2)
+//2		"mspro1"	"Msprobk"
+//1		"mspro2"	""
+end

@@ -1,0 +1,2 @@
+# keep every file byte for byte (the servers read CRLF and Latin-1 files)
+* -text

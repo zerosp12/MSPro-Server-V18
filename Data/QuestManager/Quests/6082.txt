@@ -1,0 +1,20 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6082
+// Caceria Doble - Tarkan
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			4320				57	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				62				78			//Matar 78 Mutant
+	1				61				78			//Matar 78 Beam Knight
+end
+
+2
+	0				1425000
+	7				101				2			//Silver Box x2
+	7				131				1			//Quest Chest T2 (class gear)
+end

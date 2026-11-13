@@ -1,0 +1,145 @@
+//---------------------------------------------------------------------------------------------------------------
+// Quest Chest T4 (class gear, ItemBagEx format). Dropped via quest reward type 7.
+//---------------------------------------------------------------------------------------------------------------
+
+3
+//Index   DropRate
+0         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW DK FE MG DL SU RF GL
+0         5         10000         0             2             1  0  0  0  0  0  0  0
+0         6         10000         0             2             0  1  0  0  0  0  0  0
+0         7         10000         0             2             0  0  1  0  0  0  0  0
+0         8         10000         0             2             0  0  0  1  0  0  0  0
+0         9         10000         0             2             0  0  0  0  1  0  0  0
+0         10        10000         0             2             0  0  0  0  0  1  0  0
+0         11        10000         0             2             0  0  0  0  0  0  1  0
+0         12        10000         0             2             0  0  0  0  0  0  0  1
+end
+
+5
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DW)
+2573	0	0	36	11	12	26	20	*	*	*	//Platina Staff
+3636	0	0	36	11	12	26	20	*	*	*	//Hades Helm
+2571	0	0	36	11	12	26	20	*	*	*	//Staff of Kundun
+4638	0	0	36	11	12	26	20	*	*	*	//Venom Mist Pants
+4148	0	0	36	11	12	26	20	*	*	*	//Hades Armor
+3606	0	0	36	11	12	26	20	*	*	*	//Dark Soul Helm
+2572	0	0	36	11	12	26	20	*	*	*	//Grand Viper Staff
+3614	0	0	36	11	12	26	20	*	*	*	//Venom Mist Helm
+2591	0	0	36	11	12	26	20	*	*	*	//Inberial Staff
+4126	0	0	36	11	12	26	20	*	*	*	//Venom Mist Armor
+4630	0	0	36	11	12	26	20	*	*	*	//Dark Soul Pants
+3092	0	0	36	11	12	26	20	*	*	*	//Guardian Shield
+4660	0	0	36	11	12	26	20	*	*	*	//Hades Pants
+5150	0	0	36	11	12	26	20	*	*	*	//Venom Mist Gloves
+end
+
+6
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DK)
+4653	0	0	36	11	12	26	20	*	*	*	//Titan  Pants
+4654	0	0	36	11	12	26	20	*	*	*	//Brave Pants
+4629	0	0	36	11	12	26	20	*	*	*	//Great Dragon Pants
+4117	0	0	36	11	12	26	20	*	*	*	//Great Dragon Armor
+1547	0	0	36	12	12	26	20	*	*	*	//Brova
+4637	0	0	36	11	12	26	20	*	*	*	//Dragon Knight Pants
+20	0	0	36	12	12	26	20	*	*	*	//Knight Blade
+3629	0	0	36	11	12	26	20	*	*	*	//Titan Helm
+22	0	0	36	12	12	26	20	*	*	*	//Bone Blade
+4142	0	0	36	11	12	26	20	*	*	*	//Brave Armor
+4141	0	0	36	11	12	26	20	*	*	*	//Titan Armor
+3630	0	0	36	11	12	26	20	*	*	*	//Brave Helm
+26	0	0	36	12	12	26	20	*	*	*	//Flameberge
+27	0	0	36	12	12	26	20	*	*	*	//Sword Breaker
+end
+
+7
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (ELF)
+4145	0	0	36	11	12	26	20	*	*	*	//Seraphim Armor
+2072	0	0	36	12	12	26	20	*	*	*	//Aileen Bow
+3615	0	0	36	11	12	26	20	*	*	*	//Sylphid Ray Helm
+4120	0	0	36	11	12	26	20	*	*	*	//Red Sprit Armor
+3633	0	0	36	11	12	26	20	*	*	*	//Seraphim Helm
+4657	0	0	36	11	12	26	20	*	*	*	//Seraphim Pants
+2069	0	0	36	12	12	26	20	*	*	*	//Sylph Wind Bow
+5663	0	0	36	11	12	26	20	*	*	*	//Sylphid Ray Boots
+4127	0	0	36	11	12	26	20	*	*	*	//Sylphid Ray Armor
+4639	0	0	36	11	12	26	20	*	*	*	//Sylphid Ray Pants
+1040	0	0	36	11	12	26	20	*	*	*	//Frost Mace
+5151	0	0	36	11	12	26	20	*	*	*	//Sylphid Ray Gloves
+2070	0	0	36	12	12	26	20	*	*	*	//Albatross Bow
+2071	0	0	36	12	12	26	20	*	*	*	//Dark Stinger
+end
+
+8
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (MG)
+4119	0	0	36	11	12	26	20	*	*	*	//Hurricane Armor
+4640	0	0	36	11	12	26	20	*	*	*	//Volcano Pants
+2590	0	0	36	11	12	26	20	*	*	*	//Deadly Staff
+4144	0	0	36	11	12	26	20	*	*	*	//Destroy Armor
+2593	0	0	36	11	12	26	20	*	*	*	//Chromatic Staff
+4143	0	0	36	11	12	26	20	*	*	*	//Phantom Armor
+4655	0	0	36	11	12	26	20	*	*	*	//Phantom  Pants
+4116	0	0	36	11	12	26	20	*	*	*	//Thunder Hawk Armor
+4631	0	0	36	11	12	26	20	*	*	*	//Hurricane Pants
+4133	0	0	36	11	12	26	20	*	*	*	//Valiant Armor
+28	0	0	36	12	12	26	20	*	*	*	//Rune Bastard Sword
+5152	0	0	36	11	12	26	20	*	*	*	//Volcano Gloves
+5655	0	0	36	11	12	26	20	*	*	*	//Hurricane Boots
+23	0	0	36	12	12	26	20	*	*	*	//Explosion Blade
+end
+
+9
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DL)
+4134	0	0	36	11	12	26	20	*	*	*	//Glorious Armor
+1039	0	0	36	12	12	26	20	*	*	*	//Shining Scepter
+5665	0	0	36	11	12	26	20	*	*	*	//Sunlight Boots
+1036	0	0	36	12	12	26	20	*	*	*	//Great Lord Scepter
+4641	0	0	36	11	12	26	20	*	*	*	//Sunlight Pants
+1041	0	0	36	12	12	26	20	*	*	*	//Absolute Scepter
+1042	0	0	36	12	12	26	20	*	*	*	//Striker Scepter
+4124	0	0	36	11	12	26	20	*	*	*	//Dark Master Armor
+4129	0	0	36	11	12	26	20	*	*	*	//Sunlight Armor
+5153	0	0	36	11	12	26	20	*	*	*	//Sunlight Gloves
+4659	0	0	36	11	12	26	20	*	*	*	//Royal Pants
+4636	0	0	36	11	12	26	20	*	*	*	//Dark Master Pants
+3635	0	0	36	11	12	26	20	*	*	*	//Royal Mask
+3617	0	0	36	11	12	26	20	*	*	*	//Sunlight Mask
+end
+
+10
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (SUM)
+4140	0	0	36	11	12	26	20	*	*	*	//Eternal Armor
+3627	0	0	36	11	12	26	20	*	*	*	//Storm Blitz Helm
+2580	0	0	36	11	12	26	20	*	*	*	//Eternal Wing Stick
+3637	0	0	36	11	12	26	20	*	*	*	//Queen Helm
+4149	0	0	36	11	12	26	20	*	*	*	//Queen Armor
+2594	0	0	36	11	12	26	20	*	*	*	//Raven Stick
+2579	0	0	36	11	12	26	20	*	*	*	//Storm Blitz Stick
+4652	0	0	36	11	12	26	20	*	*	*	//Eternal Pants
+4651	0	0	36	11	12	26	20	*	*	*	//Storm Blitz Pants
+5173	0	0	36	11	12	26	20	*	*	*	//Queen Gloves
+5685	0	0	36	11	12	26	20	*	*	*	//Queen Boots
+3628	0	0	36	11	12	26	20	*	*	*	//Eternal Helm
+4661	0	0	36	11	12	26	20	*	*	*	//Queen Pants
+4139	0	0	36	11	12	26	20	*	*	*	//Storm Blitz Armor
+end
+
+11
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (RF)
+5705	0	0	36	11	12	26	20	*	*	*	//Phoenix Soul Boots
+4681	0	0	36	11	12	26	20	*	*	*	//Phoenix Soul Pants
+4169	0	0	36	11	12	26	20	*	*	*	//Phoenix Soul Armor
+35	0	0	36	12	12	26	20	*	*	*	//Phoenix Soul Star
+3657	0	0	36	11	12	26	20	*	*	*	//Phoenix Soul Helm
+34	0	0	36	12	12	26	20	*	*	*	//Piercing Glove
+end
+
+12
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (GL)
+1552	0	0	36	12	12	26	20	*	*	*	//Vis Lance
+4189	0	0	36	11	12	26	20	*	*	*	//Princie Armor
+1551	0	0	36	12	12	26	20	*	*	*	//Pluma Lance
+end

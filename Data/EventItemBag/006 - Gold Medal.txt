@@ -1,0 +1,179 @@
+//---------------------------------------------------------------------------------------------------------------
+// Gold Medal (ItemBagEx). Class gear 40-85 req. level with low-rate options + jewels/rings/pets.
+// Level +0..+9 (preset 61), skill/luck/option presets 61 in ItemOptionRate.txt.
+//---------------------------------------------------------------------------------------------------------------
+
+3
+//Index   DropRate
+0         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW DK FE MG DL SU RF GL
+0         5         8500          0             2             1  0  0  0  0  0  0  0
+0         6         8500          0             2             0  1  0  0  0  0  0  0
+0         7         8500          0             2             0  0  1  0  0  0  0  0
+0         8         8500          0             2             0  0  0  1  0  0  0  0
+0         9         8500          0             2             0  0  0  0  1  0  0  0
+0         10        8500          0             2             0  0  0  0  0  1  0  0
+0         11        8500          0             2             0  0  0  0  0  0  1  0
+0         12        8500          0             2             0  0  0  0  0  0  0  1
+0         13        1500          0             0             1  1  1  1  1  1  1  1
+end
+
+5
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DW)
+5123	0	0	61	11	61	61	0	*	*	*	//Legendary Gloves
+5667	0	0	61	11	61	61	0	*	*	*	//Eclipse Boots
+520	0	0	61	61	61	61	0	*	*	*	//Crescent Axe
+4677	0	0	61	11	61	61	0	*	*	*	//Lucky Legendary Pants
+3619	0	0	61	11	61	61	0	*	*	*	//Eclipse Helm
+3653	0	0	61	11	61	61	0	*	*	*	//Lucky Legendary Helm
+3087	0	0	61	11	61	61	0	*	*	*	//Grand Soul Shield
+4611	0	0	61	11	61	61	0	*	*	*	//Legendary Pants
+5155	0	0	61	11	61	61	0	*	*	*	//Eclipse Gloves
+5701	0	0	61	11	61	61	0	*	*	*	//Lucky Legendary Boots
+5138	0	0	61	11	61	61	0	*	*	*	//Grand Soul Gloves
+5650	0	0	61	11	61	61	0	*	*	*	//Grand Soul Boots
+4165	0	0	61	11	61	61	0	*	*	*	//Lucky Legendary Armor
+5189	0	0	61	11	61	61	0	*	*	*	//Lucky Legendary Gloves
+end
+
+6
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DK)
+15	0	0	61	61	61	61	0	*	*	*	//Giant Sword
+4130	0	0	61	11	61	61	0	*	*	*	//Ashcrow Armor
+5666	0	0	61	11	61	61	0	*	*	*	//Ashcrow Boots
+3084	0	0	61	11	61	61	0	*	*	*	//Bronze Shield
+1029	0	0	61	61	61	61	0	*	*	*	//Crystal Sword
+1545	0	0	61	61	61	61	0	*	*	*	//Bill of Balrog
+3618	0	0	61	11	61	61	0	*	*	*	//Ashcrow Helm
+1028	0	0	61	61	61	61	0	*	*	*	//Crystal Morning Star
+4624	0	0	61	11	61	61	0	*	*	*	//Black Dragon Pants
+4617	0	0	61	11	61	61	0	*	*	*	//Plate Pants
+3080	0	0	61	11	61	61	0	*	*	*	//Tower Shield
+4675	0	0	61	11	61	61	0	*	*	*	//Lucky Dragon Pants
+4163	0	0	61	11	61	61	0	*	*	*	//Lucky Dragon Armor
+1540	0	0	61	61	61	61	0	*	*	*	//Serpent Spear
+end
+
+7
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (ELF)
+5645	0	0	61	11	61	61	0	*	*	*	//Spirit Boots
+2061	0	0	61	61	61	61	0	*	*	*	//Bluewing Crossbow
+4164	0	0	61	11	61	61	0	*	*	*	//Lucky Guardian Armor
+2052	0	0	61	61	61	61	0	*	*	*	//Tiger Bow
+2064	0	0	61	61	61	61	0	*	*	*	//Saint Crossbow
+5188	0	0	61	11	61	61	0	*	*	*	//Lucky Guardian Gloves
+14	0	0	61	61	61	61	0	*	*	*	//Lighting Sword
+5134	0	0	61	11	61	61	0	*	*	*	//Guardian Gloves
+2054	0	0	61	61	61	61	0	*	*	*	//Chaos Nature Bow
+5646	0	0	61	11	61	61	0	*	*	*	//Guardian Boots
+5156	0	0	61	11	61	61	0	*	*	*	//Iris Gloves
+1029	0	0	61	61	61	61	0	*	*	*	//Crystal Sword
+13	0	0	61	61	61	61	0	*	*	*	//Double Blade
+3652	0	0	61	11	61	61	0	*	*	*	//Lucky Guardian Helm
+end
+
+8
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (MG)
+10	0	0	61	61	61	61	0	*	*	*	//Light Saber
+3085	0	0	61	11	61	61	0	*	*	*	//Dragon Shield
+1536	0	0	61	61	61	61	0	*	*	*	//Light Spear
+2567	0	0	61	11	61	61	0	*	*	*	//Chaos Lighting Staff
+2566	0	0	61	11	61	61	0	*	*	*	//Staff of Resurrection
+5633	0	0	61	11	61	61	0	*	*	*	//Dragon Boots
+5641	0	0	61	11	61	61	0	*	*	*	//Plate Boots
+1029	0	0	61	61	61	61	0	*	*	*	//Crystal Sword
+13	0	0	61	61	61	61	0	*	*	*	//Double Blade
+16	0	0	61	61	61	61	0	*	*	*	//Sword of Destruction
+5121	0	0	61	11	61	61	0	*	*	*	//Dragon Gloves
+5135	0	0	61	11	61	61	0	*	*	*	//Storm Crow Gloves
+5191	0	0	61	11	61	61	0	*	*	*	//Lucky Atlans Gloves
+3086	0	0	61	11	61	61	0	*	*	*	//Legendary Shield
+end
+
+9
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (DL)
+5657	0	0	61	11	61	61	0	*	*	*	//Light Plate Boots
+3083	0	0	61	11	61	61	0	*	*	*	//Serpent Shield
+1034	0	0	61	61	61	61	0	*	*	*	//Great Scepter
+4162	0	0	61	11	61	61	0	*	*	*	//Lucky Dark Soul Armor
+4122	0	0	61	11	61	61	0	*	*	*	//Adamantine Armor
+3093	0	0	61	11	61	61	0	*	*	*	//Cross Shield
+5659	0	0	61	11	61	61	0	*	*	*	//Dark Steel Boots
+3610	0	0	61	11	61	61	0	*	*	*	//Adamantine Mask
+1033	0	0	61	61	61	61	0	*	*	*	//Master Scepter
+4121	0	0	61	11	61	61	0	*	*	*	//Light Plate Armor
+5186	0	0	61	11	61	61	0	*	*	*	//Lucky Dark Soul Gloves
+5698	0	0	61	11	61	61	0	*	*	*	//Lucky Dark Soul Boots
+4674	0	0	61	11	61	61	0	*	*	*	//Lucky Dark Soul Pants
+5145	0	0	61	11	61	61	0	*	*	*	//Light Plate Gloves
+end
+
+10
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (SUM)
+4137	0	0	61	11	61	61	0	*	*	*	//Ancient Armor
+5160	0	0	61	11	61	61	0	*	*	*	//Red Wing Gloves
+5674	0	0	61	11	61	61	0	*	*	*	//Demonic Boots
+3654	0	0	61	11	61	61	0	*	*	*	//Lucky Red Wing Helm
+2577	0	0	61	11	61	61	0	*	*	*	//Ancient Stick
+2575	0	0	61	11	61	61	0	*	*	*	//Violent Wind Stick
+5161	0	0	61	11	61	61	0	*	*	*	//Ancient Gloves
+3624	0	0	61	11	61	61	0	*	*	*	//Red Wing Helm
+2581	0	0	61	61	61	61	0	*	*	*	//Book of Samut
+2576	0	0	61	11	61	61	0	*	*	*	//Red Wing Stick
+2583	0	0	61	61	61	61	0	*	*	*	//Book of Lagle
+5673	0	0	61	11	61	61	0	*	*	*	//Ancient Boots
+5672	0	0	61	11	61	61	0	*	*	*	//Red Wing Boots
+5162	0	0	61	11	61	61	0	*	*	*	//Demonic Gloves
+end
+
+11
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (RF)
+5693	0	0	61	11	61	61	0	*	*	*	//Piercing Boots
+4155	0	0	61	11	61	61	0	*	*	*	//Sacred Armor
+1028	0	0	61	61	61	61	0	*	*	*	//Crystal Morning Star
+5641	0	0	61	11	61	61	0	*	*	*	//Plate Boots
+4668	0	0	61	11	61	61	0	*	*	*	//Storm Hard Pants
+4680	0	0	61	11	61	61	0	*	*	*	//Lucky Storm Hard Pants
+4156	0	0	61	11	61	61	0	*	*	*	//Storm Hard Armor
+5704	0	0	61	11	61	61	0	*	*	*	//Lucky Storm Hard Boots
+5691	0	0	61	11	61	61	0	*	*	*	//Sacred Boots
+3593	0	0	61	11	61	61	0	*	*	*	//Plate Helm
+4667	0	0	61	11	61	61	0	*	*	*	//Sacred Pants
+4617	0	0	61	11	61	61	0	*	*	*	//Plate Pants
+3644	0	0	61	11	61	61	0	*	*	*	//Storm Hard Helm
+5692	0	0	61	11	61	61	0	*	*	*	//Storm Hard Boots
+end
+
+12
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (GL)
+4189	0	0	61	11	61	61	0	*	*	*	//Princie Armor
+5212	0	0	61	11	61	61	0	*	*	*	//Gru Hill Gloves
+1554	0	0	61	61	61	61	0	*	*	*	//Alacran Lance
+1551	0	0	61	61	61	61	0	*	*	*	//Pluma Lance
+3676	0	0	61	11	61	61	0	*	*	*	//Gru Hill Helmet
+5724	0	0	61	11	61	61	0	*	*	*	//Gru Hill Boots
+3677	0	0	61	11	61	61	0	*	*	*	//Princie Helmet
+4701	0	0	61	11	61	61	0	*	*	*	//Princie Pants
+1550	0	0	61	61	61	61	0	*	*	*	//Conmocion Lance
+4188	0	0	61	11	61	61	0	*	*	*	//Gru Hill Armor
+4700	0	0	61	11	61	61	0	*	*	*	//Gru Hill Pants
+5725	0	0	61	11	61	61	0	*	*	*	//Princie Boots
+3102	0	0	61	11	61	61	0	*	*	*	//Pluma Shield
+5213	0	0	61	11	61	61	0	*	*	*	//Princie Gloves
+end
+
+13
+//Index Level Grade Option0 Option1 Option2 Option3 Option4 Option5 Option6 Duration   (common)
+7181	0	0	11	11	11	11	0	*	*	*	//?
+7182	0	0	11	11	11	11	0	*	*	*	//?
+6159	0	0	11	11	11	11	0	*	*	*	//?
+6677	0	0	11	11	11	11	0	*	*	*	//?
+6678	0	0	11	11	11	11	0	*	*	*	//?
+6679	0	0	11	11	11	11	0	*	*	*	//?
+6681	0	0	11	11	11	11	0	*	*	*	//?
+6682	0	0	11	11	11	11	0	*	*	*	//?
+6683	0	0	11	11	11	11	0	*	*	*	//?
+end

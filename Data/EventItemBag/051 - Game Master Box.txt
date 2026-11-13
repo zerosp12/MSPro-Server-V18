@@ -1,0 +1,13 @@
+0
+//EventName              DropZen   ItemDropRate   ItemDropCount   SetItemDropRate   ItemDropType   Fireworks	
+"GameMaster Box"	 1000	   100		  1		  99999		    0		   0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent
+end
+
+2
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   Ancient   Socket
+7           17      0          0          0       0      0        0		1	0
+end

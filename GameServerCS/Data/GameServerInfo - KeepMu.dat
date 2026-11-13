@@ -1,0 +1,19 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+[SpeedWalk]
+Tolerance       			= 5         //Conteo de Positivos
+ToleranceTime   			= 4000 		//Tiempo de Reseteo del Conteo
+MaxAllowedSpeed 			= 90		//Default: 100
+SpeedAction     			= 3 		//0: Disconnect  / 1: Stuck Character / 2: Save Log Only / 3: Nothing
+SpeedMessage    			= 1			//0: Disabled / 1: Send to Character
+StuckTime       			= 5         //En Segundos
+MaxRangeCoordsBetweenCheck 	= 10		//Rango de Coordenadas entre cada Check (Para evitar Falsos Positivos)
+
+[HardwareID]
+Enable					= 0
+DisconnectUser			= 1
+BanUser					= 0	

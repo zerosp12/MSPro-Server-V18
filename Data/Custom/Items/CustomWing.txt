@@ -1,0 +1,12 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//ID	 IndexItem	 DefA			 IncDmgA		   IncDmgB			 DecDmgA		   DecDmgB		     Opt1	        Opt1	       Opt2		      Opt2   		 Opt3		    Opt3		   NewOpt1		     NewOpt1		   NewOpt2		     NewOpt2		   NewOpt3			 NewOpt3		   NewOpt4		     NewOpt4	       ModelType  ModelName
+0        6294        4               139               2                 61                2                 80             4              85             1              83             4              110               5                 111               5                 109               5                 102               5                 0          "alaevobkv2"
+1        6295        4               139               2                 61                2                 80             4              85             1              83             4              110               5                 111               5                 109               5                 102               5                 0          "demonicsoul"
+2        6296        4               139               2                 61                2                 80             4              85             1              83             4              110               5                 111               5                 109               5                 102               5                 0          "darkdemonicmg"
+end

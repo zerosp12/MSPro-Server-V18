@@ -1,0 +1,22 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6113
+// Mision Semanal - Vulcanus
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			10080				75	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				484				112			//Matar 112 Ash Slaughterer
+	1				486				72			//Matar 72 Blood Assassin
+end
+
+2
+	0				4500000
+	7				100				1			//Golden Box
+	7				132				2			//Quest Chest T3 (class gear)
+	6				70				//Ruud
+	1				2				5			//Bonus points (kept after resets)
+end

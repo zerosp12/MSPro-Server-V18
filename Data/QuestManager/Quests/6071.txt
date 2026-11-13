@@ -1,0 +1,18 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6071
+// Caza Diaria - Atlans
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			1440				30	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				52				58			//Matar 58 Silver Valkyrie
+end
+
+2
+	0				510000
+	7				101				1			//Silver Box
+end

@@ -1,0 +1,89 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+[ChaosMix]
+DisableITMix				= 0
+DisableFeatherMix			= 0
+DisableCherryBlossom		= 0
+DisableSocketMix			= 0
+DisableIGMix				= 0
+DisableKeyBoxMix			= 0
+DisableItemLevel+12Mix		= 0
+DisableItemLevel+13Mix		= 0
+DisableItemLevel+14Mix		= 0
+DisableItemLevel+15Mix		= 0
+DisableLuckyItemMix			= 0
+DisableWingLvl3Mix			= 0
+
+[WingLvl1Mix]
+DisableSUWings				= 0
+
+[WingLvl2Mix]
+DisableDLCape				= 0
+DisableRFCape				= 0
+DisableGLCape				= 0
+DisableSUWings				= 0
+DisableTalisman				= 0
+
+[WingLvl3Mix]
+DisableDLCape				= 0
+DisableSUWings				= 0
+DisableRFCape				= 0
+
+[CharacterCreation]
+DisableMagicGladiator		= 0
+DisableSummoner				= 0
+DisableDarkLord				= 0
+DisableRageFighter			= 0
+
+[Events]
+DisableDoubleGoer			= 0
+DisableImperialGuardian		= 0
+DisableRaklion				= 0
+DisableMossMerchant			= 0
+DisableBCMasterLevel		= 0
+DisableCCMasterLevel		= 0
+DisableDSMasterLevel		= 0
+DisableITMasterLevel		= 0
+Allow_DuelDowngrade 		= 0
+
+[Interface]
+DisablePersonalShop			= 0
+DisableSDDamage				= 0
+
+[NPC]
+DisablePetTrainer			= 0
+DisableShadowPhantomQuest	= 1
+
+[Skills]
+RemoveSiegeAtStart			= 0 ;Remove Siege Skills from Characters
+
+[Item]
+Allow_LuckyItemToRepair 	= 0
+Allow_LuckyItemToPKDrop 	= 0
+Allow_LuckyItemToVault  	= 0
+
+[Arrows]
+StopConsumption_AL0 = 0
+StopConsumption_AL1 = 0
+StopConsumption_AL2 = 0
+StopConsumption_AL3 = 0
+
+StopConsumption_MinLevel_AL0 = 300
+StopConsumption_MinLevel_AL1 = 300
+StopConsumption_MinLevel_AL2 = 300
+StopConsumption_MinLevel_AL3 = 300
+
+StopConsumption_MinResets_AL0 = 0
+StopConsumption_MinResets_AL1 = 0
+StopConsumption_MinResets_AL2 = 0
+StopConsumption_MinResets_AL3 = 0
+
+StopConsumption_MinMasterResets_AL0 = 0
+StopConsumption_MinMasterResets_AL1 = 0
+StopConsumption_MinMasterResets_AL2 = 0
+StopConsumption_MinMasterResets_AL3 = 0

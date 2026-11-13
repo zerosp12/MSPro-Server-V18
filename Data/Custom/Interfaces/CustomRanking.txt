@@ -1,0 +1,19 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+0
+//-----------------------------------------------------------------------------------------------------------------
+// Ranking ingame (F8)
+// [0~29]       [VisualName]
+// RankIndex    Name              Columna 1       Columna 2	 
+//-----------------------------------------------------------------------------------------------------------------
+   0            "Geral"           "Personaje:"    "Master Resets:"
+   1            "Reset"           "Personaje:"    "Resets:"
+   2            "Level"           "Personaje:"    "Level:"
+   3            "Blood Castle"    "Personaje:"    "Puntos:"
+   4            "Devil Square"    "Personaje:"    "Puntos:"
+end

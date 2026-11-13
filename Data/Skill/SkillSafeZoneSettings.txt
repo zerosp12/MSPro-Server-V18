@@ -1,0 +1,41 @@
+//----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com
+//->>  FB: @mspromu
+//->>  © 2020 - 2022 MuServerPro Team
+//----------------------------------------------------------------------------------------------------------------
+
+0
+//--------------------------------------------------------------------------------------------------------------------
+//  Block Skill Use on Event Map
+//--------------------------------------------------------------------------------------------------------------------
+//          [   Rango   ]   [0/1]
+//	IDSkill	Map1	Map2	EnableUseOnSafe	
+//--------------------------------------------------------------------------------------------------------------------
+//Manashield
+	16		11		17		1	//ManaShield - Blood Castle 1 / 7
+	16		52		52		1	//ManaShield - Blood Castle 8
+	
+//Infinity Arrow
+	77		11		17		1
+	77		52		52		1
+//Berserker
+	218		11		17		1
+	218		52		52		1
+	
+//Greater Life		
+	48		11		17		1	//Greater Life - Blood Castle 1 / 7
+	48		52		52		1	//Greater Life - Blood Castle 8
+//Greater Defense		
+	27		11		17		1	//Greater Defense - Blood Castle 1 / 7
+	27		52		52		1	//Greater Defense - Blood Castle 8
+//Greater Damage		
+	28		11		17		1	//Greater Damage - Blood Castle 1 / 7
+	28		52		52		1	//Greater Damage - Blood Castle 8
+//Critical Damage 		
+	64		11		17		1	//Critical Damage - Blood Castle 1 / 7
+	64		52		17		1	//Critical Damage - Blood Castle 8
+//Damage Reflect	
+	217		11		17		1	//Damage Reflect - Blood Castle 1 / 7
+	217		52		52		1	//Damage Reflect - Blood Castle 8	
+end

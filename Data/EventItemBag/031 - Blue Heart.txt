@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------------------------------------------
+// Blue Heart: very rare drop, gives 2 Lucky Coins.
+//---------------------------------------------------------------------------------------------------------------
+
+0
+//EventName	DropZen	ItemDropRate	ItemDropCount	SetItemDropRate	ItemDropType	Fireworks
+"Blue Heart"	0	100	2	0	0	0
+end
+
+1
+//Section	Type	MinLevel	MaxLevel	Skill	Luck	Option	Excellent
+14	100	0	0	0	0	0	0	//Lucky Coin
+end

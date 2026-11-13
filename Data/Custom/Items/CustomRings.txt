@@ -1,0 +1,56 @@
+//-----------------------------------------------------------------------------------------------------------------
+//->>  MSPro - MuServerPro Team - Desarrollos de MUOnline
+//->>  Web: wwww.muserverpro.com 
+//->>  FB: @mspromu
+//->>  2020 - 2023 MuServerPro Team
+//-----------------------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//              [monster.txt][Ref-1]			[Ref-2]		[Ref-3]    			    [Ref-3]					[Ref-3]
+//[0~15][0~511] [0~1023]						[0/1~2]     [-1/1~16]  [-1/0~999999][-1/1~16][-1/0~999999]  [-1/1~16][-1/0~999999] [0~255]	[0~255]	   [0~255]	   [0~255]	   [0~255]	   [0~255]	  [0~255]
+//Item  ID 		SkinMosnter	 Durab.Check (Skin)	AllowJewels	Effect1	   Value1		Effect2		Value2		Effect3	 Value3 	   IceRes   PoisonRes  LightRes    FireRes     EarthRes    WindRes    WaterRes
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  6		300		-1		     0					1		    1	       30000		-1			-1			-1		  -1  	       2		2		   2		   2		   2		   2		  2
+//  6		301		7		     0					0		    2	       10			-1			-1			-1		  -1           2		2		   2		   2		   2		   2		  2
+//  6		302		-1		     0					0		    2	       10			-1			-1			-1		  -1           2		2		   2		   2		   2		   2		  2
+//  6		303		-1		     0					0		    2	       10			-1			-1			-1		  -1           2		2		   2		   2		   2		   2		  2
+//  6		304		-1		     0					0		    2	       10			-1			-1			-1		  -1           2		2		   2		   2		   2		   2		  2
+//  6		305		-1		     0					0		    2	       10			-1			-1			-1		  -1           2		2		   2		   2		   2		   2		  2
+end
+
+//==============
+// [Ref-1]
+//==============
+//Durab.Check (Skin)
+//	0: El skin no se elimina en durabilidad 0 / the skin is not removed in durability 0
+//	1: El skin se elimina en durabilidad 0 /skin is removed in durability 0
+
+//==============
+// [Ref-2]
+//==============
+//Types AllowJewles:
+//	0: Desactivado 
+//	1: Jewels Custom 
+//	2: Jewels Custom y Normales (Bless, Soul, Life)
+
+//==============
+// [Ref-3]
+//==============
+//Type Effects
+//	0-AddHP
+//	1-AddMP
+//	2-DamageRate
+//	3-AttackSpeed
+//	4-MagicSpeed 
+//	5-DoubleDmgRate
+//	6-TripleDmgRate 
+//	7-AddExperience
+//	8-ResistDoubleDamage 
+//	9-ResistIgnoreDefense
+//	10-ResistIgnoreSD 
+//	11-ResistCriticalDamage	
+//	12-ResisteExcellentDamage
+//	13-BlockStuck 
+//	14-IncreStr //Str
+//	15-IncreEne //Agi
+//	16-IncreAgi //Ene

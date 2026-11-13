@@ -1,0 +1,18 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6091
+// Caza Diaria - Icarus
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			1440				60	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				69				32			//Matar 32 Alquamos
+end
+
+2
+	0				630000
+	7				101				1			//Silver Box
+end

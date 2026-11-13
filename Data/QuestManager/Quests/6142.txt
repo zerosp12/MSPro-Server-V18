@@ -1,0 +1,20 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6142
+// Caceria Doble - Raklion
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			4320				97	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				456				102			//Matar 102 Ice Giant
+	1				457				88			//Matar 88 Coolutin
+end
+
+2
+	0				2325000
+	7				101				2			//Silver Box x2
+	7				133				1			//Quest Chest T4 (class gear)
+end

@@ -1,0 +1,11 @@
+// MSPro panel: server list style sent to the client. A GameServer is in group Code/20.
+0
+//GroupId	Name	Position	Sequence	R	G	B	A	Description
+0	"MSPro V18"	0	0	255	255	255	255	""
+end
+
+1
+//Code	NonPvP	ShowUsers	R	G	B	A
+1	0	1	224	255	71	255
+19	0	0	255	255	255	255
+end

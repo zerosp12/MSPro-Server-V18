@@ -1,0 +1,20 @@
+//------------------------------------------------------------------------------------------------------------------------
+// MSPro Quest System
+// QuestIndex: 6042
+// Caceria Doble - Devias
+//------------------------------------------------------------------------------------------------------------------------
+0
+//	[FinishType]	[Cycle Count]	[Cycle Reset(min)]	[Min / Max Level]	[Min / Max R]	[Min / Max MR]	[Min / Max VIP]	[DW DK ELF MG DL SUM RF GL]
+	1			1			4320				5	400			*	*		*	*		*	*			1	1	1	1	1	1	1	1
+end
+
+1
+	1				24				20			//Matar 20 Worm
+	1				25				20			//Matar 20 Ice Queen
+end
+
+2
+	0				825000
+	7				101				2			//Silver Box x2
+	7				130				1			//Quest Chest T1 (class gear)
+end
