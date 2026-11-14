@@ -526,6 +526,7 @@ local function AddProgress(aIndex, st, id, amount)
 
 	row.progress = math.min(row.progress + amount, tiers[#tiers].goal)
 	st.dirty[id] = true
+	st.dirtyAt = st.dirtyAt or os.time() -- the save countdown starts at the first unsaved change
 	st.changed[id] = true
 
 	local unlocked = false
@@ -623,6 +624,7 @@ local function Save(aIndex, st)
 	end
 
 	st.dirty = {}
+	st.dirtyAt = nil
 
 	-- on failure the rows are marked again (while the player is online) to retry on the next save
 	Net.Request(CHANNEL, { op = "save", name = st.name, rows = rows, points = st.points, completed = st.completed }, aIndex, function(reply, err)
@@ -635,6 +637,7 @@ local function Save(aIndex, st)
 		if State[aIndex] == st then
 			for _, row in ipairs(rows) do
 				st.dirty[row[1]] = true
+				st.dirtyAt = os.time()
 			end
 		end
 	end)
@@ -961,19 +964,16 @@ Events.On("CharacterClose", function(aIndex)
 	Leave(aIndex)
 end, OWNER)
 
-local SaveTimer = 0
 local UpdateTimer = 0
 
 Events.On("Timer", function()
 	local now = os.time()
 
-	SaveTimer = SaveTimer + 1
 	UpdateTimer = UpdateTimer + 1
 
-	local save = SaveTimer >= (Config.SaveInterval or 60)
+	local saveInterval = Config.SaveInterval or 60
 	local update = UpdateTimer >= (Config.UpdateInterval or 1)
 
-	if save then SaveTimer = 0 end
 	if update then UpdateTimer = 0 end
 
 	for aIndex, st in pairs(State) do
@@ -985,7 +985,8 @@ Events.On("Timer", function()
 			end
 		else
 			if update then SendUpdates(aIndex, st) end
-			if save then Save(aIndex, st) end
+			-- each player saves SaveInterval seconds after his own first change: idle players cost nothing and saves never pile up in the same second
+			if st.dirtyAt ~= nil and now - st.dirtyAt >= saveInterval then Save(aIndex, st) end
 		end
 	end
 end, OWNER)
