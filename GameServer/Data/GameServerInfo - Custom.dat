@@ -347,3 +347,7 @@ ShowItemDrop = 1
 
 [BuffManager]
 BuffAlwaysOverwrite = 0 //Overwrite Buffs without check if current value is higher
+
+[WebBrowser]
+URL = http://127.0.0.1
+ForceOpenWhenChangeURL = 0 //1: open the browser by itself the first time a player logs in after the URL changes
